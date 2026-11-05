@@ -56,3 +56,8 @@ def test_mixed_case_section_heading_starts_new_paragraph():
 def test_roman_heading_starts_new_paragraph():
     paras = lines_to_paragraphs(["Room Rent means the amount charged by a hospital.", "II - BENEFITS COVERED", "1. Hospitalisation"])
     assert len(paras) == 3 and paras[1] == "II - BENEFITS COVERED"
+
+
+def test_xray_is_not_a_roman_heading():
+    paras = lines_to_paragraphs(["Charges for the", "X-RAY film are not payable"])
+    assert len(paras) == 1
