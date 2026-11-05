@@ -1,0 +1,11 @@
+langgraph
+pydantic
+fastapi
+pymupdf
+pdfplumber
+faker
+reportlab
+rank_bm25
+qdrant-client
+pytest
+
