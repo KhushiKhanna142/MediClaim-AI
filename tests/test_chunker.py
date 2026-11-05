@@ -75,10 +75,43 @@ from src.rag.chunker import is_heading, skip_toc_pages, split_parent
 def test_headings_real_vs_fake():
     assert is_heading("I - DEFINITIONS")
     assert is_heading("SECTION B. BENEFITS")
-    assert is_heading("2.1. Standard Definitions:")
-    assert not is_heading("2.1.24. Maternity expenses shall include")     # 3-level id = a clause, not a heading
+    assert not is_heading("2.1.24. Maternity expenses shall include")
     assert not is_heading("Pre-Existing Disease: Pre-Existing Disease means any condition")
-    assert not is_heading("4. The Co-payment proportion (If opted) shall be borne by the Insured Person on each claim.")
+
+
+def test_numbered_heading_needs_children():
+    from src.rag.chunker import heading_kind
+    assert heading_kind("2. Definitions", "2", "2.1") == "major"
+    assert heading_kind("2.1. Standard Definitions:", "2.1", "2.1.1") == "sub"
+    assert heading_kind("1. Travel Expenses", "1", None) is None            # HDFC list item
+    assert heading_kind("13. Automatic Restoration of Sum Insured", "13", "14") is None
+
+
+def test_section_does_not_go_stale_after_new_major_heading():
+    paras = P("SECTION B. BENEFITS", "1. In-patient Benefits covered when an insured suffers an accident or illness",
+              "2. Additional Benefits covered under the policy when mentioned in schedule",
+              "SECTION C. WAITING PERIOD AND EXCLUSIONS",
+              "1. Pre-existing diseases shall be covered after a waiting period of 36 months of continuous coverage")
+    recs = chunk_policy(paras, {**CARE, "insurer": "HDFC ERGO"})
+    c = [r for r in recs if r["type"] == "parent" and r["clause_id"].endswith("/1") and "Pre-existing" in r["text"]][0]
+    assert c["section"].startswith("SECTION C") and c["clause_id"].startswith("Section C")
+
+
+def test_cross_reference_line_is_not_a_clause():
+    xref = "Section B-3 (Preventive Health Check Up), Sections B-2.9 (Global Health Cover), Section B-2.11 (Travel) shall not apply"
+    assert clause_id(xref, "HDFC ERGO") is None
+    assert clause_id("SECTION C. WAITING PERIOD AND EXCLUSIONS", "HDFC ERGO") == "Section C"
+
+
+def test_runon_caps_fixed():
+    from src.rag.chunker import fix_runon_caps
+    assert fix_runon_caps("STANDARDDEFINITIONS") == "STANDARD DEFINITIONS"
+    assert fix_runon_caps("I - DEFINITIONS") == "I - DEFINITIONS"
+
+
+def test_toc_like_paragraph_dropped():
+    toc = "Section C Waiting Period & Exclusions 17 Standard Waiting Period 17 Standard Exclusions 19 Non-Medical Exclusions 21 Section D Terms"
+    assert skip_toc_pages([{"page": 5, "text": toc}]) == []
 
 
 def test_bare_list_number_is_qualified_by_section():
@@ -112,3 +145,34 @@ def test_oversized_parent_is_split():
     parents = [r for r in recs if r["type"] == "parent"]
     assert len(parents) >= 3 and all(r["clause_id"] == "2.5" for r in parents)
     assert len({r["chunk_id"] for r in parents}) == len(parents)
+
+
+def test_old_hdfc_mixed_case_section_and_roman_items():
+    long = "Section C. Waiting Period & Exclusions Standard Waiting Period All Illnesses and treatments shall be covered subject to waiting"
+    assert clause_id(long, "HDFC ERGO") == "Section C"
+    assert clause_id("XI. Portability The Insured Person will have the option to port the Policy", "HDFC ERGO") == "XI"
+    paras = P("Section C. Waiting Period & Exclusions Standard Waiting Period All Illnesses and treatments are covered subject to terms",
+              "XI. Portability The Insured Person will have the option to port the Policy to other insurers by applying")
+    recs = chunk_policy(paras, {**CARE, "insurer": "HDFC ERGO"})
+    ids = [r["clause_id"] for r in recs if r["type"] == "parent"]
+    assert "Section C/XI" in ids
+    assert all(r["section"] == "Section C" for r in recs if r["type"] == "parent")
+
+
+def test_caps_item_list_with_digits_is_not_a_heading():
+    assert not is_heading("X-RAY FILM 17 BOYLES APPARATUS CHARGES 18 BABY FOOD")
+    from src.rag.chunker import heading_kind
+    assert heading_kind("X-RAY FILM 17 BOYLES APPARATUS CHARGES", None, None) is None
+
+
+def test_merged_heading_label_is_trimmed():
+    from src.rag.chunker import heading_label
+    assert heading_label("II - COVERAGE In consideration of the premium paid", None) == "II - COVERAGE"
+    assert heading_label("SECTION C. SPECIAL TERMS AND CONDITIONS Standard Waiting Periods All", "Section C") == \
+        "SECTION C. SPECIAL TERMS AND CONDITIONS"
+
+
+def test_long_numbered_heading_merged_with_text_still_detected():
+    from src.rag.chunker import heading_kind
+    merged = "3. Coverage Under this Policy We will cover the following benefits subject to terms and conditions of this contract"
+    assert heading_kind(merged, "3", "3.1") == "major"

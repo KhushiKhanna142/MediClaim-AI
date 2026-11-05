@@ -51,3 +51,8 @@ def test_mixed_case_section_heading_starts_new_paragraph():
     paras = lines_to_paragraphs(["20. Dental treatment of any kind, unless requiring", "Hospitalisation.",
                                  "Section D. Terms & Clauses", "Standard Terms and Conditions"])
     assert len(paras) == 2 and paras[1].startswith("Section D.")
+
+
+def test_roman_heading_starts_new_paragraph():
+    paras = lines_to_paragraphs(["Room Rent means the amount charged by a hospital.", "II - BENEFITS COVERED", "1. Hospitalisation"])
+    assert len(paras) == 3 and paras[1] == "II - BENEFITS COVERED"

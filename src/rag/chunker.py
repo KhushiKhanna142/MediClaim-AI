@@ -32,24 +32,76 @@ HEADER_PATTERNS = [  # page headers that leaked into paragraphs (seen in the rea
 NUM = re.compile(r"^(\d{1,2}(?:\.\d{1,3})*)\.\s+\S")           # 2.1.17. Hospital ...   13. Automatic ...
 HDFC_DEF = re.compile(r"^Def\.\s*(\d+)\.?")                      # Def. 18.
 HDFC_SEC = re.compile(r"^(?:SECTION|Section)\s+([A-D](?:[.\-]\d+)?)\b")
+ROMAN_ITEM = re.compile(r"^([IVX]{1,5})\.\s+[A-Z]")                 # 'XI. Portability' (old HDFC list items)
 HDFC_LET = re.compile(r"^([A-D]\.\d+(?:\.\d+)?)\s+\S")           # B.1 Base Coverages
 TERM = re.compile(r"^([A-Z][A-Za-z0-9()/&,'\- ]{2,70}?):\s+\S")  # Star-style 'Accident: An Accident means'
 TERM_STOP = {"Note", "Provided", "Example", "Explanation", "Illustration", "Special Conditions", "Rs", "Exclusions"}
 STAR_SPLIT = re.compile(r"(?<=[.;])\s+(?=[A-Z][A-Za-z0-9()/&,'\- ]{2,70}?:\s+[A-Z])")
 
 
-HEAD_ROMAN = re.compile(r"^([IVX]{1,5})\s*[-–]\s*[A-Z][A-Z &/,()'\-]{3,}")
+HEAD_ROMAN = re.compile(r"^([IVX]{1,5})\s+[-–]\s+[A-Z][A-Z &/,()'\-]{3,}")   # 'I - DEFINITIONS' (not 'X-RAY')
+
+
+RUNON = {"STANDARD", "SPECIFIC", "DEFINITIONS", "EXCLUSIONS", "BENEFITS", "COVERAGE", "GENERAL", "TERMS",
+         "CONDITIONS", "WAITING", "PERIODS", "PERIOD", "AND", "OF", "THE", "POLICY", "CLAUSES", "COVERED"}
+
+
+def _segment(tok: str) -> list[str] | None:
+    """Split an all-caps run-on token into known words (shortest split); None if it can't be fully split."""
+    best: list[list[str] | None] = [None] * (len(tok) + 1)
+    best[0] = []
+    for i in range(1, len(tok) + 1):
+        for j in range(max(0, i - 12), i):
+            if best[j] is not None and tok[j:i] in RUNON:
+                cand = best[j] + [tok[j:i]]
+                if best[i] is None or len(cand) < len(best[i]):
+                    best[i] = cand
+    return best[len(tok)]
+
+
+def fix_runon_caps(text: str) -> str:
+    """'STANDARDDEFINITIONS' (letter-spacing collapse) -> 'STANDARD DEFINITIONS' for long all-caps tokens."""
+    return re.sub(r"\b[A-Z]{12,}\b", lambda m: " ".join(_segment(m.group(0)) or [m.group(0)]), text)
+
+
+def leading_caps(text: str) -> str:
+    """Leading all-caps words of a paragraph: 'II - COVERAGE In consideration...' -> 'II - COVERAGE'."""
+    out = []
+    for tok in text.split():
+        if tok.isupper() or tok in {"-", "–", "&", "/"}:
+            out.append(tok)
+        else:
+            break
+    return " ".join(out)
+
+
+def heading_label(text: str, cid: str | None) -> str:
+    if HEAD_ROMAN.match(text) or text.startswith("SECTION"):
+        return fix_runon_caps(leading_caps(text) or (cid or text[:60]))
+    return fix_runon_caps(text[:80].strip())
+
+
+def _caps_heading(text: str) -> bool:
+    return (text.isupper() and len(text) <= 80 and not re.search(r"\d", text)
+            and not text.rstrip().endswith("."))
 
 
 def is_heading(text: str) -> bool:
-    """Real section headings only: 'I - DEFINITIONS', 'SECTION B. BENEFITS', '2.1. Standard Definitions:', 'EXCLUSIONS'."""
-    if len(text) > 100 or HEAD_ROMAN.match(text):
-        return bool(HEAD_ROMAN.match(text))
-    if HDFC_SEC.match(text):
-        return True
-    if (m := NUM.match(text)) and m.group(1).count(".") <= 1 and not text.rstrip().endswith("."):
-        return True
-    return text.isupper() and not text.rstrip().endswith(".")
+    """Non-numeric headings: 'I - DEFINITIONS', 'SECTION B. BENEFITS', 'EXCLUSIONS'. Numbered headings need lookahead."""
+    if len(text) > 100:
+        return False
+    return bool(HEAD_ROMAN.match(text) or HDFC_SEC.match(text) or _caps_heading(text))
+
+
+def heading_kind(text: str, cid: str | None, next_cid: str | None) -> str | None:
+    """'major' | 'sub' | None. A numbered paragraph is a heading only when the next clause is numbered under it."""
+    if HEAD_ROMAN.match(text) or (HDFC_SEC.match(text) and len(text) <= 100):
+        return "major"
+    if _caps_heading(text):
+        return "sub"
+    if cid and next_cid and re.fullmatch(r"\d{1,2}(?:\.\d{1,3})*", cid) and next_cid.startswith(cid + "."):
+        return "major" if "." not in cid else "sub"      # no length limit: heading may be merged with its first line
+    return None
 
 
 def struct_id(text: str, cid: str | None) -> str | None:
@@ -61,9 +113,14 @@ def struct_id(text: str, cid: str | None) -> str | None:
     return None
 
 
+def _looks_like_toc_line(text: str) -> bool:
+    return (text.startswith(("Section", "SECTION", "Annexure", "Part")) and len(text) <= 700
+            and len(re.findall(r"\s\d{1,3}\s+[A-Z]", text)) >= 4)
+
+
 def skip_toc_pages(paras: list[dict]) -> list[dict]:
     toc = {p["page"] for p in paras if re.match(r"^Table of Contents", p["text"], re.I)}
-    return [p for p in paras if p["page"] not in toc]
+    return [p for p in paras if p["page"] not in toc and not _looks_like_toc_line(p["text"])]
 
 
 def split_parent(paras: list[str], limit: int = MAX_PARENT) -> list[list[str]]:
@@ -98,8 +155,11 @@ def split_star_definitions(para: str) -> list[str]:
 def clause_id(text: str, insurer: str) -> str | None:
     if m := HDFC_DEF.match(text):
         return f"Def.{m.group(1)}"
-    if m := HDFC_SEC.match(text):
+    if (m := HDFC_SEC.match(text)) and (len(text) <= 100 or text.startswith("SECTION")
+                                         or re.match(r"Section [A-D]\.\s", text)):
         return f"Section {m.group(1)}"
+    if m := ROMAN_ITEM.match(text):
+        return m.group(1)
     if m := HDFC_LET.match(text):
         return m.group(1)
     if m := NUM.match(text):
@@ -150,19 +210,24 @@ def chunk_policy(paras: list[dict], policy: dict) -> list[dict]:
             units.append({"page": p["page"], "text": piece})
 
     parents: list[dict] = []
-    section, struct = "", ""
-    for u in units:
-        text = u["text"]
-        cid = clause_id(text, insurer)
-        heading = is_heading(text)
-        if heading:
-            section = text
+    major, sub, struct = "", "", ""
+    cids = [clause_id(u["text"], insurer) for u in units]
+    for i, u in enumerate(units):
+        text, cid = u["text"], cids[i]
+        kind = heading_kind(text, cid, cids[i + 1] if i + 1 < len(units) else None)
+        if kind == "major":
+            major, sub = heading_label(text, cid), ""
+        elif kind == "sub":
+            sub = heading_label(text, cid)
+        elif cid and cid.startswith("Section"):          # long 'Section B. Benefits In-patient ...' paragraph
+            major, sub = (heading_label(text, cid) if text.startswith("SECTION") else cid), ""
+        section = f"{major} > {sub}" if major and sub else (major or sub)
         st = struct_id(text, cid)
         if st:
             struct = st
-        if cid and re.fullmatch(r"\d{1,2}", cid) and struct:      # bare list number: qualify it
+        if cid and re.fullmatch(r"\d{1,2}|[IVX]{1,5}", cid) and struct and not HEAD_ROMAN.match(text):      # bare list number: qualify it
             cid = f"{struct}/{cid}"
-        if heading and not cid:
+        if kind and not cid:
             cid = "H:" + text[:40]
         if cid or not parents:
             parents.append({"clause_id": cid or "preamble", "section": section,

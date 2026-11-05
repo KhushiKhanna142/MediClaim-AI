@@ -27,7 +27,7 @@ PARA_START = re.compile(
     r"^(?:\d{1,3}(?:\.\d{1,3})*\.?\s+\S"        # 2.1.7. Text   /  4. Text
     r"|\(?[a-zA-Z0-9]{1,3}[.)]\s+\S"            # (a) Text  /  a. Text  / i) Text
     r"|[•●▪■o]\s+\S"                           # bullets
-    r"|SECTION\b|PART\b|ANNEXURE\b|Annexure\b|Def\.\s*\d+|Section\s+(?:\d|[A-D]\b))"
+    r"|SECTION\b|PART\b|ANNEXURE\b|Annexure\b|Def\.\s*\d+|Section\s+(?:\d|[A-D]\b)|[IVX]{1,5}\s+[-–]\s+[A-Z]{3,})"
 )
 PAGE_NUM = re.compile(r"^(?:page\s*)?\d{1,4}\s*(?:/|of|\|)\s*\d{1,4}$", re.I)   # '1 / 47', 'Page 3 of 10'
 LETTER_SPACED = re.compile(r"(?<![A-Za-z])(?:[A-Za-z] ){3,}[A-Za-z](?![A-Za-z])")
