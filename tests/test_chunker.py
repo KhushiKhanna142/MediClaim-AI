@@ -176,3 +176,36 @@ def test_long_numbered_heading_merged_with_text_still_detected():
     from src.rag.chunker import heading_kind
     merged = "3. Coverage Under this Policy We will cover the following benefits subject to terms and conditions of this contract"
     assert heading_kind(merged, "3", "3.1") == "major"
+
+
+from src.rag.chunker import split_inline_clauses
+
+
+def test_inline_clause_numbers_split():
+    t = "3.2. Optional Benefits 3.2.1 Smart Select If this Optional Benefit is opted then discount applies 3.2.3 PED Wait Period Modification Notwithstanding anything"
+    parts = split_inline_clauses(t)
+    assert [p.split()[0] for p in parts] == ["3.2.", "3.2.1", "3.2.3"]
+
+
+def test_inline_split_skips_amounts_and_cross_refs():
+    t = "Cover up to 2.5 Lakh per claim. As specified under Section 2.9 Global Health Cover the benefit applies. Rs 1.5 Lakh limit"
+    assert split_inline_clauses(t) == [t]
+
+
+def test_dotted_id_without_trailing_dot():
+    assert clause_id("3.2.3 PED Wait Period Modification Notwithstanding", "Care Health Insurance") == "3.2.3"
+    assert clause_id("2.13 Modification of Room Rent On availing this option", "HDFC ERGO") == "2.13"
+    assert clause_id("2.5 lakh per claim", "HDFC ERGO") is None
+
+
+def test_care_optional_benefits_become_separate_parents():
+    paras = P("3.2. Optional Benefits 3.2.1 Smart Select If this Optional Benefit is opted the policyholder gets a reduction in premium 3.2.3 PED Wait Period Modification Notwithstanding anything to the contrary the waiting period of 36 months is reduced")
+    ids = [r["clause_id"] for r in chunk_policy(paras, CARE) if r["type"] == "parent"]
+    assert "3.2.1" in ids and "3.2.3" in ids
+
+
+def test_time_and_amount_decimals_are_not_clause_ids():
+    assert clause_id("9.00 AM to 5.00 PM on all working days", "Star Health and Allied Insurance") is None
+    assert clause_id("2.5 Lakh per claim is the limit", "HDFC ERGO") is None
+    assert split_inline_clauses("Call us between 9.00 AM and 5.00 PM on working days") == ["Call us between 9.00 AM and 5.00 PM on working days"]
+    assert clause_id("9.00 Hours of treatment", "Star") is None

@@ -29,7 +29,10 @@ HEADER_PATTERNS = [  # page headers that leaked into paragraphs (seen in the rea
     re.compile(r"Product Name:\s*Aspire\s*\|\s*Product UIN:\s*" + UIN),
 ]
 
-NUM = re.compile(r"^(\d{1,2}(?:\.\d{1,3})*)\.\s+\S")           # 2.1.17. Hospital ...   13. Automatic ...
+UNIT_WORDS = r"(?!(?:AM|PM|Hrs|Hours|Lakh|Crore|Times|Percent|Per)\b)"
+NUM_DOTTED = re.compile(r"^(\d{1,2}(?:\.\d{1,3})+)\.?\s+" + UNIT_WORDS + r"(?=[A-Z])")      # 3.2.3 PED Wait Period  /  2.1.17. Hospital
+NUM_BARE = re.compile(r"^(\d{1,2})\.\s+\S")                                  # 13. Automatic Restoration
+NUM = NUM_BARE  # kept for backwards compatibility           # 2.1.17. Hospital ...   13. Automatic ...
 HDFC_DEF = re.compile(r"^Def\.\s*(\d+)\.?")                      # Def. 18.
 HDFC_SEC = re.compile(r"^(?:SECTION|Section)\s+([A-D](?:[.\-]\d+)?)\b")
 ROMAN_ITEM = re.compile(r"^([IVX]{1,5})\.\s+[A-Z]")                 # 'XI. Portability' (old HDFC list items)
@@ -134,6 +137,32 @@ def split_parent(paras: list[str], limit: int = MAX_PARENT) -> list[list[str]]:
     return groups + ([cur] if cur else [])
 
 
+INLINE_ID = re.compile(r"(?<![\w.])(?=(\d{1,2}\.\d{1,3}(?:\.\d{1,3})*)\s+" + UNIT_WORDS + r"[A-Z][A-Za-z])")
+NOT_BEFORE = {"rs.", "rs", "section", "sections", "clause", "clauses", "annexure", "under", "to", "and", "of", "see",
+              "in", "than", "by", "at", "for", "from", "is", "be", "upto", "up"}
+
+
+def split_inline_clauses(text: str) -> list[str]:
+    """Split 'Optional Benefits 3.2.1 Smart Select If ...' where clause numbers appear mid-paragraph.
+    Skips numbers that follow words like 'Rs', 'Section', 'to' (amounts and cross-references)."""
+    cuts = []
+    for m in INLINE_ID.finditer(text):
+        if m.start() == 0:
+            continue
+        prev = text[:m.start()].split()
+        if prev and prev[-1].lower().rstrip(",:;") in NOT_BEFORE:
+            continue
+        cuts.append(m.start())
+    if not cuts:
+        return [text]
+    parts, last = [], 0
+    for c in cuts:
+        parts.append(text[last:c].strip())
+        last = c
+    parts.append(text[last:].strip())
+    return [p for p in parts if p]
+
+
 def strip_headers(text: str) -> str:
     for pat in HEADER_PATTERNS:
         text = pat.sub(" ", text)
@@ -162,7 +191,7 @@ def clause_id(text: str, insurer: str) -> str | None:
         return m.group(1)
     if m := HDFC_LET.match(text):
         return m.group(1)
-    if m := NUM.match(text):
+    if m := (NUM_DOTTED.match(text) or NUM_BARE.match(text)):
         return m.group(1)
     if insurer.startswith("Star") and (m := TERM.match(text)) and m.group(1) not in TERM_STOP:
         return f"Def:{m.group(1).strip()}"
@@ -207,7 +236,8 @@ def chunk_policy(paras: list[dict], policy: dict) -> list[dict]:
             continue
         pieces = split_star_definitions(text) if insurer.startswith("Star") else [text]
         for piece in pieces:
-            units.append({"page": p["page"], "text": piece})
+            for sub_piece in split_inline_clauses(piece):
+                units.append({"page": p["page"], "text": sub_piece})
 
     parents: list[dict] = []
     major, sub, struct = "", "", ""

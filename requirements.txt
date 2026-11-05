@@ -7,5 +7,5 @@ faker
 reportlab
 rank_bm25
 qdrant-client
+sentence-transformers
 pytest
-

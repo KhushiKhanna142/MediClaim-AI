@@ -45,4 +45,5 @@ htmlcov/
 .idea/
 .vscode/
 *.swp
+*.lock
 
