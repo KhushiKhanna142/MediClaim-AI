@@ -10,25 +10,27 @@ Automated health insurance claim adjudication and verification engine powered by
 ├── README.md               # problem, architecture, ablation table, failure modes, trade-offs
 ├── docker-compose.yml
 ├── data/
-│   ├── policies/           # raw policy PDFs (check redistribution terms)
-│   ├── regulations/        # IRDAI circulars
-│   ├── synthetic_claims/   # PDFs + ground-truth JSON
-│   └── golden_set/         # frozen 50 claims + retrieval questions
+│   ├── policies/           # raw policy PDFs (Care, HDFC ERGO, Niva Bupa, Star Health)
+│   ├── regulations/        # IRDAI master circulars, regulations & claim forms
+│   ├── synthetic_claims/   # 30 grounded claims (PDFs + ground-truth JSON + manifest)
+│   ├── processed/          # cleaned texts and hierarchical clause chunks (JSONL)
+│   ├── qdrant/             # local vector store indexing policy chunks
+│   └── golden_set/         # frozen benchmark questions & query rewrite cache
 ├── src/
-│   ├── ingestion/          # loaders, page classifier, OCR router
+│   ├── ingestion/          # loaders, bilingual text stripper, clean text normalizer
 │   ├── extraction/         # schemas, extraction agent, table parsers
 │   ├── validation/         # rule-based validators
-│   ├── rag/                # chunkers, indexer, hybrid retriever, reranker, query rewrite
+│   ├── rag/                # chunker, indexer, hybrid retriever, reranker, query rewrite
 │   ├── agents/             # adjudicator, verifier
-│   ├── tools/              # calculator, icd lookup, policy-active check (also exposed via MCP)
+│   ├── tools/              # deterministic calculator (room rent, copay, non-medical)
 │   ├── graph/              # LangGraph state, nodes, edges, checkpointer
 │   ├── security/           # injection detection, PII redaction
 │   ├── api/                # FastAPI app
 │   └── ui/                 # Streamlit claimant + reviewer
-├── synth/                  # data generator, renderers, degradation scripts
-├── eval/                   # metrics, RAGAS/DeepEval runners, ablation runner
+├── synth/                  # synthetic claim data generator, rule engine & ground truth
+├── eval/                   # retrieval benchmark & ablation runners
 ├── experiments/            # one notebook/script per failure mode
-├── tests/                  # unit + adversarial tests
+├── tests/                  # unit, retrieval, and synthetic test suites (88 tests passing)
 └── docs/                   # architecture diagram, cost analysis, decision log
 ```
 
@@ -47,26 +49,45 @@ MediClaim-AI automates end-to-end claim adjudication with full auditability, cit
 
 ## 🏗️ Architecture
 
-1. **Ingestion & Classification**: Multimodal loaders and OCR router process scanned bills, handwritten discharge notes, and hospital ledgers.
+1. **Ingestion & Classification**: Multimodal loaders and OCR router process scanned bills, handwritten discharge notes, and hospital ledgers. De-noising strips bilingual Hindi/English boilerplate from IRDAI circulars.
 2. **Information Extraction**: Pydantic schemas enforce deterministic structured data extraction across diagnosis codes (ICD-10), billed items, and claimant details.
 3. **Security & Guardrails**: PII redaction and prompt-injection detection run prior to reasoning.
-4. **Hybrid RAG & Regulatory Retrieval**: Hybrid retriever (BM25 + dense embeddings) and cross-encoder rerankers index policy wordings, terms, and IRDAI circulars.
-5. **Agentic Adjudication via LangGraph**:
-   - **Adjudicator Agent**: Matches claim items against policy allowances, waiting periods, room-rent sub-limits, and deductibles using deterministic calculator tools.
+4. **Hybrid RAG & Regulatory Retrieval**:
+   - **Clause-Aware Hierarchical Chunking**: Parent chunks preserve full legal context, clause IDs (`4.1(a)`, `2.13`), and active dates; child chunks power precision search.
+   - **Hybrid Retrieval**: Combines Reciprocal Rank Fusion of BAAI/BGE dense embeddings in Qdrant with BM25 sparse keyword matching.
+   - **Cross-Encoder Reranker**: Re-ranks top candidate clauses via `ms-marco-MiniLM-L-6-v2`.
+   - **LLM Query Rewriter**: Translates patient/claimant symptoms into exact policy phrasing with disk-backed caching.
+5. **Deterministic Adjudication Engine**:
+   - Offloads financial deductions (room-rent proportionate deduction, deductibles, co-pays, and IRDAI non-payable items) to deterministic calculation tools rather than relying on LLM arithmetic.
+6. **Agentic Adjudication via LangGraph**:
+   - **Adjudicator Agent**: Matches claim items against policy allowances and waiting periods.
    - **Verifier Agent**: Adversarially reviews adjudication decisions for hallucinations, misapplied clauses, or regulatory breaches before final determination.
-6. **Delivery**: FastAPI endpoints power backend integrations, while Streamlit interfaces serve claimant submission and reviewer dashboards.
+7. **Delivery**: FastAPI endpoints power backend integrations, while Streamlit interfaces serve claimant submission and reviewer dashboards.
 
 ---
 
-## 🔬 Ablation Table
+## 🔬 Measured Retrieval Ablation Table
 
-| Configuration / Pipeline Variant | Extraction Accuracy (F1) | Retrieval Precision@k | Adjudication Accuracy | Latency (p95) | Cost per Claim ($) |
+Evaluated on the 28-question frozen golden benchmark (`data/golden_set/retrieval_questions.jsonl`):
+
+| Pipeline Configuration | Recall@1 | Recall@3 | Recall@5 | MRR | Relative Gain |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| Baseline (Vanilla Prompting + Naive RAG) | - | - | - | - | - |
-| + Document Structure & Table Parsing | - | - | - | - | - |
-| + Hybrid Retrieval & Cross-Encoder Reranker | - | - | - | - | - |
-| + Rule-based Deterministic Validation | - | - | - | - | - |
-| + Dual-Agent LangGraph (Adjudicator + Verifier) | - | - | - | - | - |
+| **1. Dense Vector Search (Baseline)** | 0.46 | 0.71 | 0.79 | 0.596 | Baseline |
+| **2. BM25 Lexical Search** | 0.64 | 0.68 | 0.75 | 0.681 | +14.2% MRR |
+| **3. Hybrid Search (BM25 + Dense RRF)** | 0.50 | 0.82 | 0.82 | 0.640 | +7.4% MRR |
+| **4. Hybrid + Cross-Encoder Reranker** | 0.68 | 0.82 | 0.86 | 0.767 | +28.7% MRR |
+| **5. Hybrid + Query Rewriter (`hybrid_rw`)** | 0.71 | 0.86 | 0.89 | 0.788 | +32.2% MRR |
+| **6. Full Pipeline (`hybrid_rerank_rw`)** | **0.79** | **0.93** | **0.93** | **0.855** | **+43.5% MRR** |
+
+---
+
+## 🧪 Synthetic Ground-Truth Dataset (`synth/`)
+
+Generated a 30-claim golden set (`data/synthetic_claims/manifest.json`) across 11 realistic adjudication scenarios with ground-truth decision outputs:
+- **Clean Approvals (8 claims)**: Routine admissions meeting full policy waiting periods.
+- **Partial Deductions (8 claims)**: Room-rent caps, proportionate deductions, IRDAI non-payable deductions, and sum insured caps.
+- **Rejections (10 claims)**: 30-day initial waiting period violations, specified 24-month illness exclusions (cataract, hernia), and undisclosed pre-existing diseases (PED).
+- **Audit & Review Required (4 claims)**: Missing mandatory bills, document tampering, and billing/diagnosis mismatches.
 
 ---
 
@@ -79,13 +100,33 @@ MediClaim-AI automates end-to-end claim adjudication with full auditability, cit
 3. **Prompt Injection & Adversarial Document Uploads**
    - *Mitigation*: Dedicated security filter (`src/security/`) sanitizing input text and stripping embedded prompt injections from uploaded PDFs.
 4. **Hallucinated Sub-limits or Math Errors**
-   - *Mitigation*: Offloading all financial math to deterministic calculator tools (`src/tools/`) rather than relying on LLM arithmetic.
+   - *Mitigation*: Offloading all financial math to deterministic calculator tools (`src/tools/calculator.py`).
 
 ---
 
-## ⚖️ Trade-offs
+## 🚀 Quickstart
 
-- **Single-Pass LLM vs. Multi-Agent Graph**: Multi-agent verification increases token cost and latency but drastically reduces false-positive claim denials and hallucinations.
-- **Dense Retrieval vs. Hybrid (BM25 + Dense) Retrieval**: Hybrid retrieval requires higher indexing memory but is essential for matching exact clause numbers, IRDAI section codes, and medical terminology.
-- **Full Automation vs. Human-in-the-Loop (HITL)**: Borderline claims or high-value claims route to the reviewer UI, trading immediate turnaround for regulatory compliance and risk control.
+### 1. Environment Setup
+```bash
+python3.11 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+cp .env.example .env
+```
 
+### 2. Run Test Suite
+```bash
+python -m pytest -q tests/
+```
+*(All 88 unit and integration tests passing)*
+
+### 3. Run Retrieval Benchmark & Ablation
+```bash
+set -a; source .env; set +a
+python -m eval.retrieval_eval --questions data/golden_set/retrieval_questions.jsonl --rewrite
+```
+
+### 4. Generate Synthetic Ground-Truth Claims
+```bash
+python -m synth.generate
+```

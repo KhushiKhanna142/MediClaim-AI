@@ -30,7 +30,7 @@ HEADER_PATTERNS = [  # page headers that leaked into paragraphs (seen in the rea
 ]
 
 UNIT_WORDS = r"(?!(?:AM|PM|Hrs|Hours|Lakh|Crore|Times|Percent|Per)\b)"
-NUM_DOTTED = re.compile(r"^(\d{1,2}(?:\.\d{1,3})+)\.?\s+" + UNIT_WORDS + r"(?=[A-Z])")      # 3.2.3 PED Wait Period  /  2.1.17. Hospital
+NUM_DOTTED = re.compile(r"^(\d{1,2}(?:\.\d{1,3})+)(?:\.\s+(?=\S)|\s+" + UNIT_WORDS + r"(?=[A-Z]))")      # 3.2.3 PED Wait Period  /  2.1.17. Hospital
 NUM_BARE = re.compile(r"^(\d{1,2})\.\s+\S")                                  # 13. Automatic Restoration
 NUM = NUM_BARE  # kept for backwards compatibility           # 2.1.17. Hospital ...   13. Automatic ...
 HDFC_DEF = re.compile(r"^Def\.\s*(\d+)\.?")                      # Def. 18.
@@ -147,7 +147,7 @@ def split_inline_clauses(text: str) -> list[str]:
     Skips numbers that follow words like 'Rs', 'Section', 'to' (amounts and cross-references)."""
     cuts = []
     for m in INLINE_ID.finditer(text):
-        if m.start() == 0:
+        if m.start() == 0 or not _real_dotted(m.group(1)):
             continue
         prev = text[:m.start()].split()
         if prev and prev[-1].lower().rstrip(",:;") in NOT_BEFORE:
@@ -163,6 +163,11 @@ def split_inline_clauses(text: str) -> list[str]:
     return [p for p in parts if p]
 
 
+def _real_dotted(num: str) -> bool:
+    """'4.0' / '9.00' are decimals or times, not clause numbers."""
+    return not all(set(part) == {"0"} for part in num.split(".")[1:])
+
+
 def strip_headers(text: str) -> str:
     for pat in HEADER_PATTERNS:
         text = pat.sub(" ", text)
@@ -174,6 +179,9 @@ def split_star_definitions(para: str) -> list[str]:
     for m in STAR_SPLIT.finditer(para):
         nxt = para[m.end():]
         term = TERM.match(nxt)
+        before = para[last:m.start()].rstrip()
+        if re.search(r"(?:^|\s)(?:\d{1,2}|[ivxIVX]{1,5}|[a-zA-Z])\.$", before) and len(before) < 8:
+            continue                                  # '25.' is a list number, not the end of a definition
         if term and term.group(1) not in TERM_STOP:
             parts.append(para[last:m.start()])
             last = m.end()
@@ -191,7 +199,9 @@ def clause_id(text: str, insurer: str) -> str | None:
         return m.group(1)
     if m := HDFC_LET.match(text):
         return m.group(1)
-    if m := (NUM_DOTTED.match(text) or NUM_BARE.match(text)):
+    if (m := NUM_DOTTED.match(text)) and _real_dotted(m.group(1)):
+        return m.group(1)
+    if m := NUM_BARE.match(text):
         return m.group(1)
     if insurer.startswith("Star") and (m := TERM.match(text)) and m.group(1) not in TERM_STOP:
         return f"Def:{m.group(1).strip()}"
@@ -241,18 +251,30 @@ def chunk_policy(paras: list[dict], policy: dict) -> list[dict]:
 
     parents: list[dict] = []
     major, sub, struct = "", "", ""
+    last_major_n = 0
     cids = [clause_id(u["text"], insurer) for u in units]
     for i, u in enumerate(units):
         text, cid = u["text"], cids[i]
         kind = heading_kind(text, cid, cids[i + 1] if i + 1 < len(units) else None)
+        if kind == "major" and cid and re.fullmatch(r"\d{1,2}", cid):
+            if int(cid) <= last_major_n:
+                kind = None
+            else:
+                last_major_n = int(cid)
         if kind == "major":
             major, sub = heading_label(text, cid), ""
         elif kind == "sub":
+            if cid and re.fullmatch(r"\d{1,2}(?:\.\d{1,3})+", cid):
+                mn = re.match(r"(\d+)\.", major)
+                if mn and mn.group(1) != cid.split(".")[0]:
+                    major = ""
             sub = heading_label(text, cid)
         elif cid and cid.startswith("Section"):          # long 'Section B. Benefits In-patient ...' paragraph
             major, sub = (heading_label(text, cid) if text.startswith("SECTION") else cid), ""
         section = f"{major} > {sub}" if major and sub else (major or sub)
         st = struct_id(text, cid)
+        if st and insurer.startswith("Star") and not HEAD_ROMAN.match(text):
+            st = None                                   # Star has no real dotted clauses
         if st:
             struct = st
         if cid and re.fullmatch(r"\d{1,2}|[IVX]{1,5}", cid) and struct and not HEAD_ROMAN.match(text):      # bare list number: qualify it

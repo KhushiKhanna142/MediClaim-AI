@@ -1,0 +1,90 @@
+{
+ "claim_id": "C029_hdfc_missing_docs",
+ "category": "missing_docs",
+ "policy_id": "hdfc_optima_secure_current",
+ "patient": {
+  "name": "Triya Pant",
+  "age": 32,
+  "sex": "M"
+ },
+ "schedule": {
+  "sum_insured": 1000000,
+  "policy_start": "2023-04-12",
+  "ped_months": 36,
+  "spec_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "laparoscopic cholecystectomy (gallstones)",
+  "kind": "illness",
+  "specified": true,
+  "is_ped": false
+ },
+ "admission_date": "2025-11-12",
+ "discharge_date": "2025-11-14",
+ "room_days": 2,
+ "room_claimed": "standard_single",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (standard single)",
+   "qty": 2,
+   "rate": 5700,
+   "amount": 11400
+  },
+  {
+   "category": "surgeon",
+   "description": "Surgeon and anaesthetist fees",
+   "qty": 1,
+   "rate": 49150,
+   "amount": 49150
+  },
+  {
+   "category": "ot",
+   "description": "Operation theatre charges",
+   "qty": 1,
+   "rate": 21350,
+   "amount": 21350
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 6600,
+   "amount": 6600
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 4050,
+   "amount": 4050
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 6350,
+   "amount": 6350
+  },
+  {
+   "category": "consumable",
+   "description": "Disposable consumables and admission kit",
+   "qty": 1,
+   "rate": 2250,
+   "amount": 2250
+  }
+ ],
+ "stated_total": 101150,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

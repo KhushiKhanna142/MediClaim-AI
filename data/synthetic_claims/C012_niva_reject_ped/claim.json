@@ -1,0 +1,91 @@
+{
+ "claim_id": "C012_niva_reject_ped",
+ "category": "reject_ped",
+ "policy_id": "niva_aspire",
+ "patient": {
+  "name": "Raghav Pradhan",
+  "age": 40,
+  "sex": "F"
+ },
+ "schedule": {
+  "sum_insured": 1000000,
+  "policy_start": "2025-12-15",
+  "ped_months": 12,
+  "spec_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "diabetic foot infection with debridement",
+  "kind": "illness",
+  "specified": false,
+  "is_ped": true
+ },
+ "admission_date": "2026-06-15",
+ "discharge_date": "2026-06-20",
+ "room_days": 5,
+ "room_claimed": "standard_single",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (standard single)",
+   "qty": 5,
+   "rate": 4700,
+   "amount": 23500
+  },
+  {
+   "category": "surgeon",
+   "description": "Surgeon and anaesthetist fees",
+   "qty": 1,
+   "rate": 28350,
+   "amount": 28350
+  },
+  {
+   "category": "ot",
+   "description": "Operation theatre charges",
+   "qty": 1,
+   "rate": 14350,
+   "amount": 14350
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 9000,
+   "amount": 9000
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 9200,
+   "amount": 9200
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 19950,
+   "amount": 19950
+  },
+  {
+   "category": "consumable",
+   "description": "Disposable consumables and admission kit",
+   "qty": 1,
+   "rate": 2700,
+   "amount": 2700
+  }
+ ],
+ "stated_total": 107050,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

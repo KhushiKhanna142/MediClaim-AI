@@ -12,7 +12,7 @@
 {"id": "old_migration", "question": "Moving to another product of the same insurer, can the earlier waiting period credit continue under the older Optima Restore?", "policy_id": "hdfc_optima_restore_old", "gold_clause_ids": ["Section D/XII"], "verify": true}
 {"id": "sec_ped24", "question": "Can the pre-existing disease waiting period be reduced from 36 months to 24 months?", "policy_id": "hdfc_optima_secure_current", "gold_clause_ids": ["2.12/1", "2.11/1"], "verify": true}
 {"id": "sec_ped12", "question": "Optional change that cuts the pre-existing disease waiting period to one year", "policy_id": "hdfc_optima_secure_current", "gold_clause_ids": ["2.12/2", "2.12", "2.11/2"], "verify": true}
-{"id": "sec_roomcap", "question": "Optional change that restricts room rent to one percent of the base sum insured per day", "policy_id": "hdfc_optima_secure_current", "gold_clause_ids": ["2.11/1", "2.13", "2.11/2"], "verify": true}
+{"id": "sec_roomcap", "question": "Optional change that restricts room rent to one percent of the base sum insured per day", "policy_id": "hdfc_optima_secure_current", "gold_clause_ids": ["2.11/1", "2.13", "2.11/2", "2.13/1"], "verify": true}
 {"id": "sec_ayush", "question": "Is inpatient Ayurveda or Unani treatment covered?", "policy_id": "hdfc_optima_secure_current", "gold_clause_ids": ["1.4"], "verify": false}
 {"id": "sec_ambulance", "question": "Road ambulance to move a patient to another hospital in an emergency", "policy_id": "hdfc_optima_secure_current", "gold_clause_ids": ["1.1.1"], "verify": false}
 {"id": "sec_abroad", "question": "Emergency treatment needed outside India, which cover applies?", "policy_id": "hdfc_optima_secure_current", "gold_clause_ids": ["2.9"], "verify": false}

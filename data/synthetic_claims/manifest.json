@@ -1,0 +1,27 @@
+{
+ "seed": 7,
+ "claims": 30,
+ "by_category": {
+  "clean_approve": 6,
+  "approve_continuity": 2,
+  "partial_room": 4,
+  "partial_nonpayable": 2,
+  "partial_si_cap": 2,
+  "reject_specified": 4,
+  "reject_30day": 2,
+  "reject_ped": 2,
+  "multi_hop": 2,
+  "missing_docs": 2,
+  "total_mismatch": 2
+ },
+ "by_status": {
+  "approve": 8,
+  "partial": 8,
+  "reject": 10,
+  "needs_review": 4
+ },
+ "by_policy": {
+  "niva_aspire": 15,
+  "hdfc_optima_secure_current": 15
+ }
+}

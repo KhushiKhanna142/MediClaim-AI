@@ -57,24 +57,30 @@ class HybridRetriever:
         return [int(i) for i in order if scores[i] > 0]
 
     def search(self, query: str, k: int = 5, policy_ids=None, insurers=None, as_of: date | None = None,
-               mode: str = "hybrid") -> list[dict]:
+               mode: str = "hybrid", extra_queries: list[str] | None = None) -> list[dict]:
+        """extra_queries: rewrites of the query. Candidates from all queries are fused; the reranker scores each
+        candidate against every query and keeps the best score."""
         allowed = self._allowed(set(policy_ids or []), set(insurers or []), as_of)
-        lists = []
-        if mode in ("dense", "hybrid", "hybrid_rerank"):
-            lists.append(self._dense(query, allowed, policy_ids))
-        if mode in ("bm25", "hybrid", "hybrid_rerank"):
-            lists.append(self._bm25(query, allowed))
+        queries = [query] + [q for q in (extra_queries or []) if q and q != query]
         fused: dict[int, float] = {}
-        for lst in lists:
-            for rank, idx in enumerate(lst, 1):
-                fused[idx] = fused.get(idx, 0.0) + 1.0 / (RRF_K + rank)
+        for q in queries:
+            lists = []
+            if mode in ("dense", "hybrid", "hybrid_rerank"):
+                lists.append(self._dense(q, allowed, policy_ids))
+            if mode in ("bm25", "hybrid", "hybrid_rerank"):
+                lists.append(self._bm25(q, allowed))
+            for lst in lists:
+                for rank, idx in enumerate(lst, 1):
+                    fused[idx] = fused.get(idx, 0.0) + 1.0 / (RRF_K + rank)
         ranked = sorted(fused.items(), key=lambda x: -x[1])
         if mode == "hybrid_rerank":
             if self.reranker is None:
                 raise ValueError("hybrid_rerank needs a reranker")
             pool = ranked[:RERANK_POOL]
-            scores = self.reranker.score(query, [embed_text(self.children[i]) for i, _ in pool])
-            ranked = sorted(((i, sc) for (i, _), sc in zip(pool, scores)), key=lambda x: -x[1])
+            texts = [embed_text(self.children[i]) for i, _ in pool]
+            per_query = [self.reranker.score(q, texts) for q in queries]
+            best = [max(col) for col in zip(*per_query)]
+            ranked = sorted(((i, sc) for (i, _), sc in zip(pool, best)), key=lambda x: -x[1])
         results, seen = [], set()
         for idx, score in ranked:
             c = self.children[idx]

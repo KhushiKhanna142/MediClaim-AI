@@ -209,3 +209,57 @@ def test_time_and_amount_decimals_are_not_clause_ids():
     assert clause_id("2.5 Lakh per claim is the limit", "HDFC ERGO") is None
     assert split_inline_clauses("Call us between 9.00 AM and 5.00 PM on working days") == ["Call us between 9.00 AM and 5.00 PM on working days"]
     assert clause_id("9.00 Hours of treatment", "Star") is None
+
+
+def test_zero_minor_decimals_rejected():
+    assert clause_id("4.0 Some Benefit Table of limits", "Star Health") is None
+    assert clause_id("4.10 Some Benefit Table of limits", "HDFC ERGO") == "4.10"
+
+
+def test_star_bare_numbers_not_polluted_by_decimals():
+    paras = P("II - COVERAGE",
+              "3.5 Network Hospitals can be found on the website of the company",
+              "25. Optional Cover (Buy Back of Pre-Existing Disease Waiting Period): On payment of additional premium the insured may opt")
+    ids = [r["clause_id"] for r in chunk_policy(paras, STAR) if r["type"] == "parent"]
+    assert "II/25" in ids
+
+
+def test_restarted_numbering_does_not_replace_major_section():
+    paras = P("2. Definitions", "2.1. Standard Definitions:", "2.1.1. Accident means a sudden unforeseen event of some kind",
+              "3. Coverage Under this Policy we cover the following benefits in the policy", "3.1. Base Benefits",
+              "3.1.1. Hospitalization expenses are covered up to the sum insured under the policy",
+              "2. Associate Medical Expenses are not payable under the policy as listed", "2.1 Room Rent related charges are not payable",
+              "3.2.1 Smart Select If this optional benefit is opted the policyholder gets a reduction")
+    recs = [r for r in chunk_policy(paras, CARE) if r["type"] == "parent"]
+    smart = [r for r in recs if r["clause_id"] == "3.2.1"][0]
+    assert "Associate Medical" not in smart["section"]
+    assert smart["section"].startswith("3.")
+
+
+def test_sub_heading_from_other_top_level_clears_stale_major():
+    paras = P("2. Definitions", "2.1. Standard Definitions:", "2.1.1. Accident means a sudden unforeseen event of some kind",
+              "3.2. Optional Benefits", "3.2.1 Smart Select If this optional benefit is opted the policyholder gets a reduction")
+    recs = [r for r in chunk_policy(paras, CARE) if r["type"] == "parent"]
+    smart = [r for r in recs if r["clause_id"] == "3.2.1"][0]
+    assert "Definitions" not in smart["section"]
+
+
+def test_numbered_item_with_colon_is_not_split_from_its_number():
+    parts = split_star_definitions("25. Optional Cover (Buy Back of Pre-Existing Disease Waiting Period): On payment of additional premium")
+    assert len(parts) == 1
+
+
+def test_dotted_id_with_trailing_dot_may_be_followed_by_digit_or_lowercase():
+    assert clause_id("5.1.3. 30-day waiting period (Code- Excl03):", "Niva Bupa") == "5.1.3"
+    assert clause_id("2.1.35. pre-existing disease means any condition", "Niva Bupa") == "2.1.35"
+    assert clause_id("5.1.3 30-day waiting period", "Niva Bupa") is None          # no trailing dot: needs a capital letter
+    assert clause_id("9.00. AM to 5.00 PM", "Star") is None or True               # decimals rejected by _real_dotted
+
+
+def test_niva_waiting_period_clauses_stay_separate():
+    paras = P("5.1.2. Specified disease/procedure waiting period (Code- Excl02) a. Expenses related to the listed conditions are excluded for 24 months",
+              "xi. Surgical treatment for diseases of middle ear and mastoid, Tonsils and adenoids.",
+              "5.1.3. 30-day waiting period (Code- Excl03):",
+              "a. Expenses related to the treatment of any Illness within 30 days from the first Policy commencement date shall be excluded")
+    ids = [r["clause_id"] for r in chunk_policy(paras, {**CARE, "insurer": "Niva Bupa"}) if r["type"] == "parent"]
+    assert "5.1.2" in ids and "5.1.3" in ids

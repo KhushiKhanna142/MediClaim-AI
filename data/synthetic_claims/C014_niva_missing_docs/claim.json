@@ -1,0 +1,97 @@
+{
+ "claim_id": "C014_niva_missing_docs",
+ "category": "missing_docs",
+ "policy_id": "niva_aspire",
+ "patient": {
+  "name": "Watika Wali",
+  "age": 35,
+  "sex": "M"
+ },
+ "schedule": {
+  "sum_insured": 300000,
+  "policy_start": "2025-07-21",
+  "ped_months": 12,
+  "spec_months": 12,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "fracture of femur, ORIF (road accident)",
+  "kind": "accident",
+  "specified": false,
+  "is_ped": false
+ },
+ "admission_date": "2025-08-21",
+ "discharge_date": "2025-08-25",
+ "room_days": 4,
+ "room_claimed": "standard_single",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (standard single)",
+   "qty": 4,
+   "rate": 5000,
+   "amount": 20000
+  },
+  {
+   "category": "surgeon",
+   "description": "Surgeon and anaesthetist fees",
+   "qty": 1,
+   "rate": 79550,
+   "amount": 79550
+  },
+  {
+   "category": "ot",
+   "description": "Operation theatre charges",
+   "qty": 1,
+   "rate": 29150,
+   "amount": 29150
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 6000,
+   "amount": 6000
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 11450,
+   "amount": 11450
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 13450,
+   "amount": 13450
+  },
+  {
+   "category": "implant",
+   "description": "Implant / prosthesis",
+   "qty": 1,
+   "rate": 72150,
+   "amount": 72150
+  },
+  {
+   "category": "consumable",
+   "description": "Disposable consumables and admission kit",
+   "qty": 1,
+   "rate": 4600,
+   "amount": 4600
+  }
+ ],
+ "stated_total": 236350,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

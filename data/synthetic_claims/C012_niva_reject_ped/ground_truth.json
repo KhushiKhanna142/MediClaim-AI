@@ -1,0 +1,24 @@
+{
+ "claim_id": "C012_niva_reject_ped",
+ "category": "reject_ped",
+ "policy_id": "niva_aspire",
+ "status": "reject",
+ "claimed_amount": 107050,
+ "payable_amount": 0,
+ "deductions": [],
+ "expected_clause_ids": [
+  "5.1.1",
+  "2.1.35"
+ ],
+ "expected_flags": [],
+ "reasons": [
+  "6 months of continuous coverage is below the 12-month waiting period that applies."
+ ],
+ "coverage_months_at_admission": 6,
+ "assumptions": [
+  "Proportionate deduction after a room-rent cap applies to surgeon, ot, investigation, nursing and other charges; medicine and implants are not reduced (reference simplification, check against each wording).",
+  "Items of category 'consumable' are non-payable (reference simplification of the insurer's non-medical expenses list).",
+  "Claims within 1 month of a waiting-period boundary are deliberately not generated.",
+  "Room type modification co-payment (4.1.18) applies to the whole admissible amount."
+ ]
+}

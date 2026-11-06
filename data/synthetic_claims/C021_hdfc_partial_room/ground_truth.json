@@ -1,0 +1,62 @@
+{
+ "claim_id": "C021_hdfc_partial_room",
+ "category": "partial_room",
+ "policy_id": "hdfc_optima_secure_current",
+ "status": "partial",
+ "claimed_amount": 91600,
+ "payable_amount": 63347.26,
+ "deductions": [
+  {
+   "rule": "non_payable",
+   "amount": 3000.0,
+   "clause_id": "Section C",
+   "note": "consumable"
+  },
+  {
+   "rule": "room_rent_cap",
+   "amount": 6900.0,
+   "clause_id": "2.13",
+   "note": ""
+  },
+  {
+   "rule": "proportionate_deduction",
+   "amount": 1669.86,
+   "clause_id": "2.13",
+   "note": "investigation"
+  },
+  {
+   "rule": "proportionate_deduction",
+   "amount": 1559.59,
+   "clause_id": "2.13",
+   "note": "nursing"
+  },
+  {
+   "rule": "proportionate_deduction",
+   "amount": 4899.32,
+   "clause_id": "2.13",
+   "note": "ot"
+  },
+  {
+   "rule": "proportionate_deduction",
+   "amount": 10223.97,
+   "clause_id": "2.13",
+   "note": "surgeon"
+  }
+ ],
+ "expected_clause_ids": [
+  "Section C",
+  "2.13",
+  "1.1"
+ ],
+ "expected_flags": [],
+ "reasons": [
+  "Payable amount reduced by: non_payable, proportionate_deduction, room_rent_cap."
+ ],
+ "coverage_months_at_admission": 20,
+ "assumptions": [
+  "Proportionate deduction after a room-rent cap applies to surgeon, ot, investigation, nursing and other charges; medicine and implants are not reduced (reference simplification, check against each wording).",
+  "Items of category 'consumable' are non-payable (reference simplification of the insurer's non-medical expenses list).",
+  "Claims within 1 month of a waiting-period boundary are deliberately not generated.",
+  "Room rent limit comes from the schedule (modelled as 1% of sum insured per day)."
+ ]
+}

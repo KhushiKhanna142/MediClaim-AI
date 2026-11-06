@@ -1,0 +1,23 @@
+{
+ "claim_id": "C029_hdfc_missing_docs",
+ "category": "missing_docs",
+ "policy_id": "hdfc_optima_secure_current",
+ "status": "needs_review",
+ "claimed_amount": 101150,
+ "payable_amount": null,
+ "deductions": [],
+ "expected_clause_ids": [],
+ "expected_flags": [
+  "missing_documents:discharge_summary"
+ ],
+ "reasons": [
+  "Validation failed before adjudication; route to human review."
+ ],
+ "coverage_months_at_admission": 31,
+ "assumptions": [
+  "Proportionate deduction after a room-rent cap applies to surgeon, ot, investigation, nursing and other charges; medicine and implants are not reduced (reference simplification, check against each wording).",
+  "Items of category 'consumable' are non-payable (reference simplification of the insurer's non-medical expenses list).",
+  "Claims within 1 month of a waiting-period boundary are deliberately not generated.",
+  "Room rent limit comes from the schedule (modelled as 1% of sum insured per day)."
+ ]
+}

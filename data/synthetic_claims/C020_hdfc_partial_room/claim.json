@@ -1,0 +1,98 @@
+{
+ "claim_id": "C020_hdfc_partial_room",
+ "category": "partial_room",
+ "policy_id": "hdfc_optima_secure_current",
+ "patient": {
+  "name": "Elijah Dalal",
+  "age": 62,
+  "sex": "M"
+ },
+ "schedule": {
+  "sum_insured": 500000,
+  "policy_start": "2022-02-13",
+  "ped_months": 36,
+  "spec_months": 24,
+  "room_limit_per_day": 5000,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "inguinal hernia repair",
+  "kind": "illness",
+  "specified": true,
+  "is_ped": false
+ },
+ "admission_date": "2025-02-13",
+ "discharge_date": "2025-02-16",
+ "room_days": 3,
+ "room_claimed": "private",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (private)",
+   "qty": 3,
+   "rate": 8900,
+   "amount": 26700
+  },
+  {
+   "category": "surgeon",
+   "description": "Surgeon and anaesthetist fees",
+   "qty": 1,
+   "rate": 48250,
+   "amount": 48250
+  },
+  {
+   "category": "ot",
+   "description": "Operation theatre charges",
+   "qty": 1,
+   "rate": 15550,
+   "amount": 15550
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 6450,
+   "amount": 6450
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 4500,
+   "amount": 4500
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 9050,
+   "amount": 9050
+  },
+  {
+   "category": "implant",
+   "description": "Implant / prosthesis",
+   "qty": 1,
+   "rate": 20400,
+   "amount": 20400
+  },
+  {
+   "category": "consumable",
+   "description": "Disposable consumables and admission kit",
+   "qty": 1,
+   "rate": 2200,
+   "amount": 2200
+  }
+ ],
+ "stated_total": 133100,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

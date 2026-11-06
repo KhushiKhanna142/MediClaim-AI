@@ -1,0 +1,98 @@
+{
+ "claim_id": "C030_hdfc_total_mismatch",
+ "category": "total_mismatch",
+ "policy_id": "hdfc_optima_secure_current",
+ "patient": {
+  "name": "Jackson Tak",
+  "age": 63,
+  "sex": "M"
+ },
+ "schedule": {
+  "sum_insured": 500000,
+  "policy_start": "2023-01-17",
+  "ped_months": 36,
+  "spec_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "cataract surgery (phacoemulsification)",
+  "kind": "illness",
+  "specified": true,
+  "is_ped": false
+ },
+ "admission_date": "2025-06-17",
+ "discharge_date": "2025-06-18",
+ "room_days": 1,
+ "room_claimed": "standard_single",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (standard single)",
+   "qty": 1,
+   "rate": 5200,
+   "amount": 5200
+  },
+  {
+   "category": "surgeon",
+   "description": "Surgeon and anaesthetist fees",
+   "qty": 1,
+   "rate": 26300,
+   "amount": 26300
+  },
+  {
+   "category": "ot",
+   "description": "Operation theatre charges",
+   "qty": 1,
+   "rate": 8200,
+   "amount": 8200
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 2350,
+   "amount": 2350
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 1250,
+   "amount": 1250
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 2000,
+   "amount": 2000
+  },
+  {
+   "category": "implant",
+   "description": "Implant / prosthesis",
+   "qty": 1,
+   "rate": 14850,
+   "amount": 14850
+  },
+  {
+   "category": "consumable",
+   "description": "Disposable consumables and admission kit",
+   "qty": 1,
+   "rate": 850,
+   "amount": 850
+  }
+ ],
+ "stated_total": 64700,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

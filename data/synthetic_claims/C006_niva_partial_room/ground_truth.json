@@ -1,0 +1,37 @@
+{
+ "claim_id": "C006_niva_partial_room",
+ "category": "partial_room",
+ "policy_id": "niva_aspire",
+ "status": "partial",
+ "claimed_amount": 238850,
+ "payable_amount": 200302.5,
+ "deductions": [
+  {
+   "rule": "non_payable",
+   "amount": 3200.0,
+   "clause_id": null,
+   "note": "consumable"
+  },
+  {
+   "rule": "copay",
+   "amount": 35347.5,
+   "clause_id": "4.1.18",
+   "note": "15%"
+  }
+ ],
+ "expected_clause_ids": [
+  "4.1.18",
+  "4.1.2"
+ ],
+ "expected_flags": [],
+ "reasons": [
+  "Payable amount reduced by: copay, non_payable."
+ ],
+ "coverage_months_at_admission": 2,
+ "assumptions": [
+  "Proportionate deduction after a room-rent cap applies to surgeon, ot, investigation, nursing and other charges; medicine and implants are not reduced (reference simplification, check against each wording).",
+  "Items of category 'consumable' are non-payable (reference simplification of the insurer's non-medical expenses list).",
+  "Claims within 1 month of a waiting-period boundary are deliberately not generated.",
+  "Room type modification co-payment (4.1.18) applies to the whole admissible amount."
+ ]
+}

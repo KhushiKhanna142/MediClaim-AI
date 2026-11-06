@@ -1,0 +1,98 @@
+{
+ "claim_id": "C007_niva_partial_nonpayable",
+ "category": "partial_nonpayable",
+ "policy_id": "niva_aspire",
+ "patient": {
+  "name": "Jatin Kapoor",
+  "age": 42,
+  "sex": "F"
+ },
+ "schedule": {
+  "sum_insured": 500000,
+  "policy_start": "2025-03-20",
+  "ped_months": 24,
+  "spec_months": 12,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "fracture of femur, ORIF (road accident)",
+  "kind": "accident",
+  "specified": false,
+  "is_ped": false
+ },
+ "admission_date": "2025-06-20",
+ "discharge_date": "2025-06-26",
+ "room_days": 6,
+ "room_claimed": "standard_single",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (standard single)",
+   "qty": 6,
+   "rate": 4600,
+   "amount": 27600
+  },
+  {
+   "category": "surgeon",
+   "description": "Surgeon and anaesthetist fees",
+   "qty": 1,
+   "rate": 54100,
+   "amount": 54100
+  },
+  {
+   "category": "ot",
+   "description": "Operation theatre charges",
+   "qty": 1,
+   "rate": 26450,
+   "amount": 26450
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 9300,
+   "amount": 9300
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 10250,
+   "amount": 10250
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 19850,
+   "amount": 19850
+  },
+  {
+   "category": "implant",
+   "description": "Implant / prosthesis",
+   "qty": 1,
+   "rate": 74150,
+   "amount": 74150
+  },
+  {
+   "category": "consumable",
+   "description": "Disposable consumables and admission kit",
+   "qty": 1,
+   "rate": 3450,
+   "amount": 3450
+  }
+ ],
+ "stated_total": 225150,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "claim_id": "C022_hdfc_partial_nonpayable",
+ "category": "partial_nonpayable",
+ "policy_id": "hdfc_optima_secure_current",
+ "status": "partial",
+ "claimed_amount": 374150,
+ "payable_amount": 370650.0,
+ "deductions": [
+  {
+   "rule": "non_payable",
+   "amount": 3500.0,
+   "clause_id": "Section C",
+   "note": "consumable"
+  }
+ ],
+ "expected_clause_ids": [
+  "Section C",
+  "1.1"
+ ],
+ "expected_flags": [],
+ "reasons": [
+  "Payable amount reduced by: non_payable."
+ ],
+ "coverage_months_at_admission": 32,
+ "assumptions": [
+  "Proportionate deduction after a room-rent cap applies to surgeon, ot, investigation, nursing and other charges; medicine and implants are not reduced (reference simplification, check against each wording).",
+  "Items of category 'consumable' are non-payable (reference simplification of the insurer's non-medical expenses list).",
+  "Claims within 1 month of a waiting-period boundary are deliberately not generated.",
+  "Room rent limit comes from the schedule (modelled as 1% of sum insured per day)."
+ ]
+}
