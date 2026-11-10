@@ -76,3 +76,11 @@ def test_reader_accepts_bracketed_ids_and_matched_passage():
     assert f.spec_clause == "Section C" and f.room_cap_clause == "2.13/1" and dropped == ["ped_clause=Def.35"]
     long_parent = "HEADER " + "x" * 3000
     assert "Hernia" in passage({"text": long_parent, "child_text": "list: Hernia, Cataract"})
+
+
+def test_passage_shows_whole_clause_when_it_fits():
+    from src.adjudication.reader import passage
+    parent = "5.1.2 rules a b c d e. List: stones in biliary system, hernia" + " filler" * 100
+    h = {"text": parent, "child_text": "a b c d"}
+    assert "hernia" not in passage(h, 1100) or len(parent) <= 1100
+    assert "hernia" in passage(h, 3000)

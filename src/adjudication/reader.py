@@ -67,7 +67,7 @@ def build_prompt(c: ExtractedClaim, evidence: dict[str, list[dict]]) -> str:
              f"room claimed: {c.room_category_claimed}", f"room type modification opted: {c.room_type_modification}"]
     parts = ["CLAIM FACTS\n" + "\n".join(facts)]
     for topic, hits in evidence.items():
-        body = "\n".join(f"[{h['clause_id']}] {passage(h)}" for h in hits)
+        body = "\n".join(f"[{h['clause_id']}] {passage(h, LONG_LIMIT if topic in LONG_TOPICS else 1100)}" for h in hits)
         parts.append(f"CANDIDATES for {topic}\n{body}")
     return "\n\n".join(parts)
 
@@ -79,9 +79,16 @@ def clean_id(v) -> str:
     return (m.group(1) if m else s).strip().strip("[]'\" ")
 
 
+LONG_TOPICS = {"initial_waiting", "specified", "pre_existing", "diagnosis_lookup"}   # lists of conditions can sit late in a clause
+LONG_LIMIT = 3000
+
+
 def passage(h: dict, limit: int = 1100) -> str:
-    """The clause start plus the child passage that actually matched, so a long list is never cut before the matching item."""
+    """The whole clause when it fits the limit; otherwise the clause start plus the child passage that matched,
+    so a long list is never cut before the matching item."""
     parent, child = h["text"], h.get("child_text") or ""
+    if len(parent) <= limit:
+        return parent
     if not child or child[:200] in parent[:limit]:
         return parent[:limit]
     return parent[:450] + "\n...\n" + child[:900]
