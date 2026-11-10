@@ -1,0 +1,26 @@
+{
+ "claim_form": {
+  "text": "Niva Bupa Health Insurance\nHealth insurance Claim Form (Reimbursement), Part A\nPolicy number NB6978288405\nProduct ReAssure (Aspire)\nPolicy start date 25/08/2024\nSum insured (Rs.) 10,00,000\nName of patient \u2019 Baljiwan Chadha\nAge / Sex 59 years /M\nContact number | 9762725627\nHospital name Sanjivani Hospital and Research Centre, Nagpur\nDate of admission \"25/03/2025\nDate of discharge 30/03/2025\nDiagnosis / ailment total knee replacement\nNature of iliness lliness\nRoom category occupied standard single\nTotal amount claimed (Rs.) 3,16,550\nDeclaration\n| declare that the information furnished in this claim form is true and correct to the best of my knowledge. | agree to\nprovide any further documents required by the insurer.\nSignature of the insured: Date: 30/03/2025\nSynthotic test document, generated fo/ software evaluation. Not a real record Paget\n",
+  "method": "ocr"
+ },
+ "discharge_summary": {
+  "text": "Sanjivani Hospital and Research Centre\nDischarge Summary\nPatient Baljiwan Chadha, 59 years, M\nUHID UH785331\nDate of admission 25/03/2025\nDate of discharge 30/03/2025\nLength of stay 5 day(s)\nConsultant Dr. P. Deshmukh\nFinal diagnosis\ntotal knee replacement\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to total knee replacement. Investigations were done and treatment\nwas given as per protocol. The post-treatment period was uneventful and the patient was discharged in stable\ncondition on 30/03/2025.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. P. Deshmukh (Treating consultant)\nSynthetic test document, generated for software evaluation. Not a real record Page!\n",
+  "method": "ocr"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nSanjivani Hospital and Research Centre\nNagpur | Final Inpatient Bill\nBill no\nBL/2025/15149\nUHID\nUH785331\nPatient\nBaljiwan Chadha\nAge / Sex\n59 / M\nAdmitted\n25/03/2025\nDischarged\n30/03/2025\nConsultant\nDr. P. Deshmukh\nRoom\nstandard single\nSl\nDescription\nQty\nRate\nAmount\n1\nRoom charges (standard single)\n5\n5,500\n27,500\n2\nSurgeon and anaesthetist fees\n1\n68,650\n68,650\n3\nOperation theatre charges\n1\n39,700\n39,700\n4\nLaboratory and radiology investigations\n1\n8,850\n8,850\n5\nNursing charges\n1\n13,350\n13,350\n6\nPharmacy and medicines\n1\n26,350\n26,350\n7\nImplant / prosthesis\n1\n1,32,150\n1,32,150\nTOTAL\n3,16,550\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Government of India (specimen ID card, synthetic)\nName Baljiwan Chadha\nAge / Gender 59/M\niD number XXXX XXXX 1954\nMobile 9762725627\n",
+  "method": "ocr"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nSanjivani Hospital and Research Centre Pathology\nPatient: Baljiwan Chadha | Date: 25/03/2025\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Dr. P. Deshmukh\nSanjivani Hospital and Research Centre\nPatient: Baljiwan Chadha, 59/M Date: 25/03/2025\nDiagnosis: total knee replacement\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\nSynthetic teat document. generated for sofware evaiuaton. Not a real record Page}\n",
+  "method": "ocr"
+ }
+}

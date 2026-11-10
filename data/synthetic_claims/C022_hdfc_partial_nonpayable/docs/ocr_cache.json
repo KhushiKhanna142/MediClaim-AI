@@ -1,0 +1,26 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nHD9775963003\nProduct\nOptima Secure\nPolicy start date\n10/05/2023\nSum insured (Rs.)\n10,00,000\nName of patient\nVrinda Sama\nAge / Sex\n55 years / M\nContact number\n9907251296\nHospital name\nMetro Heart and General Hospital, Indore\nDate of admission\n10/01/2026\nDate of discharge\n14/01/2026\nDiagnosis / ailment\ntotal knee replacement\nNature of illness\nIllness\nRoom category occupied\nstandard single\nTotal amount claimed (Rs.)\n3,74,150\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 14/01/2026\n",
+  "method": "text_layer"
+ },
+ "discharge_summary": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nMetro Heart and General Hospital\nDischarge Summary\nPatient\nVrinda Sama, 55 years, M\nUHID\nUH265654\nDate of admission\n10/01/2026\nDate of discharge\n14/01/2026\nLength of stay\n4 day(s)\nConsultant\nDr. A. Kulkarni\nFinal diagnosis\ntotal knee replacement\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to total knee replacement. Investigations were done and treatment\nwas given as per protocol. The post-treatment period was uneventful and the patient was discharged in stable\ncondition on 14/01/2026.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. A. Kulkarni (Treating consultant)\n",
+  "method": "text_layer"
+ },
+ "hospital_bill": {
+  "text": "Metro Heart and General Hospital\nIndore | Final Inpatient Bill\nBill no BL/2026/74914 UHID UH265654\nPatient Vrinda Sama Age / Sex 55/M\nAdmitted 10/01/2026 Discharged 14/01/2026\nConsultant Dr. A. Kulkarni Room standard single\nParticulars Qty Rate Amount\nROOM AND BED CHARGES\nRoom charges (standard single) 4 5,900 23,600\nSub-total 23,600\nPROFESSIONAL FEES\nSurgeon and anaesthetist fees 1 66,600 66,600\nSub-total 66,600\nOPERATION THEATRE\nOperation theatre charges 1 39,300 39,300\nSub-total 39,300\nPHARMACY\nPharmacy and medicines 1 29,850 29,850\nSub-total 29,850\nCONSUMABLES\nDisposable consumables and admission kit 1 3,500 3,500\nSub-total 3,500\nDIAGNOSTICS\nLaboratory and radiology investigations 1 10,800 10,800\nSub-total 10,800\nIMPLANTS\nImplant / prosthesis 1 1,86,600 1,86,600\nSub-total 1,86,600\nNURSING\nNursing charges 1 13,900 13,900\nSub-total 13,900\nGRAND TOTAL 3,74,150\nSynthetic test document. generated for software evaluation Not a real record Page 1\n",
+  "method": "ocr"
+ },
+ "id_proof": {
+  "text": "Government of India (specimen ID card, synthetic)\nName Vrinda Sama\nAge / Gender 55/M\niD number XXXX XXXX 1535\nMobile 9907251296\n",
+  "method": "ocr"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nMetro Heart and General Hospital Pathology\nPatient: Vrinda Sama | Date: 10/01/2026\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. A. Kulkarni\nMetro Heart and General Hospital\nPatient: Vrinda Sama, 55/M Date: 10/01/2026\nDiagnosis: total knee replacement\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ }
+}

@@ -1,0 +1,52 @@
+{
+ "claim_id": "C021_hdfc_partial_room",
+ "ids": {
+  "policy_no": "HD4907165767",
+  "hospital": "Harmony Medical Centre",
+  "city": "Indore",
+  "bill_no": "BL/2025/84145",
+  "uhid": "UH957880",
+  "phone": "9333827806",
+  "aadhaar_tail": "4340",
+  "doctor": "Dr. A. Kulkarni"
+ },
+ "bill_layout": "summary_first",
+ "docs": [
+  {
+   "doc": "claim_form",
+   "file": "claim_form.pdf",
+   "scanned": true,
+   "layout": null
+  },
+  {
+   "doc": "hospital_bill",
+   "file": "hospital_bill.pdf",
+   "scanned": false,
+   "layout": "summary_first"
+  },
+  {
+   "doc": "discharge_summary",
+   "file": "discharge_summary.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "id_proof",
+   "file": "id_proof.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "lab_report",
+   "file": "lab_report.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "prescription",
+   "file": "prescription.pdf",
+   "scanned": false,
+   "layout": null
+  }
+ ]
+}

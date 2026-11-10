@@ -1,0 +1,52 @@
+{
+ "claim_id": "C025_hdfc_reject_specified",
+ "ids": {
+  "policy_no": "HD7508748194",
+  "hospital": "Lotus Care Hospital",
+  "city": "Jaipur",
+  "bill_no": "BL/2026/94674",
+  "uhid": "UH271361",
+  "phone": "9217857703",
+  "aadhaar_tail": "3699",
+  "doctor": "Dr. V. Iyer"
+ },
+ "bill_layout": "summary_first",
+ "docs": [
+  {
+   "doc": "claim_form",
+   "file": "claim_form.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "hospital_bill",
+   "file": "hospital_bill.pdf",
+   "scanned": true,
+   "layout": "summary_first"
+  },
+  {
+   "doc": "discharge_summary",
+   "file": "discharge_summary.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "id_proof",
+   "file": "id_proof.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "lab_report",
+   "file": "lab_report.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "prescription",
+   "file": "prescription.pdf",
+   "scanned": true,
+   "layout": null
+  }
+ ]
+}

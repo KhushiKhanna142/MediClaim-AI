@@ -15,12 +15,13 @@
   {
    "rule": "sum_insured_cap",
    "amount": 53750.0,
-   "clause_id": null,
+   "clause_id": "Def.29",
    "note": ""
   }
  ],
  "expected_clause_ids": [
   "Section C",
+  "Def.29",
   "1.1"
  ],
  "expected_flags": [],

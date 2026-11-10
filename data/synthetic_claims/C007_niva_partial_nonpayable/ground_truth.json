@@ -9,11 +9,12 @@
   {
    "rule": "non_payable",
    "amount": 3450.0,
-   "clause_id": null,
+   "clause_id": "6.2.9",
    "note": "consumable"
   }
  ],
  "expected_clause_ids": [
+  "6.2.9",
   "4.1.2"
  ],
  "expected_flags": [],

@@ -1,0 +1,52 @@
+{
+ "claim_id": "C008_niva_partial_si_cap",
+ "ids": {
+  "policy_no": "NB3851053482",
+  "hospital": "Sunrise Multispeciality Hospital",
+  "city": "Indore",
+  "bill_no": "BL/2025/60262",
+  "uhid": "UH194171",
+  "phone": "9547403679",
+  "aadhaar_tail": "8951",
+  "doctor": "Dr. P. Deshmukh"
+ },
+ "bill_layout": "classic",
+ "docs": [
+  {
+   "doc": "claim_form",
+   "file": "claim_form.pdf",
+   "scanned": true,
+   "layout": null
+  },
+  {
+   "doc": "hospital_bill",
+   "file": "hospital_bill.pdf",
+   "scanned": true,
+   "layout": "classic"
+  },
+  {
+   "doc": "discharge_summary",
+   "file": "discharge_summary.pdf",
+   "scanned": true,
+   "layout": null
+  },
+  {
+   "doc": "id_proof",
+   "file": "id_proof.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "lab_report",
+   "file": "lab_report.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "prescription",
+   "file": "prescription.pdf",
+   "scanned": true,
+   "layout": null
+  }
+ ]
+}

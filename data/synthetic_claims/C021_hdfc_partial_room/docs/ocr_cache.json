@@ -1,0 +1,26 @@
+{
+ "claim_form": {
+  "text": "HDFC ERGO General Insurance\n\nHealth insurance Claim Form (Reimbursement), Part A\n\nPolicy number HD4907165767\n\nProduct Optima Secure\n\nPolicy start date 1101/2024\n\nSum insured (Rs.) 5,00,000\n\nName of patient Nitesh Oommen\n\nAge / Sex 35 years / F\n\nContact number \" 9333827806\n\nHospital name \" Harmony Medical Centre, indore\n\nDate of admission 11/09/2025\n\nDate of discharge 14/09/2025\n\nDiagnosis / ailment acute appendicitis, appendectomy\n\nNature of iliness | Mines\n\nRoom category occupied private\n\nTotal amount claimed (Rs.) 91,600\n\nDeclaration\n\n| declare that the information furnished in this claim form is rue and correct to the best of my knowledge. | agree 10\n\nprovide any further documents required by the insurer.\n\nSignature of the insured: Date: 14/09/2025\n\nSycthetx lest docwnenl, gonerwhad tov sotwaie qvahiaton Not a teal recerd Paw t\n",
+  "method": "ocr"
+ },
+ "discharge_summary": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHarmony Medical Centre\nDischarge Summary\nPatient\nNitesh Oommen, 35 years, F\nUHID\nUH957880\nDate of admission\n11/09/2025\nDate of discharge\n14/09/2025\nLength of stay\n3 day(s)\nConsultant\nDr. A. Kulkarni\nFinal diagnosis\nacute appendicitis, appendectomy\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to acute appendicitis, appendectomy. Investigations were done and\ntreatment was given as per protocol. The post-treatment period was uneventful and the patient was discharged in\nstable condition on 14/09/2025.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. A. Kulkarni (Treating consultant)\n",
+  "method": "text_layer"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHarmony Medical Centre\nIndore | Final Inpatient Bill\nBill no\nBL/2025/84145\nUHID\nUH957880\nPatient\nNitesh Oommen\nAge / Sex\n35 / F\nAdmitted\n11/09/2025\nDischarged\n14/09/2025\nConsultant\nDr. A. Kulkarni\nRoom\nprivate\nSummary of charges\nHead\nAmount\nRoom and Bed Charges\n21,900\nProfessional Fees\n32,450\nOperation Theatre\n15,550\nPharmacy\n8,450\nConsumables\n3,000\nDiagnostics\n5,300\nNursing\n4,950\nTotal bill\n91,600\n\nSynthetic test document, generated for software evaluation. Not a real record.\nPage 2\nItemised statement\nDate\nDescription\nQty\nRate\nAmount\n11/09/2025\nRoom charges (private)\n3\n7,300\n21,900\n11/09/2025\nSurgeon and anaesthetist fees\n1\n32,450\n32,450\n11/09/2025\nOperation theatre charges\n1\n15,550\n15,550\n11/09/2025\nLaboratory and radiology investigations\n1\n5,300\n5,300\n11/09/2025\nNursing charges\n1\n4,950\n4,950\n11/09/2025\nPharmacy and medicines\n1\n8,450\n8,450\n11/09/2025\nDisposable consumables and admission kit\n1\n3,000\n3,000\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nNitesh Oommen\nAge / Gender\n35 / F\nID number\nXXXX XXXX 4340\nMobile\n9333827806\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHarmony Medical Centre Pathology\nPatient: Nitesh Oommen | Date: 11/09/2025\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. A. Kulkarni\nHarmony Medical Centre\nPatient: Nitesh Oommen, 35/F Date: 11/09/2025\nDiagnosis: acute appendicitis, appendectomy\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ }
+}

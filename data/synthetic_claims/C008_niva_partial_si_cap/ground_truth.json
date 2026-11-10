@@ -9,17 +9,19 @@
   {
    "rule": "non_payable",
    "amount": 3950.0,
-   "clause_id": null,
+   "clause_id": "6.2.9",
    "note": "consumable"
   },
   {
    "rule": "sum_insured_cap",
    "amount": 83800.0,
-   "clause_id": null,
+   "clause_id": "2.2.1",
    "note": ""
   }
  ],
  "expected_clause_ids": [
+  "6.2.9",
+  "2.2.1",
   "4.1.2"
  ],
  "expected_flags": [],

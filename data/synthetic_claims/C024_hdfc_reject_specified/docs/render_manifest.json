@@ -1,0 +1,52 @@
+{
+ "claim_id": "C024_hdfc_reject_specified",
+ "ids": {
+  "policy_no": "HD9350942479",
+  "hospital": "Sanjivani Hospital and Research Centre",
+  "city": "Nagpur",
+  "bill_no": "BL/2025/64338",
+  "uhid": "UH530808",
+  "phone": "9834390307",
+  "aadhaar_tail": "2889",
+  "doctor": "Dr. P. Deshmukh"
+ },
+ "bill_layout": "summary_first",
+ "docs": [
+  {
+   "doc": "claim_form",
+   "file": "claim_form.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "hospital_bill",
+   "file": "hospital_bill.pdf",
+   "scanned": false,
+   "layout": "summary_first"
+  },
+  {
+   "doc": "discharge_summary",
+   "file": "discharge_summary.pdf",
+   "scanned": true,
+   "layout": null
+  },
+  {
+   "doc": "id_proof",
+   "file": "id_proof.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "lab_report",
+   "file": "lab_report.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "prescription",
+   "file": "prescription.pdf",
+   "scanned": false,
+   "layout": null
+  }
+ ]
+}

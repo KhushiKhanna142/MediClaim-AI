@@ -1,0 +1,52 @@
+{
+ "claim_id": "C003_niva_clean_approve",
+ "ids": {
+  "policy_no": "NB4521983252",
+  "hospital": "Harmony Medical Centre",
+  "city": "Nagpur",
+  "bill_no": "BL/2026/49871",
+  "uhid": "UH486444",
+  "phone": "9100534255",
+  "aadhaar_tail": "1333",
+  "doctor": "Dr. P. Deshmukh"
+ },
+ "bill_layout": "classic",
+ "docs": [
+  {
+   "doc": "claim_form",
+   "file": "claim_form.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "hospital_bill",
+   "file": "hospital_bill.pdf",
+   "scanned": false,
+   "layout": "classic"
+  },
+  {
+   "doc": "discharge_summary",
+   "file": "discharge_summary.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "id_proof",
+   "file": "id_proof.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "lab_report",
+   "file": "lab_report.pdf",
+   "scanned": true,
+   "layout": null
+  },
+  {
+   "doc": "prescription",
+   "file": "prescription.pdf",
+   "scanned": true,
+   "layout": null
+  }
+ ]
+}

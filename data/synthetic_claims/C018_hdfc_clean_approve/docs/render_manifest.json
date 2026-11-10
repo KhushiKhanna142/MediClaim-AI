@@ -1,0 +1,52 @@
+{
+ "claim_id": "C018_hdfc_clean_approve",
+ "ids": {
+  "policy_no": "HD6856611391",
+  "hospital": "Sanjivani Hospital and Research Centre",
+  "city": "Indore",
+  "bill_no": "BL/2026/28636",
+  "uhid": "UH907736",
+  "phone": "9195087908",
+  "aadhaar_tail": "6901",
+  "doctor": "Dr. A. Kulkarni"
+ },
+ "bill_layout": "grouped",
+ "docs": [
+  {
+   "doc": "claim_form",
+   "file": "claim_form.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "hospital_bill",
+   "file": "hospital_bill.pdf",
+   "scanned": false,
+   "layout": "grouped"
+  },
+  {
+   "doc": "discharge_summary",
+   "file": "discharge_summary.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "id_proof",
+   "file": "id_proof.pdf",
+   "scanned": true,
+   "layout": null
+  },
+  {
+   "doc": "lab_report",
+   "file": "lab_report.pdf",
+   "scanned": true,
+   "layout": null
+  },
+  {
+   "doc": "prescription",
+   "file": "prescription.pdf",
+   "scanned": true,
+   "layout": null
+  }
+ ]
+}

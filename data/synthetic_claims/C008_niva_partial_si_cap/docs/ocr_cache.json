@@ -1,0 +1,26 @@
+{
+ "claim_form": {
+  "text": "Niva Bupa Health Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number NB3851053482.\n\"Product ReAssure (Aspire)\nPolicy start date | 26/06/2023 :\nSum insured (Rs.) \" 3,00,000\nName of patient Mekhala Bawa\nAge / Sex 36 years / F\nContact number 9547403679\nHospital name Sunrise Multispeciality Hospital, Indore\nDate of admission 26/08/2025\nDate of discharge | 30/08/2025\nDiagnosis / ailment total knee replacement\nNature of illness lliness\nRoom category occupied standard single\nTotal amount claimed (Rs.) 3,87,750\nDeclaration\n| declare that the information furnished in this claim form is true and correct to the best of my knowledge. | agree to\nprovide any further documents required by the insurer.\nSignature of the insured: Date: 30/08/2025\n",
+  "method": "ocr"
+ },
+ "discharge_summary": {
+  "text": "Sunrise Multispeciality Hospital\nDischarge Summary\nPatient Mekhala Bawa, 36 years, F\nUHID UH194171\nDate of admission 26/08/2025\nDate of discharge 30/08/2025\nLength of stay 4 day(s)\nConsultant Dr. P. Deshmukh\nFinal diagnosis\ntotal knee replacement\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to total knee replacement. Investigations were done and treatment\nwas given as per protocol. The post-treatment period was uneventful and the patient was discharged in stable\ncondition on 30/08/2025.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity,\nDr. P. Deshmukh (Treating consultant)\nSynthetic test document, generated for sonware evaluation. Not a real record. Page!\n",
+  "method": "ocr"
+ },
+ "hospital_bill": {
+  "text": "Sunrise Multispeciality Hospital\nIndore | Final Inpatient Bilt\nBill no BL/2025/60262 UHID UH194171\nPatient Mekhala Bawa Age/Sex 36 /F\nAdmitted 26/08/2025 Discharged 3008/2025\nConsultant Dr. P. Deshmukh Room standard single\n1 Room charges (standard single) 4 4,000 16,000\n2 Surgeon and anaesthetist fees 1 84,950 84,950\n3 Operation theatre charges | 1] 27,750 27,750\n4 Laboratory and radiology investigations 1 9,950 | 9.950\n5 Nursing charges | +] 11,150 11,150\n6 Pharmacy and medicines ' 23,000 23,000\n7 | implant / prosthesis 1 2,11,000 _ 2,11,000\n8 Disposable consumables and admission kit 1 3,950 3,950\nTOTAL 3,87,750\nSynttwtic teat document. guneriind for software evaluation. Not a real recond Page!\n",
+  "method": "ocr"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nMekhala Bawa\nAge / Gender\n36 / F\nID number\nXXXX XXXX 8951\nMobile\n9547403679\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nSunrise Multispeciality Hospital Pathology\nPatient: Mekhala Bawa | Date: 26/08/2025\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Dr. P. Deshmukh\nSunrise Multispeciality Hospital\nPatient: Mekhala Bawa, 36/F Date: 26/08/2025\nDiagnosis: total knee replacement\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\nSyothetic test document, generated for software evaluation. Not a seal record Page 1\n",
+  "method": "ocr"
+ }
+}

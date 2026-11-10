@@ -1,0 +1,26 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nHD6856611391\nProduct\nOptima Secure\nPolicy start date\n21/03/2024\nSum insured (Rs.)\n10,00,000\nName of patient\nCharita Vohra\nAge / Sex\n66 years / F\nContact number\n9195087908\nHospital name\nSanjivani Hospital and Research Centre, Indore\nDate of admission\n21/08/2026\nDate of discharge\n27/08/2026\nDiagnosis / ailment\npneumonia\nNature of illness\nIllness\nRoom category occupied\nstandard single\nTotal amount claimed (Rs.)\n73,300\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 27/08/2026\n",
+  "method": "text_layer"
+ },
+ "discharge_summary": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nSanjivani Hospital and Research Centre\nDischarge Summary\nPatient\nCharita Vohra, 66 years, F\nUHID\nUH907736\nDate of admission\n21/08/2026\nDate of discharge\n27/08/2026\nLength of stay\n6 day(s)\nConsultant\nDr. A. Kulkarni\nFinal diagnosis\npneumonia\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to pneumonia. Investigations were done and treatment was given as\nper protocol. The post-treatment period was uneventful and the patient was discharged in stable condition on\n27/08/2026.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. A. Kulkarni (Treating consultant)\n",
+  "method": "text_layer"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nSanjivani Hospital and Research Centre\nIndore | Final Inpatient Bill\nBill no\nBL/2026/28636\nUHID\nUH907736\nPatient\nCharita Vohra\nAge / Sex\n66 / F\nAdmitted\n21/08/2026\nDischarged\n27/08/2026\nConsultant\nDr. A. Kulkarni\nRoom\nstandard single\nParticulars\nQty\nRate\nAmount\nROOM AND BED CHARGES\n   Room charges (standard single)\n6\n4,300\n25,800\n   Sub-total\n25,800\nPHARMACY\n   Pharmacy and medicines\n1\n19,300\n19,300\n   Sub-total\n19,300\nDIAGNOSTICS\n   Laboratory and radiology investigations\n1\n9,050\n9,050\n   Sub-total\n9,050\nNURSING\n   Nursing charges\n1\n8,500\n8,500\n   Sub-total\n8,500\nOTHER CHARGES\n   Consultant visits and monitoring\n1\n10,650\n10,650\n   Sub-total\n10,650\nGRAND TOTAL\n73,300\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Government of India (specimen ID card, synthetic)\nName Charita Vohra\nAge / Gender 66/F\nID number XXXX XXXX 6901\nMobile 9195087908\n",
+  "method": "ocr"
+ },
+ "lab_report": {
+  "text": "Sanjivani Hospital and Research Centre Pathology\nPatient: Charita Vohra | Date: 21/08/2026\n\nTest Result Reference\nHaemoglobin 13.1 g/dL. 12.0 - 16.0\nWBC count 7,400 /cmm 4,000 - 11,000\n\n| Blood sugar (random) 104 mg/dL. 70-140\nSerum creatinine 0.9 mg/dL 0.6-1.2\n\nSynihatic tes! document, gonersted for gofteare evaluator: Not a real record Page |!\n",
+  "method": "ocr"
+ },
+ "prescription": {
+  "text": "Dr. A. Kulkarni\nSanjivani Hospital and Research Centre\nPatient: Charita Vohra, 66/F Date: 21/08/2026\nDiagnosis: pneumonia\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n\u2018Synthnric test docyenent gore ated tor tottveatre: ewaliiscr Not a rea) record, Paget\n",
+  "method": "ocr"
+ }
+}

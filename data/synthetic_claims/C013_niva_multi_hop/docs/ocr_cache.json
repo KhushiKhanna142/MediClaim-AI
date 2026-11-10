@@ -1,0 +1,26 @@
+{
+ "claim_form": {
+  "text": "Niva Bupa Health insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number _ NB6874677865\nProduct _ ReAssure (Aspire) :\nPolicy start date 24/01/2023\nSum insured (Rs.) 5,00,000\nName of patient \"Dev Bhasin\nAge / Sex 50 years /M\nContact number 9728493621\nHospital name Metro Heart and General Hospital, Jaipur\nDate of admission 24/07/2025\nDate of discharge 29/07/2025\nDiagnosis / ailment | total knee replacement\nNature of iliness _ Miness\nRoom category occupied standard single\nTotal amount claimed (Rs.) 3,58,000\nDeclaration\n! deciare that the information furnished in this claim form is true and correct to the best of my knowledge. | agree to\nSignature ot the insured: Date: 29/07/2025\nSyrwhuete test gocuemertt, gece ated tor sotmere eviduaton. Not & real ecard Paget\n",
+  "method": "ocr"
+ },
+ "discharge_summary": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nMetro Heart and General Hospital\nDischarge Summary\nPatient\nDev Bhasin, 50 years, M\nUHID\nUH981373\nDate of admission\n24/07/2025\nDate of discharge\n29/07/2025\nLength of stay\n5 day(s)\nConsultant\nDr. P. Deshmukh\nFinal diagnosis\ntotal knee replacement\nHistory\nKnown case of total knee replacement, diagnosed on 25/07/2021, on regular treatment.\nCourse in hospital\nThe patient was admitted with complaints related to total knee replacement. Investigations were done and treatment\nwas given as per protocol. The post-treatment period was uneventful and the patient was discharged in stable\ncondition on 29/07/2025.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. P. Deshmukh (Treating consultant)\n",
+  "method": "text_layer"
+ },
+ "hospital_bill": {
+  "text": "Metro Heart and General Hospital\nJaipur | Final Inpatient Bill\nBill no BL/2025/30390 UHID UH981373\nPatient Dev Bhasin Age / Sex 50/M\nAdmitted 24/07/2025 Discharged 29/07/2025\nConsultant Dr. P. Deshmukh Room standard single\nSummary of charges\nHead ; Amount\nRoom and Bed Charges 23,500\nProfessional Fees as Bienes pete 60,850\nOperation Theatre 25,400\nPharmacy ee RIES eee oO eee OL ; 25,400\nConsumables 4,350\nDiagnostics aSentateey ies eins SNe aa nS Bey oh 9,950\nImplants 4 1,96,500\nTotal bill 3,58,000\nSynthetic tes! document, generated for soltware evaluation. Not a teal record Page 1\n\nItemised statement\n\nDate Description Qty \u2018Rate Amount\n24/07/2025 Room charges (standard single) 5 4,700 23,500\n24/07/2025 Surgeon and anaesthetist fees 1 60,850 60,850\n24/07/2025 Operation theatre charges 1 25,400 25,400\n24/07/2025 Laboratory and radiology investigations 1 9,950 9.950\n24/07/2025 Nursing charges 1 12,050 12,050\n24/07/2025 Pharmacy and medicines 1 25,400 25,400\n24/07/2025 Implant / prosthesis 1 1,96,500 1,96,500\n24/07/2025 Disposable consumables and admission kit 1 4,350 4,350\n\nSynthetic tent document, gensrated for software evaluation. Not a real record. Page z\n",
+  "method": "ocr"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nDev Bhasin\nAge / Gender\n50 / M\nID number\nXXXX XXXX 8625\nMobile\n9728493621\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Metro Heart and General Hospital Pathology\nPatient: Dev Bhasin | Date: 24/07/2025\nTest | Result riot\n: 13.1 gid 12.0 - 16.0\nWBC count j 7,400 \u2018comm 4,000 - 11,000\nBlood sugar (random) 104 mg/d bili\nS \u2018 0.9 mg/dl. 06-12\niyriteetie: Nett OREM, ganratEd fer commie wwahwation. Hot a ret iced dn ia\n",
+  "method": "ocr"
+ },
+ "prescription": {
+  "text": "Dr. P. Deshmukh\nMetro Heart and General Hospital\nPatient: Dev Bhasin, 50/M Date: 24/07/2025\nDiagnosis: total knee replacement\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\nSynthetic test document, gonerated for software evaluation, Not a real record. Page 1\n",
+  "method": "ocr"
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nNB1423768735\nProduct\nReAssure (Aspire)\nPolicy start date\n20/03/2025\nSum insured (Rs.)\n5,00,000\nName of patient\nJatin Kapoor\nAge / Sex\n42 years / F\nContact number\n9139957118\nHospital name\nMetro Heart and General Hospital, Ahmedabad\nDate of admission\n20/06/2025\nDate of discharge\n26/06/2025\nDiagnosis / ailment\nfracture of femur, ORIF (road accident)\nNature of illness\nAccident / injury\nRoom category occupied\nstandard single\nTotal amount claimed (Rs.)\n2,25,150\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 26/06/2025\n",
+  "method": "text_layer"
+ },
+ "discharge_summary": {
+  "text": "Metro Heart and General Hospital\nDischarge Summary\nPatient Jatin Kapoor, 42 years, F\nUHID UH776738\nDate of admission 20/06/2025\nDate of discharge 26/06/2025\nLength of stay 6 day(s)\nConsultant Dr. A. Kulkarni\nFinal diagnosis\nfracture of femur, ORIF (road accident)\nHistory\nCourse in hospital\nThe patient was admitted with complaints related to fracture of femur, ORIF (road accident). Investigations were done\nand treatment was given as per protocol. The post-treatment period was uneventful and the patient was discharged in\nStable condition on 26/06/2025.\nAdvice on discharge\nDr. A. Kulkarni (Treating consultant)\n\u2018Synihetc test document. generated tar software evaiuabon Not a rea record Page |\n",
+  "method": "ocr"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nMetro Heart and General Hospital\nAhmedabad | Final Inpatient Bill\nBill no\nBL/2025/50341\nUHID\nUH776738\nPatient\nJatin Kapoor\nAge / Sex\n42 / F\nAdmitted\n20/06/2025\nDischarged\n26/06/2025\nConsultant\nDr. A. Kulkarni\nRoom\nstandard single\nItem\nAmount (Rs.)\nRoom charges (standard single)  (6 x 4,600)\n27,600\nSurgeon and anaesthetist fees\n54,100\nOperation theatre charges\n26,450\nLaboratory and radiology investigations\n9,300\nNursing charges\n10,250\nPharmacy and medicines\n19,850\nImplant / prosthesis\n74,150\nDisposable consumables and admission kit\n3,450\nNet payable\n2,25,150\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nJatin Kapoor\nAge / Gender\n42 / F\nID number\nXXXX XXXX 4818\nMobile\n9139957118\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nMetro Heart and General Hospital Pathology\nPatient: Jatin Kapoor | Date: 20/06/2025\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. A. Kulkarni\nMetro Heart and General Hospital\nPatient: Jatin Kapoor, 42/F Date: 20/06/2025\nDiagnosis: fracture of femur, ORIF (road accident)\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ }
+}

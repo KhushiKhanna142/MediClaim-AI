@@ -1,0 +1,26 @@
+{
+ "claim_form": {
+  "text": "Niva Bupa Health Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\n\"Policy number _NB60S4592048 i\nProduct ReAssure (Aspire)\n' Policy start date 26/06/2025\nSum insured (Rs.) 3,00,000\nName of patient : Omya Boase\nAge / Sex 70 years / F\nContact number \"9939866431\nHospital name Harmony Medical Centre, Pune\nDate of admission | 26/07/2026\nDate of discharge 31/07/2026\nDiagnosis / ailment dengue fever\nNature of illness lliness\nRoom category occupied deluxe\nTotal amount claimed (Rs.) 1,00,700\nDeclaration\n| declare that the information furnished in this claim form is true and correct to the best of my knowledge. | agree to\nprovide any further documents required by the insurer.\nSignature of the insured: Date: 31/07/2026\nSynthetic test document, generated for software evaluation. Not a real record. Page 1\n",
+  "method": "ocr"
+ },
+ "discharge_summary": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHarmony Medical Centre\nDischarge Summary\nPatient\nOmya Boase, 70 years, F\nUHID\nUH134035\nDate of admission\n26/07/2026\nDate of discharge\n31/07/2026\nLength of stay\n5 day(s)\nConsultant\nDr. P. Deshmukh\nFinal diagnosis\ndengue fever\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to dengue fever. Investigations were done and treatment was given\nas per protocol. The post-treatment period was uneventful and the patient was discharged in stable condition on\n31/07/2026.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. P. Deshmukh (Treating consultant)\n",
+  "method": "text_layer"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHarmony Medical Centre\nPune | Final Inpatient Bill\nBill no\nBL/2026/37483\nUHID\nUH134035\nPatient\nOmya Boase\nAge / Sex\n70 / F\nAdmitted\n26/07/2026\nDischarged\n31/07/2026\nConsultant\nDr. P. Deshmukh\nRoom\ndeluxe\nSl\nDescription\nQty\nRate\nAmount\n1\nRoom charges (deluxe)\n5\n10,400\n52,000\n2\nConsultant visits and monitoring\n1\n13,800\n13,800\n3\nLaboratory and radiology investigations\n1\n8,750\n8,750\n4\nNursing charges\n1\n7,350\n7,350\n5\nPharmacy and medicines\n1\n17,450\n17,450\n6\nDisposable consumables and admission kit\n1\n1,350\n1,350\nTOTAL\n1,00,700\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Government of India (specimen ID card, synthetic)\nName Omya Boase\nAge / Gender 70/F\nID number XXXX XXXX 5362\nMobile 9939866431\n",
+  "method": "ocr"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHarmony Medical Centre Pathology\nPatient: Omya Boase | Date: 26/07/2026\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Dr. P. Deshmukh\nHarmony Medical Centre\nPatient: Omya Boase, 70/F Date: 26/07/2026\nDiagnosis: dengue fever\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\nSynthetic est dociyment, genersied for softeare evaluation. Not a dew record. Paget\n",
+  "method": "ocr"
+ }
+}

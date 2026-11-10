@@ -9,7 +9,32 @@ from __future__ import annotations
 import os
 import time
 
-DEFAULT_MODELS = {"anthropic": "claude-haiku-4-5", "openai": "gpt-4o-mini", "gemini": "gemini-3.1-flash-lite"}
+DEFAULT_MODELS = {"anthropic": "claude-haiku-4-5", "openai": "gpt-4o-mini", "gemini": "gemini-3.8-flash"}
+
+
+class AnthropicLLM:
+    def __init__(self, model: str | None = None):
+        import anthropic
+        self.client = anthropic.Anthropic()
+        self.model = model or os.getenv("CLAIM_LLM_MODEL") or DEFAULT_MODELS["anthropic"]
+
+    def complete(self, system: str, user: str, max_tokens: int = 300) -> str:
+        r = self.client.messages.create(model=self.model, max_tokens=max_tokens, temperature=0,
+                                        system=system, messages=[{"role": "user", "content": user}])
+        return "".join(b.text for b in r.content if getattr(b, "type", "") == "text")
+
+
+class OpenAILLM:
+    def __init__(self, model: str | None = None):
+        from openai import OpenAI
+        self.client = OpenAI()
+        self.model = model or os.getenv("CLAIM_LLM_MODEL") or DEFAULT_MODELS["openai"]
+
+    def complete(self, system: str, user: str, max_tokens: int = 300) -> str:
+        r = self.client.chat.completions.create(model=self.model, max_tokens=max_tokens, temperature=0,
+                                                messages=[{"role": "system", "content": system},
+                                                          {"role": "user", "content": user}])
+        return r.choices[0].message.content or ""
 
 
 class GeminiLLM:
@@ -27,7 +52,7 @@ class GeminiLLM:
         self.retries, self.wait_s = retries, wait_s
 
     def complete(self, system: str, user: str, max_tokens: int = 300) -> str:
-        cfg = {"system_instruction": system, "temperature": 0, "max_output_tokens": max(max_tokens, 1024)}
+        cfg = {"system_instruction": system, "temperature": 0, "max_output_tokens": max(max_tokens * 4, 4096)}  # thinking models spend part of this budget before answering
         for attempt in range(self.retries + 1):
             try:
                 r = self.client.models.generate_content(model=self.model, contents=user, config=cfg)

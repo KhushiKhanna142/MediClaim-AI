@@ -1,0 +1,52 @@
+{
+ "claim_id": "C015_niva_total_mismatch",
+ "ids": {
+  "policy_no": "NB2723150337",
+  "hospital": "Sunrise Multispeciality Hospital",
+  "city": "Nagpur",
+  "bill_no": "BL/2025/76431",
+  "uhid": "UH602799",
+  "phone": "9659029457",
+  "aadhaar_tail": "5660",
+  "doctor": "Dr. V. Iyer"
+ },
+ "bill_layout": "grouped",
+ "docs": [
+  {
+   "doc": "claim_form",
+   "file": "claim_form.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "hospital_bill",
+   "file": "hospital_bill.pdf",
+   "scanned": true,
+   "layout": "grouped"
+  },
+  {
+   "doc": "discharge_summary",
+   "file": "discharge_summary.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "id_proof",
+   "file": "id_proof.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "lab_report",
+   "file": "lab_report.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "prescription",
+   "file": "prescription.pdf",
+   "scanned": false,
+   "layout": null
+  }
+ ]
+}

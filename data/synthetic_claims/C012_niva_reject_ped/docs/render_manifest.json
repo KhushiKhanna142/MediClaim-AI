@@ -1,0 +1,52 @@
+{
+ "claim_id": "C012_niva_reject_ped",
+ "ids": {
+  "policy_no": "NB7089247694",
+  "hospital": "Metro Heart and General Hospital",
+  "city": "Ahmedabad",
+  "bill_no": "BL/2026/30833",
+  "uhid": "UH577917",
+  "phone": "9898310606",
+  "aadhaar_tail": "9357",
+  "doctor": "Dr. S. Mehta"
+ },
+ "bill_layout": "summary_first",
+ "docs": [
+  {
+   "doc": "claim_form",
+   "file": "claim_form.pdf",
+   "scanned": true,
+   "layout": null
+  },
+  {
+   "doc": "hospital_bill",
+   "file": "hospital_bill.pdf",
+   "scanned": false,
+   "layout": "summary_first"
+  },
+  {
+   "doc": "discharge_summary",
+   "file": "discharge_summary.pdf",
+   "scanned": true,
+   "layout": null
+  },
+  {
+   "doc": "id_proof",
+   "file": "id_proof.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "lab_report",
+   "file": "lab_report.pdf",
+   "scanned": true,
+   "layout": null
+  },
+  {
+   "doc": "prescription",
+   "file": "prescription.pdf",
+   "scanned": false,
+   "layout": null
+  }
+ ]
+}

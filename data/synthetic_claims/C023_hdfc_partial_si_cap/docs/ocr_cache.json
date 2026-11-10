@@ -1,0 +1,26 @@
+{
+ "claim_form": {
+  "text": "HDFC ERGO General Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\n~ Policy number HD7129340549\n' Product Optima Secure\nPolicy start date 08/08/2023 it\nSum insured (Rs.) 3,00,000\nName of patient Faras Murthy\nAge / Sex 60 years / F\nContact number | 9138725318\nHospital name Lotus Care Hospital, Indore\nDate of admission 08/03/2026\nDate of discharge 13/03/2026\nDiagnosis / ailment total knee replacement\nNature of illness lliness\nRoom category occupied standard single\nTotal amount claimed (Rs.) 3,58,600\nDeclaration\n| declare that the information furnished in this claim form is true and correct to the best of my knowledge. | agree to\nprovide any further documents required by the insurer.\nSignature of the insured: Date: 13/03/2026\nSynthetic test document, generated for software evaluation. Not a reai record. Page 1\n",
+  "method": "ocr"
+ },
+ "discharge_summary": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nLotus Care Hospital\nDischarge Summary\nPatient\nFaras Murthy, 60 years, F\nUHID\nUH231289\nDate of admission\n08/03/2026\nDate of discharge\n13/03/2026\nLength of stay\n5 day(s)\nConsultant\nDr. R. Nair\nFinal diagnosis\ntotal knee replacement\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to total knee replacement. Investigations were done and treatment\nwas given as per protocol. The post-treatment period was uneventful and the patient was discharged in stable\ncondition on 13/03/2026.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. R. Nair (Treating consultant)\n",
+  "method": "text_layer"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nLotus Care Hospital\nIndore | Final Inpatient Bill\nBill no\nBL/2026/87188\nUHID\nUH231289\nPatient\nFaras Murthy\nAge / Sex\n60 / F\nAdmitted\n08/03/2026\nDischarged\n13/03/2026\nConsultant\nDr. R. Nair\nRoom\nstandard single\nSl\nDescription\nQty\nRate\nAmount\n1\nRoom charges (standard single)\n5\n4,600\n23,000\n2\nSurgeon and anaesthetist fees\n1\n81,650\n81,650\n3\nOperation theatre charges\n1\n25,300\n25,300\n4\nLaboratory and radiology investigations\n1\n11,900\n11,900\n5\nNursing charges\n1\n13,500\n13,500\n6\nPharmacy and medicines\n1\n15,250\n15,250\n7\nImplant / prosthesis\n1\n1,83,150\n1,83,150\n8\nDisposable consumables and admission kit\n1\n4,850\n4,850\nTOTAL\n3,58,600\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Government of India (specimen ID card, synthetic)\nName Faras Murthy\nAge / Gender 60/F\nID number XXXX XXXX 1282\nMobile 9138725318\n",
+  "method": "ocr"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nLotus Care Hospital Pathology\nPatient: Faras Murthy | Date: 08/03/2026\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. R. Nair\nLotus Care Hospital\nPatient: Faras Murthy, 60/F Date: 08/03/2026\nDiagnosis: total knee replacement\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ }
+}

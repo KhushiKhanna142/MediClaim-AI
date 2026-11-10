@@ -1,0 +1,52 @@
+{
+ "claim_id": "C007_niva_partial_nonpayable",
+ "ids": {
+  "policy_no": "NB1423768735",
+  "hospital": "Metro Heart and General Hospital",
+  "city": "Ahmedabad",
+  "bill_no": "BL/2025/50341",
+  "uhid": "UH776738",
+  "phone": "9139957118",
+  "aadhaar_tail": "4818",
+  "doctor": "Dr. A. Kulkarni"
+ },
+ "bill_layout": "compact",
+ "docs": [
+  {
+   "doc": "claim_form",
+   "file": "claim_form.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "hospital_bill",
+   "file": "hospital_bill.pdf",
+   "scanned": false,
+   "layout": "compact"
+  },
+  {
+   "doc": "discharge_summary",
+   "file": "discharge_summary.pdf",
+   "scanned": true,
+   "layout": null
+  },
+  {
+   "doc": "id_proof",
+   "file": "id_proof.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "lab_report",
+   "file": "lab_report.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "prescription",
+   "file": "prescription.pdf",
+   "scanned": false,
+   "layout": null
+  }
+ ]
+}

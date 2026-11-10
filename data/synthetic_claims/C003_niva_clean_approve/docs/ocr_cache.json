@@ -1,0 +1,26 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nNB4521983252\nProduct\nReAssure (Aspire)\nPolicy start date\n17/01/2024\nSum insured (Rs.)\n10,00,000\nName of patient\nJasmit Bhardwaj\nAge / Sex\n51 years / M\nContact number\n9100534255\nHospital name\nHarmony Medical Centre, Nagpur\nDate of admission\n17/01/2026\nDate of discharge\n19/01/2026\nDiagnosis / ailment\ninguinal hernia repair\nNature of illness\nIllness\nRoom category occupied\nstandard single\nTotal amount claimed (Rs.)\n1,12,700\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 19/01/2026\n",
+  "method": "text_layer"
+ },
+ "discharge_summary": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHarmony Medical Centre\nDischarge Summary\nPatient\nJasmit Bhardwaj, 51 years, M\nUHID\nUH486444\nDate of admission\n17/01/2026\nDate of discharge\n19/01/2026\nLength of stay\n2 day(s)\nConsultant\nDr. P. Deshmukh\nFinal diagnosis\ninguinal hernia repair\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to inguinal hernia repair. Investigations were done and treatment was\ngiven as per protocol. The post-treatment period was uneventful and the patient was discharged in stable condition on\n19/01/2026.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. P. Deshmukh (Treating consultant)\n",
+  "method": "text_layer"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHarmony Medical Centre\nNagpur | Final Inpatient Bill\nBill no\nBL/2026/49871\nUHID\nUH486444\nPatient\nJasmit Bhardwaj\nAge / Sex\n51 / M\nAdmitted\n17/01/2026\nDischarged\n19/01/2026\nConsultant\nDr. P. Deshmukh\nRoom\nstandard single\nSl\nDescription\nQty\nRate\nAmount\n1\nRoom charges (standard single)\n2\n5,100\n10,200\n2\nSurgeon and anaesthetist fees\n1\n42,400\n42,400\n3\nOperation theatre charges\n1\n15,950\n15,950\n4\nLaboratory and radiology investigations\n1\n6,150\n6,150\n5\nNursing charges\n1\n5,350\n5,350\n6\nPharmacy and medicines\n1\n8,800\n8,800\n7\nImplant / prosthesis\n1\n23,850\n23,850\nTOTAL\n1,12,700\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nJasmit Bhardwaj\nAge / Gender\n51 / M\nID number\nXXXX XXXX 1333\nMobile\n9100534255\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Harmony Medical Centre Pathology\nPatient: Jasmit Bhardwaj | Date: 17/01/2026\n\nTest Result Reference\n\na 13.1 gid Loan\naiecs Golan 7,400 /emm 4,000 - 11,000\nBlood sugar (random) 104 mg/dL 70 - 140\nSerum creatinine 0.9 mg/dl. mrad\nSyrihetic test doeurnent. ganecabed I sottware evaluation Not 6 real record eet\n",
+  "method": "ocr"
+ },
+ "prescription": {
+  "text": "Dr. P. Deshmukh\nHarmony Medical Centre\nPatient: Jasmit Bhardwaj, 51/M Date: 17/01/2026\nRx: Tab. Paracetamol! 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\nSipetnatic test document, yrnaraied tor cotware wrsiathion. Mote ee) recor Paget\n",
+  "method": "ocr"
+ }
+}

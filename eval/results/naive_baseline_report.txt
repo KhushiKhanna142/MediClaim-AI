@@ -1,0 +1,13 @@
+category                            n     decision_acc    payable_exact  payable_err_pct      cite_recall   cite_precision cite_unsupported
+approve_continuity                  2             1.00             1.00             0.00             0.50             0.50             0.00
+clean_approve                       6             0.83             0.83            16.67             0.17             0.08             0.17
+missing_docs                        2             0.50              nan              nan              nan              nan             0.00
+multi_hop                           2             0.00             0.50            50.00             0.00             0.00             0.00
+partial_nonpayable                  2             0.00             0.00            49.70             0.00             0.00             0.00
+partial_room                        4             0.00             0.00            41.47             0.08             0.25             0.25
+partial_si_cap                      2             0.50             1.00             0.00             0.17             0.50             0.00
+reject_30day                        2             0.50             0.50            50.00             0.00             0.00             0.00
+reject_ped                          2             0.00             0.00           100.00             0.00             0.00             0.00
+reject_specified                    4             0.00             0.00           100.00             0.00             0.00             0.00
+total_mismatch                      2             0.00              nan              nan              nan              nan             0.00
+ALL                                30             0.33             0.42            44.82             0.10             0.13             0.07

@@ -1,0 +1,52 @@
+{
+ "claim_id": "C023_hdfc_partial_si_cap",
+ "ids": {
+  "policy_no": "HD7129340549",
+  "hospital": "Lotus Care Hospital",
+  "city": "Indore",
+  "bill_no": "BL/2026/87188",
+  "uhid": "UH231289",
+  "phone": "9138725318",
+  "aadhaar_tail": "1282",
+  "doctor": "Dr. R. Nair"
+ },
+ "bill_layout": "classic",
+ "docs": [
+  {
+   "doc": "claim_form",
+   "file": "claim_form.pdf",
+   "scanned": true,
+   "layout": null
+  },
+  {
+   "doc": "hospital_bill",
+   "file": "hospital_bill.pdf",
+   "scanned": false,
+   "layout": "classic"
+  },
+  {
+   "doc": "discharge_summary",
+   "file": "discharge_summary.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "id_proof",
+   "file": "id_proof.pdf",
+   "scanned": true,
+   "layout": null
+  },
+  {
+   "doc": "lab_report",
+   "file": "lab_report.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "prescription",
+   "file": "prescription.pdf",
+   "scanned": false,
+   "layout": null
+  }
+ ]
+}

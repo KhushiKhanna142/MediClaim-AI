@@ -1,0 +1,26 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nNB9093500521\nProduct\nReAssure (Aspire)\nPolicy start date\n12/09/2024\nSum insured (Rs.)\n5,00,000\nName of patient\nChakradhar Deol\nAge / Sex\n34 years / F\nContact number\n9791079971\nHospital name\nLotus Care Hospital, Jaipur\nDate of admission\n12/02/2026\nDate of discharge\n14/02/2026\nDiagnosis / ailment\nlaparoscopic cholecystectomy (gallstones)\nNature of illness\nIllness\nRoom category occupied\nstandard single\nTotal amount claimed (Rs.)\n93,000\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 14/02/2026\n",
+  "method": "text_layer"
+ },
+ "discharge_summary": {
+  "text": "Lotus Care Hospital\nDischarge Summary\nPatient Chakradhar Deol, 34 years, F\nUHID UH505814\nDate of admission 12/02/2026\nDate of discharge 14/02/2026\nLength of stay 2 day(s)\nConsultant Dr. P. Deshmukh\nFinal diagnosis\nlaparoscopic cholecystectomy (gallstones)\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to laparoscopic cholecystectomy (gallstones). Investigations were\ndone and treatment was given as per protocol. The post-treatment period was uneventful and the patient was\ndischarged in stable condition on 14/02/2026.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. P. Deshmukh (Treating consultant)\nSynthetic test document, generated tor software evaluation. Not a real record. Page?\n",
+  "method": "ocr"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nLotus Care Hospital\nJaipur | Final Inpatient Bill\nBill no\nBL/2026/55287\nUHID\nUH505814\nPatient\nChakradhar Deol\nAge / Sex\n34 / F\nAdmitted\n12/02/2026\nDischarged\n14/02/2026\nConsultant\nDr. P. Deshmukh\nRoom\nstandard single\nSummary of charges\nHead\nAmount\nRoom and Bed Charges\n10,000\nProfessional Fees\n43,000\nOperation Theatre\n16,900\nPharmacy\n6,650\nConsumables\n3,200\nDiagnostics\n8,950\nNursing\n4,300\nTotal bill\n93,000\n\nSynthetic test document, generated for software evaluation. Not a real record.\nPage 2\nItemised statement\nDate\nDescription\nQty\nRate\nAmount\n12/02/2026\nRoom charges (standard single)\n2\n5,000\n10,000\n12/02/2026\nSurgeon and anaesthetist fees\n1\n43,000\n43,000\n12/02/2026\nOperation theatre charges\n1\n16,900\n16,900\n12/02/2026\nLaboratory and radiology investigations\n1\n8,950\n8,950\n12/02/2026\nNursing charges\n1\n4,300\n4,300\n12/02/2026\nPharmacy and medicines\n1\n6,650\n6,650\n12/02/2026\nDisposable consumables and admission kit\n1\n3,200\n3,200\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nChakradhar Deol\nAge / Gender\n34 / F\nID number\nXXXX XXXX 4996\nMobile\n9791079971\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Lotus Care Hospital Pathology\nPatient: Chakradhar Deol | Date: 12/02/2026\n\nTest Result = x | Reterence |\nHaemoglobin 13.1 g/dL 12.0 - 16.0\nWBC count 7,400 /emm 4,000 - 11,000\n\n| | |\nBlood sugar (random) 104 mg/dL 70 - 140\nSerum creatinine 0.9 mg/dL 0.6 - 1.2\n\nSynthatic test document, generated for software evaluator Not a real record. Page t\n",
+  "method": "ocr"
+ },
+ "prescription": {
+  "text": "Dr. P. Deshmukh\nLotus Care Hospital\nPatient: Chakradhar Deol, 34/F Date: 12/02/2026\nDiagnosis: laparoscopic cholecystectomy (gallstones)\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\nByrthete test doc uTEs. geeerinted tor coftware gwakattan Nol a real record Page !\n",
+  "method": "ocr"
+ }
+}

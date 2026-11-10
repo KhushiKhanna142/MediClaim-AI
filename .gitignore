@@ -46,4 +46,5 @@ htmlcov/
 .vscode/
 *.swp
 *.lock
+debug_out.txt
 

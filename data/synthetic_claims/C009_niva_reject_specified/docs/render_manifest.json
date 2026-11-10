@@ -1,0 +1,52 @@
+{
+ "claim_id": "C009_niva_reject_specified",
+ "ids": {
+  "policy_no": "NB9093500521",
+  "hospital": "Lotus Care Hospital",
+  "city": "Jaipur",
+  "bill_no": "BL/2026/55287",
+  "uhid": "UH505814",
+  "phone": "9791079971",
+  "aadhaar_tail": "4996",
+  "doctor": "Dr. P. Deshmukh"
+ },
+ "bill_layout": "summary_first",
+ "docs": [
+  {
+   "doc": "claim_form",
+   "file": "claim_form.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "hospital_bill",
+   "file": "hospital_bill.pdf",
+   "scanned": false,
+   "layout": "summary_first"
+  },
+  {
+   "doc": "discharge_summary",
+   "file": "discharge_summary.pdf",
+   "scanned": true,
+   "layout": null
+  },
+  {
+   "doc": "id_proof",
+   "file": "id_proof.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "lab_report",
+   "file": "lab_report.pdf",
+   "scanned": true,
+   "layout": null
+  },
+  {
+   "doc": "prescription",
+   "file": "prescription.pdf",
+   "scanned": true,
+   "layout": null
+  }
+ ]
+}

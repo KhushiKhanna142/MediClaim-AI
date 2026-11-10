@@ -1,0 +1,52 @@
+{
+ "claim_id": "C002_niva_clean_approve",
+ "ids": {
+  "policy_no": "NB9178588014",
+  "hospital": "Metro Heart and General Hospital",
+  "city": "Indore",
+  "bill_no": "BL/2026/30571",
+  "uhid": "UH515591",
+  "phone": "9190813233",
+  "aadhaar_tail": "5593",
+  "doctor": "Dr. S. Mehta"
+ },
+ "bill_layout": "classic",
+ "docs": [
+  {
+   "doc": "claim_form",
+   "file": "claim_form.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "hospital_bill",
+   "file": "hospital_bill.pdf",
+   "scanned": false,
+   "layout": "classic"
+  },
+  {
+   "doc": "discharge_summary",
+   "file": "discharge_summary.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "id_proof",
+   "file": "id_proof.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "lab_report",
+   "file": "lab_report.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "prescription",
+   "file": "prescription.pdf",
+   "scanned": false,
+   "layout": null
+  }
+ ]
+}

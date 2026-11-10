@@ -1,0 +1,26 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nHD2065008508\nProduct\nOptima Secure\nPolicy start date\n26/01/2023\nSum insured (Rs.)\n3,00,000\nName of patient\nDayita Sehgal\nAge / Sex\n50 years / F\nContact number\n9952923180\nHospital name\nMetro Heart and General Hospital, Pune\nDate of admission\n26/09/2025\nDate of discharge\n01/10/2025\nDiagnosis / ailment\ndiabetic foot infection with debridement\nNature of illness\nIllness\nRoom category occupied\nstandard single\nTotal amount claimed (Rs.)\n1,02,400\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 01/10/2025\n",
+  "method": "text_layer"
+ },
+ "discharge_summary": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nMetro Heart and General Hospital\nDischarge Summary\nPatient\nDayita Sehgal, 50 years, F\nUHID\nUH669681\nDate of admission\n26/09/2025\nDate of discharge\n01/10/2025\nLength of stay\n5 day(s)\nConsultant\nDr. V. Iyer\nFinal diagnosis\ndiabetic foot infection with debridement\nHistory\nKnown case of diabetic foot infection with debridement, diagnosed on 27/07/2021, on regular treatment.\nCourse in hospital\nThe patient was admitted with complaints related to diabetic foot infection with debridement. Investigations were done\nand treatment was given as per protocol. The post-treatment period was uneventful and the patient was discharged in\nstable condition on 01/10/2025.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. V. Iyer (Treating consultant)\n",
+  "method": "text_layer"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nMetro Heart and General Hospital\nPune | Final Inpatient Bill\nBill no\nBL/2025/94291\nUHID\nUH669681\nPatient\nDayita Sehgal\nAge / Sex\n50 / F\nAdmitted\n26/09/2025\nDischarged\n01/10/2025\nConsultant\nDr. V. Iyer\nRoom\nstandard single\nSummary of charges\nHead\nAmount\nRoom and Bed Charges\n22,000\nProfessional Fees\n29,700\nOperation Theatre\n12,450\nPharmacy\n18,500\nConsumables\n1,750\nDiagnostics\n10,550\nNursing\n7,450\nTotal bill\n1,02,400\n\nSynthetic test document, generated for software evaluation. Not a real record.\nPage 2\nItemised statement\nDate\nDescription\nQty\nRate\nAmount\n26/09/2025\nRoom charges (standard single)\n5\n4,400\n22,000\n26/09/2025\nSurgeon and anaesthetist fees\n1\n29,700\n29,700\n26/09/2025\nOperation theatre charges\n1\n12,450\n12,450\n26/09/2025\nLaboratory and radiology investigations\n1\n10,550\n10,550\n26/09/2025\nNursing charges\n1\n7,450\n7,450\n26/09/2025\nPharmacy and medicines\n1\n18,500\n18,500\n26/09/2025\nDisposable consumables and admission kit\n1\n1,750\n1,750\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nDayita Sehgal\nAge / Gender\n50 / F\nID number\nXXXX XXXX 8992\nMobile\n9952923180\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nMetro Heart and General Hospital Pathology\nPatient: Dayita Sehgal | Date: 26/09/2025\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Dr. V. lyer\nMetro Heart and General Hospital\nDiagnosis: diabetic foot infection with debridement\nFx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\nSyerbene teat decument, generated tot yelnanie eethaation Not a cent reccrd Paget\n",
+  "method": "ocr"
+ }
+}

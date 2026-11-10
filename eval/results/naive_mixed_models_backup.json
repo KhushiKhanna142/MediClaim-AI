@@ -1,0 +1,488 @@
+{
+ "C001_niva_clean_approve": {
+  "decision": "approve",
+  "payable_amount": 82800.0,
+  "cited_clause_ids": [
+   "clause 4.1.2"
+  ],
+  "reasoning": "The hospitalization for inguinal hernia repair is valid and medically necessary, meeting the criteria for inpatient treatment under clause 4.1.2. All billed charges reconcile correctly with the hospital bill totaling Rs. 82,800, and no policy exclusions apply.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 82800,\n  \"cited_clause_ids\": [\n    \"clause 4.1.2\"\n  ],\n  \"reasoning\": \"The hospitalization for inguinal hernia repair is valid and medically necessary, meeting the criteria for inpatient treatment under clause 4.1.2. All billed charges reconcile correctly with the hospital bill totaling Rs. 82,800, and no policy exclusions apply.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "4.1.3",
+   "4.1.2",
+   "4.1.10",
+   "6.2.4",
+   "5.1.2"
+  ]
+ },
+ "C002_niva_clean_approve": {
+  "decision": "approve",
+  "payable_amount": 59900.0,
+  "cited_clause_ids": [
+   "6.1.16",
+   "6.2.4"
+  ],
+  "reasoning": "The claim for cataract surgery is admissible as the policy has been active since 20/07/2024 (over 2 years of continuous coverage, satisfying waiting periods), and all required medical records, bills, and discharge summaries are verified and reconcile correctly with the total claimed amount of Rs. 59,900.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 59900,\n  \"cited_clause_ids\": [\n    \"6.1.16\",\n    \"6.2.4\"\n  ],\n  \"reasoning\": \"The claim for cataract surgery is admissible as the policy has been active since 20/07/2024 (over 2 years of continuous coverage, satisfying waiting periods), and all required medical records, bills, and discharge summaries are verified and reconcile correctly with the total claimed amount of Rs. 59,900.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "5.1.1",
+   "6.2.4",
+   "5.1.2",
+   "6.1.16",
+   "5.1.3"
+  ]
+ },
+ "C003_niva_clean_approve": {
+  "decision": "approve",
+  "payable_amount": 112700.0,
+  "cited_clause_ids": [
+   "4.1.2",
+   "6.2.4"
+  ],
+  "reasoning": "The hospitalization for inguinal hernia repair is a valid claim under Clause 4.1.2 as inpatient treatment exceeding 24 hours. All required supporting documents including the hospital bill, discharge summary, and lab reports have been provided and reconcile correctly with the claimed amount of Rs. 1,12,700.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 112700,\n  \"cited_clause_ids\": [\n    \"4.1.2\",\n    \"6.2.4\"\n  ],\n  \"reasoning\": \"The hospitalization for inguinal hernia repair is a valid claim under Clause 4.1.2 as inpatient treatment exceeding 24 hours. All required supporting documents including the hospital bill, discharge summary, and lab reports have been provided and reconcile correctly with the claimed amount of Rs. 1,12,700.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "4.1.2",
+   "4.1.3",
+   "4.1.10",
+   "6.2.4",
+   "5.1.2"
+  ]
+ },
+ "C004_niva_approve_continuity": {
+  "decision": "approve",
+  "payable_amount": 316550.0,
+  "cited_clause_ids": [
+   "4.1.2"
+  ],
+  "reasoning": "The patient underwent total knee replacement surgery with a 5-day hospitalization, which is fully covered under hospitalization expenses (Clause 4.1.2). All claimed expenses including room charges, surgeon fees, operation theatre, investigations, pharmacy, and implants are fully supported by the bills and medical records. The total claimed amount of Rs. 3,16,550 is approved for payment.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 316550,\n  \"cited_clause_ids\": [\n    \"4.1.2\"\n  ],\n  \"reasoning\": \"The patient underwent total knee replacement surgery with a 5-day hospitalization, which is fully covered under hospitalization expenses (Clause 4.1.2). All claimed expenses including room charges, surgeon fees, operation theatre, investigations, pharmacy, and implants are fully supported by the bills and medical records. The total claimed amount of Rs. 3,16,550 is approved for payment.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "2.1.2",
+   "4.1.2",
+   "6.1.16",
+   "5.1.2",
+   "4.1.3"
+  ]
+ },
+ "C005_niva_partial_room": {
+  "decision": "approve",
+  "payable_amount": 100700.0,
+  "cited_clause_ids": [
+   "4.1.2"
+  ],
+  "reasoning": "The patient was hospitalized for dengue fever for 5 days which meets the hospitalization criteria under clause 4.1.2. All necessary medical records, bills, and test reports have been provided and verified. The claimed amount of Rs. 1,00,700 is fully covered under the policy terms and does not exceed the sum insured of Rs. 3,00,000.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 100700,\n  \"cited_clause_ids\": [\n    \"4.1.2\"\n  ],\n  \"reasoning\": \"The patient was hospitalized for dengue fever for 5 days which meets the hospitalization criteria under clause 4.1.2. All necessary medical records, bills, and test reports have been provided and verified. The claimed amount of Rs. 1,00,700 is fully covered under the policy terms and does not exceed the sum insured of Rs. 3,00,000.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "4.1.2",
+   "4.1.3",
+   "6.2.4",
+   "5.1.1",
+   "5.1.2"
+  ]
+ },
+ "C006_niva_partial_room": {
+  "decision": "needs_review",
+  "payable_amount": 0.0,
+  "cited_clause_ids": [
+   "6.2.4"
+  ],
+  "reasoning": "The claim arises from a road traffic accident (femur fracture due to a road accident), but the mandatory MLC (Medico-Legal Certificate) or FIR (First Information Report) has not been provided as required by clause 6.2.4(b). Therefore, the claim requires review pending the submission of the accident-related police or medico-legal documentation.",
+  "raw_reply": "```json\n{\n  \"decision\": \"needs_review\",\n  \"payable_amount\": 0,\n  \"cited_clause_ids\": [\n    \"6.2.4\"\n  ],\n  \"reasoning\": \"The claim arises from a road traffic accident (femur fracture due to a road accident), but the mandatory MLC (Medico-Legal Certificate) or FIR (First Information Report) has not been provided as required by clause 6.2.4(b). Therefore, the claim requires review pending the submission of the accident-related police or medico-legal documentation.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "6.2.4",
+   "4.1.2",
+   "6.1.8",
+   "4.1.3",
+   "4.1.19.2"
+  ]
+ },
+ "C007_niva_partial_nonpayable": {
+  "decision": "needs_review",
+  "payable_amount": 0.0,
+  "cited_clause_ids": [
+   "6.2.4"
+  ],
+  "reasoning": "The claim arises from a road accident (fracture of femur due to road accident), but the mandatory MLC/First Information Report (FIR) required under clause 6.2.4 for accident cases has not been provided in the submitted claim documents. Therefore, the claim needs review pending the submission of the police report/MLC.",
+  "raw_reply": "```json\n{\n  \"decision\": \"needs_review\",\n  \"payable_amount\": 0,\n  \"cited_clause_ids\": [\n    \"6.2.4\"\n  ],\n  \"reasoning\": \"The claim arises from a road accident (fracture of femur due to road accident), but the mandatory MLC/First Information Report (FIR) required under clause 6.2.4 for accident cases has not been provided in the submitted claim documents. Therefore, the claim needs review pending the submission of the police report/MLC.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "6.1.8",
+   "6.2.9",
+   "2.1.18",
+   "6.1.16",
+   "6.2.4"
+  ]
+ },
+ "C008_niva_partial_si_cap": {
+  "decision": "approve",
+  "payable_amount": 300000.0,
+  "cited_clause_ids": [
+   "4.1.2"
+  ],
+  "reasoning": "The patient underwent total knee replacement hospitalization for 4 days, which is covered under clause 4.1.2 for hospitalization expenses. The total claimed amount is Rs. 3,87,750, but since the policy sum insured is capped at Rs. 3,00,000, the payable amount is restricted to the maximum sum insured limit.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 300000,\n  \"cited_clause_ids\": [\n    \"4.1.2\"\n  ],\n  \"reasoning\": \"The patient underwent total knee replacement hospitalization for 4 days, which is covered under clause 4.1.2 for hospitalization expenses. The total claimed amount is Rs. 3,87,750, but since the policy sum insured is capped at Rs. 3,00,000, the payable amount is restricted to the maximum sum insured limit.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "4.1.2",
+   "6.1.16",
+   "5.1.2",
+   "5.1.1",
+   "2.1.2"
+  ]
+ },
+ "C009_niva_reject_specified": {
+  "decision": "approve",
+  "payable_amount": 93000.0,
+  "cited_clause_ids": [
+   "4.1.2",
+   "2.1.21"
+  ],
+  "reasoning": "The patient was hospitalized for laparoscopic cholecystectomy for gallstones from 12/02/2026 to 14/02/2026 (exceeding 24 hours), fulfilling the in-patient care criteria and hospitalization expenses coverage. All itemized charges in the hospital bill are fully supported by medical records and clinical necessity. Therefore, the total claimed amount of Rs. 93,000 is approved for reimbursement.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 93000,\n  \"cited_clause_ids\": [\n    \"4.1.2\",\n    \"2.1.21\"\n  ],\n  \"reasoning\": \"The patient was hospitalized for laparoscopic cholecystectomy for gallstones from 12/02/2026 to 14/02/2026 (exceeding 24 hours), fulfilling the in-patient care criteria and hospitalization expenses coverage. All itemized charges in the hospital bill are fully supported by medical records and clinical necessity. Therefore, the total claimed amount of Rs. 93,000 is approved for reimbursement.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "4.1.2",
+   "2.1.2",
+   "2.1.21",
+   "5.1.2",
+   "2.1.11"
+  ]
+ },
+ "C010_niva_reject_specified": {
+  "decision": "approve",
+  "payable_amount": 64400.0,
+  "cited_clause_ids": [
+   "4.1.2",
+   "6.2.4"
+  ],
+  "reasoning": "The claim for cataract surgery (phacoemulsification) is fully admissible as it meets the hospitalization and treatment criteria under clause 4.1.2. All required documents, including the hospital bill, discharge summary, and investigation reports, have been submitted in accordance with clause 6.2.4. Therefore, the total claimed amount of Rs. 64,400 is approved for payment.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 64400,\n  \"cited_clause_ids\": [\n    \"4.1.2\",\n    \"6.2.4\"\n  ],\n  \"reasoning\": \"The claim for cataract surgery (phacoemulsification) is fully admissible as it meets the hospitalization and treatment criteria under clause 4.1.2. All required documents, including the hospital bill, discharge summary, and investigation reports, have been submitted in accordance with clause 6.2.4. Therefore, the total claimed amount of Rs. 64,400 is approved for payment.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "4.1.2",
+   "5.1.2",
+   "6.2.4",
+   "4.1.3",
+   "6.1.8"
+  ]
+ },
+ "C011_niva_reject_30day": {
+  "decision": "approve",
+  "payable_amount": 106800.0,
+  "cited_clause_ids": [
+   "6.1.16"
+  ],
+  "reasoning": "The hospitalization for acute appendicitis and appendectomy is fully supported by the clinical records, discharge summary, and itemized hospital bill. All billed expenses totaling Rs. 1,06,800 are admissible within the policy sum insured of Rs. 5,00,000.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 106800,\n  \"cited_clause_ids\": [\n    \"6.1.16\"\n  ],\n  \"reasoning\": \"The hospitalization for acute appendicitis and appendectomy is fully supported by the clinical records, discharge summary, and itemized hospital bill. All billed expenses totaling Rs. 1,06,800 are admissible within the policy sum insured of Rs. 5,00,000.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "4.1.3",
+   "6.2.4",
+   "6.1.16",
+   "5.1.1",
+   "6.1.8"
+  ]
+ },
+ "C012_niva_reject_ped": {
+  "decision": "approve",
+  "payable_amount": 107050.0,
+  "cited_clause_ids": [],
+  "reasoning": "The patient was hospitalized for a diabetic foot infection requiring debridement and received standard inpatient treatment within policy limits. All bills, discharge summaries, and identity documents are complete and reconcile correctly with the total claimed amount of Rs. 1,07,050. Therefore, the claim is approved in full.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 107050,\n  \"cited_clause_ids\": [],\n  \"reasoning\": \"The patient was hospitalized for a diabetic foot infection requiring debridement and received standard inpatient treatment within policy limits. All bills, discharge summaries, and identity documents are complete and reconcile correctly with the total claimed amount of Rs. 1,07,050. Therefore, the claim is approved in full.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "6.1.8",
+   "6.1.16",
+   "5.1.1",
+   "6.2.9",
+   "5.1.2"
+  ]
+ },
+ "C013_niva_multi_hop": {
+  "decision": "approve",
+  "payable_amount": 358000.0,
+  "cited_clause_ids": [
+   "6.1.16"
+  ],
+  "reasoning": "The claim is for a total knee replacement with all necessary documents provided and verified. The hospital stay, bills, and diagnosis are in order, and the total claimed amount of Rs. 3,58,000 is within the sum insured limit of Rs. 5,00,000.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 358000,\n  \"cited_clause_ids\": [\n    \"6.1.16\"\n  ],\n  \"reasoning\": \"The claim is for a total knee replacement with all necessary documents provided and verified. The hospital stay, bills, and diagnosis are in order, and the total claimed amount of Rs. 3,58,000 is within the sum insured limit of Rs. 5,00,000.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "6.1.16",
+   "5.1.1",
+   "4.1.3",
+   "5.1.2",
+   "6.2.4"
+  ]
+ },
+ "C014_niva_missing_docs": {
+  "decision": "needs_review",
+  "payable_amount": 0.0,
+  "cited_clause_ids": [
+   "6.2.4"
+  ],
+  "reasoning": "The claim is due to a road accident (fracture of femur), but the mandatory MLC/First Information Report (FIR) required under clause 6.2.4.b for accident cases is missing from the submitted documents. Therefore, the claim needs review pending the submission of the FIR or MLC.",
+  "raw_reply": "```json\n{\n  \"decision\": \"needs_review\",\n  \"payable_amount\": 0,\n  \"cited_clause_ids\": [\n    \"6.2.4\"\n  ],\n  \"reasoning\": \"The claim is due to a road accident (fracture of femur), but the mandatory MLC/First Information Report (FIR) required under clause 6.2.4.b for accident cases is missing from the submitted documents. Therefore, the claim needs review pending the submission of the FIR or MLC.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "6.2.4",
+   "6.1.8",
+   "4.1.11",
+   "6.2.9",
+   "4.1.15"
+  ]
+ },
+ "C015_niva_total_mismatch": {
+  "decision": "approve",
+  "payable_amount": 75900.0,
+  "cited_clause_ids": [
+   "4.1.2"
+  ],
+  "reasoning": "The hospitalization of 6 days for the treatment of pneumonia is fully covered under clause 4.1.2 for expenses during hospitalization. All submitted bills, reports, and discharge summary reconcile correctly to the total claimed amount of Rs. 75,900, with no applicable exclusions.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 75900,\n  \"cited_clause_ids\": [\n    \"4.1.2\"\n  ],\n  \"reasoning\": \"The hospitalization of 6 days for the treatment of pneumonia is fully covered under clause 4.1.2 for expenses during hospitalization. All submitted bills, reports, and discharge summary reconcile correctly to the total claimed amount of Rs. 75,900, with no applicable exclusions.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "6.2.4",
+   "4.1.3",
+   "4.1.2",
+   "5.1.1",
+   "5.1.2"
+  ]
+ },
+ "C016_hdfc_clean_approve": {
+  "decision": "approve",
+  "payable_amount": 217900.0,
+  "cited_clause_ids": [
+   "1.1.1",
+   "1.7"
+  ],
+  "reasoning": "The claim is for inpatient hospitalization exceeding 24 hours due to an accidental fracture requiring ORIF, which is fully covered under the policy terms. All required documents, bills, and discharge summaries match the claimed amount of Rs. 2,17,900 without any discrepancies or policy exclusions.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 217900,\n  \"cited_clause_ids\": [\n    \"1.1.1\",\n    \"1.7\"\n  ],\n  \"reasoning\": \"The claim is for inpatient hospitalization exceeding 24 hours due to an accidental fracture requiring ORIF, which is fully covered under the policy terms. All required documents, bills, and discharge summaries match the claimed amount of Rs. 2,17,900 without any discrepancies or policy exclusions.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "1.1.1",
+   "1.7",
+   "Section C",
+   "2.4",
+   "1.1"
+  ]
+ },
+ "C017_hdfc_clean_approve": {
+  "decision": "needs_review",
+  "payable_amount": 0.0,
+  "cited_clause_ids": [
+   "1.7"
+  ],
+  "reasoning": "The reimbursement claim lacks the mandatory original implant sticker and invoice for the intraocular lens used during the cataract surgery, as specified in clause 1.7(e). Therefore, the claim cannot be fully processed and requires review once the missing document is submitted.",
+  "raw_reply": "```json\n{\n  \"decision\": \"needs_review\",\n  \"payable_amount\": 0,\n  \"cited_clause_ids\": [\n    \"1.7\"\n  ],\n  \"reasoning\": \"The reimbursement claim lacks the mandatory original implant sticker and invoice for the intraocular lens used during the cataract surgery, as specified in clause 1.7(e). Therefore, the claim cannot be fully processed and requires review once the missing document is submitted.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "1.7",
+   "2.4",
+   "1.1.1",
+   "Def.4",
+   "1.6"
+  ]
+ },
+ "C018_hdfc_clean_approve": {
+  "decision": "approve",
+  "payable_amount": 73300.0,
+  "cited_clause_ids": [
+   "1.7"
+  ],
+  "reasoning": "The claim for inpatient hospitalization due to pneumonia is fully supported by the submitted claim form, discharge summary, and itemized hospital bill. All required documents are in order, and the claimed amount of Rs. 73,300 matches the grand total of the hospital bill.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 73300,\n  \"cited_clause_ids\": [\n    \"1.7\"\n  ],\n  \"reasoning\": \"The claim for inpatient hospitalization due to pneumonia is fully supported by the submitted claim form, discharge summary, and itemized hospital bill. All required documents are in order, and the claimed amount of Rs. 73,300 matches the grand total of the hospital bill.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "1.7",
+   "1.6",
+   "1.5",
+   "Section C",
+   "2.4"
+  ]
+ },
+ "C019_hdfc_approve_continuity": {
+  "decision": "approve",
+  "payable_amount": 99450.0,
+  "cited_clause_ids": [
+   "1.7",
+   "1.1.1"
+  ],
+  "reasoning": "The claim for inguinal hernia repair is fully supported by valid hospital bills, discharge summary, and necessary diagnostic reports fulfilling the minimum 24-hour hospitalization requirement. The room category occupied (standard single) is within permissible limits with no proportionate deductions required, and all claimed expenses sum up accurately to Rs. 99,450.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 99450,\n  \"cited_clause_ids\": [\n    \"1.7\",\n    \"1.1.1\"\n  ],\n  \"reasoning\": \"The claim for inguinal hernia repair is fully supported by valid hospital bills, discharge summary, and necessary diagnostic reports fulfilling the minimum 24-hour hospitalization requirement. The room category occupied (standard single) is within permissible limits with no proportionate deductions required, and all claimed expenses sum up accurately to Rs. 99,450.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "1.7",
+   "1.1.1",
+   "2.13/1",
+   "1.1",
+   "Section C"
+  ]
+ },
+ "C020_hdfc_partial_room": {
+  "decision": "approve",
+  "payable_amount": 133100.0,
+  "cited_clause_ids": [
+   "clause Section C"
+  ],
+  "reasoning": "The claim for inguinal hernia repair surgery is fully supported by the hospital bills, discharge summary, and clinical records. All billed expenses total Rs. 1,33,100 and reconcile correctly without any excluded or non-payable items.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 133100,\n  \"cited_clause_ids\": [\n    \"clause Section C\"\n  ],\n  \"reasoning\": \"The claim for inguinal hernia repair surgery is fully supported by the hospital bills, discharge summary, and clinical records. All billed expenses total Rs. 1,33,100 and reconcile correctly without any excluded or non-payable items.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "2.8",
+   "2.15/1",
+   "Section C",
+   "2.14/1",
+   "1.1"
+  ]
+ },
+ "C021_hdfc_partial_room": {
+  "decision": "approve",
+  "payable_amount": 91600.0,
+  "cited_clause_ids": [
+   "1.1.1",
+   "1.7"
+  ],
+  "reasoning": "The claim for inpatient hospitalization due to acute appendicitis and appendectomy is medically necessary and supported by valid documents including the discharge summary, hospital bills, and investigation reports. All requirements under the policy clauses for inpatient care are satisfied, and the total claimed amount of Rs. 91,600 is fully payable within the sum insured of Rs. 5,00,000.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 91600,\n  \"cited_clause_ids\": [\n    \"1.1.1\",\n    \"1.7\"\n  ],\n  \"reasoning\": \"The claim for inpatient hospitalization due to acute appendicitis and appendectomy is medically necessary and supported by valid documents including the discharge summary, hospital bills, and investigation reports. All requirements under the policy clauses for inpatient care are satisfied, and the total claimed amount of Rs. 91,600 is fully payable within the sum insured of Rs. 5,00,000.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "1.7",
+   "1.1.1",
+   "1.6",
+   "Section C",
+   "Section C"
+  ]
+ },
+ "C022_hdfc_partial_nonpayable": {
+  "decision": "approve",
+  "payable_amount": 374150.0,
+  "cited_clause_ids": [
+   "1.7"
+  ],
+  "reasoning": "The claim for total knee replacement surgery is fully supported by all necessary medical and financial documents, including the duly completed claim form, discharge summary, final hospital bill, diagnostic reports, and ID proof. All figures reconcile correctly with the grand total of Rs. 3,74,150, and the policy sum insured of Rs. 10,00,000 is adequate.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 374150,\n  \"cited_clause_ids\": [\n    \"1.7\"\n  ],\n  \"reasoning\": \"The claim for total knee replacement surgery is fully supported by all necessary medical and financial documents, including the duly completed claim form, discharge summary, final hospital bill, diagnostic reports, and ID proof. All figures reconcile correctly with the grand total of Rs. 3,74,150, and the policy sum insured of Rs. 10,00,000 is adequate.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "1.7",
+   "1.6",
+   "1.5",
+   "1.1",
+   "2.8"
+  ]
+ },
+ "C023_hdfc_partial_si_cap": {
+  "decision": "approve",
+  "payable_amount": 300000.0,
+  "cited_clause_ids": [
+   "1.7",
+   "1.1.1",
+   "2.4"
+  ],
+  "reasoning": "The claim for total knee replacement is fully documented, medically necessary, and satisfies all hospitalization criteria. The total hospital bill of Rs. 3,58,600 exceeds the policy sum insured of Rs. 3,00,000, hence the payout is capped at the maximum sum insured limit.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 300000,\n  \"cited_clause_ids\": [\n    \"1.7\",\n    \"1.1.1\",\n    \"2.4\"\n  ],\n  \"reasoning\": \"The claim for total knee replacement is fully documented, medically necessary, and satisfies all hospitalization criteria. The total hospital bill of Rs. 3,58,600 exceeds the policy sum insured of Rs. 3,00,000, hence the payout is capped at the maximum sum insured limit.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "1.7",
+   "1.5",
+   "2.4",
+   "1.1.1",
+   "1.6"
+  ]
+ },
+ "C024_hdfc_reject_specified": {
+  "decision": "approve",
+  "payable_amount": 72350.0,
+  "cited_clause_ids": [
+   "1.1.1"
+  ],
+  "reasoning": "The insured underwent a cataract surgery (phacoemulsification) which is a recognized day care treatment/inpatient procedure admissible under the policy. The hospitalization is medically necessary and supported by valid discharge summaries, itemized bills, and clinical records. All claimed expenses of Rs. 72,350 are fully payable as no policy limits or exclusions are violated.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 72350,\n  \"cited_clause_ids\": [\n    \"1.1.1\"\n  ],\n  \"reasoning\": \"The insured underwent a cataract surgery (phacoemulsification) which is a recognized day care treatment/inpatient procedure admissible under the policy. The hospitalization is medically necessary and supported by valid discharge summaries, itemized bills, and clinical records. All claimed expenses of Rs. 72,350 are fully payable as no policy limits or exclusions are violated.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "1.6",
+   "1.5",
+   "Section C",
+   "1.1.1",
+   "Section C"
+  ]
+ },
+ "C025_hdfc_reject_specified": {
+  "decision": "approve",
+  "payable_amount": 97750.0,
+  "cited_clause_ids": [
+   "1.1.1"
+  ],
+  "reasoning": "The claim is for inpatient hospitalization due to laparoscopic cholecystectomy for gallstones, which is medically necessary and supported by valid documents including the discharge summary, bills, and investigations. The patient stayed for 2 days in a standard single room, which aligns with the policy terms, and all claimed expenses are fully admissible.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 97750,\n  \"cited_clause_ids\": [\n    \"1.1.1\"\n  ],\n  \"reasoning\": \"The claim is for inpatient hospitalization due to laparoscopic cholecystectomy for gallstones, which is medically necessary and supported by valid documents including the discharge summary, bills, and investigations. The patient stayed for 2 days in a standard single room, which aligns with the policy terms, and all claimed expenses are fully admissible.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "1.7",
+   "1.1.1",
+   "Def.4",
+   "Section C",
+   "Section C"
+  ]
+ },
+ "C026_hdfc_reject_30day": {
+  "decision": "approve",
+  "payable_amount": 93250.0,
+  "cited_clause_ids": [
+   "1.7"
+  ],
+  "reasoning": "The claim is supported by all necessary documents including the claim form, discharge summary, final hospital bill, diagnostic reports, and prescriptions as per Clause 1.7. All expenses incurred for the acute appendicitis treatment are in order and match the claimed amount of Rs. 93,250 within the policy sum insured.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 93250,\n  \"cited_clause_ids\": [\n    \"1.7\"\n  ],\n  \"reasoning\": \"The claim is supported by all necessary documents including the claim form, discharge summary, final hospital bill, diagnostic reports, and prescriptions as per Clause 1.7. All expenses incurred for the acute appendicitis treatment are in order and match the claimed amount of Rs. 93,250 within the policy sum insured.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "1.6",
+   "1.5",
+   "1.7",
+   "2.8",
+   "1.1"
+  ]
+ },
+ "C027_hdfc_reject_ped": {
+  "decision": "approve",
+  "payable_amount": 102400.0,
+  "cited_clause_ids": [
+   "clause 1.1.1"
+  ],
+  "reasoning": "The insured was hospitalized for diabetic foot infection requiring surgical debridement for a duration exceeding 24 hours, which fulfills the criteria for inpatient care under Medically Necessary Treatment. The room category occupied (standard single) is within eligibility limits, meaning no proportionate deductions apply. All claimed hospital expenses amounting to Rs. 1,02,400 are fully verified and admissible.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 102400,\n  \"cited_clause_ids\": [\n    \"clause 1.1.1\"\n  ],\n  \"reasoning\": \"The insured was hospitalized for diabetic foot infection requiring surgical debridement for a duration exceeding 24 hours, which fulfills the criteria for inpatient care under Medically Necessary Treatment. The room category occupied (standard single) is within eligibility limits, meaning no proportionate deductions apply. All claimed hospital expenses amounting to Rs. 1,02,400 are fully verified and admissible.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "1.6",
+   "1.5",
+   "1.1",
+   "1.1.1",
+   "1.3"
+  ]
+ },
+ "C028_hdfc_multi_hop": {
+  "decision": "approve",
+  "payable_amount": 361600.0,
+  "cited_clause_ids": [
+   "1.7"
+  ],
+  "reasoning": "The claim for total knee replacement hospitalization is fully supported by valid hospital bills, discharge summary, and required KYC and medical documents. All claimed expenses of Rs. 3,61,600 are within the sum insured of Rs. 5,00,000 and comply with policy requirements.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 361600,\n  \"cited_clause_ids\": [\n    \"1.7\"\n  ],\n  \"reasoning\": \"The claim for total knee replacement hospitalization is fully supported by valid hospital bills, discharge summary, and required KYC and medical documents. All claimed expenses of Rs. 3,61,600 are within the sum insured of Rs. 5,00,000 and comply with policy requirements.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "1.7",
+   "1.1",
+   "2.4",
+   "Section C",
+   "2.13/1"
+  ]
+ },
+ "C029_hdfc_missing_docs": {
+  "decision": "approve",
+  "payable_amount": 101150.0,
+  "cited_clause_ids": [],
+  "reasoning": "The claim is for inpatient hospitalization due to laparoscopic cholecystectomy for gallstones, which is medically necessary and supported by clinical records. All required documents including the hospital bill, discharge summary details, lab reports, and ID proof are complete and reconcile correctly. Therefore, the total claimed amount of Rs. 1,01,150 is approved for reimbursement.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 101150,\n  \"cited_clause_ids\": [],\n  \"reasoning\": \"The claim is for inpatient hospitalization due to laparoscopic cholecystectomy for gallstones, which is medically necessary and supported by clinical records. All required documents including the hospital bill, discharge summary details, lab reports, and ID proof are complete and reconcile correctly. Therefore, the total claimed amount of Rs. 1,01,150 is approved for reimbursement.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "1.7",
+   "1.17",
+   "1.7",
+   "1.3",
+   "1.5"
+  ]
+ },
+ "C030_hdfc_total_mismatch": {
+  "decision": "approve",
+  "payable_amount": 64700.0,
+  "cited_clause_ids": [
+   "1.1.1",
+   "1.7"
+  ],
+  "reasoning": "The claim for cataract surgery (phacoemulsification) is fully admissible as a day care/hospitalization treatment under the policy. All required documents, including the discharge summary, final hospital bill, and investigation reports, have been provided and reconcile correctly with the claimed amount of Rs. 64,700.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 64700,\n  \"cited_clause_ids\": [\n    \"1.1.1\",\n    \"1.7\"\n  ],\n  \"reasoning\": \"The claim for cataract surgery (phacoemulsification) is fully admissible as a day care/hospitalization treatment under the policy. All required documents, including the discharge summary, final hospital bill, and investigation reports, have been provided and reconcile correctly with the claimed amount of Rs. 64,700.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "1.7",
+   "1.1.1",
+   "1.6",
+   "1.6",
+   "1.6"
+  ]
+ }
+}

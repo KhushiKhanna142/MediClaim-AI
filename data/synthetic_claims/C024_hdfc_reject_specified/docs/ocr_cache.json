@@ -1,0 +1,26 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nHD9350942479\nProduct\nOptima Secure\nPolicy start date\n23/12/2023\nSum insured (Rs.)\n3,00,000\nName of patient\nInaya Taneja\nAge / Sex\n53 years / F\nContact number\n9834390307\nHospital name\nSanjivani Hospital and Research Centre, Nagpur\nDate of admission\n23/08/2025\nDate of discharge\n24/08/2025\nDiagnosis / ailment\ncataract surgery (phacoemulsification)\nNature of illness\nIllness\nRoom category occupied\nstandard single\nTotal amount claimed (Rs.)\n72,350\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 24/08/2025\n",
+  "method": "text_layer"
+ },
+ "discharge_summary": {
+  "text": "Sanjivani Hospital and Research Centre\nDischarge Summary\nPatient Inaya Taneja, 53 years, F\nUHID UH530808\nDate of admission 23/08/2025\nDate of discharge 24/08/2025\nLength of stay 1 day(s)\nConsultant Or. P. Deshmukh\nFinal diagnosis\nCataract surgery (phacoemulsification)\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to cataract surgery (phacoemulsification). Investigations were done\nand treatment was given as per protocol. The post-treatment period was uneventtul and the patient was discharged in\nStable condition on 24/08/2025.\nAdvice on discharge\nOr. P. Deshmukh (Treating consultant)\nSyrchete Ws! Gocurnen geoersied ter tottware evetumnon Nol 4 real record Page 2\n",
+  "method": "ocr"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nSanjivani Hospital and Research Centre\nNagpur | Final Inpatient Bill\nBill no\nBL/2025/64338\nUHID\nUH530808\nPatient\nInaya Taneja\nAge / Sex\n53 / F\nAdmitted\n23/08/2025\nDischarged\n24/08/2025\nConsultant\nDr. P. Deshmukh\nRoom\nstandard single\nSummary of charges\nHead\nAmount\nRoom and Bed Charges\n4,500\nProfessional Fees\n28,850\nOperation Theatre\n8,750\nPharmacy\n3,700\nConsumables\n1,450\nDiagnostics\n3,500\nImplants\n19,800\nNursing\n1,800\nTotal bill\n72,350\n\nSynthetic test document, generated for software evaluation. Not a real record.\nPage 2\nItemised statement\nDate\nDescription\nQty\nRate\nAmount\n23/08/2025\nRoom charges (standard single)\n1\n4,500\n4,500\n23/08/2025\nSurgeon and anaesthetist fees\n1\n28,850\n28,850\n23/08/2025\nOperation theatre charges\n1\n8,750\n8,750\n23/08/2025\nLaboratory and radiology investigations\n1\n3,500\n3,500\n23/08/2025\nNursing charges\n1\n1,800\n1,800\n23/08/2025\nPharmacy and medicines\n1\n3,700\n3,700\n23/08/2025\nImplant / prosthesis\n1\n19,800\n19,800\n23/08/2025\nDisposable consumables and admission kit\n1\n1,450\n1,450\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nInaya Taneja\nAge / Gender\n53 / F\nID number\nXXXX XXXX 2889\nMobile\n9834390307\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nSanjivani Hospital and Research Centre Pathology\nPatient: Inaya Taneja | Date: 23/08/2025\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. P. Deshmukh\nSanjivani Hospital and Research Centre\nPatient: Inaya Taneja, 53/F Date: 23/08/2025\nDiagnosis: cataract surgery (phacoemulsification)\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ }
+}

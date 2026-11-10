@@ -1,0 +1,46 @@
+{
+ "claim_id": "C029_hdfc_missing_docs",
+ "ids": {
+  "policy_no": "HD9072184057",
+  "hospital": "Metro Heart and General Hospital",
+  "city": "Indore",
+  "bill_no": "BL/2025/45705",
+  "uhid": "UH236494",
+  "phone": "9409837739",
+  "aadhaar_tail": "8441",
+  "doctor": "Dr. A. Kulkarni"
+ },
+ "bill_layout": "compact",
+ "docs": [
+  {
+   "doc": "claim_form",
+   "file": "claim_form.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "hospital_bill",
+   "file": "hospital_bill.pdf",
+   "scanned": false,
+   "layout": "compact"
+  },
+  {
+   "doc": "id_proof",
+   "file": "id_proof.pdf",
+   "scanned": true,
+   "layout": null
+  },
+  {
+   "doc": "lab_report",
+   "file": "lab_report.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "prescription",
+   "file": "prescription.pdf",
+   "scanned": true,
+   "layout": null
+  }
+ ]
+}

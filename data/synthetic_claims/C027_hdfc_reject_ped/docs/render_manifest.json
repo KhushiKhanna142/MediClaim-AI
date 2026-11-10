@@ -1,0 +1,52 @@
+{
+ "claim_id": "C027_hdfc_reject_ped",
+ "ids": {
+  "policy_no": "HD2065008508",
+  "hospital": "Metro Heart and General Hospital",
+  "city": "Pune",
+  "bill_no": "BL/2025/94291",
+  "uhid": "UH669681",
+  "phone": "9952923180",
+  "aadhaar_tail": "8992",
+  "doctor": "Dr. V. Iyer"
+ },
+ "bill_layout": "summary_first",
+ "docs": [
+  {
+   "doc": "claim_form",
+   "file": "claim_form.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "hospital_bill",
+   "file": "hospital_bill.pdf",
+   "scanned": false,
+   "layout": "summary_first"
+  },
+  {
+   "doc": "discharge_summary",
+   "file": "discharge_summary.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "id_proof",
+   "file": "id_proof.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "lab_report",
+   "file": "lab_report.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "prescription",
+   "file": "prescription.pdf",
+   "scanned": true,
+   "layout": null
+  }
+ ]
+}

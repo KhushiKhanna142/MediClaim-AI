@@ -1,0 +1,52 @@
+{
+ "claim_id": "C001_niva_clean_approve",
+ "ids": {
+  "policy_no": "NB9589406906",
+  "hospital": "Harmony Medical Centre",
+  "city": "Ahmedabad",
+  "bill_no": "BL/2025/1269",
+  "uhid": "UH475668",
+  "phone": "9314153245",
+  "aadhaar_tail": "1619",
+  "doctor": "Dr. V. Iyer"
+ },
+ "bill_layout": "grouped",
+ "docs": [
+  {
+   "doc": "claim_form",
+   "file": "claim_form.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "hospital_bill",
+   "file": "hospital_bill.pdf",
+   "scanned": false,
+   "layout": "grouped"
+  },
+  {
+   "doc": "discharge_summary",
+   "file": "discharge_summary.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "id_proof",
+   "file": "id_proof.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "lab_report",
+   "file": "lab_report.pdf",
+   "scanned": true,
+   "layout": null
+  },
+  {
+   "doc": "prescription",
+   "file": "prescription.pdf",
+   "scanned": true,
+   "layout": null
+  }
+ ]
+}

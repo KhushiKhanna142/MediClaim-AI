@@ -1,0 +1,22 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nNB3847586742\nProduct\nReAssure (Aspire)\nPolicy start date\n21/07/2025\nSum insured (Rs.)\n3,00,000\nName of patient\nWatika Wali\nAge / Sex\n35 years / M\nContact number\n9288651703\nHospital name\nSanjivani Hospital and Research Centre, Pune\nDate of admission\n21/08/2025\nDate of discharge\n25/08/2025\nDiagnosis / ailment\nfracture of femur, ORIF (road accident)\nNature of illness\nAccident / injury\nRoom category occupied\nstandard single\nTotal amount claimed (Rs.)\n2,36,350\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 25/08/2025\n",
+  "method": "text_layer"
+ },
+ "hospital_bill": {
+  "text": "Sanjivani Hospital and Research Centre\nPune | Final inpatient Bill\nBill no 81L/2025/12957 UHID UH621795\nPatient Watika Wali Age / Sex 35/M\nAdmitted 21/08/2025 Discharged 25/08/2025\nConsultant Dr. P. Deshmukh Room standard single\ntem Amount (Rs.)\nRoom charges (standard single) (4 x 5,000) 20,000\nSurgeon and anaesthetist fees 79,550\nOperation theatre charges 29,150\nLaboratory and radiology investigations 6,000\nNursing charges 11,450\nPharmacy and medicines 13,450\nImplant / prosthesis 72,150\nDisposable consumables and admission kit 4,600\nNet payable 2,36,350\nSyposvetic test Gocuene gerrated tor softapre evatatee\u2019 ot a coud record Page!\n",
+  "method": "ocr"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nWatika Wali\nAge / Gender\n35 / M\nID number\nXXXX XXXX 7897\nMobile\n9288651703\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Sanjivani Hospital and Research Centre Pathology\nPatient: Watika Wali | Date: 21/08/2025\nTest Result | Reference\nHaemoglobin \"43.1 g/dL | 42.0- 16.0\nWBC count 7,400 /emm 4,000 - 11,000\nBlood sugar (random) 104 mg/dL 70 - 140\nSerum creatinine 0.9 mg/dL. 06-12\n",
+  "method": "ocr"
+ },
+ "prescription": {
+  "text": "Dr. P. Deshmukh\nSanjivani Hospital and Research Centre\nPatient: Watika Wali, 35/M Date: 21/08/2025\nDiagnosis: fracture of femur, ORIF (road accident)\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days: Cap. Pantoprazole 40 mg 1-0-0 x 5 days\nSynthati\u00a2 est document, generated for soltware evaluation, Not a.real record. Page t\n",
+  "method": "ocr"
+ }
+}

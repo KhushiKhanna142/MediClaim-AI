@@ -1,0 +1,52 @@
+{
+ "claim_id": "C017_hdfc_clean_approve",
+ "ids": {
+  "policy_no": "HD9891455579",
+  "hospital": "Lotus Care Hospital",
+  "city": "Nagpur",
+  "bill_no": "BL/2025/4095",
+  "uhid": "UH633892",
+  "phone": "9438443405",
+  "aadhaar_tail": "4387",
+  "doctor": "Dr. P. Deshmukh"
+ },
+ "bill_layout": "compact",
+ "docs": [
+  {
+   "doc": "claim_form",
+   "file": "claim_form.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "hospital_bill",
+   "file": "hospital_bill.pdf",
+   "scanned": false,
+   "layout": "compact"
+  },
+  {
+   "doc": "discharge_summary",
+   "file": "discharge_summary.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "id_proof",
+   "file": "id_proof.pdf",
+   "scanned": true,
+   "layout": null
+  },
+  {
+   "doc": "lab_report",
+   "file": "lab_report.pdf",
+   "scanned": true,
+   "layout": null
+  },
+  {
+   "doc": "prescription",
+   "file": "prescription.pdf",
+   "scanned": false,
+   "layout": null
+  }
+ ]
+}

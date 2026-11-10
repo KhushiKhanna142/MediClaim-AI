@@ -1,0 +1,52 @@
+{
+ "claim_id": "C022_hdfc_partial_nonpayable",
+ "ids": {
+  "policy_no": "HD9775963003",
+  "hospital": "Metro Heart and General Hospital",
+  "city": "Indore",
+  "bill_no": "BL/2026/74914",
+  "uhid": "UH265654",
+  "phone": "9907251296",
+  "aadhaar_tail": "1535",
+  "doctor": "Dr. A. Kulkarni"
+ },
+ "bill_layout": "grouped",
+ "docs": [
+  {
+   "doc": "claim_form",
+   "file": "claim_form.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "hospital_bill",
+   "file": "hospital_bill.pdf",
+   "scanned": true,
+   "layout": "grouped"
+  },
+  {
+   "doc": "discharge_summary",
+   "file": "discharge_summary.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "id_proof",
+   "file": "id_proof.pdf",
+   "scanned": true,
+   "layout": null
+  },
+  {
+   "doc": "lab_report",
+   "file": "lab_report.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "prescription",
+   "file": "prescription.pdf",
+   "scanned": false,
+   "layout": null
+  }
+ ]
+}

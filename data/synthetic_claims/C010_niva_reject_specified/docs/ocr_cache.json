@@ -1,0 +1,26 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nNB7055821064\nProduct\nReAssure (Aspire)\nPolicy start date\n08/05/2025\nSum insured (Rs.)\n10,00,000\nName of patient\nOni Dhawan\nAge / Sex\n57 years / M\nContact number\n9213154607\nHospital name\nHarmony Medical Centre, Ahmedabad\nDate of admission\n08/01/2026\nDate of discharge\n09/01/2026\nDiagnosis / ailment\ncataract surgery (phacoemulsification)\nNature of illness\nIllness\nRoom category occupied\nstandard single\nTotal amount claimed (Rs.)\n64,400\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 09/01/2026\n",
+  "method": "text_layer"
+ },
+ "discharge_summary": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHarmony Medical Centre\nDischarge Summary\nPatient\nOni Dhawan, 57 years, M\nUHID\nUH561648\nDate of admission\n08/01/2026\nDate of discharge\n09/01/2026\nLength of stay\n1 day(s)\nConsultant\nDr. V. Iyer\nFinal diagnosis\ncataract surgery (phacoemulsification)\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to cataract surgery (phacoemulsification). Investigations were done\nand treatment was given as per protocol. The post-treatment period was uneventful and the patient was discharged in\nstable condition on 09/01/2026.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. V. Iyer (Treating consultant)\n",
+  "method": "text_layer"
+ },
+ "hospital_bill": {
+  "text": "Harmony Medical Centre\nAhmedabad | Final Inpatient Bill\nBill no 812026732581 UHID UH561648\nPatient Oni Dhawan Age/Sex  57/M\nAdmitied 08/01/2026 Discharged 09/01/2026\nConsultant \u2014_Or. V. lyer Room standard single\nSummary of charges\nHead Amount\nRoom and Bed Charges 5,200\nProfessional Fees 19,800\nOperation Theatre 9,000\nPharmacy 2,250\nConsumables 1,500\nDiagnostics 2,700\nimplants 22,600\nNursing 1,350\nTotal bill 64,400\nSiyrthetic teat document, ganerated tor software evahuation Not a rea record Page t\n\nltemised statement\n\n08/01/2026 Room charges (standard single) ' 5,200 5.200\n08/01/2026 Surgeon and anaesthetist fees 1 19,800 19,800\n0801/2026 Operation theatre charges ' 9,000 9.000\n08/01/2026 Laboratory and radiology investigations 1 2,700 2,700\n08/01/2026 _\u2014Nursing charges ' 1.350 1,350\n08/01/2026 Pharmacy and medicines 1 2.250 2.250\n0801/2026 Implant / prosthesis ' 22.600 22.600\n08/01/2026 Disposable consumabies and admission kit 1 1,500 1,500\n\nSiyethates teat Gocimert, gunerited tor noftense eeaiuasion. Not & real wecard Page 2\n",
+  "method": "ocr"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nOni Dhawan\nAge / Gender\n57 / M\nID number\nXXXX XXXX 6841\nMobile\n9213154607\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Harmony Medical Centre Pathology\nPatient: Oni Dhawan | Date: 08/01/2026\nTest | Result : Reference\nHaemoglobin 13.1 g/dL 12.0- 16.0\nWBC count 7,400 /emm 4,000 - 11,000\nBlood sugar (random) 104 mg/dL. | 70 - 140 |\nSerum creatinine 0.9 mg/dL 0.6-1.2\nSynthetic test document, generated for software eval ation. Not a real record Page 1\n",
+  "method": "ocr"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. V. Iyer\nHarmony Medical Centre\nPatient: Oni Dhawan, 57/M Date: 08/01/2026\nDiagnosis: cataract surgery (phacoemulsification)\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ }
+}

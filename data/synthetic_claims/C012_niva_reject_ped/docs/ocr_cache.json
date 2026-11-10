@@ -1,0 +1,26 @@
+{
+ "claim_form": {
+  "text": "Niva Bupa Health Insurance\nHealth Insurance Ciaim Form (Reimbursement), Part A\nPolicy number _ NB7089247694\nProduct ReAssure (Aspire)\nPolicy start date 15/12/2025\nSum insured (Rs.) ~ 10,00,000\nName of patient \"Raghav Pradhan\nAge / Sex | 40 years /F\nContact number 9898310606\nDate of admission 1506/2026\nDate of discharge 20/06/2026\nNature of iliness tines\nRoom category occupied Standard single\nTotal amount claimed (Rs.) 1,07,050\nDeclaration\n| declare that the information furnished in this claim form is true and correct to the best of my knowledge. | agree to\nSignature of the insured: Date: 20/06/2026\nSynthetic: test document, generates for sofware evaluation Nol a sea recent Page?\n",
+  "method": "ocr"
+ },
+ "discharge_summary": {
+  "text": "Metro Heart and General Hospital\nDischarge Summary\nPatient Raghav Pradhan, 40 years, F\nUHID UH577917\nDate of admission 15/06/2026\nDate of discharge 20/06/2026\nLength of stay 5 day(s)\nConsultant Dr, S. Mehta\nFinal diagnosis\ndiabetic foot infection with debridement\nHistory\nKnown case of diabetic foot infection with debridement, diagnosed on 15/06/2024, on regular treatment.\nCourse in hospital\nStable condition on 20/06/2026.\nAdvice on discharge\nDr. S. Mehta (Treating consultant)\nSiynthatic test docwment, generated tor sofort exaianbor Not a real record Page t\n",
+  "method": "ocr"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nMetro Heart and General Hospital\nAhmedabad | Final Inpatient Bill\nBill no\nBL/2026/30833\nUHID\nUH577917\nPatient\nRaghav Pradhan\nAge / Sex\n40 / F\nAdmitted\n15/06/2026\nDischarged\n20/06/2026\nConsultant\nDr. S. Mehta\nRoom\nstandard single\nSummary of charges\nHead\nAmount\nRoom and Bed Charges\n23,500\nProfessional Fees\n28,350\nOperation Theatre\n14,350\nPharmacy\n19,950\nConsumables\n2,700\nDiagnostics\n9,000\nNursing\n9,200\nTotal bill\n1,07,050\n\nSynthetic test document, generated for software evaluation. Not a real record.\nPage 2\nItemised statement\nDate\nDescription\nQty\nRate\nAmount\n15/06/2026\nRoom charges (standard single)\n5\n4,700\n23,500\n15/06/2026\nSurgeon and anaesthetist fees\n1\n28,350\n28,350\n15/06/2026\nOperation theatre charges\n1\n14,350\n14,350\n15/06/2026\nLaboratory and radiology investigations\n1\n9,000\n9,000\n15/06/2026\nNursing charges\n1\n9,200\n9,200\n15/06/2026\nPharmacy and medicines\n1\n19,950\n19,950\n15/06/2026\nDisposable consumables and admission kit\n1\n2,700\n2,700\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nRaghav Pradhan\nAge / Gender\n40 / F\nID number\nXXXX XXXX 9357\nMobile\n9898310606\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Metro Heart and General Hospital Pathology\nPatient: Raghav Pradhan | Date: 15/06/2026\n\nTest Result Reference\n\nHaemoglobin 13.1 g/dl 12.0 - 16.0\n\nWBC count 7,400 jcmm 4,000 - 11,000\nBlood sugar (random) 104 mg/d 70 - 140\n\nSerum creatinine 0.9 mg/dl 0.6 - 1.2\n\nSyothenc test doqument. genscated for sottware oy auation. Nota real record. Paget\n",
+  "method": "ocr"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. S. Mehta\nMetro Heart and General Hospital\nPatient: Raghav Pradhan, 40/F Date: 15/06/2026\nDiagnosis: diabetic foot infection with debridement\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ }
+}

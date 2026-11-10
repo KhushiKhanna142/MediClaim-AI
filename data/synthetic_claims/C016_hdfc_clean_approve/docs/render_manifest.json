@@ -1,0 +1,52 @@
+{
+ "claim_id": "C016_hdfc_clean_approve",
+ "ids": {
+  "policy_no": "HD8650548181",
+  "hospital": "Lotus Care Hospital",
+  "city": "Indore",
+  "bill_no": "BL/2025/4647",
+  "uhid": "UH547466",
+  "phone": "9541380072",
+  "aadhaar_tail": "5523",
+  "doctor": "Dr. A. Kulkarni"
+ },
+ "bill_layout": "compact",
+ "docs": [
+  {
+   "doc": "claim_form",
+   "file": "claim_form.pdf",
+   "scanned": true,
+   "layout": null
+  },
+  {
+   "doc": "hospital_bill",
+   "file": "hospital_bill.pdf",
+   "scanned": true,
+   "layout": "compact"
+  },
+  {
+   "doc": "discharge_summary",
+   "file": "discharge_summary.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "id_proof",
+   "file": "id_proof.pdf",
+   "scanned": true,
+   "layout": null
+  },
+  {
+   "doc": "lab_report",
+   "file": "lab_report.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "prescription",
+   "file": "prescription.pdf",
+   "scanned": false,
+   "layout": null
+  }
+ ]
+}

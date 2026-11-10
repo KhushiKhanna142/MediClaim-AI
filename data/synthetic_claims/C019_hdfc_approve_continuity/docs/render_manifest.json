@@ -1,0 +1,52 @@
+{
+ "claim_id": "C019_hdfc_approve_continuity",
+ "ids": {
+  "policy_no": "HD3228640966",
+  "hospital": "Harmony Medical Centre",
+  "city": "Indore",
+  "bill_no": "BL/2025/7005",
+  "uhid": "UH869932",
+  "phone": "9776323945",
+  "aadhaar_tail": "8018",
+  "doctor": "Dr. S. Mehta"
+ },
+ "bill_layout": "grouped",
+ "docs": [
+  {
+   "doc": "claim_form",
+   "file": "claim_form.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "hospital_bill",
+   "file": "hospital_bill.pdf",
+   "scanned": false,
+   "layout": "grouped"
+  },
+  {
+   "doc": "discharge_summary",
+   "file": "discharge_summary.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "id_proof",
+   "file": "id_proof.pdf",
+   "scanned": true,
+   "layout": null
+  },
+  {
+   "doc": "lab_report",
+   "file": "lab_report.pdf",
+   "scanned": true,
+   "layout": null
+  },
+  {
+   "doc": "prescription",
+   "file": "prescription.pdf",
+   "scanned": false,
+   "layout": null
+  }
+ ]
+}

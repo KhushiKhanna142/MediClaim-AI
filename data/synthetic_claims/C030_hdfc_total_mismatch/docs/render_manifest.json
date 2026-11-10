@@ -1,0 +1,52 @@
+{
+ "claim_id": "C030_hdfc_total_mismatch",
+ "ids": {
+  "policy_no": "HD7536454268",
+  "hospital": "Lotus Care Hospital",
+  "city": "Indore",
+  "bill_no": "BL/2025/98218",
+  "uhid": "UH480939",
+  "phone": "9200596177",
+  "aadhaar_tail": "7595",
+  "doctor": "Dr. V. Iyer"
+ },
+ "bill_layout": "classic",
+ "docs": [
+  {
+   "doc": "claim_form",
+   "file": "claim_form.pdf",
+   "scanned": true,
+   "layout": null
+  },
+  {
+   "doc": "hospital_bill",
+   "file": "hospital_bill.pdf",
+   "scanned": false,
+   "layout": "classic"
+  },
+  {
+   "doc": "discharge_summary",
+   "file": "discharge_summary.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "id_proof",
+   "file": "id_proof.pdf",
+   "scanned": true,
+   "layout": null
+  },
+  {
+   "doc": "lab_report",
+   "file": "lab_report.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "prescription",
+   "file": "prescription.pdf",
+   "scanned": false,
+   "layout": null
+  }
+ ]
+}
