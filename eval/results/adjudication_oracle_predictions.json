@@ -1275,30 +1275,22 @@
   "retrieved_clause_ids": []
  },
  "C009_niva_reject_specified": {
-  "decision": "partial",
-  "payable_amount": 89800.0,
-  "deductions": [
-   {
-    "rule": "non_payable",
-    "amount": 3200.0,
-    "clause_id": "4.1.20.1.1",
-    "note": "consumable"
-   }
-  ],
+  "decision": "reject",
+  "payable_amount": 0.0,
+  "deductions": [],
   "cited_clause_ids": [
-   "4.1.20.1.1",
-   "4.1.2"
+   "5.1.2"
   ],
   "reasons": [
-   "Payable amount reduced by: non_payable."
+   "17 months of continuous coverage is below the 24-month waiting period that applies."
   ],
   "flags": [],
   "warnings": [],
   "findings": {
    "initial_waiting_days": 30,
    "initial_wait_clause": "5.1.3",
-   "is_specified": false,
-   "spec_clause": null,
+   "is_specified": true,
+   "spec_clause": "5.1.2",
    "is_pre_existing": false,
    "ped_clause": "5.1.1",
    "ped_def_clause": "2.1.35",
@@ -1309,7 +1301,7 @@
    "non_payable_clause": "4.1.20.1.1",
    "sum_insured_clause": "2.2.5/4",
    "coverage_clause": "4.1.2",
-   "reasoning": "The policy mandates a 30-day initial waiting period for illnesses, which the claim easily satisfies since the policy started over a year prior to admission. The diagnosis of laparoscopic cholecystectomy for gallstones does not appear on the policy's specified disease or procedure waiting period list."
+   "reasoning": "The policy includes a 30-day initial waiting period and lists stones in the biliary system under its specified diseases and procedures waiting period. The policy start date and admission date show that the claim is outside the initial waiting period, but falls within the specified disease waiting period if applicable, though the diagnosis matches the specified list. Standard hospitalization expenses are covered and room-related proportionate deductions are defined."
   },
   "retrieved_clause_ids": [
    "2.1.16",
@@ -1337,30 +1329,22 @@
   "dropped_citations": []
  },
  "C010_niva_reject_specified": {
-  "decision": "partial",
-  "payable_amount": 62900.0,
-  "deductions": [
-   {
-    "rule": "non_payable",
-    "amount": 1500.0,
-    "clause_id": "4.1.20.1.1",
-    "note": "consumable"
-   }
-  ],
+  "decision": "reject",
+  "payable_amount": 0.0,
+  "deductions": [],
   "cited_clause_ids": [
-   "4.1.20.1.1",
-   "4.1.2"
+   "5.1.2"
   ],
   "reasons": [
-   "Payable amount reduced by: non_payable."
+   "8 months of continuous coverage is below the 12-month waiting period that applies."
   ],
   "flags": [],
   "warnings": [],
   "findings": {
    "initial_waiting_days": 30,
    "initial_wait_clause": "5.1.3",
-   "is_specified": false,
-   "spec_clause": null,
+   "is_specified": true,
+   "spec_clause": "5.1.2",
    "is_pre_existing": false,
    "ped_clause": "5.1.1",
    "ped_def_clause": "2.1.35",
@@ -1371,7 +1355,7 @@
    "non_payable_clause": "4.1.20.1.1",
    "sum_insured_clause": "2.2.1",
    "coverage_clause": "4.1.2",
-   "reasoning": "The policy imposes a 30-day initial waiting period for illnesses and defines pre-existing diseases and room rent proration rules. Cataract surgery is an illness-related hospitalization occurring after the initial waiting period with no stated pre-existing history."
+   "reasoning": "The policy specifies a 30-day initial waiting period and lists cataract under the specified disease/procedure waiting period. Since the admission date is after the continuous coverage period has elapsed and no pre-existing condition is stated, standard coverage and claim limits apply."
   },
   "retrieved_clause_ids": [
    "2.1.16",
@@ -1425,7 +1409,7 @@
    "non_payable_clause": "Section C",
    "sum_insured_clause": "Def.29",
    "coverage_clause": null,
-   "reasoning": "The policy specifies a 30-day initial waiting period for illnesses and lists cataract under specific diseases/procedures subject to waiting periods. Since the policy has been active since 2023 and admission is in 2025, these waiting periods are satisfied and no pre-existing history of cataract is stated."
+   "reasoning": "The policy specifies cataract under the 24-month specified disease waiting period and enforces a 30-day initial waiting period for illnesses. The claimant has no stated history of pre-existing conditions related to the diagnosis, and standard room and non-payable expense clauses apply."
   },
   "retrieved_clause_ids": [
    "1.1.1",
@@ -1473,7 +1457,7 @@
    "non_payable_clause": "Section C",
    "sum_insured_clause": "Def.29",
    "coverage_clause": null,
-   "reasoning": "The policy includes standard waiting periods and lists cholecystectomy and gall bladder diseases among specified surgeries and conditions subject to waiting rules. Since the admission date is well beyond 30 days and 36 months from inception without prior history, initial and specific waiting periods are cleared and pre-existing disease rules do not apply."
+   "reasoning": "The claimant underwent a laparoscopic cholecystectomy for gallstones, which is explicitly listed as a specified disease and surgical procedure under the policy's waiting period clauses. Since the policy start date and admission date yield more than 24 months of coverage, the specified disease waiting period is satisfied, and no pre-existing condition is recorded."
   },
   "retrieved_clause_ids": [
    "1.1.1",
