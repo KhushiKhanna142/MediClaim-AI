@@ -19,8 +19,21 @@
   "text": "Harmony Medical Centre Pathology\nPatient: Jasmit Bhardwaj | Date: 17/01/2026\n\nTest Result Reference\n\na 13.1 gid Loan\naiecs Golan 7,400 /emm 4,000 - 11,000\nBlood sugar (random) 104 mg/dL 70 - 140\nSerum creatinine 0.9 mg/dl. mrad\nSyrihetic test doeurnent. ganecabed I sottware evaluation Not 6 real record eet\n",
   "method": "ocr"
  },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nPolicy Schedule\nPolicy number\nNB4521983252\nInsurer\nNiva Bupa Health Insurance\nProduct\nReAssure (Aspire)\nInsured person\nJasmit Bhardwaj, 51 years, M\nPolicy start date\n17/01/2024\nSum insured (Rs.)\n10,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n12 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
  "prescription": {
   "text": "Dr. P. Deshmukh\nHarmony Medical Centre\nPatient: Jasmit Bhardwaj, 51/M Date: 17/01/2026\nRx: Tab. Paracetamol! 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\nSipetnatic test document, yrnaraied tor cotware wrsiathion. Mote ee) recor Paget\n",
   "method": "ocr"
+ },
+ "_files": {
+  "claim_form.pdf": 2904,
+  "discharge_summary.pdf": 2644,
+  "hospital_bill.pdf": 2833,
+  "id_proof.pdf": 2012,
+  "lab_report.pdf": 125041,
+  "policy_schedule.pdf": 2483,
+  "prescription.pdf": 181601
  }
 }

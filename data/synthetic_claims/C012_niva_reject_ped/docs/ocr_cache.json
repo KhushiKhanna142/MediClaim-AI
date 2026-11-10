@@ -19,8 +19,21 @@
   "text": "Metro Heart and General Hospital Pathology\nPatient: Raghav Pradhan | Date: 15/06/2026\n\nTest Result Reference\n\nHaemoglobin 13.1 g/dl 12.0 - 16.0\n\nWBC count 7,400 jcmm 4,000 - 11,000\nBlood sugar (random) 104 mg/d 70 - 140\n\nSerum creatinine 0.9 mg/dl 0.6 - 1.2\n\nSyothenc test doqument. genscated for sottware oy auation. Nota real record. Paget\n",
   "method": "ocr"
  },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nPolicy Schedule\nPolicy number\nNB7089247694\nInsurer\nNiva Bupa Health Insurance\nProduct\nReAssure (Aspire)\nInsured person\nRaghav Pradhan, 40 years, F\nPolicy start date\n15/12/2025\nSum insured (Rs.)\n10,00,000\nWaiting period, pre-existing diseases\n12 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
  "prescription": {
   "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. S. Mehta\nMetro Heart and General Hospital\nPatient: Raghav Pradhan, 40/F Date: 15/06/2026\nDiagnosis: diabetic foot infection with debridement\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
   "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 158665,
+  "discharge_summary.pdf": 155076,
+  "hospital_bill.pdf": 4056,
+  "id_proof.pdf": 2012,
+  "lab_report.pdf": 153316,
+  "policy_schedule.pdf": 2480,
+  "prescription.pdf": 1963
  }
 }

@@ -15,8 +15,20 @@
   "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nMetro Heart and General Hospital Pathology\nPatient: Triya Pant | Date: 12/11/2025\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
   "method": "text_layer"
  },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nPolicy Schedule\nPolicy number\nHD9072184057\nInsurer\nHDFC ERGO General Insurance\nProduct\nOptima Secure\nInsured person\nTriya Pant, 32 years, M\nPolicy start date\n12/04/2023\nSum insured (Rs.)\n10,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
  "prescription": {
   "text": "Dr. A. Kulkarni\nMetro Heart and General Hospital\nPatient: Triya Pant, 32/M Date: 12/11/2025\nDiagnosis: laparoscopic cholecystectomy (gallstones)\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\nSynthase few? GonuInenl generated for cottware evalwation Mos a real recor Paget\n",
   "method": "ocr"
+ },
+ "_files": {
+  "claim_form.pdf": 2920,
+  "hospital_bill.pdf": 2544,
+  "id_proof.pdf": 101022,
+  "lab_report.pdf": 2177,
+  "policy_schedule.pdf": 2473,
+  "prescription.pdf": 151547
  }
 }

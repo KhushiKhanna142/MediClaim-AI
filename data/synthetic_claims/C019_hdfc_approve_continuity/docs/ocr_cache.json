@@ -19,8 +19,21 @@
   "text": "Harmony Medical Centre Pathology\nPatient: Hemal Sen | Date: 26/06/2025\n\nTest Result Reference\n\nHaemoglobin 13.1 g/dL | 12.0 - 16.0\n\nWBC count 7,400 /emm 4,000 - 11,000\nBlood sugar (random) 104 mg/dL 70 - 140\n\nSerum creatinine 0.9 mg/dL 0.6 - 1.2\n\nSynthetic test document, generated tor sohwart evaluation, Not a real record Page |\n",
   "method": "ocr"
  },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nPolicy Schedule\nPolicy number\nHD3228640966\nInsurer\nHDFC ERGO General Insurance\nProduct\nOptima Secure\nInsured person\nHemal Sen, 43 years, F\nPolicy start date\n26/12/2024\nSum insured (Rs.)\n10,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\n30 months\n",
+  "method": "text_layer"
+ },
  "prescription": {
   "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. S. Mehta\nHarmony Medical Centre\nPatient: Hemal Sen, 43/F Date: 26/06/2025\nDiagnosis: inguinal hernia repair\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
   "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 2899,
+  "discharge_summary.pdf": 2633,
+  "hospital_bill.pdf": 3119,
+  "id_proof.pdf": 131423,
+  "lab_report.pdf": 96470,
+  "policy_schedule.pdf": 2474,
+  "prescription.pdf": 1934
  }
 }

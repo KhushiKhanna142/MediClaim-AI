@@ -19,8 +19,21 @@
   "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nSunrise Multispeciality Hospital Pathology\nPatient: Dipta Shroff | Date: 02/07/2025\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
   "method": "text_layer"
  },
+ "policy_schedule": {
+  "text": "Niva Bupa Health Insurance\n\nPolicy Schedule\n\nPolicy number NB2723150337\n\nInsurer _ Niva Bupa Health Insurance\n\nProduct ReAssure (Aspire)\n\nInsured person Dipta Shroff, 37 years, M\n\nPolicy start date \"92/03/2023\n\nSum insured (Rs.) 1 10,00,000\n\nWaiting period, pre-existing diseast\u00ae months\n\nWaiting period, specified diseases#prosadbees\n\nInitial waiting period 30 days (not applicable to accidents)\n\nRoom rent limit No limit (single private room or lower)\n\nEligible room category standard single\n\nCo-payment Nil\n\nContinuity credit (portability) None\n",
+  "method": "ocr"
+ },
  "prescription": {
   "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. V. Iyer\nSunrise Multispeciality Hospital\nPatient: Dipta Shroff, 37/M Date: 02/07/2025\nDiagnosis: pneumonia\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
   "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 2899,
+  "discharge_summary.pdf": 2623,
+  "hospital_bill.pdf": 134712,
+  "id_proof.pdf": 2011,
+  "lab_report.pdf": 2182,
+  "policy_schedule.pdf": 105124,
+  "prescription.pdf": 1936
  }
 }

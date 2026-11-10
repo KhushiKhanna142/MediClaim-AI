@@ -19,8 +19,21 @@
   "text": "Harmony Medical Centre Pathology\nPatient: Oni Dhawan | Date: 08/01/2026\nTest | Result : Reference\nHaemoglobin 13.1 g/dL 12.0- 16.0\nWBC count 7,400 /emm 4,000 - 11,000\nBlood sugar (random) 104 mg/dL. | 70 - 140 |\nSerum creatinine 0.9 mg/dL 0.6-1.2\nSynthetic test document, generated for software eval ation. Not a real record Page 1\n",
   "method": "ocr"
  },
+ "policy_schedule": {
+  "text": "Niva Bupa Health Insurance\nPolicy Schedule\nPolicy number NB7055821064\nInsurer Niva Bupa Health Insurance\nProduct ReAssure (Aspire)\nInsured person Oni Dhawan, 57 years, M\nPolicy start date 08/05/2025\nSum insured (Rs.) 10,00,000\nWaiting period, pre-existing diseast\u00ae months\nWaiting period, specified diseases }toordures\nInitial waiting period 30 days (not applicable to accidents)\nRoom rent limit No limit (single private room or lower)\nEligible room category standard single\nCo-payment Nil\nContinuity credit (portability) None\nSynthete test Gocurnent, generated for sofware evahssion Not a roal record Page t\n",
+  "method": "ocr"
+ },
  "prescription": {
   "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. V. Iyer\nHarmony Medical Centre\nPatient: Oni Dhawan, 57/M Date: 08/01/2026\nDiagnosis: cataract surgery (phacoemulsification)\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
   "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 2920,
+  "discharge_summary.pdf": 2636,
+  "hospital_bill.pdf": 239431,
+  "id_proof.pdf": 2008,
+  "lab_report.pdf": 135890,
+  "policy_schedule.pdf": 118010,
+  "prescription.pdf": 1954
  }
 }

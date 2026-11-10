@@ -46,11 +46,15 @@ def read_pdf(path: Path, dpi: int = 200) -> tuple[str, str]:
 def read_claim_docs(claim_dir: Path, use_cache: bool = True) -> dict[str, dict]:
     """Reads every PDF in claim_dir/docs. Returns {doc_name: {"text":..., "method":...}}."""
     cache = claim_dir / "docs" / "ocr_cache.json"
+    pdfs = sorted((claim_dir / "docs").glob("*.pdf"))
+    stamp = {p.name: p.stat().st_size for p in pdfs}   # a re-rendered or added PDF invalidates the cache
     if use_cache and cache.exists():
-        return json.loads(cache.read_text())
+        saved = json.loads(cache.read_text())
+        if saved.get("_files") == stamp:
+            return {k: v for k, v in saved.items() if k != "_files"}
     out = {}
-    for pdf in sorted((claim_dir / "docs").glob("*.pdf")):
+    for pdf in pdfs:
         text, method = read_pdf(pdf)
         out[pdf.stem] = {"text": text, "method": method}
-    cache.write_text(json.dumps(out, indent=1))
+    cache.write_text(json.dumps({**out, "_files": stamp}, indent=1))
     return out

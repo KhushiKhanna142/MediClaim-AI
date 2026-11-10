@@ -8,6 +8,8 @@ import json
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 from src.adjudication.reader import gather, passage
 from src.rag.index import build_index
 from src.rag.reranker import get_reranker

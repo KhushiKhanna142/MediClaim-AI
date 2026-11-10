@@ -19,8 +19,21 @@
   "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHarmony Medical Centre Pathology\nPatient: Omya Boase | Date: 26/07/2026\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
   "method": "text_layer"
  },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nPolicy Schedule\nPolicy number\nNB6054592948\nInsurer\nNiva Bupa Health Insurance\nProduct\nReAssure (Aspire)\nInsured person\nOmya Boase, 70 years, F\nPolicy start date\n26/06/2025\nSum insured (Rs.)\n3,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n12 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\nRoom type modification\nOpted (higher room category allowed with co-payment as per policy)\n",
+  "method": "text_layer"
+ },
  "prescription": {
   "text": "Dr. P. Deshmukh\nHarmony Medical Centre\nPatient: Omya Boase, 70/F Date: 26/07/2026\nDiagnosis: dengue fever\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\nSynthetic est dociyment, genersied for softeare evaluation. Not a dew record. Paget\n",
   "method": "ocr"
+ },
+ "_files": {
+  "claim_form.pdf": 147985,
+  "discharge_summary.pdf": 2615,
+  "hospital_bill.pdf": 2787,
+  "id_proof.pdf": 119962,
+  "lab_report.pdf": 2168,
+  "policy_schedule.pdf": 2553,
+  "prescription.pdf": 206709
  }
 }

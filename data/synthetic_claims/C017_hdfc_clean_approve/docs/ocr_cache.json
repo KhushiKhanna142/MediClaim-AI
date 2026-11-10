@@ -19,8 +19,21 @@
   "text": "Lotus Care Hospital Pathology\nPatient: Pranit Kohii | Date: 05/08/2025\nHaemoglobin 13.1 g/dl 12.0 - 16.0\nWBC count 7,400 \u2018comm 4,000 - 11,000\nBlood sugar (random) 104 mg/d 70 - 140 :\nSerum creatinine 0.9 mg/dt 06-12\nSyetineke Hert Gocumnent, gene ated lar scftwwe evatuabon Not 4 real record Page t\n",
   "method": "ocr"
  },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nPolicy Schedule\nPolicy number\nHD9891455579\nInsurer\nHDFC ERGO General Insurance\nProduct\nOptima Secure\nInsured person\nPranit Kohli, 50 years, M\nPolicy start date\n05/12/2022\nSum insured (Rs.)\n10,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
  "prescription": {
   "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. P. Deshmukh\nLotus Care Hospital\nPatient: Pranit Kohli, 50/M Date: 05/08/2025\nDiagnosis: cataract surgery (phacoemulsification)\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
   "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 2914,
+  "discharge_summary.pdf": 2640,
+  "hospital_bill.pdf": 2500,
+  "id_proof.pdf": 123401,
+  "lab_report.pdf": 158139,
+  "policy_schedule.pdf": 2478,
+  "prescription.pdf": 1956
  }
 }

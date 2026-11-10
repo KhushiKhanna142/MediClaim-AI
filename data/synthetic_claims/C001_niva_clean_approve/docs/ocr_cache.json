@@ -19,8 +19,21 @@
   "text": "Harmony Medical Centre Pathology\nPatient: Matthew Rana | Date: 19/02/2025\nTest Result Reterence\nHaemoglobin 13.1 gid. 12.0 - 16.0\nWBC count 7,400 femm 4,000 - 11,000\nBlood sugar (random) 104 mg/dl 70 - 140\nSerum creatinine 0.9 mg/dt. 06-12\nSyettetc tea! document, generated for softwnte eviuaiion Not a teal cord Paget\n",
   "method": "ocr"
  },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nPolicy Schedule\nPolicy number\nNB9589406906\nInsurer\nNiva Bupa Health Insurance\nProduct\nReAssure (Aspire)\nInsured person\nMatthew Rana, 55 years, F\nPolicy start date\n19/02/2022\nSum insured (Rs.)\n10,00,000\nWaiting period, pre-existing diseases\n12 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
  "prescription": {
   "text": "Dr. V. lyer\nHarmony Medical Centre\nPatient: Matthew Rana, 55/F Date: 19/02/2025\nDiagnosis: inguinal hernia repair\nRix Tab, Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\nSyninetc test Gocumnen. generated tor softens evatuation Not 8 rows recond. Page!\n",
   "method": "ocr"
+ },
+ "_files": {
+  "claim_form.pdf": 2903,
+  "discharge_summary.pdf": 2635,
+  "hospital_bill.pdf": 3129,
+  "id_proof.pdf": 2008,
+  "lab_report.pdf": 131096,
+  "policy_schedule.pdf": 2478,
+  "prescription.pdf": 98593
  }
 }

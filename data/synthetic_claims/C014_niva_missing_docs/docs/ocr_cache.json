@@ -15,8 +15,20 @@
   "text": "Sanjivani Hospital and Research Centre Pathology\nPatient: Watika Wali | Date: 21/08/2025\nTest Result | Reference\nHaemoglobin \"43.1 g/dL | 42.0- 16.0\nWBC count 7,400 /emm 4,000 - 11,000\nBlood sugar (random) 104 mg/dL 70 - 140\nSerum creatinine 0.9 mg/dL. 06-12\n",
   "method": "ocr"
  },
+ "policy_schedule": {
+  "text": "Niva Bupa Health Insurance\n\nPolicy Schedule\n\nPolicy number NB3847586742\n\ninsurer Niva Bupa Health Insurance\nProduct ReAssure (Aspire)\n\nInsured person Watika Wali, 35 years, M\n\nPolicy start date 21/07/2025\n\nSum insured (Rs.) 3,00,000\n\nWaiting period, pre-existing diseast% months\n\nWaiting period, specified diseases/ftocedtttes\n\nInitial waiting period 30 days (not applicable to accidents)\nRoom rent limit No limit (single private room or lower)\nEligible room category standard single\nCo-payment Nil\nContinuity credit (portability) None\n",
+  "method": "ocr"
+ },
  "prescription": {
   "text": "Dr. P. Deshmukh\nSanjivani Hospital and Research Centre\nPatient: Watika Wali, 35/M Date: 21/08/2025\nDiagnosis: fracture of femur, ORIF (road accident)\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days: Cap. Pantoprazole 40 mg 1-0-0 x 5 days\nSynthati\u00a2 est document, generated for soltware evaluation, Not a.real record. Page t\n",
   "method": "ocr"
+ },
+ "_files": {
+  "claim_form.pdf": 2929,
+  "hospital_bill.pdf": 166777,
+  "id_proof.pdf": 2011,
+  "lab_report.pdf": 149200,
+  "policy_schedule.pdf": 155680,
+  "prescription.pdf": 185819
  }
 }

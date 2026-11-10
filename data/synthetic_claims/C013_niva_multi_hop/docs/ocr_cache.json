@@ -19,8 +19,21 @@
   "text": "Metro Heart and General Hospital Pathology\nPatient: Dev Bhasin | Date: 24/07/2025\nTest | Result riot\n: 13.1 gid 12.0 - 16.0\nWBC count j 7,400 \u2018comm 4,000 - 11,000\nBlood sugar (random) 104 mg/d bili\nS \u2018 0.9 mg/dl. 06-12\niyriteetie: Nett OREM, ganratEd fer commie wwahwation. Hot a ret iced dn ia\n",
   "method": "ocr"
  },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nPolicy Schedule\nPolicy number\nNB6874677865\nInsurer\nNiva Bupa Health Insurance\nProduct\nReAssure (Aspire)\nInsured person\nDev Bhasin, 50 years, M\nPolicy start date\n24/01/2023\nSum insured (Rs.)\n5,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
  "prescription": {
   "text": "Dr. P. Deshmukh\nMetro Heart and General Hospital\nPatient: Dev Bhasin, 50/M Date: 24/07/2025\nDiagnosis: total knee replacement\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\nSynthetic test document, gonerated for software evaluation, Not a real record. Page 1\n",
   "method": "ocr"
+ },
+ "_files": {
+  "claim_form.pdf": 159798,
+  "discharge_summary.pdf": 2641,
+  "hospital_bill.pdf": 276699,
+  "id_proof.pdf": 2008,
+  "lab_report.pdf": 168160,
+  "policy_schedule.pdf": 2475,
+  "prescription.pdf": 69309
  }
 }

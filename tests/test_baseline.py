@@ -42,8 +42,22 @@ def test_needs_review_skips_money():
 
 def test_naive_pipeline_end_to_end(tmp_path):
     (tmp_path / "docs").mkdir()
-    (tmp_path / "docs" / "ocr_cache.json").write_text(json.dumps({"claim_form": {"text": "Name Asha Rao total 8,000", "method": "ocr"}}))
+    (tmp_path / "docs" / "ocr_cache.json").write_text(json.dumps({"claim_form": {"text": "Name Asha Rao total 8,000", "method": "ocr"}, "_files": {}}))
     llm = StubLLM('{"decision": "approve", "payable_amount": 8000, "cited_clause_ids": ["6.2.9"], "reasoning": "ok"}')
     out = NaiveBaseline(StubRetriever(), llm).predict(tmp_path, "niva_aspire")
     assert out["decision"] == "approve" and out["retrieved_clause_ids"] == ["2.12/1", "6.2.9"]
     assert "Asha Rao" in llm.seen and "[clause 6.2.9]" in llm.seen
+
+
+def test_ocr_cache_is_invalidated_when_files_change(tmp_path):
+    import fitz
+    from src.baseline.ocr import read_claim_docs
+    (tmp_path / "docs").mkdir()
+    def make(name, text):
+        doc = fitz.open()
+        doc.new_page().insert_text((72, 72), text * 3)
+        doc.save(tmp_path / "docs" / name)
+    make("claim_form.pdf", "claim form text ")
+    assert set(read_claim_docs(tmp_path)) == {"claim_form"}
+    make("policy_schedule.pdf", "schedule text here ")
+    assert set(read_claim_docs(tmp_path)) == {"claim_form", "policy_schedule"}

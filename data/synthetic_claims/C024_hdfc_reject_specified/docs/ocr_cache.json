@@ -19,8 +19,21 @@
   "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nSanjivani Hospital and Research Centre Pathology\nPatient: Inaya Taneja | Date: 23/08/2025\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
   "method": "text_layer"
  },
+ "policy_schedule": {
+  "text": "HDFC ERGO General Insurance\n\nPolicy Schedule\n\nPolicy number HD9350942479\n\nInsurer _ HDFC ERGO General insurance\n\nProduct Optima Secure\n\nInsured person Inaya Taneja, 53 years, F\n\nPolicy start date \"23/12/2023\n\nSum insured (Rs.) 3,00,000\n\nWaiting period, pre-existing diseas@ months\n\nWaiting period, specified diseases Hrocedtres\n\nInitial waiting period 30 days (not applicable to accidents)\nRoom rent limit No limit (single private room or lower)\nEligible room category standard single\n\nCo-payment Nil\n\nContinuity credit (portability) None\n",
+  "method": "ocr"
+ },
  "prescription": {
   "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. P. Deshmukh\nSanjivani Hospital and Research Centre\nPatient: Inaya Taneja, 53/F Date: 23/08/2025\nDiagnosis: cataract surgery (phacoemulsification)\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
   "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 2930,
+  "discharge_summary.pdf": 134189,
+  "hospital_bill.pdf": 4126,
+  "id_proof.pdf": 2009,
+  "lab_report.pdf": 2184,
+  "policy_schedule.pdf": 110582,
+  "prescription.pdf": 1972
  }
 }

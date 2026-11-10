@@ -19,8 +19,21 @@
   "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nSunrise Multispeciality Hospital Pathology\nPatient: Gautam Samra | Date: 15/08/2026\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
   "method": "text_layer"
  },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nPolicy Schedule\nPolicy number\nNB4472588803\nInsurer\nNiva Bupa Health Insurance\nProduct\nReAssure (Aspire)\nInsured person\nGautam Samra, 43 years, M\nPolicy start date\n15/06/2026\nSum insured (Rs.)\n3,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\nRoom type modification\nOpted (higher room category allowed with co-payment as per policy)\n",
+  "method": "text_layer"
+ },
  "prescription": {
   "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. V. Iyer\nSunrise Multispeciality Hospital\nPatient: Gautam Samra, 43/M Date: 15/08/2026\nDiagnosis: fracture of femur, ORIF (road accident)\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
   "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 2923,
+  "discharge_summary.pdf": 2669,
+  "hospital_bill.pdf": 127208,
+  "id_proof.pdf": 2009,
+  "lab_report.pdf": 2182,
+  "policy_schedule.pdf": 2554,
+  "prescription.pdf": 1968
  }
 }

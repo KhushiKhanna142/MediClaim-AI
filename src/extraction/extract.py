@@ -24,6 +24,11 @@ Return one JSON object and nothing else. Rules:
 - room_limit_per_day is null when the schedule says no limit. copay_pct is 0 when Nil. continuity_credit_months is 0 when None.
 - items: every line of the hospital bill (not subtotals or totals). category is one of: room, icu, surgeon, ot, medicine, consumable, investigation, implant, nursing, other.
   consumable means disposables such as gloves, syringes, masks, admission kits and similar non-medical items; medicine means drugs and pharmacy.
+- Policy schedule labels map to keys as follows: "Waiting period, pre-existing diseases" -> ped_waiting_months (number of months);
+  "Waiting period, specified diseases/procedures" -> specified_waiting_months; "Room rent limit" -> room_limit_per_day;
+  "Eligible room category" -> eligible_room; "Co-payment" -> copay_pct; "Continuity credit (portability)" -> continuity_credit_months;
+  "Sum insured" -> sum_insured; "Policy start date" -> policy_start. A "Room type modification" row that says Opted means
+  room_type_modification is true; if the row is absent it is false.
 - claimed_total comes from the claim form; bill_total from the printed grand total on the bill. They may differ; report each as written.
 Keys: patient_name, age, sex, policy_number, hospital, diagnosis, cause, known_history, history_onset_date, admission_date, discharge_date,
 length_of_stay_days, room_category_claimed, claimed_total, bill_total, items[{description, qty, rate, amount, category}], sum_insured,

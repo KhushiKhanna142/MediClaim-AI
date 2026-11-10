@@ -19,8 +19,21 @@
   "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nLotus Care Hospital Pathology\nPatient: Faras Murthy | Date: 08/03/2026\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
   "method": "text_layer"
  },
+ "policy_schedule": {
+  "text": "HDFC ERGO General Insurance\n\nPolicy Schedule\n\nPolicy number HD7129340549\n\ninsurer _ HDFC ERGO General Insurance\n\nProduct Optima Secure\n\nInsured person Faras Murthy, 60 years, F\n\nPolicy start date \"98/08/2023\n\nSum insured (Rs.) 3,00,000\n\nWaiting period, pre-existing diseasa months\n\nWaiting period, specified diseases ptocertites\n\nInitial waiting period 30 days (not applicable to accidents)\n\nRoom rent limit No limit (single private room or lower)\n\nEligible room category standard single\n\nCo-payment Nil\n\nContinuity credit (portability) None\nSynthetic test docurnent!, generated fot sofware ovaiiahon. Not a (eal record. Page +\n",
+  "method": "ocr"
+ },
  "prescription": {
   "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. R. Nair\nLotus Care Hospital\nPatient: Faras Murthy, 60/F Date: 08/03/2026\nDiagnosis: total knee replacement\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
   "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 142708,
+  "discharge_summary.pdf": 2623,
+  "hospital_bill.pdf": 2898,
+  "id_proof.pdf": 116270,
+  "lab_report.pdf": 2168,
+  "policy_schedule.pdf": 195882,
+  "prescription.pdf": 1934
  }
 }

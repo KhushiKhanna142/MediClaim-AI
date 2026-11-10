@@ -42,7 +42,7 @@ TOPICS = {
     "room": "room rent limit per day proportionate deduction of other charges",
     "room_modification": "room type modification co-payment shared room single room deluxe room",
     "non_payable": "non-medical expenses not payable items consumables list",
-    "coverage": "hospitalization expenses covered we will pay inpatient treatment",
+    "coverage": "the Company shall indemnify we will pay medical expenses incurred hospitalization inpatient treatment covered benefit",
     "sum_insured": "sum insured definition maximum liability limit",
     "diagnosis_lookup": "{dx}",
 }

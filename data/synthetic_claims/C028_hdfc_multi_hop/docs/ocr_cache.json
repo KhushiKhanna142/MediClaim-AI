@@ -19,8 +19,21 @@
   "text": "Harmony Medical Centre Pathology\nPatient: Libni Paian | Date: 07/02/2025\nTest Result Reference\nHaemoglobin 13,1 gid 12.0- 16.0\nWBC count 7,400 /omm 4,000 - 11,000\nBlood sugar (random) 104 mg/dL 70 - 140\nSerum creatinine 0.9 mg/di 06-12\nSynihetic test Gocument, generated for sofware evaluation. Not a real record Paget\n",
   "method": "ocr"
  },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nPolicy Schedule\nPolicy number\nHD4793508062\nInsurer\nHDFC ERGO General Insurance\nProduct\nOptima Secure\nInsured person\nLibni Palan, 59 years, M\nPolicy start date\n07/10/2022\nSum insured (Rs.)\n5,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
  "prescription": {
   "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. A. Kulkarni\nHarmony Medical Centre\nPatient: Libni Palan, 59/M Date: 07/02/2025\nDiagnosis: total knee replacement\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
   "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 2903,
+  "discharge_summary.pdf": 2639,
+  "hospital_bill.pdf": 190521,
+  "id_proof.pdf": 2009,
+  "lab_report.pdf": 113722,
+  "policy_schedule.pdf": 2477,
+  "prescription.pdf": 1941
  }
 }

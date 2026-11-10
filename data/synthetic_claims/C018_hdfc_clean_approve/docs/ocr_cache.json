@@ -19,8 +19,21 @@
   "text": "Sanjivani Hospital and Research Centre Pathology\nPatient: Charita Vohra | Date: 21/08/2026\n\nTest Result Reference\nHaemoglobin 13.1 g/dL. 12.0 - 16.0\nWBC count 7,400 /cmm 4,000 - 11,000\n\n| Blood sugar (random) 104 mg/dL. 70-140\nSerum creatinine 0.9 mg/dL 0.6-1.2\n\nSynihatic tes! document, gonersted for gofteare evaluator: Not a real record Page |!\n",
   "method": "ocr"
  },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nPolicy Schedule\nPolicy number\nHD6856611391\nInsurer\nHDFC ERGO General Insurance\nProduct\nOptima Secure\nInsured person\nCharita Vohra, 66 years, F\nPolicy start date\n21/03/2024\nSum insured (Rs.)\n10,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
  "prescription": {
   "text": "Dr. A. Kulkarni\nSanjivani Hospital and Research Centre\nPatient: Charita Vohra, 66/F Date: 21/08/2026\nDiagnosis: pneumonia\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n\u2018Synthnric test docyenent gore ated tor tottveatre: ewaliiscr Not a rea) record, Paget\n",
   "method": "ocr"
+ },
+ "_files": {
+  "claim_form.pdf": 2898,
+  "discharge_summary.pdf": 2630,
+  "hospital_bill.pdf": 2922,
+  "id_proof.pdf": 99528,
+  "lab_report.pdf": 198530,
+  "policy_schedule.pdf": 2479,
+  "prescription.pdf": 142009
  }
 }

@@ -19,8 +19,21 @@
   "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nMetro Heart and General Hospital Pathology\nPatient: Jatin Kapoor | Date: 20/06/2025\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
   "method": "text_layer"
  },
+ "policy_schedule": {
+  "text": "Niva Bupa Health Insurance\n\nPolicy Schedule\n\nPolicy number NB1423768735\n\ninsurer Niva Bupa Health insurance\n\nProduct - ReAssure (Aspire)\n\nInsured person Jatin Kapoor, 42 years, F\n\nPolicy start date 20/03/2025\n\nSum insured (Rs.) _ 5,00,000\n\nWaiting period, pre-existing diseas#* months\n\nWaiting period, specitied diseases }Rocedtees\n\nInitial waiting period 30 days (not applicable to accidents)\n\nRoom rent limit No limit (single private room or lower)\n\nEligible room category standard singie\n\nCo-payment Na\n\nContinuity credit (portability) None\nfiyeaterte tats Hocument yonetubed Sus SUttinare exadushion Not a Meat record Page}\n",
+  "method": "ocr"
+ },
  "prescription": {
   "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. A. Kulkarni\nMetro Heart and General Hospital\nPatient: Jatin Kapoor, 42/F Date: 20/06/2025\nDiagnosis: fracture of femur, ORIF (road accident)\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
   "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 2934,
+  "discharge_summary.pdf": 102034,
+  "hospital_bill.pdf": 2575,
+  "id_proof.pdf": 2011,
+  "lab_report.pdf": 2178,
+  "policy_schedule.pdf": 184907,
+  "prescription.pdf": 1969
  }
 }
