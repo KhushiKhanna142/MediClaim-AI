@@ -81,5 +81,120 @@
    "5.1.1",
    "5.1.2"
   ]
+ },
+ "C006_niva_partial_room": {
+  "decision": "needs_review",
+  "payable_amount": 0.0,
+  "cited_clause_ids": [
+   "clause 6.2.4"
+  ],
+  "reasoning": "The claim involves a road traffic accident, and clause 6.2.4 explicitly mandates the submission of an MLC (Medico-Legal Certificate) or First Information Report (FIR) in accident cases. As the FIR/MLC is missing from the provided claim documents, the claim requires review before processing further.",
+  "raw_reply": "```json\n{\n  \"decision\": \"needs_review\",\n  \"payable_amount\": 0,\n  \"cited_clause_ids\": [\n    \"clause 6.2.4\"\n  ],\n  \"reasoning\": \"The claim involves a road traffic accident, and clause 6.2.4 explicitly mandates the submission of an MLC (Medico-Legal Certificate) or First Information Report (FIR) in accident cases. As the FIR/MLC is missing from the provided claim documents, the claim requires review before processing further.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "6.2.4",
+   "4.1.2",
+   "6.1.8",
+   "4.1.3",
+   "4.1.19.2"
+  ]
+ },
+ "C007_niva_partial_nonpayable": {
+  "decision": "needs_review",
+  "payable_amount": 0.0,
+  "cited_clause_ids": [
+   "6.2.4"
+  ],
+  "reasoning": "The claim arises from a road accident (fracture of femur), but the mandatory MLC (Medico-Legal Certificate) or FIR (First Information Report) as required by clause 6.2.4 for accident cases has not been provided in the submitted claim documents. Therefore, the claim needs review pending the submission of the police or medico-legal report.",
+  "raw_reply": "```json\n{\n  \"decision\": \"needs_review\",\n  \"payable_amount\": 0,\n  \"cited_clause_ids\": [\n    \"6.2.4\"\n  ],\n  \"reasoning\": \"The claim arises from a road accident (fracture of femur), but the mandatory MLC (Medico-Legal Certificate) or FIR (First Information Report) as required by clause 6.2.4 for accident cases has not been provided in the submitted claim documents. Therefore, the claim needs review pending the submission of the police or medico-legal report.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "6.1.8",
+   "6.2.9",
+   "2.1.18",
+   "6.1.16",
+   "6.2.4"
+  ]
+ },
+ "C008_niva_partial_si_cap": {
+  "decision": "approve",
+  "payable_amount": 300000.0,
+  "cited_clause_ids": [
+   "4.1.2"
+  ],
+  "reasoning": "The patient was hospitalized for a total knee replacement adhering to policy terms, and all required documents are in order. The total claimed amount is Rs. 3,87,750, but since the sum insured is capped at Rs. 3,00,000, the payable amount is restricted to the maximum sum insured.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 300000,\n  \"cited_clause_ids\": [\n    \"4.1.2\"\n  ],\n  \"reasoning\": \"The patient was hospitalized for a total knee replacement adhering to policy terms, and all required documents are in order. The total claimed amount is Rs. 3,87,750, but since the sum insured is capped at Rs. 3,00,000, the payable amount is restricted to the maximum sum insured.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "4.1.2",
+   "6.1.16",
+   "5.1.2",
+   "5.1.1",
+   "2.1.2"
+  ]
+ },
+ "C009_niva_reject_specified": {
+  "decision": "approve",
+  "payable_amount": 93000.0,
+  "cited_clause_ids": [
+   "4.1.2",
+   "2.1.21"
+  ],
+  "reasoning": "The patient was hospitalized for more than 24 hours for a laparoscopic cholecystectomy to treat gallstones, which is fully covered under hospitalization expenses. The room category occupied (standard single) is within the eligible policy limits, and all billed expenses are properly documented and supported by clinical records. Therefore, the total claimed amount of Rs. 93,000 is approved for reimbursement.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 93000,\n  \"cited_clause_ids\": [\n    \"4.1.2\",\n    \"2.1.21\"\n  ],\n  \"reasoning\": \"The patient was hospitalized for more than 24 hours for a laparoscopic cholecystectomy to treat gallstones, which is fully covered under hospitalization expenses. The room category occupied (standard single) is within the eligible policy limits, and all billed expenses are properly documented and supported by clinical records. Therefore, the total claimed amount of Rs. 93,000 is approved for reimbursement.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "4.1.2",
+   "2.1.2",
+   "2.1.21",
+   "5.1.2",
+   "2.1.11"
+  ]
+ },
+ "C010_niva_reject_specified": {
+  "decision": "approve",
+  "payable_amount": 64400.0,
+  "cited_clause_ids": [
+   "4.1.2",
+   "6.2.4"
+  ],
+  "reasoning": "The claim for cataract surgery (phacoemulsification) is fully admissible as it represents valid hospitalization expenses under clause 4.1.2 within the policy sum insured. All required medical records, bills, and discharge summaries are present, reconciling correctly with the claimed amount of Rs. 64,400. Therefore, the claim is approved in full.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 64400,\n  \"cited_clause_ids\": [\n    \"4.1.2\",\n    \"6.2.4\"\n  ],\n  \"reasoning\": \"The claim for cataract surgery (phacoemulsification) is fully admissible as it represents valid hospitalization expenses under clause 4.1.2 within the policy sum insured. All required medical records, bills, and discharge summaries are present, reconciling correctly with the claimed amount of Rs. 64,400. Therefore, the claim is approved in full.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "4.1.2",
+   "5.1.2",
+   "6.2.4",
+   "4.1.3",
+   "6.1.8"
+  ]
+ },
+ "C011_niva_reject_30day": {
+  "decision": "approve",
+  "payable_amount": 106800.0,
+  "cited_clause_ids": [
+   "4.1.3",
+   "6.2.4"
+  ],
+  "reasoning": "The claim for acute appendicitis and appendectomy is fully admissible as the patient was admitted in an eligible room category (standard single) within the policy terms and sum insured limits. All required hospital bills, discharge summary, and medical records were provided and properly reconciled. Therefore, the total claimed amount of Rs. 1,06,800 is approved for reimbursement.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 106800,\n  \"cited_clause_ids\": [\n    \"4.1.3\",\n    \"6.2.4\"\n  ],\n  \"reasoning\": \"The claim for acute appendicitis and appendectomy is fully admissible as the patient was admitted in an eligible room category (standard single) within the policy terms and sum insured limits. All required hospital bills, discharge summary, and medical records were provided and properly reconciled. Therefore, the total claimed amount of Rs. 1,06,800 is approved for reimbursement.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "4.1.3",
+   "6.2.4",
+   "6.1.16",
+   "5.1.1",
+   "6.1.8"
+  ]
+ },
+ "C012_niva_reject_ped": {
+  "decision": "approve",
+  "payable_amount": 107050.0,
+  "cited_clause_ids": [
+   "5.1.1"
+  ],
+  "reasoning": "The insured was hospitalized for a diabetic foot infection with debridement, and the policy has been active since 15/12/2025 with the admission occurring on 15/06/2026 (beyond the 30-day initial waiting period). Although the medical history mentions a diagnosis date of 15/06/2024 for the condition, the pre-existing disease waiting period clause does not warrant a rejection for standard admissible hospitalization expenses since all standard charges and room categories are within policy limits. Therefore, the total claimed amount of Rs. 1,07,050 is fully payable.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 107050,\n  \"cited_clause_ids\": [\n    \"5.1.1\"\n  ],\n  \"reasoning\": \"The insured was hospitalized for a diabetic foot infection with debridement, and the policy has been active since 15/12/2025 with the admission occurring on 15/06/2026 (beyond the 30-day initial waiting period). Although the medical history mentions a diagnosis date of 15/06/2024 for the condition, the pre-existing disease waiting period clause does not warrant a rejection for standard admissible hospitalization expenses since all standard charges and room categories are within policy limits. Therefore, the total claimed amount of Rs. 1,07,050 is fully payable.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "6.1.8",
+   "6.1.16",
+   "5.1.1",
+   "6.2.9",
+   "5.1.2"
+  ]
  }
 }
