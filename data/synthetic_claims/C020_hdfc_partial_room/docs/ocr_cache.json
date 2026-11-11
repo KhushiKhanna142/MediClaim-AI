@@ -1,10 +1,10 @@
 {
  "claim_form": {
-  "text": "HDFC ERGO General Insurance\n\nHealth insurance Claim Form (Reimbursement), Part A\n\nPolicy number ~~ W7701528545 Boke :\nPolicy start date | 43/02/2022 ;\n\nSum insured (Rs.) 5,00,000\n\nName of patient Elijah Dalal\n\nAge / Sex 62 years /M\n\nContact number 9954775250\n\nHospital name Metro Heart and Genera! Hospital, Jaipur\n\nDate of admission \"13/02/2025 |\n\nDate of discharge 16/02/2025\n\nNature of iliness finess\n\nRoom category occupied private\n\nTotal amount claimed (Rs.) 1,33,100\n\nDeclaration\n\n\\ dectare that the information furnished in this claim form is true and correct to the best of my knowledge. | agree t0\nprovide any further documents required by the insurer.\n\nSignature of the insured: __ ___ Date: 16/02/2025\n\nSynthetic mee document, goneraled tor wolwaes evaksaion Not a teas wacont Page\n",
+  "text": "HDFC ERGO General Insurance\nHeaith insurance Claim Form (Reimbursement), Part A\n_ Sum insured (Rs.) 5,00,000 | c |\nmae ater ae ts 3\nAge / Sex 62 yearsiM\nDate of admission 1302/2025\nDate of discharge 16/02/2025 : |\nRoom category occupied private\nTotal amount ciaimed(Rs.) _\u2014_\u20181,33.100 .\nDeclaration\n{ declare that the information furnished in this claim form is true and correct to the best of my knowledge. | agrae to\nprovide any further documents required by the insurer,\nSignature of the insured: ate: 1602/2025\nSythate bee dQcunen gereraied ker ohne yakuaigr Not a enum Mecord / Page 3\n",
   "method": "ocr"
  },
  "discharge_summary": {
-  "text": "Metro Heart and General Hospital\nDischarge Summary\nPatient Elijah Dalal, 62 years, M\nUHID UH558144\nDate of admission 13/02/2025\nDate of discharge 16/02/2025\nLength of stay 3 day(s)\nConsultant Dr. P. Deshmukh\nFinal diagnosis\ninguinal hernia repair\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to inguinal hernia repair. Investigations were done and treatment was\ngiven as per protocol. The post-treatment period was uneventful and the patient was discharged in stable condition on\n16/02/2025.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. P. Deshmukh (Treating consultant)\nSynthetic 123? Gocument, generated for softwere evaluation Not a reat record. Paget\n",
+  "text": "Metro Heart and General Hospital\nDischarge Summary\nPatient Elijah Dalal, 62 years, M\nUHID UH558144\nDate of admission 13/02/2025\nDate of discharge 16/02/2025\nLength of stay 3 day(s)\nConsultant Dr. P. Deshmukh\nFinal diagnosis\ninguinal hernia repair\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to inguinal hernia repair. Investigations were done and treatment was\ngiven as per protocol. The post-treatment period was uneventful and the patient was discharged in stable condition on\n16/02/2025.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. P. Deshmukh (Treating consultant)\nSynthetic teat docurnent, generaled for softwere evaiuation Not a real record Page 1\n",
   "method": "ocr"
  },
  "hospital_bill": {
@@ -34,6 +34,7 @@
   "id_proof.pdf": 2011,
   "lab_report.pdf": 2178,
   "policy_schedule.pdf": 2467,
-  "prescription.pdf": 1948
+  "prescription.pdf": 1948,
+  "_dpi": 300
  }
 }

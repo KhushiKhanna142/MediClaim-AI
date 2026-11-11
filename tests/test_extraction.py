@@ -44,3 +44,8 @@ def test_score_extraction():
                                                      "eligible_room": "standard single"}).model_dump_json())
     s = score_extraction(pred, truth)
     assert s["patient_name"] and s["admission_date"] and s["room_limit_per_day"] and s["item_recall"] == 1.0 and s["item_category_acc"] == 1.0
+
+
+def test_null_copay_and_continuity_mean_zero():
+    c = ExtractedClaim.model_validate({**GOOD, "copay_pct": None, "continuity_credit_months": "Nil", "room_type_modification": None})
+    assert c.copay_pct == 0 and c.continuity_credit_months == 0 and c.room_type_modification is False

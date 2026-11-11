@@ -8,7 +8,7 @@
   "method": "text_layer"
  },
  "hospital_bill": {
-  "text": "Sunrise Multispeciality Hospital\nNagpur | Final Inpatient Bill\nBill no BL/2025/76431 UHID UH602799\nPatient Dipta Shroff Age / Sex 37/M\nAdmitted 02/07/2025 Discharged 08/07/2025\nConsultant Or. V. lyer Room Standard single\nParticulars Qty Rate Amount\nROOM AND BED CHARGES\nRoom charges (standard single) 6 4,800 28,800\nSub-total 28,800\nPHARMACY\nPharmacy and medicines 1 12,050 12,050\nSub-total 12,050\nCONSUMABLES\nDisposable consumables and admission kit 1 1,050 1,050\nSub-total 1,050\nDIAGNOSTICS\nLaboratory and radiology investigations 1 11,700 11,700\nSub-total 11,700\nNURSING\nNursing charges 1 7,900 7,900\nSub-total 7,900\nOTHER CHARGES\nConsultant visits and monitoring 1 13,400 13,400\nSub-total 13,400\nGRAND TOTAL 75,900\nSynthetic test document, generated for sottware uvaluation. Nota teal record Page 1\n",
+  "text": "Sunrise Multispeciality Hospital\nNagpur | Final Inpatient Bill\nBill no BL/2025/76431 UHID UH602799\nPatient Dipta Shroff Age / Sex 37/M\nAdmitted 02/07/2025 Discharged 08/07/2025\nConsultant Dr. V. lyer Room standard single\nParticulars Qty Rate Amount\nROOM AND BED CHARGES\nRoom charges (standard single) 6 4,800 28,800\nSub-total 28,800\nPHARMACY\nPharmacy and medicines 1 12,050 12,050\nSub-total 12,050\nCONSUMABLES\nDisposable consumables and admission kit 1 1,050 1,050\nSub-total 1,050\nDIAGNOSTICS\nLaboratory and radiology investigations 1 11,700 11,700\nSub-total 11,700\nNURSING\nNursing charges 1 7,900 7,900\nSub-total 7,900\nOTHER CHARGES\nConsultant visits and monitoring 1 13,400 13,400\nSub-total 13,400\nGRAND TOTAL 75,900\nSynthetic test decumeant Generated for software evaluation. Nota real record Page 1\n",
   "method": "ocr"
  },
  "id_proof": {
@@ -20,7 +20,7 @@
   "method": "text_layer"
  },
  "policy_schedule": {
-  "text": "Niva Bupa Health Insurance\n\nPolicy Schedule\n\nPolicy number NB2723150337\n\nInsurer _ Niva Bupa Health Insurance\n\nProduct ReAssure (Aspire)\n\nInsured person Dipta Shroff, 37 years, M\n\nPolicy start date \"92/03/2023\n\nSum insured (Rs.) 1 10,00,000\n\nWaiting period, pre-existing diseast\u00ae months\n\nWaiting period, specified diseases#prosadbees\n\nInitial waiting period 30 days (not applicable to accidents)\n\nRoom rent limit No limit (single private room or lower)\n\nEligible room category standard single\n\nCo-payment Nil\n\nContinuity credit (portability) None\n",
+  "text": "Niva Bupa Health Insurance\n\nPolicy Schedule\n\nPolicy number NB2723150337\n\nInsurer | Niva Bupa Health Insurance\n\nProduct ReAssure (Aspire)\n\ninsured person Dipta Shroft, 37 years, M\n\nPolicy start date \"92/03/2023\n\nSum insured (Rs.) 10,00,000\n\nWaiting period, pre-existing diseast\u00ae months\n\ninitial waiting period 30 days (not applicable to accidents)\n\nRoom rent limit No limit (single private room or lower)\n\nEligible room category standard single\n\nCo-payment Nil\n\nContinuity credit (portability) None\n",
   "method": "ocr"
  },
  "prescription": {
@@ -34,6 +34,7 @@
   "id_proof.pdf": 2011,
   "lab_report.pdf": 2182,
   "policy_schedule.pdf": 105124,
-  "prescription.pdf": 1936
+  "prescription.pdf": 1936,
+  "_dpi": 300
  }
 }

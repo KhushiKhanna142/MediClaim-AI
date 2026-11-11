@@ -196,5 +196,298 @@
    "6.2.9",
    "5.1.2"
   ]
+ },
+ "C013_niva_multi_hop": {
+  "decision": "approve",
+  "payable_amount": 358000.0,
+  "cited_clause_ids": [
+   "6.1.16"
+  ],
+  "reasoning": "The claim is for a total knee replacement with all necessary supporting documents provided and reconciled. The patient has been covered since 24/01/2023, which exceeds the 24-month waiting period for specified procedures. The total claimed amount of Rs. 3,58,000 is fully payable under the policy limits.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 358000,\n  \"cited_clause_ids\": [\n    \"6.1.16\"\n  ],\n  \"reasoning\": \"The claim is for a total knee replacement with all necessary supporting documents provided and reconciled. The patient has been covered since 24/01/2023, which exceeds the 24-month waiting period for specified procedures. The total claimed amount of Rs. 3,58,000 is fully payable under the policy limits.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "6.1.16",
+   "5.1.1",
+   "4.1.3",
+   "5.1.2",
+   "6.2.4"
+  ]
+ },
+ "C014_niva_missing_docs": {
+  "decision": "needs_review",
+  "payable_amount": 0.0,
+  "cited_clause_ids": [
+   "6.2.4"
+  ],
+  "reasoning": "The claim documents are missing the mandatory Police First Information Report (FIR) or Medico-Legal Certificate (MLC) required for claims arising from a road accident, as specified in clause 6.2.4. Therefore, the claim needs review pending the submission of the required accident investigation documents.",
+  "raw_reply": "```json\n{\n  \"decision\": \"needs_review\",\n  \"payable_amount\": 0,\n  \"cited_clause_ids\": [\n    \"6.2.4\"\n  ],\n  \"reasoning\": \"The claim documents are missing the mandatory Police First Information Report (FIR) or Medico-Legal Certificate (MLC) required for claims arising from a road accident, as specified in clause 6.2.4. Therefore, the claim needs review pending the submission of the required accident investigation documents.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "6.2.4",
+   "6.1.8",
+   "4.1.11",
+   "6.2.9",
+   "4.1.15"
+  ]
+ },
+ "C015_niva_total_mismatch": {
+  "decision": "approve",
+  "payable_amount": 75900.0,
+  "cited_clause_ids": [
+   "4.1.2"
+  ],
+  "reasoning": "The patient was hospitalized for pneumonia for 6 days in a standard single room, which complies with the eligible room category under the policy. All hospital expenses incurred during hospitalization are fully payable as per clause 4.1.2. The total claimed amount of Rs. 75,900 is approved for reimbursement.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 75900,\n  \"cited_clause_ids\": [\n    \"4.1.2\"\n  ],\n  \"reasoning\": \"The patient was hospitalized for pneumonia for 6 days in a standard single room, which complies with the eligible room category under the policy. All hospital expenses incurred during hospitalization are fully payable as per clause 4.1.2. The total claimed amount of Rs. 75,900 is approved for reimbursement.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "6.2.4",
+   "4.1.3",
+   "4.1.2",
+   "5.1.1",
+   "5.1.2"
+  ]
+ },
+ "C016_hdfc_clean_approve": {
+  "decision": "approve",
+  "payable_amount": 217900.0,
+  "cited_clause_ids": [
+   "clause 1.1.1"
+  ],
+  "reasoning": "The claim is for inpatient hospitalization due to an accidental fracture requiring ORIF, which meets the 24-hour hospitalization criteria and is covered under the policy. The patient was admitted to a standard single room, which complies with the eligible room category, meaning no proportionate room rent deductions apply. All required documents are in order, and the total claimed amount of Rs. 2,17,900 is fully payable.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 217900,\n  \"cited_clause_ids\": [\n    \"clause 1.1.1\"\n  ],\n  \"reasoning\": \"The claim is for inpatient hospitalization due to an accidental fracture requiring ORIF, which meets the 24-hour hospitalization criteria and is covered under the policy. The patient was admitted to a standard single room, which complies with the eligible room category, meaning no proportionate room rent deductions apply. All required documents are in order, and the total claimed amount of Rs. 2,17,900 is fully payable.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "1.1.1",
+   "1.7",
+   "Section C",
+   "2.4",
+   "1.1"
+  ]
+ },
+ "C017_hdfc_clean_approve": {
+  "decision": "approve",
+  "payable_amount": 65550.0,
+  "cited_clause_ids": [
+   "1.7",
+   "1.6",
+   "1.1.1"
+  ],
+  "reasoning": "The claim for cataract surgery (phacoemulsification) is fully admissible as all required documents under Clause 1.7 have been submitted within the prescribed time limit under Clause 1.6. The hospitalization was medically necessary, and the room category occupied (standard single) complies with the policy limits specified in the schedule. Therefore, the total claimed amount of Rs. 65,550 is approved for payment.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 65550,\n  \"cited_clause_ids\": [\n    \"1.7\",\n    \"1.6\",\n    \"1.1.1\"\n  ],\n  \"reasoning\": \"The claim for cataract surgery (phacoemulsification) is fully admissible as all required documents under Clause 1.7 have been submitted within the prescribed time limit under Clause 1.6. The hospitalization was medically necessary, and the room category occupied (standard single) complies with the policy limits specified in the schedule. Therefore, the total claimed amount of Rs. 65,550 is approved for payment.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "1.7",
+   "2.4",
+   "1.1.1",
+   "Def.4",
+   "1.6"
+  ]
+ },
+ "C018_hdfc_clean_approve": {
+  "decision": "approve",
+  "payable_amount": 73300.0,
+  "cited_clause_ids": [
+   "clause 1.7",
+   "clause Section C"
+  ],
+  "reasoning": "The claim for pneumonia treatment is fully admissible as the patient was admitted to a standard single room in accordance with the policy terms and stayed within the policy limits. All required supporting documents including the discharge summary, hospital bill, and lab reports have been provided, and there are no applicable waiting period exclusions since the patient had no significant past medical history.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 73300,\n  \"cited_clause_ids\": [\n    \"clause 1.7\",\n    \"clause Section C\"\n  ],\n  \"reasoning\": \"The claim for pneumonia treatment is fully admissible as the patient was admitted to a standard single room in accordance with the policy terms and stayed within the policy limits. All required supporting documents including the discharge summary, hospital bill, and lab reports have been provided, and there are no applicable waiting period exclusions since the patient had no significant past medical history.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "1.7",
+   "1.6",
+   "1.5",
+   "Section C",
+   "2.4"
+  ]
+ },
+ "C019_hdfc_approve_continuity": {
+  "decision": "approve",
+  "payable_amount": 99450.0,
+  "cited_clause_ids": [
+   "1.7",
+   "1.1.1"
+  ],
+  "reasoning": "The claim is fully supported by the policy terms and required documents. The patient was admitted to a standard single room, which complies with the eligible room category specified in the policy schedule. All billed expenses are within the limits and policy conditions for medically necessary hospitalization.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 99450,\n  \"cited_clause_ids\": [\n    \"1.7\",\n    \"1.1.1\"\n  ],\n  \"reasoning\": \"The claim is fully supported by the policy terms and required documents. The patient was admitted to a standard single room, which complies with the eligible room category specified in the policy schedule. All billed expenses are within the limits and policy conditions for medically necessary hospitalization.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "1.7",
+   "1.1.1",
+   "2.13/1",
+   "1.1",
+   "Section C"
+  ]
+ },
+ "C020_hdfc_partial_room": {
+  "decision": "partial",
+  "payable_amount": 113400.0,
+  "cited_clause_ids": [
+   "clause Section C"
+  ],
+  "reasoning": "The claim is admissible for inguinal hernia repair after the initial 30-day waiting period, as the policy has been active since 2022. However, room charges are subject to capping: the bill charges Rs. 8900 per day for a private room for 3 days (total Rs. 26700), whereas the policy schedule limits room rent to Rs. 5000 per day (total eligible Rs. 15000), resulting in a proportionate deduction of Rs. 11700 on room charges and associated proportional items. The final payable amount is Rs. 1,13400.",
+  "raw_reply": "```json\n{\n  \"decision\": \"partial\",\n  \"payable_amount\": 113,400,\n  \"cited_clause_ids\": [\n    \"clause Section C\"\n  ],\n  \"reasoning\": \"The claim is admissible for inguinal hernia repair after the initial 30-day waiting period, as the policy has been active since 2022. However, room charges are subject to capping: the bill charges Rs. 8,900 per day for a private room for 3 days (total Rs. 26,700), whereas the policy schedule limits room rent to Rs. 5,000 per day (total eligible Rs. 15,000), resulting in a proportionate deduction of Rs. 11,700 on room charges and associated proportional items. The final payable amount is Rs. 1,13,400.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "2.8",
+   "2.15/1",
+   "Section C",
+   "2.14/1",
+   "1.1"
+  ]
+ },
+ "C021_hdfc_partial_room": {
+  "decision": "partial",
+  "payable_amount": 83433.33,
+  "cited_clause_ids": [
+   "clause 1.1.1"
+  ],
+  "reasoning": "The policy schedule restricts the room rent limit to Rs. 5,000 per day for a standard single room, whereas the patient occupied a private room charged at Rs. 7,300 per day for 3 days. Consequently, proportionate deductions apply to room rent and associated medical expenses as per clause 1.1.1, reducing the total payable amount to Rs. 83,433.33.",
+  "raw_reply": "```json\n{\n  \"decision\": \"partial\",\n  \"payable_amount\": 83433.33,\n  \"cited_clause_ids\": [\n    \"clause 1.1.1\"\n  ],\n  \"reasoning\": \"The policy schedule restricts the room rent limit to Rs. 5,000 per day for a standard single room, whereas the patient occupied a private room charged at Rs. 7,300 per day for 3 days. Consequently, proportionate deductions apply to room rent and associated medical expenses as per clause 1.1.1, reducing the total payable amount to Rs. 83,433.33.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "1.7",
+   "1.1.1",
+   "1.6",
+   "Section C",
+   "Section C"
+  ]
+ },
+ "C022_hdfc_partial_nonpayable": {
+  "decision": "approve",
+  "payable_amount": 374150.0,
+  "cited_clause_ids": [
+   "1.7"
+  ],
+  "reasoning": "The claim for total knee replacement surgery is fully supported by the policy schedule, discharge summary, and itemized hospital bill matching the claimed amount of Rs. 3,74,150. All mandatory documents such as the claim form, discharge summary, bills, and ID proof have been provided in order. Therefore, the reimbursement claim is approved in full.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 374150,\n  \"cited_clause_ids\": [\n    \"1.7\"\n  ],\n  \"reasoning\": \"The claim for total knee replacement surgery is fully supported by the policy schedule, discharge summary, and itemized hospital bill matching the claimed amount of Rs. 3,74,150. All mandatory documents such as the claim form, discharge summary, bills, and ID proof have been provided in order. Therefore, the reimbursement claim is approved in full.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "1.7",
+   "1.6",
+   "1.5",
+   "1.1",
+   "2.8"
+  ]
+ },
+ "C023_hdfc_partial_si_cap": {
+  "decision": "partial",
+  "payable_amount": 300000.0,
+  "cited_clause_ids": [
+   "1.1.1",
+   "2.4"
+  ],
+  "reasoning": "The total hospital bill amounts to Rs. 3,58,600 for a total knee replacement procedure, which is admissible under inpatient care. However, the policy Sum Insured is capped at Rs. 3,00,000, restricting the maximum payable reimbursement amount to the policy limit.",
+  "raw_reply": "```json\n{\n  \"decision\": \"partial\",\n  \"payable_amount\": 300000,\n  \"cited_clause_ids\": [\n    \"1.1.1\",\n    \"2.4\"\n  ],\n  \"reasoning\": \"The total hospital bill amounts to Rs. 3,58,600 for a total knee replacement procedure, which is admissible under inpatient care. However, the policy Sum Insured is capped at Rs. 3,00,000, restricting the maximum payable reimbursement amount to the policy limit.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "1.7",
+   "1.5",
+   "2.4",
+   "1.1.1",
+   "1.6"
+  ]
+ },
+ "C024_hdfc_reject_specified": {
+  "decision": "approve",
+  "payable_amount": 72350.0,
+  "cited_clause_ids": [
+   "1.1.1"
+  ],
+  "reasoning": "The claim for cataract surgery (phacoemulsification) is fully admissible as it meets the 24-hour hospitalization requirement and was performed in a standard single room, which matches the eligible room category specified in the policy schedule. All itemized hospital expenses totaling Rs. 72,350 are verified and covered under hospitalization expenses.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 72350,\n  \"cited_clause_ids\": [\n    \"1.1.1\"\n  ],\n  \"reasoning\": \"The claim for cataract surgery (phacoemulsification) is fully admissible as it meets the 24-hour hospitalization requirement and was performed in a standard single room, which matches the eligible room category specified in the policy schedule. All itemized hospital expenses totaling Rs. 72,350 are verified and covered under hospitalization expenses.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "1.6",
+   "1.5",
+   "Section C",
+   "1.1.1",
+   "Section C"
+  ]
+ },
+ "C025_hdfc_reject_specified": {
+  "decision": "approve",
+  "payable_amount": 97750.0,
+  "cited_clause_ids": [
+   "1.1.1"
+  ],
+  "reasoning": "The insured underwent a medically necessary laparoscopic cholecystectomy following proper hospitalisation in a standard single room, which aligns with the policy limits. All documentation is in order, total claimed expenses of Rs. 97,750 are fully admissible, and waiting periods are not applicable as the policy has been active since 12/12/2024 (exceeding initial and specified disease waiting periods).",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 97750,\n  \"cited_clause_ids\": [\n    \"1.1.1\"\n  ],\n  \"reasoning\": \"The insured underwent a medically necessary laparoscopic cholecystectomy following proper hospitalisation in a standard single room, which aligns with the policy limits. All documentation is in order, total claimed expenses of Rs. 97,750 are fully admissible, and waiting periods are not applicable as the policy has been active since 12/12/2024 (exceeding initial and specified disease waiting periods).\"\n}\n```",
+  "retrieved_clause_ids": [
+   "1.7",
+   "1.1.1",
+   "Def.4",
+   "Section C",
+   "Section C"
+  ]
+ },
+ "C026_hdfc_reject_30day": {
+  "decision": "approve",
+  "payable_amount": 93250.0,
+  "cited_clause_ids": [
+   "1.7"
+  ],
+  "reasoning": "The claim is for inpatient hospitalization due to acute appendicitis, which is fully supported by the claim form, discharge summary, hospital bill, and diagnostic reports. All documents are in order and within the policy terms with no exclusions applicable, so the claimed amount of Rs. 93,250 is fully payable.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 93250,\n  \"cited_clause_ids\": [\n    \"1.7\"\n  ],\n  \"reasoning\": \"The claim is for inpatient hospitalization due to acute appendicitis, which is fully supported by the claim form, discharge summary, hospital bill, and diagnostic reports. All documents are in order and within the policy terms with no exclusions applicable, so the claimed amount of Rs. 93,250 is fully payable.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "1.6",
+   "1.5",
+   "1.7",
+   "2.8",
+   "1.1"
+  ]
+ },
+ "C027_hdfc_reject_ped": {
+  "decision": "approve",
+  "payable_amount": 102400.0,
+  "cited_clause_ids": [
+   "1.1.1"
+  ],
+  "reasoning": "The insured was hospitalized for diabetic foot infection with debridement from 26/09/2025 to 01/10/2025 in a standard single room, which matches the eligible room category in the policy schedule. The total claimed amount of Rs. 1,02,400 is fully supported by the itemized hospital bill and discharge summary, and the pre-existing disease waiting period of 36 months has been satisfied since the policy started on 26/01/2023.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 102400,\n  \"cited_clause_ids\": [\n    \"1.1.1\"\n  ],\n  \"reasoning\": \"The insured was hospitalized for diabetic foot infection with debridement from 26/09/2025 to 01/10/2025 in a standard single room, which matches the eligible room category in the policy schedule. The total claimed amount of Rs. 1,02,400 is fully supported by the itemized hospital bill and discharge summary, and the pre-existing disease waiting period of 36 months has been satisfied since the policy started on 26/01/2023.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "1.6",
+   "1.5",
+   "1.1",
+   "1.1.1",
+   "1.3"
+  ]
+ },
+ "C028_hdfc_multi_hop": {
+  "decision": "approve",
+  "payable_amount": 361600.0,
+  "cited_clause_ids": [
+   "1.7"
+  ],
+  "reasoning": "The claim for total knee replacement surgery is fully supported by valid hospital bills, discharge summary, and required KYC/clinical documents. The policy covers standard single room occupancy with no room rent limit, and the claimed amount of Rs. 3,61,600 is within the overall Sum Insured of Rs. 5,00,000.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 361600,\n  \"cited_clause_ids\": [\n    \"1.7\"\n  ],\n  \"reasoning\": \"The claim for total knee replacement surgery is fully supported by valid hospital bills, discharge summary, and required KYC/clinical documents. The policy covers standard single room occupancy with no room rent limit, and the claimed amount of Rs. 3,61,600 is within the overall Sum Insured of Rs. 5,00,000.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "1.7",
+   "1.1",
+   "2.4",
+   "Section C",
+   "2.13/1"
+  ]
+ },
+ "C029_hdfc_missing_docs": {
+  "decision": "approve",
+  "payable_amount": 101150.0,
+  "cited_clause_ids": [
+   "1.7"
+  ],
+  "reasoning": "The claim for laparoscopic cholecystectomy due to gallstones is valid, hospitalized within the policy period, and utilized the eligible standard single room category. All submitted medical bills, lab reports, and prescriptions reconcile correctly for the claimed total amount of Rs. 1,01,150. Therefore, the full amount is approved as per the policy terms and conditions.",
+  "raw_reply": "```json\n{\n  \"decision\": \"approve\",\n  \"payable_amount\": 101150,\n  \"cited_clause_ids\": [\n    \"1.7\"\n  ],\n  \"reasoning\": \"The claim for laparoscopic cholecystectomy due to gallstones is valid, hospitalized within the policy period, and utilized the eligible standard single room category. All submitted medical bills, lab reports, and prescriptions reconcile correctly for the claimed total amount of Rs. 1,01,150. Therefore, the full amount is approved as per the policy terms and conditions.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "1.7",
+   "1.17",
+   "1.7",
+   "1.3",
+   "1.5"
+  ]
+ },
+ "C030_hdfc_total_mismatch": {
+  "decision": "needs_review",
+  "payable_amount": 0.0,
+  "cited_clause_ids": [
+   "1.7"
+  ],
+  "reasoning": "The reimbursement claim for cataract surgery lacks the mandatory lens sticker and lens invoice as specified under clause 1.7(e) of the policy documents. Therefore, the claim requires review and submission of the missing implant/lens documentation before final processing.",
+  "raw_reply": "```json\n{\n  \"decision\": \"needs_review\",\n  \"payable_amount\": 0,\n  \"cited_clause_ids\": [\n    \"1.7\"\n  ],\n  \"reasoning\": \"The reimbursement claim for cataract surgery lacks the mandatory lens sticker and lens invoice as specified under clause 1.7(e) of the policy documents. Therefore, the claim requires review and submission of the missing implant/lens documentation before final processing.\"\n}\n```",
+  "retrieved_clause_ids": [
+   "1.7",
+   "1.1.1",
+   "1.6",
+   "1.6",
+   "1.6"
+  ]
  }
 }

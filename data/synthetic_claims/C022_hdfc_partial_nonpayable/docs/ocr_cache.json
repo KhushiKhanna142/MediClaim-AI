@@ -8,11 +8,11 @@
   "method": "text_layer"
  },
  "hospital_bill": {
-  "text": "Metro Heart and General Hospital\nIndore | Final Inpatient Bill\nBill no BL/2026/74914 UHID UH265654\nPatient Vrinda Sama Age / Sex 55/M\nAdmitted 10/01/2026 Discharged 14/01/2026\nConsultant Dr. A. Kulkarni Room standard single\nParticulars Qty Rate Amount\nROOM AND BED CHARGES\nRoom charges (standard single) 4 5,900 23,600\nSub-total 23,600\nPROFESSIONAL FEES\nSurgeon and anaesthetist fees 1 66,600 66,600\nSub-total 66,600\nOPERATION THEATRE\nOperation theatre charges 1 39,300 39,300\nSub-total 39,300\nPHARMACY\nPharmacy and medicines 1 29,850 29,850\nSub-total 29,850\nCONSUMABLES\nDisposable consumables and admission kit 1 3,500 3,500\nSub-total 3,500\nDIAGNOSTICS\nLaboratory and radiology investigations 1 10,800 10,800\nSub-total 10,800\nIMPLANTS\nImplant / prosthesis 1 1,86,600 1,86,600\nSub-total 1,86,600\nNURSING\nNursing charges 1 13,900 13,900\nSub-total 13,900\nGRAND TOTAL 3,74,150\nSynthetic test document. generated for software evaluation Not a real record Page 1\n",
+  "text": "Metro Heart and General Hospital\nindore | Final Inpatient Bill\nBill no BL/2026/74914 UHID UH265654\nPatient Vrinda Sama Age / Sex 55/M\nAdmitted 10/01/2026 Discharged 14/01/2026\nConsultant Dr. A. Kulkarni Room standard single\nParticulars Qty Rate Amount\nROOM AND BED CHARGES\nRoom charges (standard single) 4 5,900 23,600\nSub-total 23,600\nPROFESSIONAL FEES\nSurgeon and anaesthetist fees 1 66,600 66,600\nSub-total 66,600\nOPERATION THEATRE\nOperation theatre charges 1 39,300 39,300\nSub-total 39,300\nPHARMACY\nPharmacy and medicines 1 29,850 29,850\nSub-total 29,850\nCONSUMABLES\nDisposable consumables and admission kit 1 3,500 3,500\nSub-total 3,500\nDIAGNOSTICS\nLaboratory and radiology investigations 1 10,800 10,800\nSub-total 10,800\nIMPLANTS\nimplant / prosthesis 1 1,86,600 1,866,600\nSub-total 1,86,600\nNURSING\nNursing charges 1 13,900 13,900\nSub-total 13,900\nGRAND TOTAL 3,74,150\n",
   "method": "ocr"
  },
  "id_proof": {
-  "text": "Government of India (specimen ID card, synthetic)\nName Vrinda Sama\nAge / Gender 55/M\niD number XXXX XXXX 1535\nMobile 9907251296\n",
+  "text": "Government of India (specimen ID card, synthetic)\nAge/Gender _S5/M |\n_ 1D number ! XXX XXMX 1935\nMobile 9907251296\n",
   "method": "ocr"
  },
  "lab_report": {
@@ -20,7 +20,7 @@
   "method": "text_layer"
  },
  "policy_schedule": {
-  "text": "HDFC ERGO General Insurance\n\nPolicy Schedule\n\nPolicy number HD9775963003\n\nInsurer HDFC ERGO General Insurance\n\nProduct Optima Secure\n\ninsured person Vrinda Sama, 55 years, M\n\nPolicy start date 10/05/2023\n\nSum insured (Rs.) 10,00,000\n\nWaiting period, pre-existing diseas&\u00ae% months\n\nWaiting period, Specified diseases Procedires\n\nInitial waiting period 30 days (not applicable to accidents)\n\nRoom rent limit No limit (single private room or lower)\n\nEligible room category Standard single\n\nCo-payment Nil\n\nContinuity credit (portability) None\n\nSyathetc test document, generated tor sofware evaluabon. Not a rea record Page |\n",
+  "text": "HDFC ERGO General Insurance\n\nPolicy Schedule\n\nPolicy number HD9775963003\n\nInsurer HDFC ERGO General Insurance\nProduct \"Optima Secure\n\ninsured person Vrinda Sama, 55 years, M\n\nPolicy start date 10/05/2023\n\nSum insured (Rs.) 10,00,000\n\nWaiting period, pre-existing diseas&@ months\n\nWaiting period, specified diseases Drocedbres\n\nInitial waiting period 30 days (not applicable to accidents)\nRoom rent limit No limit (single private room or lower)\nEligible room category standard single\n\nCo-payment Nil\nContinuity credit (portability) None\n",
   "method": "ocr"
  },
  "prescription": {
@@ -34,6 +34,7 @@
   "id_proof.pdf": 202223,
   "lab_report.pdf": 2178,
   "policy_schedule.pdf": 126543,
-  "prescription.pdf": 1947
+  "prescription.pdf": 1947,
+  "_dpi": 300
  }
 }

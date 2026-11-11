@@ -82,6 +82,19 @@ class ExtractedClaim(BaseModel):
         v = _num(v)
         return int(round(float(v))) if v is not None else v
 
+    @field_validator("copay_pct", "continuity_credit_months", mode="before")
+    @classmethod
+    def _zero_when_none(cls, v):
+        """The schedule says Nil / None for these; a model may answer null. Both mean zero."""
+        if v is None or (isinstance(v, str) and v.strip().lower() in ("", "nil", "none", "null", "n/a")):
+            return 0
+        return v
+
+    @field_validator("room_type_modification", mode="before")
+    @classmethod
+    def _false_when_none(cls, v):
+        return False if v is None else v
+
     @field_validator("admission_date", "discharge_date", "policy_start", "history_onset_date", mode="before")
     @classmethod
     def _dates(cls, v):

@@ -12,11 +12,11 @@
   "method": "text_layer"
  },
  "id_proof": {
-  "text": "Government of India (specimen ID card, synthetic)\nName Hema! Sen\nAge / Gender 43/F\n1D number XXXKX XXXX 8018\nMobile 9776323945\n",
+  "text": "Government of India (specimen ID card, synthetic)\nName Hemal Sen\nAge / Gender 43 /F\n1D number XXXX XXXX BO\nMobile 9776323945\n",
   "method": "ocr"
  },
  "lab_report": {
-  "text": "Harmony Medical Centre Pathology\nPatient: Hemal Sen | Date: 26/06/2025\n\nTest Result Reference\n\nHaemoglobin 13.1 g/dL | 12.0 - 16.0\n\nWBC count 7,400 /emm 4,000 - 11,000\nBlood sugar (random) 104 mg/dL 70 - 140\n\nSerum creatinine 0.9 mg/dL 0.6 - 1.2\n\nSynthetic test document, generated tor sohwart evaluation, Not a real record Page |\n",
+  "text": "Harmony Medical Centre Pathology\nPatient: Hemal Sen | Date: 26/06/2025\n\nTest Result 7 | Reference\n\nHaemoglobin 13.1 g/dL _ 12.0 - 16.0\n\nWBC count 7,400 jcmm 4,000 - 11,000\nBlood sugar (random) 104 mg/dL | 70 - 140\n\nSerum creatinine 0.9 mg/dL 0.6-1.2\n\nSynthetic leat document, generated for software evaluation, Nota real record Page |\n",
   "method": "ocr"
  },
  "policy_schedule": {
@@ -34,6 +34,7 @@
   "id_proof.pdf": 131423,
   "lab_report.pdf": 96470,
   "policy_schedule.pdf": 2474,
-  "prescription.pdf": 1934
+  "prescription.pdf": 1934,
+  "_dpi": 300
  }
 }

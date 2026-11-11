@@ -12,11 +12,11 @@
   "method": "text_layer"
  },
  "id_proof": {
-  "text": "Government of India (specimen ID card, synthetic)\nName Charita Vohra\nAge / Gender 66/F\nID number XXXX XXXX 6901\nMobile 9195087908\n",
+  "text": "Government of India (specimen ID card, synthetic)\nName Charita Vohra\nAge / Gender 66 /F\nID number XXXX XXXX 6901\nMobile 9195087908\n",
   "method": "ocr"
  },
  "lab_report": {
-  "text": "Sanjivani Hospital and Research Centre Pathology\nPatient: Charita Vohra | Date: 21/08/2026\n\nTest Result Reference\nHaemoglobin 13.1 g/dL. 12.0 - 16.0\nWBC count 7,400 /cmm 4,000 - 11,000\n\n| Blood sugar (random) 104 mg/dL. 70-140\nSerum creatinine 0.9 mg/dL 0.6-1.2\n\nSynihatic tes! document, gonersted for gofteare evaluator: Not a real record Page |!\n",
+  "text": "Sanjivani Hospital and Research Centre Pathology\nPatient: Charita Vohra | Date: 21/08/2026\n\u2018Test | | Result - Reference\n| Haemoglobin \u201c13.1 g/d 12.0- 16.0 as\nWBC count | 7,400 /cmm i | 4,000 - 11,000 ;\n\" Blood sugar (random) 104 mg/dL 70-140 |\n| Serum creatinine \"0.9 mg/dl 06-12 |\n",
   "method": "ocr"
  },
  "policy_schedule": {
@@ -24,7 +24,7 @@
   "method": "text_layer"
  },
  "prescription": {
-  "text": "Dr. A. Kulkarni\nSanjivani Hospital and Research Centre\nPatient: Charita Vohra, 66/F Date: 21/08/2026\nDiagnosis: pneumonia\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n\u2018Synthnric test docyenent gore ated tor tottveatre: ewaliiscr Not a rea) record, Paget\n",
+  "text": "Dr. A. Kulkarni\nSanjivani Hospital and Research Centre\nPatient: Charita Vohra, 66/F Date: 21/08/2026\nDiagnosis: pneumonia\nRic Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\nSynithatic neat Bocyenen!, yonatmted tor tolware ewwushon Not a real recorts Page 4\n",
   "method": "ocr"
  },
  "_files": {
@@ -34,6 +34,7 @@
   "id_proof.pdf": 99528,
   "lab_report.pdf": 198530,
   "policy_schedule.pdf": 2479,
-  "prescription.pdf": 142009
+  "prescription.pdf": 142009,
+  "_dpi": 300
  }
 }

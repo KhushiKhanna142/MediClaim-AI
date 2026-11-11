@@ -4,7 +4,7 @@
   "method": "text_layer"
  },
  "discharge_summary": {
-  "text": "Sanjivani Hospital and Research Centre\nDischarge Summary\nPatient Inaya Taneja, 53 years, F\nUHID UH530808\nDate of admission 23/08/2025\nDate of discharge 24/08/2025\nLength of stay 1 day(s)\nConsultant Or. P. Deshmukh\nFinal diagnosis\nCataract surgery (phacoemulsification)\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to cataract surgery (phacoemulsification). Investigations were done\nand treatment was given as per protocol. The post-treatment period was uneventtul and the patient was discharged in\nStable condition on 24/08/2025.\nAdvice on discharge\nOr. P. Deshmukh (Treating consultant)\nSyrchete Ws! Gocurnen geoersied ter tottware evetumnon Nol 4 real record Page 2\n",
+  "text": "Sanjivani Hospital and Research Centre\nDischarge Summary\nPatient Inaya Taneja, 53 years, F\nUHID UH530808\nDate of admission 23/08/2025\nDate of discharge 24/08/2025\nLength of stay 1 day(s)\nConsultant Dr. P. Deshmukh\nFinal diagnosis\ncataract surgery (phacoemulsification)\nHistory\nCourse in hospital\nThe patient was admitted with complaints related to cataract surgery (phacoemulsification). Investigations were done\nand treatment was given as per protocol. The post-treatment period was uneventful and the patient was discharged in\nStable condition on 24/08/2025.\nAdvice on discharge\nDr. P. Deshmukh (Treating consultant)\nSyhemett WS Gol peeled to tofwees evaluation Nol a reat henord Page 3\n",
   "method": "ocr"
  },
  "hospital_bill": {
@@ -20,7 +20,7 @@
   "method": "text_layer"
  },
  "policy_schedule": {
-  "text": "HDFC ERGO General Insurance\n\nPolicy Schedule\n\nPolicy number HD9350942479\n\nInsurer _ HDFC ERGO General insurance\n\nProduct Optima Secure\n\nInsured person Inaya Taneja, 53 years, F\n\nPolicy start date \"23/12/2023\n\nSum insured (Rs.) 3,00,000\n\nWaiting period, pre-existing diseas@ months\n\nWaiting period, specified diseases Hrocedtres\n\nInitial waiting period 30 days (not applicable to accidents)\nRoom rent limit No limit (single private room or lower)\nEligible room category standard single\n\nCo-payment Nil\n\nContinuity credit (portability) None\n",
+  "text": "HDFC ERGO General Insurance\nPolicy Schedule\nPolicy number | HD9350942479\nInsurer _ HDFC ERGO General insurance\nProduct Optima Secure\nInsured person Inaya Taneja, 53 years, F\nPolicy start date - 23/12/2023\n\"Sum insured (Rs.) 3,00,000\nWaiting period, pre-existing diseas&@ months\nWaiting period, specified diseases Ptocedbres\nInitial waiting period | 30 days (not applicable to accidents) |\nRoom rent limit No limit (single private room or lower) |\nEligible room category standard single\nCo-payment Nil\nContinuity credit (portability) None\n",
   "method": "ocr"
  },
  "prescription": {
@@ -34,6 +34,7 @@
   "id_proof.pdf": 2009,
   "lab_report.pdf": 2184,
   "policy_schedule.pdf": 110582,
-  "prescription.pdf": 1972
+  "prescription.pdf": 1972,
+  "_dpi": 300
  }
 }

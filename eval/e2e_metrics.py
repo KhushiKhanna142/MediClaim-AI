@@ -25,8 +25,11 @@ def score_claim(pred: dict, truth: dict) -> dict:
     exp = {cite_key(c) for c in truth.get("expected_clause_ids", [])}
     got = {cite_key(c) for c in pred.get("cited_clause_ids", [])}
     retrieved = {cite_key(c) for c in pred.get("retrieved_clause_ids", [])}
+    truth_pay = float(truth.get("payable_amount") or 0.0)
+    overpay = float(pay_pred) - truth_pay > PAYABLE_TOL   # paid more than the correct amount: the costly kind of error
     return {
         "decision_ok": decision_ok,
+        "overpay": overpay,
         "payable_exact": (err <= PAYABLE_TOL) if scored_money else None,
         "payable_err_pct": (err / claimed * 100) if scored_money else None,
         "cite_recall": (len(exp & got) / len(exp)) if exp else None,
@@ -46,6 +49,7 @@ def aggregate(rows: list[dict]) -> dict:
         "decision_acc": _mean([float(r["decision_ok"]) for r in rows]),
         "payable_exact": _mean([None if r["payable_exact"] is None else float(r["payable_exact"]) for r in rows]),
         "payable_err_pct": _mean([r["payable_err_pct"] for r in rows]),
+        "overpay_rate": _mean([float(r["overpay"]) for r in rows]),
         "cite_recall": _mean([r["cite_recall"] for r in rows]),
         "cite_precision": _mean([r["cite_precision"] for r in rows]),
         "cite_unsupported": _mean([r["cite_unsupported"] for r in rows]),
@@ -60,10 +64,10 @@ def by_category(scored: list[tuple[str, dict]]) -> dict:
 
 
 def format_table(overall: dict, cats: dict) -> str:
-    cols = ["n", "decision_acc", "payable_exact", "payable_err_pct", "cite_recall", "cite_precision", "cite_unsupported"]
-    head = f"{'category':20}" + "".join(f"{c:>17}" for c in cols)
+    cols = ["n", "decision_acc", "payable_exact", "payable_err_pct", "overpay_rate", "cite_recall", "cite_precision", "cite_unsupported"]
+    head = f"{'category':20}" + "".join(f"{c:>15}" for c in cols)
     lines = [head]
     for name, m in list(cats.items()) + [("ALL", overall)]:
-        vals = "".join(f"{m['n']:>17d}" if c == "n" else f"{m[c]:>17.2f}" for c in cols)
+        vals = "".join(f"{m['n']:>15d}" if c == "n" else f"{m[c]:>15.2f}" for c in cols)
         lines.append(f"{name:20}{vals}")
     return "\n".join(lines)

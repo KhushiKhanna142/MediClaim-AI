@@ -16,7 +16,7 @@
   "method": "text_layer"
  },
  "lab_report": {
-  "text": "Harmony Medical Centre Pathology\nPatient: Jasmit Bhardwaj | Date: 17/01/2026\n\nTest Result Reference\n\na 13.1 gid Loan\naiecs Golan 7,400 /emm 4,000 - 11,000\nBlood sugar (random) 104 mg/dL 70 - 140\nSerum creatinine 0.9 mg/dl. mrad\nSyrihetic test doeurnent. ganecabed I sottware evaluation Not 6 real record eet\n",
+  "text": "Harmony Medical Centre Pathology\nPatient: Jasmit Bhardwaj | Date: 17/01/2026\nTest | Result Reterence\nHaemoglobin 13.1 g/dl 12.0- 16.0\nWBC count 7,400 /omm ' 4,000 - 11,000\nBlood sugar (random) 104 mg/dL 70 - 140\nSerum creatinine 0.9 mg/dL 0.6 - 1.2\n",
   "method": "ocr"
  },
  "policy_schedule": {
@@ -24,7 +24,7 @@
   "method": "text_layer"
  },
  "prescription": {
-  "text": "Dr. P. Deshmukh\nHarmony Medical Centre\nPatient: Jasmit Bhardwaj, 51/M Date: 17/01/2026\nRx: Tab. Paracetamol! 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\nSipetnatic test document, yrnaraied tor cotware wrsiathion. Mote ee) recor Paget\n",
+  "text": "Dr. P. Deshmukh\nHarmony Medica! Centre\nPatient: Jasmit Bhardwaj, 51/M Date: 17/01/2026\nRix: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\nSpethenc teak document, peaataied los sotaane sraiaition Mota cel nectrt Page i\n",
   "method": "ocr"
  },
  "_files": {
@@ -34,6 +34,7 @@
   "id_proof.pdf": 2012,
   "lab_report.pdf": 125041,
   "policy_schedule.pdf": 2483,
-  "prescription.pdf": 181601
+  "prescription.pdf": 181601,
+  "_dpi": 300
  }
 }

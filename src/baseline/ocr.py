@@ -23,7 +23,10 @@ def _ocr_image(png: Path) -> str:
     return r.stdout
 
 
-def read_pdf(path: Path, dpi: int = 200) -> tuple[str, str]:
+OCR_DPI = 300   # 200 misread small digits on degraded scans ('12 months' read as '42 months'); 300 fixed 9 of 10 such pages
+
+
+def read_pdf(path: Path, dpi: int = OCR_DPI) -> tuple[str, str]:
     """Returns (text, method) where method is 'text_layer' or 'ocr'."""
     import pymupdf
     doc = pymupdf.open(path)
@@ -47,7 +50,7 @@ def read_claim_docs(claim_dir: Path, use_cache: bool = True) -> dict[str, dict]:
     """Reads every PDF in claim_dir/docs. Returns {doc_name: {"text":..., "method":...}}."""
     cache = claim_dir / "docs" / "ocr_cache.json"
     pdfs = sorted((claim_dir / "docs").glob("*.pdf"))
-    stamp = {p.name: p.stat().st_size for p in pdfs}   # a re-rendered or added PDF invalidates the cache
+    stamp = {p.name: p.stat().st_size for p in pdfs} | {"_dpi": OCR_DPI}   # a re-rendered or added PDF invalidates the cache
     if use_cache and cache.exists():
         saved = json.loads(cache.read_text())
         if saved.get("_files") == stamp:

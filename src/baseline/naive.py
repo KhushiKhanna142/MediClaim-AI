@@ -41,8 +41,11 @@ def build_prompt(claim_text: str, hits: list[dict]) -> str:
 
 def parse_reply(text: str) -> dict:
     m = re.search(r"\{.*\}", text, re.S)
+    body = m.group(0) if m else ""
+    # models sometimes write numbers as 118,400, which is not valid JSON
+    body = re.sub(r"(?<=\d),(?=\d{3}(?!\d))", "", body)   # 118,400 -> 118400; leaves the comma between JSON fields alone
     try:
-        d = json.loads(m.group(0)) if m else {}
+        d = json.loads(body) if body else {}
     except json.JSONDecodeError:
         d = {}
     dec = str(d.get("decision", "")).strip().lower().replace(" ", "_")

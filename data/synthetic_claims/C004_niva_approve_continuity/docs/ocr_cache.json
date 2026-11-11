@@ -1,10 +1,10 @@
 {
  "claim_form": {
-  "text": "Niva Bupa Health Insurance\nHealth insurance Claim Form (Reimbursement), Part A\nPolicy number NB6978288405\nProduct ReAssure (Aspire)\nPolicy start date 25/08/2024\nSum insured (Rs.) 10,00,000\nName of patient \u2019 Baljiwan Chadha\nAge / Sex 59 years /M\nContact number | 9762725627\nHospital name Sanjivani Hospital and Research Centre, Nagpur\nDate of admission \"25/03/2025\nDate of discharge 30/03/2025\nDiagnosis / ailment total knee replacement\nNature of iliness lliness\nRoom category occupied standard single\nTotal amount claimed (Rs.) 3,16,550\nDeclaration\n| declare that the information furnished in this claim form is true and correct to the best of my knowledge. | agree to\nprovide any further documents required by the insurer.\nSignature of the insured: Date: 30/03/2025\nSynthotic test document, generated fo/ software evaluation. Not a real record Paget\n",
+  "text": "Niva Bupa Health Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number NB6978288405\nProduct ~ ReAssure (Aspire)\nPolicy start date 25/08/2024 |\n\"Sum insured (Rs.) 10,00,000\nName of patient \" Baljiwan Chadha |\nAge / Sex 59 years /M\nContact number | 9762725627\nHospital name \" Sanjivani Hospital and Research Centre, Nagpur\nDate of admission \"25/03/2025 |\nDate of discharge 30/03/2025\nDiagnosis / ailment total knee replacement\nNature of iliness lliness\nRoom category occupied standard single |\nTotal amount claimed (Rs.) 3,16,550\nDeclaration\n| declare that the information furnished in this claim form is true and correct to the best of my knowledge. | agree to\nprovide any further documents required by the insurer.\nSignature of the insured: Date: 30/03/2025\n",
   "method": "ocr"
  },
  "discharge_summary": {
-  "text": "Sanjivani Hospital and Research Centre\nDischarge Summary\nPatient Baljiwan Chadha, 59 years, M\nUHID UH785331\nDate of admission 25/03/2025\nDate of discharge 30/03/2025\nLength of stay 5 day(s)\nConsultant Dr. P. Deshmukh\nFinal diagnosis\ntotal knee replacement\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to total knee replacement. Investigations were done and treatment\nwas given as per protocol. The post-treatment period was uneventful and the patient was discharged in stable\ncondition on 30/03/2025.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. P. Deshmukh (Treating consultant)\nSynthetic test document, generated for software evaluation. Not a real record Page!\n",
+  "text": "Sanjivani Hospital and Research Centre\nDischarge Summary\nPatient Baljiwan Chadha, 59 years, M\nUHID UH785331\nDate of admission 25/03/2025\nDate of discharge 30/03/2025\nLength of stay 5 day(s)\nConsultant Dr. P. Deshmukh\nFinal diagnosis\ntotal knee replacement\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to total knee replacement. Investigations were done and treatment\nwas given as per protocol. The post-treatment period was uneventful and the patient was discharged in stable\ncondition on 30/03/2025.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. P. Deshmukh (Treating consultant)\nSynihetic tes] document, generated lor software evaluabon. Nol a real record Page 1\n",
   "method": "ocr"
  },
  "hospital_bill": {
@@ -12,7 +12,7 @@
   "method": "text_layer"
  },
  "id_proof": {
-  "text": "Government of India (specimen ID card, synthetic)\nName Baljiwan Chadha\nAge / Gender 59/M\niD number XXXX XXXX 1954\nMobile 9762725627\n",
+  "text": "Government of India (specimen ID card, synthetic)\nName Baljiwan Chadha\nAge / Gender 59/M\n1D number XOXOCX XXX 1954\nMobile 9762725627\n",
   "method": "ocr"
  },
  "lab_report": {
@@ -20,11 +20,11 @@
   "method": "text_layer"
  },
  "policy_schedule": {
-  "text": "Niva Bupa Health Insurance\nPolicy Schedule\nPolicy number NB6978288405\ninsurer Niva Bupa Health Insurance\nProduct | ReAssure (Aspire)\ninsured person Baljiwan Chadha, 59 years, M\nPolicy start date - 25/08/2024\nSum insured (Rs.) 10,00,000\nWaiting period, pre-existing diseast@ months\nWaiting period, specified diseases ftoomduees\ninitial waiting period 30 days (not applicable to accidents)\nRoom rent limit No limit (single private room or lower)\nEligible room category standard single\nCo-payment Nil\nContinuity credit (portability) 17 months\n",
+  "text": "Niva Bupa Health Insurance\nPolicy Schedule\nPolicy number NB6978288405 : | a\nInsurer Niva Bupa Health Insurance\nProduct - ReAssure (Aspire) | |\ninsured person \" Baljwan Chadha, 59 years, M\nPolicy start date 95/08/2024 | )\nSum insured (Rs.) 10,00,000\nWaiting period, pre-existing diseasts months\n_ Waiting period, specified diseases }toomdures\ninitial waiting period 30 days (not applicable to accidents)\n| Room rent limit No limit (single private room or lower)\nEligible room category \u2014 standard single\nCo-payment Nil |\nContinuity credit (portability) 17 months\n",
   "method": "ocr"
  },
  "prescription": {
-  "text": "Dr. P. Deshmukh\nSanjivani Hospital and Research Centre\nPatient: Baljiwan Chadha, 59/M Date: 25/03/2025\nDiagnosis: total knee replacement\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\nSynthetic teat document. generated for sofware evaiuaton. Not a real record Page}\n",
+  "text": "Dr. P. Deshmukh\nPatient: Baljiwan Chadha, 59/M Date: 25/03/2025\nDiagnosis: total knee replacement\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\nSynthetic teat dacuenent, generated for software ewaiuateon Not a real record Page i\n",
   "method": "ocr"
  },
  "_files": {
@@ -34,6 +34,7 @@
   "id_proof.pdf": 110272,
   "lab_report.pdf": 2188,
   "policy_schedule.pdf": 138921,
-  "prescription.pdf": 65818
+  "prescription.pdf": 65818,
+  "_dpi": 300
  }
 }

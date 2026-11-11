@@ -12,11 +12,11 @@
   "method": "text_layer"
  },
  "id_proof": {
-  "text": "Government of India (specimen ID card, synthetic)\nName Pranit Kohli\nAge / Gender 50/M\nID number XXXX XXXX 4387\nMobile 9438443405\n",
+  "text": "Government of India (specimen ID card, synthetic)\nName | Pranit Kohli\nAge / Gender 50/M\nID number XXXX XXXX 4387\nMobile 9438443405\n",
   "method": "ocr"
  },
  "lab_report": {
-  "text": "Lotus Care Hospital Pathology\nPatient: Pranit Kohii | Date: 05/08/2025\nHaemoglobin 13.1 g/dl 12.0 - 16.0\nWBC count 7,400 \u2018comm 4,000 - 11,000\nBlood sugar (random) 104 mg/d 70 - 140 :\nSerum creatinine 0.9 mg/dt 06-12\nSyetineke Hert Gocumnent, gene ated lar scftwwe evatuabon Not 4 real record Page t\n",
+  "text": "Lotus Care Hospital Pathology\nPatient: Pranit Kohli | Date: 05/08/2025\n13.1 g/dL 12.0 - 16.0\nAC ' 7,400 /omm _ 4,000 - 11,000\nBlood sugar (random) 104 mg/dl ise\nSerum creatinine 0.9 mg/d (06-12\nSyesnenc Vest document, generated lor softwint -erakeebon. Not 4 rol recoted ti\n",
   "method": "ocr"
  },
  "policy_schedule": {
@@ -34,6 +34,7 @@
   "id_proof.pdf": 123401,
   "lab_report.pdf": 158139,
   "policy_schedule.pdf": 2478,
-  "prescription.pdf": 1956
+  "prescription.pdf": 1956,
+  "_dpi": 300
  }
 }

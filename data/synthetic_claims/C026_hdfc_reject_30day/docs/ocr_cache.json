@@ -8,7 +8,7 @@
   "method": "text_layer"
  },
  "hospital_bill": {
-  "text": "Metro Heart and General Hospital\n\nIndore | Final Inpatient Bill\n\nBill no BL/2025/40896 UHID UH748633\n\nPatient Urvi Bhattacharyya Age / Sex 43 /F\n\nAdmitted 16/08/2025 Discharged 19/08/2025\n\nConsultant Dr. A. Kulkarni Room standard single\nItem Amount (Rs.)\nRoom charges (standard single) (3 x 4,900) 14,700\nSurgeon and anaesthetist fees 36,800\nOperation theatre charges 16,400\nLaboratory and radiology investigations 8,700\nNursing charges 5,050\nPharmacy and medicines 8,800\nDisposable consumables and admission kit 2,800\nNet payable 93,250\n\nSynthetic test document, generated for software evaiuation. Nota real record. Page 1\n",
+  "text": "Metro Heart and General Hospital\n\nIndore | Final Inpatient Bill\n\nBill no BL/2025/40896 UHID UH748633\n\nPatient Urvi Bhattacharyya Age / Sex 43 /F\n\nAdmitted 16/08/2025 Discharged 19/08/2025\n\nConsultant Dr. A. Kulkarni Room standard single\nItem Amount (Rs.)\nRoom charges (standard single) (3 x 4,900) 14,700\nSurgeon and anaesthetist fees 36,800\nOperation theatre charges 16,400\nLaboratory and radiology investigations 8,700\nNursing charges 5,050\nPharmacy and medicines 8,800\nDisposable consumables and admission kit 2,800\nNet payable 93,250\n",
   "method": "ocr"
  },
  "id_proof": {
@@ -16,7 +16,7 @@
   "method": "text_layer"
  },
  "lab_report": {
-  "text": "Metro Heart and General Hospital Pathology\nPatient: Urvi Bhattacharyya | Date: 16/08/2025\nTest Result es Reference\nHaemoglobin \"13.1 gidb | 12.0- 16.0\nWBC count \"7,400 /ermm | 4,000 - 11,000\nBlood sugar (random) | 104 mg/dL 70 - 140\nSerum creatinine 0.9 mg/dL 0.6 - 1.2\n",
+  "text": "Metro Heart and General Hospital Pathology\nPatient: Urvi Bhattacharyya | Date: 16/08/2025\nTest : Result eee Reference :\nHaemoglobin 43.1 g/dL | 12.0- 16.0 |\n\u201cWBC count \"7,400 /omm /4,000- 11,000 |\nBlood sugar (random) | 104 mg/dL . 70 - 140\n| Serum creatinine | | 0.9 mg/dL | | 0.6- 1.2\n",
   "method": "ocr"
  },
  "policy_schedule": {
@@ -34,6 +34,7 @@
   "id_proof.pdf": 2017,
   "lab_report.pdf": 159795,
   "policy_schedule.pdf": 2484,
-  "prescription.pdf": 1962
+  "prescription.pdf": 1962,
+  "_dpi": 300
  }
 }

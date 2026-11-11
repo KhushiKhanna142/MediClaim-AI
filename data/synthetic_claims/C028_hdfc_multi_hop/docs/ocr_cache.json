@@ -8,7 +8,7 @@
   "method": "text_layer"
  },
  "hospital_bill": {
-  "text": "Harmony Medical Centre\nJaipur | Final Inpatient Bill\nBill no BL/2025/58737 UHID UH321313\nPatient Libni Palan Age/Sex 59/M\nAdmitted 07/02/2025 Discharged _ 11/02/2025\nConsultant Dr. A. Kulkarni Room standard single\ni} Room charges (standard single) 4 5,500 22,000\n2 | Surgeon and anaesthetist fees 1} 76,550 76,550\n3 Operation theatre charges aS Canines eee 27,850 27,850 _\n4 Laboratory and radiology investigations 1| 11,300 11,300\n5 | Nursing charges ; Soa oisea anaes pene a 17,500 _ 17,500\n6 Pharmacy and medicines 1 16,600 16,600\n7. Implant / prosthesis ZONE OS EN Bee eas 1,85,500 1,85,500\n8 Disposable consumables and admission kit 1 4,300 4,300\nTOTAL 3,61,600\nSynthetic test docurnent. generated for software evaluation. Not a real record. Page 1\n",
+  "text": "Harmony Medical Centre\nJaipur | Final Inpatient Bill\nBill no BL/2025/58737 UHID UH321313\nPatient Libni Palan Age / Sex 59/M\nAdmitted 07/02/2025 Discharged 11/02/2025\nConsultant Dr. A. Kulkarni Room standard single\ni Room charges (standard single) 4 | 5,500 22,000\n| 2 | Surgeon and anaesthetist fees | 1 | 76,550 | 76,550 |\na et Operation theatre charges 3 cnt ontenn eat poe Ee : 27,850 27,850 |\n| 4 Laboratory and radiology investigations | 1 | 11,300 11,300\n5 | Nursing charges : : co ee ee 17500 =\u2014\u2014\u2014=\u00abSN SOD\n6 | Pharmacy and medicines = 1 | 16,600 16,600\n7. Implant / prosthesis Iter LOS Ae acu pends (leat ye faa 1,85,500\n8 Disposable consumables and admission kit | 1 | 4,300 | 4,300\noe Re aN CED an eeEONS of Meg TONES Ao Beary se ea COA CNM SO Ce\nSynthetic test document, generated for software evaluation. Not @ real record Page 1\n",
   "method": "ocr"
  },
  "id_proof": {
@@ -16,7 +16,7 @@
   "method": "text_layer"
  },
  "lab_report": {
-  "text": "Harmony Medical Centre Pathology\nPatient: Libni Paian | Date: 07/02/2025\nTest Result Reference\nHaemoglobin 13,1 gid 12.0- 16.0\nWBC count 7,400 /omm 4,000 - 11,000\nBlood sugar (random) 104 mg/dL 70 - 140\nSerum creatinine 0.9 mg/di 06-12\nSynihetic test Gocument, generated for sofware evaluation. Not a real record Paget\n",
+  "text": "Harmony Medical Centre Pathology\nPatient: Libni Paian | Date: 07/02/2025\nTest Result Reference\nHaemoglobin 13.1 g/dL 12.0 - 16.0\nWBC count 7,400 /omm 4,000 - 11,000\nBlood sugar (random) 104 mg/dL 70 - 140\nSerum creatinine 0.9 mg/dL 0.6 - 1.2\nSnifurtic beet document, generated fot sofware (vadualon. NOt a neal recare Page ?\n",
   "method": "ocr"
  },
  "policy_schedule": {
@@ -34,6 +34,7 @@
   "id_proof.pdf": 2009,
   "lab_report.pdf": 113722,
   "policy_schedule.pdf": 2477,
-  "prescription.pdf": 1941
+  "prescription.pdf": 1941,
+  "_dpi": 300
  }
 }

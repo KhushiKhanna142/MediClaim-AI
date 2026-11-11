@@ -4,7 +4,7 @@
   "method": "text_layer"
  },
  "hospital_bill": {
-  "text": "Sanjivani Hospital and Research Centre\nPune | Final inpatient Bill\nBill no 81L/2025/12957 UHID UH621795\nPatient Watika Wali Age / Sex 35/M\nAdmitted 21/08/2025 Discharged 25/08/2025\nConsultant Dr. P. Deshmukh Room standard single\ntem Amount (Rs.)\nRoom charges (standard single) (4 x 5,000) 20,000\nSurgeon and anaesthetist fees 79,550\nOperation theatre charges 29,150\nLaboratory and radiology investigations 6,000\nNursing charges 11,450\nPharmacy and medicines 13,450\nImplant / prosthesis 72,150\nDisposable consumables and admission kit 4,600\nNet payable 2,36,350\nSyposvetic test Gocuene gerrated tor softapre evatatee\u2019 ot a coud record Page!\n",
+  "text": "Sanjivani Hospital and Research Centre\nPune | Final Inpatient Bill\nBill no BL/2025/12957 UHID UH621795\nPatient Watika Wali Age / Sex 35/M\nAdmitted 21/08/2025 Discharged 25/08/2025\nConsultant Dr. P. Deshmukh Room standard single\nitem Amount (Rs.)\nRoom charges (standard single) (4 x 5,000) 20,000\nSurgeon and anaesthetist fees 79,550\nOperation theatre charges 29,150\nLaboratory and radiology investigations 6,000\nNursing charges 11,450\nPharmacy and medicines 13,450\nimplant / prosthesis 72,150\nNet payable 2,36,350\nSyntvetic teat Gocurnent. gerurated for soteire evatuader Hint a cau! emcurd. Page!\n",
   "method": "ocr"
  },
  "id_proof": {
@@ -12,15 +12,15 @@
   "method": "text_layer"
  },
  "lab_report": {
-  "text": "Sanjivani Hospital and Research Centre Pathology\nPatient: Watika Wali | Date: 21/08/2025\nTest Result | Reference\nHaemoglobin \"43.1 g/dL | 42.0- 16.0\nWBC count 7,400 /emm 4,000 - 11,000\nBlood sugar (random) 104 mg/dL 70 - 140\nSerum creatinine 0.9 mg/dL. 06-12\n",
+  "text": "Sanjivani Hospital and Research Centre Pathology\nPatient: Watika Wali | Date: 21/08/2025\nTest - | Result Reference |\nHaemoglobin 43.1 gid | 42.0 - 16.0 |\n| WBC count | 7,400 /emm | 4,000 - 11,000 |\nBlood sugar (random) | 104 mg/dL | 70 - 140 |\n| Serum creatinine 0.9 mg/dL | 0.6 - 1.2\n",
   "method": "ocr"
  },
  "policy_schedule": {
-  "text": "Niva Bupa Health Insurance\n\nPolicy Schedule\n\nPolicy number NB3847586742\n\ninsurer Niva Bupa Health Insurance\nProduct ReAssure (Aspire)\n\nInsured person Watika Wali, 35 years, M\n\nPolicy start date 21/07/2025\n\nSum insured (Rs.) 3,00,000\n\nWaiting period, pre-existing diseast% months\n\nWaiting period, specified diseases/ftocedtttes\n\nInitial waiting period 30 days (not applicable to accidents)\nRoom rent limit No limit (single private room or lower)\nEligible room category standard single\nCo-payment Nil\nContinuity credit (portability) None\n",
+  "text": "Niva Bupa Health Insurance\n\nPolicy Schedule\n\nPolicy number NB3847586742 !\n\nInsurer Niva Bupa Health Insurance\n_ Product : | ReAssure (Aspire)\n_ Insured person Watika Wali, 35 years, M\n\nPolicy start date \"21/07/2025\n\nSum insured (Rs.) 3,00,000\n\nWaiting period, pre-existing diseast% months |\n| Waiting period, specified diseases/#ounatites\n\nInitial waiting period 30 days (not applicable to accidents)\nRoom rent limit No limit (single private room or lower)\n\nEligible room category standard single\n\nCo-payment Nil\n\nContinuity credit (portability) None\n",
   "method": "ocr"
  },
  "prescription": {
-  "text": "Dr. P. Deshmukh\nSanjivani Hospital and Research Centre\nPatient: Watika Wali, 35/M Date: 21/08/2025\nDiagnosis: fracture of femur, ORIF (road accident)\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days: Cap. Pantoprazole 40 mg 1-0-0 x 5 days\nSynthati\u00a2 est document, generated for soltware evaluation, Not a.real record. Page t\n",
+  "text": "Dr. P. Deshmukh\nSanjivani Hospital and Research Centre\nPatient: Watika Wali, 35/M Date: 21/08/2025\nDiagnosis: fracture of femur, ORIF (road accident)\nRx; Tab. Paracetamol 500 mg 1-0-1 x 3 days: Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
   "method": "ocr"
  },
  "_files": {
@@ -29,6 +29,7 @@
   "id_proof.pdf": 2011,
   "lab_report.pdf": 149200,
   "policy_schedule.pdf": 155680,
-  "prescription.pdf": 185819
+  "prescription.pdf": 185819,
+  "_dpi": 300
  }
 }

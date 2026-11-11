@@ -1,6 +1,6 @@
 {
  "claim_form": {
-  "text": "HDFC ERGO General Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\n~ Policy number HD7129340549\n' Product Optima Secure\nPolicy start date 08/08/2023 it\nSum insured (Rs.) 3,00,000\nName of patient Faras Murthy\nAge / Sex 60 years / F\nContact number | 9138725318\nHospital name Lotus Care Hospital, Indore\nDate of admission 08/03/2026\nDate of discharge 13/03/2026\nDiagnosis / ailment total knee replacement\nNature of illness lliness\nRoom category occupied standard single\nTotal amount claimed (Rs.) 3,58,600\nDeclaration\n| declare that the information furnished in this claim form is true and correct to the best of my knowledge. | agree to\nprovide any further documents required by the insurer.\nSignature of the insured: Date: 13/03/2026\nSynthetic test document, generated for software evaluation. Not a reai record. Page 1\n",
+  "text": "HDFC ERGO General Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\n\"Policy number _HD7129340549\n| Product | Optima Secure |\nPolicy startdate 08/08/2023 a\nSum insured (Rs.) 3,00,000\n| Name of patient Faras Murthy\nAge / Sex | 60 years / F\n\"Contact number 9138725318\nHospital name | Lotus Care Hospital, Indore |\nDate of admission 08/03/2026\n\"Date of discharge 13/03/2026\n| Diagnosis / ailment total knee replacement\n| Nature of illness lliness\n| Room category occupied | standard single\nTotal amount claimed (Rs.) 3,58,600\nDeclaration\n| declare that the information furnished in this claim form is true and correct to the best of my knowledge. | agree to\nprovide any further documents required by the insurer.\nSignature of the insured: Date: 13/03/2026\nSynthetic test document, generated for software \u00e9valuatorn. Nol a real record Page.1\n",
   "method": "ocr"
  },
  "discharge_summary": {
@@ -20,7 +20,7 @@
   "method": "text_layer"
  },
  "policy_schedule": {
-  "text": "HDFC ERGO General Insurance\n\nPolicy Schedule\n\nPolicy number HD7129340549\n\ninsurer _ HDFC ERGO General Insurance\n\nProduct Optima Secure\n\nInsured person Faras Murthy, 60 years, F\n\nPolicy start date \"98/08/2023\n\nSum insured (Rs.) 3,00,000\n\nWaiting period, pre-existing diseasa months\n\nWaiting period, specified diseases ptocertites\n\nInitial waiting period 30 days (not applicable to accidents)\n\nRoom rent limit No limit (single private room or lower)\n\nEligible room category standard single\n\nCo-payment Nil\n\nContinuity credit (portability) None\nSynthetic test docurnent!, generated fot sofware ovaiiahon. Not a (eal record. Page +\n",
+  "text": "HDFC ERGO General Insurance\nPolicy Schedule\nPolicy number _HD7129340549\ninsurer | HDFC ERGO General Insurance |\n| Product | 7 | Optima Secure\nInsured person Faras Murthy, 60 years, F\n- Policy start date. - 98/08/2023\nSum insured (Rs.)  3,00,000\n| Waiting period, pre-existing diseas\u2019@ months | | |\n: Waiting period, specified diseases procedures\nInitial waiting period 30 days (not applicable to accidents)\n_ Room rent limit No limit (single private room or lower)\nEligible room category standard single ?\nCo-payment : Nil\n| Continuity credit (portability) None\nSynthetic test Gocurnent, osnerated fof sofware ovaluabon. Nol a feal record Page 7\n",
   "method": "ocr"
  },
  "prescription": {
@@ -34,6 +34,7 @@
   "id_proof.pdf": 116270,
   "lab_report.pdf": 2168,
   "policy_schedule.pdf": 195882,
-  "prescription.pdf": 1934
+  "prescription.pdf": 1934,
+  "_dpi": 300
  }
 }

@@ -1,10 +1,10 @@
 {
  "claim_form": {
-  "text": "Niva Bupa Health Insurance\nHealth Insurance Ciaim Form (Reimbursement), Part A\nPolicy number _ NB7089247694\nProduct ReAssure (Aspire)\nPolicy start date 15/12/2025\nSum insured (Rs.) ~ 10,00,000\nName of patient \"Raghav Pradhan\nAge / Sex | 40 years /F\nContact number 9898310606\nDate of admission 1506/2026\nDate of discharge 20/06/2026\nNature of iliness tines\nRoom category occupied Standard single\nTotal amount claimed (Rs.) 1,07,050\nDeclaration\n| declare that the information furnished in this claim form is true and correct to the best of my knowledge. | agree to\nSignature of the insured: Date: 20/06/2026\nSynthetic: test document, generates for sofware evaluation Nol a sea recent Page?\n",
+  "text": "Niva Bupa Health Insurance\nHealth Insurance Ciaim Form (Reimbursement), Part A\n\"Product ReAssure (Aspire)\n\"Policy start date 18122025 |\nSum insured (Rs.) - 10,00,000\nName of patient \" Raghav Pradhan\nAge / Sex | 40 years /F\nContact number 9898310606\n\"Date of admission 15/06/2026\nDate of discharge 20/06/2026\nNature of illness \u201cHines\nRoom category occupied standard single\nTotal amount claimed (Rs.) 1,07,050\nDeciaration\n| declare that the information furnished in this claim form is true and correct to the best of my knowledge. | agree to\nprovide any further documents required by the insurer.\nSignature of the insured: Date: 20/06/2026\nSyethetc lest Gocaetnt, generated for soltware weaiuaton Nol a ai record Page !\n",
   "method": "ocr"
  },
  "discharge_summary": {
-  "text": "Metro Heart and General Hospital\nDischarge Summary\nPatient Raghav Pradhan, 40 years, F\nUHID UH577917\nDate of admission 15/06/2026\nDate of discharge 20/06/2026\nLength of stay 5 day(s)\nConsultant Dr, S. Mehta\nFinal diagnosis\ndiabetic foot infection with debridement\nHistory\nKnown case of diabetic foot infection with debridement, diagnosed on 15/06/2024, on regular treatment.\nCourse in hospital\nStable condition on 20/06/2026.\nAdvice on discharge\nDr. S. Mehta (Treating consultant)\nSiynthatic test docwment, generated tor sofort exaianbor Not a real record Page t\n",
+  "text": "Metro Heart and General Hospital\n\nDischarge Summary\n\nPatient Raghav Pradhan, 40 years, F\n\nUHID UH577917\n\nDate of admission 15/06/2026\n\nDate of discharge 20/06/2026\n\nLength of stay 5 day(s)\n\nConsultant Dr, S. Mehta\n\nFinal diagnosis\ndiabetic foot infection with debridement\nHistory\nKnown case of diabetic foot infection with debridement, diagnosed on 15/06/2024, on regular treatment.\nCourse in hospital\nThe patient was admitted with compiaints related to diabetic foot infection with debridement. investigations were done\nand Ireatment was given as per protocol. The post-treatment period was uneventful and the patient was discharged in\nAdvice on discharge\nReview alter 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. S. Mehta (Treating consultant)\n\nSyothatc tent docienent, genecxhw) tor eevee evakinbort Nit a nea! nEoord Page t\n",
   "method": "ocr"
  },
  "hospital_bill": {
@@ -16,7 +16,7 @@
   "method": "text_layer"
  },
  "lab_report": {
-  "text": "Metro Heart and General Hospital Pathology\nPatient: Raghav Pradhan | Date: 15/06/2026\n\nTest Result Reference\n\nHaemoglobin 13.1 g/dl 12.0 - 16.0\n\nWBC count 7,400 jcmm 4,000 - 11,000\nBlood sugar (random) 104 mg/d 70 - 140\n\nSerum creatinine 0.9 mg/dl 0.6 - 1.2\n\nSyothenc test doqument. genscated for sottware oy auation. Nota real record. Paget\n",
+  "text": "Metro Heart and General Hospital Pathology\nPatient: Raghav Pradhan | Date: 15/06/2026\nTest 3 Result | Reference a\nHaemoglobin 13.1 g/db 12.0 - 16.0\nWBC count 7,400 femm 4,000 - 11,000\nBlood sugar (random) 104 mg/dL 70-140\nSerum creatinine 0.9 mg/dL. 1 0.6 ~1.2\nGyehene teat docu. genecaied for sdthware ev nuation. Nol a rea! mecied Page\n",
   "method": "ocr"
  },
  "policy_schedule": {
@@ -34,6 +34,7 @@
   "id_proof.pdf": 2012,
   "lab_report.pdf": 153316,
   "policy_schedule.pdf": 2480,
-  "prescription.pdf": 1963
+  "prescription.pdf": 1963,
+  "_dpi": 300
  }
 }

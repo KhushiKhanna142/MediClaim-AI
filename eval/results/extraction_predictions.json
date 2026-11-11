@@ -235,7 +235,7 @@
   "age": 59,
   "sex": "M",
   "policy_number": "NB6978288405",
-  "hospital": "Sanjivani Hospital and Research Centre",
+  "hospital": "Sanjivani Hospital and Research Centre, Nagpur",
   "diagnosis": "total knee replacement",
   "cause": "illness",
   "known_history": "No significant past medical or surgical history.",
@@ -299,7 +299,7 @@
   ],
   "sum_insured": 1000000,
   "policy_start": "2024-08-25",
-  "ped_waiting_months": 24,
+  "ped_waiting_months": null,
   "specified_waiting_months": null,
   "room_limit_per_day": null,
   "copay_pct": 0,
@@ -311,7 +311,7 @@
   "patient_name": "Omya Boase",
   "age": 70,
   "sex": "F",
-  "policy_number": "NB60S4592048",
+  "policy_number": "NB6054592948",
   "hospital": "Harmony Medical Centre, Pune",
   "diagnosis": "dengue fever",
   "cause": "illness",
@@ -462,88 +462,7 @@
   "eligible_room": "standard_single"
  },
  "C007_niva_partial_nonpayable": {
-  "patient_name": "Jatin Kapoor",
-  "age": 42,
-  "sex": "F",
-  "policy_number": "NB1423768735",
-  "hospital": "Metro Heart and General Hospital, Ahmedabad",
-  "diagnosis": "fracture of femur, ORIF (road accident)",
-  "cause": "accident",
-  "known_history": null,
-  "history_onset_date": null,
-  "admission_date": "2025-06-20",
-  "discharge_date": "2025-06-26",
-  "length_of_stay_days": 6,
-  "room_category_claimed": "standard_single",
-  "claimed_total": 225150,
-  "bill_total": 225150,
-  "items": [
-   {
-    "description": "Room charges (standard single)",
-    "qty": 6,
-    "rate": 4600,
-    "amount": 27600,
-    "category": "room"
-   },
-   {
-    "description": "Surgeon and anaesthetist fees",
-    "qty": 1,
-    "rate": 54100,
-    "amount": 54100,
-    "category": "surgeon"
-   },
-   {
-    "description": "Operation theatre charges",
-    "qty": 1,
-    "rate": 26450,
-    "amount": 26450,
-    "category": "ot"
-   },
-   {
-    "description": "Laboratory and radiology investigations",
-    "qty": 1,
-    "rate": 9300,
-    "amount": 9300,
-    "category": "investigation"
-   },
-   {
-    "description": "Nursing charges",
-    "qty": 1,
-    "rate": 10250,
-    "amount": 10250,
-    "category": "nursing"
-   },
-   {
-    "description": "Pharmacy and medicines",
-    "qty": 1,
-    "rate": 19850,
-    "amount": 19850,
-    "category": "medicine"
-   },
-   {
-    "description": "Implant / prosthesis",
-    "qty": 1,
-    "rate": 74150,
-    "amount": 74150,
-    "category": "implant"
-   },
-   {
-    "description": "Disposable consumables and admission kit",
-    "qty": 1,
-    "rate": 3450,
-    "amount": 3450,
-    "category": "consumable"
-   }
-  ],
-  "sum_insured": 500000,
-  "policy_start": "2025-03-20",
-  "ped_waiting_months": null,
-  "specified_waiting_months": null,
-  "room_limit_per_day": null,
-  "copay_pct": 0,
-  "continuity_credit_months": 0,
-  "room_type_modification": false,
-  "eligible_room": "standard_singie"
+  "error": "1 validation error for ExtractedClaim\ncopay_pct\n  Input should be a valid integer [type=int_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.14/v/int_type"
  },
  "C008_niva_partial_si_cap": {
   "patient_name": "Mekhala Bawa",
@@ -766,14 +685,14 @@
     "category": "medicine"
    },
    {
-    "description": "Implant / prosthesis",
+    "description": "implant / prosthesis",
     "qty": 1,
     "rate": 22600,
     "amount": 22600,
     "category": "implant"
    },
    {
-    "description": "Disposable consumabies and admission kit",
+    "description": "Disposable consumables and admission kit",
     "qty": 1,
     "rate": 1500,
     "amount": 1500,
@@ -808,7 +727,7 @@
   "bill_total": 106800,
   "items": [
    {
-    "description": "Room charges (standard single)",
+    "description": "Room charges (standard single) (4 x 5,000)",
     "qty": 4,
     "rate": 5000,
     "amount": 20000,
@@ -848,13 +767,6 @@
     "rate": 10150,
     "amount": 10150,
     "category": "medicine"
-   },
-   {
-    "description": "Disposable consumables and admission kit",
-    "qty": 1,
-    "rate": 3050,
-    "amount": 3050,
-    "category": "consumable"
    }
   ],
   "sum_insured": 500000,
@@ -949,7 +861,7 @@
   "age": 50,
   "sex": "M",
   "policy_number": "NB6874677865",
-  "hospital": "Metro Heart and General Hospital, Jaipur",
+  "hospital": "Metro Heart and General Hospital",
   "diagnosis": "total knee replacement",
   "cause": "illness",
   "known_history": "Known case of total knee replacement, diagnosed on 25/07/2021, on regular treatment.",
@@ -1088,18 +1000,11 @@
     "category": "medicine"
    },
    {
-    "description": "Implant / prosthesis",
+    "description": "implant / prosthesis",
     "qty": 1,
     "rate": 72150,
     "amount": 72150,
     "category": "implant"
-   },
-   {
-    "description": "Disposable consumables and admission kit",
-    "qty": 1,
-    "rate": 4600,
-    "amount": 4600,
-    "category": "consumable"
    }
   ],
   "sum_insured": 300000,
@@ -1187,7 +1092,7 @@
   "age": 36,
   "sex": "M",
   "policy_number": "HD8650548181",
-  "hospital": "Lotus Care Hospital, indore",
+  "hospital": "Lotus Care Hospital",
   "diagnosis": "fracture of femur, ORIF (road accident)",
   "cause": "accident",
   "known_history": "No significant past history. Presented following a road traffic accident.",
@@ -1196,7 +1101,7 @@
   "discharge_date": "2025-06-04",
   "length_of_stay_days": 5,
   "room_category_claimed": "standard_single",
-  "claimed_total": 217900,
+  "claimed_total": null,
   "bill_total": 217900,
   "items": [
    {
@@ -1481,7 +1386,7 @@
   "age": 62,
   "sex": "M",
   "policy_number": "HD7701528545",
-  "hospital": "Metro Heart and General Hospital, Jaipur",
+  "hospital": "Metro Heart and General Hospital",
   "diagnosis": "inguinal hernia repair",
   "cause": "illness",
   "known_history": "No significant past medical or surgical history.",
@@ -1566,7 +1471,7 @@
   "sex": "F",
   "policy_number": "HD4907165767",
   "hospital": "Harmony Medical Centre, indore",
-  "diagnosis": "acute appendicitis, appendectomy",
+  "diagnosis": "acute appendicitis. appendectomy",
   "cause": "illness",
   "known_history": "No significant past medical or surgical history.",
   "history_onset_date": null,
@@ -1629,7 +1534,7 @@
   ],
   "sum_insured": 500000,
   "policy_start": "2024-01-11",
-  "ped_waiting_months": null,
+  "ped_waiting_months": 3,
   "specified_waiting_months": null,
   "room_limit_per_day": 5000,
   "copay_pct": 0,
@@ -1697,7 +1602,7 @@
     "category": "investigation"
    },
    {
-    "description": "Implant / prosthesis",
+    "description": "implant / prosthesis",
     "qty": 1,
     "rate": 186600,
     "amount": 186600,
@@ -1725,7 +1630,7 @@
   "patient_name": "Faras Murthy",
   "age": 60,
   "sex": "F",
-  "policy_number": "HD7129340549",
+  "policy_number": "_HD7129340549",
   "hospital": "Lotus Care Hospital, Indore",
   "diagnosis": "total knee replacement",
   "cause": "illness",
@@ -1813,7 +1718,7 @@
   "hospital": "Sanjivani Hospital and Research Centre, Nagpur",
   "diagnosis": "cataract surgery (phacoemulsification)",
   "cause": "illness",
-  "known_history": "No significant past medical or surgical history.",
+  "known_history": null,
   "history_onset_date": null,
   "admission_date": "2025-08-23",
   "discharge_date": "2025-08-24",
@@ -2135,7 +2040,7 @@
   "length_of_stay_days": 4,
   "room_category_claimed": "standard_single",
   "claimed_total": 361600,
-  "bill_total": 361600,
+  "bill_total": 354100,
   "items": [
    {
     "description": "Room charges (standard single)",
@@ -2168,8 +2073,8 @@
    {
     "description": "Nursing charges",
     "qty": 1,
-    "rate": 17500,
-    "amount": 17500,
+    "rate": 10500,
+    "amount": 10500,
     "category": "nursing"
    },
    {
@@ -2285,7 +2190,7 @@
   "patient_name": "Jackson Tak",
   "age": 63,
   "sex": "M",
-  "policy_number": "HD7536454268",
+  "policy_number": "yp7596454268",
   "hospital": "Lotus Care Hospital, indore",
   "diagnosis": "cataract surgery (phacoemulsification)",
   "cause": "illness",
@@ -2357,7 +2262,7 @@
   ],
   "sum_insured": 500000,
   "policy_start": "2023-01-17",
-  "ped_waiting_months": 36,
+  "ped_waiting_months": null,
   "specified_waiting_months": null,
   "room_limit_per_day": null,
   "copay_pct": 0,

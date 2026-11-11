@@ -1,6 +1,6 @@
 {
  "claim_form": {
-  "text": "HDFC ERGO General Insurance\nHealth insurance Ciaim Form (Reimbursement), Part A\nPolicy number 08650548181 A\nPolicy start date 30/12/2006\nSum insured (Rs.) \" 10.00,000\nName of patient | Janaki Mistry\nAge / Sex 36 years /M\nContact number 9541380072\nHospital name \" Lotus Care Hospital, indore\nDate of admission \"30/08/2025\nDate of discharge 04/06/2025\nDiagnosis / ailment \"fracture of femur, ORIF (road accident)\nNature of iliness Accident / injury\nRoom category occupied Standard single\nTotal amount claimed (Rs.) _\u2014=\u2014-2,17,900\nDeclaration\n| deciare that the information furnished in this claim form is true and correct to the best of my knowledge. | agree to\nProvide any further documents required by the insurer.\nSignature of the insured: Date: 04/06/2025\nSythe: sant doer Serato\u2019 Sor scieD erAkarbor Moto Hb record Paga7\n",
+  "text": "HDFC ERGO General Insurance\nHealth insurance Claim Form (Reimbursement), Part A\noom | are - . feces Sia\n\"Sum insured (Rs.) \" 10,00,000 ae | |\nName of patient - Janaki Mistry | See Se |\nAge / Sex 36 years /M | re | |\nsag Poneshce BES ASUD Nan\nen SNES\nDiagnosis / ailment \u201c| fracture of femur, ORIF (road accident) : ; 09\nDeclaration\n| declare thal the information furnished in this claim form is true and correct to the best of my knowledge. | agree to\nSignature ofthe insured: Date: 04/06/2025\nSepMtheds: Sans Auras! oeea aed Nee Sal wiy er Atashde: Nii a HR HecOrt Page t\n",
   "method": "ocr"
  },
  "discharge_summary": {
@@ -8,11 +8,11 @@
   "method": "text_layer"
  },
  "hospital_bill": {
-  "text": "Lotus Care Hospital\nIndore | Final Inpatient Bill\nBill no BL/2025/4647 UHID UH547466\nPatient Janaki Mistry Age / Sex 36/M\nAdmitted 30/05/2025 Discharged 04/06/2025\nConsultant Dr. A. Kulkarni Room standard single\nItem Amount (Rs.)\nRoom charges (standard single) (5 x 4,300) 21,500\nSurgeon and anaesthetist fees 66,450\nOperation theatre charges 20,300\nLaboratory and radiology investigations 10,800\nNursing charges 10,350\nPharmacy and medicines 11,050\nImplant / prosthesis 77,450\nNet payable 2,17,900\nSynthetic test document, generated for sottwale evaluation Not a rea! record Paget\n",
+  "text": "Lotus Care Hospital\nIndore | Final Inpatient Bill\nBill no BL/2025/4647 UHID UH547466\nPatient Janaki Mistry Age / Sex 36/M\nAdmitted 30/05/2025 Discharged 04/06/2025\nConsultant Dr. A. Kulkarni Room Standard single\nltem Amount (Rs.)\nRoom charges (standard single) (5 x 4,300) 21,500\nSurgeon and anaesthetist fees 66,450\nOperation theatre charges 20,300\nLaboratory and radiology investigations 10,800\nNursing charges 10,350\nPharmacy and medicines 11,050\nImplant / prosthesis 77,450\nNet payable 2,17,900\nSynthetic test document, ganeraied for sattwaia avalualion. Not-a real record Page i\n",
   "method": "ocr"
  },
  "id_proof": {
-  "text": "Government of India (specimen ID card, synthetic)\nName Janaki Mistry\nAge / Gender 36/M\nID number XXXX XXXX 5523\nMobile 9541380072\n",
+  "text": "Government of India (specimen ID card, synthetic)\nName | Janaki Mistry | |\n_ Age/ Gender | 36/M ss\n| ID number XXXX XXXX 5523\n| Mobile 9541380072\n",
   "method": "ocr"
  },
  "lab_report": {
@@ -34,6 +34,7 @@
   "id_proof.pdf": 164470,
   "lab_report.pdf": 2171,
   "policy_schedule.pdf": 2480,
-  "prescription.pdf": 1961
+  "prescription.pdf": 1961,
+  "_dpi": 300
  }
 }

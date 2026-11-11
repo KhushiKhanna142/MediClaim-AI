@@ -8,7 +8,7 @@
   "method": "text_layer"
  },
  "hospital_bill": {
-  "text": "Harmony Medical Centre\nAhmedabad | Final Inpatient Bill\nBill no 812026732581 UHID UH561648\nPatient Oni Dhawan Age/Sex  57/M\nAdmitied 08/01/2026 Discharged 09/01/2026\nConsultant \u2014_Or. V. lyer Room standard single\nSummary of charges\nHead Amount\nRoom and Bed Charges 5,200\nProfessional Fees 19,800\nOperation Theatre 9,000\nPharmacy 2,250\nConsumables 1,500\nDiagnostics 2,700\nimplants 22,600\nNursing 1,350\nTotal bill 64,400\nSiyrthetic teat document, ganerated tor software evahuation Not a rea record Page t\n\nltemised statement\n\n08/01/2026 Room charges (standard single) ' 5,200 5.200\n08/01/2026 Surgeon and anaesthetist fees 1 19,800 19,800\n0801/2026 Operation theatre charges ' 9,000 9.000\n08/01/2026 Laboratory and radiology investigations 1 2,700 2,700\n08/01/2026 _\u2014Nursing charges ' 1.350 1,350\n08/01/2026 Pharmacy and medicines 1 2.250 2.250\n0801/2026 Implant / prosthesis ' 22.600 22.600\n08/01/2026 Disposable consumabies and admission kit 1 1,500 1,500\n\nSiyethates teat Gocimert, gunerited tor noftense eeaiuasion. Not & real wecard Page 2\n",
+  "text": "Harmony Medical Centre\nAhmedabad | Final Inpatient Bill\nBill no BL/2026/32581 UHID UH561648\nPatient Oni Dhawan Age / Sex 57/M\nAdmitted 08/01/2026 Discharged 09/01/2026\nConsultant \u2014_Or. V- lyer Room standard single\nSummary of charges\nRoom and Bed Charges | i 6,200\nProfessional Fees | Races\nOperation Theatre | | 9,000\n\u201c | : 2,250\nConsumables | slonces\nDiagnostics 2.70\nene 1,350\nTotal bill | \u201c\nSipethetic teat document, generated itr Softee evakantion. Not a nani record =\"\n\nitemised statement\n\n08/01/2026 Room charges (standard single) 1 5200 5.200\n08/01/2026 Surgeon and anaesthetist fees 1 19,800 19,800\n08/01/2026 Operation theatre charges 1 9,000 9.000\n08/01/2026 Laboratory and radiology investigations 1 2,700 2,700\n08/01/2026 Nursing charges 1 1,350 1,350\n06/01/2026 Pharmacy and medicines 1 2.250 2.250\n06/01/2026 implant / prosthesis 1 22,600 22.600\n08/01/2026 Disposable consumables and admission kit 1 1,500 1,500\n\nSyethatic teat Gocument. genermted tor nothwnce Genhuenon oot a oad rpc Page 2\n",
   "method": "ocr"
  },
  "id_proof": {
@@ -16,11 +16,11 @@
   "method": "text_layer"
  },
  "lab_report": {
-  "text": "Harmony Medical Centre Pathology\nPatient: Oni Dhawan | Date: 08/01/2026\nTest | Result : Reference\nHaemoglobin 13.1 g/dL 12.0- 16.0\nWBC count 7,400 /emm 4,000 - 11,000\nBlood sugar (random) 104 mg/dL. | 70 - 140 |\nSerum creatinine 0.9 mg/dL 0.6-1.2\nSynthetic test document, generated for software eval ation. Not a real record Page 1\n",
+  "text": "Harmony Medical Centre Pathology\nPatient: Oni Dhawan | Date: 08/01/2026\n| Test 3 : | Result | : | Reference\n\" Haemoglobin 13.1 g/dl | 12.0- 16.0 |\n\"WBC count Tee \"| 7,400 /emm | 4,000 - 11,000\n' Blood sugar (random) \"104 mg/dL | | 70-140 |\nSerum creatinine , 0.9 mg/dL | | 0.6- 1.2 sed\n",
   "method": "ocr"
  },
  "policy_schedule": {
-  "text": "Niva Bupa Health Insurance\nPolicy Schedule\nPolicy number NB7055821064\nInsurer Niva Bupa Health Insurance\nProduct ReAssure (Aspire)\nInsured person Oni Dhawan, 57 years, M\nPolicy start date 08/05/2025\nSum insured (Rs.) 10,00,000\nWaiting period, pre-existing diseast\u00ae months\nWaiting period, specified diseases }toordures\nInitial waiting period 30 days (not applicable to accidents)\nRoom rent limit No limit (single private room or lower)\nEligible room category standard single\nCo-payment Nil\nContinuity credit (portability) None\nSynthete test Gocurnent, generated for sofware evahssion Not a roal record Page t\n",
+  "text": "Niva Bupa Health Insurance\nPolicy Schedule\nPolicy number NB7055821064\ninsurer | Niva Bupa Health Insurance\nProduct ReAssure (Aspire)\nInsured person Oni Dhawan, 57 years, M\nPolicy start date 08/05/2025\nSum insured (Rs.) 10,00,000\nWaiting period, pre-existing disease\u2019 months\nWaiting period, specified diseases }oaomdires\nInitial waiting period 30 days (not applicable to accidents)\nRoom rent limit No limit (single private room or lower)\nEligible room category standard single\nCo-payment Nil\nContinuity credit (portability) None\nSynthatic Hest document, generited for software evahsison. Not a real recoded Page t\n",
   "method": "ocr"
  },
  "prescription": {
@@ -34,6 +34,7 @@
   "id_proof.pdf": 2008,
   "lab_report.pdf": 135890,
   "policy_schedule.pdf": 118010,
-  "prescription.pdf": 1954
+  "prescription.pdf": 1954,
+  "_dpi": 300
  }
 }

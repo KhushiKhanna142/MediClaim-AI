@@ -1,3 +1,4 @@
+from src.baseline.ocr import OCR_DPI
 import json
 
 from eval.e2e_metrics import aggregate, score_claim
@@ -42,7 +43,7 @@ def test_needs_review_skips_money():
 
 def test_naive_pipeline_end_to_end(tmp_path):
     (tmp_path / "docs").mkdir()
-    (tmp_path / "docs" / "ocr_cache.json").write_text(json.dumps({"claim_form": {"text": "Name Asha Rao total 8,000", "method": "ocr"}, "_files": {}}))
+    (tmp_path / "docs" / "ocr_cache.json").write_text(json.dumps({"claim_form": {"text": "Name Asha Rao total 8,000", "method": "ocr"}, "_files": {"_dpi": OCR_DPI}}))
     llm = StubLLM('{"decision": "approve", "payable_amount": 8000, "cited_clause_ids": ["6.2.9"], "reasoning": "ok"}')
     out = NaiveBaseline(StubRetriever(), llm).predict(tmp_path, "niva_aspire")
     assert out["decision"] == "approve" and out["retrieved_clause_ids"] == ["2.12/1", "6.2.9"]
@@ -61,3 +62,12 @@ def test_ocr_cache_is_invalidated_when_files_change(tmp_path):
     assert set(read_claim_docs(tmp_path)) == {"claim_form"}
     make("policy_schedule.pdf", "schedule text here ")
     assert set(read_claim_docs(tmp_path)) == {"claim_form", "policy_schedule"}
+
+
+def test_overpay_and_comma_numbers():
+    truth = {"status": "partial", "claimed_amount": 100000, "payable_amount": 80000.0, "expected_clause_ids": []}
+    assert score_claim({"decision": "approve", "payable_amount": 100000}, truth)["overpay"] is True
+    assert score_claim({"decision": "partial", "payable_amount": 80000}, truth)["overpay"] is False
+    assert score_claim({"decision": "reject", "payable_amount": 0}, truth)["overpay"] is False
+    r = parse_reply('{"decision": "partial", "payable_amount": 118,400, "cited_clause_ids": [], "reasoning": "x"}')
+    assert r["payable_amount"] == 118400
