@@ -6,6 +6,7 @@ Extraction only reads. It makes no coverage decisions and does no arithmetic.
 from __future__ import annotations
 
 import json
+import logging
 import re
 from pathlib import Path
 
@@ -14,6 +15,8 @@ from pydantic import ValidationError
 from src.baseline.naive import build_claim_text
 from src.baseline.ocr import page_images, read_claim_docs
 from src.extraction.schemas import ExtractedClaim
+
+log = logging.getLogger(__name__)
 
 SYSTEM = """You extract structured data from Indian health insurance claim documents (claim form, policy schedule, discharge summary, hospital bill, ID proof). The text may contain OCR errors; read carefully.
 Return one JSON object and nothing else. Rules:
@@ -37,6 +40,15 @@ room_type_modification (true/false), eligible_room."""
 
 
 REQUIRED_FIELDS = ("ped_waiting_months", "specified_waiting_months", "sum_insured", "policy_start")
+ALWAYS_REQUIRED = ("sum_insured", "policy_start")
+WAITING_FIELDS = ("ped_waiting_months", "specified_waiting_months")
+
+
+def required_fields(claim: ExtractedClaim) -> tuple[str, ...]:
+    """Waiting periods only matter for illness claims: the engine ignores them when cause == accident,
+    so an unreadable waiting-period cell must not push an accident claim to human review."""
+    return ALWAYS_REQUIRED if claim.cause == "accident" else ALWAYS_REQUIRED + WAITING_FIELDS
+
 FIELD_HELP = {"ped_waiting_months": "waiting period for pre-existing diseases, in months (whole number)",
               "specified_waiting_months": "waiting period for specified diseases/procedures, in months (whole number)",
               "sum_insured": "sum insured in rupees, digits only", "policy_start": "policy start date as YYYY-MM-DD"}
@@ -72,22 +84,42 @@ class Extractor:
 
     def fill_with_vision(self, claim: ExtractedClaim, claim_dir: Path, docs: dict) -> ExtractedClaim:
         """When OCR left a required field empty, ask a vision model to read just those fields from the scanned pages.
-        Spends model calls only on pages that ordinary OCR failed on, and records which fields came from vision."""
-        missing = [f for f in REQUIRED_FIELDS if getattr(claim, f) is None]
+
+        Each value is read twice with differently worded prompts and kept only if both reads agree; a field the
+        model cannot read consistently stays None so the claim goes to review instead of acting on a guess.
+        Failures are logged (never silently swallowed) and never break extraction."""
+        missing = [f for f in required_fields(claim) if getattr(claim, f) is None]
         scanned = sorted((n for n, d in docs.items() if d.get("method") == "ocr"), key=lambda n: n != "policy_schedule")
-        if not missing or not scanned:
+        if not missing:
+            return claim
+        if not scanned:
+            log.warning("vision fallback skipped: %s missing but no OCR'd page to read (labels may be worded differently)", missing)
             return claim
         images: list[bytes] = []
         for name in scanned:
             images += page_images(claim_dir / "docs" / f"{name}.pdf", max_pages=1)
             if len(images) >= MAX_VISION_IMAGES:
                 break
-        ask = "Read these values:\n" + "\n".join(f"- {f}: {FIELD_HELP[f]}" for f in missing)
+        images = images[:MAX_VISION_IMAGES]
+        asks = ["Read these values:\n" + "\n".join(f"- {f}: {FIELD_HELP[f]}" for f in missing),
+                "For each item below, find its row in the policy schedule table and report the number printed in that row's "
+                "value cell. If the cell is empty or unreadable, return null.\n" + "\n".join(f"- {f}: {FIELD_HELP[f]}" for f in missing)]
+        reads = []
+        for ask in asks:
+            try:
+                reads.append(parse_json(self.llm.complete(VISION_SYSTEM, ask, max_tokens=300, images=images)))
+            except Exception as exc:  # noqa: BLE001 - a failed fallback must never break extraction
+                log.warning("vision read failed for %s: %r", missing, exc)
+        if len(reads) < 2:
+            return claim
+        filled = {f: reads[0][f] for f in missing if reads[0].get(f) is not None and reads[0].get(f) == reads[1].get(f)}
+        for f in missing:
+            if f not in filled:
+                log.warning("vision reads disagree or are empty for %s: %r vs %r", f, reads[0].get(f), reads[1].get(f))
+        if not filled:
+            return claim
         try:
-            got = parse_json(self.llm.complete(VISION_SYSTEM, ask, max_tokens=300, images=images[:MAX_VISION_IMAGES]))
-            filled = {f: got[f] for f in missing if got.get(f) is not None}
-            if not filled:
-                return claim
             return ExtractedClaim.model_validate({**claim.model_dump(), **filled, "vision_filled": sorted(filled)})
-        except Exception:  # noqa: BLE001 - a failed fallback must never break extraction; the claim just goes to review
+        except ValidationError as exc:
+            log.warning("vision values rejected by schema: %s", exc)
             return claim

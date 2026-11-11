@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import shutil
 import subprocess
 import tempfile
@@ -69,6 +70,40 @@ def _rapid_page_text(page, dpi: int) -> str:
     return rows_from_boxes(boxes)
 
 
+_WAIT_ROW = re.compile(r"waiting\s*per", re.I)
+
+
+def waiting_rows_missing_values(text: str) -> int:
+    """Count schedule rows labelled 'Waiting period ...' (other than the initial 30-day one) that have no digit.
+    On degraded scans RapidOCR sometimes reads the label but drops the value cell."""
+    return sum(1 for ln in text.splitlines()
+               if _WAIT_ROW.search(ln) and not re.search(r"initial", ln, re.I) and not re.search(r"\d", ln))
+
+
+RAPID_RETRY_DPIS = (300, 400)
+
+
+def robust_rapid_text(page) -> str:
+    """Normal RapidOCR pass; if waiting-period values are missing, retry at higher DPI, then Tesseract, keeping
+    whichever read recovers the most values. Costs nothing on pages that read cleanly the first time."""
+    text = _rapid_page_text(page, RAPID_DPI)
+    missing = waiting_rows_missing_values(text)
+    for dpi in RAPID_RETRY_DPIS:
+        if not missing:
+            return text
+        retry = _rapid_page_text(page, dpi)
+        if waiting_rows_missing_values(retry) < missing:
+            text, missing = retry, waiting_rows_missing_values(retry)
+    if missing and tesseract_available():
+        with tempfile.TemporaryDirectory() as td:
+            png = Path(td) / "p.png"
+            page.get_pixmap(dpi=OCR_DPI).save(png)
+            retry = _ocr_image(png)
+        if waiting_rows_missing_values(retry) < missing:
+            text = retry
+    return text
+
+
 def tesseract_available() -> bool:
     return shutil.which("tesseract") is not None
 
@@ -93,7 +128,7 @@ def read_pdf(path: Path, dpi: int = OCR_DPI) -> tuple[str, str]:
             continue
         method = "ocr"
         if engine_name() == "rapidocr":
-            pages.append(_rapid_page_text(page, RAPID_DPI))
+            pages.append(robust_rapid_text(page))
             continue
         if not tesseract_available():
             raise RuntimeError("No OCR engine found. Run: pip install rapidocr-onnxruntime   (or brew install tesseract)")
@@ -104,11 +139,18 @@ def read_pdf(path: Path, dpi: int = OCR_DPI) -> tuple[str, str]:
     return "\n".join(pages), method
 
 
+OCR_VERSION = "r2"
+
+
+def ocr_stamp_tag() -> str:
+    return f"{engine_name()}-{OCR_DPI}-{RAPID_DPI}-{OCR_VERSION}"
+
+
 def read_claim_docs(claim_dir: Path, use_cache: bool = True) -> dict[str, dict]:
     """Reads every PDF in claim_dir/docs. Returns {doc_name: {"text":..., "method":...}}."""
     cache = claim_dir / "docs" / "ocr_cache.json"
     pdfs = sorted((claim_dir / "docs").glob("*.pdf"))
-    stamp = {p.name: p.stat().st_size for p in pdfs} | {"_ocr": f"{engine_name()}-{OCR_DPI}-{RAPID_DPI}"}   # a re-rendered or added PDF invalidates the cache
+    stamp = {p.name: p.stat().st_size for p in pdfs} | {"_ocr": ocr_stamp_tag()}   # a re-rendered or added PDF invalidates the cache
     if use_cache and cache.exists():
         saved = json.loads(cache.read_text())
         if saved.get("_files") == stamp:

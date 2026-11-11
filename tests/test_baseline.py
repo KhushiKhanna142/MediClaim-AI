@@ -1,4 +1,4 @@
-from src.baseline.ocr import OCR_DPI, RAPID_DPI, engine_name
+from src.baseline.ocr import OCR_DPI, RAPID_DPI, engine_name, ocr_stamp_tag
 import json
 
 from eval.e2e_metrics import aggregate, score_claim
@@ -43,7 +43,7 @@ def test_needs_review_skips_money():
 
 def test_naive_pipeline_end_to_end(tmp_path):
     (tmp_path / "docs").mkdir()
-    (tmp_path / "docs" / "ocr_cache.json").write_text(json.dumps({"claim_form": {"text": "Name Asha Rao total 8,000", "method": "ocr"}, "_files": {"_ocr": f"{engine_name()}-{OCR_DPI}-{RAPID_DPI}"}}))
+    (tmp_path / "docs" / "ocr_cache.json").write_text(json.dumps({"claim_form": {"text": "Name Asha Rao total 8,000", "method": "ocr"}, "_files": {"_ocr": ocr_stamp_tag()}}))
     llm = StubLLM('{"decision": "approve", "payable_amount": 8000, "cited_clause_ids": ["6.2.9"], "reasoning": "ok"}')
     out = NaiveBaseline(StubRetriever(), llm).predict(tmp_path, "niva_aspire")
     assert out["decision"] == "approve" and out["retrieved_clause_ids"] == ["2.12/1", "6.2.9"]

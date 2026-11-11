@@ -56,8 +56,9 @@ def validate(c: ExtractedClaim, docs_present: list[str]) -> ValidationReport:
         r.flags.append("admitted_before_policy_start")
         r.details.append("Admission date is before the policy start date.")
 
-    needed = {"sum_insured": c.sum_insured, "policy_start": c.policy_start,
-              "ped_waiting_months": c.ped_waiting_months, "specified_waiting_months": c.specified_waiting_months}
+    needed = {"sum_insured": c.sum_insured, "policy_start": c.policy_start}
+    if c.cause != "accident":   # the engine ignores waiting periods for accidents, so an unreadable cell must not block them
+        needed |= {"ped_waiting_months": c.ped_waiting_months, "specified_waiting_months": c.specified_waiting_months}
     absent = [k for k, v in needed.items() if v is None]
     if absent:
         r.flags.append("missing_fields:" + ",".join(absent))

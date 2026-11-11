@@ -7,6 +7,7 @@ Add --pause 8 for free-tier limits. Failed claims are retried on the next run; -
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import time
 from pathlib import Path
@@ -42,7 +43,9 @@ def main():
         quota = 0
         for d in dirs:
             cid = d.name
-            if cid in preds and not preds[cid].get("error"):
+            # fingerprint of the extraction this result is based on; a re-run extraction invalidates the cached result
+            sig = hashlib.sha1(json.dumps(extracted[cid], sort_keys=True).encode()).hexdigest()[:12] if cid in extracted else None
+            if cid in preds and not preds[cid].get("error") and preds[cid].get("_sig") == sig:
                 continue
             claim = json.loads((d / "claim.json").read_text())
             try:
@@ -55,6 +58,7 @@ def main():
                     from src.validation.checks import docs_in_dir
                     c, docs = ExtractedClaim.model_validate(extracted[cid]), docs_in_dir(d)
                 preds[cid] = adj.run(c, claim["policy_id"], docs)
+                preds[cid]["_sig"] = sig
                 quota = 0
                 p = preds[cid]
                 print(f"  {cid:36} -> {p['decision']}" + (f"  (dropped citations: {p['dropped_citations']})" if p.get("dropped_citations") else ""))
