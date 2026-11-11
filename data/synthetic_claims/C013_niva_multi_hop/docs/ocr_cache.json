@@ -1,6 +1,6 @@
 {
  "claim_form": {
-  "text": "Niva Bupa Health insurance\nHealth Insurance Claim Form (Reimbursement), Part A\n\u201cPolicynumber =\u2014i(sssti\u2018\u00e9\u00absN RTT TVS! . 55\nSum insured (Rs.) 5,00,000\n\"Name of patient \"Dev Bhasin | ae\n\"Age / Sex 50 years /M |\nContact number 9728493621 ,\nDate of admission 24/07/2025 :\nDate of discharge 29/07/2025\nRoom category occupied standard single\n- Total amount claimed (Rs.) 3,58,000\nDeciaration\n| declare that the information furnished in this claim form is true and correct to the best of my knowledge. | agree to\nSignature of the insured: Date: 29/07/2025\nSyewerte test docmertt, yser ale? tor petheehe evidoshon. Mil a real mone Page 1\n",
+  "text": "Niva Bupa Health Insurance\nHealthInsurance ClaimForm(Reimbursement),Pant A\nPolicy number NB6874677865\nProduct ReAssure (Aspire)\nPolicy start date 24/01/2023\nSum insured (Rs.) 5,.00.000\nName of patient Dev Bhasin\nAge/Sex 50years/M\nContact number 9728493621\nHospital name MetroHeart andGeneral Hospital,Jaipur\nDate of admission 24/07/2025\nDate of discharge 29/07/2025\nDiagnosis/ailment total knee replacement\nNature of illness llness\nRoom category occupled standard single\nTotal amountclaimed(Rs.) 3.58.000\nDeclaration\nIdeclare that the information furnished in this claim form is true and correct to the best of my knowledge.I agree to\nprovide anyfurther documentsrequiredby theinsurer,\nSignature of the insured: Date:29/07/2025\n\u7535\u4fe1",
   "method": "ocr"
  },
  "discharge_summary": {
@@ -8,7 +8,7 @@
   "method": "text_layer"
  },
  "hospital_bill": {
-  "text": "Metro Heart and General Hospital\nJaipur | Final Inpatient Bill\nBill no BL/2025/30390 UHID UH981373\nPatient Dev Bhasin Age / Sex 50 /M\nAdmitted 24/07/2025 Discharged 29/07/2025\nConsultant Dr. P. Deshmukh Room standard single\nSummary of charges\nHead os | fis: Amount\nRoom and Bed Charges | | 23,500\nProfessional Fees | ? Se Oe 60,850\nOperation Theatre ; ] 25,400\nl Piyymeg tees eo ee eee\u2019 cere sy 25,400\nConsumables at 4,350\nDiagnostics fe : ave : Gay. 9,950\nimplants : ree ~-4,96,500\nNursing Seine ete aS se 12,050\nTotal bill | . Seas 3,58,000\n\nItemised statement\n\n24/07/2025 Room charges (standard single) | 5 4,700 | 23,500\n24/07/2025 Surgeon and anaesthetist fees 1 60.850 60,850\n24/07/2025 Operation theatre charges 1 25,400 25,400\n24/07/2025 Laboratory and radiology investigations 1 9,950 9.950\n24/07/2025 Nursing charges 1 12,050 12,050\n24/07/2025 Pharmacy and medicines 1 25.400 25,400\n24/07/2025 Implant / prosthesis 1 1,96,500 1,96,500\n24/07/2025 Disposable consumables and admission kit 1 4,350 4,350\n\nSyahelic len docurientt, generated lor sofeare @yaluation. Not a real record Page 2\n",
+  "text": "Metro Heart and General Hospital\nJaipur|Final Inpatient Bill\nBill no BL/2025/30390 UHID UH981373\nPatient Dev Bhasin Age/Sex 50/M\nAdmitted 24/07/2025 Discharged 29/07/2025\nConsultant Dr.P.Deshmukh Room standard single\nSummaryofcharges\nHead Amount\nRoomandBedCharges 23,500\nProfessional Fees 60.850\nOperation Theatre 25,400\nPharmacy 25,400\nConsumables 4,350\nDiagnostics 9,950\nImplants 1,96,500\nNursing 12,050\nTotal bill 3,58,000\nPage1\nItemised statement\nDate Description Qty Rate Amount\n24/07/2025 Room charges (standard singie) 5 4,700 23,500\n24/07/2025 Surgeon and anaesthetist fees 1 60,850 60.850\n24/07/2025 Operation theatre charges 1 25,400 25.400\n24/07/2025 Laboratory andradiology investigations 1 9,950 9,950\n24/07/2025 Nursing charges 12,050 12,050\n24/07/2025 Pharmacy and medicines 1 25.400 25,400\n24/07/2025 Implant/prosthesis 1,96,500 1,96,500\n24/07/2025 Disposable consumables and admission kit 4,350 4,350\nSymthtc tom docmngnerated orsotwre valalion.Noa rarecord Page2",
   "method": "ocr"
  },
  "id_proof": {
@@ -16,7 +16,7 @@
   "method": "text_layer"
  },
  "lab_report": {
-  "text": "Metro Heart and General Hospital Pathology\nPatient: Dev Bhasin | Date: 24/07/2025\n\"Blood sugar (random) 104 mg/dL 70 - 140\n\u201c\u00a7 : 0.9 mg/d 06-12\nSypnitertet Mek? Goce tert genicated tor eothales geakadiew Ant 8 it HN Be phn a\n",
+  "text": "Metro Heart and General Hospital Pathology\nPatient:Dev Bhasin|Date:24/07/2025\nTest Result Reference\nHaemoglobin 13.1g/dL 12.0-16.0\nWBCcount 7.400/cmm 4.000-11.000\nBlood sugar(random) 104mg/dL 70.140\nSerum creatinine 0.9mg/dL 0.6-12",
   "method": "ocr"
  },
  "policy_schedule": {
@@ -24,7 +24,7 @@
   "method": "text_layer"
  },
  "prescription": {
-  "text": "Dr. P. Deshmukh\nMetro Heart and General Hospital\nPatient: Dev Bhasin, 50/M Date: 24/07/2025\nDiagnosis: total knee replacement\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\nSinihelic test document, generated for satiware evaluation, Not a real record Page 1\n",
+  "text": "Dr.P.Deshmukh\nMetro Heartand General Hospital\nPatient:DevBhasin,50/MDate:24/07/2025\nDiagnosis:total knee replacement\nRx:Tab.Paracetamol500 mg1-0-1x3 days:Cap.Pantoprazole 40 mg1-0-0x5 days\nSytheic test documentgneratd frstwevaton.Notaealrecord Page1",
   "method": "ocr"
  },
  "_files": {
@@ -35,6 +35,6 @@
   "lab_report.pdf": 168160,
   "policy_schedule.pdf": 2475,
   "prescription.pdf": 69309,
-  "_dpi": 300
+  "_ocr": "rapidocr-300-200"
  }
 }

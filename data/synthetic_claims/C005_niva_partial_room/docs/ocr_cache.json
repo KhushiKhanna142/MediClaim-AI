@@ -1,6 +1,6 @@
 {
  "claim_form": {
-  "text": "Niva Bupa Health Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number : NB6054592948 te = f |\nProduct ReAssure (Aspire)\n' Policy start date 26/06/2025 ;\nSum insured (Rs.) | 3,00,000 |\nName of patient Soer: | Omya Boase\n| Age / Sex 70 years / F\n\u201cContact number \"9939866431 |\nHospital name | Harmony Medical Centre, Pune\nDate of admission | 26/07/2026\nDate of discharge 31/07/2026\nDiagnosis / ailment | dengue fever\nNature of illness \u201cIliness\nRoom category occupied | deluxe :\nTotal amount claimed (Rs.) _\u2014\u20181,00,700\nDeclaration\n| declare that the information furnished in this claim form is true and correct to the best of my knowledge. | agree to\nprovide any further documents required by the insurer.\nSignature of the insured: Date: 31/07/2026\n",
+  "text": "Niva Bupa Health Insurance\nHealth Insurance Claim Form (Reimbursement),Part A\nPolicy number NB6054592948\nProduct ReAssure(Aspire)\nPolicy start date 26/06/2025\nSum insured (Rs.) 3,00,000\nName of patient Omya Boase\nAge/Sex 70years/F\nContact number 9939866431\nHospital name HarmonyMedical Centre,Pune\nDate of admission 26/07/2026\nDate of discharge 31/07/2026\nDiagnosis/ailment dengue fever\nNature of illness Illness\nRoom category occupied deluxe\nTotal amountclaimed(Rs.) 1,00,700\nDeclaration\nIdeclare that the information furnished in this claim form is true andcorrect to thebest of myknowledge.Iagree to\nprovideany furtherdocumentsrequiredby the insurer.\nSignature of the insured: Date:31/07/2026\nSynthetic test document,generated for softwae evaluation.Not arealrecord Page1",
   "method": "ocr"
  },
  "discharge_summary": {
@@ -12,7 +12,7 @@
   "method": "text_layer"
  },
  "id_proof": {
-  "text": "Government of India (specimen ID card, synthetic)\nName Omya Boase\nAge / Gender 70/F\nID number JOOOK JOOXX 5362\nMobile 9939866431\n",
+  "text": "Government of India(specimen ID card,synthetic)\nName Omya Boase\nAge/Gender 70/F\nIDnumber XXXXXXXX5362\nMobile 9939866431\naeecor",
   "method": "ocr"
  },
  "lab_report": {
@@ -24,7 +24,7 @@
   "method": "text_layer"
  },
  "prescription": {
-  "text": "Dr. P. Deshmukh\nHarmony Medical Centre\nPatient: Omya Boase, 70/F Date: 26/07/2026\nDiagnosis: dengue fever\nRx: Tab. Paracetamo! 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\nSiptithalie Mest deayinent, yeneraied foc softensre evaluation, NOt a cal recard, Page t\n",
+  "text": "Dr.P.Deshmukh\nHarmonyMedical Centre\nPatient:Omya Boase,70/FDate:26/07/2026\nDiagnosis:dengue fever\nRx:Tab.Paracetamol500mg 1-0-1x3 days;Cap.Pantoprazole40 mg 1-0-0x5days\nyestcuent.geeled forsonvatnNoacecor",
   "method": "ocr"
  },
  "_files": {
@@ -35,6 +35,6 @@
   "lab_report.pdf": 2168,
   "policy_schedule.pdf": 2553,
   "prescription.pdf": 206709,
-  "_dpi": 300
+  "_ocr": "rapidocr-300-200"
  }
 }

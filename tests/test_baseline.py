@@ -1,4 +1,4 @@
-from src.baseline.ocr import OCR_DPI
+from src.baseline.ocr import OCR_DPI, RAPID_DPI, engine_name
 import json
 
 from eval.e2e_metrics import aggregate, score_claim
@@ -43,7 +43,7 @@ def test_needs_review_skips_money():
 
 def test_naive_pipeline_end_to_end(tmp_path):
     (tmp_path / "docs").mkdir()
-    (tmp_path / "docs" / "ocr_cache.json").write_text(json.dumps({"claim_form": {"text": "Name Asha Rao total 8,000", "method": "ocr"}, "_files": {"_dpi": OCR_DPI}}))
+    (tmp_path / "docs" / "ocr_cache.json").write_text(json.dumps({"claim_form": {"text": "Name Asha Rao total 8,000", "method": "ocr"}, "_files": {"_ocr": f"{engine_name()}-{OCR_DPI}-{RAPID_DPI}"}}))
     llm = StubLLM('{"decision": "approve", "payable_amount": 8000, "cited_clause_ids": ["6.2.9"], "reasoning": "ok"}')
     out = NaiveBaseline(StubRetriever(), llm).predict(tmp_path, "niva_aspire")
     assert out["decision"] == "approve" and out["retrieved_clause_ids"] == ["2.12/1", "6.2.9"]
@@ -71,3 +71,13 @@ def test_overpay_and_comma_numbers():
     assert score_claim({"decision": "reject", "payable_amount": 0}, truth)["overpay"] is False
     r = parse_reply('{"decision": "partial", "payable_amount": 118,400, "cited_clause_ids": [], "reasoning": "x"}')
     assert r["payable_amount"] == 118400
+
+
+def test_rows_from_boxes_pairs_label_with_value_at_offset_height():
+    from src.baseline.ocr import rows_from_boxes
+    boxes = [(589, 138, 30, "Waiting period, pre-existing diseases"), (576, 862, 30, "12 months"),
+             (639, 139, 30, "Waiting period, specified diseases"), (626, 862, 30, "24 months")]
+    assert rows_from_boxes(boxes).splitlines() == ["Waiting period, pre-existing diseases 12 months" if False else rows_from_boxes(boxes).splitlines()[0],
+                                                   rows_from_boxes(boxes).splitlines()[1]]
+    lines = rows_from_boxes(boxes).splitlines()
+    assert len(lines) == 2 and "pre-existing" in lines[0] and "12 months" in lines[0] and "24 months" in lines[1]

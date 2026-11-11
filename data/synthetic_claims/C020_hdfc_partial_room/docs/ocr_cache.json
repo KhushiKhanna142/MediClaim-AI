@@ -1,10 +1,10 @@
 {
  "claim_form": {
-  "text": "HDFC ERGO General Insurance\nHeaith insurance Claim Form (Reimbursement), Part A\n_ Sum insured (Rs.) 5,00,000 | c |\nmae ater ae ts 3\nAge / Sex 62 yearsiM\nDate of admission 1302/2025\nDate of discharge 16/02/2025 : |\nRoom category occupied private\nTotal amount ciaimed(Rs.) _\u2014_\u20181,33.100 .\nDeclaration\n{ declare that the information furnished in this claim form is true and correct to the best of my knowledge. | agrae to\nprovide any further documents required by the insurer,\nSignature of the insured: ate: 1602/2025\nSythate bee dQcunen gereraied ker ohne yakuaigr Not a enum Mecord / Page 3\n",
+  "text": "HDFCERGOGeneral Insurance\nHeaith Insurance ClaimFom (Reimbursement),PartA\nPolicy number HD7701528545\nProduct Optima Secure\nPolicy start date 13/02/2022\nSum insured (Rs.) 5,00.000\nName of patient ElijahDalal\nAge/ Sex 62years/M\nContact number 9354775250\nHospital name MetroHeart and General Hospital,Jaiput\nDate ofadmission 13/02/2025\nDate of discharge 16/02/2025\nDlagnosis/ailment inguinal herniarepair\nNature of illness iness\nRoom category occupied private\nTotal amount claimed (Rs.) 1,33.100\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge.Iagree to\nprovide any further documentsrequiredby the Insurer.\nSignature of the insured: Date:16/02/2025",
   "method": "ocr"
  },
  "discharge_summary": {
-  "text": "Metro Heart and General Hospital\nDischarge Summary\nPatient Elijah Dalal, 62 years, M\nUHID UH558144\nDate of admission 13/02/2025\nDate of discharge 16/02/2025\nLength of stay 3 day(s)\nConsultant Dr. P. Deshmukh\nFinal diagnosis\ninguinal hernia repair\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to inguinal hernia repair. Investigations were done and treatment was\ngiven as per protocol. The post-treatment period was uneventful and the patient was discharged in stable condition on\n16/02/2025.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. P. Deshmukh (Treating consultant)\nSynthetic teat docurnent, generaled for softwere evaiuation Not a real record Page 1\n",
+  "text": "MetroHeartand General Hospital\nDischarge Summary\nPatient ElijahDalal,62years,M\nUHID UH558144\nDate of admission 13/02/2025\nDate of discharge 16/02/2025\nLength of stay 3day(s)\nConsultant Dr.P.Deshmukh\nFinal diagnosis\ninguinal hernia repair\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThepatient was admittedwithcomplaintsrelated to inguinal herniarepair.Investigationswere done and treatmentwas\ngiven asperprotocol.Thepost-treatment periodwas uneventful and the patient was discharged in stable condition on\n16/02/2025.\nAdviceondischarge\nReview after 7dayswith reports.Continuemedicinesasprescribed.Avoid strenuousactivity.\nDr.P.Deshmukh(Treating consultant)\nSynthetic test document,generaled for sofwam evauntion Notarealoord eoe",
   "method": "ocr"
  },
  "hospital_bill": {
@@ -35,6 +35,6 @@
   "lab_report.pdf": 2178,
   "policy_schedule.pdf": 2467,
   "prescription.pdf": 1948,
-  "_dpi": 300
+  "_ocr": "rapidocr-300-200"
  }
 }

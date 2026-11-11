@@ -35,6 +35,6 @@
   "lab_report.pdf": 2179,
   "policy_schedule.pdf": 2475,
   "prescription.pdf": 1964,
-  "_dpi": 300
+  "_ocr": "rapidocr-300-200"
  }
 }

@@ -1,6 +1,6 @@
 {
  "claim_form": {
-  "text": "HDFC ERGO General Insurance\n\nHealth Insurance Claim Form (Reimbursement), Part A\n\nProduct - Optima Secure |\n\"Policy start date 47/01/2023 | ! ;\n\nSum insured (Rs.) 5,00,000\n\nName of patient | Jackson Tak\n\nAge / Sex 63 years /M\n\nContact number 9200596177\n\nHospital name Lotus Care Hospital, indore |\n\"Date of admission 17/06/2025 ;\n\nDate of discharge 18/06/2025\n\"Diagnosis / ailment - cataract surgery (phacoemulsification)\n\nNature of iliness | liness\n\nRoom category occupied standard single\n\nTotal amount claimed (Rs.) 64,700\nDeciaration\n| declare that the information furnished in this claim form is true and correct to the best of my knowledge. | agree to\nprovide any further documents required by the insurer.\nSignature of the insured: Date: 18/06/2025\n\nGyraierhic teat COOH. GEneraled Tor aQlware evataabon| Nol a rea! record Page\n",
+  "text": "HDFCERGO General Insurance\nHealth Insurance Claim Form (Reimbursement),Pant A\nPolicynumber HD7536454268\nProduct Optima Secure\nPolicy start date 17/01/2023\nSum insured(Rs.) 5,00.000\nName of patient Jackson Tak\nAge/Sex 63years/M\nContact number 9200596177\nHospital name Lotus Care Hospital,Indore\nDate of admission 17/06/2025\nDate of discharge 18/06/2025\nDiagnosis/allment cataract surgery (phacoemulsification)\nNature of illness Illness\nRoom category occupied standard single\nTotal amount claimed (Rs.) 64,700\nDeclaration\nIdeclare that the information furnished in this claim form is true and correct to the best of my knowledge.Iagree to\nprovide any further documentsrequired by the insurer.\nSignature of the insured: Date:18/06/2025",
   "method": "ocr"
  },
  "discharge_summary": {
@@ -12,7 +12,7 @@
   "method": "text_layer"
  },
  "id_proof": {
-  "text": "Government of India (specimen ID card, synthetic)\nName Jackson Tak\nAge / Gender \u201463/M\nID number YOOXX XXX 7595\nMobile 9200596177\n",
+  "text": "Government of India(specimen ID card,synthetic)\nName Jackson Tak\nAge/Gender 63/M\nIDnumber XXXXXXXX7595\nMobile 9200596177",
   "method": "ocr"
  },
  "lab_report": {
@@ -20,7 +20,7 @@
   "method": "text_layer"
  },
  "policy_schedule": {
-  "text": "HDFC ERGO General Insurance\nPolicy Schedule\nPolicy pomber | yp7596454268 ieee : ae RG\n| Insurer HDFC ERGO General Insurance |\n| Product | 5 | Optima Secure | Smee | aks\n| Insured person | Jackson Tak, 63 years, M |\n| Poloystatdate 17/01/2023 a ae |\nSum insured (Rs.) 5,00,000\nWaiting period, pre-existing diseas#s months .\nWaiting period, specified diseases @ptounnlisces : |\ninitial waiting period 30 days (not applicable to accidents) |\nRoom rent limit No limit (single private room or lower)\nEligible room category | standard single :\nCo-payment Nil\nContinuity credit (portability) | None |\n",
+  "text": "HDFC ERGO General Insurance\nPolicy Schedule\nPolicy number HD7536454268\nInsurer HDFC ERGO General Insurance\nProduct Optima Secure\nInsured person JacksonTak,63years,M\nPolicy start date 17/01/2023\nSum insured (Rs.) 5,00,000\nWaiting period,pre-existing diseas&s months\nWaitingperiod,specifieddiseasesprooedutes\nInitial waiting period 30 days (not applicable to accidents)\nRoomrent limit No limit (single privateroom or lower)\nEligibleroom category standard single\nCo-payment Nil\nContinuity credit (portability) None\nSynthetic test document.generated for soltware evaluaton.Nota real record Page",
   "method": "ocr"
  },
  "prescription": {
@@ -35,6 +35,6 @@
   "lab_report.pdf": 2167,
   "policy_schedule.pdf": 222897,
   "prescription.pdf": 1953,
-  "_dpi": 300
+  "_ocr": "rapidocr-300-200"
  }
 }

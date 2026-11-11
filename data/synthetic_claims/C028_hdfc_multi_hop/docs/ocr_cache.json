@@ -8,7 +8,7 @@
   "method": "text_layer"
  },
  "hospital_bill": {
-  "text": "Harmony Medical Centre\nJaipur | Final Inpatient Bill\nBill no BL/2025/58737 UHID UH321313\nPatient Libni Palan Age / Sex 59/M\nAdmitted 07/02/2025 Discharged 11/02/2025\nConsultant Dr. A. Kulkarni Room standard single\ni Room charges (standard single) 4 | 5,500 22,000\n| 2 | Surgeon and anaesthetist fees | 1 | 76,550 | 76,550 |\na et Operation theatre charges 3 cnt ontenn eat poe Ee : 27,850 27,850 |\n| 4 Laboratory and radiology investigations | 1 | 11,300 11,300\n5 | Nursing charges : : co ee ee 17500 =\u2014\u2014\u2014=\u00abSN SOD\n6 | Pharmacy and medicines = 1 | 16,600 16,600\n7. Implant / prosthesis Iter LOS Ae acu pends (leat ye faa 1,85,500\n8 Disposable consumables and admission kit | 1 | 4,300 | 4,300\noe Re aN CED an eeEONS of Meg TONES Ao Beary se ea COA CNM SO Ce\nSynthetic test document, generated for software evaluation. Not @ real record Page 1\n",
+  "text": "Harmony Medical Centre\nJaipur| Final Inpatient Bill\nBill no BL/2025/58737 UHID UH321313\nPatient Libni Palan Age/Sex 59/M\nAdmitted 07/02/2025 Discharged 11/02/2025\nConsultant Dr.A.Kulkarni Room standard single\nSI Description Qty Rate Amount\n1 Room charges (standard single) 4 5,500 22,000\n2 Surgeon and anaesthetist fees 1 76.550 76,550\n3 Operation theatre charges 27,850 27,850\n4 Laboratory andradiology investigations 1 11,300 11,300\n5 Nursing charges 17,500 17,500\n6 Pharmacy and medicines 1 16,600 16,600\n7 Implant/prosthesis 1 1.85,500 1,85,500\n8 Disposable consumables and admissionkit 4.300 4,300\nTOTAL 3,61,600\nSymthetic lest document generated for sofware evaluation. Nota real record Page1",
   "method": "ocr"
  },
  "id_proof": {
@@ -16,7 +16,7 @@
   "method": "text_layer"
  },
  "lab_report": {
-  "text": "Harmony Medical Centre Pathology\nPatient: Libni Paian | Date: 07/02/2025\nTest Result Reference\nHaemoglobin 13.1 g/dL 12.0 - 16.0\nWBC count 7,400 /omm 4,000 - 11,000\nBlood sugar (random) 104 mg/dL 70 - 140\nSerum creatinine 0.9 mg/dL 0.6 - 1.2\nSnifurtic beet document, generated fot sofware (vadualon. NOt a neal recare Page ?\n",
+  "text": "Harmony Medical Centre Pathology\nPatient:Libni Palan|Date:07/02/2025\nTest Result Reference\nHaemoglobin 13.1g/dL 12.0-16.0\nWBCcount 7.400/cmm 4,000-11,000\nBlood sugar(random) 104mg/dL 70-140\nSerum creatinine 0.9mg/dL 0.6-1.2\nrlfEicbe oware evafiation Not a neairecord",
   "method": "ocr"
  },
  "policy_schedule": {
@@ -35,6 +35,6 @@
   "lab_report.pdf": 113722,
   "policy_schedule.pdf": 2477,
   "prescription.pdf": 1941,
-  "_dpi": 300
+  "_ocr": "rapidocr-300-200"
  }
 }

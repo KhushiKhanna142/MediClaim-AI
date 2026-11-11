@@ -24,7 +24,7 @@
   "method": "text_layer"
  },
  "prescription": {
-  "text": "Dr. V. lyer\nMetro Heart and General Hospital\nDiagnosis: diabetic foot infection with debridement\nix: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\nSiethene teat decuenent, gunecaied (oe yotterite entiation: Not a cat nec\u2019 Page!\n",
+  "text": "Dr.V.lyer\nMetro Heart and General Hospital\nPatient:Dayita Sehgal,50/FDate:26/09/2025\nDiagnosis:diabetic foot infection with debridement\nRx:Tab.Paracetamol500 mg 1-0-1x3days;Cap.Pantoprazole 40mg1-0-0x5 days",
   "method": "ocr"
  },
  "_files": {
@@ -35,6 +35,6 @@
   "lab_report.pdf": 2178,
   "policy_schedule.pdf": 2477,
   "prescription.pdf": 101529,
-  "_dpi": 300
+  "_ocr": "rapidocr-300-200"
  }
 }

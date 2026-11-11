@@ -6,6 +6,7 @@
 """
 from __future__ import annotations
 
+import base64
 import os
 import time
 
@@ -18,9 +19,12 @@ class AnthropicLLM:
         self.client = anthropic.Anthropic()
         self.model = model or os.getenv("CLAIM_LLM_MODEL") or DEFAULT_MODELS["anthropic"]
 
-    def complete(self, system: str, user: str, max_tokens: int = 300) -> str:
+    def complete(self, system: str, user: str, max_tokens: int = 300, images: list[bytes] | None = None) -> str:
+        content = user if not images else [
+            *({"type": "image", "source": {"type": "base64", "media_type": "image/png", "data": base64.b64encode(i).decode()}} for i in images),
+            {"type": "text", "text": user}]
         r = self.client.messages.create(model=self.model, max_tokens=max_tokens, temperature=0,
-                                        system=system, messages=[{"role": "user", "content": user}])
+                                        system=system, messages=[{"role": "user", "content": content}])
         return "".join(b.text for b in r.content if getattr(b, "type", "") == "text")
 
 
@@ -30,10 +34,13 @@ class OpenAILLM:
         self.client = OpenAI()
         self.model = model or os.getenv("CLAIM_LLM_MODEL") or DEFAULT_MODELS["openai"]
 
-    def complete(self, system: str, user: str, max_tokens: int = 300) -> str:
+    def complete(self, system: str, user: str, max_tokens: int = 300, images: list[bytes] | None = None) -> str:
+        content = user if not images else [
+            *({"type": "image_url", "image_url": {"url": "data:image/png;base64," + base64.b64encode(i).decode()}} for i in images),
+            {"type": "text", "text": user}]
         r = self.client.chat.completions.create(model=self.model, max_tokens=max_tokens, temperature=0,
                                                 messages=[{"role": "system", "content": system},
-                                                          {"role": "user", "content": user}])
+                                                          {"role": "user", "content": content}])
         return r.choices[0].message.content or ""
 
 
@@ -51,11 +58,15 @@ class GeminiLLM:
         self.model = model or os.getenv("CLAIM_LLM_MODEL") or DEFAULT_MODELS["gemini"]
         self.retries, self.wait_s = retries, wait_s
 
-    def complete(self, system: str, user: str, max_tokens: int = 300) -> str:
+    def complete(self, system: str, user: str, max_tokens: int = 300, images: list[bytes] | None = None) -> str:
+        contents = user
+        if images:
+            from google.genai import types
+            contents = [*(types.Part.from_bytes(data=i, mime_type="image/png") for i in images), user]
         cfg = {"system_instruction": system, "temperature": 0, "max_output_tokens": max(max_tokens * 4, 4096)}  # thinking models spend part of this budget before answering
         for attempt in range(self.retries + 1):
             try:
-                r = self.client.models.generate_content(model=self.model, contents=user, config=cfg)
+                r = self.client.models.generate_content(model=self.model, contents=contents, config=cfg)
                 return r.text or ""
             except Exception as e:  # noqa: BLE001 - SDK raises several error types for rate limits
                 msg = str(e)
@@ -75,7 +86,7 @@ class FakeLLM:
     def __init__(self, reply: str = "[]"):
         self.reply = reply
 
-    def complete(self, system: str, user: str, max_tokens: int = 300) -> str:
+    def complete(self, system: str, user: str, max_tokens: int = 300, images: list[bytes] | None = None) -> str:
         return self.reply
 
 

@@ -12,7 +12,7 @@ from pathlib import Path
 from pydantic import ValidationError
 
 from src.baseline.naive import build_claim_text
-from src.baseline.ocr import read_claim_docs
+from src.baseline.ocr import page_images, read_claim_docs
 from src.extraction.schemas import ExtractedClaim
 
 SYSTEM = """You extract structured data from Indian health insurance claim documents (claim form, policy schedule, discharge summary, hospital bill, ID proof). The text may contain OCR errors; read carefully.
@@ -36,6 +36,15 @@ policy_start, ped_waiting_months, specified_waiting_months, room_limit_per_day, 
 room_type_modification (true/false), eligible_room."""
 
 
+REQUIRED_FIELDS = ("ped_waiting_months", "specified_waiting_months", "sum_insured", "policy_start")
+FIELD_HELP = {"ped_waiting_months": "waiting period for pre-existing diseases, in months (whole number)",
+              "specified_waiting_months": "waiting period for specified diseases/procedures, in months (whole number)",
+              "sum_insured": "sum insured in rupees, digits only", "policy_start": "policy start date as YYYY-MM-DD"}
+VISION_SYSTEM = """You read scanned Indian health insurance documents. Look at the page images and read ONLY the requested values.
+Return one JSON object with exactly the requested keys. Use null for a value you cannot read with certainty; never guess."""
+MAX_VISION_IMAGES = 3
+
+
 def parse_json(text: str) -> dict:
     m = re.search(r"\{.*\}", text, re.S)
     if not m:
@@ -57,4 +66,28 @@ class Extractor:
             return ExtractedClaim.model_validate(parse_json(self.llm.complete(SYSTEM, fix, max_tokens=2500)))
 
     def extract_dir(self, claim_dir: Path) -> ExtractedClaim:
-        return self.extract_text(build_claim_text(read_claim_docs(claim_dir)))
+        docs = read_claim_docs(claim_dir)
+        claim = self.extract_text(build_claim_text(docs))
+        return self.fill_with_vision(claim, claim_dir, docs)
+
+    def fill_with_vision(self, claim: ExtractedClaim, claim_dir: Path, docs: dict) -> ExtractedClaim:
+        """When OCR left a required field empty, ask a vision model to read just those fields from the scanned pages.
+        Spends model calls only on pages that ordinary OCR failed on, and records which fields came from vision."""
+        missing = [f for f in REQUIRED_FIELDS if getattr(claim, f) is None]
+        scanned = sorted((n for n, d in docs.items() if d.get("method") == "ocr"), key=lambda n: n != "policy_schedule")
+        if not missing or not scanned:
+            return claim
+        images: list[bytes] = []
+        for name in scanned:
+            images += page_images(claim_dir / "docs" / f"{name}.pdf", max_pages=1)
+            if len(images) >= MAX_VISION_IMAGES:
+                break
+        ask = "Read these values:\n" + "\n".join(f"- {f}: {FIELD_HELP[f]}" for f in missing)
+        try:
+            got = parse_json(self.llm.complete(VISION_SYSTEM, ask, max_tokens=300, images=images[:MAX_VISION_IMAGES]))
+            filled = {f: got[f] for f in missing if got.get(f) is not None}
+            if not filled:
+                return claim
+            return ExtractedClaim.model_validate({**claim.model_dump(), **filled, "vision_filled": sorted(filled)})
+        except Exception:  # noqa: BLE001 - a failed fallback must never break extraction; the claim just goes to review
+            return claim

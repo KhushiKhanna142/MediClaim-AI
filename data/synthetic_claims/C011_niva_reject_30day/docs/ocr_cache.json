@@ -8,7 +8,7 @@
   "method": "text_layer"
  },
  "hospital_bill": {
-  "text": "Metro Heart and General Hospital\nAhmedabad | Final inpatient Bill | :\nBill no BL/2026/85672 UHID UH875304 :\nPatient Darika Golla Age | Sex 29/M\nAdmitted 28/05/2025 Discharged 01/06'2025\nConsultant = Or. A. Kulkarni Room standard single\ntem Amount (Ris.)\nRoom charges (standard single) (4 x 5,000) 20,000\nSurgeon and anaesthetist fees 43,850\nOperation theatre charges 16,150\nLaboratory and radiology investigations 5.800\nNursing charges 7,800\nPharmacy and medicines 10,150\nNet payable 1,06,800\nSyotseng ves! comenent Qecaniied lor atv ev suabo Not & rial rece. Poge 3\n",
+  "text": "Metro Heart and General Hospital\nAhmedabad|Final Inpatient Bill\nBillno BL/2025/85672 UHID UH875304\nPatient Darika Golla Age/Sex 29/M\nAdmitted 28/05/2025 Discharged 01/06/2025\nConsultant Dr.A.Kulkarni Room standard single\nAmount(Rs.)\nitem 20,000\nRoom charges \uff08standard single)\uff084x5,000) 43.850\nSurgeon and anaesthetist fees 16,150\nOperation theatre charges 5.800\nLaboratory and radiology investigations 7,800\nNursing charges 10,150\nPharmacy and medicines 3,050\nDisposable consumables and admission kit 1,06,800\nNet payable",
   "method": "ocr"
  },
  "id_proof": {
@@ -35,6 +35,6 @@
   "lab_report.pdf": 2178,
   "policy_schedule.pdf": 2477,
   "prescription.pdf": 1953,
-  "_dpi": 300
+  "_ocr": "rapidocr-300-200"
  }
 }

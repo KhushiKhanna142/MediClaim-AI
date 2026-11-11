@@ -132,7 +132,7 @@ cp .env.example .env
 ```bash
 python -m pytest -q tests/
 ```
-*(All 111 unit and integration tests passing)*
+*(All 114 unit and integration tests passing)*
 
 ### 3. Run Retrieval Benchmark & Ablation
 ```bash

@@ -1,6 +1,6 @@
 {
  "claim_form": {
-  "text": "HDFC ERGO General Insurance\nHeaith Insurance Claim Form (Reimbursement), Part A\nProduct Optima Secure |\nPolicy start date 41/01/2024 |\nSum insured (Rs.) 5\u00a7,00,000\nName of patient Nitesh Oommen\nAge | Sex 95 years / F |\nContact number \"9333827806\nHospital name \u201d Harmony Medical Centre, indore\nDate of admission 11/09/2025 :\nDate of discharge 14/09/2025 |\nDiagnosis | ailment acute appendicitis. appendectomy\nNature of iliness \u2018tiness\nRoom category occupied private\nTotal amount claimed (Rs.) 91,600\nDeclaration\n\u2018declare that the information furnished in this claim form is true and correct to the best of my knowledge. | agre@ 10\nprovide any further documents required by the insurer.\nSignature of the insured: Date: 14/09/2025\nSyedhete les! Gocumenl, yanerutad tov yotrase weahuaitor Not a end wecderl Pepe |\n",
+  "text": "HDFCERGOGeneral Insurance\nHealth Insurance ClaimForm(Reimbursement).Pant A\nPolicy number HD4907165767\nProduct Optima Secure\nPolicy start date 11/01/2024\nSum insured (Rs.) 5,00.000\nName of patient Nitesh Oommen\nAge/Sex 35years/F\nContact number 9333827806\nHospital name HarmonyMedical Centre,Indore\nDate of admission 11/09/2025\nDate of discharge 14/09/2025\nDiagnosis/ailment acute appendicitis.appendectomy\nNature of iliness illness\nRoom category occupied private\nTotal amount claimed (Rs.) 91,600\nIdeclare that the information furnished in this claim form is true and correct to the best of my knowledge,lagree to Declaration\nprovide anyfurther documentsrequired by theinsurer.\nSignature of the insured: Date:14/09/2025",
   "method": "ocr"
  },
  "discharge_summary": {
@@ -20,7 +20,7 @@
   "method": "text_layer"
  },
  "policy_schedule": {
-  "text": "HDFC ERGO General Insurance\nPolicy Schedule\nPolicy number HD4907165767\nInsurer HDFC ERGO General Insurance\nProduct | Optima Secure : S|\n| Insured person Nitesh Oommen, 35 years, F\nPolicy start date 11/01/2024\n| Sum insured (Rs.) | 5,00,000\nWaiting period, pre-existing diseasas months 3\n| Waiting period, specified diseases Sroomdiees\nInitial waiting period | 30 days (not applicable to accidents)\n| Room rent limit | Rs. 5,000 per day\n| Eligible room category standard single\nCo-payment Nil |\n| Continuity credit (portability) | None\n",
+  "text": "HDFC ERGO General Insurance\nPolicy Schedule\nPolicy number HD4907165767\nInsurer HDFC ERGO General Insurance\nProduct Optima Secure\nInsured person Nitesh Oommen,35years,F\nPolicy start date 11/01/2024\nSum insured (Rs.) 5,00,000\nWaiting period,pre-existing diseasasmonths\nWaitingperiod,specified diseasesproceduses\nInitial waiting period 30 days (not applicable to accidents)\nRoom rent limit Rs.5,000per day\nEligibleroom category standard single\nCo-payment IIN\nContinuity credit (portability) None\nSyntfelic test document generated for sofware evaluation.Nota reairecord Page1",
   "method": "ocr"
  },
  "prescription": {
@@ -35,6 +35,6 @@
   "lab_report.pdf": 2171,
   "policy_schedule.pdf": 153501,
   "prescription.pdf": 1947,
-  "_dpi": 300
+  "_ocr": "rapidocr-300-200"
  }
 }

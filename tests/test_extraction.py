@@ -49,3 +49,45 @@ def test_score_extraction():
 def test_null_copay_and_continuity_mean_zero():
     c = ExtractedClaim.model_validate({**GOOD, "copay_pct": None, "continuity_credit_months": "Nil", "room_type_modification": None})
     assert c.copay_pct == 0 and c.continuity_credit_months == 0 and c.room_type_modification is False
+
+
+def test_vision_fallback_fills_only_missing_fields(tmp_path, monkeypatch):
+    import fitz
+    from src.extraction import extract as ex
+    (tmp_path / "docs").mkdir()
+    doc = fitz.open()
+    doc.new_page().insert_text((72, 72), "scanned")
+    doc.save(tmp_path / "docs" / "policy_schedule.pdf")
+    monkeypatch.setattr(ex, "read_claim_docs", lambda d: {"policy_schedule": {"text": "garbled", "method": "ocr"}})
+
+    class Vision:
+        def __init__(self):
+            self.calls = []
+
+        def complete(self, system, user, max_tokens=300, images=None):
+            self.calls.append((user, images))
+            if images:
+                return json.dumps({"ped_waiting_months": "12 months", "specified_waiting_months": 24, "sum_insured": 999})
+            return json.dumps({**GOOD, "sum_insured": 1000000, "policy_start": "2022-01-01"})
+
+    llm = Vision()
+    out = ex.Extractor(llm).extract_dir(tmp_path)
+    assert out.ped_waiting_months == 12 and out.specified_waiting_months == 24
+    assert out.sum_insured == 1000000, "fields OCR already read must not be overwritten"
+    assert out.vision_filled == ["ped_waiting_months", "specified_waiting_months"]
+    assert llm.calls[1][1] and "sum_insured" not in llm.calls[1][0]
+
+
+def test_vision_fallback_skipped_when_nothing_missing(tmp_path, monkeypatch):
+    from src.extraction import extract as ex
+    monkeypatch.setattr(ex, "read_claim_docs", lambda d: {"policy_schedule": {"text": "ok", "method": "text_layer"}})
+
+    class Once:
+        n = 0
+
+        def complete(self, system, user, max_tokens=300, images=None):
+            Once.n += 1
+            return json.dumps({**GOOD, "ped_waiting_months": 12, "specified_waiting_months": 24, "sum_insured": 1, "policy_start": "2022-01-01"})
+
+    ex.Extractor(Once()).extract_dir(tmp_path)
+    assert Once.n == 1

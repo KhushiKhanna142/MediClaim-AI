@@ -8,7 +8,7 @@
   "method": "text_layer"
  },
  "id_proof": {
-  "text": "Government of India (specimen ID card, synthetic)\nName Triya Pant\nAge / Gender _32/M\nID number XXXX XXKK 8441\nMobile 9409837739\n",
+  "text": "Government of India (specimen ID card, synthetic)\nName Triya Pant\nAge/Gender 32/M\nIDnumber XXXXXXXX8441\nMobile 9409837739\nSytetic ttdocumnt,geraled for sowtn.oteacrd. Page1",
   "method": "ocr"
  },
  "lab_report": {
@@ -20,7 +20,7 @@
   "method": "text_layer"
  },
  "prescription": {
-  "text": "Dr. A. Kulkarni\nMetro Heart and General Hospital\nPatient: Triya Pant, 32/M Date: 12/11/2025\nDiagnosis: laparoscopic cholecystectomy (gallstones)\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\nSyrtheht Few! ONitinen! Denaritedd for colar owaliatoe, Mov a real rogocd \u2018 Pupe t\n",
+  "text": "Dr.A.Kulkarni\nMetroHeart andGeneral Hospital\nPatient:TrlyaPant,32/MDate:12/11/2025\nDiagnosis:laparoscopic cholecystectomy (gallstones)\nRx:Tab.Paracetamol500 mg 1-0-1x3days;Cap.Pantoprazole 40 mg 1-0-0x5days",
   "method": "ocr"
  },
  "_files": {
@@ -30,6 +30,6 @@
   "lab_report.pdf": 2177,
   "policy_schedule.pdf": 2473,
   "prescription.pdf": 151547,
-  "_dpi": 300
+  "_ocr": "rapidocr-300-200"
  }
 }

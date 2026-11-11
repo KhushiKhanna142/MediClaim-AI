@@ -8,7 +8,7 @@
   "method": "text_layer"
  },
  "hospital_bill": {
-  "text": "Sunrise Multispeciality Hospital\nMumbai | Final Inpatient Bill\nBill no BL/2026/27385 UHID UH280107\nPatient Gautam Samra Age / Sex 43 /M\nAdmitted 15/08/2026 Discharged 20/08/2026\nConsultant Dr. V. lyer Room deluxe\nSI Description SS pee | Rate Amount\n1 Room charges (deluxe) | 5 11,500 57,500\n2 Surgeon and anaesthetist fees | 1 | 60,400 60,400\n| 3 of Operation theatre charges Sea i 1 | 34,100 34,100\n| 4 Laboratory and radiology investigations | 1 | 8,150 | 8,150 |\n| 5 | Nursing charges aes 1 | 9,650 | Pie: 9,650,\n6 | Pharmacy and medicines | 1| 14,950 14.950\n7 | Implant / prosthesis Gi 1 50,900 _ 50,900\n8 Disposable consumables and admission kit | 1 | 3,200 3,200\nTOTAL 2,38,850\nSynthetic test document, generated for soltware evaluation, Not a real record Page 1\n",
+  "text": "Sunrise Multispeciality Hospital\nMumbai|Final Inpatient Bill\nBill no BL/2026/27385 UHID UH280107\nPatient Gautam Samra Age/Sex 43/M\nAdmitted 15/08/2026 Discharged 20/08/2026\nConsultant Dr.V.lyer Room deluxe\nSI Description Qty Rate Amount\n1 Room charges(deluxe) 5 11,500 57,500\n2 Surgeon and anaesthetist fees 1 60,400 60,400\n3 Operation theatre charges 34,100 34,100\n4 Laboratory andradiology investigations 1 8,150 8,150\n5 Nursing charges 9,650 9,650\n6 Pharmacy and medicines 14,950 14,950\n7 Implant/prosthesis 1 50,900 50,900\n8 Disposable consumables and admission kit 1 3,200 3,200\nTOTAL 2,38,850\nSynthetic testdocumem.genernted for software eyBluation.Nota real record Page1",
   "method": "ocr"
  },
  "id_proof": {
@@ -35,6 +35,6 @@
   "lab_report.pdf": 2182,
   "policy_schedule.pdf": 2554,
   "prescription.pdf": 1968,
-  "_dpi": 300
+  "_ocr": "rapidocr-300-200"
  }
 }

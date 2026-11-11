@@ -1,14 +1,14 @@
 {
  "claim_form": {
-  "text": "Niva Bupa Health Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number ' NB3851059482\n| Product ReAssure (Aspire)\n\" Policy start date - 26/06/2023 . .\n\"Sum insured (Rs.) ~ 3,00,000\n: Name of patient | Mekhala Bawa :\nAge / Sex | 36 years / F |\nContact number 9547403679 aes :\nHospital name Sunrise Multispeciality Hospital, Indore\nDate of admission | 26/08/2025\nDate of discharge 30/08/2025\nDiagnosis / ailment total knee replacement\nNature of illness | iliness\n| Room category occupied \u20184 standard single\n\"Total amount claimed (Rs.) 3,87,750\nDeclaration\n| declare that the information furnished in this claim form is true and correct to the best of my knowledge. | agree to\nprovide any further documents required by the insurer.\nSignature of the insured: Date: 30/08/2025\n",
+  "text": "Niva Bupa Health Insurance\nHealth Insurance Claim Form(Reimbursement),Part A\nPolicy number NB3851053482\nProduct ReAssure(Aspire)\nPolicy start date 26/06/2023\nSum insured(Rs.) 3,00,000\nName of patient Mekhala Bawa\nAge/Sex 36years/F\nContact number 9547403679\nHospital name Sunrise Multispeciality Hospital,Indore\nDate ofadmission 26/08/2025\nDate of discharge 30/08/2025\nDiagnosis/ailment total kneereplacement\nNature of illness Illness\nRoom category occupied standard single\nTotal amountclaimed(Rs.) 3,87.750\nDeclaration\nIdeclare that theinformation furnished in thisclaim form is true andcorrect to thebest ofmyknowledge.lagree to\nprovideany further documentsrequired by theinsurer.\nSignature of theinsured: Date:30/08/2025\nSynthetic test documentgenerated forsotware evaluainNota ealrecord Page1",
   "method": "ocr"
  },
  "discharge_summary": {
-  "text": "Sunrise Multispeciality Hospital\nDischarge Summary\nPatient Mekhala Bawa, 36 years, F\nUHID UH194171\nDate of admission 26/08/2025\nDate of discharge 30/08/2025\nLength of stay 4 day(s)\nConsultant Dr. P. Deshmukh\nFinal diagnosis\ntotal knee replacement\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to total knee replacement. Investigations were done and treatment\nwas given as per protocol. The post-treatment period was uneventful and the patient was discharged in stable\ncondition on 30/08/2025.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. P. Deshmukh (Treating consultant)\nSyne: lest GOcuMHy, gereted for soltware evaluation. Not a real record Page 1}\n",
+  "text": "Sunrise Multispeciality Hospital\nDischarge Summary\nPatient MekhalaBawa,36years,F\nUHID UH194171\nDate of admission 26/08/2025\nDate of discharge 30/08/2025\nLength of stay 4 day(s)\nConsultant Dr.P.Deshmukh\nFinal diagnosis\ntotal knee replacement\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThepatientwas admitted with complaintsrelated to total kneereplacement.Investigationswere done and treatment\nwas given as per protocol.The post-treatment period was uneventful and the patient was discharged in stable\nconditionon30/08/2025.\nAdvice on discharge\nReview after 7 days with reports. Continue medicinesas prescribed.Avoid strenuous activity.\nDr.P.Deshmukh(Treating consultant)\nSythetic test documntgenered forsotwe evaltionNot a alecord Page.1",
   "method": "ocr"
  },
  "hospital_bill": {
-  "text": "Sunrise Multispeciality Hospital\nIndore | Final Inpatient Bill\nBill no BL/2025/60262 UHID UH194171\nPatient Mekhala Bawa Age/Sex -36/F\nAdmitted 26/08/2025 Discharged 30/08/2025\nConsultant \u2014_Dr. P. Deshmukh Room standard single\n1 Room charges (standard single) 4 4,000 16,000\n2 Surgeon and anaesthetist fees 1 | 84.950 _ 84,950\n3 Operation theatre charges +| 27.750 | 27,750\n4 Laboratory and radiology investigations 1 9,950 9.950\n5 | Nursing charges 1 11,150 _ 11,150\n6 Pharmacy and medicines | 1 23,000 23,000\n7 | implant / prosthesis | 2,11,000 _ 2,11,000\n8 Disposable consumables and admission kit | 1 3,950 3,950\nTOTAL 3,87,750\nSynthetic leet Gocumant. gur\u00e9itind for software eeahuaton, Mot a real record Page 1\n",
+  "text": "Sunrise Multispeciality Hospital\nIndore|Final Inpatient Bill\nBillno BL/2025/60262 UHID UH194171\nPatient Mekhala Bawa Age/Sex 36/F\nAdmitted 26/08/2025 Discharged 30/08/2025\nConsultant Dr.P.Deshmukh Room standard single\nSI Description Qty Rate\n1 Room charges (standard single) Amount\n4 4.000 16,000\n2 Surgeon and anaesthetist fees 1 84.950\n3 Operation theatre charges 84,950\n27,750 27,750\n4 Laboratory and radiology investigations 9,950\n5 Nursing charges 9,950\n6 11,150 11.150\nPharmacy and medicines 23.000\n7 Implant/prosthesis 23,000\n1 2,11,000 2,11,000\n8 Disposable consumables and admission kit 3.950\n3,950\nTOTAL 3,87,750\nabuabon.Not atealrecord",
   "method": "ocr"
  },
  "id_proof": {
@@ -24,7 +24,7 @@
   "method": "text_layer"
  },
  "prescription": {
-  "text": "Dr. P. Deshmukh\nSunrise Multispeciality Hospital\nPatient: Mekhala Bawa, 36/F Date: 26/08/2025\nDiagnosis: total knee replacement\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\nSyolhetic teat documont, generated for sofware evaluation, Nol a teal record Page|\n",
+  "text": "Dr.P.Deshmukh\nSunrise Multispeciality Hospital\nPatient:Mekhala Bawa.36/FDate:26/08/2025\nDiagnosis:total kneereplacement\nRx:Tab.Paracetamol500 mg1-0-1x3 days:Cap.Pantoprazole40 mg1-0-0x5 days\nSytheti st documntgenraed rstware evalualinNot  rel cord",
   "method": "ocr"
  },
  "_files": {
@@ -35,6 +35,6 @@
   "lab_report.pdf": 2183,
   "policy_schedule.pdf": 2478,
   "prescription.pdf": 142428,
-  "_dpi": 300
+  "_ocr": "rapidocr-300-200"
  }
 }
