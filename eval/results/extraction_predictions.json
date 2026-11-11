@@ -462,7 +462,88 @@
   "eligible_room": "standard_single"
  },
  "C007_niva_partial_nonpayable": {
-  "error": "1 validation error for ExtractedClaim\ncopay_pct\n  Input should be a valid integer [type=int_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.14/v/int_type"
+  "patient_name": "Jatin Kapoor",
+  "age": 42,
+  "sex": "F",
+  "policy_number": "NB1423768735",
+  "hospital": "Metro Heart and General Hospital, Ahmedabad",
+  "diagnosis": "fracture of femur, ORIF (road accident)",
+  "cause": "accident",
+  "known_history": null,
+  "history_onset_date": null,
+  "admission_date": "2025-06-20",
+  "discharge_date": "2025-06-26",
+  "length_of_stay_days": 6,
+  "room_category_claimed": "standard_single",
+  "claimed_total": 225150,
+  "bill_total": 225150,
+  "items": [
+   {
+    "description": "Room charges (standard single)",
+    "qty": 6,
+    "rate": 4600,
+    "amount": 27600,
+    "category": "room"
+   },
+   {
+    "description": "Surgeon and anaesthetist fees",
+    "qty": 1,
+    "rate": 54100,
+    "amount": 54100,
+    "category": "surgeon"
+   },
+   {
+    "description": "Operation theatre charges",
+    "qty": 1,
+    "rate": 26450,
+    "amount": 26450,
+    "category": "ot"
+   },
+   {
+    "description": "Laboratory and radiology investigations",
+    "qty": 1,
+    "rate": 9300,
+    "amount": 9300,
+    "category": "investigation"
+   },
+   {
+    "description": "Nursing charges",
+    "qty": 1,
+    "rate": 10250,
+    "amount": 10250,
+    "category": "nursing"
+   },
+   {
+    "description": "Pharmacy and medicines",
+    "qty": 1,
+    "rate": 19850,
+    "amount": 19850,
+    "category": "medicine"
+   },
+   {
+    "description": "Implant / prosthesis",
+    "qty": 1,
+    "rate": 74150,
+    "amount": 74150,
+    "category": "implant"
+   },
+   {
+    "description": "Disposable consumables and admission kit",
+    "qty": 1,
+    "rate": 3450,
+    "amount": 3450,
+    "category": "consumable"
+   }
+  ],
+  "sum_insured": 500000,
+  "policy_start": "2025-03-20",
+  "ped_waiting_months": null,
+  "specified_waiting_months": null,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "continuity_credit_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_singie"
  },
  "C008_niva_partial_si_cap": {
   "patient_name": "Mekhala Bawa",
@@ -787,7 +868,7 @@
   "hospital": "Metro Heart and General Hospital",
   "diagnosis": "diabetic foot infection with debridement",
   "cause": "illness",
-  "known_history": "Known case of diabetic foot infection with debridement, diagnosed on 15/06/2024, on regular treatment.",
+  "known_history": "Known case of diabetic foot infection with debridement",
   "history_onset_date": "2024-06-15",
   "admission_date": "2026-06-15",
   "discharge_date": "2026-06-20",
@@ -1630,7 +1711,7 @@
   "patient_name": "Faras Murthy",
   "age": 60,
   "sex": "F",
-  "policy_number": "_HD7129340549",
+  "policy_number": "HD7129340549",
   "hospital": "Lotus Care Hospital, Indore",
   "diagnosis": "total knee replacement",
   "cause": "illness",
@@ -1702,7 +1783,7 @@
   ],
   "sum_insured": 300000,
   "policy_start": "2023-08-08",
-  "ped_waiting_months": null,
+  "ped_waiting_months": 24,
   "specified_waiting_months": null,
   "room_limit_per_day": null,
   "copay_pct": 0,
@@ -2040,7 +2121,7 @@
   "length_of_stay_days": 4,
   "room_category_claimed": "standard_single",
   "claimed_total": 361600,
-  "bill_total": 354100,
+  "bill_total": 361600,
   "items": [
    {
     "description": "Room charges (standard single)",
@@ -2073,8 +2154,8 @@
    {
     "description": "Nursing charges",
     "qty": 1,
-    "rate": 10500,
-    "amount": 10500,
+    "rate": 17500,
+    "amount": 17500,
     "category": "nursing"
    },
    {
