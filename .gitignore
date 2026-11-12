@@ -48,3 +48,8 @@ htmlcov/
 *.lock
 debug_out.txt
 
+# Frontend & Runtime Data
+frontend/node_modules/
+data/mediclaim_ui.db
+data/uploads/
+
