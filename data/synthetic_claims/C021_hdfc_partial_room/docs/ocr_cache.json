@@ -20,8 +20,8 @@
   "method": "text_layer"
  },
  "policy_schedule": {
-  "text": "HDFC ERGO General Insurance\nPolicy Schedule\nPolicy number HD4907165767\nInsurer HDFC ERGO General Insurance\nProduct Optima Secure\nInsured person Nitesh Oommen,35years,F\nPolicy start date 11/01/2024\nSum insured (Rs.) 5,00,000\nWaiting period,pre-existing diseasasmonths\nWaitingperiod,specified diseasesproceduses\nInitial waiting period 30 days (not applicable to accidents)\nRoom rent limit Rs.5,000per day\nEligibleroom category standard single\nCo-payment IIN\nContinuity credit (portability) None\nSyntfelic test document generated for sofware evaluation.Nota reairecord Page1",
-  "method": "ocr"
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nPolicy Schedule\nPolicy number\nHD4907165767\nInsurer\nHDFC ERGO General Insurance\nProduct\nOptima Secure\nInsured person\nNitesh Oommen, 35 years, F\nPolicy start date\n11/01/2024\nSum insured (Rs.)\n5,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nRs. 5,000 per day\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
  },
  "prescription": {
   "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. A. Kulkarni\nHarmony Medical Centre\nPatient: Nitesh Oommen, 35/F Date: 11/09/2025\nDiagnosis: acute appendicitis, appendectomy\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
@@ -33,8 +33,8 @@
   "hospital_bill.pdf": 4035,
   "id_proof.pdf": 2009,
   "lab_report.pdf": 2171,
-  "policy_schedule.pdf": 153501,
+  "policy_schedule.pdf": 2468,
   "prescription.pdf": 1947,
-  "_ocr": "rapidocr-300-200"
+  "_ocr": "rapidocr-300-200-r2"
  }
 }

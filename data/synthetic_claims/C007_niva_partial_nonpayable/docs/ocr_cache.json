@@ -20,8 +20,8 @@
   "method": "text_layer"
  },
  "policy_schedule": {
-  "text": "Niva Bupa Health Insurance\nPolicy Schedule\nPolicy number NB1423768735\nInsurer Niva Bupa Health Insurance\nProduct ReAssure (Aspire)\nInsured person JatinKapoor,42years,F\nPolicy start date 20/03/2025\nSum Iinsured (Rs.) 5,00.000\nWaiting period,pre-existing diseas months\nWaiting perlod,specified diseases/ecedures\nInitial waiting period 30 days (not applicable to accidents)\nRoomrent limit No limit (single private room or lower)\nEligible room category standard single\nCo-payment Nil\nContinuity credit (portablity) None\nEANR",
-  "method": "ocr"
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nPolicy Schedule\nPolicy number\nNB1423768735\nInsurer\nNiva Bupa Health Insurance\nProduct\nReAssure (Aspire)\nInsured person\nJatin Kapoor, 42 years, F\nPolicy start date\n20/03/2025\nSum insured (Rs.)\n5,00,000\nWaiting period, pre-existing diseases\n24 months\nWaiting period, specified diseases/procedures\n12 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
  },
  "prescription": {
   "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. A. Kulkarni\nMetro Heart and General Hospital\nPatient: Jatin Kapoor, 42/F Date: 20/06/2025\nDiagnosis: fracture of femur, ORIF (road accident)\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
@@ -33,8 +33,8 @@
   "hospital_bill.pdf": 2575,
   "id_proof.pdf": 2011,
   "lab_report.pdf": 2178,
-  "policy_schedule.pdf": 184907,
+  "policy_schedule.pdf": 2477,
   "prescription.pdf": 1969,
-  "_ocr": "rapidocr-300-200"
+  "_ocr": "rapidocr-300-200-r2"
  }
 }

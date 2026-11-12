@@ -30,11 +30,11 @@
  "_files": {
   "claim_form.pdf": 139351,
   "discharge_summary.pdf": 72084,
-  "hospital_bill.pdf": 111521,
+  "hospital_bill.pdf": 111520,
   "id_proof.pdf": 2011,
   "lab_report.pdf": 2183,
   "policy_schedule.pdf": 2478,
   "prescription.pdf": 142428,
-  "_ocr": "rapidocr-300-200"
+  "_ocr": "rapidocr-300-200-r2"
  }
 }

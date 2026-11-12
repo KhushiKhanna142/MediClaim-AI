@@ -322,7 +322,9 @@ def render_claim(cdir: Path, seed: int, scan_frac: float) -> dict:
             continue
         digital = out / f"{doc}.pdf"
         build(digital, builders[doc]())
-        scanned = rng_for(seed, claim["claim_id"], doc, "scan").random() < scan_frac
+        # Policy schedules are always issued as clean digital documents by the insurer;
+        # only hospital documents (bills, discharge summaries, claim forms) may arrive as scans.
+        scanned = doc != "policy_schedule" and rng_for(seed, claim["claim_id"], doc, "scan").random() < scan_frac
         if scanned:
             tmp = out / f"{doc}.tmp.pdf"
             digital.rename(tmp)

@@ -20,8 +20,8 @@
   "method": "text_layer"
  },
  "policy_schedule": {
-  "text": "HDFCERGO General Insurance\nPolicy Schedule\nPolicy number HD9775963003\nInsurer HDFC ERGO General Insurance\nProduct Optima Secure\nInsured person Vrinda Sama.55years,M\nPolicy start date 10/05/2023\nSum insured (Rs.) 10,00,000\nWaiting period,pre-existing diseassmonths\nWaiting period,specifieddiseasespracedures\nInitial waiting period 30 days (not applicable to accidents)\nRoomrent limit No limit (single private room or lower)\nEligible room category standard single\nCo-payment Nil\nContinuity credit (portability) None\nSynthetictstdcmentgenrtedorsoe valtoNarelrco",
-  "method": "ocr"
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nPolicy Schedule\nPolicy number\nHD9775963003\nInsurer\nHDFC ERGO General Insurance\nProduct\nOptima Secure\nInsured person\nVrinda Sama, 55 years, M\nPolicy start date\n10/05/2023\nSum insured (Rs.)\n10,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
  },
  "prescription": {
   "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. A. Kulkarni\nMetro Heart and General Hospital\nPatient: Vrinda Sama, 55/M Date: 10/01/2026\nDiagnosis: total knee replacement\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
@@ -33,8 +33,8 @@
   "hospital_bill.pdf": 84534,
   "id_proof.pdf": 202223,
   "lab_report.pdf": 2178,
-  "policy_schedule.pdf": 126543,
+  "policy_schedule.pdf": 2475,
   "prescription.pdf": 1947,
-  "_ocr": "rapidocr-300-200"
+  "_ocr": "rapidocr-300-200-r2"
  }
 }

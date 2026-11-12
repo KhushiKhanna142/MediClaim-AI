@@ -9,6 +9,7 @@ from __future__ import annotations
 import base64
 import os
 import time
+from pathlib import Path
 
 DEFAULT_MODELS = {"anthropic": "claude-haiku-4-5", "openai": "gpt-4o-mini", "gemini": "gemini-3.8-flash"}
 
@@ -90,7 +91,26 @@ class FakeLLM:
         return self.reply
 
 
+def _load_env():
+    """Load key-value pairs from .env file into os.environ if not already present."""
+    for p in (Path(".env"), Path(__file__).resolve().parent.parent / ".env"):
+        if p.is_file():
+            try:
+                for line in p.read_text().splitlines():
+                    line = line.strip()
+                    if line and not line.startswith("#") and "=" in line:
+                        k, v = line.split("=", 1)
+                        k, v = k.strip(), v.strip().strip("'\"")
+                        if k and k not in os.environ and v:
+                            os.environ[k] = v
+                break
+            except Exception:
+                pass
+
+
 def detect_provider(env=None) -> str:
+    if env is None:
+        _load_env()
     env = os.environ if env is None else env
     if env.get("LLM_PROVIDER"):
         return env["LLM_PROVIDER"].lower()
