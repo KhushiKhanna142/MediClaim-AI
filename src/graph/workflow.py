@@ -196,7 +196,8 @@ def build_graph(*, reader=None, verifier=None, extractor=None, decide_fn: Option
         return "route" if state.get("validation_flags") else "read_policy"
 
     def after_verify(state):
-        if state["verifier"]["passed"]:
+        v = state["verifier"]
+        if v["passed"] or not v.get("retryable"):
             return "route"
         # attempts so far = retries['read_policy']; the first read is attempt 1
         return "read_policy" if state["retries"]["read_policy"] <= cfg.max_verify_retries else "route"

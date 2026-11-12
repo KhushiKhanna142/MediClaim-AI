@@ -26,7 +26,8 @@ Look for concrete problems only:
 1. Does the diagnosis or history suggest a pre-existing condition that the findings did not mark as pre-existing?
 2. Does the diagnosis belong to a specified-disease/procedure category that the findings did not mark as specified?
 3. Do the cited clauses and deductions plausibly explain the decision?
-Be conservative: mark supported=false only when you can name a specific problem. Reply with one JSON object and nothing else:
+The system's own stated reasons are included. If your analysis agrees with the decision, supported must be true.
+Be conservative: mark supported=false only when you can name a specific problem that contradicts the decision. Reply with one JSON object and nothing else:
 {"supported": true|false, "confidence": number between 0 and 1, "issues": ["short strings"]}"""
 
 
@@ -38,8 +39,14 @@ class VerifierResult:
     concerns: list[str] = field(default_factory=list)    # soft signals, lower confidence
     critic_used: bool = False
 
+    @property
+    def retryable(self) -> bool:
+        """Re-reading the policy can fix a code-level failure (missing clause, bad citation). It cannot change a critic's
+        opinion or a missing critic, so those go straight to a human instead of burning more LLM calls."""
+        return any(not i.startswith("critic:") for i in self.issues)
+
     def to_dict(self) -> dict:
-        return asdict(self)
+        return {**asdict(self), "retryable": self.retryable}
 
     def feedback(self) -> str:
         return "; ".join(self.issues + self.concerns) or "no issues"
@@ -139,6 +146,7 @@ class Verifier:
             "waiting_months": {"pre_existing": c.ped_waiting_months, "specified": c.specified_waiting_months},
             "findings": {k: findings.get(k) for k in ("is_pre_existing", "is_specified", "initial_waiting_days")},
             "decision": decision.get("decision"), "payable_amount": decision.get("payable_amount"),
+            "system_reasons": decision.get("reasons"),
             "deductions": [{"rule": d.get("rule"), "clause": d.get("clause_id")} for d in decision.get("deductions") or []],
             "cited_clauses": decision.get("cited_clause_ids"),
         }

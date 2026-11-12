@@ -200,7 +200,6 @@ def test_critic_supported_passes():
 
 
 def test_paused_claim_survives_restart_with_sqlite_checkpointer(tmp_path):
-    pytest.importorskip("langgraph.checkpoint.sqlite")
     from src.graph.workflow import sqlite_checkpointer
     db = str(tmp_path / "cp.sqlite")
 
@@ -217,3 +216,36 @@ def test_resume_of_a_finished_claim_is_refused():
     run_claim(g, inputs(), "R2")
     with pytest.raises(ValueError):
         resume_claim(g, "R2", {"action": "reject"})
+
+
+def test_critic_only_objection_escalates_without_retrying():
+    reader = Reader()
+    critic = Critic('{"supported": false, "confidence": 0.9, "issues": ["looks odd"]}')
+    g, calls = make([approve_decision()], reader=reader, verifier=Verifier(critic))
+    r = run_claim(g, inputs(), "T11")
+    assert r["status"] == "awaiting_human" and reader.calls == 1 and calls["n"] == 1
+    assert r["packet"]["verifier"]["retryable"] is False
+
+
+def test_code_level_failure_is_retryable():
+    r = Verifier().verify(vclaim(), F().model_dump(), approve_decision(cited=("9.9.9",)), ["4.1.2"])
+    assert r.retryable
+
+
+def test_deduction_without_clause_is_a_code_failure():
+    d = {"decision": "partial", "payable_amount": 96050.0, "cited_clause_ids": ["4.1.2"], "reasons": ["x"],
+         "deductions": [{"rule": "non_payable", "amount": 3950.0, "clause_id": None}]}
+    r = Verifier().verify(vclaim(), F().model_dump(), d, ["4.1.2"])
+    assert any("no supporting clause" in i for i in r.issues) and r.retryable
+
+
+def test_critic_receives_system_reasons_but_no_identifiers():
+    seen = {}
+
+    class Spy:
+        def complete(self, system, user, max_tokens=0):
+            seen["user"] = user
+            return '{"supported": true, "confidence": 0.9, "issues": []}'
+    d = {**approve_decision(), "reasons": ["Admission 0 days after policy start falls in the 30-day initial waiting period."]}
+    Verifier(Spy()).verify(vclaim(), F().model_dump(), d, ["4.1.2"])
+    assert "30-day initial waiting period" in seen["user"] and "patient_name" not in seen["user"]
