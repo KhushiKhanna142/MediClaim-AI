@@ -24,9 +24,9 @@
    "room_mod_clause": null,
    "copay_clause": null,
    "non_payable_clause": "4.1.20.1.1",
-   "sum_insured_clause": "2.2.5/4",
+   "sum_insured_clause": "2.2.1",
    "coverage_clause": "4.1.2",
-   "reasoning": "The claimant was hospitalized for inguinal hernia repair, which is explicitly listed as a specified disease or procedure under clause 5.1.2 with a waiting period. The discharge summary indicates no significant past medical or surgical history, meaning the condition is not considered pre-existing under the policy definitions."
+   "reasoning": "The policy includes a 30-day initial waiting period for illnesses and lists 'Hernia of any site or type' under specified diseases subject to a longer waiting period. Since the policy has been active for more than 3 years and the discharge summary reports no prior history, pre-existing disease clauses do not apply."
   },
   "retrieved_clause_ids": [
    "2.1.16",
@@ -50,7 +50,8 @@
    "6.1.1",
    "6.2.4"
   ],
-  "dropped_citations": []
+  "dropped_citations": [],
+  "_sig": "7bdcfedd658b"
  },
  "C002_niva_clean_approve": {
   "decision": "approve",
@@ -76,10 +77,10 @@
    "room_modification_copay_pct": null,
    "room_mod_clause": null,
    "copay_clause": null,
-   "non_payable_clause": "4.1.20.1.1",
-   "sum_insured_clause": "2.2.1",
+   "non_payable_clause": null,
+   "sum_insured_clause": "2.2.5/4",
    "coverage_clause": "4.1.2",
-   "reasoning": "The policy outlines a 30-day initial waiting period for illnesses and specifically includes cataract surgery under the specified disease waiting period list. Furthermore, the claimant has no documented past history matching pre-existing disease definitions, and hospitalization coverage terms are explicitly defined."
+   "reasoning": "The policy mandates a 30-day initial waiting period for illnesses and lists cataract under the specified diseases/procedures waiting period clause. Since the patient has no prior history and the claimed room matches the eligible room category, no room modification co-payment applies."
   },
   "retrieved_clause_ids": [
    "2.1.16",
@@ -103,7 +104,8 @@
    "6.1.1",
    "6.2.4"
   ],
-  "dropped_citations": []
+  "dropped_citations": [],
+  "_sig": "b854c12c06a5"
  },
  "C003_niva_clean_approve": {
   "decision": "approve",
@@ -130,9 +132,9 @@
    "room_mod_clause": null,
    "copay_clause": null,
    "non_payable_clause": "4.1.20.1.1",
-   "sum_insured_clause": "2.2.5/4",
+   "sum_insured_clause": "2.2.1",
    "coverage_clause": "4.1.2",
-   "reasoning": "The policy establishes a 30-day initial waiting period and includes hernia under the specified disease/procedure waiting period list. Since the policy has been active for more than 24 months, the specified disease waiting period is satisfied, and the claimant has no pre-existing disease history."
+   "reasoning": "The policy mandates an initial waiting period of 30 days for illnesses and specifically includes hernia among the specified diseases/procedures subject to a waiting period. The patient has no prior medical history related to the condition, and standard clauses govern room rent pro-rating and sum insured limits."
   },
   "retrieved_clause_ids": [
    "2.1.16",
@@ -156,20 +158,61 @@
    "6.1.1",
    "6.2.4"
   ],
-  "dropped_citations": []
+  "dropped_citations": [],
+  "_sig": "24a16c6d070e"
  },
  "C004_niva_approve_continuity": {
-  "decision": "needs_review",
-  "payable_amount": null,
+  "decision": "approve",
+  "payable_amount": 316550.0,
   "deductions": [],
-  "cited_clause_ids": [],
-  "flags": [
-   "missing_fields:ped_waiting_months,specified_waiting_months"
+  "cited_clause_ids": [
+   "4.1.2"
   ],
   "reasons": [
-   "Fields needed for adjudication could not be read: ped_waiting_months, specified_waiting_months."
+   "No waiting-period exclusion applies."
   ],
-  "retrieved_clause_ids": []
+  "flags": [],
+  "warnings": [],
+  "findings": {
+   "initial_waiting_days": 30,
+   "initial_wait_clause": "5.1.3",
+   "is_specified": true,
+   "spec_clause": "5.1.2",
+   "is_pre_existing": false,
+   "ped_clause": "5.1.1",
+   "ped_def_clause": "2.1.35",
+   "room_cap_clause": null,
+   "room_modification_copay_pct": null,
+   "room_mod_clause": null,
+   "copay_clause": null,
+   "non_payable_clause": null,
+   "sum_insured_clause": "2.2.5/4",
+   "coverage_clause": "4.1.2",
+   "reasoning": "Total knee replacement is explicitly listed under the specified diseases and procedures waiting period clause 5.1.2. The initial waiting period for illnesses is defined as 30 days under clause 5.1.3."
+  },
+  "retrieved_clause_ids": [
+   "2.1.16",
+   "2.1.35",
+   "2.1.41",
+   "2.2.1",
+   "2.2.5/3",
+   "2.2.5/4",
+   "4.1.19.2",
+   "4.1.19.3",
+   "4.1.2",
+   "4.1.20.1.1",
+   "4.1.21.1",
+   "4.1.3",
+   "5.1.1",
+   "5.1.10",
+   "5.1.2",
+   "5.1.3",
+   "5.2.1",
+   "6.1.1",
+   "6.2.4"
+  ],
+  "dropped_citations": [],
+  "_sig": "6eeb97de1ea9"
  },
  "C005_niva_partial_room": {
   "decision": "partial",
@@ -213,7 +256,7 @@
    "non_payable_clause": "4.1.20.1.1",
    "sum_insured_clause": "2.2.5/4",
    "coverage_clause": "4.1.2",
-   "reasoning": "The policy specifies a 30-day initial waiting period for illnesses and defines pre-existing diseases and room rent modification rules. Since dengue fever is an acute illness occurring after more than 30 days of continuous coverage with no past history, standard hospitalization coverage applies subject to room modification co-payment."
+   "reasoning": "The policy imposes a 30-day initial waiting period for illnesses and defines pre-existing diseases and room rent modification rules. Dengue fever is an acute illness and does not appear on the specified list or pre-existing disease history."
   },
   "retrieved_clause_ids": [
    "2.1.15",
@@ -239,7 +282,8 @@
    "6.1.1",
    "6.2.4"
   ],
-  "dropped_citations": []
+  "dropped_citations": [],
+  "_sig": "7c52bc8ca3b6"
  },
  "C006_niva_partial_room": {
   "decision": "partial",
@@ -274,7 +318,7 @@
    "is_specified": false,
    "spec_clause": null,
    "is_pre_existing": false,
-   "ped_clause": null,
+   "ped_clause": "5.1.1",
    "ped_def_clause": "2.1.35",
    "room_cap_clause": "6.2.4",
    "room_modification_copay_pct": 15,
@@ -283,7 +327,7 @@
    "non_payable_clause": "4.1.20.1.1",
    "sum_insured_clause": "2.2.5/4",
    "coverage_clause": "4.1.2",
-   "reasoning": "The claim arises from an accidental fracture of the femur treated with ORIF, which occurred after the policy commencement date with no prior history, meaning initial waiting and pre-existing disease exclusions do not apply. Since a deluxe room was claimed while the eligible room is a standard single room, the room modification clause applies a 15% co-payment."
+   "reasoning": "The claim arises from an accidental fracture of the femur treated via ORIF, which occurred after the policy commencement date with no prior history of the condition. Since the admission is due to an accident, the 30-day initial waiting period does not apply, and the condition is not a pre-existing disease or a specified disease."
   },
   "retrieved_clause_ids": [
    "2.1.16",
@@ -311,20 +355,71 @@
    "6.2.4",
    "6.2.9"
   ],
-  "dropped_citations": []
+  "dropped_citations": [],
+  "_sig": "51a2ce3b2d79"
  },
  "C007_niva_partial_nonpayable": {
-  "decision": "needs_review",
-  "payable_amount": null,
-  "deductions": [],
-  "cited_clause_ids": [],
-  "flags": [
-   "missing_fields:ped_waiting_months,specified_waiting_months"
+  "decision": "partial",
+  "payable_amount": 221700.0,
+  "deductions": [
+   {
+    "rule": "non_payable",
+    "amount": 3450.0,
+    "clause_id": "4.1.20.1.1",
+    "note": "consumable"
+   }
+  ],
+  "cited_clause_ids": [
+   "4.1.20.1.1",
+   "4.1.2"
   ],
   "reasons": [
-   "Fields needed for adjudication could not be read: ped_waiting_months, specified_waiting_months."
+   "Payable amount reduced by: non_payable."
   ],
-  "retrieved_clause_ids": []
+  "flags": [],
+  "warnings": [],
+  "findings": {
+   "initial_waiting_days": 30,
+   "initial_wait_clause": "5.1.3",
+   "is_specified": false,
+   "spec_clause": null,
+   "is_pre_existing": false,
+   "ped_clause": "5.1.1",
+   "ped_def_clause": "2.1.35",
+   "room_cap_clause": "6.2.4",
+   "room_modification_copay_pct": null,
+   "room_mod_clause": null,
+   "copay_clause": null,
+   "non_payable_clause": "4.1.20.1.1",
+   "sum_insured_clause": "2.2.5/4",
+   "coverage_clause": "4.1.2",
+   "reasoning": "The claim arises from an accident resulting in a femur fracture, which is exempt from the 30-day initial waiting period and does not involve any pre-existing conditions. Since the claimed room matches the eligible room category, no room modification co-payment applies."
+  },
+  "retrieved_clause_ids": [
+   "2.1.16",
+   "2.1.35",
+   "2.1.41",
+   "2.2.1",
+   "2.2.5/3",
+   "2.2.5/4",
+   "4.1.19.1",
+   "4.1.19.2",
+   "4.1.19.3",
+   "4.1.2",
+   "4.1.20.1.1",
+   "4.1.21.1",
+   "4.1.3",
+   "5.1.1",
+   "5.1.10",
+   "5.1.2",
+   "5.1.3",
+   "5.2.1",
+   "6.1.1",
+   "6.2.4",
+   "6.2.9"
+  ],
+  "dropped_citations": [],
+  "_sig": "000a25566e7f"
  },
  "C008_niva_partial_si_cap": {
   "decision": "partial",
@@ -333,7 +428,7 @@
    {
     "rule": "non_payable",
     "amount": 3950.0,
-    "clause_id": null,
+    "clause_id": "4.1.20.1.1",
     "note": "consumable"
    },
    {
@@ -344,6 +439,7 @@
    }
   ],
   "cited_clause_ids": [
+   "4.1.20.1.1",
    "2.2.1",
    "4.1.2"
   ],
@@ -364,10 +460,10 @@
    "room_modification_copay_pct": null,
    "room_mod_clause": null,
    "copay_clause": null,
-   "non_payable_clause": null,
+   "non_payable_clause": "4.1.20.1.1",
    "sum_insured_clause": "2.2.1",
    "coverage_clause": "4.1.2",
-   "reasoning": "The policy specifies a 30-day initial waiting period and a separate waiting period for specified procedures like joint replacement under clause 5.1.2. The claimant has no prior history, and hospitalization expenses for treatment are covered subject to the base sum insured and terms."
+   "reasoning": "The policy outlines standard initial and specified disease waiting periods, where joint replacement is explicitly listed under the specified procedures. The claimant has no reported past medical history related to the condition, meaning pre-existing disease clauses do not apply."
   },
   "retrieved_clause_ids": [
    "2.1.16",
@@ -390,7 +486,8 @@
    "6.1.1",
    "6.2.4"
   ],
-  "dropped_citations": []
+  "dropped_citations": [],
+  "_sig": "96873eda28c0"
  },
  "C009_niva_reject_specified": {
   "decision": "reject",
@@ -419,7 +516,7 @@
    "non_payable_clause": "4.1.20.1.1",
    "sum_insured_clause": "2.2.1",
    "coverage_clause": "4.1.2",
-   "reasoning": "The claimant underwent a laparoscopic cholecystectomy for gallstones, which falls under the specified procedure list for stones in the biliary system under clause 5.1.2. The policy has a 30-day initial waiting period and standard provisions for pre-existing diseases, room rent, and coverage."
+   "reasoning": "The claimant underwent a laparoscopic cholecystectomy for gallstones, which falls under stones in the biliary system and is therefore a specified disease subject to the specified disease waiting period. Since the policy has been active for more than 30 days and more than a year, initial waiting and specific waiting periods are satisfied, and there is no history of pre-existing disease."
   },
   "retrieved_clause_ids": [
    "2.1.16",
@@ -443,33 +540,116 @@
    "6.1.1",
    "6.2.4"
   ],
-  "dropped_citations": []
+  "dropped_citations": [],
+  "_sig": "7f860e4b7c31"
  },
  "C010_niva_reject_specified": {
-  "decision": "needs_review",
-  "payable_amount": null,
+  "decision": "reject",
+  "payable_amount": 0.0,
   "deductions": [],
-  "cited_clause_ids": [],
-  "flags": [
-   "missing_fields:ped_waiting_months,specified_waiting_months"
+  "cited_clause_ids": [
+   "5.1.2"
   ],
   "reasons": [
-   "Fields needed for adjudication could not be read: ped_waiting_months, specified_waiting_months."
+   "8 months of continuous coverage is below the 12-month waiting period that applies."
   ],
-  "retrieved_clause_ids": []
+  "flags": [],
+  "warnings": [],
+  "findings": {
+   "initial_waiting_days": 30,
+   "initial_wait_clause": "5.1.3",
+   "is_specified": true,
+   "spec_clause": "5.1.2",
+   "is_pre_existing": false,
+   "ped_clause": "5.1.1",
+   "ped_def_clause": "2.1.35",
+   "room_cap_clause": null,
+   "room_modification_copay_pct": null,
+   "room_mod_clause": null,
+   "copay_clause": null,
+   "non_payable_clause": "4.1.20.1.1",
+   "sum_insured_clause": "2.2.1",
+   "coverage_clause": "4.1.2",
+   "reasoning": "The claimant is hospitalized for cataract surgery, which is explicitly listed as a specified disease or procedure with a waiting period under clause 5.1.2. The policy also outlines general waiting periods, pre-existing disease definitions, and hospitalization coverage terms in the respective clauses."
+  },
+  "retrieved_clause_ids": [
+   "2.1.16",
+   "2.1.35",
+   "2.1.41",
+   "2.1.42",
+   "2.2.1",
+   "2.2.5/3",
+   "2.2.5/4",
+   "4.1.2",
+   "4.1.20.1.1",
+   "4.1.21.1",
+   "4.1.3",
+   "5.1.1",
+   "5.1.10",
+   "5.1.2",
+   "5.1.3",
+   "5.1.6",
+   "5.1.7",
+   "5.2.1",
+   "6.1.1",
+   "6.2.4"
+  ],
+  "dropped_citations": [],
+  "_sig": "45574339636d"
  },
  "C011_niva_reject_30day": {
-  "decision": "needs_review",
-  "payable_amount": null,
+  "decision": "reject",
+  "payable_amount": 0.0,
   "deductions": [],
-  "cited_clause_ids": [],
-  "flags": [
-   "total_mismatch"
+  "cited_clause_ids": [
+   "5.1.3"
   ],
   "reasons": [
-   "bill line items add up to 103750 but the bill total is 106800"
+   "Admission 15 days after policy start falls in the 30-day initial waiting period."
   ],
-  "retrieved_clause_ids": []
+  "flags": [],
+  "warnings": [],
+  "findings": {
+   "initial_waiting_days": 30,
+   "initial_wait_clause": "5.1.3",
+   "is_specified": false,
+   "spec_clause": null,
+   "is_pre_existing": false,
+   "ped_clause": "5.1.1",
+   "ped_def_clause": "2.1.35",
+   "room_cap_clause": "6.2.4",
+   "room_modification_copay_pct": null,
+   "room_mod_clause": null,
+   "copay_clause": null,
+   "non_payable_clause": "4.1.20.1.1",
+   "sum_insured_clause": "2.2.5/4",
+   "coverage_clause": "4.1.2",
+   "reasoning": "The policy mandates a 30-day waiting period for illnesses under clause 5.1.3, and since the admission occurred within this window from the policy start date, it is evaluated accordingly. Acute appendicitis does not appear in the specified diseases list or the claimant's past medical history."
+  },
+  "retrieved_clause_ids": [
+   "2.1.15",
+   "2.1.16",
+   "2.1.19",
+   "2.1.35",
+   "2.1.41",
+   "2.1.42",
+   "2.2.1",
+   "2.2.5/3",
+   "2.2.5/4",
+   "4.1.2",
+   "4.1.20.1.1",
+   "4.1.21.1",
+   "4.1.3",
+   "5.1.1",
+   "5.1.10",
+   "5.1.2",
+   "5.1.3",
+   "5.2.1",
+   "6.1.1",
+   "6.2.4"
+  ],
+  "dropped_citations": [],
+  "_sig": "b1ca2cbede98"
  },
  "C012_niva_reject_ped": {
   "decision": "reject",
@@ -497,9 +677,9 @@
    "room_mod_clause": null,
    "copay_clause": null,
    "non_payable_clause": "4.1.20.1.1",
-   "sum_insured_clause": "2.2.5/4",
+   "sum_insured_clause": "2.2.1",
    "coverage_clause": "4.1.2",
-   "reasoning": "The policy specifies a 30-day initial waiting period for illnesses and applies a pre-existing disease waiting period to conditions diagnosed or treated within 36 months prior to commencement. Since the patient is a known case of diabetic foot infection with history dating back to June 2024 and the policy started in December 2025, it qualifies as a pre-existing disease."
+   "reasoning": "The claimant has a known history of diabetic foot infection diagnosed within 36 months prior to policy inception, making it a pre-existing condition. Since the admission occurs within the waiting periods, specific provisions apply to pre-existing conditions and initial waiting periods."
   },
   "retrieved_clause_ids": [
    "2.1.16",
@@ -524,7 +704,8 @@
    "6.2.4",
    "6.2.9"
   ],
-  "dropped_citations": []
+  "dropped_citations": [],
+  "_sig": "99dba5066f33"
  },
  "C013_niva_multi_hop": {
   "decision": "reject",
@@ -553,9 +734,9 @@
    "room_mod_clause": null,
    "copay_clause": null,
    "non_payable_clause": "4.1.20.1.1",
-   "sum_insured_clause": "2.2.1",
+   "sum_insured_clause": "2.2.5/4",
    "coverage_clause": "4.1.2",
-   "reasoning": "The claimant's total knee replacement falls under the specified diseases/procedures waiting period list and matches the pre-existing disease definition due to diagnosis within 36 months prior to policy inception. All relevant waiting period, coverage, and claim administration clauses have been identified from the policy wording."
+   "reasoning": "The claimant's medical history shows a total knee replacement diagnosed within 36 months of policy inception, qualifying it as a pre-existing condition under clause 2.1.35 and subject to the waiting period in clause 5.1.1. Additionally, joint replacement is explicitly listed under the specified diseases and procedures waiting period in clause 5.1.2."
   },
   "retrieved_clause_ids": [
    "2.1.16",
@@ -578,7 +759,8 @@
    "6.1.1",
    "6.2.4"
   ],
-  "dropped_citations": []
+  "dropped_citations": [],
+  "_sig": "dc4f41f65ed6"
  },
  "C014_niva_missing_docs": {
   "decision": "needs_review",
@@ -586,16 +768,13 @@
   "deductions": [],
   "cited_clause_ids": [],
   "flags": [
-   "missing_documents:discharge_summary",
-   "total_mismatch",
-   "missing_fields:ped_waiting_months,specified_waiting_months"
+   "missing_documents:discharge_summary"
   ],
   "reasons": [
-   "Required documents not submitted: discharge_summary.",
-   "bill line items add up to 231750 but the bill total is 236350",
-   "Fields needed for adjudication could not be read: ped_waiting_months, specified_waiting_months."
+   "Required documents not submitted: discharge_summary."
   ],
-  "retrieved_clause_ids": []
+  "retrieved_clause_ids": [],
+  "_sig": "34702fc6b8c8"
  },
  "C015_niva_total_mismatch": {
   "decision": "needs_review",
@@ -603,14 +782,13 @@
   "deductions": [],
   "cited_clause_ids": [],
   "flags": [
-   "total_mismatch",
-   "missing_fields:ped_waiting_months,specified_waiting_months"
+   "total_mismatch"
   ],
   "reasons": [
-   "bill line items add up to 74900 but the bill total is 75900",
-   "Fields needed for adjudication could not be read: ped_waiting_months, specified_waiting_months."
+   "bill line items add up to 74900 but the bill total is 75900"
   ],
-  "retrieved_clause_ids": []
+  "retrieved_clause_ids": [],
+  "_sig": "fae58693dbce"
  },
  "C016_hdfc_clean_approve": {
   "decision": "approve",
@@ -639,7 +817,7 @@
    "non_payable_clause": "Section C",
    "sum_insured_clause": "Def.29",
    "coverage_clause": "1.1.1",
-   "reasoning": "The policy specifies a 30-day waiting period for illnesses with an explicit exception for claims arising due to an accident, which applies here. Furthermore, since the treatment is for a fracture caused by a road accident, standard hospitalization coverage applies without being barred by pre-existing or specified disease waiting periods."
+   "reasoning": "The claim involves treatment for a femur fracture due to a road traffic accident, which is exempt from standard waiting periods and pre-existing disease exclusions as it arose from an accident. The policy defines relevant waiting periods, room rent proportionate deductions, and non-payable items under the cited clauses."
   },
   "retrieved_clause_ids": [
    "1.1.1",
@@ -660,14 +838,15 @@
    "Def.8",
    "Section C"
   ],
-  "dropped_citations": []
+  "dropped_citations": [],
+  "_sig": "00507c5e7bc3"
  },
  "C017_hdfc_clean_approve": {
   "decision": "approve",
   "payable_amount": 65550.0,
   "deductions": [],
   "cited_clause_ids": [
-   "1.4"
+   "1.1.1"
   ],
   "reasons": [
    "No waiting-period exclusion applies."
@@ -688,8 +867,8 @@
    "copay_clause": null,
    "non_payable_clause": "Section C",
    "sum_insured_clause": "Def.29",
-   "coverage_clause": "1.4",
-   "reasoning": "The policy outlines standard initial and specified disease waiting periods, including cataract under specified surgeries, while the claimant has no prior medical history. Room rent limitations and non-medical expenses are appropriately defined within the policy clauses."
+   "coverage_clause": "1.1.1",
+   "reasoning": "The policy specifies a 30-day initial waiting period for illnesses and a 24-month waiting period for specified diseases, which includes cataract. Since the policy has been active for over two years and there is no history of pre-existing conditions, the claim is admissible subject to standard terms."
   },
   "retrieved_clause_ids": [
    "1.1.1",
@@ -710,7 +889,8 @@
    "Def.8",
    "Section C"
   ],
-  "dropped_citations": []
+  "dropped_citations": [],
+  "_sig": "1e471519b119"
  },
  "C018_hdfc_clean_approve": {
   "decision": "approve",
@@ -739,7 +919,7 @@
    "non_payable_clause": "Section C",
    "sum_insured_clause": "Def.29",
    "coverage_clause": "1.6",
-   "reasoning": "The policy imposes a 30-day initial waiting period for illnesses and defines pre-existing conditions based on medical history within 36 months. Pneumonia is an acute illness not listed under the policy's specified diseases/procedures waiting period list."
+   "reasoning": "The policy imposes a 30-day waiting period for illnesses and defines pre-existing diseases, but pneumonia is not listed among the specified diseases or present in the claimant's medical history. Therefore, the claim is evaluated under standard waiting period and coverage clauses without pre-existing disease or specified condition restrictions."
   },
   "retrieved_clause_ids": [
    "1.1.1",
@@ -761,7 +941,8 @@
    "Def.8",
    "Section C"
   ],
-  "dropped_citations": []
+  "dropped_citations": [],
+  "_sig": "cc310a70841d"
  },
  "C019_hdfc_approve_continuity": {
   "decision": "approve",
@@ -790,7 +971,7 @@
    "non_payable_clause": "2.3",
    "sum_insured_clause": "Def.29",
    "coverage_clause": "1.6",
-   "reasoning": "The policy specifies a 30-day initial waiting period and lists hernia under specified surgical procedures with a 24-month waiting period, though the insured has more than 12 months of continuous coverage. The claimant has no documented past history of the condition, so pre-existing disease clauses do not apply."
+   "reasoning": "The policy specifies a 30-day initial waiting period and includes hernia repair under its specified procedures with a 24-month waiting period, but the claimant has no pre-existing history for this condition. Furthermore, the policy outlines room rent proportionate deduction rules and defines non-medical expenses and sum insured limits."
   },
   "retrieved_clause_ids": [
    "1.1.1",
@@ -811,7 +992,8 @@
    "Def.8",
    "Section C"
   ],
-  "dropped_citations": []
+  "dropped_citations": [],
+  "_sig": "6a67d2b9f79b"
  },
  "C020_hdfc_partial_room": {
   "decision": "partial",
@@ -820,7 +1002,7 @@
    {
     "rule": "non_payable",
     "amount": 2200.0,
-    "clause_id": "Section C",
+    "clause_id": "2.3",
     "note": "consumable"
    },
    {
@@ -855,9 +1037,8 @@
    }
   ],
   "cited_clause_ids": [
-   "Section C",
-   "1.1.1",
-   "1.4"
+   "2.3",
+   "1.1.1"
   ],
   "reasons": [
    "Payable amount reduced by: non_payable, proportionate_deduction, room_rent_cap."
@@ -876,10 +1057,10 @@
    "room_modification_copay_pct": null,
    "room_mod_clause": null,
    "copay_clause": null,
-   "non_payable_clause": "Section C",
+   "non_payable_clause": "2.3",
    "sum_insured_clause": "Def.29",
-   "coverage_clause": "1.4",
-   "reasoning": "The claimant underwent an inguinal hernia repair, which is explicitly listed under the specified surgical procedures waiting period in the policy. Since the policy has been active for more than three years and the discharge summary indicates no prior history, pre-existing disease and initial waiting periods do not apply."
+   "coverage_clause": "1.1.1",
+   "reasoning": "The claimant underwent an inguinal hernia repair, which is listed as a specified surgical procedure subject to a specific waiting period under the policy. Since the policy has been active for more than 3 years and the discharge summary indicates no significant past medical history, pre-existing disease and initial waiting period restrictions do not apply."
   },
   "retrieved_clause_ids": [
    "1.1.1",
@@ -900,59 +1081,282 @@
    "Def.8",
    "Section C"
   ],
-  "dropped_citations": []
+  "dropped_citations": [],
+  "_sig": "3185cd2da287"
  },
  "C021_hdfc_partial_room": {
-  "decision": "needs_review",
-  "payable_amount": null,
-  "deductions": [],
-  "cited_clause_ids": [],
-  "flags": [
-   "missing_fields:specified_waiting_months"
+  "decision": "partial",
+  "payable_amount": 63347.26,
+  "deductions": [
+   {
+    "rule": "non_payable",
+    "amount": 3000.0,
+    "clause_id": "2.3",
+    "note": "consumable"
+   },
+   {
+    "rule": "room_rent_cap",
+    "amount": 6900.0,
+    "clause_id": "1.1.1",
+    "note": ""
+   },
+   {
+    "rule": "proportionate_deduction",
+    "amount": 1669.86,
+    "clause_id": "1.1.1",
+    "note": "investigation"
+   },
+   {
+    "rule": "proportionate_deduction",
+    "amount": 1559.59,
+    "clause_id": "1.1.1",
+    "note": "nursing"
+   },
+   {
+    "rule": "proportionate_deduction",
+    "amount": 4899.32,
+    "clause_id": "1.1.1",
+    "note": "ot"
+   },
+   {
+    "rule": "proportionate_deduction",
+    "amount": 10223.97,
+    "clause_id": "1.1.1",
+    "note": "surgeon"
+   }
+  ],
+  "cited_clause_ids": [
+   "2.3",
+   "1.1.1",
+   "1.4"
   ],
   "reasons": [
-   "Fields needed for adjudication could not be read: specified_waiting_months."
+   "Payable amount reduced by: non_payable, proportionate_deduction, room_rent_cap."
   ],
-  "retrieved_clause_ids": []
+  "flags": [],
+  "warnings": [],
+  "findings": {
+   "initial_waiting_days": 30,
+   "initial_wait_clause": "Section C",
+   "is_specified": false,
+   "spec_clause": null,
+   "is_pre_existing": false,
+   "ped_clause": "Section C",
+   "ped_def_clause": "Def.35",
+   "room_cap_clause": "1.1.1",
+   "room_modification_copay_pct": null,
+   "room_mod_clause": null,
+   "copay_clause": null,
+   "non_payable_clause": "2.3",
+   "sum_insured_clause": "Def.29",
+   "coverage_clause": "1.4",
+   "reasoning": "The policy specifies a 30-day initial waiting period for illnesses and a 24-month waiting period for specified conditions, but acute appendicitis is not listed under the specified diseases or pre-existing conditions. Room rent and associated medical expenses are subject to proportionate deductions if a higher room category is chosen than eligible."
+  },
+  "retrieved_clause_ids": [
+   "1.1.1",
+   "1.2",
+   "1.4",
+   "1.6",
+   "1.7",
+   "2.13/1",
+   "2.3",
+   "2.4",
+   "Def.11",
+   "Def.16",
+   "Def.17",
+   "Def.20",
+   "Def.29",
+   "Def.30",
+   "Def.35",
+   "Def.42",
+   "Def.5",
+   "Def.8",
+   "Section C"
+  ],
+  "dropped_citations": [],
+  "_sig": "6af25f286eb3"
  },
  "C022_hdfc_partial_nonpayable": {
-  "decision": "needs_review",
-  "payable_amount": null,
-  "deductions": [],
-  "cited_clause_ids": [],
-  "flags": [
-   "missing_fields:ped_waiting_months,specified_waiting_months"
+  "decision": "partial",
+  "payable_amount": 370650.0,
+  "deductions": [
+   {
+    "rule": "non_payable",
+    "amount": 3500.0,
+    "clause_id": "Section C",
+    "note": "consumable"
+   }
+  ],
+  "cited_clause_ids": [
+   "Section C",
+   "1.6"
   ],
   "reasons": [
-   "Fields needed for adjudication could not be read: ped_waiting_months, specified_waiting_months."
+   "Payable amount reduced by: non_payable."
   ],
-  "retrieved_clause_ids": []
+  "flags": [],
+  "warnings": [],
+  "findings": {
+   "initial_waiting_days": 30,
+   "initial_wait_clause": "Section C",
+   "is_specified": true,
+   "spec_clause": "Section C",
+   "is_pre_existing": false,
+   "ped_clause": "Section C",
+   "ped_def_clause": "Def.35",
+   "room_cap_clause": null,
+   "room_modification_copay_pct": null,
+   "room_mod_clause": null,
+   "copay_clause": null,
+   "non_payable_clause": "Section C",
+   "sum_insured_clause": "Def.29",
+   "coverage_clause": "1.6",
+   "reasoning": "The patient underwent a total knee replacement, which is classified as a joint replacement surgery under the specified procedures waiting period clause and has completed the initial and specific waiting periods since policy inception in 2023. Additionally, the discharge summary confirms no past medical or surgical history, rendering the pre-existing disease provisions inapplicable."
+  },
+  "retrieved_clause_ids": [
+   "1.1.1",
+   "1.2",
+   "1.4",
+   "1.6",
+   "1.7",
+   "2.12/2",
+   "2.13/1",
+   "2.3",
+   "2.4",
+   "2.8",
+   "Def.17",
+   "Def.29",
+   "Def.30",
+   "Def.35",
+   "Def.42",
+   "Def.5",
+   "Def.8",
+   "H:S. NO. ITEM",
+   "Section C"
+  ],
+  "dropped_citations": [
+   "room_cap_clause=1.1.2"
+  ],
+  "_sig": "db26d68cf40d"
  },
  "C023_hdfc_partial_si_cap": {
-  "decision": "needs_review",
-  "payable_amount": null,
-  "deductions": [],
-  "cited_clause_ids": [],
-  "flags": [
-   "missing_fields:specified_waiting_months"
+  "decision": "partial",
+  "payable_amount": 300000.0,
+  "deductions": [
+   {
+    "rule": "non_payable",
+    "amount": 4850.0,
+    "clause_id": "Section C",
+    "note": "consumable"
+   },
+   {
+    "rule": "sum_insured_cap",
+    "amount": 53750.0,
+    "clause_id": "Def.29",
+    "note": ""
+   }
+  ],
+  "cited_clause_ids": [
+   "Section C",
+   "Def.29",
+   "1.6"
   ],
   "reasons": [
-   "Fields needed for adjudication could not be read: specified_waiting_months."
+   "Payable amount reduced by: non_payable, sum_insured_cap."
   ],
-  "retrieved_clause_ids": []
+  "flags": [],
+  "warnings": [],
+  "findings": {
+   "initial_waiting_days": 30,
+   "initial_wait_clause": "Section C",
+   "is_specified": true,
+   "spec_clause": "Section C",
+   "is_pre_existing": false,
+   "ped_clause": "Section C",
+   "ped_def_clause": "Def.35",
+   "room_cap_clause": "1.1.1",
+   "room_modification_copay_pct": null,
+   "room_mod_clause": null,
+   "copay_clause": null,
+   "non_payable_clause": "Section C",
+   "sum_insured_clause": "Def.29",
+   "coverage_clause": "1.6",
+   "reasoning": "The total knee replacement is an illness-related procedure classified under joint replacement surgeries, which are subject to a specified disease waiting period. The policy's initial waiting period, pre-existing disease definition, and other standard coverage clauses are also applicable based on the provided text."
+  },
+  "retrieved_clause_ids": [
+   "1.1.1",
+   "1.2",
+   "1.4",
+   "1.6",
+   "1.7",
+   "2.12/2",
+   "2.13/1",
+   "2.3",
+   "2.4",
+   "2.8",
+   "Def.17",
+   "Def.29",
+   "Def.30",
+   "Def.35",
+   "Def.42",
+   "Def.5",
+   "Def.8",
+   "H:S. NO. ITEM",
+   "Section C"
+  ],
+  "dropped_citations": [],
+  "_sig": "e37864ec8a22"
  },
  "C024_hdfc_reject_specified": {
-  "decision": "needs_review",
-  "payable_amount": null,
+  "decision": "reject",
+  "payable_amount": 0.0,
   "deductions": [],
-  "cited_clause_ids": [],
-  "flags": [
-   "missing_fields:ped_waiting_months,specified_waiting_months"
+  "cited_clause_ids": [
+   "Section C"
   ],
   "reasons": [
-   "Fields needed for adjudication could not be read: ped_waiting_months, specified_waiting_months."
+   "20 months of continuous coverage is below the 24-month waiting period that applies."
   ],
-  "retrieved_clause_ids": []
+  "flags": [],
+  "warnings": [],
+  "findings": {
+   "initial_waiting_days": 30,
+   "initial_wait_clause": "Section C",
+   "is_specified": true,
+   "spec_clause": "Section C",
+   "is_pre_existing": false,
+   "ped_clause": "Section C",
+   "ped_def_clause": "Def.35",
+   "room_cap_clause": "1.1.1",
+   "room_modification_copay_pct": null,
+   "room_mod_clause": null,
+   "copay_clause": null,
+   "non_payable_clause": "Section C",
+   "sum_insured_clause": "Def.29",
+   "coverage_clause": "1.1.1",
+   "reasoning": "The policy lists cataract under its specified diseases and procedures waiting period provisions, but the claimant has no prior medical history of the condition. Furthermore, the admission date falls well after the initial and specified waiting periods from the policy start date, making the hospitalization admissible."
+  },
+  "retrieved_clause_ids": [
+   "1.1.1",
+   "1.2",
+   "1.4",
+   "1.6",
+   "1.7",
+   "2.13/1",
+   "2.3",
+   "2.4",
+   "Def.13",
+   "Def.17",
+   "Def.29",
+   "Def.30",
+   "Def.35",
+   "Def.42",
+   "Def.5",
+   "Def.8",
+   "Section C"
+  ],
+  "dropped_citations": [],
+  "_sig": "7ae9cd2561db"
  },
  "C025_hdfc_reject_specified": {
   "decision": "reject",
@@ -981,7 +1385,7 @@
    "non_payable_clause": "Section C",
    "sum_insured_clause": "Def.29",
    "coverage_clause": "1.6",
-   "reasoning": "The policy lists cholecystectomy and diseases of the gall bladder under its specified procedures and initial waiting period exclusions, but the claimant has been continuously covered for more than 12 months and has no prior medical history of the condition. Therefore, the claim is assessed against standard policy limits and definitions without pre-existing disease restrictions."
+   "reasoning": "The policy has a 30-day initial waiting period for illnesses and a specific 24-month waiting period for listed surgeries such as cholecystectomy and gallbladder diseases. The claimant has no prior medical history, and standard room rent and non-payable expense provisions apply as per the policy terms."
   },
   "retrieved_clause_ids": [
    "1.1.1",
@@ -1002,7 +1406,8 @@
    "Def.8",
    "Section C"
   ],
-  "dropped_citations": []
+  "dropped_citations": [],
+  "_sig": "0db62d3b0e50"
  },
  "C026_hdfc_reject_30day": {
   "decision": "reject",
@@ -1028,10 +1433,10 @@
    "room_modification_copay_pct": null,
    "room_mod_clause": null,
    "copay_clause": null,
-   "non_payable_clause": "2.3",
+   "non_payable_clause": "Section C",
    "sum_insured_clause": "Def.29",
    "coverage_clause": "1.6",
-   "reasoning": "The policy specifies a 30-day waiting period for illnesses and defines pre-existing diseases under the relevant clauses. Acute appendicitis and appendectomy are not listed among the policy's specified diseases or procedures, and there is no recorded prior medical history."
+   "reasoning": "The policy imposes a 30-day waiting period for illnesses and defines pre-existing diseases and sum insured limits. Acute appendicitis and appendectomy are not listed among the specified diseases or procedures subject to a 24-month waiting period."
   },
   "retrieved_clause_ids": [
    "1.1.1",
@@ -1052,7 +1457,8 @@
    "Def.8",
    "Section C"
   ],
-  "dropped_citations": []
+  "dropped_citations": [],
+  "_sig": "d975f8d6f882"
  },
  "C027_hdfc_reject_ped": {
   "decision": "reject",
@@ -1081,8 +1487,8 @@
    "copay_clause": null,
    "non_payable_clause": "Section C",
    "sum_insured_clause": "Def.29",
-   "coverage_clause": "1.6",
-   "reasoning": "The claimant has a pre-existing diabetic foot infection diagnosed more than 36 months before policy inception, making the pre-existing disease clause applicable. The room rent limit and proportionate deduction clause apply since the eligible and claimed rooms are specified under the policy terms."
+   "coverage_clause": null,
+   "reasoning": "The claimant has a pre-existing diabetic foot infection diagnosed within 36 months of policy inception, making the pre-existing disease waiting period and definition clauses applicable. Additionally, general illness waiting periods, room rent proportionate deductions, non-payable items, and sum insured definitions are identified from the policy wording."
   },
   "retrieved_clause_ids": [
    "1.1.1",
@@ -1106,7 +1512,8 @@
    "H:S. NO. ITEM",
    "Section C"
   ],
-  "dropped_citations": []
+  "dropped_citations": [],
+  "_sig": "d9d48a44fb7b"
  },
  "C028_hdfc_multi_hop": {
   "decision": "reject",
@@ -1134,9 +1541,9 @@
    "room_mod_clause": null,
    "copay_clause": null,
    "non_payable_clause": "Section C",
-   "sum_insured_clause": "Def.8",
-   "coverage_clause": "1.4",
-   "reasoning": "Joint replacement surgeries are explicitly included in the policy's specified disease/procedure waiting period list under Section C. Additionally, since the condition was diagnosed prior to policy inception and falls within the pre-existing disease definition, it is evaluated under the pre-existing disease waiting period clauses."
+   "sum_insured_clause": "Def.29",
+   "coverage_clause": "1.6",
+   "reasoning": "The claimant underwent a total knee replacement, which is explicitly listed as a specified surgical procedure subject to a waiting period under the policy. Additionally, because the condition was diagnosed prior to the policy inception and falls within the pre-existing disease definition, relevant waiting periods and pre-existing disease clauses apply."
   },
   "retrieved_clause_ids": [
    "1.1.1",
@@ -1159,7 +1566,8 @@
    "H:S. NO. ITEM",
    "Section C"
   ],
-  "dropped_citations": []
+  "dropped_citations": [],
+  "_sig": "b7c5e1df9229"
  },
  "C029_hdfc_missing_docs": {
   "decision": "needs_review",
@@ -1172,7 +1580,8 @@
   "reasons": [
    "Required documents not submitted: discharge_summary."
   ],
-  "retrieved_clause_ids": []
+  "retrieved_clause_ids": [],
+  "_sig": "0b43e9ea9713"
  },
  "C030_hdfc_total_mismatch": {
   "decision": "needs_review",
@@ -1180,13 +1589,12 @@
   "deductions": [],
   "cited_clause_ids": [],
   "flags": [
-   "total_mismatch",
-   "missing_fields:ped_waiting_months,specified_waiting_months"
+   "total_mismatch"
   ],
   "reasons": [
-   "bill line items add up to 61000 but the bill total is 64700",
-   "Fields needed for adjudication could not be read: ped_waiting_months, specified_waiting_months."
+   "bill line items add up to 61000 but the bill total is 64700"
   ],
-  "retrieved_clause_ids": []
+  "retrieved_clause_ids": [],
+  "_sig": "82ac5df59ddf"
  }
 }

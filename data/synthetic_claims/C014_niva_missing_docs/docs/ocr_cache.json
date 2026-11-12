@@ -1,0 +1,35 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nNB3847586742\nProduct\nReAssure (Aspire)\nPolicy start date\n21/07/2025\nSum insured (Rs.)\n3,00,000\nName of patient\nWatika Wali\nAge / Sex\n35 years / M\nContact number\n9288651703\nHospital name\nSanjivani Hospital and Research Centre, Pune\nDate of admission\n21/08/2025\nDate of discharge\n25/08/2025\nDiagnosis / ailment\nfracture of femur, ORIF (road accident)\nNature of illness\nAccident / injury\nRoom category occupied\nstandard single\nTotal amount claimed (Rs.)\n2,36,350\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 25/08/2025\n",
+  "method": "text_layer"
+ },
+ "hospital_bill": {
+  "text": "Sanjivani Hospital and Research Centre\nPune |Final Inpatient Bill\nBill no BL/2025/12957 UHID UH621795\nPatient Watika Wali Age/Sex 35/M\nAdmitted 21/08/2025 Discharged 25/08/2025\nConsultant Dr.P.Deshmukh Room standard single\nAmount(Rs.)\nltem 20,000\nRoom charges(standard single) (4x5.000\uff09 79,550\nSurgeon and anaesthetist fees 29,150\nOperation theatre charges 6,000\nLaboratory and radiology Investigations 11,450\nNursing charges 13,450\nPharmacy andmedicines 72,150\nImplant/prosthesis 4,600\nDisposable consumables and admission kit 2,36,350\nNet payable\nSyohetie tegt ocmngeted tor sfte",
+  "method": "ocr"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nWatika Wali\nAge / Gender\n35 / M\nID number\nXXXX XXXX 7897\nMobile\n9288651703\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Sanjivani Hospital and Research Centre Pathology\nPatient:WatikaWali|Date:21/08/2025\nTest Result Reference\nHaemoglobin 13.1g/dL 12.0-16.0\nWBCcount 7,400/cmm 4,000-11,000\nBloodsugar(random) 104mg/dL 70-140\nSerum creatinine 0.9mg/dL 0.6-1.2\nSynthetic test docunent generated torsoftware evaluationNota real recor. Page1",
+  "method": "ocr"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nPolicy Schedule\nPolicy number\nNB3847586742\nInsurer\nNiva Bupa Health Insurance\nProduct\nReAssure (Aspire)\nInsured person\nWatika Wali, 35 years, M\nPolicy start date\n21/07/2025\nSum insured (Rs.)\n3,00,000\nWaiting period, pre-existing diseases\n12 months\nWaiting period, specified diseases/procedures\n12 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Dr.P.Deshmukh\nSanjivani Hospital and ResearchCentre\nPatient:WatikaWali,35/MDate:21/08/2025\nDiagnosis:fracture of femur,ORiF(road accident)\nRx:Tab.Paracetamol500 mg1-0-1x3 days;Cap.Pantoprazole 40mg1-0-0x5days\nSynthetic testdocument.generated fpr solwrare valuation,Notareal ecord Paget",
+  "method": "ocr"
+ },
+ "_files": {
+  "claim_form.pdf": 2929,
+  "hospital_bill.pdf": 166777,
+  "id_proof.pdf": 2011,
+  "lab_report.pdf": 149200,
+  "policy_schedule.pdf": 2475,
+  "prescription.pdf": 185819,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

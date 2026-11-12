@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nHD4793508062\nProduct\nOptima Secure\nPolicy start date\n07/10/2022\nSum insured (Rs.)\n5,00,000\nName of patient\nLibni Palan\nAge / Sex\n59 years / M\nContact number\n9115720382\nHospital name\nHarmony Medical Centre, Jaipur\nDate of admission\n07/02/2025\nDate of discharge\n11/02/2025\nDiagnosis / ailment\ntotal knee replacement\nNature of illness\nIllness\nRoom category occupied\nstandard single\nTotal amount claimed (Rs.)\n3,61,600\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 11/02/2025\n",
+  "method": "text_layer"
+ },
+ "discharge_summary": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHarmony Medical Centre\nDischarge Summary\nPatient\nLibni Palan, 59 years, M\nUHID\nUH321313\nDate of admission\n07/02/2025\nDate of discharge\n11/02/2025\nLength of stay\n4 day(s)\nConsultant\nDr. A. Kulkarni\nFinal diagnosis\ntotal knee replacement\nHistory\nKnown case of total knee replacement, diagnosed on 07/04/2021, on regular treatment.\nCourse in hospital\nThe patient was admitted with complaints related to total knee replacement. Investigations were done and treatment\nwas given as per protocol. The post-treatment period was uneventful and the patient was discharged in stable\ncondition on 11/02/2025.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. A. Kulkarni (Treating consultant)\n",
+  "method": "text_layer"
+ },
+ "hospital_bill": {
+  "text": "Harmony Medical Centre\nJaipur| Final Inpatient Bill\nBill no BL/2025/58737 UHID UH321313\nPatient Libni Palan Age/Sex 59/M\nAdmitted 07/02/2025 Discharged 11/02/2025\nConsultant Dr.A.Kulkarni Room standard single\nSI Description Qty Rate Amount\n1 Room charges (standard single) 4 5,500 22,000\n2 Surgeon and anaesthetist fees 1 76.550 76,550\n3 Operation theatre charges 27,850 27,850\n4 Laboratory andradiology investigations 1 11,300 11,300\n5 Nursing charges 17,500 17,500\n6 Pharmacy and medicines 1 16,600 16,600\n7 Implant/prosthesis 1 1.85,500 1,85,500\n8 Disposable consumables and admissionkit 4.300 4,300\nTOTAL 3,61,600\nSymthetic lest document generated for sofware evaluation. Nota real record Page1",
+  "method": "ocr"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nLibni Palan\nAge / Gender\n59 / M\nID number\nXXXX XXXX 5881\nMobile\n9115720382\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Harmony Medical Centre Pathology\nPatient:Libni Palan|Date:07/02/2025\nTest Result Reference\nHaemoglobin 13.1g/dL 12.0-16.0\nWBCcount 7.400/cmm 4,000-11,000\nBlood sugar(random) 104mg/dL 70-140\nSerum creatinine 0.9mg/dL 0.6-1.2\nrlfEicbe oware evafiation Not a neairecord",
+  "method": "ocr"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nPolicy Schedule\nPolicy number\nHD4793508062\nInsurer\nHDFC ERGO General Insurance\nProduct\nOptima Secure\nInsured person\nLibni Palan, 59 years, M\nPolicy start date\n07/10/2022\nSum insured (Rs.)\n5,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. A. Kulkarni\nHarmony Medical Centre\nPatient: Libni Palan, 59/M Date: 07/02/2025\nDiagnosis: total knee replacement\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 2903,
+  "discharge_summary.pdf": 2639,
+  "hospital_bill.pdf": 190521,
+  "id_proof.pdf": 2009,
+  "lab_report.pdf": 113722,
+  "policy_schedule.pdf": 2477,
+  "prescription.pdf": 1941,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

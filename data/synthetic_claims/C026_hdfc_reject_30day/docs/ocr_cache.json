@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nHD7686619319\nProduct\nOptima Secure\nPolicy start date\n03/08/2025\nSum insured (Rs.)\n10,00,000\nName of patient\nUrvi Bhattacharyya\nAge / Sex\n43 years / F\nContact number\n9355571348\nHospital name\nMetro Heart and General Hospital, Indore\nDate of admission\n16/08/2025\nDate of discharge\n19/08/2025\nDiagnosis / ailment\nacute appendicitis, appendectomy\nNature of illness\nIllness\nRoom category occupied\nstandard single\nTotal amount claimed (Rs.)\n93,250\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 19/08/2025\n",
+  "method": "text_layer"
+ },
+ "discharge_summary": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nMetro Heart and General Hospital\nDischarge Summary\nPatient\nUrvi Bhattacharyya, 43 years, F\nUHID\nUH748633\nDate of admission\n16/08/2025\nDate of discharge\n19/08/2025\nLength of stay\n3 day(s)\nConsultant\nDr. A. Kulkarni\nFinal diagnosis\nacute appendicitis, appendectomy\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to acute appendicitis, appendectomy. Investigations were done and\ntreatment was given as per protocol. The post-treatment period was uneventful and the patient was discharged in\nstable condition on 19/08/2025.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. A. Kulkarni (Treating consultant)\n",
+  "method": "text_layer"
+ },
+ "hospital_bill": {
+  "text": "MetroHeart and General Hospital\nIndore|Final InpatientBill\nBill no BL/2025/40896 UHID UH748633\nPatient Urvi Bhattacharyya Age/Sex 43/F\nAdmitted 16/08/2025 Discharged 19/08/2025\nConsultant Dr.A.Kulkarni Room standard single\nItem Amount(Rs.)\nRoom charges (standard single)(3x4,900) 14,700\nSurgeon and anaesthetist fees 36,800\nOperation theatre charges 16,400\nLaboratory and radiology investigations 8,700\nNursing charges 5,050\nPharmacy andmedicines 8,800\nDisposable consumables and admission kit 2,800\nNet payable 93,250\nSynthetictest documentgenerated for sotware evaluation Nota real record Paget",
+  "method": "ocr"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nUrvi Bhattacharyya\nAge / Gender\n43 / F\nID number\nXXXX XXXX 3065\nMobile\n9355571348\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Metro Heart and General Hospital Pathology\nPatient:UrviBhattacharyya|Date:16/08/2025\nTest Result Reference\nHaemoglobin 13.1g/dL 12.0-16.0\nWBCcount 7,400/cmm 4,000-11,000\nBlood sugar(random) 104mg/dL 70-140\nSerum creatinine 0.9mg/dL 0.6-1.2\nSynthetic test document,generated tor software evaluationNotareai record Paget",
+  "method": "ocr"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nPolicy Schedule\nPolicy number\nHD7686619319\nInsurer\nHDFC ERGO General Insurance\nProduct\nOptima Secure\nInsured person\nUrvi Bhattacharyya, 43 years, F\nPolicy start date\n03/08/2025\nSum insured (Rs.)\n10,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. A. Kulkarni\nMetro Heart and General Hospital\nPatient: Urvi Bhattacharyya, 43/F Date: 16/08/2025\nDiagnosis: acute appendicitis, appendectomy\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 2906,
+  "discharge_summary.pdf": 2648,
+  "hospital_bill.pdf": 176505,
+  "id_proof.pdf": 2017,
+  "lab_report.pdf": 159795,
+  "policy_schedule.pdf": 2484,
+  "prescription.pdf": 1962,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

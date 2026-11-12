@@ -1,0 +1,35 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nHD9072184057\nProduct\nOptima Secure\nPolicy start date\n12/04/2023\nSum insured (Rs.)\n10,00,000\nName of patient\nTriya Pant\nAge / Sex\n32 years / M\nContact number\n9409837739\nHospital name\nMetro Heart and General Hospital, Indore\nDate of admission\n12/11/2025\nDate of discharge\n14/11/2025\nDiagnosis / ailment\nlaparoscopic cholecystectomy (gallstones)\nNature of illness\nIllness\nRoom category occupied\nstandard single\nTotal amount claimed (Rs.)\n1,01,150\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 14/11/2025\n",
+  "method": "text_layer"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nMetro Heart and General Hospital\nIndore | Final Inpatient Bill\nBill no\nBL/2025/45705\nUHID\nUH236494\nPatient\nTriya Pant\nAge / Sex\n32 / M\nAdmitted\n12/11/2025\nDischarged\n14/11/2025\nConsultant\nDr. A. Kulkarni\nRoom\nstandard single\nItem\nAmount (Rs.)\nRoom charges (standard single)  (2 x 5,700)\n11,400\nSurgeon and anaesthetist fees\n49,150\nOperation theatre charges\n21,350\nLaboratory and radiology investigations\n6,600\nNursing charges\n4,050\nPharmacy and medicines\n6,350\nDisposable consumables and admission kit\n2,250\nNet payable\n1,01,150\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Government of India (specimen ID card, synthetic)\nName Triya Pant\nAge/Gender 32/M\nIDnumber XXXXXXXX8441\nMobile 9409837739\nSytetic ttdocumnt,geraled for sowtn.oteacrd. Page1",
+  "method": "ocr"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nMetro Heart and General Hospital Pathology\nPatient: Triya Pant | Date: 12/11/2025\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nPolicy Schedule\nPolicy number\nHD9072184057\nInsurer\nHDFC ERGO General Insurance\nProduct\nOptima Secure\nInsured person\nTriya Pant, 32 years, M\nPolicy start date\n12/04/2023\nSum insured (Rs.)\n10,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Dr.A.Kulkarni\nMetroHeart andGeneral Hospital\nPatient:TrlyaPant,32/MDate:12/11/2025\nDiagnosis:laparoscopic cholecystectomy (gallstones)\nRx:Tab.Paracetamol500 mg 1-0-1x3days;Cap.Pantoprazole 40 mg 1-0-0x5days",
+  "method": "ocr"
+ },
+ "_files": {
+  "claim_form.pdf": 2920,
+  "hospital_bill.pdf": 2544,
+  "id_proof.pdf": 101022,
+  "lab_report.pdf": 2177,
+  "policy_schedule.pdf": 2473,
+  "prescription.pdf": 151547,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

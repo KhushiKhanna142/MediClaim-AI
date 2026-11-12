@@ -1,0 +1,15 @@
+category                          n   decision_acc  payable_exactpayable_err_pct   overpay_rate    cite_recall cite_precisioncite_unsupported
+approve_continuity                2           1.00           1.00           0.00           0.00           0.50           0.50           0.00
+clean_approve                     6           1.00           1.00           0.00           0.00           0.50           0.50           0.00
+missing_docs                      2           1.00            nan            nan           0.00            nan            nan            nan
+multi_hop                         2           1.00           1.00           0.00           0.00           1.00           1.00           0.00
+partial_nonpayable                2           1.00           1.00           0.00           0.00           0.50           0.50           0.00
+partial_room                      4           1.00           1.00           0.00           0.00           0.33           0.33           0.00
+partial_si_cap                    2           1.00           1.00           0.00           0.00           0.67           0.83           0.00
+reject_30day                      2           1.00           1.00           0.00           0.00           1.00           1.00           0.00
+reject_ped                        2           1.00           1.00           0.00           0.00           1.00           1.00           0.00
+reject_specified                  4           1.00           1.00           0.00           0.00           1.00           1.00           0.00
+total_mismatch                    2           1.00            nan            nan           0.00            nan            nan            nan
+ALL                              30           1.00           1.00           0.00           0.00           0.68           0.69           0.00
+workflow: 30 claims | escalated 6 | verifier failed 2 | re-read policy 5
+escalation reasons: {'verifier_failed': 2, 'validation:missing_documents:discharge_summary': 2, 'validation:total_mismatch': 2}

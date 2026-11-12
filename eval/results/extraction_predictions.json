@@ -302,16 +302,14 @@
   ],
   "sum_insured": 1000000,
   "policy_start": "2024-08-25",
-  "ped_waiting_months": 36,
-  "specified_waiting_months": null,
+  "ped_waiting_months": 12,
+  "specified_waiting_months": 12,
   "room_limit_per_day": null,
   "copay_pct": 0,
   "continuity_credit_months": 17,
   "room_type_modification": false,
   "eligible_room": "standard_single",
-  "vision_filled": [
-   "ped_waiting_months"
-  ]
+  "vision_filled": []
  },
  "C005_niva_partial_room": {
   "patient_name": "Omya Boase",
@@ -487,7 +485,7 @@
   "bill_total": 225150,
   "items": [
    {
-    "description": "Room charges (standard single)",
+    "description": "Room charges (standard single)  (6 x 4,600)",
     "qty": 6,
     "rate": 4600,
     "amount": 27600,
@@ -546,16 +544,13 @@
   "sum_insured": 500000,
   "policy_start": "2025-03-20",
   "ped_waiting_months": 24,
-  "specified_waiting_months": 24,
+  "specified_waiting_months": 12,
   "room_limit_per_day": null,
   "copay_pct": 0,
   "continuity_credit_months": 0,
   "room_type_modification": false,
   "eligible_room": "standard_single",
-  "vision_filled": [
-   "ped_waiting_months",
-   "specified_waiting_months"
-  ]
+  "vision_filled": []
  },
  "C008_niva_partial_si_cap": {
   "patient_name": "Mekhala Bawa",
@@ -563,7 +558,7 @@
   "sex": "F",
   "policy_number": "NB3851053482",
   "hospital": "Sunrise Multispeciality Hospital,Indore",
-  "diagnosis": "total kneereplacement",
+  "diagnosis": "total knee replacement",
   "cause": "illness",
   "known_history": "No significant past medical or surgical history.",
   "history_onset_date": null,
@@ -796,16 +791,14 @@
   ],
   "sum_insured": 1000000,
   "policy_start": "2025-05-08",
-  "ped_waiting_months": 36,
-  "specified_waiting_months": null,
+  "ped_waiting_months": 12,
+  "specified_waiting_months": 12,
   "room_limit_per_day": null,
   "copay_pct": 0,
   "continuity_credit_months": 0,
   "room_type_modification": false,
   "eligible_room": "standard_single",
-  "vision_filled": [
-   "ped_waiting_months"
-  ]
+  "vision_filled": []
  },
  "C011_niva_reject_30day": {
   "patient_name": "Darika Golla",
@@ -825,7 +818,7 @@
   "bill_total": 106800,
   "items": [
    {
-    "description": "Room charges",
+    "description": "Room charges \uff08standard single)",
     "qty": 4,
     "rate": 5000,
     "amount": 20000,
@@ -890,10 +883,10 @@
   "age": 40,
   "sex": "F",
   "policy_number": "NB7089247694",
-  "hospital": "Metro Heart and General Hospital, Ahmedabad",
-  "diagnosis": "diabetic loot infection with debridement",
+  "hospital": "Metro Heart and General Hospital,Ahmedabad",
+  "diagnosis": "diabetic foot infection with debridement",
   "cause": "illness",
-  "known_history": "Known case of diabetic toot infection with debridement, diagnosed on 15/06/2024, on regular treatment.",
+  "known_history": "Known case of diabetic foot infection with debridement, diagnosed on 15/06/2024, on regular treatment.",
   "history_onset_date": "2024-06-15",
   "admission_date": "2026-06-15",
   "discharge_date": "2026-06-20",
@@ -1066,7 +1059,7 @@
   "bill_total": 236350,
   "items": [
    {
-    "description": "Room charges(standard single)",
+    "description": "Room charges(standard single) (4x5.000\uff09",
     "qty": 4,
     "rate": 5000,
     "amount": 20000,
@@ -1124,8 +1117,8 @@
   ],
   "sum_insured": 300000,
   "policy_start": "2025-07-21",
-  "ped_waiting_months": null,
-  "specified_waiting_months": null,
+  "ped_waiting_months": 12,
+  "specified_waiting_months": 12,
   "room_limit_per_day": null,
   "copay_pct": 0,
   "continuity_credit_months": 0,
@@ -1195,8 +1188,8 @@
   ],
   "sum_insured": 1000000,
   "policy_start": "2023-03-02",
-  "ped_waiting_months": null,
-  "specified_waiting_months": null,
+  "ped_waiting_months": 12,
+  "specified_waiting_months": 24,
   "room_limit_per_day": null,
   "copay_pct": 0,
   "continuity_credit_months": 0,
@@ -1222,7 +1215,7 @@
   "bill_total": 217900,
   "items": [
    {
-    "description": "Room charges (standard single) (5 x 4,300)",
+    "description": "Room charges(standard single)",
     "qty": 5,
     "rate": 4300,
     "amount": 21500,
@@ -1243,7 +1236,7 @@
     "category": "ot"
    },
    {
-    "description": "Laboratory and radiology investigations",
+    "description": "Laboratory andradiology investigations",
     "qty": 1,
     "rate": 10800,
     "amount": 10800,
@@ -1257,7 +1250,7 @@
     "category": "nursing"
    },
    {
-    "description": "Pharmacy and medicines",
+    "description": "Pharmacy andmedicines",
     "qty": 1,
     "rate": 11050,
     "amount": 11050,
@@ -1520,7 +1513,7 @@
   "bill_total": 133100,
   "items": [
    {
-    "description": "Room charges (private)  (3 x 8,900)",
+    "description": "Room charges (private)",
     "qty": 3,
     "rate": 8900,
     "amount": 26700,
@@ -1656,8 +1649,8 @@
   ],
   "sum_insured": 500000,
   "policy_start": "2024-01-11",
-  "ped_waiting_months": null,
-  "specified_waiting_months": null,
+  "ped_waiting_months": 36,
+  "specified_waiting_months": 24,
   "room_limit_per_day": 5000,
   "copay_pct": 0,
   "continuity_credit_months": 0,
@@ -1718,7 +1711,7 @@
     "category": "consumable"
    },
    {
-    "description": "Laboratory and radiology investigations",
+    "description": "Laboratoryandradiology investigations",
     "qty": 1,
     "rate": 10800,
     "amount": 10800,
@@ -1741,8 +1734,8 @@
   ],
   "sum_insured": 1000000,
   "policy_start": "2023-05-10",
-  "ped_waiting_months": null,
-  "specified_waiting_months": null,
+  "ped_waiting_months": 36,
+  "specified_waiting_months": 24,
   "room_limit_per_day": null,
   "copay_pct": 0,
   "continuity_credit_months": 0,
@@ -1826,8 +1819,8 @@
   ],
   "sum_insured": 300000,
   "policy_start": "2023-08-08",
-  "ped_waiting_months": null,
-  "specified_waiting_months": null,
+  "ped_waiting_months": 36,
+  "specified_waiting_months": 24,
   "room_limit_per_day": null,
   "copay_pct": 0,
   "continuity_credit_months": 0,
@@ -1911,8 +1904,8 @@
   ],
   "sum_insured": 300000,
   "policy_start": "2023-12-23",
-  "ped_waiting_months": null,
-  "specified_waiting_months": null,
+  "ped_waiting_months": 36,
+  "specified_waiting_months": 24,
   "room_limit_per_day": null,
   "copay_pct": 0,
   "continuity_credit_months": 0,
@@ -2084,7 +2077,7 @@
   "hospital": "Metro Heart and General Hospital, Pune",
   "diagnosis": "diabetic foot infection with debridement",
   "cause": "illness",
-  "known_history": "Known case of diabetic foot infection with debridement",
+  "known_history": "Known case of diabetic foot infection with debridement, diagnosed on 27/07/2021, on regular treatment.",
   "history_onset_date": "2021-07-27",
   "admission_date": "2025-09-26",
   "discharge_date": "2025-10-01",
@@ -2393,8 +2386,8 @@
   ],
   "sum_insured": 500000,
   "policy_start": "2023-01-17",
-  "ped_waiting_months": null,
-  "specified_waiting_months": null,
+  "ped_waiting_months": 36,
+  "specified_waiting_months": 24,
   "room_limit_per_day": null,
   "copay_pct": 0,
   "continuity_credit_months": 0,

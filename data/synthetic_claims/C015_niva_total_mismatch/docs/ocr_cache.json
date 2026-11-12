@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nNB2723150337\nProduct\nReAssure (Aspire)\nPolicy start date\n02/03/2023\nSum insured (Rs.)\n10,00,000\nName of patient\nDipta Shroff\nAge / Sex\n37 years / M\nContact number\n9659029457\nHospital name\nSunrise Multispeciality Hospital, Nagpur\nDate of admission\n02/07/2025\nDate of discharge\n08/07/2025\nDiagnosis / ailment\npneumonia\nNature of illness\nIllness\nRoom category occupied\nstandard single\nTotal amount claimed (Rs.)\n75,900\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 08/07/2025\n",
+  "method": "text_layer"
+ },
+ "discharge_summary": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nSunrise Multispeciality Hospital\nDischarge Summary\nPatient\nDipta Shroff, 37 years, M\nUHID\nUH602799\nDate of admission\n02/07/2025\nDate of discharge\n08/07/2025\nLength of stay\n6 day(s)\nConsultant\nDr. V. Iyer\nFinal diagnosis\npneumonia\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to pneumonia. Investigations were done and treatment was given as\nper protocol. The post-treatment period was uneventful and the patient was discharged in stable condition on\n08/07/2025.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. V. Iyer (Treating consultant)\n",
+  "method": "text_layer"
+ },
+ "hospital_bill": {
+  "text": "Sunrise Multispeciality Hospital\nNagpur|Final Inpatient Bill\nBill no BL/2025/76431 UHID UH602799\nPatient Dipta Shroff Age/Sex 37/M\nAdmitted 02/07/2025 Discharged 08/07/2025\nConsultant Dr.V.lyer Room standard single\nParticulars Qty Rate\nROOM AND BED CHARGES Amount\nRoom charges (standard single) 6 4,800 28,800\nSub-total\nPHARMACY 28.800\nPharmacy and medicines 12,050\nSub-total 12,050\nCONSUMABLES 12,050\nDisposableconsumables and admissionkit 1,050 1,050\nSub-total\nDIAGNOSTICS 1,050\nLaboratory andradiology investigations 11,700 11,700\nSub-total\nNURSING 11,700\nNursing charges 7.900\nSub-total 7,900\nOTHER CHARGES 7,900\nConsultant visits and monitoring 13.400\nSub-total 13.400\nGRAND TOTAL 13,400\n75,900\nSymthetin test document.generated forsotware evalation Nota real recor Page1",
+  "method": "ocr"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nDipta Shroff\nAge / Gender\n37 / M\nID number\nXXXX XXXX 5660\nMobile\n9659029457\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nSunrise Multispeciality Hospital Pathology\nPatient: Dipta Shroff | Date: 02/07/2025\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nPolicy Schedule\nPolicy number\nNB2723150337\nInsurer\nNiva Bupa Health Insurance\nProduct\nReAssure (Aspire)\nInsured person\nDipta Shroff, 37 years, M\nPolicy start date\n02/03/2023\nSum insured (Rs.)\n10,00,000\nWaiting period, pre-existing diseases\n12 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. V. Iyer\nSunrise Multispeciality Hospital\nPatient: Dipta Shroff, 37/M Date: 02/07/2025\nDiagnosis: pneumonia\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 2899,
+  "discharge_summary.pdf": 2623,
+  "hospital_bill.pdf": 134712,
+  "id_proof.pdf": 2011,
+  "lab_report.pdf": 2182,
+  "policy_schedule.pdf": 2479,
+  "prescription.pdf": 1936,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}
