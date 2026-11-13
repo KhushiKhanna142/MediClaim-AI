@@ -79,6 +79,13 @@ Evaluated on the 28-question frozen golden benchmark (`data/golden_set/retrieval
 | **5. Hybrid + Query Rewriter (`hybrid_rw`)** | 0.71 | 0.86 | 0.89 | 0.788 | +32.2% MRR |
 | **6. Full Pipeline (`hybrid_rerank_rw`)** | **0.79** | **0.93** | **0.93** | **0.855** | **+43.5% MRR** |
 
+> **Held-Out Generalisation (Frozen Set)**:  
+> On 10 frozen held-out questions across 5 policies (SHA-256 `5952c16c432e443732e39e41f023f48974cc2d9e186212e45adb4119ac71106c`), `hybrid_rerank` (without query rewriting) retrieved the gold clause in the top 3 for **10/10 (100%)** and at rank 1 for **8/10 (80%)** with **MRR 0.900**. The two rank-2 lookups were both definition vs benefit ties on domiciliary care:
+> - `heldout_niva_domiciliary` (rank 2, retrieved definition `2.1.14` at rank 1 before coverage clause `4.1.4`)
+> - `heldout_sec_domiciliary` (rank 2, retrieved definition `Def.15` at rank 1 before coverage clause `1.3`)
+> 
+> *Caveat*: The sample is small ($n=10$) and skewed toward single-topic coverage lookups (e.g. air ambulance, health checkup, hospital cash) rather than multi-clause waiting period calculations, so it indicates no evidence of overfitting to the 28 tuned questions, but does not establish a precise statistical bound. Note also that settings differ: tuned 92.9% used `hybrid_rerank_rw` (with LLM query rewrite), while held-out 100% was measured with `hybrid_rerank` alone.
+
 ---
 
 ## 📊 End-to-End Adjudication Benchmark

@@ -74,7 +74,7 @@ def _search_one(retr: HybridRetriever, q: dict, mode: str, k: int, rewriter) -> 
 
 
 def evaluate(retr: HybridRetriever, questions: list[dict], mode: str, k: int = 10, rewriter=None):
-    ranks, misses = [], []
+    ranks, misses, not_at_1 = [], [], []
     per_policy: dict[str, list[int | None]] = defaultdict(list)
     for q in questions:
         rank, top3 = _search_one(retr, q, mode, k, rewriter)
@@ -82,7 +82,9 @@ def evaluate(retr: HybridRetriever, questions: list[dict], mode: str, k: int = 1
         per_policy[q["policy_id"]].append(rank)
         if rank is None or rank > 3:
             misses.append((q["id"], q["question"], sorted(q["gold_clause_ids"]), top3, rank))
-    return ranks, per_policy, misses
+        if rank is None or rank > 1:
+            not_at_1.append((q["id"], q["question"], sorted(q["gold_clause_ids"]), top3, rank))
+    return ranks, per_policy, misses, not_at_1
 
 
 def _metrics(ranks: list[int | None]) -> dict:
@@ -123,7 +125,7 @@ def main() -> None:
         from src.rag.rewrite import QueryRewriter
         rewriter = QueryRewriter(get_llm())
 
-    ranks, per_policy, misses = evaluate(retr, questions, mode, rewriter=rewriter)
+    ranks, per_policy, misses, not_at_1 = evaluate(retr, questions, mode, rewriter=rewriter)
     total = _metrics(ranks)
     n = total["n"]
 
@@ -158,13 +160,30 @@ def main() -> None:
     tuned_r3 = 0.929
     actual_r3_pct = 100 * t["recall@3"] / n
     gap = tuned_r3 * 100 - actual_r3_pct
-    print(f"\nNote: 28-question tuned benchmark recall@3 = {tuned_r3*100:.1f}%")
-    if gap > 0:
-        print(f"      Held-out generalisation gap = {gap:.1f} pp  (expected; held-out questions were never used to tune anything)")
+    print(f"\nComparison with tuned benchmark:")
+    print(f"  Tuned 28-Q  recall@3 = {tuned_r3*100:.1f}%  (pipeline: hybrid_rerank_rw, i.e. WITH --rewrite)")
+    print(f"  Held-out    recall@3 = {actual_r3_pct:.1f}%  (pipeline: {mode}, WITHOUT --rewrite)")
+    print(f"  Settings differ: tuned used LLM query rewriting; held-out did not.")
+    print(f"  Numbers are not directly comparable on that axis.")
+    if gap <= 0:
+        print(f"  No evidence of overfitting, but n=10 cannot distinguish 100% from 92.9% (one question's gap).")
     else:
-        print(f"      Held-out recall@3 matches or exceeds the tuned benchmark.")
+        print(f"  Generalisation gap = {gap:.1f} pp. The held-out set is small (n=10) and skewed toward")
+        print(f"  single-topic coverage lookups (air ambulance, health check-up, hospital cash), which")
+        print(f"  have distinctive vocabulary and are easier for BM25+dense than the multi-clause")
+        print(f"  waiting-period and room-rent questions in the tuned 28.")
 
-    # Misses
+    # Questions not at rank 1 — named for full transparency
+    print(f"\nQuestions not at rank 1 for {mode} (rank > 1 or not found):")
+    if not_at_1:
+        for qid, q, gold, got, rank in not_at_1:
+            print(f"  [{qid}] rank={rank}  gold={gold}")
+            print(f"         got_top3={got}")
+            print(f"         {q}")
+    else:
+        print("  (none — all questions retrieved at rank 1)")
+
+    # Misses (rank > 3) — subset of above
     print(f"\nMisses for {mode} (rank > 3 or not found):")
     if misses:
         for qid, q, gold, got, rank in misses:
@@ -177,3 +196,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
