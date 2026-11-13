@@ -15,6 +15,7 @@ from pydantic import ValidationError
 from src.baseline.naive import build_claim_text
 from src.baseline.ocr import page_images, read_claim_docs
 from src.extraction.schemas import ExtractedClaim
+from src.security.pii import redact_pii
 
 log = logging.getLogger(__name__)
 
@@ -69,7 +70,7 @@ class Extractor:
         self.llm = llm
 
     def extract_text(self, claim_text: str) -> ExtractedClaim:
-        user = f"CLAIM DOCUMENTS\n{claim_text}\n\nExtract the JSON."
+        user = f"CLAIM DOCUMENTS\n{redact_pii(claim_text)}\n\nExtract the JSON."
         reply = self.llm.complete(SYSTEM, user, max_tokens=2500)
         try:
             return ExtractedClaim.model_validate(parse_json(reply))

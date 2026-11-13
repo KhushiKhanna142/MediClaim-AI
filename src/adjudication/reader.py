@@ -11,6 +11,7 @@ import re
 from src.adjudication.findings import CLAUSE_FIELDS, Findings
 from src.extraction.schemas import ExtractedClaim
 from src.rag.retriever import base_clause_id
+from src.security.pii import redact_pii
 
 K_PER_TOPIC = 3
 
@@ -61,7 +62,8 @@ def gather(retriever, c: ExtractedClaim, policy_id: str) -> dict[str, list[dict]
 
 
 def build_prompt(c: ExtractedClaim, evidence: dict[str, list[dict]]) -> str:
-    facts = [f"diagnosis: {c.diagnosis}", f"cause: {c.cause}", f"history stated in discharge summary: {c.known_history or 'none stated'}",
+    facts = [f"diagnosis: {redact_pii(c.diagnosis)}", f"cause: {c.cause}",
+             f"history stated in discharge summary: {redact_pii(c.known_history) if c.known_history else 'none stated'}",
              f"history onset date: {c.history_onset_date or 'not stated'}", f"admission date: {c.admission_date}",
              f"policy start date: {c.policy_start}", f"eligible room (from schedule): {c.eligible_room}",
              f"room claimed: {c.room_category_claimed}", f"room type modification opted: {c.room_type_modification}"]

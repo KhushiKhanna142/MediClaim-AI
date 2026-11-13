@@ -16,6 +16,8 @@ import re
 from dataclasses import asdict, dataclass, field
 from datetime import date
 
+from src.security.pii import mask_dict_pii
+
 TOL = 1.0                                   # rupees
 INITIAL_WAIT_EXEMPT_ABOVE_MONTHS = 12       # mirrors the documented modelling assumption in the decision engine
 NO_HISTORY = re.compile(r"\b(no|nil|none|not any|nothing)\b", re.I)
@@ -150,7 +152,7 @@ class Verifier:
             "deductions": [{"rule": d.get("rule"), "clause": d.get("clause_id")} for d in decision.get("deductions") or []],
             "cited_clauses": decision.get("cited_clause_ids"),
         }
-        reply = self.llm.complete(CRITIC_SYSTEM, f"<claim_data>\n{json.dumps(facts, default=str)}\n</claim_data>", max_tokens=400)
+        reply = self.llm.complete(CRITIC_SYSTEM, f"<claim_data>\n{json.dumps(mask_dict_pii(facts), default=str)}\n</claim_data>", max_tokens=400)
         out = _parse_json(reply)
         conf = float(out.get("confidence", 0.5))
         return bool(out.get("supported", False)), max(0.0, min(1.0, conf)), [str(x)[:200] for x in out.get("issues") or []]
