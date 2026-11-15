@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nHD7536454268\nProduct\nOptima Secure\nPolicy start date\n06/04/2023\nSum insured (Rs.)\n3,00,000\nName of patient\nVasudha Lala\nAge / Sex\n55 years / F\nContact number\n9200596177\nHospital name\nLotus Care Hospital, Indore\nDate of admission\n06/06/2025\nDate of discharge\n11/06/2025\nDiagnosis / ailment\ndengue fever\nNature of illness\nIllness\nRoom category occupied\nstandard single\nTotal amount claimed (Rs.)\n63,550\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 11/06/2025\n",
+  "method": "text_layer"
+ },
+ "discharge_summary": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nLotus Care Hospital\nDischarge Summary\nPatient\nVasudha Lala, 55 years, F\nUHID\nUH480939\nDate of admission\n06/06/2025\nDate of discharge\n11/06/2025\nLength of stay\n5 day(s)\nConsultant\nDr. V. Iyer\nFinal diagnosis\ndengue fever\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to dengue fever. Investigations were done and treatment was given\nas per protocol. The post-treatment period was uneventful and the patient was discharged in stable condition on\n11/06/2025.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. V. Iyer (Treating consultant)\n",
+  "method": "text_layer"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nLotus Care Hospital\nIndore | Final Inpatient Bill\nBill no\nBL/2025/98218\nUHID\nUH480939\nPatient\nVasudha Lala\nAge / Sex\n55 / F\nAdmitted\n06/06/2025\nDischarged\n11/06/2025\nConsultant\nDr. V. Iyer\nRoom\nstandard single\nSummary of charges\nHead\nAmount\nRoom and Bed Charges\n20,500\nPharmacy\n8,150\nConsumables\n1,400\nDiagnostics\n9,550\nNursing\n5,700\nOther Charges\n15,950\nTotal bill\n63,550\n\nSynthetic test document, generated for software evaluation. Not a real record.\nPage 2\nItemised statement\nDate\nDescription\nQty\nRate\nAmount\n06/06/2025\nRoom charges (standard single)\n5\n4,100\n20,500\n06/06/2025\nConsultant visits and monitoring\n1\n15,950\n15,950\n06/06/2025\nLaboratory and radiology investigations\n1\n9,550\n9,550\n06/06/2025\nNursing charges\n1\n5,700\n5,700\n06/06/2025\nPharmacy and medicines\n1\n8,150\n8,150\n06/06/2025\nDisposable consumables and admission kit\n1\n1,400\n1,400\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nVasudha Lala\nAge / Gender\n55 / F\nID number\nXXXX XXXX 7595\nMobile\n9200596177\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nLotus Care Hospital Pathology\nPatient: Vasudha Lala | Date: 06/06/2025\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nPolicy Schedule\nPolicy number\nHD7536454268\nInsurer\nHDFC ERGO General Insurance\nProduct\nOptima Secure\nInsured person\nVasudha Lala, 55 years, F\nPolicy start date\n06/04/2023\nSum insured (Rs.)\n3,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. V. Iyer\nLotus Care Hospital\nPatient: Vasudha Lala, 55/F Date: 06/06/2025\nDiagnosis: dengue fever\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 2889,
+  "discharge_summary.pdf": 2614,
+  "hospital_bill.pdf": 3947,
+  "id_proof.pdf": 2012,
+  "lab_report.pdf": 2167,
+  "policy_schedule.pdf": 2475,
+  "prescription.pdf": 1927,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

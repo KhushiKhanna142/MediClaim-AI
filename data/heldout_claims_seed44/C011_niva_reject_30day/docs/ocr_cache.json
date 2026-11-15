@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nNB7913631681\nProduct\nReAssure (Aspire)\nPolicy start date\n03/11/2025\nSum insured (Rs.)\n5,00,000\nName of patient\nHemangini Raju\nAge / Sex\n48 years / M\nContact number\n9646376790\nHospital name\nMetro Heart and General Hospital, Ahmedabad\nDate of admission\n12/11/2025\nDate of discharge\n17/11/2025\nDiagnosis / ailment\ndengue fever\nNature of illness\nIllness\nRoom category occupied\nstandard single\nTotal amount claimed (Rs.)\n72,800\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 17/11/2025\n",
+  "method": "text_layer"
+ },
+ "discharge_summary": {
+  "text": "MetroHeartand General Hospital\nDischarge Summary\nPatient HemanginiRaju,48years,M\nUHID UH875304\nDate of admission 12/11/2025\nDate of discharge 17/11/2025\nLength of stay 5day(s)\nConsultant Dr.A.Kulkarni\nFinal diagnosis\ndengue fever\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to dengue fever.Investigations were done and treatment was given\nasper protocol.The post-treatment period was uneventful and the patient was discharged in stable condition on\n17/11/2025.\nAdviceondischarge\nReview after 7 days with reports.Continue medicines asprescribed.Avoid strenuous activity.\nDr.A.Kulkarni\uff08Treating consultant)\nSynthetic test document. generated for sotwre valuation.Not a real record Page",
+  "method": "ocr"
+ },
+ "hospital_bill": {
+  "text": "Metro Heart and General Hospital\nAhmedabad|Final Inpatient Bill\nBill no BL/2025/85672 UHID UH875304\nPatient Hemangini Raju Age/Sex 48/M\nAdmitted 12/11/2025 Discharged 17/11/2025\nConsultant Dr.A.Kulkarni Room standard single\nSummaryofcharges\nHead\nRoom and Bed Charges Amount\nPharmacy 29,000\nConsumables 11,200\nDiagnostics 1,500\nNursing 10,050\nOther Charges 6,750\nTotal bill 14,300\n72,800\nSynthtc domentgenerteforowaevlatn.Notealr.\nPage\nItemised statement\nDate Description Qty Rate Amount\n12/11/2025 Room charges (standard singie) 5 5,800 29,000\n12/11/2025 Consultant visits and monitoning 1 14,300 14.300\n12/11/2025 Laboratory and radiology investigations 1 10,050 10.050\n12/11/2025 Nursing charges 1 6.750 6,750\n12/11/2025 Pharmacy and medicines 11,200 11,200\n12/11/2025 Disposable consumables and admission kit 1,500 1,500",
+  "method": "ocr"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nHemangini Raju\nAge / Gender\n48 / M\nID number\nXXXX XXXX 5648\nMobile\n9646376790\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nMetro Heart and General Hospital Pathology\nPatient: Hemangini Raju | Date: 12/11/2025\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nPolicy Schedule\nPolicy number\nNB7913631681\nInsurer\nNiva Bupa Health Insurance\nProduct\nReAssure (Aspire)\nInsured person\nHemangini Raju, 48 years, M\nPolicy start date\n03/11/2025\nSum insured (Rs.)\n5,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n12 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. A. Kulkarni\nMetro Heart and General Hospital\nPatient: Hemangini Raju, 48/M Date: 12/11/2025\nDiagnosis: dengue fever\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 2900,
+  "discharge_summary.pdf": 101326,
+  "hospital_bill.pdf": 219248,
+  "id_proof.pdf": 2012,
+  "lab_report.pdf": 2181,
+  "policy_schedule.pdf": 2482,
+  "prescription.pdf": 1943,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

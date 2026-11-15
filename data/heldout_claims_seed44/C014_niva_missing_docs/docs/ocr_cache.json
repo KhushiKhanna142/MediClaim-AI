@@ -1,0 +1,35 @@
+{
+ "claim_form": {
+  "text": "Niva Bupa Health Insurance\nHealth Insurance Claim Form \uff08Reimbursement).PartA\nPolicy number NB3847586742\nProduct ReAssure (Aspire)\nPolicy start date 24/11/2024\nSum insured (Rs.) 10,00,000\nName of patient Yug Bawa\nAge/Sex 39years/M\nContact number 9288651703\nHospital name Sanjivani Hospital and Research Centre.Pune\nDate ofadmission 24/05/2026\nDate of discharge 28/05/2026\nDiagnosis/ailment pneumonia\nNature of illness Illness\nRoom category occupied standard single\nTotal amountclaimed(Rs.) 67,450\nDeclaration\nIdeclare that the information furnished in this claim form is true and correct to the best of myknowledge.I agree to\nSignature of the insured: Date:28/05/2026\nSynthetctesdocuntgonetaed torotwareonNotaealcord Page)",
+  "method": "ocr"
+ },
+ "discharge_summary": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nSanjivani Hospital and Research Centre\nDischarge Summary\nPatient\nYug Bawa, 39 years, M\nUHID\nUH621795\nDate of admission\n24/05/2026\nDate of discharge\n28/05/2026\nLength of stay\n4 day(s)\nConsultant\nDr. P. Deshmukh\nFinal diagnosis\npneumonia\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to pneumonia. Investigations were done and treatment was given as\nper protocol. The post-treatment period was uneventful and the patient was discharged in stable condition on\n28/05/2026.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. P. Deshmukh (Treating consultant)\n",
+  "method": "text_layer"
+ },
+ "hospital_bill": {
+  "text": "Sanjivani Hospital and Research Centre\nPune|Final Inpatient Bill\nBill no BL/2026/12957 UHID UH621795\nPatient Yug Bawa Age/Sex 39/M\nAdmitted 24/05/2026 Discharged 28/05/2026\nConsultant Dr.P.Deshmukh Room standard single\nParticulars Qty Rate\nROOM AND BED CHARGES Amount\nRoom charges (standard single) 5,600 22,400\nSub-total\nPHARMACY 22,400\nPharmacy and medicines 15.750\nSub-total 15.750\nCONSUMABLES 15,750\nDisposable consumables and admission kit 1,750 1,750\nSub-total\nDIAGNOSTICS 1,750\nLaboratory andradiology investigations 7,150 7,150\nSub-total\nNURSING 7,150\nNursing charges 8.350\nSub-total 8.350\nOTHER CHARGES 8.350\nConsultant visits and monitoring 12,050\nSub-total 12,050\nGRAND TOTAL 12,050\n67,450\nSynttic testdocumenLgeneraled tor sotware evaluaton Nor &realrecord Page1",
+  "method": "ocr"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nSanjivani Hospital and Research Centre Pathology\nPatient: Yug Bawa | Date: 24/05/2026\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nPolicy Schedule\nPolicy number\nNB3847586742\nInsurer\nNiva Bupa Health Insurance\nProduct\nReAssure (Aspire)\nInsured person\nYug Bawa, 39 years, M\nPolicy start date\n24/11/2024\nSum insured (Rs.)\n10,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. P. Deshmukh\nSanjivani Hospital and Research Centre\nPatient: Yug Bawa, 39/M Date: 24/05/2026\nDiagnosis: pneumonia\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 101013,
+  "discharge_summary.pdf": 2629,
+  "hospital_bill.pdf": 219356,
+  "lab_report.pdf": 2182,
+  "policy_schedule.pdf": 2478,
+  "prescription.pdf": 1943,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

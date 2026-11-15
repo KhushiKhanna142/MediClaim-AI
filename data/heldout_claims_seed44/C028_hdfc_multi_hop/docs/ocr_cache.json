@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "HDFCERGO General Insurance\nHealth Insurance Claim Form (Reimbursement),Part A\nPolicynumber HD4793508062\nProduct Optima Secure\nPolicy start date 10/03/2023\nSum insured(Rs.) 3,00.000\nName of patient Radhika Mahal\nAge/Sex 46years/M\nContact number 9115720382\nHospital name HarmonyMedical Centre,Jaipur\nDate ofadmission 10/07/2025\nDate of discharge 16/07/2025\nDiagnosis/ailment total knee replacement\nNature of illness Illness\nRoom category occupied standard single\nTotalamount ciaimed(Rs.) 3,40,550\nDeclaration\nIdeclare that the information furnished in this claim form is true and correct to thebest of myknowledge.I agree to\nprovide any further documentsrequiredby theinsurer.\nSignature of the insured: Date:16/07/2025\nSynthetc ast document,generaled to soiwme ealuaon.Nata realecord Paget",
+  "method": "ocr"
+ },
+ "discharge_summary": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHarmony Medical Centre\nDischarge Summary\nPatient\nRadhika Mahal, 46 years, M\nUHID\nUH321313\nDate of admission\n10/07/2025\nDate of discharge\n16/07/2025\nLength of stay\n6 day(s)\nConsultant\nDr. A. Kulkarni\nFinal diagnosis\ntotal knee replacement\nHistory\nKnown case of total knee replacement, diagnosed on 08/09/2021, on regular treatment.\nCourse in hospital\nThe patient was admitted with complaints related to total knee replacement. Investigations were done and treatment\nwas given as per protocol. The post-treatment period was uneventful and the patient was discharged in stable\ncondition on 16/07/2025.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. A. Kulkarni (Treating consultant)\n",
+  "method": "text_layer"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHarmony Medical Centre\nJaipur | Final Inpatient Bill\nBill no\nBL/2025/58737\nUHID\nUH321313\nPatient\nRadhika Mahal\nAge / Sex\n46 / M\nAdmitted\n10/07/2025\nDischarged\n16/07/2025\nConsultant\nDr. A. Kulkarni\nRoom\nstandard single\nItem\nAmount (Rs.)\nRoom charges (standard single)  (6 x 5,400)\n32,400\nSurgeon and anaesthetist fees\n78,850\nOperation theatre charges\n28,850\nLaboratory and radiology investigations\n9,350\nNursing charges\n10,250\nPharmacy and medicines\n27,250\nImplant / prosthesis\n1,48,050\nDisposable consumables and admission kit\n5,550\nNet payable\n3,40,550\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Government of India(specimen ID card,synthetic)\nName RadhikaMahal\nAge/Gender 46/M\nIDnumber XXXXXXXX5881\nMobile 9115720382\nSynthetic tetdoct,genraed orfwn vaton.Not arealecor",
+  "method": "ocr"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHarmony Medical Centre Pathology\nPatient: Radhika Mahal | Date: 10/07/2025\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nPolicy Schedule\nPolicy number\nHD4793508062\nInsurer\nHDFC ERGO General Insurance\nProduct\nOptima Secure\nInsured person\nRadhika Mahal, 46 years, M\nPolicy start date\n10/03/2023\nSum insured (Rs.)\n3,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. A. Kulkarni\nHarmony Medical Centre\nPatient: Radhika Mahal, 46/M Date: 10/07/2025\nDiagnosis: total knee replacement\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 149536,
+  "discharge_summary.pdf": 2643,
+  "hospital_bill.pdf": 2564,
+  "id_proof.pdf": 95181,
+  "lab_report.pdf": 2172,
+  "policy_schedule.pdf": 2480,
+  "prescription.pdf": 1942,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

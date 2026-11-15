@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nNB9093500521\nProduct\nReAssure (Aspire)\nPolicy start date\n09/09/2025\nSum insured (Rs.)\n5,00,000\nName of patient\nGirindra Madan\nAge / Sex\n53 years / M\nContact number\n9791079971\nHospital name\nLotus Care Hospital, Jaipur\nDate of admission\n09/04/2026\nDate of discharge\n13/04/2026\nDiagnosis / ailment\ntotal knee replacement\nNature of illness\nIllness\nRoom category occupied\nstandard single\nTotal amount claimed (Rs.)\n2,96,650\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 13/04/2026\n",
+  "method": "text_layer"
+ },
+ "discharge_summary": {
+  "text": "Lotus Care Hospital\nDischarge Summary\nPatient Girindra Madan,53years,M\nUHID UH505814\nDate of admission 09/04/2026\nDate of discharge 13/04/2026\nLength of stay 4day(s)\nConsultant Dr.P.Deshmukh\nFinal diagnosis\ntotal kneereplacement\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThepatient was admitted withcomplaintsrelated to total kneereplacement. Investigationswere done and treatment\nwasgiven asper protocol.Thepost-treatment periodwas uneventful and the patientwas discharged in stable\nconditionon13/04/2026.\nAdvice on discharge\nReview after 7 dayswith reports.Continue medicines asprescribed.Avoid strenuous activity.\nDr.P.Deshmukh\uff08Treating consultant)\nSynthetctes dccument.gonerated for sotware vaustnNotarealreco Page",
+  "method": "ocr"
+ },
+ "hospital_bill": {
+  "text": "Lotus Care Hospital\nJaipur|Final Inpatient Bil\nBill no BL/2026/55287 UHID UH505814\nPatient Girindra Madan Age/Sex 53/M\nAdmitted 09/04/2026 Discharged 13/04/2026\nConsultant Dr.P.Deshmukh Room standard single\nQty Rate Amount\nParticulars\nROOM AND BED CHARGES\nRoom charges (standard single) 4 5,900 23,600\n23,600\nSub-total\nPROFESSIONALFEES 70,950\nSurgeon and anaesthetist fees 70.950\n70,950\nSub-total\nOPERATION THEATRE\n26,700 26,700\nOperation theatre charges 26.700\nSub-total\nPHARMACY 17,200\nPharmacy and medicines 17,200\n17,200\nSub-total\nCONSUMABLES 5,750\nDisposable consumables and admission kit 5.750\n5,750\nSub-total\nDIAGNOSTICS 14.750\nLaboratory andradiology investigations 14,750\n14.750\nSub-total\nIMPLANTS\n1,20,400 1,20,400\nImplant/prosthesis 1,20,400\nSub-total\nNURSING 17,300\nNursing charges 17.300\n17,300\nSub-total 2,96,650\nGRAND TOTAL\nSythetic estdonumentgeneraed tor soware vlutonNatarel record PageT",
+  "method": "ocr"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nGirindra Madan\nAge / Gender\n53 / M\nID number\nXXXX XXXX 4996\nMobile\n9791079971\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nLotus Care Hospital Pathology\nPatient: Girindra Madan | Date: 09/04/2026\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nPolicy Schedule\nPolicy number\nNB9093500521\nInsurer\nNiva Bupa Health Insurance\nProduct\nReAssure (Aspire)\nInsured person\nGirindra Madan, 53 years, M\nPolicy start date\n09/09/2025\nSum insured (Rs.)\n5,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n12 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Dr.P.Deshmukh\nLotusCareHospital\nPatient:Girindra Madan.53/MDate:09/04/2026\nDiagnosis:total kneereplacement\nRx:Tab.Paracetamol500mg1-0-1x3 days;Cap.Pantoprazole40mg1-0-0x5 days\nSynthetic testGocumentgenerated for software evalationNot areal record Pagei",
+  "method": "ocr"
+ },
+ "_files": {
+  "claim_form.pdf": 2899,
+  "discharge_summary.pdf": 121205,
+  "hospital_bill.pdf": 114454,
+  "id_proof.pdf": 2011,
+  "lab_report.pdf": 2171,
+  "policy_schedule.pdf": 2477,
+  "prescription.pdf": 130094,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

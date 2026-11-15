@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nHD6856611391\nProduct\nOptima Secure\nPolicy start date\n05/03/2022\nSum insured (Rs.)\n10,00,000\nName of patient\nTamanna Pal\nAge / Sex\n69 years / M\nContact number\n9195087908\nHospital name\nSanjivani Hospital and Research Centre, Indore\nDate of admission\n05/03/2025\nDate of discharge\n07/03/2025\nDiagnosis / ailment\nlaparoscopic cholecystectomy (gallstones)\nNature of illness\nIllness\nRoom category occupied\nstandard single\nTotal amount claimed (Rs.)\n98,900\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 07/03/2025\n",
+  "method": "text_layer"
+ },
+ "discharge_summary": {
+  "text": "Sanjivani Hospital and Research Centre\nDischarge Summary\nPatlent Tamanna Pal,69 years,M\nCIHn UH907736\nDate of admission 05/03/2025\nDate of discharge 07/03/2025\nLength of stay 2day(s)\nConsultant Dr.A.Kulkami\nFinal diagnosis\nlaparoscopiccholecystectomy (gallstones)\nHistory\nNo significantpastmedical or surgical history.\nCourse in hospital\nThe patient was admitted with complaintsrelated to laparoscopic cholecystectomy (gallstones).Investigations were\ndone and treatment was given as per protocol. The post-treatment period was uneventful and the patient was dischargedinstableconditionon07/03/2025.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed.Avoid strenuous activity.\nDr.A.Kuikarni (Treating consultant)",
+  "method": "ocr"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nSanjivani Hospital and Research Centre\nIndore | Final Inpatient Bill\nBill no\nBL/2025/28636\nUHID\nUH907736\nPatient\nTamanna Pal\nAge / Sex\n69 / M\nAdmitted\n05/03/2025\nDischarged\n07/03/2025\nConsultant\nDr. A. Kulkarni\nRoom\nstandard single\nSummary of charges\nHead\nAmount\nRoom and Bed Charges\n9,400\nProfessional Fees\n54,250\nOperation Theatre\n15,550\nPharmacy\n9,350\nDiagnostics\n5,050\nNursing\n5,300\nTotal bill\n98,900\n\nSynthetic test document, generated for software evaluation. Not a real record.\nPage 2\nItemised statement\nDate\nDescription\nQty\nRate\nAmount\n05/03/2025\nRoom charges (standard single)\n2\n4,700\n9,400\n05/03/2025\nSurgeon and anaesthetist fees\n1\n54,250\n54,250\n05/03/2025\nOperation theatre charges\n1\n15,550\n15,550\n05/03/2025\nLaboratory and radiology investigations\n1\n5,050\n5,050\n05/03/2025\nNursing charges\n1\n5,300\n5,300\n05/03/2025\nPharmacy and medicines\n1\n9,350\n9,350\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nTamanna Pal\nAge / Gender\n69 / M\nID number\nXXXX XXXX 6901\nMobile\n9195087908\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Sanjivani Hospital and Research Centre Pathology\nPatient:TamannaPal|Date:05/03/2025\nResult Reference\nTest 12.0-16.0\nHaemoglobin 13.1g/dL\nWBC count 7,400/cmm 4.000-11,000\nBloodsugar\uff08random) 104mg/dL 70-140\nSerum creatinine 0.9mg/dL 0.6-1.2\nPage1\nSynthetic test document,generated forsotware evaluation.Notaeal record",
+  "method": "ocr"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nPolicy Schedule\nPolicy number\nHD6856611391\nInsurer\nHDFC ERGO General Insurance\nProduct\nOptima Secure\nInsured person\nTamanna Pal, 69 years, M\nPolicy start date\n05/03/2022\nSum insured (Rs.)\n10,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. A. Kulkarni\nSanjivani Hospital and Research Centre\nPatient: Tamanna Pal, 69/M Date: 05/03/2025\nDiagnosis: laparoscopic cholecystectomy (gallstones)\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 2924,
+  "discharge_summary.pdf": 139307,
+  "hospital_bill.pdf": 3958,
+  "id_proof.pdf": 2009,
+  "lab_report.pdf": 138414,
+  "policy_schedule.pdf": 2477,
+  "prescription.pdf": 1974,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

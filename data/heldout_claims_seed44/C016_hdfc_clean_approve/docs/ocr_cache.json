@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nHD8650548181\nProduct\nOptima Secure\nPolicy start date\n29/06/2024\nSum insured (Rs.)\n10,00,000\nName of patient\nKala Sinha\nAge / Sex\n64 years / M\nContact number\n9541380072\nHospital name\nLotus Care Hospital, Indore\nDate of admission\n29/11/2025\nDate of discharge\n04/12/2025\nDiagnosis / ailment\ndengue fever\nNature of illness\nIllness\nRoom category occupied\nstandard single\nTotal amount claimed (Rs.)\n64,400\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 04/12/2025\n",
+  "method": "text_layer"
+ },
+ "discharge_summary": {
+  "text": "Lotus Care Hospital\nDischarge Summary\nPatient KalaSinha,64years,M\nUHID UH547466\nDate of admission 29/11/2025\nDate of discharge 04/12/2025\nLength of stay 5day(s)\nConsultant Dr.A.Kulkarni\nFinal diagnosis\ndengue fever\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThepatient was admittedwithcomplaintsrelated to dengue fever.Investigationswere done and treatment wasgiven\nasperprotocol.Thepost-treatment periodwas uneventful and the patient was discharged in stable condition on 04/12/2025.\nAdviceon discharge\nReview after 7 dayswithreports. Continuemedicinesasprescribed.Avoid strenuous activity.\nDr.A.Kulkarni\uff08Treating consultant)\nSynthetic test documentgeneraled forsoftware evaluation.Not a real record. Page",
+  "method": "ocr"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nLotus Care Hospital\nIndore | Final Inpatient Bill\nBill no\nBL/2025/4647\nUHID\nUH547466\nPatient\nKala Sinha\nAge / Sex\n64 / M\nAdmitted\n29/11/2025\nDischarged\n04/12/2025\nConsultant\nDr. A. Kulkarni\nRoom\nstandard single\nParticulars\nQty\nRate\nAmount\nROOM AND BED CHARGES\n   Room charges (standard single)\n5\n5,900\n29,500\n   Sub-total\n29,500\nPHARMACY\n   Pharmacy and medicines\n1\n10,200\n10,200\n   Sub-total\n10,200\nDIAGNOSTICS\n   Laboratory and radiology investigations\n1\n6,300\n6,300\n   Sub-total\n6,300\nNURSING\n   Nursing charges\n1\n4,650\n4,650\n   Sub-total\n4,650\nOTHER CHARGES\n   Consultant visits and monitoring\n1\n13,750\n13,750\n   Sub-total\n13,750\nGRAND TOTAL\n64,400\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nKala Sinha\nAge / Gender\n64 / M\nID number\nXXXX XXXX 5523\nMobile\n9541380072\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nLotus Care Hospital Pathology\nPatient: Kala Sinha | Date: 29/11/2025\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nPolicy Schedule\nPolicy number\nHD8650548181\nInsurer\nHDFC ERGO General Insurance\nProduct\nOptima Secure\nInsured person\nKala Sinha, 64 years, M\nPolicy start date\n29/06/2024\nSum insured (Rs.)\n10,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Dr.A.Kulkarni\nLotusCareHospital\nPatient:KalaSinha.64/MDate:29/11/2025\nDiagnosis:dengue fever\nRx:Tab.Paracetamol500mg 1-0-1x3days:Cap.Pantoprazole40 mg 1-0-0x5days",
+  "method": "ocr"
+ },
+ "_files": {
+  "claim_form.pdf": 2889,
+  "discharge_summary.pdf": 176523,
+  "hospital_bill.pdf": 2904,
+  "id_proof.pdf": 2008,
+  "lab_report.pdf": 2166,
+  "policy_schedule.pdf": 2473,
+  "prescription.pdf": 170691,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

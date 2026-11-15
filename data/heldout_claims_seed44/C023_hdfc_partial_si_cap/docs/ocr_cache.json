@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nHD7129340549\nProduct\nOptima Secure\nPolicy start date\n25/02/2023\nSum insured (Rs.)\n3,00,000\nName of patient\nIsaiah Kapur\nAge / Sex\n47 years / F\nContact number\n9138725318\nHospital name\nLotus Care Hospital, Indore\nDate of admission\n25/04/2026\nDate of discharge\n01/05/2026\nDiagnosis / ailment\ntotal knee replacement\nNature of illness\nIllness\nRoom category occupied\nstandard single\nTotal amount claimed (Rs.)\n4,07,450\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 01/05/2026\n",
+  "method": "text_layer"
+ },
+ "discharge_summary": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nLotus Care Hospital\nDischarge Summary\nPatient\nIsaiah Kapur, 47 years, F\nUHID\nUH231289\nDate of admission\n25/04/2026\nDate of discharge\n01/05/2026\nLength of stay\n6 day(s)\nConsultant\nDr. R. Nair\nFinal diagnosis\ntotal knee replacement\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to total knee replacement. Investigations were done and treatment\nwas given as per protocol. The post-treatment period was uneventful and the patient was discharged in stable\ncondition on 01/05/2026.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. R. Nair (Treating consultant)\n",
+  "method": "text_layer"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nLotus Care Hospital\nIndore | Final Inpatient Bill\nBill no\nBL/2026/87188\nUHID\nUH231289\nPatient\nIsaiah Kapur\nAge / Sex\n47 / F\nAdmitted\n25/04/2026\nDischarged\n01/05/2026\nConsultant\nDr. R. Nair\nRoom\nstandard single\nParticulars\nQty\nRate\nAmount\nROOM AND BED CHARGES\n   Room charges (standard single)\n6\n5,100\n30,600\n   Sub-total\n30,600\nPROFESSIONAL FEES\n   Surgeon and anaesthetist fees\n1\n77,650\n77,650\n   Sub-total\n77,650\nOPERATION THEATRE\n   Operation theatre charges\n1\n27,400\n27,400\n   Sub-total\n27,400\nPHARMACY\n   Pharmacy and medicines\n1\n25,700\n25,700\n   Sub-total\n25,700\nCONSUMABLES\n   Disposable consumables and admission kit\n1\n5,900\n5,900\n   Sub-total\n5,900\nDIAGNOSTICS\n   Laboratory and radiology investigations\n1\n8,300\n8,300\n   Sub-total\n8,300\nIMPLANTS\n   Implant / prosthesis\n1\n2,15,800\n2,15,800\n   Sub-total\n2,15,800\nNURSING\n   Nursing charges\n1\n16,100\n16,100\n   Sub-total\n16,100\nGRAND TOTAL\n4,07,450\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nIsaiah Kapur\nAge / Gender\n47 / F\nID number\nXXXX XXXX 1282\nMobile\n9138725318\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nLotus Care Hospital Pathology\nPatient: Isaiah Kapur | Date: 25/04/2026\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nPolicy Schedule\nPolicy number\nHD7129340549\nInsurer\nHDFC ERGO General Insurance\nProduct\nOptima Secure\nInsured person\nIsaiah Kapur, 47 years, F\nPolicy start date\n25/02/2023\nSum insured (Rs.)\n3,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. R. Nair\nLotus Care Hospital\nPatient: Isaiah Kapur, 47/F Date: 25/04/2026\nDiagnosis: total knee replacement\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 2901,
+  "discharge_summary.pdf": 2625,
+  "hospital_bill.pdf": 3263,
+  "id_proof.pdf": 2013,
+  "lab_report.pdf": 2168,
+  "policy_schedule.pdf": 2474,
+  "prescription.pdf": 1933,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

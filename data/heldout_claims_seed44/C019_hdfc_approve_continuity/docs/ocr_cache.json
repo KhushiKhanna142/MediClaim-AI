@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nHD3228640966\nProduct\nOptima Secure\nPolicy start date\n07/01/2026\nSum insured (Rs.)\n10,00,000\nName of patient\nArunima Dugar\nAge / Sex\n66 years / F\nContact number\n9776323945\nHospital name\nHarmony Medical Centre, Indore\nDate of admission\n07/07/2026\nDate of discharge\n13/07/2026\nDiagnosis / ailment\ntotal knee replacement\nNature of illness\nIllness\nRoom category occupied\nstandard single\nTotal amount claimed (Rs.)\n2,94,250\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 13/07/2026\n",
+  "method": "text_layer"
+ },
+ "discharge_summary": {
+  "text": "Harmony Medical Centre\nDischarge Summary\nPatient ArunimaDugar,66years,F\nUHID UH869932\nDate of admission 07/07/2026\nDate of discharge 13/07/2026\nLength of stay 6day(s)\nConsultant Dr.S.Mehta\nFinal diagnosis\ntotal knee replacement\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to total kneereplacement. Investigationswere done and treatment\nwas given asper protocol.Thepost-treatment periodwas uneventful and thepatientwas discharged in stable conditionon13/07/2026\nAdvice on discharge\nReview after7 dayswith reports.Continue medicines asprescribed.Avoid strenuous activity.\nDr.S.Mehta (Treating consultant)\nSynthtctestdocumengenerated for oltwreevaatlonNotarealrecor Page-",
+  "method": "ocr"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHarmony Medical Centre\nIndore | Final Inpatient Bill\nBill no\nBL/2026/7005\nUHID\nUH869932\nPatient\nArunima Dugar\nAge / Sex\n66 / F\nAdmitted\n07/07/2026\nDischarged\n13/07/2026\nConsultant\nDr. S. Mehta\nRoom\nstandard single\nSummary of charges\nHead\nAmount\nRoom and Bed Charges\n30,600\nProfessional Fees\n60,900\nOperation Theatre\n25,150\nPharmacy\n24,600\nDiagnostics\n8,100\nImplants\n1,29,050\nNursing\n15,850\nTotal bill\n2,94,250\n\nSynthetic test document, generated for software evaluation. Not a real record.\nPage 2\nItemised statement\nDate\nDescription\nQty\nRate\nAmount\n07/07/2026\nRoom charges (standard single)\n6\n5,100\n30,600\n07/07/2026\nSurgeon and anaesthetist fees\n1\n60,900\n60,900\n07/07/2026\nOperation theatre charges\n1\n25,150\n25,150\n07/07/2026\nLaboratory and radiology investigations\n1\n8,100\n8,100\n07/07/2026\nNursing charges\n1\n15,850\n15,850\n07/07/2026\nPharmacy and medicines\n1\n24,600\n24,600\n07/07/2026\nImplant / prosthesis\n1\n1,29,050\n1,29,050\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nArunima Dugar\nAge / Gender\n66 / F\nID number\nXXXX XXXX 8018\nMobile\n9776323945\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "HarmonyMedical CentrePathology\nPatient:Arunima Dugar|Date:07/07/2026\nTest Result Reference\nHaemoglobin 13.1g/dL 12.0-16.0\nWBCcount 7,400/cmm 4,000-11,000\nBlood sugar(random) 104mg/dL 70-140\nSerum creatinine 0.9mg/dL 0.6-1.2\nSythet testdocumet.eeratedf sotwar etionotateaecrd",
+  "method": "ocr"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nPolicy Schedule\nPolicy number\nHD3228640966\nInsurer\nHDFC ERGO General Insurance\nProduct\nOptima Secure\nInsured person\nArunima Dugar, 66 years, F\nPolicy start date\n07/01/2026\nSum insured (Rs.)\n10,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\n27 months\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. S. Mehta\nHarmony Medical Centre\nPatient: Arunima Dugar, 66/F Date: 07/07/2026\nDiagnosis: total knee replacement\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 2900,
+  "discharge_summary.pdf": 73565,
+  "hospital_bill.pdf": 4046,
+  "id_proof.pdf": 2012,
+  "lab_report.pdf": 148744,
+  "policy_schedule.pdf": 2477,
+  "prescription.pdf": 1938,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

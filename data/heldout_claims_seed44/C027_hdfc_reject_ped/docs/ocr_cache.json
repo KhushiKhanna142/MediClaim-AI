@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "HDFCERGO General Insurance\nHealth Insurance Claim Form (Reimbursement).Part A\nPolicy number HD2065008508\nProduct Optima Secure\nPolicy start date 13/10/2022\nSum insured(Rs.) 5,00,000\nName of patient Anita Borde\nAge/Sex 69years/M\nContact number 9952923180\nHospital name Metro Heart and General Hospital,Pune\nDate of admission 13/06/2025\nDate of discharge 18/06/2025\nDiagnosis/ailment diabeticfoot infectionwith debridement\nNature of illness llness\nRoom category occupied standard single\nTotal amount claimed(Rs.) 1,04,200\nDeclaration\nIdeclare that the information furnished in this claim form is true and correct to thebest of myknowledge.Iagree to\nprovide any further documentsrequiredby the insurer.\nSignature of the insured: Date:18/06/2025\nSynthetic test documentgenerated forsotwarevaluaion.Nota realrecord Page1",
+  "method": "ocr"
+ },
+ "discharge_summary": {
+  "text": "MetroHeartand General Hospital\nDischarge Summary\nPatient Anita Borde,69years,M\nGIHn UH669681\nDate of admission 13/06/2025\nDate of discharge 18/06/2025\nLength of stay 5 day(s)\nConsultant Dr.V.lyer\nFinal diagnosis\ndiabeticfootinfectionwith debridement\nHistory\nKnowncaseofdiabeticfootinfectionwith debridement,diagnosedon13/04/2021,onregulartreatment.\nCourse in hospital\nThe patient was admittedwith complaintsrelated to diabeticfoot infection with debridement. Investigationswere done\nstableconditionon18/06/2025.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines asprescribed.Avoid strenuous activity.\nDr.V.lyer \uff08Treating consultant)\nSyrhetc testdocumintgenuraled for sotware ealiabon Nota searecotd",
+  "method": "ocr"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nMetro Heart and General Hospital\nPune | Final Inpatient Bill\nBill no\nBL/2025/94291\nUHID\nUH669681\nPatient\nAnita Borde\nAge / Sex\n69 / M\nAdmitted\n13/06/2025\nDischarged\n18/06/2025\nConsultant\nDr. V. Iyer\nRoom\nstandard single\nSummary of charges\nHead\nAmount\nRoom and Bed Charges\n22,500\nProfessional Fees\n35,950\nOperation Theatre\n17,400\nPharmacy\n12,900\nConsumables\n1,950\nDiagnostics\n6,200\nNursing\n7,300\nTotal bill\n1,04,200\n\nSynthetic test document, generated for software evaluation. Not a real record.\nPage 2\nItemised statement\nDate\nDescription\nQty\nRate\nAmount\n13/06/2025\nRoom charges (standard single)\n5\n4,500\n22,500\n13/06/2025\nSurgeon and anaesthetist fees\n1\n35,950\n35,950\n13/06/2025\nOperation theatre charges\n1\n17,400\n17,400\n13/06/2025\nLaboratory and radiology investigations\n1\n6,200\n6,200\n13/06/2025\nNursing charges\n1\n7,300\n7,300\n13/06/2025\nPharmacy and medicines\n1\n12,900\n12,900\n13/06/2025\nDisposable consumables and admission kit\n1\n1,950\n1,950\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Government of India (specimen ID card,synthetic)\nName Anita Borde\nAge/Gender 69/M\nIDnumber XXXXXXXX8992\nMobile 9952923180\nSynthetic test documenl generated forsottware evaluation.Not a realrecord. Page:1",
+  "method": "ocr"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nMetro Heart and General Hospital Pathology\nPatient: Anita Borde | Date: 13/06/2025\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nPolicy Schedule\nPolicy number\nHD2065008508\nInsurer\nHDFC ERGO General Insurance\nProduct\nOptima Secure\nInsured person\nAnita Borde, 69 years, M\nPolicy start date\n13/10/2022\nSum insured (Rs.)\n5,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. V. Iyer\nMetro Heart and General Hospital\nPatient: Anita Borde, 69/M Date: 13/06/2025\nDiagnosis: diabetic foot infection with debridement\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 125381,
+  "discharge_summary.pdf": 165064,
+  "hospital_bill.pdf": 4043,
+  "id_proof.pdf": 96310,
+  "lab_report.pdf": 2177,
+  "policy_schedule.pdf": 2477,
+  "prescription.pdf": 1959,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

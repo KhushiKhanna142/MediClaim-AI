@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nNB6874677865\nProduct\nReAssure (Aspire)\nPolicy start date\n02/01/2023\nSum insured (Rs.)\n5,00,000\nName of patient\nRanbir De\nAge / Sex\n46 years / M\nContact number\n9728493621\nHospital name\nMetro Heart and General Hospital, Jaipur\nDate of admission\n02/06/2025\nDate of discharge\n07/06/2025\nDiagnosis / ailment\ntotal knee replacement\nNature of illness\nIllness\nRoom category occupied\nstandard single\nTotal amount claimed (Rs.)\n3,83,300\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 07/06/2025\n",
+  "method": "text_layer"
+ },
+ "discharge_summary": {
+  "text": "Metro Heart and General Hospital\nDischarge Summary\nPatient Ranbir De,46years,M\nUHID UH981373\nDate of admission 02/06/2025\nDate of discharge 07/06/2025\nLength of stay 5day(s)\nConsultant Dr.P.Deshmukh\nFinal diagnosis\ntotalkneereplacement\nHistory\nKnowncaseof total kneereplacement,diagnosedon03/07/2021,onregular treatment.\nCourse in hospital\nThepatient was admittedwith complaints related to total kneereplacement.Investigationswere done and treatment\nwasgiven asperprotocol.The post-treatment periodwas uneventful and thepatient was discharged in stable conditionon07/06/2025.\nAdvice on discharge\nReview after 7dayswithreports.Continuemedicines asprescribed.Avoid strenuous activity.\nDr.P.Deshmukh(Treating consultant)\nSynithefic test docurnent gonerated for sofware evalliaionNota real tecord. Page1",
+  "method": "ocr"
+ },
+ "hospital_bill": {
+  "text": "Metro Heart and General Hospital\nJaipur|Final Inpatient Bill\nBillno BL/2025/30390 UHID UH981373\nPatient Ranbir De Age/Sex 46/M\nAdmitted 02/06/2025 Discharged 07/06/2025\nConsultant Dr.P.Deshmukh Room standard single\nSummary of charges\nHead Amount\nRoom and Bed Charges 27,500\nProfessional Fees 83.050\nOperation Theatre 27,450\nPharmacy 19,250\nConsumables 4,450\nDiagnostics 14,650\nImplants 1,93,100\nNursing 13.850\nTotal bill 3,83,300\nItemised statement\nDate Description Qry Rate Amount\n02/06/2025 Room charges (standard single) 5 5,500 27,500\n02/06/2025 Surgeon and anaesthetist tees 83,050 83.050\n02/06/2025 Operaton theatre charges 27,450 27,450\n02/06/2025 Laboratory andradiology investigations 14,650 14,650\n02/06/2025 Nursing charges 1 13,850 13.850\n02/06/2025 Pharmacy and medicines 19,250 19.250\n02/06/2025 Implant/prosthesis 1 1,93,100 1,93,100\n02/06/2025 Disposable consumables and admission kit 4,450 4.450",
+  "method": "ocr"
+ },
+ "id_proof": {
+  "text": "Government of India(specimen ID card,synthetic)\nName Ranbir De\nAge/Gender 46/M\nIDnumber XXXXXXXX8625\nMobile 9728493621\nSynthetic test docuertgenratedforow valtinNoa l ecord Page1",
+  "method": "ocr"
+ },
+ "lab_report": {
+  "text": "Metro Heart and General Hospital Pathology\nPatient:RanbirDe|Date:02/06/2025\nTest Result Reference\nHaemoglobin 13.1g/dL 12.0-16.0\nWBCcount 7.400/cmm 4,000-11,000\nBlood sugar(random) 104mg/dL 70-140\nSerum creatinine 0.9mg/dL 0.6-1.2\nSynthetic test document,generatedforsoftware evaluation.Notareal record Page1",
+  "method": "ocr"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nPolicy Schedule\nPolicy number\nNB6874677865\nInsurer\nNiva Bupa Health Insurance\nProduct\nReAssure (Aspire)\nInsured person\nRanbir De, 46 years, M\nPolicy start date\n02/01/2023\nSum insured (Rs.)\n5,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. P. Deshmukh\nMetro Heart and General Hospital\nPatient: Ranbir De, 46/M Date: 02/06/2025\nDiagnosis: total knee replacement\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 2903,
+  "discharge_summary.pdf": 114003,
+  "hospital_bill.pdf": 263812,
+  "id_proof.pdf": 118663,
+  "lab_report.pdf": 163105,
+  "policy_schedule.pdf": 2477,
+  "prescription.pdf": 1946,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

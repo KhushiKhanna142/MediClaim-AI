@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nHD7701528545\nProduct\nOptima Secure\nPolicy start date\n15/12/2024\nSum insured (Rs.)\n5,00,000\nName of patient\nUdant Atwal\nAge / Sex\n52 years / F\nContact number\n9354775250\nHospital name\nMetro Heart and General Hospital, Jaipur\nDate of admission\n15/08/2026\nDate of discharge\n21/08/2026\nDiagnosis / ailment\npneumonia\nNature of illness\nIllness\nRoom category occupied\nprivate\nTotal amount claimed (Rs.)\n98,950\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 21/08/2026\n",
+  "method": "text_layer"
+ },
+ "discharge_summary": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nMetro Heart and General Hospital\nDischarge Summary\nPatient\nUdant Atwal, 52 years, F\nUHID\nUH558144\nDate of admission\n15/08/2026\nDate of discharge\n21/08/2026\nLength of stay\n6 day(s)\nConsultant\nDr. P. Deshmukh\nFinal diagnosis\npneumonia\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to pneumonia. Investigations were done and treatment was given as\nper protocol. The post-treatment period was uneventful and the patient was discharged in stable condition on\n21/08/2026.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. P. Deshmukh (Treating consultant)\n",
+  "method": "text_layer"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nMetro Heart and General Hospital\nJaipur | Final Inpatient Bill\nBill no\nBL/2026/32446\nUHID\nUH558144\nPatient\nUdant Atwal\nAge / Sex\n52 / F\nAdmitted\n15/08/2026\nDischarged\n21/08/2026\nConsultant\nDr. P. Deshmukh\nRoom\nprivate\nItem\nAmount (Rs.)\nRoom charges (private)  (6 x 8,200)\n49,200\nConsultant visits and monitoring\n18,100\nLaboratory and radiology investigations\n9,150\nNursing charges\n8,950\nPharmacy and medicines\n12,550\nDisposable consumables and admission kit\n1,000\nNet payable\n98,950\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nUdant Atwal\nAge / Gender\n52 / F\nID number\nXXXX XXXX 5968\nMobile\n9354775250\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Metro Heart and General Hospital Pathology\nPatient:UdantAtwal|Date:15/08/2026\nTest Result Reference\nHaemoglobin 13.1g/dL 12.0-16.0\nWBCcount 7,400/cmm 4,000-11,000\nBlood sugar\uff08random) 104mg/dL 70-140\nSerum creatinine 0.9mg/dL 0.6-1.2\nSynthetic testdocurntgenerated fo sotwreevalaionNoteecord Page1",
+  "method": "ocr"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nPolicy Schedule\nPolicy number\nHD7701528545\nInsurer\nHDFC ERGO General Insurance\nProduct\nOptima Secure\nInsured person\nUdant Atwal, 52 years, F\nPolicy start date\n15/12/2024\nSum insured (Rs.)\n5,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nRs. 5,000 per day\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. P. Deshmukh\nMetro Heart and General Hospital\nPatient: Udant Atwal, 52/F Date: 15/08/2026\nDiagnosis: pneumonia\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 2885,
+  "discharge_summary.pdf": 2624,
+  "hospital_bill.pdf": 2498,
+  "id_proof.pdf": 2009,
+  "lab_report.pdf": 78170,
+  "policy_schedule.pdf": 2468,
+  "prescription.pdf": 1939,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

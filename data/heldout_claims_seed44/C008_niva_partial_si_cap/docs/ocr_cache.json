@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nNB3851053482\nProduct\nReAssure (Aspire)\nPolicy start date\n31/10/2023\nSum insured (Rs.)\n3,00,000\nName of patient\nNathan Choudhury\nAge / Sex\n32 years / M\nContact number\n9547403679\nHospital name\nSunrise Multispeciality Hospital, Indore\nDate of admission\n31/03/2026\nDate of discharge\n05/04/2026\nDiagnosis / ailment\ntotal knee replacement\nNature of illness\nIllness\nRoom category occupied\nstandard single\nTotal amount claimed (Rs.)\n4,13,150\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 05/04/2026\n",
+  "method": "text_layer"
+ },
+ "discharge_summary": {
+  "text": "Sunrise MultispecialityHospital\nDischarge Summary\nPatient NathanChoudhury.32years,M\nUHID UH194171\nDate ofadmission 31/03/2026\nDate of discharge 05/04/2026\nLength of stay 5 day(s)\nConsultant Dr.P.Deshmukh\nFinal diagnosis\ntotalknee replacement\nHistory\nNo significantpast medical or surgical history.\nCourse in hospital\nThepatient was admittedwith complaintsrelated to total kneereplacement Investigationswere done and treatment\nwas given asperprotocol.The post-treatment periodwas uneventful and thepatient was discharged in stable\nconditionon05/04/2026.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed.Avoid strenuous activity\nDr.P.Deshmukh(Treating consultant)\nSynthetiefestdocumerl geneated lor sotwate evaluaion Not a real rocord",
+  "method": "ocr"
+ },
+ "hospital_bill": {
+  "text": "Sunrise Multispeciality Hospital\nIndore|Final Inpatient Bill\nBill no BL/2026/60262 UHID UH194171\nPatient Nathan Choudhury Age/Sex 32/M\nAdmitted 31/03/2026 Discharged 05/04/2026\nConsultant Dr.P.Deshmukh Room standard single\nItem Amount(Rs.)\nRoom charges(standard single)(5x5.800) 29,000\nSurgeon and anaesthetist fees 83,100\nOperation theatre charges 29,200\nLaboratory andradiologyinvestigations 11,750\nNursing charges 16,600\nPharmacy andmedicines 18,650\nImplant/prosthesis 2,20,150\nDisposable consumables and admission kit 4,700\nNet payable\n4,13,150\nSynthetictestdocumentgenerated tor soltware evalution,Nota real recr Page",
+  "method": "ocr"
+ },
+ "id_proof": {
+  "text": "Government of India(specimen ID card,synthetic)\nName NathanChoudhury\nAge/Gender 32/M\nIDnumber XXXXXXXX8951\nMobile 9547403679\nPage:",
+  "method": "ocr"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nSunrise Multispeciality Hospital Pathology\nPatient: Nathan Choudhury | Date: 31/03/2026\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nPolicy Schedule\nPolicy number\nNB3851053482\nInsurer\nNiva Bupa Health Insurance\nProduct\nReAssure (Aspire)\nInsured person\nNathan Choudhury, 32 years, M\nPolicy start date\n31/10/2023\nSum insured (Rs.)\n3,00,000\nWaiting period, pre-existing diseases\n24 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Dr.P.Deshmukh\nSunriseMultispecialityHospital\nPatient:Nathan Choudhury.32/MDate:31/03/2026\nDiagnosis:totalkneerepiacement\nRx:Tab.Paracetamol500mg1-0-1x3 days;Cap.Pantoprazole 40 mg 1-0-0x5 days",
+  "method": "ocr"
+ },
+ "_files": {
+  "claim_form.pdf": 2914,
+  "discharge_summary.pdf": 206911,
+  "hospital_bill.pdf": 172189,
+  "id_proof.pdf": 148802,
+  "lab_report.pdf": 2187,
+  "policy_schedule.pdf": 2480,
+  "prescription.pdf": 139944,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

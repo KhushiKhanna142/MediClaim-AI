@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "Niva Bupa Health Insurance\nHealth Insurance Claim Form (Reimbursement),PartA\nPolicynumber NB7055821064\nProduct ReAssure (Aspire)\nPolicy start date 13/01/2024\nSum insured (Rs.) 5,00.000\nName of patient HritikMann\nAge/Sex 35years/F\nContact number 9213154607\nHospital name HarmonyMedical Centre,Ahmedabad\nDate of admission 13/08/2025\nDate of discharge 15/08/2025\nDiagnosis/ailment inguinal hernia repair\nNature of illness Illness\nRoom category occupied standard single\nTotal amount claimed (Rs.) 86,500\nDeclaration\nIdeclare that theinformation furnished in thisclaim form is true andcorrect to thebest of myknowledge.Iagree to\nprovideany furtherdocumentsrequiredby theinsurer.\nSignature of the insured: Date:15/08/2025\nSynthetic test docutmentgenerated loysottware evalualion.Not areal record",
+  "method": "ocr"
+ },
+ "discharge_summary": {
+  "text": "HarmonyMedical Centre\nDischarge Summary\nPatient HritikMann,35years,F\nUHID UH561648\nDate of admisslon 13/08/2025\nDate of discharge 15/08/2025\nLength of stay 2day(s)\nConsultant Dr.V.lyer\nFinal diagnosis\ninguinal hernia repair\nHistory\nNo significant past medical or surgical history\nCourse in hospital\nThepatient was admitted with complaints related to inguinal herniarepair. lnvestigations were done and treatment was\ngiven asper protocol.Thepost-treatment period was uneventul and the patient was discharged in stable condition on\n15/08/2025.\nAdvice on discharge\nReview after 7 days with reports. Continuemedicines as prescribed.Avoid strenuous activity.\nDr.V.lyer(Treating consultant)\nSynthictestdocumen.geneolod torsowapeeluatio.Nol realecord",
+  "method": "ocr"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHarmony Medical Centre\nAhmedabad | Final Inpatient Bill\nBill no\nBL/2025/32581\nUHID\nUH561648\nPatient\nHritik Mann\nAge / Sex\n35 / F\nAdmitted\n13/08/2025\nDischarged\n15/08/2025\nConsultant\nDr. V. Iyer\nRoom\nstandard single\nSummary of charges\nHead\nAmount\nRoom and Bed Charges\n11,000\nProfessional Fees\n30,100\nOperation Theatre\n14,500\nPharmacy\n6,800\nConsumables\n1,500\nDiagnostics\n6,150\nImplants\n12,800\nNursing\n3,650\nTotal bill\n86,500\n\nSynthetic test document, generated for software evaluation. Not a real record.\nPage 2\nItemised statement\nDate\nDescription\nQty\nRate\nAmount\n13/08/2025\nRoom charges (standard single)\n2\n5,500\n11,000\n13/08/2025\nSurgeon and anaesthetist fees\n1\n30,100\n30,100\n13/08/2025\nOperation theatre charges\n1\n14,500\n14,500\n13/08/2025\nLaboratory and radiology investigations\n1\n6,150\n6,150\n13/08/2025\nNursing charges\n1\n3,650\n3,650\n13/08/2025\nPharmacy and medicines\n1\n6,800\n6,800\n13/08/2025\nImplant / prosthesis\n1\n12,800\n12,800\n13/08/2025\nDisposable consumables and admission kit\n1\n1,500\n1,500\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nHritik Mann\nAge / Gender\n35 / F\nID number\nXXXX XXXX 6841\nMobile\n9213154607\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Harmony Medical Centre Pathology\nPatient:HritikMann|Date:13/08/2025\nTest Result Reference\nHaemoglobin 13.1g/dL 12.0-16.0\nWBCcount 7,400/cmm 4,000-11,000\nBlood sugar (random) 104mg/dL 70-140\nSerum creatinine 0.9mg/dL 0.6-1.2\nSythe documegeneraled orsotwre vlonNoa erecord",
+  "method": "ocr"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nPolicy Schedule\nPolicy number\nNB7055821064\nInsurer\nNiva Bupa Health Insurance\nProduct\nReAssure (Aspire)\nInsured person\nHritik Mann, 35 years, F\nPolicy start date\n13/01/2024\nSum insured (Rs.)\n5,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Dr.V.lyer\nHarmonyMedicalCentre\nPatient:HritikMann,35/FDate:13/08/2025\nDiagnosis:inguinal hernia repair\nRx:Tab.Paracetamol500 mg1-0-1x3 days:Cap.Pantoprazole 40 mg 1-0-0x5 days\nSythet test dcntgenrat tofswe eaationotarealrecrd Pagei",
+  "method": "ocr"
+ },
+ "_files": {
+  "claim_form.pdf": 125775,
+  "discharge_summary.pdf": 199570,
+  "hospital_bill.pdf": 4123,
+  "id_proof.pdf": 2009,
+  "lab_report.pdf": 137375,
+  "policy_schedule.pdf": 2475,
+  "prescription.pdf": 117715,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}
