@@ -1,0 +1,554 @@
+{
+ "meta": {
+  "input_sha256": "adf48c5afa6d24b6914589387fec92aac20235dd8f341e7d24cf8689a4a72b70",
+  "judge_model": "gemini-3.5-flash-lite",
+  "ragas": "0.4.3",
+  "judge_calls": 152,
+  "cache_hits": 0
+ },
+ "results": {
+  "niva_ped": {
+   "set": "tuned",
+   "policy_id": "niva_aspire",
+   "context_precision": 0.5,
+   "context_recall": 0.8,
+   "gold": [
+    "5.1.1",
+    "2.1.35"
+   ],
+   "retrieved": [
+    "4.1.8",
+    "5.1.1",
+    "4.1.7.1"
+   ]
+  },
+  "niva_cataract": {
+   "set": "tuned",
+   "policy_id": "niva_aspire",
+   "context_precision": 1.0,
+   "context_recall": 1.0,
+   "gold": [
+    "5.1.2"
+   ],
+   "retrieved": [
+    "5.1.2",
+    "5.1.3",
+    "5.2.1"
+   ]
+  },
+  "niva_30day": {
+   "set": "tuned",
+   "policy_id": "niva_aspire",
+   "context_precision": 0.0,
+   "context_recall": 0.0,
+   "gold": [
+    "5.1.3"
+   ],
+   "retrieved": [
+    "4.1.7.2",
+    "4.1.3",
+    "6.2.4"
+   ]
+  },
+  "niva_abroad": {
+   "set": "tuned",
+   "policy_id": "niva_aspire",
+   "context_precision": 1.0,
+   "context_recall": 1.0,
+   "gold": [
+    "4.1.23"
+   ],
+   "retrieved": [
+    "4.1.23",
+    "4.1.19.3",
+    "6.1.11"
+   ]
+  },
+  "niva_room": {
+   "set": "tuned",
+   "policy_id": "niva_aspire",
+   "context_precision": 1.0,
+   "context_recall": 1.0,
+   "gold": [
+    "4.1.18"
+   ],
+   "retrieved": [
+    "4.1.18",
+    "6.2.4",
+    "6.1.11"
+   ]
+  },
+  "niva_cashbag": {
+   "set": "tuned",
+   "policy_id": "niva_aspire",
+   "context_precision": 0.0,
+   "context_recall": 0.0,
+   "gold": [
+    "4.1.24"
+   ],
+   "retrieved": [
+    "6.1.2",
+    "6.1.8",
+    "4.1.7.3"
+   ]
+  },
+  "rest_cataract": {
+   "set": "tuned",
+   "policy_id": "hdfc_optima_restore_current",
+   "context_precision": 1.0,
+   "context_recall": 1.0,
+   "gold": [
+    "Section C"
+   ],
+   "retrieved": [
+    "Section C",
+    "Section C",
+    "Section D/2"
+   ]
+  },
+  "rest_30day": {
+   "set": "tuned",
+   "policy_id": "hdfc_optima_restore_current",
+   "context_precision": 1.0,
+   "context_recall": 1.0,
+   "gold": [
+    "Section C"
+   ],
+   "retrieved": [
+    "Section C",
+    "Section D/2",
+    "Section B/1"
+   ]
+  },
+  "rest_copay": {
+   "set": "tuned",
+   "policy_id": "hdfc_optima_restore_current",
+   "context_precision": 0.0,
+   "context_recall": 0.0,
+   "gold": [
+    "Section B/V"
+   ],
+   "retrieved": [
+    "Section D/2",
+    "Section D",
+    "Section D/2"
+   ]
+  },
+  "old_cataract": {
+   "set": "tuned",
+   "policy_id": "hdfc_optima_restore_old",
+   "context_precision": 1.0,
+   "context_recall": 1.0,
+   "gold": [
+    "Section C"
+   ],
+   "retrieved": [
+    "Section B/2",
+    "Section C",
+    "Section D/XIV"
+   ]
+  },
+  "old_30day": {
+   "set": "tuned",
+   "policy_id": "hdfc_optima_restore_old",
+   "context_precision": 1.0,
+   "context_recall": 0.833,
+   "gold": [
+    "Section C"
+   ],
+   "retrieved": [
+    "Section C",
+    "Def.2",
+    "Section D"
+   ]
+  },
+  "old_migration": {
+   "set": "tuned",
+   "policy_id": "hdfc_optima_restore_old",
+   "context_precision": 1.0,
+   "context_recall": 1.0,
+   "gold": [
+    "Section D/XII"
+   ],
+   "retrieved": [
+    "Section D/XIV",
+    "Section D/XII",
+    "Def.28"
+   ]
+  },
+  "sec_ped24": {
+   "set": "tuned",
+   "policy_id": "hdfc_optima_secure_current",
+   "context_precision": 0.583,
+   "context_recall": 0.083,
+   "gold": [
+    "2.12/1",
+    "2.11/1"
+   ],
+   "retrieved": [
+    "Section C",
+    "2.12/1",
+    "2.12/2"
+   ]
+  },
+  "sec_ped12": {
+   "set": "tuned",
+   "policy_id": "hdfc_optima_secure_current",
+   "context_precision": 1.0,
+   "context_recall": 0.667,
+   "gold": [
+    "2.12/2",
+    "2.12",
+    "2.11/2"
+   ],
+   "retrieved": [
+    "2.12",
+    "2.12/2",
+    "2.12/1"
+   ]
+  },
+  "sec_roomcap": {
+   "set": "tuned",
+   "policy_id": "hdfc_optima_secure_current",
+   "context_precision": 0.333,
+   "context_recall": 0.136,
+   "gold": [
+    "2.11/1",
+    "2.13",
+    "2.11/2",
+    "2.13/1"
+   ],
+   "retrieved": [
+    "2.13/1",
+    "1.1",
+    "2.4"
+   ]
+  },
+  "sec_ayush": {
+   "set": "tuned",
+   "policy_id": "hdfc_optima_secure_current",
+   "context_precision": 1.0,
+   "context_recall": 0.25,
+   "gold": [
+    "1.4"
+   ],
+   "retrieved": [
+    "1.4",
+    "Def.6",
+    "Def.22"
+   ]
+  },
+  "sec_ambulance": {
+   "set": "tuned",
+   "policy_id": "hdfc_optima_secure_current",
+   "context_precision": 1.0,
+   "context_recall": 0.6,
+   "gold": [
+    "1.1.1"
+   ],
+   "retrieved": [
+    "1.1.1",
+    "2.1",
+    "2.11/1"
+   ]
+  },
+  "sec_abroad": {
+   "set": "tuned",
+   "policy_id": "hdfc_optima_secure_current",
+   "context_precision": 0.833,
+   "context_recall": 0.667,
+   "gold": [
+    "2.9"
+   ],
+   "retrieved": [
+    "2.9",
+    "2.10",
+    "2.4"
+   ]
+  },
+  "sec_cataract": {
+   "set": "tuned",
+   "policy_id": "hdfc_optima_secure_current",
+   "context_precision": 1.0,
+   "context_recall": 0.0,
+   "gold": [
+    "Section C"
+   ],
+   "retrieved": [
+    "1.8",
+    "1.7",
+    "1.28"
+   ]
+  },
+  "star_ped_buyback": {
+   "set": "tuned",
+   "policy_id": "star_comprehensive_current",
+   "context_precision": 1.0,
+   "context_recall": 1.0,
+   "gold": [
+    "II/25"
+   ],
+   "retrieved": [
+    "II/25",
+    "IV/12",
+    "H:III - EXCLUSIONS STANDARDEXCLUSIONS"
+   ]
+  },
+  "star_csection": {
+   "set": "tuned",
+   "policy_id": "star_comprehensive_current",
+   "context_precision": 1.0,
+   "context_recall": 1.0,
+   "gold": [
+    "II/14"
+   ],
+   "retrieved": [
+    "II/14",
+    "III/18",
+    "Def:Maternity Expenses"
+   ]
+  },
+  "star_bariatric": {
+   "set": "tuned",
+   "policy_id": "star_comprehensive_current",
+   "context_precision": 1.0,
+   "context_recall": 1.0,
+   "gold": [
+    "II/15"
+   ],
+   "retrieved": [
+    "II/15",
+    "H:II - COVERAGE In consideration of the pr",
+    "III/30"
+   ]
+  },
+  "star_dental": {
+   "set": "tuned",
+   "policy_id": "star_comprehensive_current",
+   "context_precision": 1.0,
+   "context_recall": 1.0,
+   "gold": [
+    "III/30"
+   ],
+   "retrieved": [
+    "III/30",
+    "III/19",
+    "II/17"
+   ]
+  },
+  "care_ped": {
+   "set": "tuned",
+   "policy_id": "care_supreme_current",
+   "context_precision": 1.0,
+   "context_recall": 1.0,
+   "gold": [
+    "4.1"
+   ],
+   "retrieved": [
+    "4.1",
+    "2.1.36",
+    "3.2.3"
+   ]
+  },
+  "care_pedmod": {
+   "set": "tuned",
+   "policy_id": "care_supreme_current",
+   "context_precision": 1.0,
+   "context_recall": 1.0,
+   "gold": [
+    "3.2.3",
+    "3.2"
+   ],
+   "retrieved": [
+    "3.2.3",
+    "4.1",
+    "3.2.5"
+   ]
+  },
+  "care_unlimited": {
+   "set": "tuned",
+   "policy_id": "care_supreme_current",
+   "context_precision": 1.0,
+   "context_recall": 1.0,
+   "gold": [
+    "3.2.18",
+    "3.2"
+   ],
+   "retrieved": [
+    "3.2.18",
+    "3.2.17",
+    "3.2.9"
+   ]
+  },
+  "care_smartselect": {
+   "set": "tuned",
+   "policy_id": "care_supreme_current",
+   "context_precision": 0.0,
+   "context_recall": 0.0,
+   "gold": [
+    "3.2.1",
+    "3.2"
+   ],
+   "retrieved": [
+    "3.2.13",
+    "3.2.19",
+    "3.1.6"
+   ]
+  },
+  "care_named": {
+   "set": "tuned",
+   "policy_id": "care_supreme_current",
+   "context_precision": 1.0,
+   "context_recall": 0.125,
+   "gold": [
+    "2.1.48",
+    "4.1"
+   ],
+   "retrieved": [
+    "2.1.48",
+    "3.2.4",
+    "3.2.3"
+   ]
+  },
+  "heldout_niva_organ_donor": {
+   "set": "heldout",
+   "policy_id": "niva_aspire",
+   "context_precision": 1.0,
+   "context_recall": 1.0,
+   "gold": [
+    "4.1.5"
+   ],
+   "retrieved": [
+    "4.1.5",
+    "2.1.37",
+    "2.1.36"
+   ]
+  },
+  "heldout_niva_domiciliary": {
+   "set": "heldout",
+   "policy_id": "niva_aspire",
+   "context_precision": 0.5,
+   "context_recall": 1.0,
+   "gold": [
+    "4.1.4"
+   ],
+   "retrieved": [
+    "2.1.14",
+    "4.1.4",
+    "2.1.21"
+   ]
+  },
+  "heldout_sec_air_ambulance": {
+   "set": "heldout",
+   "policy_id": "hdfc_optima_secure_current",
+   "context_precision": 1.0,
+   "context_recall": 1.0,
+   "gold": [
+    "2.1"
+   ],
+   "retrieved": [
+    "2.1",
+    "2.1",
+    "1.1.1"
+   ]
+  },
+  "heldout_sec_organ_donor": {
+   "set": "heldout",
+   "policy_id": "hdfc_optima_secure_current",
+   "context_precision": 1.0,
+   "context_recall": 1.0,
+   "gold": [
+    "1.7"
+   ],
+   "retrieved": [
+    "1.7",
+    "1.5",
+    "1.6"
+   ]
+  },
+  "heldout_sec_domiciliary": {
+   "set": "heldout",
+   "policy_id": "hdfc_optima_secure_current",
+   "context_precision": 1.0,
+   "context_recall": 0.2,
+   "gold": [
+    "1.3"
+   ],
+   "retrieved": [
+    "Def.15",
+    "1.3",
+    "1.2"
+   ]
+  },
+  "heldout_rest_restore_benefit": {
+   "set": "heldout",
+   "policy_id": "hdfc_optima_restore_current",
+   "context_precision": 1.0,
+   "context_recall": 1.0,
+   "gold": [
+    "Section B/2"
+   ],
+   "retrieved": [
+    "Section B/2",
+    "Section B/III",
+    "Section D/2"
+   ]
+  },
+  "heldout_care_road_ambulance": {
+   "set": "heldout",
+   "policy_id": "care_supreme_current",
+   "context_precision": 1.0,
+   "context_recall": 1.0,
+   "gold": [
+    "3.1.2"
+   ],
+   "retrieved": [
+    "3.1.2",
+    "2.2.30/3",
+    "3.2.14"
+   ]
+  },
+  "heldout_star_domiciliary": {
+   "set": "heldout",
+   "policy_id": "star_comprehensive_current",
+   "context_precision": 1.0,
+   "context_recall": 0.429,
+   "gold": [
+    "II/11"
+   ],
+   "retrieved": [
+    "II/11",
+    "III/18",
+    "II/16"
+   ]
+  },
+  "heldout_star_health_checkup": {
+   "set": "heldout",
+   "policy_id": "star_comprehensive_current",
+   "context_precision": 1.0,
+   "context_recall": 1.0,
+   "gold": [
+    "II/18"
+   ],
+   "retrieved": [
+    "II/18",
+    "II/13",
+    "Def:Preventive Risk Assessment"
+   ]
+  },
+  "heldout_star_hospital_cash": {
+   "set": "heldout",
+   "policy_id": "star_comprehensive_current",
+   "context_precision": 1.0,
+   "context_recall": 1.0,
+   "gold": [
+    "II/22"
+   ],
+   "retrieved": [
+    "II/22",
+    "II/14",
+    "Def:Planned Hospitalization (Cashless / Reimbursement)"
+   ]
+  }
+ }
+}

@@ -1,0 +1,316 @@
+{
+ "meta": {
+  "input_sha256": "bc91869816e339c3dcf2e88bc0ec71e9413bd2fd1fd4ddd99b2347907dbfdd01",
+  "judge_model": "gemini-3.5-flash-lite",
+  "deepeval": "4.3.4",
+  "judge_calls": 45,
+  "cache_hits": 59
+ },
+ "results": {
+  "C001_niva_clean_approve": {
+   "category": "clean_approve",
+   "decision": "approve",
+   "cited": [
+    "4.1.2"
+   ],
+   "missing_clause_text": [],
+   "unmapped_rules": [],
+   "faithfulness": 1.0,
+   "reason": "The score is 1.00 because the actual output is completely faithful to the retrieval context with no contradictions found. Great job!"
+  },
+  "C002_niva_clean_approve": {
+   "category": "clean_approve",
+   "decision": "approve",
+   "cited": [
+    "4.1.2"
+   ],
+   "missing_clause_text": [],
+   "unmapped_rules": [],
+   "faithfulness": 1.0,
+   "reason": "The score is 1.00 because the actual output is completely faithful to the retrieval context with no contradictions found. Great job!"
+  },
+  "C003_niva_clean_approve": {
+   "category": "clean_approve",
+   "decision": "approve",
+   "cited": [
+    "4.1.2"
+   ],
+   "missing_clause_text": [],
+   "unmapped_rules": [],
+   "faithfulness": 1.0,
+   "reason": "The score is 1.00 because the actual output is completely faithful to the retrieval context with no contradictions found. Great job!"
+  },
+  "C004_niva_approve_continuity": {
+   "category": "approve_continuity",
+   "decision": "approve",
+   "cited": [
+    "4.1.2"
+   ],
+   "missing_clause_text": [],
+   "unmapped_rules": [],
+   "faithfulness": 1.0,
+   "reason": "The score is 1.00 because the actual output is completely faithful to the retrieval context with no contradictions found. Great job!"
+  },
+  "C005_niva_partial_room": {
+   "category": "partial_room",
+   "decision": "partial",
+   "cited": [
+    "4.1.20.1.1",
+    "4.1.18",
+    "4.1.2"
+   ],
+   "missing_clause_text": [],
+   "unmapped_rules": [],
+   "faithfulness": 1.0,
+   "reason": "The score is 1.00 because the actual output is completely faithful to the retrieval context with no contradictions found. Great job!"
+  },
+  "C006_niva_partial_room": {
+   "category": "partial_room",
+   "decision": "partial",
+   "cited": [
+    "4.1.20.1.1",
+    "4.1.18",
+    "4.1.2"
+   ],
+   "missing_clause_text": [],
+   "unmapped_rules": [],
+   "faithfulness": 1.0,
+   "reason": "The score is 1.00 because the actual output is completely faithful to the retrieval context with no contradictions found. Great job!"
+  },
+  "C007_niva_partial_nonpayable": {
+   "category": "partial_nonpayable",
+   "decision": "partial",
+   "cited": [
+    "4.1.20.1.1",
+    "4.1.2"
+   ],
+   "missing_clause_text": [],
+   "unmapped_rules": [],
+   "faithfulness": 1.0,
+   "reason": "The score is 1.00 because the actual output is completely faithful to the retrieval context with no contradictions found. Great job!"
+  },
+  "C008_niva_partial_si_cap": {
+   "category": "partial_si_cap",
+   "decision": "partial",
+   "cited": [
+    "4.1.20.1.1",
+    "2.2.1",
+    "4.1.2"
+   ],
+   "missing_clause_text": [],
+   "unmapped_rules": [],
+   "faithfulness": 0.667,
+   "reason": "The score is 0.67 because the output contradicts the retrieval context by stating that non-medical items are not payable, whereas the context explicitly notes that under Claim Safeguard, non-payable items listed in 'List I \u2013 Expenses not covered' will actually be covered."
+  },
+  "C009_niva_reject_specified": {
+   "category": "reject_specified",
+   "decision": "reject",
+   "cited": [
+    "5.1.2"
+   ],
+   "missing_clause_text": [],
+   "unmapped_rules": [],
+   "faithfulness": 1.0,
+   "reason": "The score is 1.00 because the actual output is completely faithful to the retrieval context with no contradictions found. Great job!"
+  },
+  "C010_niva_reject_specified": {
+   "category": "reject_specified",
+   "decision": "reject",
+   "cited": [
+    "5.1.2"
+   ],
+   "missing_clause_text": [],
+   "unmapped_rules": [],
+   "faithfulness": 1.0,
+   "reason": "The score is 1.00 because the actual output is completely faithful to the retrieval context with no contradictions found. Great job!"
+  },
+  "C011_niva_reject_30day": {
+   "category": "reject_30day",
+   "decision": "reject",
+   "cited": [
+    "5.1.3"
+   ],
+   "missing_clause_text": [],
+   "unmapped_rules": [],
+   "faithfulness": 1.0,
+   "reason": "The score is 1.00 because the actual output is completely faithful to the retrieval context with no contradictions found. Great job!"
+  },
+  "C012_niva_reject_ped": {
+   "category": "reject_ped",
+   "decision": "reject",
+   "cited": [
+    "5.1.1",
+    "2.1.35"
+   ],
+   "missing_clause_text": [],
+   "unmapped_rules": [],
+   "faithfulness": 1.0,
+   "reason": "The score is 1.00 because the actual output is completely faithful to the retrieval context with no contradictions found. Great job!"
+  },
+  "C013_niva_multi_hop": {
+   "category": "multi_hop",
+   "decision": "reject",
+   "cited": [
+    "5.1.2",
+    "5.1.1",
+    "2.1.35"
+   ],
+   "missing_clause_text": [],
+   "unmapped_rules": [],
+   "faithfulness": 1.0,
+   "reason": "The score is 1.00 because the actual output is completely faithful to the retrieval context with no contradictions found. Great job!"
+  },
+  "C016_hdfc_clean_approve": {
+   "category": "clean_approve",
+   "decision": "approve",
+   "cited": [
+    "1.6"
+   ],
+   "missing_clause_text": [],
+   "unmapped_rules": [],
+   "faithfulness": 1.0,
+   "reason": "The score is 1.00 because the actual output is completely faithful to the retrieval context with no contradictions found. Great job!"
+  },
+  "C017_hdfc_clean_approve": {
+   "category": "clean_approve",
+   "decision": "approve",
+   "cited": [
+    "1.2"
+   ],
+   "missing_clause_text": [],
+   "unmapped_rules": [],
+   "faithfulness": 1.0,
+   "reason": "The score is 1.00 because the actual output is completely faithful to the retrieval context with no contradictions found. Great job!"
+  },
+  "C018_hdfc_clean_approve": {
+   "category": "clean_approve",
+   "decision": "approve",
+   "cited": [
+    "1.6"
+   ],
+   "missing_clause_text": [],
+   "unmapped_rules": [],
+   "faithfulness": 1.0,
+   "reason": "The score is 1.00 because the actual output is completely faithful to the retrieval context with no contradictions found. Great job!"
+  },
+  "C019_hdfc_approve_continuity": {
+   "category": "approve_continuity",
+   "decision": "approve",
+   "cited": [
+    "1.6"
+   ],
+   "missing_clause_text": [],
+   "unmapped_rules": [],
+   "faithfulness": 1.0,
+   "reason": "The score is 1.00 because the actual output is completely faithful to the retrieval context with no contradictions found. Great job!"
+  },
+  "C020_hdfc_partial_room": {
+   "category": "partial_room",
+   "decision": "partial",
+   "cited": [
+    "Section C",
+    "1.1.1",
+    "1.4"
+   ],
+   "missing_clause_text": [],
+   "unmapped_rules": [],
+   "faithfulness": 1.0,
+   "reason": "The score is 1.00 because the actual output is completely faithful to the retrieval context with no contradictions found. Great job!"
+  },
+  "C021_hdfc_partial_room": {
+   "category": "partial_room",
+   "decision": "partial",
+   "cited": [
+    "Section C",
+    "1.1.1",
+    "1.6"
+   ],
+   "missing_clause_text": [],
+   "unmapped_rules": [],
+   "faithfulness": 1.0,
+   "reason": "The score is 1.00 because the actual output is completely faithful to the retrieval context with no contradictions found. Great job!"
+  },
+  "C022_hdfc_partial_nonpayable": {
+   "category": "partial_nonpayable",
+   "decision": "partial",
+   "cited": [
+    "Section C",
+    "1.6"
+   ],
+   "missing_clause_text": [],
+   "unmapped_rules": [],
+   "faithfulness": 1.0,
+   "reason": "The score is 1.00 because the actual output is completely faithful to the retrieval context with no contradictions found. Great job!"
+  },
+  "C023_hdfc_partial_si_cap": {
+   "category": "partial_si_cap",
+   "decision": "partial",
+   "cited": [
+    "Section C",
+    "Def.29",
+    "1.6"
+   ],
+   "missing_clause_text": [],
+   "unmapped_rules": [],
+   "faithfulness": 1.0,
+   "reason": "The score is 1.00 because the actual output is completely faithful to the retrieval context with no contradictions found. Great job!"
+  },
+  "C024_hdfc_reject_specified": {
+   "category": "reject_specified",
+   "decision": "reject",
+   "cited": [
+    "Section C"
+   ],
+   "missing_clause_text": [],
+   "unmapped_rules": [],
+   "faithfulness": 1.0,
+   "reason": "The score is 1.00 because the actual output is completely faithful to the retrieval context with no contradictions found. Great job!"
+  },
+  "C025_hdfc_reject_specified": {
+   "category": "reject_specified",
+   "decision": "reject",
+   "cited": [
+    "Section C"
+   ],
+   "missing_clause_text": [],
+   "unmapped_rules": [],
+   "faithfulness": 1.0,
+   "reason": "The score is 1.00 because the actual output is completely faithful to the retrieval context with no contradictions found. Great job!"
+  },
+  "C026_hdfc_reject_30day": {
+   "category": "reject_30day",
+   "decision": "reject",
+   "cited": [
+    "Section C"
+   ],
+   "missing_clause_text": [],
+   "unmapped_rules": [],
+   "faithfulness": 1.0,
+   "reason": "The score is 1.00 because the actual output is completely faithful to the retrieval context with no contradictions found. Great job!"
+  },
+  "C027_hdfc_reject_ped": {
+   "category": "reject_ped",
+   "decision": "reject",
+   "cited": [
+    "Section C",
+    "Def.35"
+   ],
+   "missing_clause_text": [],
+   "unmapped_rules": [],
+   "faithfulness": 1.0,
+   "reason": "The score is 1.00 because the actual output is completely faithful to the retrieval context with no contradictions found. Great job!"
+  },
+  "C028_hdfc_multi_hop": {
+   "category": "multi_hop",
+   "decision": "reject",
+   "cited": [
+    "Section C",
+    "Def.35"
+   ],
+   "missing_clause_text": [],
+   "unmapped_rules": [],
+   "faithfulness": 1.0,
+   "reason": "The score is 1.00 because the actual output is completely faithful to the retrieval context with no contradictions found. Great job!"
+  }
+ }
+}
