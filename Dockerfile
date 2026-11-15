@@ -43,6 +43,7 @@ RUN python -c "from sentence_transformers import SentenceTransformer, CrossEncod
 
 # Copy application source code and pre-processed policy data
 COPY src/ ./src/
+COPY data/policies/ ./data/policies/
 COPY data/processed/ ./data/processed/
 COPY data/qdrant/ ./data/qdrant/
 COPY data/synthetic_claims/ ./data/synthetic_claims/

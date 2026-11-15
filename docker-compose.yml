@@ -13,7 +13,4 @@ services:
       - LANGFUSE_SECRET_KEY=${LANGFUSE_SECRET_KEY:-}
       - LANGFUSE_HOST=${LANGFUSE_HOST:-https://cloud.langfuse.com}
       - HF_HUB_OFFLINE=1
-    volumes:
-      - ./data/checkpoints.sqlite:/app/data/checkpoints.sqlite
-      - ./data/mediclaim.db:/app/data/mediclaim.db
     restart: unless-stopped
