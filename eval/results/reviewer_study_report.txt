@@ -1,0 +1,32 @@
+================================================================================
+HUMAN-IN-THE-LOOP ADJUDICATOR EVALUATION: REVIEWER CATCH RATE ON REJECTIONS
+================================================================================
+Total Escalated Rejection Claims Evaluated: 10
+  - Erroneous Denials Injected:             1 (C021: Acute Appendicitis misclassified as Section C)
+  - Valid Policy Rejections:                9
+
+KEY HUMAN CATCH RATE RESULTS:
+  Enhanced Review Cockpit Catch Rate on C021:   100.0% (2 of 2 reviewers caught and overturned)
+  Baseline Raw-Viewer Catch Rate on C021:         0.0% (0 of 1: rubber-stamped 20m < 24m arithmetic)
+  Overall Reviewer Catch Rate on C021:           66.7% (2 of 3 reviewers)
+  True Rejection Confirmation Rate:             100.0% (9 of 9 valid rejections confirmed)
+
+--------------------------------------------------------------------------------
+DETAILED REVIEWER PERFORMANCE:
+Reviewer Profile                       | Audit Card   | C021 Caught?   | C021 Review Time
+--------------------------------------------------------------------------------
+Senior Medical Adjudicator (Enhanced Cockpit) | Enabled      | YES (Overturned) | 42s
+Junior Claims Adjudicator (Enhanced Cockpit) | Enabled      | YES (Overturned) | 65s
+Baseline Adjudicator (Raw Documents Only) | None (Raw)   | NO (Rubber-stamped) | 24s
+
+--------------------------------------------------------------------------------
+ANALYSIS & CRITICAL TAKEAWAY:
+1. The Failure Mode of Baseline Reviewers: Without the structured audit card, adjudicators check
+   only the top-level arithmetic: 'Patient covered 20 months, required wait is 24 months -> 20 < 24 -> Agree'.
+   They rarely open the 60-page PDF annexure to check whether appendicitis is actually on Section C's list.
+2. The Impact of the Enhanced Cockpit: Rendering the Section C disease list directly adjacent to
+   'Diagnosis: Acute Appendicitis' transforms a tedious document search into an instant visual check,
+   enabling both senior and junior adjusters to spot the omission immediately.
+3. Conclusion: 'Review_all_rejects' is a real safety mechanism ONLY when paired with the structured
+   review cockpit; without it, human reviewers rubber-stamp AI arithmetic errors.
+================================================================================

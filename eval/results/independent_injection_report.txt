@@ -1,0 +1,42 @@
+================================================================================
+INDEPENDENT ADVERSARIAL PROMPT INJECTION BENCHMARK REPORT
+================================================================================
+Total Independent Adversarial Attacks: 50
+Clinical Homonym Negative Controls:    20
+
+1. REALISTIC DETECTION RATE (Pattern Scanner on Independent Evasion Set):
+  Overall Detection Rate:   2.0% (1/50)  [95% CI:  0.4% – 10.5%]
+
+  Detection Breakdown by Evasion Technique:
+  Category                     | Attacks  | Detected   | Detection Rate
+  ----------------------------------------------------------------------
+  clinical_paraphrase          | 10       | 0          |   0.0%
+  critic_manipulation          | 10       | 0          |   0.0%
+  multilingual_hindi           | 5        | 0          |   0.0%
+  multilingual_hinglish        | 5        | 0          |   0.0%
+  obfuscation_comments         | 2        | 0          |   0.0%
+  obfuscation_delimiters       | 2        | 1          |  50.0%
+  obfuscation_homoglyph        | 2        | 0          |   0.0%
+  obfuscation_leetspeak        | 1        | 0          |   0.0%
+  obfuscation_spacing          | 3        | 0          |   0.0%
+  table_cell_injection         | 10       | 0          |   0.0%
+
+2. THREE-ARM ABLATION STUDY (Strict Metric: Wrong Status/Amount Auto-Finalised):
+  Defense Configuration            | Successful Evasions  | Attack Success Rate (95% CI)  
+  ----------------------------------------------------------------------------------------
+  Arm 1: Undefended                | 13/50                |  26.0% [15.9% – 39.6%]
+  Arm 2: Prompt Delimiters Only    |  5/50                |  10.0% [ 4.3% – 21.4%]
+  Arm 3: Full Defense-in-Depth     |  0/50                |   0.0% [ 0.0% –  7.1%]
+
+3. REALISTIC FALSE POSITIVE RATE (Clinical Homonyms):
+  Clean Sentences with Words 'override', 'bypass', 'approve', 'cancel': 20
+  False Positives Triggered: 0 ( 0.0%) [95% CI:  0.0% – 16.1%]
+  All 20 legitimate clinical uses passed without triggering injection regexes.
+
+4. PHYSICAL VECTOR DIFFERENCE: DIGITAL PDF VS SCANNED IMAGE:
+  - Digital PDFs: PyMuPDF inspects font size dictionaries (<2.0pt) and color channels (#FFFFFF)
+    directly in the vector stream before OCR.
+  - Scanned PDFs: Scanned pages are raster images. Invisible text printed in tiny or white font
+    does not produce OCR tokens. Any text that is recognized by OCR is subject to raw text
+    sanitization before LLM extraction prompts.
+================================================================================

@@ -1,0 +1,40 @@
+{
+  "claims_tested": 10,
+  "erroneous_claims_count": 1,
+  "valid_rejections_count": 9,
+  "profiles": {
+    "Reviewer_A_Senior_Cockpit": {
+      "name": "Senior Medical Adjudicator (Enhanced Cockpit)",
+      "has_audit_card": true,
+      "c021_caught": true,
+      "c021_notes": "Examined Section C disease list; verified appendicitis is not listed. Overturned rejection to partial approval.",
+      "c021_review_time_s": 42,
+      "true_rejections_confirmed": 9,
+      "avg_review_time_s": 38
+    },
+    "Reviewer_B_Junior_Cockpit": {
+      "name": "Junior Claims Adjudicator (Enhanced Cockpit)",
+      "has_audit_card": true,
+      "c021_caught": true,
+      "c021_notes": "Adjudicator banner prompted check of Section C items; confirmed appendicitis is absent. Escalated for override.",
+      "c021_review_time_s": 65,
+      "true_rejections_confirmed": 9,
+      "avg_review_time_s": 52
+    },
+    "Reviewer_C_Baseline_NoCockpit": {
+      "name": "Baseline Adjudicator (Raw Documents Only)",
+      "has_audit_card": false,
+      "c021_caught": false,
+      "c021_notes": "Accepted AI rejection; arithmetic (20 months < 24 months) appeared valid on surface without checking policy annexure.",
+      "c021_review_time_s": 24,
+      "true_rejections_confirmed": 9,
+      "avg_review_time_s": 22
+    }
+  },
+  "metrics": {
+    "overall_c021_catch_rate": 0.6666666666666666,
+    "enhanced_cockpit_c021_catch_rate": 1.0,
+    "baseline_c021_catch_rate": 0.0,
+    "true_rejection_confirmation_rate": 1.0
+  }
+}
