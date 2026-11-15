@@ -1,0 +1,91 @@
+{
+ "claim_id": "C004_niva_approve_continuity",
+ "category": "approve_continuity",
+ "policy_id": "niva_aspire",
+ "patient": {
+  "name": "Ayushman Chander",
+  "age": 51,
+  "sex": "F"
+ },
+ "schedule": {
+  "sum_insured": 1000000,
+  "policy_start": "2025-12-15",
+  "ped_months": 36,
+  "spec_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 26,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "inguinal hernia repair",
+  "kind": "illness",
+  "specified": true,
+  "is_ped": false
+ },
+ "admission_date": "2026-08-15",
+ "discharge_date": "2026-08-17",
+ "room_days": 2,
+ "room_claimed": "standard_single",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (standard single)",
+   "qty": 2,
+   "rate": 5300,
+   "amount": 10600
+  },
+  {
+   "category": "surgeon",
+   "description": "Surgeon and anaesthetist fees",
+   "qty": 1,
+   "rate": 45450,
+   "amount": 45450
+  },
+  {
+   "category": "ot",
+   "description": "Operation theatre charges",
+   "qty": 1,
+   "rate": 19900,
+   "amount": 19900
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 7400,
+   "amount": 7400
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 5600,
+   "amount": 5600
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 8300,
+   "amount": 8300
+  },
+  {
+   "category": "implant",
+   "description": "Implant / prosthesis",
+   "qty": 1,
+   "rate": 16800,
+   "amount": 16800
+  }
+ ],
+ "stated_total": 114050,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

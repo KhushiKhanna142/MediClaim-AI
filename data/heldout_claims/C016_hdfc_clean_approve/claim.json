@@ -1,0 +1,84 @@
+{
+ "claim_id": "C016_hdfc_clean_approve",
+ "category": "clean_approve",
+ "policy_id": "hdfc_optima_secure_current",
+ "patient": {
+  "name": "Chakradev Kari",
+  "age": 61,
+  "sex": "F"
+ },
+ "schedule": {
+  "sum_insured": 1000000,
+  "policy_start": "2024-10-14",
+  "ped_months": 36,
+  "spec_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "acute appendicitis, appendectomy",
+  "kind": "illness",
+  "specified": false,
+  "is_ped": false
+ },
+ "admission_date": "2025-07-14",
+ "discharge_date": "2025-07-17",
+ "room_days": 3,
+ "room_claimed": "standard_single",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (standard single)",
+   "qty": 3,
+   "rate": 5200,
+   "amount": 15600
+  },
+  {
+   "category": "surgeon",
+   "description": "Surgeon and anaesthetist fees",
+   "qty": 1,
+   "rate": 40850,
+   "amount": 40850
+  },
+  {
+   "category": "ot",
+   "description": "Operation theatre charges",
+   "qty": 1,
+   "rate": 18000,
+   "amount": 18000
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 5250,
+   "amount": 5250
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 6350,
+   "amount": 6350
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 11000,
+   "amount": 11000
+  }
+ ],
+ "stated_total": 97050,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

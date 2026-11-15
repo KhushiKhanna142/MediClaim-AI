@@ -1,0 +1,35 @@
+{
+ "claim_form": {
+  "text": "Niva BupaHealth Insurance\nHealth Insurance ClaimForm (Reimbursement),Part A\nPolicy number NB3847586742\nProduct ReAssure (Aspire)\nPolicy start date 24/09/2024\nSum insured (Rs.) 3,00,000\nName of patient Kritika Brar\nAge/Sex 62years/F\nContact number 9288651703\nHospital name Sanjivani Hospital andResearch Centre,Pune\nDate ofadmission 24/05/2025\nDate of discharge 29/05/2025\nDiagnosis/ailment pneumonia\nNature of illness Illness\nRoom category occupied standard single\nTotal amount claimed (Rs.) 76,300\nDeclaration\nIdeclare that the information furnished in this claim form is true and correct to the best ol myknowledge.I agree to\nSignature of the insured: Date:29/05/2025",
+  "method": "ocr"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nSanjivani Hospital and Research Centre\nPune | Final Inpatient Bill\nBill no\nBL/2025/12957\nUHID\nUH621795\nPatient\nKritika Brar\nAge / Sex\n62 / F\nAdmitted\n24/05/2025\nDischarged\n29/05/2025\nConsultant\nDr. P. Deshmukh\nRoom\nstandard single\nSummary of charges\nHead\nAmount\nRoom and Bed Charges\n22,500\nPharmacy\n16,600\nConsumables\n950\nDiagnostics\n8,650\nNursing\n8,450\nOther Charges\n19,150\nTotal bill\n76,300\n\nSynthetic test document, generated for software evaluation. Not a real record.\nPage 2\nItemised statement\nDate\nDescription\nQty\nRate\nAmount\n24/05/2025\nRoom charges (standard single)\n5\n4,500\n22,500\n24/05/2025\nConsultant visits and monitoring\n1\n19,150\n19,150\n24/05/2025\nLaboratory and radiology investigations\n1\n8,650\n8,650\n24/05/2025\nNursing charges\n1\n8,450\n8,450\n24/05/2025\nPharmacy and medicines\n1\n16,600\n16,600\n24/05/2025\nDisposable consumables and admission kit\n1\n950\n950\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Government of India (specimen ID card,synthetic)\nName Kritika Brar\nAge/Gender 62/F\nIDnumber XXXXXXXX7897\nMobile 9288651703",
+  "method": "ocr"
+ },
+ "lab_report": {
+  "text": "Sanjivani Hospital and Research Centre Pathology\nPatient:KritikaBrar|Date:24/05/2025\nTest Result Reference\nHaemoglobin 13.1g/dL 12.0-16.0\nWBCcount 7,400/cmm 4,000-11.000\nBloodsugar\uff08random) 104mg/dL 70-140\nSerum creatinine 0.9mg/dL 0.6-1.2\nSythetc stdocuntgedrw evaltinNotarealrco Page1",
+  "method": "ocr"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nPolicy Schedule\nPolicy number\nNB3847586742\nInsurer\nNiva Bupa Health Insurance\nProduct\nReAssure (Aspire)\nInsured person\nKritika Brar, 62 years, F\nPolicy start date\n24/09/2024\nSum insured (Rs.)\n3,00,000\nWaiting period, pre-existing diseases\n12 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. P. Deshmukh\nSanjivani Hospital and Research Centre\nPatient: Kritika Brar, 62/F Date: 24/05/2025\nDiagnosis: pneumonia\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 117863,
+  "hospital_bill.pdf": 3975,
+  "id_proof.pdf": 111180,
+  "lab_report.pdf": 83852,
+  "policy_schedule.pdf": 2477,
+  "prescription.pdf": 1944,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "HDFCERGO General Insurance\nHealth Insurance Claim Form(Reimbursement).Part A\nPolicy number HD7686619319\nProduct Optima Secure\nPolicy start date 30/09/2025\nSum insured (Rs.) 5.00,000\nName of patient DominicKakar\nAge/Sex 39years/M\nContact number 9355571348\nHospital name MetroHeartandGeneral Hospital,Indore\nDate ofadmission 13/10/2025\nDate of discharge 17/10/2025\nDiagnosis/ailment acute appendicitis,appendectomy\nNature of illness Illness\nRoom category occupied standard single\nTotal amount claimed (Rs.) 1,06,100\nDeclaration\nIdeclare that the information furnished in this claim form is true and correct to thebest of myknowledge.Iagree to\nprovide any further documentsrequiredby the insurer.\nSignature of the insured: Date:17/10/2025\nSynthetic test documenLgeneraled Ior sotware evafuation.Nota teal record",
+  "method": "ocr"
+ },
+ "discharge_summary": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nMetro Heart and General Hospital\nDischarge Summary\nPatient\nDominic Kakar, 39 years, M\nUHID\nUH748633\nDate of admission\n13/10/2025\nDate of discharge\n17/10/2025\nLength of stay\n4 day(s)\nConsultant\nDr. A. Kulkarni\nFinal diagnosis\nacute appendicitis, appendectomy\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to acute appendicitis, appendectomy. Investigations were done and\ntreatment was given as per protocol. The post-treatment period was uneventful and the patient was discharged in\nstable condition on 17/10/2025.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. A. Kulkarni (Treating consultant)\n",
+  "method": "text_layer"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nMetro Heart and General Hospital\nIndore | Final Inpatient Bill\nBill no\nBL/2025/40896\nUHID\nUH748633\nPatient\nDominic Kakar\nAge / Sex\n39 / M\nAdmitted\n13/10/2025\nDischarged\n17/10/2025\nConsultant\nDr. A. Kulkarni\nRoom\nstandard single\nSummary of charges\nHead\nAmount\nRoom and Bed Charges\n21,200\nProfessional Fees\n38,000\nOperation Theatre\n19,850\nPharmacy\n8,700\nConsumables\n3,450\nDiagnostics\n7,150\nNursing\n7,750\nTotal bill\n1,06,100\n\nSynthetic test document, generated for software evaluation. Not a real record.\nPage 2\nItemised statement\nDate\nDescription\nQty\nRate\nAmount\n13/10/2025\nRoom charges (standard single)\n4\n5,300\n21,200\n13/10/2025\nSurgeon and anaesthetist fees\n1\n38,000\n38,000\n13/10/2025\nOperation theatre charges\n1\n19,850\n19,850\n13/10/2025\nLaboratory and radiology investigations\n1\n7,150\n7,150\n13/10/2025\nNursing charges\n1\n7,750\n7,750\n13/10/2025\nPharmacy and medicines\n1\n8,700\n8,700\n13/10/2025\nDisposable consumables and admission kit\n1\n3,450\n3,450\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Government of India (specimen ID card,synthetic)\nName DominicKakar\nAge/Gender 39/M\nIDnumber XXXXXXXX3065\nMobile 9355571348\nSynthetic test documenl generated for software evaluation.Not a real record Page1",
+  "method": "ocr"
+ },
+ "lab_report": {
+  "text": "Metro Heart and General Hospital Pathology\nPatient:DominicKakar|Date:13/10/2025\nTest Result Reference\nHaemoglobin 13.1g/dL 12.0-16.0\nWBCcount 7,400/cmm 4,000-11,000\nBlood sugar(random) 104mg/dL 70-140\nSerum creatinine 0.9mg/dL 0.6-1.2\nSyntc tesocmntgerated for sowaleevaao Notareiecod",
+  "method": "ocr"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nPolicy Schedule\nPolicy number\nHD7686619319\nInsurer\nHDFC ERGO General Insurance\nProduct\nOptima Secure\nInsured person\nDominic Kakar, 39 years, M\nPolicy start date\n30/09/2025\nSum insured (Rs.)\n5,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. A. Kulkarni\nMetro Heart and General Hospital\nPatient: Dominic Kakar, 39/M Date: 13/10/2025\nDiagnosis: acute appendicitis, appendectomy\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 221506,
+  "discharge_summary.pdf": 2643,
+  "hospital_bill.pdf": 4059,
+  "id_proof.pdf": 172329,
+  "lab_report.pdf": 185044,
+  "policy_schedule.pdf": 2480,
+  "prescription.pdf": 1956,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

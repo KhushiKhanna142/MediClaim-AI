@@ -1,0 +1,98 @@
+{
+ "claim_id": "C013_niva_multi_hop",
+ "category": "multi_hop",
+ "policy_id": "niva_aspire",
+ "patient": {
+  "name": "Tripti Yadav",
+  "age": 34,
+  "sex": "F"
+ },
+ "schedule": {
+  "sum_insured": 300000,
+  "policy_start": "2023-10-18",
+  "ped_months": 36,
+  "spec_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "total knee replacement",
+  "kind": "illness",
+  "specified": true,
+  "is_ped": true
+ },
+ "admission_date": "2026-03-18",
+ "discharge_date": "2026-03-23",
+ "room_days": 5,
+ "room_claimed": "standard_single",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (standard single)",
+   "qty": 5,
+   "rate": 4800,
+   "amount": 24000
+  },
+  {
+   "category": "surgeon",
+   "description": "Surgeon and anaesthetist fees",
+   "qty": 1,
+   "rate": 85900,
+   "amount": 85900
+  },
+  {
+   "category": "ot",
+   "description": "Operation theatre charges",
+   "qty": 1,
+   "rate": 25800,
+   "amount": 25800
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 12550,
+   "amount": 12550
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 15150,
+   "amount": 15150
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 15900,
+   "amount": 15900
+  },
+  {
+   "category": "implant",
+   "description": "Implant / prosthesis",
+   "qty": 1,
+   "rate": 178250,
+   "amount": 178250
+  },
+  {
+   "category": "consumable",
+   "description": "Disposable consumables and admission kit",
+   "qty": 1,
+   "rate": 5400,
+   "amount": 5400
+  }
+ ],
+ "stated_total": 362950,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

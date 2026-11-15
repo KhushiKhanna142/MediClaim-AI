@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "HDFCERGOGeneral Insurance\nHealth Insurance Claim Form(Reimbursement),Part A\nPolicy number HD8650548181\nProduct Optima Secure\nPolicy start date 14/10/2024\nSum insured(Rs.) 10,00,000\nName of patient ChakradevKari\nAge/Sex 61years/F\nContact number 9541380072\nHospital name Lotus Care Hospital,Indore\nDate ofadmission 14/07/2025\nDate of discharge 17/07/2025\nDiagnosis/ailment acute appendicitis,appendectomy\nNature of illness Illness\nRoom category occupied standard single\nTotal amountclaimed(Rs.) 97,050\nDeclaration\nIdeclare that theinformation furnished in thisclaim form is true andcorrect to thebestofmyknowledge.Iagree to\nprovide any further documentsrequiredby theinsurer.\nSignature of the insured: Date:17/07/2025\nSynthetic testdocumengenerated for atwarevaluationNotaea recr Page1",
+  "method": "ocr"
+ },
+ "discharge_summary": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nLotus Care Hospital\nDischarge Summary\nPatient\nChakradev Kari, 61 years, F\nUHID\nUH547466\nDate of admission\n14/07/2025\nDate of discharge\n17/07/2025\nLength of stay\n3 day(s)\nConsultant\nDr. A. Kulkarni\nFinal diagnosis\nacute appendicitis, appendectomy\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to acute appendicitis, appendectomy. Investigations were done and\ntreatment was given as per protocol. The post-treatment period was uneventful and the patient was discharged in\nstable condition on 17/07/2025.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. A. Kulkarni (Treating consultant)\n",
+  "method": "text_layer"
+ },
+ "hospital_bill": {
+  "text": "Lotus Care Hospital\nIndore|Final Inpatient Bill\nBill no BL/2025/4647 UHID UH547466\nPatient ChakradevKari Age/Sex 61/F\nAdmitted 14/07/2025 Discharged 17/07/2025\nConsultant Dr.A.Kulkarni Room standard single\nParticulars Qty Rate Amount\nROOM AND BED CHARGES\nRoom charges (standard single) 3 5,200 15.600\nSub-total\n15,600\nPROFESSIONALFEES\nSurgeon and anaesthetist fees 40.850 40,850\nSub-total\nOPERATION THEATRE 40,850\nOperation theatre charges 18.000 18,000\nSub-total 18,000\nPHARMACY\nPharmacy and medicines 11,000 11.000\nSub-total 11,000\nDIAGNOSTICS\nLaboratory and radiology investigations 5,250 5.250\nSub-total 5.250\nNURSING\nNursing charges 6,350 6.350\nSub-total 6.350\nGRAND TOTAL\n97,050\nNgtareafrocord",
+  "method": "ocr"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nChakradev Kari\nAge / Gender\n61 / F\nID number\nXXXX XXXX 5523\nMobile\n9541380072\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nLotus Care Hospital Pathology\nPatient: Chakradev Kari | Date: 14/07/2025\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nPolicy Schedule\nPolicy number\nHD8650548181\nInsurer\nHDFC ERGO General Insurance\nProduct\nOptima Secure\nInsured person\nChakradev Kari, 61 years, F\nPolicy start date\n14/10/2024\nSum insured (Rs.)\n10,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. A. Kulkarni\nLotus Care Hospital\nPatient: Chakradev Kari, 61/F Date: 14/07/2025\nDiagnosis: acute appendicitis, appendectomy\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 131566,
+  "discharge_summary.pdf": 2636,
+  "hospital_bill.pdf": 86930,
+  "id_proof.pdf": 2013,
+  "lab_report.pdf": 2172,
+  "policy_schedule.pdf": 2480,
+  "prescription.pdf": 1948,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

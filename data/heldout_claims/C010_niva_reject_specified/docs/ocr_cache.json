@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nNB7055821064\nProduct\nReAssure (Aspire)\nPolicy start date\n29/07/2024\nSum insured (Rs.)\n3,00,000\nName of patient\nGayathri Chaudry\nAge / Sex\n62 years / F\nContact number\n9213154607\nHospital name\nHarmony Medical Centre, Ahmedabad\nDate of admission\n29/03/2025\nDate of discharge\n31/03/2025\nDiagnosis / ailment\nlaparoscopic cholecystectomy (gallstones)\nNature of illness\nIllness\nRoom category occupied\nstandard single\nTotal amount claimed (Rs.)\n96,200\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 31/03/2025\n",
+  "method": "text_layer"
+ },
+ "discharge_summary": {
+  "text": "Harmony Medical Centre\nDischarge Summary\nPatient Gayathri Chaudry.62years,F\nUHID UH561648\nDate of admission 29/03/2025\nDate of discharge 31/03/2025\nLength of stay 2day(s)\nConsultant Dr.V.lyer\nFinal diagnosis\nlaparoscopic cholecystectomy(gallstones)\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\ndischargedinstableconditionon31/03/2025\nAdvice on discharge\nDr.V.lyer\uff08Treating consultant)\nSynthetio test documentgenerated for software evaluation.Nata real record PageT",
+  "method": "ocr"
+ },
+ "hospital_bill": {
+  "text": "HarmonyMedical Centre\nAhmedabad|Final Inpatient Bill\nBill no BL/2025/32581 UHID UH561648\nPatient Gayathri Chaudry Age/Sex 62/F\nAdmitted 29/03/2025 Discharged 31/03/2025\nConsultant Dr.V.lyer Room standard single\nSI Description aty Rate\n1 Amount\nRoom charges(standard single) 2 4,300 8,600\n2 Surgeon and anaesthetist fees 1 44,500\n3 44,500\nOperation theatre charges 20.500 20,500\n4 Laboratory andradiology investigations 6,050\n5 6,050\nNursing charges 5,600 5,600\n6 Pharmacy and medicines 1 8,550\n7 8.550\nDisposable consumables and admissionkit 1 2,400 2,400\nTOTAL 96,200\nSectt docngtd we evatnarlcr Puge!",
+  "method": "ocr"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nGayathri Chaudry\nAge / Gender\n62 / F\nID number\nXXXX XXXX 6841\nMobile\n9213154607\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHarmony Medical Centre Pathology\nPatient: Gayathri Chaudry | Date: 29/03/2025\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nPolicy Schedule\nPolicy number\nNB7055821064\nInsurer\nNiva Bupa Health Insurance\nProduct\nReAssure (Aspire)\nInsured person\nGayathri Chaudry, 62 years, F\nPolicy start date\n29/07/2024\nSum insured (Rs.)\n3,00,000\nWaiting period, pre-existing diseases\n12 months\nWaiting period, specified diseases/procedures\n12 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Dr.V.lyer\nHarmonyMedical Centre\nPatient:Gayathri Chaudry,62/FDate:29/03/2025\nDiagnosis:laparoscopic cholecystectomy (gallstones)\nRx:Tab.Paracetamol500 mg 1-0-1x3days;Cap.Pantoprazole 40mg1-0-0x5days\nSynthetic testdocumengenerated torsotwarevaluatinNatreal cecrd Page1",
+  "method": "ocr"
+ },
+ "_files": {
+  "claim_form.pdf": 2925,
+  "discharge_summary.pdf": 92752,
+  "hospital_bill.pdf": 90372,
+  "id_proof.pdf": 2013,
+  "lab_report.pdf": 2174,
+  "policy_schedule.pdf": 2482,
+  "prescription.pdf": 115082,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

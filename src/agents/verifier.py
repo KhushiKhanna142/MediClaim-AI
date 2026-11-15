@@ -33,6 +33,11 @@ Be conservative: mark supported=false only when you can name a specific problem 
 {"supported": true|false, "confidence": number between 0 and 1, "issues": ["short strings"]}"""
 
 
+# which Findings clause field supports each deduction rule (substring match on the rule name)
+RULE_TO_FIELD = (("non_payable", "non_payable_clause"), ("sum_insured", "sum_insured_clause"), ("proportion", "room_cap_clause"),
+                 ("room", "room_cap_clause"), ("co_pay", "copay_clause"), ("copay", "copay_clause"))
+
+
 @dataclass
 class VerifierResult:
     passed: bool
@@ -40,6 +45,7 @@ class VerifierResult:
     issues: list[str] = field(default_factory=list)      # hard failures
     concerns: list[str] = field(default_factory=list)    # soft signals, lower confidence
     critic_used: bool = False
+    missing_clause_fields: list[str] = field(default_factory=list)   # clause fields a targeted reader retry can fill
 
     @property
     def retryable(self) -> bool:
@@ -134,10 +140,13 @@ class Verifier:
                     "room" in str(d.get("rule", "")) or "proportion" in str(d.get("rule", "")) for d in deductions):
                 issues.append("room rent exceeds the policy limit but no proportionate deduction was applied")
 
-        # 5. soft signal: history mentions something, yet nothing was flagged pre-existing
+        # 5. pre-existing condition guard: deterministic escalation if history states a known case or has an onset date
         hist = (c.known_history or "").strip()
-        if hist and not NO_HISTORY.search(hist) and not findings.get("is_pre_existing") and c.cause != "accident":
-            concerns.append("history may describe a pre-existing condition that was not flagged")
+        if c.cause != "accident" and not findings.get("is_pre_existing"):
+            if c.history_onset_date or re.search(r"\b(known case|k/c/o|diagnosed)\b", hist, re.I):
+                issues.append(f"history states '{hist[:80]}' but findings marked is_pre_existing=False")
+            elif hist and not NO_HISTORY.search(hist):
+                concerns.append("history may describe a pre-existing condition that was not flagged")
         return issues, concerns
 
     # ---------------------------------------------------------------- LLM critic
@@ -175,4 +184,9 @@ class Verifier:
         if issues:
             confidence = min(confidence, 0.3)
         passed = not issues and confidence >= self.min_confidence
-        return VerifierResult(passed, round(confidence, 2), issues, concerns, critic_used)
+        missing = sorted({f for d in decision.get("deductions") or [] if not d.get("clause_id")
+                          for key, f in RULE_TO_FIELD if key in str(d.get("rule", "")).lower()})
+        if decision.get("decision") in ("approve", "partial") and not decision.get("cited_clause_ids"):
+            if not findings.get("coverage_clause"):
+                missing = sorted(set(missing) | {"coverage_clause"})
+        return VerifierResult(passed, round(confidence, 2), issues, concerns, critic_used, missing)

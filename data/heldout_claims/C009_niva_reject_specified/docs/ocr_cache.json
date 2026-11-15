@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nNB9093500521\nProduct\nReAssure (Aspire)\nPolicy start date\n06/11/2024\nSum insured (Rs.)\n10,00,000\nName of patient\nArunima Dugal\nAge / Sex\n47 years / F\nContact number\n9791079971\nHospital name\nLotus Care Hospital, Jaipur\nDate of admission\n06/06/2025\nDate of discharge\n12/06/2025\nDiagnosis / ailment\ntotal knee replacement\nNature of illness\nIllness\nRoom category occupied\nstandard single\nTotal amount claimed (Rs.)\n3,59,650\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 12/06/2025\n",
+  "method": "text_layer"
+ },
+ "discharge_summary": {
+  "text": "Lotus Care Hospital\nDischarge Summary\nPatient ArunimaDugal,47years,F\nUHID UH505814\nDate of admission 06/06/2025\nDate of discharge 12/06/2025\nLength of stay 6day(s)\nConsultant Dr.P.Deshmukh\nFinal diagnosis\ntotal kneereplacement\nHistory\nNo significantpastmedical or surgical history.\nCourse in hospital\nThe patient was admittedwith complaints related to total knee replacement.Investigations were done and treatment\nwas given asper protocol.Thepost-treatment periodwas uneventul and the patient was discharged in stable conditionon12/06/2025.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed.Avoid strenuous activity.\nDr.P.Deshmukh(Treating consultant)\nSynttictestdocumentgenerated Tor softwareevaluabon.ota realrecord",
+  "method": "ocr"
+ },
+ "hospital_bill": {
+  "text": "Lotus Care Hospital\nJaipur|Final Inpatient Bill\nBill no BL/2025/55287 UHID UH505814\nPatient Arunima Dugal Age/Sex 47/F\nAdmitted 06/06/2025 Discharged 12/06/2025\nConsultant Dr.P.Deshmukh Room standard single\nQty Rate Amount\nSI Description 35,400\nRoom charges(standard single) 6 5,900\n1 87,650 87,650\n2 Surgeon and anaesthetist fees 1\n1 38,800 38.800\n3 Operation theatre charges 12,200\nLaboratory andradiology investigations 12,200\n4 13.900 13.900\n5 Nursing charges 16,700\nPharmacy and medicines 1 16,700\n6 1,49,050 1,49,050\n7 Implant/prosthesis 5,950\nDisposable consumables and admissionkit 5,950\n8 TOTAL 3,59,650\nPagel\nSythetic testdocmentgeneratedtsoltware evalaton.Nota real record.",
+  "method": "ocr"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nArunima Dugal\nAge / Gender\n47 / F\nID number\nXXXX XXXX 4996\nMobile\n9791079971\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Lotus CareHospital Pathology\nPatient:Arunima Dugal|Date:06/06/2025\nTest Result Reference\nHaemoglobin 13.1g/dL 12.0-16.0\nWBCcount 7.400/cmm 4.000-11,000\nBlood sugar(random) 104mg/dL 70-140\nSerum creatinine 0.9mg/dL 0.6-1.2\nSyngdanN",
+  "method": "ocr"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nPolicy Schedule\nPolicy number\nNB9093500521\nInsurer\nNiva Bupa Health Insurance\nProduct\nReAssure (Aspire)\nInsured person\nArunima Dugal, 47 years, F\nPolicy start date\n06/11/2024\nSum insured (Rs.)\n10,00,000\nWaiting period, pre-existing diseases\n24 months\nWaiting period, specified diseases/procedures\n12 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. P. Deshmukh\nLotus Care Hospital\nPatient: Arunima Dugal, 47/F Date: 06/06/2025\nDiagnosis: total knee replacement\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 2899,
+  "discharge_summary.pdf": 158281,
+  "hospital_bill.pdf": 140276,
+  "id_proof.pdf": 2011,
+  "lab_report.pdf": 130212,
+  "policy_schedule.pdf": 2480,
+  "prescription.pdf": 1939,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

@@ -1,0 +1,98 @@
+{
+ "claim_id": "C006_niva_partial_room",
+ "category": "partial_room",
+ "policy_id": "niva_aspire",
+ "patient": {
+  "name": "Rushil Saini",
+  "age": 65,
+  "sex": "M"
+ },
+ "schedule": {
+  "sum_insured": 300000,
+  "policy_start": "2023-03-02",
+  "ped_months": 24,
+  "spec_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": true,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "inguinal hernia repair",
+  "kind": "illness",
+  "specified": true,
+  "is_ped": false
+ },
+ "admission_date": "2025-10-02",
+ "discharge_date": "2025-10-05",
+ "room_days": 3,
+ "room_claimed": "deluxe",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (deluxe)",
+   "qty": 3,
+   "rate": 8900,
+   "amount": 26700
+  },
+  {
+   "category": "surgeon",
+   "description": "Surgeon and anaesthetist fees",
+   "qty": 1,
+   "rate": 40000,
+   "amount": 40000
+  },
+  {
+   "category": "ot",
+   "description": "Operation theatre charges",
+   "qty": 1,
+   "rate": 19100,
+   "amount": 19100
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 6550,
+   "amount": 6550
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 3450,
+   "amount": 3450
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 6850,
+   "amount": 6850
+  },
+  {
+   "category": "implant",
+   "description": "Implant / prosthesis",
+   "qty": 1,
+   "rate": 21150,
+   "amount": 21150
+  },
+  {
+   "category": "consumable",
+   "description": "Disposable consumables and admission kit",
+   "qty": 1,
+   "rate": 2300,
+   "amount": 2300
+  }
+ ],
+ "stated_total": 126100,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

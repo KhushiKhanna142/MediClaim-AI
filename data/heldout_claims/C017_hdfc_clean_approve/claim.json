@@ -1,0 +1,91 @@
+{
+ "claim_id": "C017_hdfc_clean_approve",
+ "category": "clean_approve",
+ "policy_id": "hdfc_optima_secure_current",
+ "patient": {
+  "name": "Fariq Kaul",
+  "age": 67,
+  "sex": "F"
+ },
+ "schedule": {
+  "sum_insured": 1000000,
+  "policy_start": "2023-12-05",
+  "ped_months": 36,
+  "spec_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "inguinal hernia repair",
+  "kind": "illness",
+  "specified": true,
+  "is_ped": false
+ },
+ "admission_date": "2026-06-05",
+ "discharge_date": "2026-06-07",
+ "room_days": 2,
+ "room_claimed": "standard_single",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (standard single)",
+   "qty": 2,
+   "rate": 5200,
+   "amount": 10400
+  },
+  {
+   "category": "surgeon",
+   "description": "Surgeon and anaesthetist fees",
+   "qty": 1,
+   "rate": 43500,
+   "amount": 43500
+  },
+  {
+   "category": "ot",
+   "description": "Operation theatre charges",
+   "qty": 1,
+   "rate": 13900,
+   "amount": 13900
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 4500,
+   "amount": 4500
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 5650,
+   "amount": 5650
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 7500,
+   "amount": 7500
+  },
+  {
+   "category": "implant",
+   "description": "Implant / prosthesis",
+   "qty": 1,
+   "rate": 18900,
+   "amount": 18900
+  }
+ ],
+ "stated_total": 104350,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

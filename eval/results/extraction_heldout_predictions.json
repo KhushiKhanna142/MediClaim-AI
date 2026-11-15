@@ -1,0 +1,2356 @@
+{
+ "C001_niva_clean_approve": {
+  "patient_name": "Aryan Maharaj",
+  "age": 41,
+  "sex": "F",
+  "policy_number": "NB[PHONE_REDACTED]",
+  "hospital": "Harmony Medical Centre, Ahmedabad",
+  "diagnosis": "laparoscopic cholecystectomy (gallstones)",
+  "cause": "illness",
+  "known_history": "No significant past medical or surgical history.",
+  "history_onset_date": null,
+  "admission_date": "2025-10-09",
+  "discharge_date": "2025-10-11",
+  "length_of_stay_days": 2,
+  "room_category_claimed": "standard_single",
+  "claimed_total": 99250,
+  "bill_total": 99250,
+  "items": [
+   {
+    "description": "Room charges (standard single)",
+    "qty": 2,
+    "rate": 5500,
+    "amount": 11000,
+    "category": "room"
+   },
+   {
+    "description": "Surgeon and anaesthetist fees",
+    "qty": 1,
+    "rate": 48550,
+    "amount": 48550,
+    "category": "surgeon"
+   },
+   {
+    "description": "Operation theatre charges",
+    "qty": 1,
+    "rate": 23900,
+    "amount": 23900,
+    "category": "ot"
+   },
+   {
+    "description": "Laboratory and radiology investigations",
+    "qty": 1,
+    "rate": 5350,
+    "amount": 5350,
+    "category": "investigation"
+   },
+   {
+    "description": "Nursing charges",
+    "qty": 1,
+    "rate": 4250,
+    "amount": 4250,
+    "category": "nursing"
+   },
+   {
+    "description": "Pharmacy and medicines",
+    "qty": 1,
+    "rate": 6200,
+    "amount": 6200,
+    "category": "medicine"
+   }
+  ],
+  "sum_insured": 1000000,
+  "policy_start": "2024-03-09",
+  "ped_waiting_months": 12,
+  "specified_waiting_months": 12,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "continuity_credit_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single",
+  "vision_filled": []
+ },
+ "C002_niva_clean_approve": {
+  "patient_name": "Udant Dewan",
+  "age": 49,
+  "sex": "M",
+  "policy_number": "NB[PHONE_REDACTED]",
+  "hospital": "Metro Heart and General Hospital, Indore",
+  "diagnosis": "laparoscopic cholecystectomy (gallstones)",
+  "cause": "illness",
+  "known_history": "No significant past medical or surgical history.",
+  "history_onset_date": null,
+  "admission_date": "2026-07-29",
+  "discharge_date": "2026-08-01",
+  "length_of_stay_days": 3,
+  "room_category_claimed": "standard_single",
+  "claimed_total": 103750,
+  "bill_total": 103750,
+  "items": [
+   {
+    "description": "Room charges (standard single)",
+    "qty": 3,
+    "rate": 4400,
+    "amount": 13200,
+    "category": "room"
+   },
+   {
+    "description": "Surgeon and anaesthetist fees",
+    "qty": 1,
+    "rate": 46800,
+    "amount": 46800,
+    "category": "surgeon"
+   },
+   {
+    "description": "Operation theatre charges",
+    "qty": 1,
+    "rate": 23100,
+    "amount": 23100,
+    "category": "ot"
+   },
+   {
+    "description": "Laboratory and radiology investigations",
+    "qty": 1,
+    "rate": 5050,
+    "amount": 5050,
+    "category": "investigation"
+   },
+   {
+    "description": "Nursing charges",
+    "qty": 1,
+    "rate": 5400,
+    "amount": 5400,
+    "category": "nursing"
+   },
+   {
+    "description": "Pharmacy and medicines",
+    "qty": 1,
+    "rate": 10200,
+    "amount": 10200,
+    "category": "medicine"
+   }
+  ],
+  "sum_insured": 1000000,
+  "policy_start": "2024-05-29",
+  "ped_waiting_months": 36,
+  "specified_waiting_months": 12,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "continuity_credit_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single",
+  "vision_filled": []
+ },
+ "C003_niva_clean_approve": {
+  "patient_name": "Gagan Sami",
+  "age": 33,
+  "sex": "M",
+  "policy_number": "NB4521983252",
+  "hospital": "Harmony Medical Centre, Nagpur",
+  "diagnosis": "inguinal hernia repair",
+  "cause": "illness",
+  "known_history": "No significant past medical or surgical history.",
+  "history_onset_date": null,
+  "admission_date": "2025-04-15",
+  "discharge_date": "2025-04-17",
+  "length_of_stay_days": 2,
+  "room_category_claimed": "standard_single",
+  "claimed_total": 99550,
+  "bill_total": 99550,
+  "items": [
+   {
+    "description": "Room charges (standard single)",
+    "qty": 2,
+    "rate": 4700,
+    "amount": 9400,
+    "category": "room"
+   },
+   {
+    "description": "Surgeon and anaesthetist fees",
+    "qty": 1,
+    "rate": 36900,
+    "amount": 36900,
+    "category": "surgeon"
+   },
+   {
+    "description": "Operation theatre charges",
+    "qty": 1,
+    "rate": 14100,
+    "amount": 14100,
+    "category": "ot"
+   },
+   {
+    "description": "Laboratory andradiology investigations",
+    "qty": 1,
+    "rate": 4150,
+    "amount": 4150,
+    "category": "investigation"
+   },
+   {
+    "description": "Nursing charges",
+    "qty": 1,
+    "rate": 4400,
+    "amount": 4400,
+    "category": "nursing"
+   },
+   {
+    "description": "Pharmacy and medicines",
+    "qty": 1,
+    "rate": 6750,
+    "amount": 6750,
+    "category": "medicine"
+   },
+   {
+    "description": "Implant/prosthesis",
+    "qty": 1,
+    "rate": 23850,
+    "amount": 23850,
+    "category": "implant"
+   }
+  ],
+  "sum_insured": 1000000,
+  "policy_start": "2022-06-15",
+  "ped_waiting_months": 12,
+  "specified_waiting_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "continuity_credit_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single",
+  "vision_filled": []
+ },
+ "C004_niva_approve_continuity": {
+  "patient_name": "Ayushman Chander",
+  "age": 51,
+  "sex": "F",
+  "policy_number": "NB[PHONE_REDACTED]",
+  "hospital": "Sanjivani Hospital and Research Centre, Nagpur",
+  "diagnosis": "inguinal hernia repair",
+  "cause": "illness",
+  "known_history": "No significant past medical or surgical history.",
+  "history_onset_date": null,
+  "admission_date": "2026-08-15",
+  "discharge_date": "2026-08-17",
+  "length_of_stay_days": 2,
+  "room_category_claimed": "standard_single",
+  "claimed_total": 114050,
+  "bill_total": 114050,
+  "items": [
+   {
+    "description": "Room charges (standard single)",
+    "qty": 2,
+    "rate": 5300,
+    "amount": 10600,
+    "category": "room"
+   },
+   {
+    "description": "Surgeon and anaesthetist fees",
+    "qty": 1,
+    "rate": 45450,
+    "amount": 45450,
+    "category": "surgeon"
+   },
+   {
+    "description": "Operation theatre charges",
+    "qty": 1,
+    "rate": 19900,
+    "amount": 19900,
+    "category": "ot"
+   },
+   {
+    "description": "Laboratory and radiology investigations",
+    "qty": 1,
+    "rate": 7400,
+    "amount": 7400,
+    "category": "investigation"
+   },
+   {
+    "description": "Nursing charges",
+    "qty": 1,
+    "rate": 5600,
+    "amount": 5600,
+    "category": "nursing"
+   },
+   {
+    "description": "Pharmacy and medicines",
+    "qty": 1,
+    "rate": 8300,
+    "amount": 8300,
+    "category": "medicine"
+   },
+   {
+    "description": "Implant / prosthesis",
+    "qty": 1,
+    "rate": 16800,
+    "amount": 16800,
+    "category": "implant"
+   }
+  ],
+  "sum_insured": 1000000,
+  "policy_start": "2025-12-15",
+  "ped_waiting_months": 36,
+  "specified_waiting_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "continuity_credit_months": 26,
+  "room_type_modification": false,
+  "eligible_room": "standard_single",
+  "vision_filled": []
+ },
+ "C005_niva_partial_room": {
+  "patient_name": "Viraj Tiwari",
+  "age": 31,
+  "sex": "F",
+  "policy_number": "NB[PHONE_REDACTED]",
+  "hospital": "Harmony Medical Centre, Pune",
+  "diagnosis": "inguinal hernia repair",
+  "cause": "illness",
+  "known_history": "No significant past medical or surgical history.",
+  "history_onset_date": null,
+  "admission_date": "2025-10-01",
+  "discharge_date": "2025-10-03",
+  "length_of_stay_days": 2,
+  "room_category_claimed": "deluxe",
+  "claimed_total": 107150,
+  "bill_total": 107150,
+  "items": [
+   {
+    "description": "Room charges (deluxe)",
+    "qty": 2,
+    "rate": 10100,
+    "amount": 20200,
+    "category": "room"
+   },
+   {
+    "description": "Surgeon and anaesthetist fees",
+    "qty": 1,
+    "rate": 34900,
+    "amount": 34900,
+    "category": "surgeon"
+   },
+   {
+    "description": "Operation theatre charges",
+    "qty": 1,
+    "rate": 15700,
+    "amount": 15700,
+    "category": "ot"
+   },
+   {
+    "description": "Laboratory and radiology investigations",
+    "qty": 1,
+    "rate": 5100,
+    "amount": 5100,
+    "category": "investigation"
+   },
+   {
+    "description": "Nursing charges",
+    "qty": 1,
+    "rate": 5800,
+    "amount": 5800,
+    "category": "nursing"
+   },
+   {
+    "description": "Pharmacy and medicines",
+    "qty": 1,
+    "rate": 10150,
+    "amount": 10150,
+    "category": "medicine"
+   },
+   {
+    "description": "Implant / prosthesis",
+    "qty": 1,
+    "rate": 13300,
+    "amount": 13300,
+    "category": "implant"
+   },
+   {
+    "description": "Disposable consumables and admission kit",
+    "qty": 1,
+    "rate": 2000,
+    "amount": 2000,
+    "category": "consumable"
+   }
+  ],
+  "sum_insured": 500000,
+  "policy_start": "2023-09-01",
+  "ped_waiting_months": 24,
+  "specified_waiting_months": 12,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "continuity_credit_months": 0,
+  "room_type_modification": true,
+  "eligible_room": "standard_single",
+  "vision_filled": []
+ },
+ "C006_niva_partial_room": {
+  "patient_name": "Rushil Saini",
+  "age": 65,
+  "sex": "M",
+  "policy_number": "NB4472588803",
+  "hospital": "Sunrise Multispeciality Hospital, Mumbai",
+  "diagnosis": "inguinal hernia repair",
+  "cause": "illness",
+  "known_history": "No significant pastmedical or surgical history.",
+  "history_onset_date": null,
+  "admission_date": "2025-10-02",
+  "discharge_date": "2025-10-05",
+  "length_of_stay_days": 3,
+  "room_category_claimed": "deluxe",
+  "claimed_total": 126100,
+  "bill_total": 126100,
+  "items": [
+   {
+    "description": "Room charges (deluxe)",
+    "qty": 3,
+    "rate": 8900,
+    "amount": 26700,
+    "category": "room"
+   },
+   {
+    "description": "Surgeon and anaesthetist fees",
+    "qty": 1,
+    "rate": 40000,
+    "amount": 40000,
+    "category": "surgeon"
+   },
+   {
+    "description": "Operation theatre charges",
+    "qty": 1,
+    "rate": 19100,
+    "amount": 19100,
+    "category": "ot"
+   },
+   {
+    "description": "Pharmacy and medicines",
+    "qty": 1,
+    "rate": 6850,
+    "amount": 6850,
+    "category": "medicine"
+   },
+   {
+    "description": "Disposable consumables and admission kit",
+    "qty": 1,
+    "rate": 2300,
+    "amount": 2300,
+    "category": "consumable"
+   },
+   {
+    "description": "Laboratory andradiology investigations",
+    "qty": 1,
+    "rate": 6550,
+    "amount": 6550,
+    "category": "investigation"
+   },
+   {
+    "description": "Implant/prosthesis",
+    "qty": 1,
+    "rate": 21150,
+    "amount": 21150,
+    "category": "implant"
+   },
+   {
+    "description": "Nursing charges",
+    "qty": 1,
+    "rate": 3450,
+    "amount": 3450,
+    "category": "nursing"
+   }
+  ],
+  "sum_insured": 300000,
+  "policy_start": "2023-03-02",
+  "ped_waiting_months": 24,
+  "specified_waiting_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "continuity_credit_months": 0,
+  "room_type_modification": true,
+  "eligible_room": "standard_single",
+  "vision_filled": []
+ },
+ "C007_niva_partial_nonpayable": {
+  "patient_name": "Saumya Mall",
+  "age": 57,
+  "sex": "M",
+  "policy_number": "NB1423768735",
+  "hospital": "Metro Heart and General Hospital, Ahmedabad",
+  "diagnosis": "total knee replacement",
+  "cause": "illness",
+  "known_history": "No significant past medical or surgical history.",
+  "history_onset_date": null,
+  "admission_date": "2025-08-13",
+  "discharge_date": "2025-08-18",
+  "length_of_stay_days": 5,
+  "room_category_claimed": "standard_single",
+  "claimed_total": 288400,
+  "bill_total": 288400,
+  "items": [
+   {
+    "description": "Room charges (standard single)",
+    "qty": 5,
+    "rate": 4200,
+    "amount": 21000,
+    "category": "room"
+   },
+   {
+    "description": "Surgeon and anaesthetist fees",
+    "qty": 1,
+    "rate": 61400,
+    "amount": 61400,
+    "category": "surgeon"
+   },
+   {
+    "description": "Operation theatre charges",
+    "qty": 1,
+    "rate": 26650,
+    "amount": 26650,
+    "category": "ot"
+   },
+   {
+    "description": "Pharmacy and medicines",
+    "qty": 1,
+    "rate": 21350,
+    "amount": 21350,
+    "category": "medicine"
+   },
+   {
+    "description": "Disposable consumables and admission kit",
+    "qty": 1,
+    "rate": 4150,
+    "amount": 4150,
+    "category": "consumable"
+   },
+   {
+    "description": "Laboratory and radiology investigations",
+    "qty": 1,
+    "rate": 12400,
+    "amount": 12400,
+    "category": "investigation"
+   },
+   {
+    "description": "Implant / prosthesis",
+    "qty": 1,
+    "rate": 125100,
+    "amount": 125100,
+    "category": "implant"
+   },
+   {
+    "description": "Nursing charges",
+    "qty": 1,
+    "rate": 16350,
+    "amount": 16350,
+    "category": "nursing"
+   }
+  ],
+  "sum_insured": 1000000,
+  "policy_start": "2022-08-13",
+  "ped_waiting_months": 24,
+  "specified_waiting_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "continuity_credit_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single",
+  "vision_filled": []
+ },
+ "C008_niva_partial_si_cap": {
+  "patient_name": "Nathaniel Sami",
+  "age": 60,
+  "sex": "F",
+  "policy_number": "NB3851053482",
+  "hospital": "Sunrise Multispeciality Hospital, Indore",
+  "diagnosis": "total knee replacement",
+  "cause": "illness",
+  "known_history": "No significant past medical or surgical history.",
+  "history_onset_date": null,
+  "admission_date": "2026-04-07",
+  "discharge_date": "2026-07-10",
+  "length_of_stay_days": 6,
+  "room_category_claimed": "standard_single",
+  "claimed_total": 426450,
+  "bill_total": 426450,
+  "items": [
+   {
+    "description": "Room charges (standard single)",
+    "qty": 6,
+    "rate": 4700,
+    "amount": 28200,
+    "category": "room"
+   },
+   {
+    "description": "Surgeon and anaesthetist fees",
+    "qty": 1,
+    "rate": 68800,
+    "amount": 68800,
+    "category": "surgeon"
+   },
+   {
+    "description": "Operation theatre charges",
+    "qty": 1,
+    "rate": 27350,
+    "amount": 27350,
+    "category": "ot"
+   },
+   {
+    "description": "Pharmacy and medicines",
+    "qty": 1,
+    "rate": 25800,
+    "amount": 25800,
+    "category": "medicine"
+   },
+   {
+    "description": "Disposable consumables and admission kit",
+    "qty": 1,
+    "rate": 5300,
+    "amount": 5300,
+    "category": "consumable"
+   },
+   {
+    "description": "Laboratory and radiology investigations",
+    "qty": 1,
+    "rate": 8000,
+    "amount": 8000,
+    "category": "investigation"
+   },
+   {
+    "description": "Implant/prosthesis",
+    "qty": 1,
+    "rate": 247200,
+    "amount": 247200,
+    "category": "implant"
+   },
+   {
+    "description": "Nursing charges",
+    "qty": 1,
+    "rate": 15800,
+    "amount": 15800,
+    "category": "nursing"
+   }
+  ],
+  "sum_insured": 300000,
+  "policy_start": "2024-11-04",
+  "ped_waiting_months": 12,
+  "specified_waiting_months": 12,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "continuity_credit_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single",
+  "vision_filled": []
+ },
+ "C009_niva_reject_specified": {
+  "patient_name": "Arunima Dugal",
+  "age": 47,
+  "sex": "F",
+  "policy_number": "NB[PHONE_REDACTED]",
+  "hospital": "Lotus Care Hospital, Jaipur",
+  "diagnosis": "total knee replacement",
+  "cause": "illness",
+  "known_history": "No significant past medical or surgical history.",
+  "history_onset_date": null,
+  "admission_date": "2025-06-06",
+  "discharge_date": "2025-06-12",
+  "length_of_stay_days": 6,
+  "room_category_claimed": "standard_single",
+  "claimed_total": 359650,
+  "bill_total": 359650,
+  "items": [
+   {
+    "description": "Room charges(standard single)",
+    "qty": 6,
+    "rate": 5900,
+    "amount": 35400,
+    "category": "room"
+   },
+   {
+    "description": "Surgeon and anaesthetist fees",
+    "qty": 1,
+    "rate": 87650,
+    "amount": 87650,
+    "category": "surgeon"
+   },
+   {
+    "description": "Operation theatre charges",
+    "qty": 1,
+    "rate": 38800,
+    "amount": 38800,
+    "category": "ot"
+   },
+   {
+    "description": "Laboratory and radiology investigations",
+    "qty": 1,
+    "rate": 12200,
+    "amount": 12200,
+    "category": "investigation"
+   },
+   {
+    "description": "Nursing charges",
+    "qty": 1,
+    "rate": 13900,
+    "amount": 13900,
+    "category": "nursing"
+   },
+   {
+    "description": "Pharmacy and medicines",
+    "qty": 1,
+    "rate": 16700,
+    "amount": 16700,
+    "category": "medicine"
+   },
+   {
+    "description": "Implant/prosthesis",
+    "qty": 1,
+    "rate": 149050,
+    "amount": 149050,
+    "category": "implant"
+   },
+   {
+    "description": "Disposable consumables and admission kit",
+    "qty": 1,
+    "rate": 5950,
+    "amount": 5950,
+    "category": "consumable"
+   }
+  ],
+  "sum_insured": 1000000,
+  "policy_start": "2024-11-06",
+  "ped_waiting_months": 24,
+  "specified_waiting_months": 12,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "continuity_credit_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single",
+  "vision_filled": []
+ },
+ "C010_niva_reject_specified": {
+  "patient_name": "Gayathri Chaudry",
+  "age": 62,
+  "sex": "F",
+  "policy_number": "NB[PHONE_REDACTED]",
+  "hospital": "Harmony Medical Centre, Ahmedabad",
+  "diagnosis": "laparoscopic cholecystectomy (gallstones)",
+  "cause": "illness",
+  "known_history": "No significant past medical or surgical history.",
+  "history_onset_date": null,
+  "admission_date": "2025-03-29",
+  "discharge_date": "2025-03-31",
+  "length_of_stay_days": 2,
+  "room_category_claimed": "standard_single",
+  "claimed_total": 96200,
+  "bill_total": 96200,
+  "items": [
+   {
+    "description": "Room charges(standard single)",
+    "qty": 2,
+    "rate": 4300,
+    "amount": 8600,
+    "category": "room"
+   },
+   {
+    "description": "Surgeon and anaesthetist fees",
+    "qty": 1,
+    "rate": 44500,
+    "amount": 44500,
+    "category": "surgeon"
+   },
+   {
+    "description": "Operation theatre charges",
+    "qty": 1,
+    "rate": 20500,
+    "amount": 20500,
+    "category": "ot"
+   },
+   {
+    "description": "Laboratory andradiology investigations",
+    "qty": 1,
+    "rate": 6050,
+    "amount": 6050,
+    "category": "investigation"
+   },
+   {
+    "description": "Nursing charges",
+    "qty": 1,
+    "rate": 5600,
+    "amount": 5600,
+    "category": "nursing"
+   },
+   {
+    "description": "Pharmacy and medicines",
+    "qty": 1,
+    "rate": 8550,
+    "amount": 8550,
+    "category": "medicine"
+   },
+   {
+    "description": "Disposable consumables and admissionkit",
+    "qty": 1,
+    "rate": 2400,
+    "amount": 2400,
+    "category": "consumable"
+   }
+  ],
+  "sum_insured": 300000,
+  "policy_start": "2024-07-29",
+  "ped_waiting_months": 12,
+  "specified_waiting_months": 12,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "continuity_credit_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single",
+  "vision_filled": []
+ },
+ "C011_niva_reject_30day": {
+  "patient_name": "Lajita Chatterjee",
+  "age": 68,
+  "sex": "F",
+  "policy_number": "NB[PHONE_REDACTED]",
+  "hospital": "Metro Heart and General Hospital, Ahmedabad",
+  "diagnosis": "dengue fever",
+  "cause": "illness",
+  "known_history": "No significant past medical or surgical history.",
+  "history_onset_date": null,
+  "admission_date": "2026-01-18",
+  "discharge_date": "2026-01-22",
+  "length_of_stay_days": 4,
+  "room_category_claimed": "standard_single",
+  "claimed_total": 53700,
+  "bill_total": 53700,
+  "items": [
+   {
+    "description": "Room charges (standard single)",
+    "qty": 4,
+    "rate": 4500,
+    "amount": 18000,
+    "category": "room"
+   },
+   {
+    "description": "Consultant visits and monitoring",
+    "qty": 1,
+    "rate": 8650,
+    "amount": 8650,
+    "category": "other"
+   },
+   {
+    "description": "Laboratory and radiology investigations",
+    "qty": 1,
+    "rate": 6150,
+    "amount": 6150,
+    "category": "investigation"
+   },
+   {
+    "description": "Nursing charges",
+    "qty": 1,
+    "rate": 6200,
+    "amount": 6200,
+    "category": "nursing"
+   },
+   {
+    "description": "Pharmacy and medicines",
+    "qty": 1,
+    "rate": 13900,
+    "amount": 13900,
+    "category": "medicine"
+   },
+   {
+    "description": "Disposable consumables and admission kit",
+    "qty": 1,
+    "rate": 800,
+    "amount": 800,
+    "category": "consumable"
+   }
+  ],
+  "sum_insured": 1000000,
+  "policy_start": "2025-12-30",
+  "ped_waiting_months": 24,
+  "specified_waiting_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "continuity_credit_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single",
+  "vision_filled": []
+ },
+ "C012_niva_reject_ped": {
+  "patient_name": "Hemangini Lalla",
+  "age": 58,
+  "sex": "M",
+  "policy_number": "NB[PHONE_REDACTED]",
+  "hospital": "Metro Heart and General Hospital, Ahmedabad",
+  "diagnosis": "diabetic foot infection with debridement",
+  "cause": "illness",
+  "known_history": "Known case of diabetic foot infection with debridement, diagnosed on 05/10/2023, on regular treatment.",
+  "history_onset_date": "2023-10-05",
+  "admission_date": "2025-12-05",
+  "discharge_date": "2025-12-12",
+  "length_of_stay_days": 7,
+  "room_category_claimed": "standard_single",
+  "claimed_total": 117350,
+  "bill_total": 117350,
+  "items": [
+   {
+    "description": "Room charges (standard single)",
+    "qty": 7,
+    "rate": 4500,
+    "amount": 31500,
+    "category": "room"
+   },
+   {
+    "description": "Surgeon and anaesthetist fees",
+    "qty": 1,
+    "rate": 35050,
+    "amount": 35050,
+    "category": "surgeon"
+   },
+   {
+    "description": "Operation theatre charges",
+    "qty": 1,
+    "rate": 11700,
+    "amount": 11700,
+    "category": "ot"
+   },
+   {
+    "description": "Laboratory and radiology investigations",
+    "qty": 1,
+    "rate": 6800,
+    "amount": 6800,
+    "category": "investigation"
+   },
+   {
+    "description": "Nursing charges",
+    "qty": 1,
+    "rate": 10700,
+    "amount": 10700,
+    "category": "nursing"
+   },
+   {
+    "description": "Pharmacy and medicines",
+    "qty": 1,
+    "rate": 19400,
+    "amount": 19400,
+    "category": "medicine"
+   },
+   {
+    "description": "Disposable consumables and admission kit",
+    "qty": 1,
+    "rate": 2200,
+    "amount": 2200,
+    "category": "consumable"
+   }
+  ],
+  "sum_insured": 300000,
+  "policy_start": "2025-04-05",
+  "ped_waiting_months": 12,
+  "specified_waiting_months": 12,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "continuity_credit_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single",
+  "vision_filled": []
+ },
+ "C013_niva_multi_hop": {
+  "patient_name": "Tripti Yadav",
+  "age": 34,
+  "sex": "F",
+  "policy_number": "NB[PHONE_REDACTED]",
+  "hospital": "Metro Heart and General Hospital, Jaipur",
+  "diagnosis": "total knee replacement",
+  "cause": "illness",
+  "known_history": "Known case of total knee replacement, diagnosed on 18/04/2022, on regular treatment.",
+  "history_onset_date": "2022-04-18",
+  "admission_date": "2026-03-18",
+  "discharge_date": "2026-03-23",
+  "length_of_stay_days": 5,
+  "room_category_claimed": "standard_single",
+  "claimed_total": 362950,
+  "bill_total": 362950,
+  "items": [
+   {
+    "description": "Room charges (standard single)",
+    "qty": 5,
+    "rate": 4800,
+    "amount": 24000,
+    "category": "room"
+   },
+   {
+    "description": "Surgeon and anaesthetist fees",
+    "qty": 1,
+    "rate": 85900,
+    "amount": 85900,
+    "category": "surgeon"
+   },
+   {
+    "description": "Operation theatre charges",
+    "qty": 1,
+    "rate": 25800,
+    "amount": 25800,
+    "category": "ot"
+   },
+   {
+    "description": "Laboratory and radiology investigations",
+    "qty": 1,
+    "rate": 12550,
+    "amount": 12550,
+    "category": "investigation"
+   },
+   {
+    "description": "Nursing charges",
+    "qty": 1,
+    "rate": 15150,
+    "amount": 15150,
+    "category": "nursing"
+   },
+   {
+    "description": "Pharmacy and medicines",
+    "qty": 1,
+    "rate": 15900,
+    "amount": 15900,
+    "category": "medicine"
+   },
+   {
+    "description": "Implant / prosthesis",
+    "qty": 1,
+    "rate": 178250,
+    "amount": 178250,
+    "category": "implant"
+   },
+   {
+    "description": "Disposable consumables and admission kit",
+    "qty": 1,
+    "rate": 5400,
+    "amount": 5400,
+    "category": "consumable"
+   }
+  ],
+  "sum_insured": 300000,
+  "policy_start": "2023-10-18",
+  "ped_waiting_months": 36,
+  "specified_waiting_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "continuity_credit_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single",
+  "vision_filled": []
+ },
+ "C014_niva_missing_docs": {
+  "patient_name": "Kritika Brar",
+  "age": 62,
+  "sex": "F",
+  "policy_number": "NB3847586742",
+  "hospital": "Sanjivani Hospital and Research Centre,Pune",
+  "diagnosis": "pneumonia",
+  "cause": "illness",
+  "known_history": null,
+  "history_onset_date": null,
+  "admission_date": "2025-05-24",
+  "discharge_date": "2025-05-29",
+  "length_of_stay_days": 5,
+  "room_category_claimed": "standard_single",
+  "claimed_total": 76300,
+  "bill_total": 76300,
+  "items": [
+   {
+    "description": "Room charges (standard single)",
+    "qty": 5,
+    "rate": 4500,
+    "amount": 22500,
+    "category": "room"
+   },
+   {
+    "description": "Consultant visits and monitoring",
+    "qty": 1,
+    "rate": 19150,
+    "amount": 19150,
+    "category": "surgeon"
+   },
+   {
+    "description": "Laboratory and radiology investigations",
+    "qty": 1,
+    "rate": 8650,
+    "amount": 8650,
+    "category": "investigation"
+   },
+   {
+    "description": "Nursing charges",
+    "qty": 1,
+    "rate": 8450,
+    "amount": 8450,
+    "category": "nursing"
+   },
+   {
+    "description": "Pharmacy and medicines",
+    "qty": 1,
+    "rate": 16600,
+    "amount": 16600,
+    "category": "medicine"
+   },
+   {
+    "description": "Disposable consumables and admission kit",
+    "qty": 1,
+    "rate": 950,
+    "amount": 950,
+    "category": "consumable"
+   }
+  ],
+  "sum_insured": 300000,
+  "policy_start": "2024-09-24",
+  "ped_waiting_months": 12,
+  "specified_waiting_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "continuity_credit_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single",
+  "vision_filled": []
+ },
+ "C015_niva_total_mismatch": {
+  "patient_name": "Janaki Handa",
+  "age": 63,
+  "sex": "M",
+  "policy_number": "NB2723150337",
+  "hospital": "Sunrise Multispeciality Hospital, Nagpur",
+  "diagnosis": "fracture of femur, ORIF (road accident)",
+  "cause": "accident",
+  "known_history": "No significant past history.Presented following a road traffic accident.",
+  "history_onset_date": null,
+  "admission_date": "2026-02-21",
+  "discharge_date": "2026-02-25",
+  "length_of_stay_days": 4,
+  "room_category_claimed": "standard_single",
+  "claimed_total": 204400,
+  "bill_total": 204400,
+  "items": [
+   {
+    "description": "Room charges (standard single)",
+    "qty": 4,
+    "rate": 4300,
+    "amount": 17200,
+    "category": "room"
+   },
+   {
+    "description": "Surgeon and anaesthetist fees",
+    "qty": 1,
+    "rate": 50050,
+    "amount": 50050,
+    "category": "surgeon"
+   },
+   {
+    "description": "Operation theatre charges",
+    "qty": 1,
+    "rate": 25850,
+    "amount": 25850,
+    "category": "ot"
+   },
+   {
+    "description": "Laboratory and radiology investigations",
+    "qty": 1,
+    "rate": 11550,
+    "amount": 11550,
+    "category": "investigation"
+   },
+   {
+    "description": "Nursing charges",
+    "qty": 1,
+    "rate": 10700,
+    "amount": 10700,
+    "category": "nursing"
+   },
+   {
+    "description": "Pharmacy and medicines",
+    "qty": 1,
+    "rate": 12850,
+    "amount": 12850,
+    "category": "medicine"
+   },
+   {
+    "description": "Implant / prosthesis",
+    "qty": 1,
+    "rate": 74850,
+    "amount": 74850,
+    "category": "implant"
+   },
+   {
+    "description": "Disposable consumables and admission kit",
+    "qty": 1,
+    "rate": 4350,
+    "amount": 4350,
+    "category": "consumable"
+   }
+  ],
+  "sum_insured": 300000,
+  "policy_start": "2025-11-21",
+  "ped_waiting_months": 12,
+  "specified_waiting_months": 12,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "continuity_credit_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single",
+  "vision_filled": []
+ },
+ "C016_hdfc_clean_approve": {
+  "patient_name": "Chakradev Kari",
+  "age": 61,
+  "sex": "F",
+  "policy_number": "HD[PHONE_REDACTED]",
+  "hospital": "Lotus Care Hospital,Indore",
+  "diagnosis": "acute appendicitis,appendectomy",
+  "cause": "illness",
+  "known_history": "No significant past medical or surgical history.",
+  "history_onset_date": null,
+  "admission_date": "2025-07-14",
+  "discharge_date": "2025-07-17",
+  "length_of_stay_days": 3,
+  "room_category_claimed": "standard_single",
+  "claimed_total": 97050,
+  "bill_total": 97050,
+  "items": [
+   {
+    "description": "Room charges (standard single)",
+    "qty": 3,
+    "rate": 5200,
+    "amount": 15600,
+    "category": "room"
+   },
+   {
+    "description": "Surgeon and anaesthetist fees",
+    "qty": 1,
+    "rate": 40850,
+    "amount": 40850,
+    "category": "surgeon"
+   },
+   {
+    "description": "Operation theatre charges",
+    "qty": 1,
+    "rate": 18000,
+    "amount": 18000,
+    "category": "ot"
+   },
+   {
+    "description": "Pharmacy and medicines",
+    "qty": 1,
+    "rate": 11000,
+    "amount": 11000,
+    "category": "medicine"
+   },
+   {
+    "description": "Laboratory and radiology investigations",
+    "qty": 1,
+    "rate": 5250,
+    "amount": 5250,
+    "category": "investigation"
+   },
+   {
+    "description": "Nursing charges",
+    "qty": 1,
+    "rate": 6350,
+    "amount": 6350,
+    "category": "nursing"
+   }
+  ],
+  "sum_insured": 1000000,
+  "policy_start": "2024-10-14",
+  "ped_waiting_months": 36,
+  "specified_waiting_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "continuity_credit_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single",
+  "vision_filled": []
+ },
+ "C017_hdfc_clean_approve": {
+  "patient_name": "Fariq Kaul",
+  "age": 67,
+  "sex": "F",
+  "policy_number": "HD[PHONE_REDACTED]",
+  "hospital": "Lotus Care Hospital, Nagpur",
+  "diagnosis": "inguinal hernia repair",
+  "cause": "illness",
+  "known_history": "No significant past medical or surgical history.",
+  "history_onset_date": null,
+  "admission_date": "2026-06-05",
+  "discharge_date": "2026-06-07",
+  "length_of_stay_days": 2,
+  "room_category_claimed": "standard_single",
+  "claimed_total": 104350,
+  "bill_total": 104350,
+  "items": [
+   {
+    "description": "Room charges (standard single)",
+    "qty": 2,
+    "rate": 5200,
+    "amount": 10400,
+    "category": "room"
+   },
+   {
+    "description": "Surgeon and anaesthetist fees",
+    "qty": 1,
+    "rate": 43500,
+    "amount": 43500,
+    "category": "surgeon"
+   },
+   {
+    "description": "Operation theatre charges",
+    "qty": 1,
+    "rate": 13900,
+    "amount": 13900,
+    "category": "ot"
+   },
+   {
+    "description": "Laboratory and radiology investigations",
+    "qty": 1,
+    "rate": 4500,
+    "amount": 4500,
+    "category": "investigation"
+   },
+   {
+    "description": "Nursing charges",
+    "qty": 1,
+    "rate": 5650,
+    "amount": 5650,
+    "category": "nursing"
+   },
+   {
+    "description": "Pharmacy and medicines",
+    "qty": 1,
+    "rate": 7500,
+    "amount": 7500,
+    "category": "medicine"
+   },
+   {
+    "description": "Implant / prosthesis",
+    "qty": 1,
+    "rate": 18900,
+    "amount": 18900,
+    "category": "implant"
+   }
+  ],
+  "sum_insured": 1000000,
+  "policy_start": "2023-12-05",
+  "ped_waiting_months": 36,
+  "specified_waiting_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "continuity_credit_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single",
+  "vision_filled": []
+ },
+ "C018_hdfc_clean_approve": {
+  "patient_name": "Lajita Mall",
+  "age": 57,
+  "sex": "M",
+  "policy_number": "HD[PHONE_REDACTED]",
+  "hospital": "Sanjivani Hospital and Research Centre, Indore",
+  "diagnosis": "dengue fever",
+  "cause": "illness",
+  "known_history": "No significant past medical or surgical history.",
+  "history_onset_date": null,
+  "admission_date": "2026-08-21",
+  "discharge_date": "2026-08-25",
+  "length_of_stay_days": 4,
+  "room_category_claimed": "standard_single",
+  "claimed_total": 58900,
+  "bill_total": 58900,
+  "items": [
+   {
+    "description": "Room charges (standard single)",
+    "qty": 4,
+    "rate": 5300,
+    "amount": 21200,
+    "category": "room"
+   },
+   {
+    "description": "Consultant visits and monitoring",
+    "qty": 1,
+    "rate": 11150,
+    "amount": 11150,
+    "category": "other"
+   },
+   {
+    "description": "Laboratory andradiologyinvestigations",
+    "qty": 1,
+    "rate": 7600,
+    "amount": 7600,
+    "category": "investigation"
+   },
+   {
+    "description": "Nursing charges",
+    "qty": 1,
+    "rate": 4500,
+    "amount": 4500,
+    "category": "nursing"
+   },
+   {
+    "description": "Pharmacy and medicines",
+    "qty": 1,
+    "rate": 14450,
+    "amount": 14450,
+    "category": "medicine"
+   }
+  ],
+  "sum_insured": 1000000,
+  "policy_start": "2025-09-21",
+  "ped_waiting_months": 36,
+  "specified_waiting_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "continuity_credit_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single",
+  "vision_filled": []
+ },
+ "C019_hdfc_approve_continuity": {
+  "patient_name": "Janya Gaba",
+  "age": 51,
+  "sex": "M",
+  "policy_number": "HD3228640966",
+  "hospital": "Harmony Medical Centre, Indore",
+  "diagnosis": "laparoscopic cholecystectomy (gallstones)",
+  "cause": "illness",
+  "known_history": "No significant past medical or surgical history.",
+  "history_onset_date": null,
+  "admission_date": "2025-01-10",
+  "discharge_date": "2025-01-12",
+  "length_of_stay_days": 2,
+  "room_category_claimed": "standard_single",
+  "claimed_total": 90800,
+  "bill_total": 90800,
+  "items": [
+   {
+    "description": "Room charges(standard single)",
+    "qty": 2,
+    "rate": 4100,
+    "amount": 8200,
+    "category": "room"
+   },
+   {
+    "description": "Surgeon and anaesthetist fees",
+    "qty": 1,
+    "rate": 39250,
+    "amount": 39250,
+    "category": "surgeon"
+   },
+   {
+    "description": "Operation theatre charges",
+    "qty": 1,
+    "rate": 17650,
+    "amount": 17650,
+    "category": "ot"
+   },
+   {
+    "description": "Laboratory andradiology investigations",
+    "qty": 1,
+    "rate": 8750,
+    "amount": 8750,
+    "category": "investigation"
+   },
+   {
+    "description": "Nursing charges",
+    "qty": 1,
+    "rate": 5650,
+    "amount": 5650,
+    "category": "nursing"
+   },
+   {
+    "description": "Pharmacy andmedicines",
+    "qty": 1,
+    "rate": 11300,
+    "amount": 11300,
+    "category": "medicine"
+   }
+  ],
+  "sum_insured": 1000000,
+  "policy_start": "2024-06-10",
+  "ped_waiting_months": 36,
+  "specified_waiting_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "continuity_credit_months": 30,
+  "room_type_modification": false,
+  "eligible_room": "standard_single",
+  "vision_filled": []
+ },
+ "C020_hdfc_partial_room": {
+  "patient_name": "Isha Kadakia",
+  "age": 37,
+  "sex": "M",
+  "policy_number": "HD[PHONE_REDACTED]",
+  "hospital": "Metro Heart and General Hospital,Jaipur",
+  "diagnosis": "acute appendicitis,appendectomy",
+  "cause": "illness",
+  "known_history": "No significant past medical or surgical history.",
+  "history_onset_date": null,
+  "admission_date": "2026-03-25",
+  "discharge_date": "2026-03-28",
+  "length_of_stay_days": 3,
+  "room_category_claimed": "private",
+  "claimed_total": 116700,
+  "bill_total": 116700,
+  "items": [
+   {
+    "description": "Room charges (private)",
+    "qty": 3,
+    "rate": 8400,
+    "amount": 25200,
+    "category": "room"
+   },
+   {
+    "description": "Surgeon and anaesthetist fees",
+    "qty": 1,
+    "rate": 48650,
+    "amount": 48650,
+    "category": "surgeon"
+   },
+   {
+    "description": "Operation theatre charges",
+    "qty": 1,
+    "rate": 12850,
+    "amount": 12850,
+    "category": "ot"
+   },
+   {
+    "description": "Laboratory and radiology investigations",
+    "qty": 1,
+    "rate": 8500,
+    "amount": 8500,
+    "category": "investigation"
+   },
+   {
+    "description": "Nursing charges",
+    "qty": 1,
+    "rate": 5050,
+    "amount": 5050,
+    "category": "nursing"
+   },
+   {
+    "description": "Pharmacy and medicines",
+    "qty": 1,
+    "rate": 13350,
+    "amount": 13350,
+    "category": "medicine"
+   },
+   {
+    "description": "Disposable consumables and admission kit",
+    "qty": 1,
+    "rate": 3100,
+    "amount": 3100,
+    "category": "consumable"
+   }
+  ],
+  "sum_insured": 500000,
+  "policy_start": "2024-05-25",
+  "ped_waiting_months": 36,
+  "specified_waiting_months": 24,
+  "room_limit_per_day": 5000,
+  "copay_pct": 0,
+  "continuity_credit_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single",
+  "vision_filled": []
+ },
+ "C021_hdfc_partial_room": {
+  "patient_name": "Ekbal Garg",
+  "age": 49,
+  "sex": "F",
+  "policy_number": "HD4907165767",
+  "hospital": "Harmony Medical Centre, Indore",
+  "diagnosis": "dengue fever",
+  "cause": "illness",
+  "known_history": "No significant past medical or surgical history.",
+  "history_onset_date": null,
+  "admission_date": "2025-08-04",
+  "discharge_date": "2025-08-09",
+  "length_of_stay_days": 5,
+  "room_category_claimed": "private",
+  "claimed_total": 85100,
+  "bill_total": 85100,
+  "items": [
+   {
+    "description": "Room charges (private)",
+    "qty": 5,
+    "rate": 7600,
+    "amount": 38000,
+    "category": "room"
+   },
+   {
+    "description": "Pharmacy and medicines",
+    "qty": 1,
+    "rate": 16300,
+    "amount": 16300,
+    "category": "medicine"
+   },
+   {
+    "description": "Disposable consumables and admissionkit",
+    "qty": 1,
+    "rate": 850,
+    "amount": 850,
+    "category": "consumable"
+   },
+   {
+    "description": "Laboratory andradiologyinvestigations",
+    "qty": 1,
+    "rate": 6300,
+    "amount": 6300,
+    "category": "investigation"
+   },
+   {
+    "description": "Nursing charges",
+    "qty": 1,
+    "rate": 6550,
+    "amount": 6550,
+    "category": "nursing"
+   },
+   {
+    "description": "Consultant visits and monitoring",
+    "qty": 1,
+    "rate": 17100,
+    "amount": 17100,
+    "category": "other"
+   }
+  ],
+  "sum_insured": 500000,
+  "policy_start": "2024-11-04",
+  "ped_waiting_months": 36,
+  "specified_waiting_months": 24,
+  "room_limit_per_day": 5000,
+  "copay_pct": 0,
+  "continuity_credit_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single",
+  "vision_filled": []
+ },
+ "C022_hdfc_partial_nonpayable": {
+  "patient_name": "Nihal Shere",
+  "age": 63,
+  "sex": "F",
+  "policy_number": "HD[PHONE_REDACTED]",
+  "hospital": "Metro Heart and General Hospital, Indore",
+  "diagnosis": "total knee replacement",
+  "cause": "illness",
+  "known_history": "No significant past medical or surgical history.",
+  "history_onset_date": null,
+  "admission_date": "2025-09-26",
+  "discharge_date": "2025-10-02",
+  "length_of_stay_days": 6,
+  "room_category_claimed": "standard_single",
+  "claimed_total": 310350,
+  "bill_total": 310350,
+  "items": [
+   {
+    "description": "Room charges (standard single)",
+    "qty": 6,
+    "rate": 5400,
+    "amount": 32400,
+    "category": "room"
+   },
+   {
+    "description": "Surgeon and anaesthetist fees",
+    "qty": 1,
+    "rate": 76850,
+    "amount": 76850,
+    "category": "surgeon"
+   },
+   {
+    "description": "Operation theatre charges",
+    "qty": 1,
+    "rate": 26700,
+    "amount": 26700,
+    "category": "ot"
+   },
+   {
+    "description": "Pharmacy and medicines",
+    "qty": 1,
+    "rate": 17250,
+    "amount": 17250,
+    "category": "medicine"
+   },
+   {
+    "description": "Disposable consumables and admission kit",
+    "qty": 1,
+    "rate": 4100,
+    "amount": 4100,
+    "category": "consumable"
+   },
+   {
+    "description": "Laboratory and radiology investigations",
+    "qty": 1,
+    "rate": 14600,
+    "amount": 14600,
+    "category": "investigation"
+   },
+   {
+    "description": "Implant / prosthesis",
+    "qty": 1,
+    "rate": 122900,
+    "amount": 122900,
+    "category": "implant"
+   },
+   {
+    "description": "Nursing charges",
+    "qty": 1,
+    "rate": 15550,
+    "amount": 15550,
+    "category": "nursing"
+   }
+  ],
+  "sum_insured": 1000000,
+  "policy_start": "2022-10-26",
+  "ped_waiting_months": 36,
+  "specified_waiting_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "continuity_credit_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single",
+  "vision_filled": []
+ },
+ "C023_hdfc_partial_si_cap": {
+  "patient_name": "Anamika Kanda",
+  "age": 63,
+  "sex": "M",
+  "policy_number": "HD[PHONE_REDACTED]",
+  "hospital": "Lotus Care Hospital, Indore",
+  "diagnosis": "total knee replacement",
+  "cause": "illness",
+  "known_history": "No significant pastmedical orsurgical history.",
+  "history_onset_date": null,
+  "admission_date": "2025-05-11",
+  "discharge_date": "2025-05-16",
+  "length_of_stay_days": 5,
+  "room_category_claimed": "standard_single",
+  "claimed_total": 418250,
+  "bill_total": 418250,
+  "items": [
+   {
+    "description": "Room charges (standard single)",
+    "qty": 5,
+    "rate": 4700,
+    "amount": 23500,
+    "category": "room"
+   },
+   {
+    "description": "Surgeon and anaesthetist fees",
+    "qty": 1,
+    "rate": 88000,
+    "amount": 88000,
+    "category": "surgeon"
+   },
+   {
+    "description": "Operation theatre charges",
+    "qty": 1,
+    "rate": 39600,
+    "amount": 39600,
+    "category": "ot"
+   },
+   {
+    "description": "Laboratory and radiology investigations",
+    "qty": 1,
+    "rate": 8300,
+    "amount": 8300,
+    "category": "investigation"
+   },
+   {
+    "description": "Nursing charges",
+    "qty": 1,
+    "rate": 12850,
+    "amount": 12850,
+    "category": "nursing"
+   },
+   {
+    "description": "Pharmacy and medicines",
+    "qty": 1,
+    "rate": 25250,
+    "amount": 25250,
+    "category": "medicine"
+   },
+   {
+    "description": "Implant / prosthesis",
+    "qty": 1,
+    "rate": 216700,
+    "amount": 216700,
+    "category": "implant"
+   },
+   {
+    "description": "Disposable consumables and admission kit",
+    "qty": 1,
+    "rate": 4050,
+    "amount": 4050,
+    "category": "consumable"
+   }
+  ],
+  "sum_insured": 300000,
+  "policy_start": "2023-01-11",
+  "ped_waiting_months": 36,
+  "specified_waiting_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "continuity_credit_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single",
+  "vision_filled": []
+ },
+ "C024_hdfc_reject_specified": {
+  "patient_name": "Daksh Karnik",
+  "age": 45,
+  "sex": "F",
+  "policy_number": "HD[PHONE_REDACTED]",
+  "hospital": "Sanjivani Hospital and Research Centre, Nagpur",
+  "diagnosis": "inguinal hernia repair",
+  "cause": "illness",
+  "known_history": "No significant past medical or surgical history.",
+  "history_onset_date": null,
+  "admission_date": "2025-06-08",
+  "discharge_date": "2025-06-10",
+  "length_of_stay_days": 2,
+  "room_category_claimed": "standard_single",
+  "claimed_total": 107600,
+  "bill_total": 107600,
+  "items": [
+   {
+    "description": "Room charges (standard single)",
+    "qty": 2,
+    "rate": 5800,
+    "amount": 11600,
+    "category": "room"
+   },
+   {
+    "description": "Surgeon and anaesthetist fees",
+    "qty": 1,
+    "rate": 30500,
+    "amount": 30500,
+    "category": "surgeon"
+   },
+   {
+    "description": "Operation theatre charges",
+    "qty": 1,
+    "rate": 17900,
+    "amount": 17900,
+    "category": "ot"
+   },
+   {
+    "description": "Laboratory and radiology investigations",
+    "qty": 1,
+    "rate": 5350,
+    "amount": 5350,
+    "category": "investigation"
+   },
+   {
+    "description": "Nursing charges",
+    "qty": 1,
+    "rate": 5800,
+    "amount": 5800,
+    "category": "nursing"
+   },
+   {
+    "description": "Pharmacy and medicines",
+    "qty": 1,
+    "rate": 10800,
+    "amount": 10800,
+    "category": "medicine"
+   },
+   {
+    "description": "Implant / prosthesis",
+    "qty": 1,
+    "rate": 22950,
+    "amount": 22950,
+    "category": "implant"
+   },
+   {
+    "description": "Disposable consumables and admission kit",
+    "qty": 1,
+    "rate": 2700,
+    "amount": 2700,
+    "category": "consumable"
+   }
+  ],
+  "sum_insured": 1000000,
+  "policy_start": "2023-11-08",
+  "ped_waiting_months": 36,
+  "specified_waiting_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "continuity_credit_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single",
+  "vision_filled": []
+ },
+ "C025_hdfc_reject_specified": {
+  "patient_name": "Diya Rattan",
+  "age": 40,
+  "sex": "M",
+  "policy_number": "HD[PHONE_REDACTED]",
+  "hospital": "Lotus Care Hospital, Jaipur",
+  "diagnosis": "laparoscopic cholecystectomy (gallstones)",
+  "cause": "illness",
+  "known_history": "No significant past medical or surgical history.",
+  "history_onset_date": null,
+  "admission_date": "2025-04-21",
+  "discharge_date": "2025-04-24",
+  "length_of_stay_days": 3,
+  "room_category_claimed": "standard_single",
+  "claimed_total": 105150,
+  "bill_total": 105150,
+  "items": [
+   {
+    "description": "Room charges (standard single)",
+    "qty": 3,
+    "rate": 4400,
+    "amount": 13200,
+    "category": "room"
+   },
+   {
+    "description": "Surgeon and anaesthetist fees",
+    "qty": 1,
+    "rate": 51350,
+    "amount": 51350,
+    "category": "surgeon"
+   },
+   {
+    "description": "Operation theatre charges",
+    "qty": 1,
+    "rate": 19600,
+    "amount": 19600,
+    "category": "ot"
+   },
+   {
+    "description": "Laboratory and radiology investigations",
+    "qty": 1,
+    "rate": 6200,
+    "amount": 6200,
+    "category": "investigation"
+   },
+   {
+    "description": "Nursing charges",
+    "qty": 1,
+    "rate": 5400,
+    "amount": 5400,
+    "category": "nursing"
+   },
+   {
+    "description": "Pharmacy and medicines",
+    "qty": 1,
+    "rate": 7350,
+    "amount": 7350,
+    "category": "medicine"
+   },
+   {
+    "description": "Disposable consumables and admission kit",
+    "qty": 1,
+    "rate": 2050,
+    "amount": 2050,
+    "category": "consumable"
+   }
+  ],
+  "sum_insured": 1000000,
+  "policy_start": "2023-08-21",
+  "ped_waiting_months": 36,
+  "specified_waiting_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "continuity_credit_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single",
+  "vision_filled": []
+ },
+ "C026_hdfc_reject_30day": {
+  "patient_name": "Dominic Kakar",
+  "age": 39,
+  "sex": "M",
+  "policy_number": "HD[PHONE_REDACTED]",
+  "hospital": "Metro Heart and General Hospital, Indore",
+  "diagnosis": "acute appendicitis, appendectomy",
+  "cause": "illness",
+  "known_history": "No significant past medical or surgical history.",
+  "history_onset_date": null,
+  "admission_date": "2025-10-13",
+  "discharge_date": "2025-10-17",
+  "length_of_stay_days": 4,
+  "room_category_claimed": "standard_single",
+  "claimed_total": 106100,
+  "bill_total": 106100,
+  "items": [
+   {
+    "description": "Room charges (standard single)",
+    "qty": 4,
+    "rate": 5300,
+    "amount": 21200,
+    "category": "room"
+   },
+   {
+    "description": "Surgeon and anaesthetist fees",
+    "qty": 1,
+    "rate": 38000,
+    "amount": 38000,
+    "category": "surgeon"
+   },
+   {
+    "description": "Operation theatre charges",
+    "qty": 1,
+    "rate": 19850,
+    "amount": 19850,
+    "category": "ot"
+   },
+   {
+    "description": "Laboratory and radiology investigations",
+    "qty": 1,
+    "rate": 7150,
+    "amount": 7150,
+    "category": "investigation"
+   },
+   {
+    "description": "Nursing charges",
+    "qty": 1,
+    "rate": 7750,
+    "amount": 7750,
+    "category": "nursing"
+   },
+   {
+    "description": "Pharmacy and medicines",
+    "qty": 1,
+    "rate": 8700,
+    "amount": 8700,
+    "category": "medicine"
+   },
+   {
+    "description": "Disposable consumables and admission kit",
+    "qty": 1,
+    "rate": 3450,
+    "amount": 3450,
+    "category": "consumable"
+   }
+  ],
+  "sum_insured": 500000,
+  "policy_start": "2025-09-30",
+  "ped_waiting_months": 36,
+  "specified_waiting_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "continuity_credit_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single",
+  "vision_filled": []
+ },
+ "C027_hdfc_reject_ped": {
+  "patient_name": "Simon Tata",
+  "age": 30,
+  "sex": "M",
+  "policy_number": "HD2065008508",
+  "hospital": "Metro Heart and General Hospital, Pune",
+  "diagnosis": "diabetic foot infection with debridement",
+  "cause": "illness",
+  "known_history": "Known case of diabetic foot infection with debridement, diagnosed on 22/06/2021, on regular treatment.",
+  "history_onset_date": "2021-06-22",
+  "admission_date": "2025-04-22",
+  "discharge_date": "2025-04-28",
+  "length_of_stay_days": 6,
+  "room_category_claimed": "standard_single",
+  "claimed_total": 122500,
+  "bill_total": 122500,
+  "items": [
+   {
+    "description": "Room charges (standard single)",
+    "qty": 6,
+    "rate": 4700,
+    "amount": 28200,
+    "category": "room"
+   },
+   {
+    "description": "Surgeon and anaesthetist fees",
+    "qty": 1,
+    "rate": 36800,
+    "amount": 36800,
+    "category": "surgeon"
+   },
+   {
+    "description": "Operation theatre charges",
+    "qty": 1,
+    "rate": 13500,
+    "amount": 13500,
+    "category": "ot"
+   },
+   {
+    "description": "Laboratory and radiology investigations",
+    "qty": 1,
+    "rate": 11900,
+    "amount": 11900,
+    "category": "investigation"
+   },
+   {
+    "description": "Nursing charges",
+    "qty": 1,
+    "rate": 6600,
+    "amount": 6600,
+    "category": "nursing"
+   },
+   {
+    "description": "Pharmacy and medicines",
+    "qty": 1,
+    "rate": 23700,
+    "amount": 23700,
+    "category": "medicine"
+   },
+   {
+    "description": "Disposable consumables and admission kit",
+    "qty": 1,
+    "rate": 1800,
+    "amount": 1800,
+    "category": "consumable"
+   }
+  ],
+  "sum_insured": 300000,
+  "policy_start": "2022-12-22",
+  "ped_waiting_months": 36,
+  "specified_waiting_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "continuity_credit_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single",
+  "vision_filled": []
+ },
+ "C028_hdfc_multi_hop": {
+  "patient_name": "Tara Dhar",
+  "age": 35,
+  "sex": "M",
+  "policy_number": "HD4793508062",
+  "hospital": "Harmony Medical Centre, Jaipur",
+  "diagnosis": "total knee replacement",
+  "cause": "illness",
+  "known_history": "Known case of total knee replacement, diagnosed on 17/06/2022, on regular treatment.",
+  "history_onset_date": "2022-06-17",
+  "admission_date": "2026-06-17",
+  "discharge_date": "2026-06-23",
+  "length_of_stay_days": 6,
+  "room_category_claimed": "standard_single",
+  "claimed_total": 346100,
+  "bill_total": 346100,
+  "items": [
+   {
+    "description": "Room charges (standard single)",
+    "qty": 6,
+    "rate": 5400,
+    "amount": 32400,
+    "category": "room"
+   },
+   {
+    "description": "Surgeon and anaesthetist fees",
+    "qty": 1,
+    "rate": 82250,
+    "amount": 82250,
+    "category": "surgeon"
+   },
+   {
+    "description": "Operation theatre charges",
+    "qty": 1,
+    "rate": 35050,
+    "amount": 35050,
+    "category": "ot"
+   },
+   {
+    "description": "Laboratory and radiology investigations",
+    "qty": 1,
+    "rate": 10550,
+    "amount": 10550,
+    "category": "investigation"
+   },
+   {
+    "description": "Nursing charges",
+    "qty": 1,
+    "rate": 10550,
+    "amount": 10550,
+    "category": "nursing"
+   },
+   {
+    "description": "Pharmacy and medicines",
+    "qty": 1,
+    "rate": 24950,
+    "amount": 24950,
+    "category": "medicine"
+   },
+   {
+    "description": "Implant / prosthesis",
+    "qty": 1,
+    "rate": 146400,
+    "amount": 146400,
+    "category": "implant"
+   },
+   {
+    "description": "Disposable consumables and admission kit",
+    "qty": 1,
+    "rate": 3950,
+    "amount": 3950,
+    "category": "consumable"
+   }
+  ],
+  "sum_insured": 300000,
+  "policy_start": "2023-12-17",
+  "ped_waiting_months": 36,
+  "specified_waiting_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "continuity_credit_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single",
+  "vision_filled": []
+ },
+ "C029_hdfc_missing_docs": {
+  "patient_name": "Liam Koshy",
+  "age": 67,
+  "sex": "M",
+  "policy_number": "HD[PHONE_REDACTED]",
+  "hospital": "Metro Heart and General Hospital, Indore",
+  "diagnosis": "pneumonia",
+  "cause": "illness",
+  "known_history": "No significant past medical or surgical history.",
+  "history_onset_date": null,
+  "admission_date": "2025-11-13",
+  "discharge_date": "2025-11-19",
+  "length_of_stay_days": 6,
+  "room_category_claimed": "standard_single",
+  "claimed_total": 75450,
+  "bill_total": 75450,
+  "items": [
+   {
+    "description": "Room charges (standard single)",
+    "qty": 6,
+    "rate": 4600,
+    "amount": 27600,
+    "category": "room"
+   },
+   {
+    "description": "Consultant visits and monitoring",
+    "qty": 1,
+    "rate": 10400,
+    "amount": 10400,
+    "category": "other"
+   },
+   {
+    "description": "Laboratory and radiology investigations",
+    "qty": 1,
+    "rate": 8500,
+    "amount": 8500,
+    "category": "investigation"
+   },
+   {
+    "description": "Nursing charges",
+    "qty": 1,
+    "rate": 8750,
+    "amount": 8750,
+    "category": "nursing"
+   },
+   {
+    "description": "Pharmacy and medicines",
+    "qty": 1,
+    "rate": 18150,
+    "amount": 18150,
+    "category": "medicine"
+   },
+   {
+    "description": "Disposable consumables and admission kit",
+    "qty": 1,
+    "rate": 2050,
+    "amount": 2050,
+    "category": "consumable"
+   }
+  ],
+  "sum_insured": 1000000,
+  "policy_start": "2024-10-13",
+  "ped_waiting_months": 36,
+  "specified_waiting_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "continuity_credit_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single",
+  "vision_filled": []
+ },
+ "C030_hdfc_total_mismatch": {
+  "patient_name": "Priya Rastogi",
+  "age": 38,
+  "sex": "F",
+  "policy_number": "HD[PHONE_REDACTED]",
+  "hospital": "Lotus Care Hospital,Indore",
+  "diagnosis": "cataract surgery (phacoemulsification)",
+  "cause": "illness",
+  "known_history": "No significant past medical or surgical history.",
+  "history_onset_date": null,
+  "admission_date": "2026-07-16",
+  "discharge_date": "2026-07-17",
+  "length_of_stay_days": 1,
+  "room_category_claimed": "standard_single",
+  "claimed_total": 72750,
+  "bill_total": 72750,
+  "items": [
+   {
+    "description": "Room charges (standard single)",
+    "qty": 1,
+    "rate": 5600,
+    "amount": 5600,
+    "category": "room"
+   },
+   {
+    "description": "Surgeon and anaesthetist fees",
+    "qty": 1,
+    "rate": 25300,
+    "amount": 25300,
+    "category": "surgeon"
+   },
+   {
+    "description": "Operation theatre charges",
+    "qty": 1,
+    "rate": 9300,
+    "amount": 9300,
+    "category": "ot"
+   },
+   {
+    "description": "Laboratory and radiology investigations",
+    "qty": 1,
+    "rate": 2900,
+    "amount": 2900,
+    "category": "investigation"
+   },
+   {
+    "description": "Nursing charges",
+    "qty": 1,
+    "rate": 1700,
+    "amount": 1700,
+    "category": "nursing"
+   },
+   {
+    "description": "Pharmacy and medicines",
+    "qty": 1,
+    "rate": 3000,
+    "amount": 3000,
+    "category": "medicine"
+   },
+   {
+    "description": "Implant / prosthesis",
+    "qty": 1,
+    "rate": 21700,
+    "amount": 21700,
+    "category": "implant"
+   },
+   {
+    "description": "Disposable consumables and admission kit",
+    "qty": 1,
+    "rate": 1450,
+    "amount": 1450,
+    "category": "consumable"
+   }
+  ],
+  "sum_insured": 500000,
+  "policy_start": "2023-11-16",
+  "ped_waiting_months": 36,
+  "specified_waiting_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "continuity_credit_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single",
+  "vision_filled": []
+ }
+}

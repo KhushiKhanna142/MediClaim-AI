@@ -1,0 +1,91 @@
+{
+ "claim_id": "C010_niva_reject_specified",
+ "category": "reject_specified",
+ "policy_id": "niva_aspire",
+ "patient": {
+  "name": "Gayathri Chaudry",
+  "age": 62,
+  "sex": "F"
+ },
+ "schedule": {
+  "sum_insured": 300000,
+  "policy_start": "2024-07-29",
+  "ped_months": 12,
+  "spec_months": 12,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "laparoscopic cholecystectomy (gallstones)",
+  "kind": "illness",
+  "specified": true,
+  "is_ped": false
+ },
+ "admission_date": "2025-03-29",
+ "discharge_date": "2025-03-31",
+ "room_days": 2,
+ "room_claimed": "standard_single",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (standard single)",
+   "qty": 2,
+   "rate": 4300,
+   "amount": 8600
+  },
+  {
+   "category": "surgeon",
+   "description": "Surgeon and anaesthetist fees",
+   "qty": 1,
+   "rate": 44500,
+   "amount": 44500
+  },
+  {
+   "category": "ot",
+   "description": "Operation theatre charges",
+   "qty": 1,
+   "rate": 20500,
+   "amount": 20500
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 6050,
+   "amount": 6050
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 5600,
+   "amount": 5600
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 8550,
+   "amount": 8550
+  },
+  {
+   "category": "consumable",
+   "description": "Disposable consumables and admission kit",
+   "qty": 1,
+   "rate": 2400,
+   "amount": 2400
+  }
+ ],
+ "stated_total": 96200,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

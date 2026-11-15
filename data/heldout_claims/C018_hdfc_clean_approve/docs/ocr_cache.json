@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nHD6856611391\nProduct\nOptima Secure\nPolicy start date\n21/09/2025\nSum insured (Rs.)\n10,00,000\nName of patient\nLajita Mall\nAge / Sex\n57 years / M\nContact number\n9195087908\nHospital name\nSanjivani Hospital and Research Centre, Indore\nDate of admission\n21/08/2026\nDate of discharge\n25/08/2026\nDiagnosis / ailment\ndengue fever\nNature of illness\nIllness\nRoom category occupied\nstandard single\nTotal amount claimed (Rs.)\n58,900\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 25/08/2026\n",
+  "method": "text_layer"
+ },
+ "discharge_summary": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nSanjivani Hospital and Research Centre\nDischarge Summary\nPatient\nLajita Mall, 57 years, M\nUHID\nUH907736\nDate of admission\n21/08/2026\nDate of discharge\n25/08/2026\nLength of stay\n4 day(s)\nConsultant\nDr. A. Kulkarni\nFinal diagnosis\ndengue fever\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to dengue fever. Investigations were done and treatment was given\nas per protocol. The post-treatment period was uneventful and the patient was discharged in stable condition on\n25/08/2026.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. A. Kulkarni (Treating consultant)\n",
+  "method": "text_layer"
+ },
+ "hospital_bill": {
+  "text": "Sanjivani Hospital and Research Centre\nIndore|Final InpatientBill\nBill no BL/2026/28636 UHID UH907736\nPatient Lajita Mall Age/Sex 57/M\nAdmitted 21/08/2026 Discharged 25/08/2026\nConsultant Dr.A.Kulkarni Room standard single\nSummaryofcharges\nHead Amount\nRoom and Bed Charges 21,200\nPharmacy 14,450\nDiagnostics 7,600\nNursing 4,500\nOther Charges 11,150\nTotal bill 58,900\nSynittictestdocument.gentratedtor ewstualion.NotarealYeoord\nItemisedstatement Amount\nDescription Qty Rate\nDate 4 5,300 21,200\n21/08/2026 Room charges (standard single) 11,150\nConsultant visits and monitoring 1 11,150\n21/08/2026 7,600 7,600\n21/08/2026 Laboratory andradiologyinvestigations 1\n1 4,500 4,500\n21/08/2026 Nursing charges 14,450 14,450\n21/08/2026 Pharmacy and medicines\nPage2\nSynthetic test document.generated for software evaluation.Nota real record.",
+  "method": "ocr"
+ },
+ "id_proof": {
+  "text": "Government of India (specimen ID card,synthetic)\nName Lajita Mall\nAge/Gender 57/M\nIDnumber XXXXXXXX6901\nMobile 9195087908\nSynhetio Eostdocuaneng",
+  "method": "ocr"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nSanjivani Hospital and Research Centre Pathology\nPatient: Lajita Mall | Date: 21/08/2026\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nPolicy Schedule\nPolicy number\nHD6856611391\nInsurer\nHDFC ERGO General Insurance\nProduct\nOptima Secure\nInsured person\nLajita Mall, 57 years, M\nPolicy start date\n21/09/2025\nSum insured (Rs.)\n10,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. A. Kulkarni\nSanjivani Hospital and Research Centre\nPatient: Lajita Mall, 57/M Date: 21/08/2026\nDiagnosis: dengue fever\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 2901,
+  "discharge_summary.pdf": 2631,
+  "hospital_bill.pdf": 224590,
+  "id_proof.pdf": 159622,
+  "lab_report.pdf": 2183,
+  "policy_schedule.pdf": 2477,
+  "prescription.pdf": 1947,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

@@ -35,7 +35,7 @@ class Reader:
     def __init__(self, *findings, retrieved=("4.1.2", "6.2.9")):
         self.findings, self.retrieved, self.calls = list(findings) or [F()], retrieved, 0
 
-    def read(self, c, policy_id):
+    def read(self, c, policy_id, **kw):
         f = self.findings[min(self.calls, len(self.findings) - 1)]
         self.calls += 1
         return f, {"retrieved": {"q": list(self.retrieved)}, "dropped_citations": []}
@@ -172,6 +172,17 @@ def test_verifier_accepts_accident_without_waiting_logic():
 def test_verifier_soft_concern_on_unflagged_history_lowers_confidence():
     r = Verifier().verify(vclaim(history="Type 2 diabetes for 5 years"), F().model_dump(), approve_decision(), ["4.1.2"])
     assert r.passed and r.confidence == 0.8 and r.concerns
+
+
+def test_verifier_deterministic_guard_escalates_on_known_case_or_onset():
+    c1 = vclaim(history="Known case of total knee replacement")
+    r1 = Verifier().verify(c1, F().model_dump(), approve_decision(), ["4.1.2"])
+    assert not r1.passed and any("history states" in i for i in r1.issues)
+
+    from datetime import date
+    c2 = vclaim(history="Hypertension", history_onset_date=date(2022, 1, 1))
+    r2 = Verifier().verify(c2, F().model_dump(), approve_decision(), ["4.1.2"])
+    assert not r2.passed and any("history states" in i for i in r2.issues)
 
 
 class Critic:

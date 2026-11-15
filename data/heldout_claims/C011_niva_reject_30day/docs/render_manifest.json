@@ -1,0 +1,58 @@
+{
+ "claim_id": "C011_niva_reject_30day",
+ "ids": {
+  "policy_no": "NB7913631681",
+  "hospital": "Metro Heart and General Hospital",
+  "city": "Ahmedabad",
+  "bill_no": "BL/2026/85672",
+  "uhid": "UH875304",
+  "phone": "9646376790",
+  "aadhaar_tail": "5648",
+  "doctor": "Dr. A. Kulkarni"
+ },
+ "bill_layout": "compact",
+ "docs": [
+  {
+   "doc": "policy_schedule",
+   "file": "policy_schedule.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "claim_form",
+   "file": "claim_form.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "hospital_bill",
+   "file": "hospital_bill.pdf",
+   "scanned": false,
+   "layout": "compact"
+  },
+  {
+   "doc": "discharge_summary",
+   "file": "discharge_summary.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "id_proof",
+   "file": "id_proof.pdf",
+   "scanned": true,
+   "layout": null
+  },
+  {
+   "doc": "lab_report",
+   "file": "lab_report.pdf",
+   "scanned": true,
+   "layout": null
+  },
+  {
+   "doc": "prescription",
+   "file": "prescription.pdf",
+   "scanned": false,
+   "layout": null
+  }
+ ]
+}

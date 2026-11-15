@@ -1,0 +1,84 @@
+{
+ "claim_id": "C001_niva_clean_approve",
+ "category": "clean_approve",
+ "policy_id": "niva_aspire",
+ "patient": {
+  "name": "Aryan Maharaj",
+  "age": 41,
+  "sex": "F"
+ },
+ "schedule": {
+  "sum_insured": 1000000,
+  "policy_start": "2024-03-09",
+  "ped_months": 12,
+  "spec_months": 12,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "laparoscopic cholecystectomy (gallstones)",
+  "kind": "illness",
+  "specified": true,
+  "is_ped": false
+ },
+ "admission_date": "2025-10-09",
+ "discharge_date": "2025-10-11",
+ "room_days": 2,
+ "room_claimed": "standard_single",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (standard single)",
+   "qty": 2,
+   "rate": 5500,
+   "amount": 11000
+  },
+  {
+   "category": "surgeon",
+   "description": "Surgeon and anaesthetist fees",
+   "qty": 1,
+   "rate": 48550,
+   "amount": 48550
+  },
+  {
+   "category": "ot",
+   "description": "Operation theatre charges",
+   "qty": 1,
+   "rate": 23900,
+   "amount": 23900
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 5350,
+   "amount": 5350
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 4250,
+   "amount": 4250
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 6200,
+   "amount": 6200
+  }
+ ],
+ "stated_total": 99250,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

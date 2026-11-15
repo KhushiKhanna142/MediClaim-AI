@@ -1,0 +1,98 @@
+{
+ "claim_id": "C005_niva_partial_room",
+ "category": "partial_room",
+ "policy_id": "niva_aspire",
+ "patient": {
+  "name": "Viraj Tiwari",
+  "age": 31,
+  "sex": "F"
+ },
+ "schedule": {
+  "sum_insured": 500000,
+  "policy_start": "2023-09-01",
+  "ped_months": 24,
+  "spec_months": 12,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": true,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "inguinal hernia repair",
+  "kind": "illness",
+  "specified": true,
+  "is_ped": false
+ },
+ "admission_date": "2025-10-01",
+ "discharge_date": "2025-10-03",
+ "room_days": 2,
+ "room_claimed": "deluxe",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (deluxe)",
+   "qty": 2,
+   "rate": 10100,
+   "amount": 20200
+  },
+  {
+   "category": "surgeon",
+   "description": "Surgeon and anaesthetist fees",
+   "qty": 1,
+   "rate": 34900,
+   "amount": 34900
+  },
+  {
+   "category": "ot",
+   "description": "Operation theatre charges",
+   "qty": 1,
+   "rate": 15700,
+   "amount": 15700
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 5100,
+   "amount": 5100
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 5800,
+   "amount": 5800
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 10150,
+   "amount": 10150
+  },
+  {
+   "category": "implant",
+   "description": "Implant / prosthesis",
+   "qty": 1,
+   "rate": 13300,
+   "amount": 13300
+  },
+  {
+   "category": "consumable",
+   "description": "Disposable consumables and admission kit",
+   "qty": 1,
+   "rate": 2000,
+   "amount": 2000
+  }
+ ],
+ "stated_total": 107150,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

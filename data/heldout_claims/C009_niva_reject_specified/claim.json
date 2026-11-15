@@ -1,0 +1,98 @@
+{
+ "claim_id": "C009_niva_reject_specified",
+ "category": "reject_specified",
+ "policy_id": "niva_aspire",
+ "patient": {
+  "name": "Arunima Dugal",
+  "age": 47,
+  "sex": "F"
+ },
+ "schedule": {
+  "sum_insured": 1000000,
+  "policy_start": "2024-11-06",
+  "ped_months": 24,
+  "spec_months": 12,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "total knee replacement",
+  "kind": "illness",
+  "specified": true,
+  "is_ped": false
+ },
+ "admission_date": "2025-06-06",
+ "discharge_date": "2025-06-12",
+ "room_days": 6,
+ "room_claimed": "standard_single",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (standard single)",
+   "qty": 6,
+   "rate": 5900,
+   "amount": 35400
+  },
+  {
+   "category": "surgeon",
+   "description": "Surgeon and anaesthetist fees",
+   "qty": 1,
+   "rate": 87650,
+   "amount": 87650
+  },
+  {
+   "category": "ot",
+   "description": "Operation theatre charges",
+   "qty": 1,
+   "rate": 38800,
+   "amount": 38800
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 12200,
+   "amount": 12200
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 13900,
+   "amount": 13900
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 16700,
+   "amount": 16700
+  },
+  {
+   "category": "implant",
+   "description": "Implant / prosthesis",
+   "qty": 1,
+   "rate": 149050,
+   "amount": 149050
+  },
+  {
+   "category": "consumable",
+   "description": "Disposable consumables and admission kit",
+   "qty": 1,
+   "rate": 5950,
+   "amount": 5950
+  }
+ ],
+ "stated_total": 359650,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

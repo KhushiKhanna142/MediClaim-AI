@@ -30,9 +30,12 @@ def main():
     ap.add_argument("--no-critic", action="store_true")
     ap.add_argument("--score-only", action="store_true")
     ap.add_argument("--path", default="data/qdrant")
+    ap.add_argument("--out-name", default=None, help="custom name for prediction output file")
+    ap.add_argument("--extracted-file", default=None, help="custom path to extraction predictions json")
     a = ap.parse_args()
     dirs = sorted(p for p in Path(a.claims).glob("C*/") if (p / "ground_truth.json").exists())[: a.limit]
-    pred_path = RESULTS / f"graph_{a.input}_predictions.json"
+    out_name = a.out_name or f"graph_{a.input}"
+    pred_path = RESULTS / f"{out_name}_predictions.json"
     preds = json.loads(pred_path.read_text()) if pred_path.exists() else {}
     if not a.score_only:
         from src.adjudication.reader import PolicyReader
@@ -47,7 +50,8 @@ def main():
         client, emb, children, parents = build_index(qdrant_path=a.path)
         retriever = HybridRetriever(client, emb, children, parents, get_reranker("cross-encoder/ms-marco-MiniLM-L-6-v2"))
         graph = build_graph(reader=PolicyReader(retriever, llm), verifier=Verifier(None if a.no_critic else llm))
-        extracted = json.loads(Path("eval/results/extraction_predictions.json").read_text()) if a.input == "extracted" else {}
+        ext_path = Path(a.extracted_file) if a.extracted_file else Path("eval/results/extraction_predictions.json")
+        extracted = json.loads(ext_path.read_text()) if a.input == "extracted" else {}
         quota = 0
         for d in dirs:
             cid = d.name
@@ -88,7 +92,7 @@ def main():
                f"| re-read policy {sum(1 for v in done.values() if v.get('read_attempts', 0) > 1)}\n"
                f"escalation reasons: {dict(esc)}")
     table = report(dirs, preds)
-    (RESULTS / f"graph_{a.input}_report.txt").write_text(table + summary)
+    (RESULTS / f"{out_name}_report.txt").write_text(table + summary)
     print("\n" + table + summary)
 
 

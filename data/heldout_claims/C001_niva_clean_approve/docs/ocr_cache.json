@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nNB9589406906\nProduct\nReAssure (Aspire)\nPolicy start date\n09/03/2024\nSum insured (Rs.)\n10,00,000\nName of patient\nAryan Maharaj\nAge / Sex\n41 years / F\nContact number\n9314153245\nHospital name\nHarmony Medical Centre, Ahmedabad\nDate of admission\n09/10/2025\nDate of discharge\n11/10/2025\nDiagnosis / ailment\nlaparoscopic cholecystectomy (gallstones)\nNature of illness\nIllness\nRoom category occupied\nstandard single\nTotal amount claimed (Rs.)\n99,250\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 11/10/2025\n",
+  "method": "text_layer"
+ },
+ "discharge_summary": {
+  "text": "HarmonyMedical Centre\nDischarge Summary\nPatient AryanMaharaj,41years,F\nUHID UH475668\nDate of admission 09/10/2025\nDate of discharge 11/10/2025\nLength of stay 2day(s)\nConsultant Dr.V.lyer\nFinal diagnosis\nlaparoscopiccholecystectomy(gallstones)\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\ndone and treatment wasgiven asperprotocol.Thepost-treatment periodwasuneventful and thepatientwas\ndischargedinstableconditionon11/10/2025.\nAdvice on discharge\nReview after 7 days withreports.Continue medicines asprescribed.Avoid strenuous activity.\nDr.V.lyer\uff08Treating consultant)\nSynthetic tes document generaled torsoftware evaluation.Nota real record Pagel",
+  "method": "ocr"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHarmony Medical Centre\nAhmedabad | Final Inpatient Bill\nBill no\nBL/2025/1269\nUHID\nUH475668\nPatient\nAryan Maharaj\nAge / Sex\n41 / F\nAdmitted\n09/10/2025\nDischarged\n11/10/2025\nConsultant\nDr. V. Iyer\nRoom\nstandard single\nSummary of charges\nHead\nAmount\nRoom and Bed Charges\n11,000\nProfessional Fees\n48,550\nOperation Theatre\n23,900\nPharmacy\n6,200\nDiagnostics\n5,350\nNursing\n4,250\nTotal bill\n99,250\n\nSynthetic test document, generated for software evaluation. Not a real record.\nPage 2\nItemised statement\nDate\nDescription\nQty\nRate\nAmount\n09/10/2025\nRoom charges (standard single)\n2\n5,500\n11,000\n09/10/2025\nSurgeon and anaesthetist fees\n1\n48,550\n48,550\n09/10/2025\nOperation theatre charges\n1\n23,900\n23,900\n09/10/2025\nLaboratory and radiology investigations\n1\n5,350\n5,350\n09/10/2025\nNursing charges\n1\n4,250\n4,250\n09/10/2025\nPharmacy and medicines\n1\n6,200\n6,200\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Government of India (specimen ID card, synthetic)\nName Aryan Maharaj\nAge/Gender 41/F\nIDnumber XXXXXXXX1619\nMobile 9314153245\nSyotht te dontgenerated r swrevlnNotaealecd Pagui",
+  "method": "ocr"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHarmony Medical Centre Pathology\nPatient: Aryan Maharaj | Date: 09/10/2025\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nPolicy Schedule\nPolicy number\nNB9589406906\nInsurer\nNiva Bupa Health Insurance\nProduct\nReAssure (Aspire)\nInsured person\nAryan Maharaj, 41 years, F\nPolicy start date\n09/03/2024\nSum insured (Rs.)\n10,00,000\nWaiting period, pre-existing diseases\n12 months\nWaiting period, specified diseases/procedures\n12 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Dr.V.lyer\nHarmonyMedical Centre\nPatient:AryanMaharaj,41/FDate:09/10/2025\nDiagnosis:laparoscopic cholecystectomy (gallstones)\nRx:Tab.Paracetamol500 mg 1-0-1x3days;Cap.Pantoprazole40 mg1-0-0x5 days\nPao",
+  "method": "ocr"
+ },
+ "_files": {
+  "claim_form.pdf": 2925,
+  "discharge_summary.pdf": 113443,
+  "hospital_bill.pdf": 3945,
+  "id_proof.pdf": 158702,
+  "lab_report.pdf": 2173,
+  "policy_schedule.pdf": 2479,
+  "prescription.pdf": 116698,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

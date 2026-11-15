@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nHD3228640966\nProduct\nOptima Secure\nPolicy start date\n10/06/2024\nSum insured (Rs.)\n10,00,000\nName of patient\nJanya Gaba\nAge / Sex\n51 years / M\nContact number\n9776323945\nHospital name\nHarmony Medical Centre, Indore\nDate of admission\n10/01/2025\nDate of discharge\n12/01/2025\nDiagnosis / ailment\nlaparoscopic cholecystectomy (gallstones)\nNature of illness\nIllness\nRoom category occupied\nstandard single\nTotal amount claimed (Rs.)\n90,800\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 12/01/2025\n",
+  "method": "text_layer"
+ },
+ "discharge_summary": {
+  "text": "Harmony Medical Centre\nDischarge Summary\nPatient Janya Gaba,51years,M\nUHID UH869932\nDate of admission 10/01/2025\nDate of discharge 12/01/2025\nLength of stay 2day(s)\nConsultant Dr.S.Mehta\nFinal diagnosis\nlaparoscopiccholecystectomy(gallstones)\nHistory\nNosignificantpastmedical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to laparoscopic cholecystectomy (gallstones). Investigations were\ndone and treatment was given asper protocol.The post-treatment period was uneventful and the patient was discharged instableconditionon12/01/2025.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed.Avoid strenuous activity.\nDr.S.Mehta(Treatingconsultant)",
+  "method": "ocr"
+ },
+ "hospital_bill": {
+  "text": "Harmony Medical Centre\nIndore|Final Inpatient Bill\nBillno BL2025/7005 UHID UH869932\nPatient Janya Gaba Age/Sex 51/M\nAdmitted 10/01/2025 Discharged 12/01/2025\nConsultant Dr.S.Mehta Room standard single\nSummary of charges\nHead Amount\nRoom and Bed Charges 8,200\nProfessional Fees 39.250\nOperation Theatre 17,650\nPharmacy 11,300\nDiagnostics 8.750\nNursing 5.650\nTotalbill 90,800\nSynteclestaocu ahonNoarvirecorg\nItemised statement\nDescription Qty Rate Amount\nDate 8.200\n10/01/2025 Room charges(standard single) 2 4,100\nSurgeon and anaesthetist fees 1 39,250 39,250\n10/01/2025\nOperation theatre charges 1 17,650 17.650\n10/01/2025\nLaboratory andradiology investigations 1 8.750 8,750\n10/01/2025\nNursing charges 5,650 5,650\n10/01/2025\nPharmacy andmedicines 11,300 11,300\n10/01/2025\nSynthetic test document.geneated for sotware evaluationNota real record. Page2",
+  "method": "ocr"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nJanya Gaba\nAge / Gender\n51 / M\nID number\nXXXX XXXX 8018\nMobile\n9776323945\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHarmony Medical Centre Pathology\nPatient: Janya Gaba | Date: 10/01/2025\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nPolicy Schedule\nPolicy number\nHD3228640966\nInsurer\nHDFC ERGO General Insurance\nProduct\nOptima Secure\nInsured person\nJanya Gaba, 51 years, M\nPolicy start date\n10/06/2024\nSum insured (Rs.)\n10,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\n30 months\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. S. Mehta\nHarmony Medical Centre\nPatient: Janya Gaba, 51/M Date: 10/01/2025\nDiagnosis: laparoscopic cholecystectomy (gallstones)\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 2918,
+  "discharge_summary.pdf": 137471,
+  "hospital_bill.pdf": 236335,
+  "id_proof.pdf": 2008,
+  "lab_report.pdf": 2169,
+  "policy_schedule.pdf": 2477,
+  "prescription.pdf": 1957,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

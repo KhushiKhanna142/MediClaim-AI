@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "HDFC ERGO General Insurance\nHealth Insurance Claim Form (Reimbursement),Part A\nPolicynumber HD7701528545\nProduct Optima Secure\nPolicy start date 25/05/2024\nSum insured (Rs.) 5,00.000\nName of patient Isha Kadakia\nAge/Sex 37years/M\nContact number 9354775250\nHospital name Metro Heart and General Hospital,Jaipur\nDate of admission 25/03/2026\nDate of discharge 28/03/2026\nDiagnosis/ailment acute appendicitis,appendectomy\nNature of illness Illness\nRoom category occupied private\nTotal amount claimed(Rs.) 1,16,700\nDeclaration\nI declare that theinformation furnished in this claim form is true andcorrect to the best of myknowledge.lagree to\nprovide any further documentsrequiredby the insurer.\nSignature of the insured: Date:28/03/2026\nSynthetictestdocumentgenerad torsoftware evaationNoaeal ecor Page1",
+  "method": "ocr"
+ },
+ "discharge_summary": {
+  "text": "Metro Heart and General Hospital\nDischarge Summary\nPatient IshaKadakia,37years,M\nUHID UH558144\nDate ofadmission 25/03/2026\nDate of discharge 28/03/2026\nLength of stay 3day(s)\nConsultant Dr.P.Deshmukh\nFinal diagnosis\nacute appendicitis,appendectomy\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to acute appendicitis,appendectomy.Investigations were done and\ntreatment was given as per protocol.The post-treatment periodwas uneventful and thepatient was discharged in stableconditionon28/03/2026.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed.Avoid strenuous activity\nDr.P,Deshmukh(Treating consultant)\nSynthetitestooumentgenerad or stare evaluationNctarealrecod Page1",
+  "method": "ocr"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nMetro Heart and General Hospital\nJaipur | Final Inpatient Bill\nBill no\nBL/2026/32446\nUHID\nUH558144\nPatient\nIsha Kadakia\nAge / Sex\n37 / M\nAdmitted\n25/03/2026\nDischarged\n28/03/2026\nConsultant\nDr. P. Deshmukh\nRoom\nprivate\nSummary of charges\nHead\nAmount\nRoom and Bed Charges\n25,200\nProfessional Fees\n48,650\nOperation Theatre\n12,850\nPharmacy\n13,350\nConsumables\n3,100\nDiagnostics\n8,500\nNursing\n5,050\nTotal bill\n1,16,700\n\nSynthetic test document, generated for software evaluation. Not a real record.\nPage 2\nItemised statement\nDate\nDescription\nQty\nRate\nAmount\n25/03/2026\nRoom charges (private)\n3\n8,400\n25,200\n25/03/2026\nSurgeon and anaesthetist fees\n1\n48,650\n48,650\n25/03/2026\nOperation theatre charges\n1\n12,850\n12,850\n25/03/2026\nLaboratory and radiology investigations\n1\n8,500\n8,500\n25/03/2026\nNursing charges\n1\n5,050\n5,050\n25/03/2026\nPharmacy and medicines\n1\n13,350\n13,350\n25/03/2026\nDisposable consumables and admission kit\n1\n3,100\n3,100\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Government of India(specimen ID card, synthetic)\nName Isha Kadakia\nAge/Gender 37/M\nIDnumber XXXXXXXX5968\nMobile 9354775250\nSynthelie test documentgenetteg torsftware evaltion Notaefreoord Pagn.1",
+  "method": "ocr"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nMetro Heart and General Hospital Pathology\nPatient: Isha Kadakia | Date: 25/03/2026\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nPolicy Schedule\nPolicy number\nHD7701528545\nInsurer\nHDFC ERGO General Insurance\nProduct\nOptima Secure\nInsured person\nIsha Kadakia, 37 years, M\nPolicy start date\n25/05/2024\nSum insured (Rs.)\n5,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nRs. 5,000 per day\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. P. Deshmukh\nMetro Heart and General Hospital\nPatient: Isha Kadakia, 37/M Date: 25/03/2026\nDiagnosis: acute appendicitis, appendectomy\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 118612,
+  "discharge_summary.pdf": 174832,
+  "hospital_bill.pdf": 4052,
+  "id_proof.pdf": 133680,
+  "lab_report.pdf": 2181,
+  "policy_schedule.pdf": 2463,
+  "prescription.pdf": 1957,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

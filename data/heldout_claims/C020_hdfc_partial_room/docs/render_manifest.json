@@ -1,0 +1,58 @@
+{
+ "claim_id": "C020_hdfc_partial_room",
+ "ids": {
+  "policy_no": "HD7701528545",
+  "hospital": "Metro Heart and General Hospital",
+  "city": "Jaipur",
+  "bill_no": "BL/2026/32446",
+  "uhid": "UH558144",
+  "phone": "9354775250",
+  "aadhaar_tail": "5968",
+  "doctor": "Dr. P. Deshmukh"
+ },
+ "bill_layout": "summary_first",
+ "docs": [
+  {
+   "doc": "policy_schedule",
+   "file": "policy_schedule.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "claim_form",
+   "file": "claim_form.pdf",
+   "scanned": true,
+   "layout": null
+  },
+  {
+   "doc": "hospital_bill",
+   "file": "hospital_bill.pdf",
+   "scanned": false,
+   "layout": "summary_first"
+  },
+  {
+   "doc": "discharge_summary",
+   "file": "discharge_summary.pdf",
+   "scanned": true,
+   "layout": null
+  },
+  {
+   "doc": "id_proof",
+   "file": "id_proof.pdf",
+   "scanned": true,
+   "layout": null
+  },
+  {
+   "doc": "lab_report",
+   "file": "lab_report.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "prescription",
+   "file": "prescription.pdf",
+   "scanned": false,
+   "layout": null
+  }
+ ]
+}

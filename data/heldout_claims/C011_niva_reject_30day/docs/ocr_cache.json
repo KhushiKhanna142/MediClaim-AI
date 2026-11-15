@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nNB7913631681\nProduct\nReAssure (Aspire)\nPolicy start date\n30/12/2025\nSum insured (Rs.)\n10,00,000\nName of patient\nLajita Chatterjee\nAge / Sex\n68 years / F\nContact number\n9646376790\nHospital name\nMetro Heart and General Hospital, Ahmedabad\nDate of admission\n18/01/2026\nDate of discharge\n22/01/2026\nDiagnosis / ailment\ndengue fever\nNature of illness\nIllness\nRoom category occupied\nstandard single\nTotal amount claimed (Rs.)\n53,700\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 22/01/2026\n",
+  "method": "text_layer"
+ },
+ "discharge_summary": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nMetro Heart and General Hospital\nDischarge Summary\nPatient\nLajita Chatterjee, 68 years, F\nUHID\nUH875304\nDate of admission\n18/01/2026\nDate of discharge\n22/01/2026\nLength of stay\n4 day(s)\nConsultant\nDr. A. Kulkarni\nFinal diagnosis\ndengue fever\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to dengue fever. Investigations were done and treatment was given\nas per protocol. The post-treatment period was uneventful and the patient was discharged in stable condition on\n22/01/2026.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. A. Kulkarni (Treating consultant)\n",
+  "method": "text_layer"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nMetro Heart and General Hospital\nAhmedabad | Final Inpatient Bill\nBill no\nBL/2026/85672\nUHID\nUH875304\nPatient\nLajita Chatterjee\nAge / Sex\n68 / F\nAdmitted\n18/01/2026\nDischarged\n22/01/2026\nConsultant\nDr. A. Kulkarni\nRoom\nstandard single\nItem\nAmount (Rs.)\nRoom charges (standard single)  (4 x 4,500)\n18,000\nConsultant visits and monitoring\n8,650\nLaboratory and radiology investigations\n6,150\nNursing charges\n6,200\nPharmacy and medicines\n13,900\nDisposable consumables and admission kit\n800\nNet payable\n53,700\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Government of India (specimen ID card,synthetic)\nName Lajita Chatterjee\nAge/Gender 68/F\nIDnumber XXXXXXXX5648\nMobile 9646376790\nSythelictest document.generated tor softwaroevaluation.Notaeal record Page1",
+  "method": "ocr"
+ },
+ "lab_report": {
+  "text": "Metro Heart and General Hospital Pathology\nPatient:Lajita Chatterjee|Date:18/01/2026\nTest Result Reference\nHaemoglobin 13.1g/dL 12.0-16.0\nWBCcount 7.400/cmm 4,000-11.000\nBlood sugar(random) 104mg/dL 70-140\nSerum creatinine 0.9mg/dL 0.6-1.2\nSythtie test documntgenrated tarsolware vaalionNotareatcord Page",
+  "method": "ocr"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nPolicy Schedule\nPolicy number\nNB7913631681\nInsurer\nNiva Bupa Health Insurance\nProduct\nReAssure (Aspire)\nInsured person\nLajita Chatterjee, 68 years, F\nPolicy start date\n30/12/2025\nSum insured (Rs.)\n10,00,000\nWaiting period, pre-existing diseases\n24 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. A. Kulkarni\nMetro Heart and General Hospital\nPatient: Lajita Chatterjee, 68/F Date: 18/01/2026\nDiagnosis: dengue fever\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 2909,
+  "discharge_summary.pdf": 2634,
+  "hospital_bill.pdf": 2517,
+  "id_proof.pdf": 111348,
+  "lab_report.pdf": 178653,
+  "policy_schedule.pdf": 2479,
+  "prescription.pdf": 1946,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

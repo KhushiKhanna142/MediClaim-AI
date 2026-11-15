@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nNB2723150337\nProduct\nReAssure (Aspire)\nPolicy start date\n21/11/2025\nSum insured (Rs.)\n3,00,000\nName of patient\nJanaki Handa\nAge / Sex\n63 years / M\nContact number\n9659029457\nHospital name\nSunrise Multispeciality Hospital, Nagpur\nDate of admission\n21/02/2026\nDate of discharge\n25/02/2026\nDiagnosis / ailment\nfracture of femur, ORIF (road accident)\nNature of illness\nAccident / injury\nRoom category occupied\nstandard single\nTotal amount claimed (Rs.)\n2,04,400\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 25/02/2026\n",
+  "method": "text_layer"
+ },
+ "discharge_summary": {
+  "text": "Sunrise MultispecialityHospital\nDischarge Summary\nPatient Janaki Handa,63years,M\nUHID UH602799\nDate of admission 21/02/2026\nDate of discharge 25/02/2026\nLength of stay 4day(s)\nConsultant Dr.V.lyer\nFinal diagnosis\nfractureoffemur,ORiF(road accident)\nHistory\nNo significant past history.Presented following a road traffic accident.\nCourse in hospital\nThe patient was admitted with complaints related to tracture of femur,ORiF (road accident).Investigations were done\nand treatment was given as per protocol.The post-treatment period was uneventtul and the patient was discharged in\nstableconditionon25/02/2026.\nAdvice on discharge\nReview after 7 days with reports.Continue medicines asprescribed.Avold strenuous activity.\nDr.V.lyer(Treating consuitant)",
+  "method": "ocr"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nSunrise Multispeciality Hospital\nNagpur | Final Inpatient Bill\nBill no\nBL/2026/76431\nUHID\nUH602799\nPatient\nJanaki Handa\nAge / Sex\n63 / M\nAdmitted\n21/02/2026\nDischarged\n25/02/2026\nConsultant\nDr. V. Iyer\nRoom\nstandard single\nSl\nDescription\nQty\nRate\nAmount\n1\nRoom charges (standard single)\n4\n4,300\n17,200\n2\nSurgeon and anaesthetist fees\n1\n50,050\n50,050\n3\nOperation theatre charges\n1\n25,850\n25,850\n4\nLaboratory and radiology investigations\n1\n11,550\n11,550\n5\nNursing charges\n1\n10,700\n10,700\n6\nPharmacy and medicines\n1\n12,850\n12,850\n7\nImplant / prosthesis\n1\n74,850\n74,850\n8\nDisposable consumables and admission kit\n1\n4,350\n4,350\nTOTAL\n2,04,400\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nJanaki Handa\nAge / Gender\n63 / M\nID number\nXXXX XXXX 5660\nMobile\n9659029457\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nSunrise Multispeciality Hospital Pathology\nPatient: Janaki Handa | Date: 21/02/2026\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nPolicy Schedule\nPolicy number\nNB2723150337\nInsurer\nNiva Bupa Health Insurance\nProduct\nReAssure (Aspire)\nInsured person\nJanaki Handa, 63 years, M\nPolicy start date\n21/11/2025\nSum insured (Rs.)\n3,00,000\nWaiting period, pre-existing diseases\n12 months\nWaiting period, specified diseases/procedures\n12 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Dr.V.lyer\nSunriseMultispeciality Hospital\nPatient:Janaki Handa.63/M Date:21/02/2026\nDiagnosis:fracture of femur,ORiF (road accident)\nRx:Tab.Paracetamol500mg 1-0-1x3days;Cap.Pantoprazole40 mg1-0-0x5days",
+  "method": "ocr"
+ },
+ "_files": {
+  "claim_form.pdf": 2934,
+  "discharge_summary.pdf": 158148,
+  "hospital_bill.pdf": 2903,
+  "id_proof.pdf": 2011,
+  "lab_report.pdf": 2183,
+  "policy_schedule.pdf": 2477,
+  "prescription.pdf": 118579,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

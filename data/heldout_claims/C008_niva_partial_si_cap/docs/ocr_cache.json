@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nNB3851053482\nProduct\nReAssure (Aspire)\nPolicy start date\n04/11/2024\nSum insured (Rs.)\n3,00,000\nName of patient\nNathaniel Sami\nAge / Sex\n60 years / F\nContact number\n9547403679\nHospital name\nSunrise Multispeciality Hospital, Indore\nDate of admission\n04/07/2026\nDate of discharge\n10/07/2026\nDiagnosis / ailment\ntotal knee replacement\nNature of illness\nIllness\nRoom category occupied\nstandard single\nTotal amount claimed (Rs.)\n4,26,450\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 10/07/2026\n",
+  "method": "text_layer"
+ },
+ "discharge_summary": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nSunrise Multispeciality Hospital\nDischarge Summary\nPatient\nNathaniel Sami, 60 years, F\nUHID\nUH194171\nDate of admission\n04/07/2026\nDate of discharge\n10/07/2026\nLength of stay\n6 day(s)\nConsultant\nDr. P. Deshmukh\nFinal diagnosis\ntotal knee replacement\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to total knee replacement. Investigations were done and treatment\nwas given as per protocol. The post-treatment period was uneventful and the patient was discharged in stable\ncondition on 10/07/2026.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. P. Deshmukh (Treating consultant)\n",
+  "method": "text_layer"
+ },
+ "hospital_bill": {
+  "text": "Sunrise Multispeciality Hospital\nIndore|Final Inpatient Bill\nBillno BL/2026/60262 UHID UH194171\nPatient Nathaniel Sami Age/Sex 60/F\nAdmitted 04/07/2026 Discharged 10/07/2026\nConsultant Dr.P.Deshmukh Room standard single\nParticulars Qty\nROOM AND BED CHARGES Rate Amount\nRoom charges (standard single) 6 4.700\nSub-total 28,200\nPROFESSIONALFEES 28,200\nSurgeon and anaesthetist fees 68.800\nSub-total 68,800\nOPERATION THEATRE 68,800\nOperation theatre charges 27,350\nSub-total 27.350\nPHARMACY 27,350\nPharmacy and medicines 25.800\nSub-total 25,800\nCONSUMABLES 25,800\nDisposable consumables and admission kit 5,300\nSub-total 5,300\nDIAGNOSTICS 5.300\nLaboratory and radiology investigations 8.000\nSub-total 8,000\nIMPLANTS 8.000\nImplant/prosthesis 2.47.200\nSub-lotal 2,47,200\nNURSING 2.47,200\nNursing charges 15,800\nSub-total 15,800\nGRAND TOTAL 15.800\n4,26,450",
+  "method": "ocr"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nNathaniel Sami\nAge / Gender\n60 / F\nID number\nXXXX XXXX 8951\nMobile\n9547403679\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nSunrise Multispeciality Hospital Pathology\nPatient: Nathaniel Sami | Date: 04/07/2026\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nPolicy Schedule\nPolicy number\nNB3851053482\nInsurer\nNiva Bupa Health Insurance\nProduct\nReAssure (Aspire)\nInsured person\nNathaniel Sami, 60 years, F\nPolicy start date\n04/11/2024\nSum insured (Rs.)\n3,00,000\nWaiting period, pre-existing diseases\n12 months\nWaiting period, specified diseases/procedures\n12 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. P. Deshmukh\nSunrise Multispeciality Hospital\nPatient: Nathaniel Sami, 60/F Date: 04/07/2026\nDiagnosis: total knee replacement\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 2908,
+  "discharge_summary.pdf": 2640,
+  "hospital_bill.pdf": 120813,
+  "id_proof.pdf": 2009,
+  "lab_report.pdf": 2184,
+  "policy_schedule.pdf": 2478,
+  "prescription.pdf": 1953,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

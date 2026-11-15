@@ -1,0 +1,84 @@
+{
+ "claim_id": "C021_hdfc_partial_room",
+ "category": "partial_room",
+ "policy_id": "hdfc_optima_secure_current",
+ "patient": {
+  "name": "Ekbal Garg",
+  "age": 49,
+  "sex": "F"
+ },
+ "schedule": {
+  "sum_insured": 500000,
+  "policy_start": "2024-11-04",
+  "ped_months": 36,
+  "spec_months": 24,
+  "room_limit_per_day": 5000,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "dengue fever",
+  "kind": "illness",
+  "specified": false,
+  "is_ped": false
+ },
+ "admission_date": "2025-08-04",
+ "discharge_date": "2025-08-09",
+ "room_days": 5,
+ "room_claimed": "private",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (private)",
+   "qty": 5,
+   "rate": 7600,
+   "amount": 38000
+  },
+  {
+   "category": "other",
+   "description": "Consultant visits and monitoring",
+   "qty": 1,
+   "rate": 17100,
+   "amount": 17100
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 6300,
+   "amount": 6300
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 6550,
+   "amount": 6550
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 16300,
+   "amount": 16300
+  },
+  {
+   "category": "consumable",
+   "description": "Disposable consumables and admission kit",
+   "qty": 1,
+   "rate": 850,
+   "amount": 850
+  }
+ ],
+ "stated_total": 85100,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

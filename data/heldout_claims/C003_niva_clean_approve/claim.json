@@ -1,0 +1,91 @@
+{
+ "claim_id": "C003_niva_clean_approve",
+ "category": "clean_approve",
+ "policy_id": "niva_aspire",
+ "patient": {
+  "name": "Gagan Sami",
+  "age": 33,
+  "sex": "M"
+ },
+ "schedule": {
+  "sum_insured": 1000000,
+  "policy_start": "2022-06-15",
+  "ped_months": 12,
+  "spec_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "inguinal hernia repair",
+  "kind": "illness",
+  "specified": true,
+  "is_ped": false
+ },
+ "admission_date": "2025-04-15",
+ "discharge_date": "2025-04-17",
+ "room_days": 2,
+ "room_claimed": "standard_single",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (standard single)",
+   "qty": 2,
+   "rate": 4700,
+   "amount": 9400
+  },
+  {
+   "category": "surgeon",
+   "description": "Surgeon and anaesthetist fees",
+   "qty": 1,
+   "rate": 36900,
+   "amount": 36900
+  },
+  {
+   "category": "ot",
+   "description": "Operation theatre charges",
+   "qty": 1,
+   "rate": 14100,
+   "amount": 14100
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 4150,
+   "amount": 4150
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 4400,
+   "amount": 4400
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 6750,
+   "amount": 6750
+  },
+  {
+   "category": "implant",
+   "description": "Implant / prosthesis",
+   "qty": 1,
+   "rate": 23850,
+   "amount": 23850
+  }
+ ],
+ "stated_total": 99550,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

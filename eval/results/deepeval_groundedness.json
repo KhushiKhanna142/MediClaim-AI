@@ -1,10 +1,10 @@
 {
  "meta": {
-  "input_sha256": "bc91869816e339c3dcf2e88bc0ec71e9413bd2fd1fd4ddd99b2347907dbfdd01",
+  "input_sha256": "4b15e783a46fae12634c6be56784a95232158f352770d567f182e103424edf0f",
   "judge_model": "gemini-3.5-flash-lite",
   "deepeval": "4.3.4",
-  "judge_calls": 45,
-  "cache_hits": 59
+  "judge_calls": 17,
+  "cache_hits": 87
  },
  "results": {
   "C001_niva_clean_approve": {
@@ -55,7 +55,7 @@
    "category": "partial_room",
    "decision": "partial",
    "cited": [
-    "4.1.20.1.1",
+    "6.2.4",
     "4.1.18",
     "4.1.2"
    ],
@@ -68,7 +68,7 @@
    "category": "partial_room",
    "decision": "partial",
    "cited": [
-    "4.1.20.1.1",
+    "6.2.4",
     "4.1.18",
     "4.1.2"
    ],
@@ -137,10 +137,10 @@
   },
   "C012_niva_reject_ped": {
    "category": "reject_ped",
-   "decision": "reject",
+   "decision": "partial",
    "cited": [
-    "5.1.1",
-    "2.1.35"
+    "6.2.4",
+    "4.1.2"
    ],
    "missing_clause_text": [],
    "unmapped_rules": [],
@@ -164,7 +164,7 @@
    "category": "clean_approve",
    "decision": "approve",
    "cited": [
-    "1.6"
+    "1.1"
    ],
    "missing_clause_text": [],
    "unmapped_rules": [],
@@ -175,7 +175,7 @@
    "category": "clean_approve",
    "decision": "approve",
    "cited": [
-    "1.2"
+    "1.1"
    ],
    "missing_clause_text": [],
    "unmapped_rules": [],
@@ -186,7 +186,7 @@
    "category": "clean_approve",
    "decision": "approve",
    "cited": [
-    "1.6"
+    "1.1"
    ],
    "missing_clause_text": [],
    "unmapped_rules": [],
@@ -197,7 +197,7 @@
    "category": "approve_continuity",
    "decision": "approve",
    "cited": [
-    "1.6"
+    "1.1"
    ],
    "missing_clause_text": [],
    "unmapped_rules": [],
@@ -208,22 +208,20 @@
    "category": "partial_room",
    "decision": "partial",
    "cited": [
-    "Section C",
+    "2.3",
     "1.1.1",
-    "1.4"
+    "1.1"
    ],
    "missing_clause_text": [],
    "unmapped_rules": [],
-   "faithfulness": 1.0,
-   "reason": "The score is 1.00 because the actual output is completely faithful to the retrieval context with no contradictions found. Great job!"
+   "faithfulness": 0.667,
+   "reason": "The score is 0.67 because the output incorrectly claims that non-medical items are not payable, whereas the context explicitly states that the Company shall indemnify the Insured Person for the Non-Medical Expenses listed under Annexure B for an admissible claim."
   },
   "C021_hdfc_partial_room": {
    "category": "partial_room",
-   "decision": "partial",
+   "decision": "reject",
    "cited": [
-    "Section C",
-    "1.1.1",
-    "1.6"
+    "Section C"
    ],
    "missing_clause_text": [],
    "unmapped_rules": [],
@@ -235,7 +233,7 @@
    "decision": "partial",
    "cited": [
     "Section C",
-    "1.6"
+    "1.1"
    ],
    "missing_clause_text": [],
    "unmapped_rules": [],
@@ -246,14 +244,14 @@
    "category": "partial_si_cap",
    "decision": "partial",
    "cited": [
-    "Section C",
+    "2.3",
     "Def.29",
-    "1.6"
+    "1.1"
    ],
    "missing_clause_text": [],
    "unmapped_rules": [],
-   "faithfulness": 1.0,
-   "reason": "The score is 1.00 because the actual output is completely faithful to the retrieval context with no contradictions found. Great job!"
+   "faithfulness": 0.667,
+   "reason": "The score is 0.67 because the output incorrectly claims that non-medical items are not payable, whereas the context explicitly states that the Company shall indemnify the Insured Person for Non-Medical Expenses listed under Annexure B."
   },
   "C024_hdfc_reject_specified": {
    "category": "reject_specified",
@@ -302,15 +300,15 @@
   },
   "C028_hdfc_multi_hop": {
    "category": "multi_hop",
-   "decision": "reject",
+   "decision": "partial",
    "cited": [
-    "Section C",
-    "Def.35"
+    "2.3",
+    "1.1"
    ],
    "missing_clause_text": [],
    "unmapped_rules": [],
-   "faithfulness": 1.0,
-   "reason": "The score is 1.00 because the actual output is completely faithful to the retrieval context with no contradictions found. Great job!"
+   "faithfulness": 0.5,
+   "reason": "The score is 0.50 because the output incorrectly claims that non-medical items are not payable, whereas the context explicitly states that the Company shall indemnify the Insured Person for the Non-Medical Expenses listed under Annexure B for an admissible claim."
   }
  }
 }

@@ -117,10 +117,16 @@ def build_graph(*, reader=None, verifier=None, extractor=None, decide_fn: Option
     def read_policy(state: ClaimState) -> dict:
         retries = dict(state.get("retries") or {})
         retries["read_policy"] = retries.get("read_policy", 0) + 1
-        findings, trace = reader.read(claim_of(state), state["policy_id"])
-        ids = sorted({cid for v in trace["retrieved"].values() for cid in v})
+        missing = (state.get("verifier") or {}).get("missing_clause_fields") or []
+        if missing and state.get("findings"):
+            # the verifier found an applied rule with no clause: ask a focused question about just that clause field
+            findings, trace = reader.read(claim_of(state), state["policy_id"], refine=missing, previous=findings_cls.model_validate(state["findings"]))
+            ids = sorted(set(state.get("retrieved_clause_ids") or []) | {cid for v in trace["retrieved"].values() for cid in v})
+        else:
+            findings, trace = reader.read(claim_of(state), state["policy_id"])
+            ids = sorted({cid for v in trace["retrieved"].values() for cid in v})
         return {"findings": findings.model_dump(), "retrieved_clause_ids": ids, "dropped_citations": trace.get("dropped_citations", []),
-                "retries": retries, "audit": [_event("read_policy", attempt=retries["read_policy"], n_clauses=len(ids))]}
+                "retries": retries, "audit": [_event("read_policy", attempt=retries["read_policy"], n_clauses=len(ids), refined=trace.get("refined", []))]}
 
     def decide(state: ClaimState) -> dict:
         out = decide_fn(claim_of(state), findings_cls.model_validate(state["findings"]))

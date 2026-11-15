@@ -1,0 +1,98 @@
+{
+ "claim_id": "C015_niva_total_mismatch",
+ "category": "total_mismatch",
+ "policy_id": "niva_aspire",
+ "patient": {
+  "name": "Janaki Handa",
+  "age": 63,
+  "sex": "M"
+ },
+ "schedule": {
+  "sum_insured": 300000,
+  "policy_start": "2025-11-21",
+  "ped_months": 12,
+  "spec_months": 12,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "fracture of femur, ORIF (road accident)",
+  "kind": "accident",
+  "specified": false,
+  "is_ped": false
+ },
+ "admission_date": "2026-02-21",
+ "discharge_date": "2026-02-25",
+ "room_days": 4,
+ "room_claimed": "standard_single",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (standard single)",
+   "qty": 4,
+   "rate": 4300,
+   "amount": 17200
+  },
+  {
+   "category": "surgeon",
+   "description": "Surgeon and anaesthetist fees",
+   "qty": 1,
+   "rate": 50050,
+   "amount": 50050
+  },
+  {
+   "category": "ot",
+   "description": "Operation theatre charges",
+   "qty": 1,
+   "rate": 25850,
+   "amount": 25850
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 11550,
+   "amount": 11550
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 10700,
+   "amount": 10700
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 12850,
+   "amount": 12850
+  },
+  {
+   "category": "implant",
+   "description": "Implant / prosthesis",
+   "qty": 1,
+   "rate": 74850,
+   "amount": 74850
+  },
+  {
+   "category": "consumable",
+   "description": "Disposable consumables and admission kit",
+   "qty": 1,
+   "rate": 4350,
+   "amount": 4350
+  }
+ ],
+ "stated_total": 204400,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

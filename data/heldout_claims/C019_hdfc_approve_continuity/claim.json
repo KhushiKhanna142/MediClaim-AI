@@ -1,0 +1,84 @@
+{
+ "claim_id": "C019_hdfc_approve_continuity",
+ "category": "approve_continuity",
+ "policy_id": "hdfc_optima_secure_current",
+ "patient": {
+  "name": "Janya Gaba",
+  "age": 51,
+  "sex": "M"
+ },
+ "schedule": {
+  "sum_insured": 1000000,
+  "policy_start": "2024-06-10",
+  "ped_months": 36,
+  "spec_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 30,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "laparoscopic cholecystectomy (gallstones)",
+  "kind": "illness",
+  "specified": true,
+  "is_ped": false
+ },
+ "admission_date": "2025-01-10",
+ "discharge_date": "2025-01-12",
+ "room_days": 2,
+ "room_claimed": "standard_single",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (standard single)",
+   "qty": 2,
+   "rate": 4100,
+   "amount": 8200
+  },
+  {
+   "category": "surgeon",
+   "description": "Surgeon and anaesthetist fees",
+   "qty": 1,
+   "rate": 39250,
+   "amount": 39250
+  },
+  {
+   "category": "ot",
+   "description": "Operation theatre charges",
+   "qty": 1,
+   "rate": 17650,
+   "amount": 17650
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 8750,
+   "amount": 8750
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 5650,
+   "amount": 5650
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 11300,
+   "amount": 11300
+  }
+ ],
+ "stated_total": 90800,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

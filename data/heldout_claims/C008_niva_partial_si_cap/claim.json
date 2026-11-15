@@ -1,0 +1,98 @@
+{
+ "claim_id": "C008_niva_partial_si_cap",
+ "category": "partial_si_cap",
+ "policy_id": "niva_aspire",
+ "patient": {
+  "name": "Nathaniel Sami",
+  "age": 60,
+  "sex": "F"
+ },
+ "schedule": {
+  "sum_insured": 300000,
+  "policy_start": "2024-11-04",
+  "ped_months": 12,
+  "spec_months": 12,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "total knee replacement",
+  "kind": "illness",
+  "specified": true,
+  "is_ped": false
+ },
+ "admission_date": "2026-07-04",
+ "discharge_date": "2026-07-10",
+ "room_days": 6,
+ "room_claimed": "standard_single",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (standard single)",
+   "qty": 6,
+   "rate": 4700,
+   "amount": 28200
+  },
+  {
+   "category": "surgeon",
+   "description": "Surgeon and anaesthetist fees",
+   "qty": 1,
+   "rate": 68800,
+   "amount": 68800
+  },
+  {
+   "category": "ot",
+   "description": "Operation theatre charges",
+   "qty": 1,
+   "rate": 27350,
+   "amount": 27350
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 8000,
+   "amount": 8000
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 15800,
+   "amount": 15800
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 25800,
+   "amount": 25800
+  },
+  {
+   "category": "implant",
+   "description": "Implant / prosthesis",
+   "qty": 1,
+   "rate": 247200,
+   "amount": 247200
+  },
+  {
+   "category": "consumable",
+   "description": "Disposable consumables and admission kit",
+   "qty": 1,
+   "rate": 5300,
+   "amount": 5300
+  }
+ ],
+ "stated_total": 426450,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

@@ -1,0 +1,52 @@
+{
+ "claim_id": "C014_niva_missing_docs",
+ "ids": {
+  "policy_no": "NB3847586742",
+  "hospital": "Sanjivani Hospital and Research Centre",
+  "city": "Pune",
+  "bill_no": "BL/2025/12957",
+  "uhid": "UH621795",
+  "phone": "9288651703",
+  "aadhaar_tail": "7897",
+  "doctor": "Dr. P. Deshmukh"
+ },
+ "bill_layout": "summary_first",
+ "docs": [
+  {
+   "doc": "policy_schedule",
+   "file": "policy_schedule.pdf",
+   "scanned": false,
+   "layout": null
+  },
+  {
+   "doc": "claim_form",
+   "file": "claim_form.pdf",
+   "scanned": true,
+   "layout": null
+  },
+  {
+   "doc": "hospital_bill",
+   "file": "hospital_bill.pdf",
+   "scanned": false,
+   "layout": "summary_first"
+  },
+  {
+   "doc": "id_proof",
+   "file": "id_proof.pdf",
+   "scanned": true,
+   "layout": null
+  },
+  {
+   "doc": "lab_report",
+   "file": "lab_report.pdf",
+   "scanned": true,
+   "layout": null
+  },
+  {
+   "doc": "prescription",
+   "file": "prescription.pdf",
+   "scanned": false,
+   "layout": null
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "claim_form": {
+  "text": "HDFC ERGO General Insurance\nHealth Insurance Claim Form(Reimbursement).Part A\nPolicynumber HD9072184057\nProduct Optima Secure\nPolicy start date 13/10/2024\nSum insured (Rs.) 10,00,000\nName of patient LiamKoshy\nAge/Sex 67years/M\nContact number 9409837739\nHospital name Metro Heart and General Hospital,Indore\nDate of admission 13/11/2025\nDate of discharge 19/11/2025\nDiagnosis/ailment pneumonia\nNature of illness Illness\nRoom category occupied standard single\nTotal amount claimed(Rs.) 75,450\nDeclaration\nI declare that theinformation furnished in this claim formis trueandcorrect to the best of myknowledge.lagree to\nprovide any further documentsrequiredby the insurer.\nSignature of the insured: Date:19/11/2025\nSynthetc testdouetgenerted oroaevaluationNota real ord Pagel",
+  "method": "ocr"
+ },
+ "discharge_summary": {
+  "text": "Metro Heart and General Hospital\nDischarge Summary\nPatient LiamKoshy,67years,M\nUHID UH236494\nDate of admission 13/11/2025\nDate of discharge 19/11/2025\nLength of stay 6day(s)\nConsultant Dr.A.Kulkarni\nFinal diagnosis\npneumonia\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThepatient was admitted withcomplaints related to pneumonia. Investigationswere done and treatment was given as\nper protocol.Thepost-treatment period was uneventful and thepatient was discharged in stable condition on\n19/11/2025.\nAdviceon discharge\nReview after 7days with reports.Continue medicinesasprescribed.Avoid strenuousactivity.\nDr.A.Kulkarni\uff08Treating consultant)\nSynthetictestdocumenlgenerated lorsofwareevaluationNotarearecor Page",
+  "method": "ocr"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nMetro Heart and General Hospital\nIndore | Final Inpatient Bill\nBill no\nBL/2025/45705\nUHID\nUH236494\nPatient\nLiam Koshy\nAge / Sex\n67 / M\nAdmitted\n13/11/2025\nDischarged\n19/11/2025\nConsultant\nDr. A. Kulkarni\nRoom\nstandard single\nSummary of charges\nHead\nAmount\nRoom and Bed Charges\n27,600\nPharmacy\n18,150\nConsumables\n2,050\nDiagnostics\n8,500\nNursing\n8,750\nOther Charges\n10,400\nTotal bill\n75,450\n\nSynthetic test document, generated for software evaluation. Not a real record.\nPage 2\nItemised statement\nDate\nDescription\nQty\nRate\nAmount\n13/11/2025\nRoom charges (standard single)\n6\n4,600\n27,600\n13/11/2025\nConsultant visits and monitoring\n1\n10,400\n10,400\n13/11/2025\nLaboratory and radiology investigations\n1\n8,500\n8,500\n13/11/2025\nNursing charges\n1\n8,750\n8,750\n13/11/2025\nPharmacy and medicines\n1\n18,150\n18,150\n13/11/2025\nDisposable consumables and admission kit\n1\n2,050\n2,050\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Metro Heart and General Hospital Pathology\nPatient:LiamKoshy|Date:13/11/2025\nTest Result Reference\nHaemoglobin 13.1g/dL 12.0-16.0\nWBCcount 7,400/cmm 4,000-11,000\nBloodsugar(random) 104mg/dL 70-140\nSerumcreatinine 0.9mg/dL 0.6-1.2\nSyneicttdooumentgenrated orsevaton.otao",
+  "method": "ocr"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nPolicy Schedule\nPolicy number\nHD9072184057\nInsurer\nHDFC ERGO General Insurance\nProduct\nOptima Secure\nInsured person\nLiam Koshy, 67 years, M\nPolicy start date\n13/10/2024\nSum insured (Rs.)\n10,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. A. Kulkarni\nMetro Heart and General Hospital\nPatient: Liam Koshy, 67/M Date: 13/11/2025\nDiagnosis: pneumonia\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 99941,
+  "discharge_summary.pdf": 128431,
+  "hospital_bill.pdf": 3954,
+  "lab_report.pdf": 91533,
+  "policy_schedule.pdf": 2477,
+  "prescription.pdf": 1937,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

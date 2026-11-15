@@ -66,9 +66,11 @@ def main():
     ap.add_argument("--limit", type=int)
     ap.add_argument("--pause", type=float, default=0.0)
     ap.add_argument("--score-only", action="store_true")
+    ap.add_argument("--out-name", default="extraction", help="name for prediction cache file")
     a = ap.parse_args()
+    cache_path = Path("eval/results") / f"{a.out_name}_predictions.json"
     dirs = sorted(p for p in Path(a.claims).glob("C*/") if (p / "claim.json").exists())[: a.limit]
-    preds = json.loads(CACHE.read_text()) if CACHE.exists() else {}
+    preds = json.loads(cache_path.read_text()) if cache_path.exists() else {}
     if not a.score_only:
         from src.extraction.extract import Extractor
         from src.llm import get_llm
@@ -86,8 +88,8 @@ def main():
                 preds[cid] = {"error": repr(e)}
                 quota = quota + 1 if "429" in repr(e) else 0
                 print(f"  {cid:36} FAILED: {repr(e)[:160]}")
-            CACHE.parent.mkdir(parents=True, exist_ok=True)
-            CACHE.write_text(json.dumps(preds, indent=1))
+            cache_path.parent.mkdir(parents=True, exist_ok=True)
+            cache_path.write_text(json.dumps(preds, indent=1))
             if quota >= 2:
                 print("\nStopping: API quota used up. Rerun later; finished claims are kept.")
                 break

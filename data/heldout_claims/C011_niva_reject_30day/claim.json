@@ -1,0 +1,84 @@
+{
+ "claim_id": "C011_niva_reject_30day",
+ "category": "reject_30day",
+ "policy_id": "niva_aspire",
+ "patient": {
+  "name": "Lajita Chatterjee",
+  "age": 68,
+  "sex": "F"
+ },
+ "schedule": {
+  "sum_insured": 1000000,
+  "policy_start": "2025-12-30",
+  "ped_months": 24,
+  "spec_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "dengue fever",
+  "kind": "illness",
+  "specified": false,
+  "is_ped": false
+ },
+ "admission_date": "2026-01-18",
+ "discharge_date": "2026-01-22",
+ "room_days": 4,
+ "room_claimed": "standard_single",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (standard single)",
+   "qty": 4,
+   "rate": 4500,
+   "amount": 18000
+  },
+  {
+   "category": "other",
+   "description": "Consultant visits and monitoring",
+   "qty": 1,
+   "rate": 8650,
+   "amount": 8650
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 6150,
+   "amount": 6150
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 6200,
+   "amount": 6200
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 13900,
+   "amount": 13900
+  },
+  {
+   "category": "consumable",
+   "description": "Disposable consumables and admission kit",
+   "qty": 1,
+   "rate": 800,
+   "amount": 800
+  }
+ ],
+ "stated_total": 53700,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nNB6054592948\nProduct\nReAssure (Aspire)\nPolicy start date\n01/09/2023\nSum insured (Rs.)\n5,00,000\nName of patient\nViraj Tiwari\nAge / Sex\n31 years / F\nContact number\n9939866431\nHospital name\nHarmony Medical Centre, Pune\nDate of admission\n01/10/2025\nDate of discharge\n03/10/2025\nDiagnosis / ailment\ninguinal hernia repair\nNature of illness\nIllness\nRoom category occupied\ndeluxe\nTotal amount claimed (Rs.)\n1,07,150\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 03/10/2025\n",
+  "method": "text_layer"
+ },
+ "discharge_summary": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHarmony Medical Centre\nDischarge Summary\nPatient\nViraj Tiwari, 31 years, F\nUHID\nUH134035\nDate of admission\n01/10/2025\nDate of discharge\n03/10/2025\nLength of stay\n2 day(s)\nConsultant\nDr. P. Deshmukh\nFinal diagnosis\ninguinal hernia repair\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to inguinal hernia repair. Investigations were done and treatment was\ngiven as per protocol. The post-treatment period was uneventful and the patient was discharged in stable condition on\n03/10/2025.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. P. Deshmukh (Treating consultant)\n",
+  "method": "text_layer"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHarmony Medical Centre\nPune | Final Inpatient Bill\nBill no\nBL/2025/37483\nUHID\nUH134035\nPatient\nViraj Tiwari\nAge / Sex\n31 / F\nAdmitted\n01/10/2025\nDischarged\n03/10/2025\nConsultant\nDr. P. Deshmukh\nRoom\ndeluxe\nSummary of charges\nHead\nAmount\nRoom and Bed Charges\n20,200\nProfessional Fees\n34,900\nOperation Theatre\n15,700\nPharmacy\n10,150\nConsumables\n2,000\nDiagnostics\n5,100\nImplants\n13,300\nNursing\n5,800\nTotal bill\n1,07,150\n\nSynthetic test document, generated for software evaluation. Not a real record.\nPage 2\nItemised statement\nDate\nDescription\nQty\nRate\nAmount\n01/10/2025\nRoom charges (deluxe)\n2\n10,100\n20,200\n01/10/2025\nSurgeon and anaesthetist fees\n1\n34,900\n34,900\n01/10/2025\nOperation theatre charges\n1\n15,700\n15,700\n01/10/2025\nLaboratory and radiology investigations\n1\n5,100\n5,100\n01/10/2025\nNursing charges\n1\n5,800\n5,800\n01/10/2025\nPharmacy and medicines\n1\n10,150\n10,150\n01/10/2025\nImplant / prosthesis\n1\n13,300\n13,300\n01/10/2025\nDisposable consumables and admission kit\n1\n2,000\n2,000\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nViraj Tiwari\nAge / Gender\n31 / F\nID number\nXXXX XXXX 5362\nMobile\n9939866431\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHarmony Medical Centre Pathology\nPatient: Viraj Tiwari | Date: 01/10/2025\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nPolicy Schedule\nPolicy number\nNB6054592948\nInsurer\nNiva Bupa Health Insurance\nProduct\nReAssure (Aspire)\nInsured person\nViraj Tiwari, 31 years, F\nPolicy start date\n01/09/2023\nSum insured (Rs.)\n5,00,000\nWaiting period, pre-existing diseases\n24 months\nWaiting period, specified diseases/procedures\n12 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\nRoom type modification\nOpted (higher room category allowed with co-payment as per policy)\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. P. Deshmukh\nHarmony Medical Centre\nPatient: Viraj Tiwari, 31/F Date: 01/10/2025\nDiagnosis: inguinal hernia repair\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 2899,
+  "discharge_summary.pdf": 2639,
+  "hospital_bill.pdf": 4115,
+  "id_proof.pdf": 2009,
+  "lab_report.pdf": 2169,
+  "policy_schedule.pdf": 2554,
+  "prescription.pdf": 1939,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}
