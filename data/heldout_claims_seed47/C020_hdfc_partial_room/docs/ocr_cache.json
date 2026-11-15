@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "HDFCERGO General Insurance\nHeaith Insurance ClaimFom (Reimbursement),PartA\nPolicy number HD7701528545\nProduct Optima Secure\nPolicy start date 18/10/2023\nSum insured (Rs.) 5,00,000\nName of patient Vedika Kulkarni\nAge/ Sex 47years/F\nContact number 9354775250\nHospital name MetroHeart and General Hospital,Jaiput\nDate ofadmission 18/04/2025\nDate of discharge 21/04/2025\nDlagnosis/ailment acute appendicitis,appendectomy\nNature of illness iness\nRoom category occupied private\nTotal amount claimed (Rs.) 1,03.050\nDeclaration\nIdeclare that the information furnished in this claim form is true and correct to the best of my knowledge.lagree to\nprovide any further documentsrequiredby the Insurer.\nSignature of the insured: Date:21/04/2025",
+  "method": "ocr"
+ },
+ "discharge_summary": {
+  "text": "MetroHeartand General Hospital\nDischarge Summary\nPatient Vedika Kulkarni,47years,F\nUHID UH558144\nDate of admission 18/04/2025\nDate of discharge 21/04/2025\nLength of stay 3day(s)\nConsultant Dr.P.Deshmukh\nFinal diagnosis\nacute appendicitis,appendectomy\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThepatient was admitted withcomplaintsrelated to acute appendicitis,appendectomy.Investigationswere done and\nstableconditionon21/04/2025.\nAdvice on discharge\nReview after 7 days with reports.Continuemedicines asprescribed.Avoid strenuous activity.\nDr.P.Deshmukh(Treating consultant)\nSynthetic test document,generaled for sofwam evauntion Notarealoord eoe",
+  "method": "ocr"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nMetro Heart and General Hospital\nJaipur | Final Inpatient Bill\nBill no\nBL/2025/32446\nUHID\nUH558144\nPatient\nVedika Kulkarni\nAge / Sex\n47 / F\nAdmitted\n18/04/2025\nDischarged\n21/04/2025\nConsultant\nDr. P. Deshmukh\nRoom\nprivate\nItem\nAmount (Rs.)\nRoom charges (private)  (3 x 7,100)\n21,300\nSurgeon and anaesthetist fees\n42,500\nOperation theatre charges\n12,650\nLaboratory and radiology investigations\n5,900\nNursing charges\n6,600\nPharmacy and medicines\n11,050\nDisposable consumables and admission kit\n3,050\nNet payable\n1,03,050\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nVedika Kulkarni\nAge / Gender\n47 / F\nID number\nXXXX XXXX 5968\nMobile\n9354775250\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nMetro Heart and General Hospital Pathology\nPatient: Vedika Kulkarni | Date: 18/04/2025\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nPolicy Schedule\nPolicy number\nHD7701528545\nInsurer\nHDFC ERGO General Insurance\nProduct\nOptima Secure\nInsured person\nVedika Kulkarni, 47 years, F\nPolicy start date\n18/10/2023\nSum insured (Rs.)\n5,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nRs. 5,000 per day\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. P. Deshmukh\nMetro Heart and General Hospital\nPatient: Vedika Kulkarni, 47/F Date: 18/04/2025\nDiagnosis: acute appendicitis, appendectomy\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 167534,
+  "discharge_summary.pdf": 150458,
+  "hospital_bill.pdf": 2539,
+  "id_proof.pdf": 2016,
+  "lab_report.pdf": 2184,
+  "policy_schedule.pdf": 2472,
+  "prescription.pdf": 1959,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

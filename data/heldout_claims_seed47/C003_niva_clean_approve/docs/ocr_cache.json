@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nNB4521983252\nProduct\nReAssure (Aspire)\nPolicy start date\n09/11/2024\nSum insured (Rs.)\n10,00,000\nName of patient\nManya Baria\nAge / Sex\n42 years / M\nContact number\n9100534255\nHospital name\nHarmony Medical Centre, Nagpur\nDate of admission\n09/05/2025\nDate of discharge\n14/05/2025\nDiagnosis / ailment\ndengue fever\nNature of illness\nIllness\nRoom category occupied\nstandard single\nTotal amount claimed (Rs.)\n71,100\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 14/05/2025\n",
+  "method": "text_layer"
+ },
+ "discharge_summary": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHarmony Medical Centre\nDischarge Summary\nPatient\nManya Baria, 42 years, M\nUHID\nUH486444\nDate of admission\n09/05/2025\nDate of discharge\n14/05/2025\nLength of stay\n5 day(s)\nConsultant\nDr. P. Deshmukh\nFinal diagnosis\ndengue fever\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to dengue fever. Investigations were done and treatment was given\nas per protocol. The post-treatment period was uneventful and the patient was discharged in stable condition on\n14/05/2025.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. P. Deshmukh (Treating consultant)\n",
+  "method": "text_layer"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHarmony Medical Centre\nNagpur | Final Inpatient Bill\nBill no\nBL/2025/49871\nUHID\nUH486444\nPatient\nManya Baria\nAge / Sex\n42 / M\nAdmitted\n09/05/2025\nDischarged\n14/05/2025\nConsultant\nDr. P. Deshmukh\nRoom\nstandard single\nSl\nDescription\nQty\nRate\nAmount\n1\nRoom charges (standard single)\n5\n5,200\n26,000\n2\nConsultant visits and monitoring\n1\n13,100\n13,100\n3\nLaboratory and radiology investigations\n1\n10,900\n10,900\n4\nNursing charges\n1\n4,400\n4,400\n5\nPharmacy and medicines\n1\n16,700\n16,700\nTOTAL\n71,100\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nManya Baria\nAge / Gender\n42 / M\nID number\nXXXX XXXX 1333\nMobile\n9100534255\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Harmony Medical Centre Pathology\nPatient:Manya Baria|Date:09/05/2025\nResult Reference\nTest 12.0-16.0\nHaemoglobin 13.1g/dL\nWBCcount 7.400/cmm 4,000-11,000\nBloodsugar(random) 104mg/dL 70-140\nSerum creatinine 0.9mg/dL 0.6-12\nSythetietestdocunent.genead orsgw",
+  "method": "ocr"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nPolicy Schedule\nPolicy number\nNB4521983252\nInsurer\nNiva Bupa Health Insurance\nProduct\nReAssure (Aspire)\nInsured person\nManya Baria, 42 years, M\nPolicy start date\n09/11/2024\nSum insured (Rs.)\n10,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n12 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Dr.P.Deshmukh\nHarmonyMedical Centre\nPatient:Manya Baria,42/MDate:09/05/2025\nDiagnosis:dengue fever\nRx:Tab.Paracetamol500 mg.1-0-1x3 days;Cap.Pantoprazole 40mg1-0-0x5 days",
+  "method": "ocr"
+ },
+ "_files": {
+  "claim_form.pdf": 2895,
+  "discharge_summary.pdf": 2619,
+  "hospital_bill.pdf": 2713,
+  "id_proof.pdf": 2008,
+  "lab_report.pdf": 124984,
+  "policy_schedule.pdf": 2478,
+  "prescription.pdf": 181503,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

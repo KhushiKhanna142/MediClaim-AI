@@ -40,7 +40,7 @@ class GraphConfig:
     max_verify_retries: int = 2                    # extra policy-reading attempts after the first, when verification fails
     min_verifier_confidence: float = 0.7
     high_amount_threshold: Optional[float] = None  # payable above this goes to a human; None disables the rule
-    review_all_rejects: bool = False               # set True in production: never auto-deny a claim
+    review_all_rejects: bool = True                # default True in production: never auto-deny a claim
 
 
 def validate_human_action(action: Optional[dict], ai_status: Optional[str]) -> None:

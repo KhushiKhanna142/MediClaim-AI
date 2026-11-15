@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "Niva Bupa Health Insurance\nHealth Insurance Claim Form(Reimbursement),Part A\nPolicy number NB3851053482\nProduct ReAssure(Aspire)\nPolicy start date 01/07/2023\nSum insured(Rs.) 3,00,000\nName of patient Riya Khurana\nAge/Sex 52years/F\nContact number 9547403679\nHospital name Sunrise Multispeciality Hospital,Indore\nDate ofadmission 01/08/2026\nDate of discharge 05/08/2026\nDiagnosis/ailment total kneereplacement\nNature of illness Illness\nRoom category occupied standard single\nTotal amountclaimed(Rs.) 3,74,050\nDeclaration\nIdeclare that theinformation furnished in thisclaim form is true andcorrect to thebest ofmyknowledge.lagree to\nprovideany further documentsrequired by theinsurer.\nSignature of theinsured: Date:05/08/2026\nSynthetic test documentgenerated forsotware evaluainNota ealrecord Page1",
+  "method": "ocr"
+ },
+ "discharge_summary": {
+  "text": "Sunrise Multispeciality Hospital\nDischarge Summary\nPatient RiyaKhurana,52years,F\nUHID UH194171\nDate of admission 01/08/2026\nDate of discharge 05/08/2026\nLength of stay 4 day(s)\nConsultant Dr.P.Deshmukh\nFinal diagnosis\ntotal knee replacement\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThepatientwas admitted with complaintsrelated to total kneereplacement.Investigationswere done and treatment\nwas given as per protocol.The post-treatment period was uneventful and the patient was discharged in stable\nconditionon05/08/2026.\nAdvice on discharge\nReview after 7 days with reports. Continue medicinesas prescribed.Avoid strenuous activity.\nDr.P.Deshmukh(Treating consultant)\nSythetic test documntgenered forsotwe evaltionNot a alecord Page.1",
+  "method": "ocr"
+ },
+ "hospital_bill": {
+  "text": "Sunrise Multispeciality Hospital\nIndore|Final Inpatient Bill\nBillno BL/2026/60262 UHID UH194171\nPatient Riya Khurana Age/Sex 52/F\nAdmitted 01/08/2026 Discharged 05/08/2026\nConsultant Dr.P.Deshmukh Room standard single\nSI Description Qty Rate\n1 Room charges (standard single) Amount\n4 5.400 21,600\n2 Surgeon and anaesthetist fees 1 65,250\n3 Operation theatre charges 65,250\n27,250 27,250\n4 Laboratory and radiology investigations 11,800\n5 Nursing charges 11,800\n1 15.100 15.100\n6 Pharmacy and medicines 15.700\n7 Implant/prosthesis 15,700\n1 2,12.200 2,12,200\n8 Disposable consumables and admission kit 5,150\n5,150\nTOTAL 3,74,050\nabuabon.Not atealrecord",
+  "method": "ocr"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nRiya Khurana\nAge / Gender\n52 / F\nID number\nXXXX XXXX 8951\nMobile\n9547403679\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nSunrise Multispeciality Hospital Pathology\nPatient: Riya Khurana | Date: 01/08/2026\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nPolicy Schedule\nPolicy number\nNB3851053482\nInsurer\nNiva Bupa Health Insurance\nProduct\nReAssure (Aspire)\nInsured person\nRiya Khurana, 52 years, F\nPolicy start date\n01/07/2023\nSum insured (Rs.)\n3,00,000\nWaiting period, pre-existing diseases\n24 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Dr.P.Deshmukh\nSunrise Multispeciality Hospital\nPatient:RiyaKhurana,52/FDate:01/08/2026\nDiagnosis:total kneereplacement\nRx:Tab.Paracetamol500 mg1-0-1x3 days:Cap.Pantoprazole40 mg1-0-0x5 days\nSytheti st documntgenraed rstware evalualinNot  rel cord",
+  "method": "ocr"
+ },
+ "_files": {
+  "claim_form.pdf": 139303,
+  "discharge_summary.pdf": 72022,
+  "hospital_bill.pdf": 111541,
+  "id_proof.pdf": 2011,
+  "lab_report.pdf": 2183,
+  "policy_schedule.pdf": 2475,
+  "prescription.pdf": 142404,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

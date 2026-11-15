@@ -1,0 +1,91 @@
+{
+ "claim_id": "C027_hdfc_reject_ped",
+ "category": "reject_ped",
+ "policy_id": "hdfc_optima_secure_current",
+ "patient": {
+  "name": "Hiral Sankar",
+  "age": 47,
+  "sex": "M"
+ },
+ "schedule": {
+  "sum_insured": 300000,
+  "policy_start": "2022-07-07",
+  "ped_months": 36,
+  "spec_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "diabetic foot infection with debridement",
+  "kind": "illness",
+  "specified": false,
+  "is_ped": true
+ },
+ "admission_date": "2025-01-07",
+ "discharge_date": "2025-01-13",
+ "room_days": 6,
+ "room_claimed": "standard_single",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (standard single)",
+   "qty": 6,
+   "rate": 5800,
+   "amount": 34800
+  },
+  {
+   "category": "surgeon",
+   "description": "Surgeon and anaesthetist fees",
+   "qty": 1,
+   "rate": 33350,
+   "amount": 33350
+  },
+  {
+   "category": "ot",
+   "description": "Operation theatre charges",
+   "qty": 1,
+   "rate": 12950,
+   "amount": 12950
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 8200,
+   "amount": 8200
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 7000,
+   "amount": 7000
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 17800,
+   "amount": 17800
+  },
+  {
+   "category": "consumable",
+   "description": "Disposable consumables and admission kit",
+   "qty": 1,
+   "rate": 1550,
+   "amount": 1550
+  }
+ ],
+ "stated_total": 115650,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

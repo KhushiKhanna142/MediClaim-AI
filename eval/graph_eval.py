@@ -27,7 +27,7 @@ def main():
     ap.add_argument("--claims", default="data/synthetic_claims")
     ap.add_argument("--limit", type=int)
     ap.add_argument("--pause", type=float, default=0.0)
-    ap.add_argument("--no-critic", action="store_true")
+    ap.add_argument("--critic", action=argparse.BooleanOptionalAction, default=False, help="enable LLM critic in verifier (default: False)")
     ap.add_argument("--score-only", action="store_true")
     ap.add_argument("--path", default="data/qdrant")
     ap.add_argument("--out-name", default=None, help="custom name for prediction output file")
@@ -50,14 +50,14 @@ def main():
         llm = get_llm()
         client, emb, children, parents = build_index(qdrant_path=a.path)
         retriever = HybridRetriever(client, emb, children, parents, get_reranker("cross-encoder/ms-marco-MiniLM-L-6-v2"))
-        graph = build_graph(reader=PolicyReader(retriever, llm), verifier=Verifier(None if a.no_critic else llm),
+        graph = build_graph(reader=PolicyReader(retriever, llm), verifier=Verifier(llm if a.critic else None),
                             config=GraphConfig(review_all_rejects=a.review_rejects))
         ext_path = Path(a.extracted_file) if a.extracted_file else Path("eval/results/extraction_predictions.json")
         extracted = json.loads(ext_path.read_text()) if a.input == "extracted" else {}
         quota = 0
         for d in dirs:
             cid = d.name
-            sig = hashlib.sha1(json.dumps([extracted.get(cid), a.no_critic, a.review_rejects], sort_keys=True).encode()).hexdigest()[:12]
+            sig = hashlib.sha1(json.dumps([extracted.get(cid), a.critic, a.review_rejects], sort_keys=True).encode()).hexdigest()[:12]
             if cid in preds and not preds[cid].get("error") and preds[cid].get("_sig") == sig:
                 continue
             claim = json.loads((d / "claim.json").read_text())

@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "Niva Bupa Health Insurance\nHealth Insurance Claim Form(Reimbursement),Part A\nPolicy number NB6978288405\nProduct ReAssure (Aspire)\nPolicy start date 03/07/2025\nSum insured(Rs.) 10,00,000\nName of patient Arjun Chaudry\nAge/Sex 61years/F\nContact number 9762725627\nHospital name Sanjivani Hospital and Research Centre,Nagpur\nDate ofadmission 03/03/2026\nDate of discharge 07/03/2026\nDiagnosis/ailment total knee replacement\nNature of illness Illness\nRoom category occupied standard single\nTotalamountclaimed(Rs.) 3,41,300\nDeclaration\nIdeclare that the information furnished in this claim form is true andcorrect to thebest of myknowledge.I agree to\nSignature of the insured: Date:07/03/2026\nSynthte ttdocungenetedfo sw alonNot eaecor Page1",
+  "method": "ocr"
+ },
+ "discharge_summary": {
+  "text": "Sanjivani Hospital and Research Centre\nDischarge Summary\nPatient Arjun Chaudry,61years,F\nUHID UH785331\nDate of admission 03/03/2026\nDate of discharge 07/03/2026\nLength of stay 4day(s)\nConsultant Dr.P.Deshmukh\nFinal diagnosis\ntotalkneereplacement\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThepatientwas admitted withcomplaintsrelated to total kneereplacement.Investigationswere done and treatment\nwasgiven asperprotocol.Thepost-treatmentperiodwas uneventful and thepatientwasdischarged in stable\nconditionon07/03/2026.\nAdvice on discharge\nReview after 7dayswithreports.Continue medicines asprescribed.Avoid strenuous activity.\nDr.P.Deshmukh\uff08Treating consultant)\nSynthetic test documentenerated tor software evaluation.Not areal record Page1",
+  "method": "ocr"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nSanjivani Hospital and Research Centre\nNagpur | Final Inpatient Bill\nBill no\nBL/2026/15149\nUHID\nUH785331\nPatient\nArjun Chaudry\nAge / Sex\n61 / F\nAdmitted\n03/03/2026\nDischarged\n07/03/2026\nConsultant\nDr. P. Deshmukh\nRoom\nstandard single\nSl\nDescription\nQty\nRate\nAmount\n1\nRoom charges (standard single)\n4\n5,600\n22,400\n2\nSurgeon and anaesthetist fees\n1\n87,650\n87,650\n3\nOperation theatre charges\n1\n30,350\n30,350\n4\nLaboratory and radiology investigations\n1\n11,950\n11,950\n5\nNursing charges\n1\n13,850\n13,850\n6\nPharmacy and medicines\n1\n23,450\n23,450\n7\nImplant / prosthesis\n1\n1,51,650\n1,51,650\nTOTAL\n3,41,300\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Government of India(specimen ID card,synthetic)\nName Arjun Chaudry\nAge/Gender 61/F\nIDnumber XXXXXXXX1954\nMobile 9762725627\nSyntett dctgerd foevor Noearor",
+  "method": "ocr"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nSanjivani Hospital and Research Centre Pathology\nPatient: Arjun Chaudry | Date: 03/03/2026\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nPolicy Schedule\nPolicy number\nNB6978288405\nInsurer\nNiva Bupa Health Insurance\nProduct\nReAssure (Aspire)\nInsured person\nArjun Chaudry, 61 years, F\nPolicy start date\n03/07/2025\nSum insured (Rs.)\n10,00,000\nWaiting period, pre-existing diseases\n24 months\nWaiting period, specified diseases/procedures\n12 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\n16 months\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Dr.P.Deshmukh\nSanjivani Hospital and Research Centre\nPatient:Arjun Chaudry,61/FDate:03/03/2026\nDiagnosis:total knee replacement\nRx:Tab.Paracetamol500mg1-0-1x3days;Cap.Pantoprazole40 mg1-0-0x5 days\nSyhtitedomgrd rwreenotlecrd",
+  "method": "ocr"
+ },
+ "_files": {
+  "claim_form.pdf": 124227,
+  "discharge_summary.pdf": 131796,
+  "hospital_bill.pdf": 2847,
+  "id_proof.pdf": 110231,
+  "lab_report.pdf": 2187,
+  "policy_schedule.pdf": 2483,
+  "prescription.pdf": 65752,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

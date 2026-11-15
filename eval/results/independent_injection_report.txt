@@ -21,12 +21,16 @@ Clinical Homonym Negative Controls:    20
   obfuscation_spacing          | 3        | 0          |   0.0%
   table_cell_injection         | 10       | 0          |   0.0%
 
-2. THREE-ARM ABLATION STUDY (Strict Metric: Wrong Status/Amount Auto-Finalised):
-  Defense Configuration            | Successful Evasions  | Attack Success Rate (95% CI)  
-  ----------------------------------------------------------------------------------------
-  Arm 1: Undefended                | 13/50                |  26.0% [15.9% – 39.6%]
-  Arm 2: Prompt Delimiters Only    |  5/50                |  10.0% [ 4.3% – 21.4%]
-  Arm 3: Full Defense-in-Depth     |  0/50                |   0.0% [ 0.0% –  7.1%]
+2. FOUR-ARM ABLATION STUDY (Strict Metric: Wrong Status/Amount Auto-Finalised):
+  Defense Configuration                    | Successful Evasions  | Attack Success Rate (95% CI)  
+  ------------------------------------------------------------------------------------------------
+  Arm 1: Undefended                        | 13/50                |  26.0% [15.9% – 39.6%]
+  Arm 2: Delimiters Only (<tags>)          |  5/50                |  10.0% [ 4.3% – 21.4%]
+  Arm 3: Delimiters + Guards (No Scanner)  |  0/50                |   0.0% [ 0.0% –  7.1%]
+  Arm 4: Full Defense-in-Depth             |  0/50                |   0.0% [ 0.0% –  7.1%]
+
+  Takeaway: Arm 3 demonstrates that deterministic guards and review_all_rejects do the heavy
+  lifting; the regex scanner in Arm 4 adds near-zero margin (+0.0%) and functions as a cheap tripwire.
 
 3. REALISTIC FALSE POSITIVE RATE (Clinical Homonyms):
   Clean Sentences with Words 'override', 'bypass', 'approve', 'cancel': 20

@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nHD6856611391\nProduct\nOptima Secure\nPolicy start date\n29/08/2025\nSum insured (Rs.)\n10,00,000\nName of patient\nMegha Lad\nAge / Sex\n34 years / F\nContact number\n9195087908\nHospital name\nSanjivani Hospital and Research Centre, Indore\nDate of admission\n29/01/2026\nDate of discharge\n03/02/2026\nDiagnosis / ailment\nfracture of femur, ORIF (road accident)\nNature of illness\nAccident / injury\nRoom category occupied\nstandard single\nTotal amount claimed (Rs.)\n2,42,000\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 03/02/2026\n",
+  "method": "text_layer"
+ },
+ "discharge_summary": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nSanjivani Hospital and Research Centre\nDischarge Summary\nPatient\nMegha Lad, 34 years, F\nUHID\nUH907736\nDate of admission\n29/01/2026\nDate of discharge\n03/02/2026\nLength of stay\n5 day(s)\nConsultant\nDr. A. Kulkarni\nFinal diagnosis\nfracture of femur, ORIF (road accident)\nHistory\nNo significant past history. Presented following a road traffic accident.\nCourse in hospital\nThe patient was admitted with complaints related to fracture of femur, ORIF (road accident). Investigations were done\nand treatment was given as per protocol. The post-treatment period was uneventful and the patient was discharged in\nstable condition on 03/02/2026.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. A. Kulkarni (Treating consultant)\n",
+  "method": "text_layer"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nSanjivani Hospital and Research Centre\nIndore | Final Inpatient Bill\nBill no\nBL/2026/28636\nUHID\nUH907736\nPatient\nMegha Lad\nAge / Sex\n34 / F\nAdmitted\n29/01/2026\nDischarged\n03/02/2026\nConsultant\nDr. A. Kulkarni\nRoom\nstandard single\nParticulars\nQty\nRate\nAmount\nROOM AND BED CHARGES\n   Room charges (standard single)\n5\n5,300\n26,500\n   Sub-total\n26,500\nPROFESSIONAL FEES\n   Surgeon and anaesthetist fees\n1\n71,900\n71,900\n   Sub-total\n71,900\nOPERATION THEATRE\n   Operation theatre charges\n1\n27,650\n27,650\n   Sub-total\n27,650\nPHARMACY\n   Pharmacy and medicines\n1\n14,100\n14,100\n   Sub-total\n14,100\nDIAGNOSTICS\n   Laboratory and radiology investigations\n1\n6,600\n6,600\n   Sub-total\n6,600\nIMPLANTS\n   Implant / prosthesis\n1\n84,500\n84,500\n   Sub-total\n84,500\nNURSING\n   Nursing charges\n1\n10,750\n10,750\n   Sub-total\n10,750\nGRAND TOTAL\n2,42,000\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Government of India (specimen ID card,synthetic)\nName Megha Lad\nAge/Gender 34/F\nIDnumber XXXXXXXX6901\nMobile 9195087908\nSynfbotietedocument.generated",
+  "method": "ocr"
+ },
+ "lab_report": {
+  "text": "Sanjivani Hospital and Research Centre Pathology\nPatient:MeghaLad|Date:29/01/2026\nTest Result Reference\nHaemoglobin 13.1g/dL 12.0-16.0\nWBCcount 7,400/cmm 4.000-11,000\nBlood sugar(random) 104mg/dL 70-140\nSerumcreatinine 0.9mg/dL 0.6-1.2\nSyretc tesl docuent gonented for sofwareevaluatiorNotaren ecord",
+  "method": "ocr"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nPolicy Schedule\nPolicy number\nHD6856611391\nInsurer\nHDFC ERGO General Insurance\nProduct\nOptima Secure\nInsured person\nMegha Lad, 34 years, F\nPolicy start date\n29/08/2025\nSum insured (Rs.)\n10,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Dr.A.Kulkarni\nSanjivani Hospital and Research Centre\nPatient:MeghaLad.34/FDate:29/01/2026\nDiagnosis:fracture of femur,ORiF(road accident)\nRx:Tab.Paracetamol500mg 1-0-1x3 days:Cap.Pantoprazole40mg1-0-0x5days",
+  "method": "ocr"
+ },
+ "_files": {
+  "claim_form.pdf": 2931,
+  "discharge_summary.pdf": 2676,
+  "hospital_bill.pdf": 3148,
+  "id_proof.pdf": 99470,
+  "lab_report.pdf": 198425,
+  "policy_schedule.pdf": 2477,
+  "prescription.pdf": 142393,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

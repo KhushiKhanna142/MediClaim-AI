@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "HDFCERGO General Insurance\nHealth Insurance Claim Form (Reimbursement),Pant A\nPolicynumber HD7536454268\nProduct Optima Secure\nPolicy start date 01/04/2023\nSum insured(Rs.) 5,00,000\nName of patient Hemangini Wable\nAge/Sex 41years/M\nContact number 9200596177\nHospital name Lotus Care Hospital,Indore\nDate of admission 01/10/2025\nDate of discharge 04/10/2025\nDiagnosis/allment inguinal hernia repair\nNature of illness Illness\nRoom category occupied standard single\nTotal amountclaimed(Rs.) 93,400\nDeclaration\nIdeclare that the information furnished in this claim form is true and correct to the best of my knowledge.Iagree to\nprovide any further documentsrequired by the insurer.\nSignature of the insured: Date:04/10/2025",
+  "method": "ocr"
+ },
+ "discharge_summary": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nLotus Care Hospital\nDischarge Summary\nPatient\nHemangini Wable, 41 years, M\nUHID\nUH480939\nDate of admission\n01/10/2025\nDate of discharge\n04/10/2025\nLength of stay\n3 day(s)\nConsultant\nDr. V. Iyer\nFinal diagnosis\ninguinal hernia repair\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to inguinal hernia repair. Investigations were done and treatment was\ngiven as per protocol. The post-treatment period was uneventful and the patient was discharged in stable condition on\n04/10/2025.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. V. Iyer (Treating consultant)\n",
+  "method": "text_layer"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nLotus Care Hospital\nIndore | Final Inpatient Bill\nBill no\nBL/2025/98218\nUHID\nUH480939\nPatient\nHemangini Wable\nAge / Sex\n41 / M\nAdmitted\n01/10/2025\nDischarged\n04/10/2025\nConsultant\nDr. V. Iyer\nRoom\nstandard single\nSl\nDescription\nQty\nRate\nAmount\n1\nRoom charges (standard single)\n3\n4,900\n14,700\n2\nSurgeon and anaesthetist fees\n1\n33,950\n33,950\n3\nOperation theatre charges\n1\n12,050\n12,050\n4\nLaboratory and radiology investigations\n1\n6,400\n6,400\n5\nNursing charges\n1\n5,450\n5,450\n6\nPharmacy and medicines\n1\n7,500\n7,500\n7\nImplant / prosthesis\n1\n13,200\n13,200\n8\nDisposable consumables and admission kit\n1\n2,050\n2,050\nTOTAL\n93,400\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Government of India(specimen ID card,synthetic)\nName Hemangini Wable\nAge/Gender 41/M\nIDnumber XXXXXXXX7595\nMobile 9200596177",
+  "method": "ocr"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nLotus Care Hospital Pathology\nPatient: Hemangini Wable | Date: 01/10/2025\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nPolicy Schedule\nPolicy number\nHD7536454268\nInsurer\nHDFC ERGO General Insurance\nProduct\nOptima Secure\nInsured person\nHemangini Wable, 41 years, M\nPolicy start date\n01/04/2023\nSum insured (Rs.)\n5,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. V. Iyer\nLotus Care Hospital\nPatient: Hemangini Wable, 41/M Date: 01/10/2025\nDiagnosis: inguinal hernia repair\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 148703,
+  "discharge_summary.pdf": 2639,
+  "hospital_bill.pdf": 2887,
+  "id_proof.pdf": 165892,
+  "lab_report.pdf": 2171,
+  "policy_schedule.pdf": 2479,
+  "prescription.pdf": 1939,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

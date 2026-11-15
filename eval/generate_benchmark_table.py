@@ -120,6 +120,14 @@ def main():
             "review_all_rejects": True,
             "note": "Deterministic code checks fire 0 false alarms on clean claims",
         },
+        {
+            "name": "Held-Out Seed 47 (Final Headline)",
+            "gen": "v2 (4 Layouts)",
+            "claims": "data/heldout_claims_seed47",
+            "pred": "eval/results/graph_seed47_extracted_predictions.json",
+            "review_all_rejects": True,
+            "note": "Final shipped configuration: critic off, review_all_rejects=True, code guards on",
+        },
     ]
 
     print("| Run & Dataset | Generator | Review Rejects | Decision Acc | Exact Payable | Overpay Rate | Wrong Auto-Finalised | Cite Recall | Cite Precision | Human Escalations | Automation Rate |")
@@ -166,3 +174,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

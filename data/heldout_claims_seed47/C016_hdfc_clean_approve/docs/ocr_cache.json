@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "HDFCERGO General Insurance\nHealth Insurance ClaimForm (Reimbursement),Part A\nPollcynumber HD8650548181\nProduct Optima Secure\nPolicy start date 23/06/2023\nSum Insured (Rs.) 10.00,000\nName of patient William Lal\nAge/Sex 71years/M\nContact number 9541380072\nHospital name Lotus Care Hospital,Indore\nDate ofadmission 23/07/2026\nDate of discharge 24/07/2026\nDiagnosis/ailment cataract surgery (phacoemulsihication)\nNature of illness ilness\nRoom category occupied standard single\nTotal amount claimed (Rs.) 70,650\nDeclaration\nIdeclare that the information fumished in this claim form is true and correct to the best ofmy knowledge.1 agree to\nprovide any further documentsrequired by the insurer.\nSignature of the insured: Date:24/07/2026",
+  "method": "ocr"
+ },
+ "discharge_summary": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nLotus Care Hospital\nDischarge Summary\nPatient\nWilliam Lal, 71 years, M\nUHID\nUH547466\nDate of admission\n23/07/2026\nDate of discharge\n24/07/2026\nLength of stay\n1 day(s)\nConsultant\nDr. A. Kulkarni\nFinal diagnosis\ncataract surgery (phacoemulsification)\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to cataract surgery (phacoemulsification). Investigations were done\nand treatment was given as per protocol. The post-treatment period was uneventful and the patient was discharged in\nstable condition on 24/07/2026.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. A. Kulkarni (Treating consultant)\n",
+  "method": "text_layer"
+ },
+ "hospital_bill": {
+  "text": "Lotus Care Hospital\nIndore|Final Inpatient Bill\nBillno BL/2026/4647 UHID UH547466\nPatient William Lal Age/Sex 71/M\nAdmitted 23/07/2026 Discharged 24/07/2026\nConsultant Dr.A.Kulkarni Room standard single\nItem\nRoom charges (standard single) Amount(Rs.)\nSurgeon and anaesthetist fees 5,700\nOperation theatre charges 28,950\nLaboratory andradiology investigations 10,350\nNursing charges 3,200\nPharmacy andmedicines 1,600\nImplant/prosthesis 2,900\nNet payable 17,950\n70,650\nSynthetetestdocument.generated for sotwaleevaafion.Nota realrecord\nPagel",
+  "method": "ocr"
+ },
+ "id_proof": {
+  "text": "Government of India(specimen ID card,synthetic)\nName William Lal\nAge/Gender 71/M\nIDnumber XXXXXXXX5523\nMobile 9541380072\nSynthetic testdocument.generated lor sotware evaluatian,Not.areal record Page1",
+  "method": "ocr"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nLotus Care Hospital Pathology\nPatient: William Lal | Date: 23/07/2026\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nPolicy Schedule\nPolicy number\nHD8650548181\nInsurer\nHDFC ERGO General Insurance\nProduct\nOptima Secure\nInsured person\nWilliam Lal, 71 years, M\nPolicy start date\n23/06/2023\nSum insured (Rs.)\n10,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. A. Kulkarni\nLotus Care Hospital\nPatient: William Lal, 71/M Date: 23/07/2026\nDiagnosis: cataract surgery (phacoemulsification)\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 162678,
+  "discharge_summary.pdf": 2639,
+  "hospital_bill.pdf": 172924,
+  "id_proof.pdf": 164373,
+  "lab_report.pdf": 2166,
+  "policy_schedule.pdf": 2475,
+  "prescription.pdf": 1956,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

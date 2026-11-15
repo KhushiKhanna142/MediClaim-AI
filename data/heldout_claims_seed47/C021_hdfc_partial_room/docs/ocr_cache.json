@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "HDFCERGOGeneral Insurance\nHealth Insurance ClaimForm(Reimbursement).Pant A\nPolicy number HD4907165767\nProduct Optima Secure\nPolicy start date 05/01/2023\nSum insured (Rs.) 5,00.000\nName of patient Sachi Aurora\nAge/Sex 34years/M\nContact number 9333827806\nHospital name HarmonyMedical Centre,Indore\nDate of admission 05/03/2025\nDate of discharge 08/03/2025\nDiagnosis/ailment acute appendicitis.appendectomy\nNature of iliness illness\nRoom category occupied privale\nTotal amount claimed (Rs.) 1,06,600\nIdeclare that the information furnished in this claim form is true and correct to the best of my knowledge,lagree to Declaration\nprovide anyfurther documentsrequired by theinsurer.\nSignature of the insured: Date:08/03/2025",
+  "method": "ocr"
+ },
+ "discharge_summary": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHarmony Medical Centre\nDischarge Summary\nPatient\nSachi Aurora, 34 years, M\nUHID\nUH957880\nDate of admission\n05/03/2025\nDate of discharge\n08/03/2025\nLength of stay\n3 day(s)\nConsultant\nDr. A. Kulkarni\nFinal diagnosis\nacute appendicitis, appendectomy\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to acute appendicitis, appendectomy. Investigations were done and\ntreatment was given as per protocol. The post-treatment period was uneventful and the patient was discharged in\nstable condition on 08/03/2025.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. A. Kulkarni (Treating consultant)\n",
+  "method": "text_layer"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHarmony Medical Centre\nIndore | Final Inpatient Bill\nBill no\nBL/2025/84145\nUHID\nUH957880\nPatient\nSachi Aurora\nAge / Sex\n34 / M\nAdmitted\n05/03/2025\nDischarged\n08/03/2025\nConsultant\nDr. A. Kulkarni\nRoom\nprivate\nSummary of charges\nHead\nAmount\nRoom and Bed Charges\n22,800\nProfessional Fees\n42,200\nOperation Theatre\n12,050\nPharmacy\n11,750\nConsumables\n2,850\nDiagnostics\n8,500\nNursing\n6,450\nTotal bill\n1,06,600\n\nSynthetic test document, generated for software evaluation. Not a real record.\nPage 2\nItemised statement\nDate\nDescription\nQty\nRate\nAmount\n05/03/2025\nRoom charges (private)\n3\n7,600\n22,800\n05/03/2025\nSurgeon and anaesthetist fees\n1\n42,200\n42,200\n05/03/2025\nOperation theatre charges\n1\n12,050\n12,050\n05/03/2025\nLaboratory and radiology investigations\n1\n8,500\n8,500\n05/03/2025\nNursing charges\n1\n6,450\n6,450\n05/03/2025\nPharmacy and medicines\n1\n11,750\n11,750\n05/03/2025\nDisposable consumables and admission kit\n1\n2,850\n2,850\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nSachi Aurora\nAge / Gender\n34 / M\nID number\nXXXX XXXX 4340\nMobile\n9333827806\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHarmony Medical Centre Pathology\nPatient: Sachi Aurora | Date: 05/03/2025\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nPolicy Schedule\nPolicy number\nHD4907165767\nInsurer\nHDFC ERGO General Insurance\nProduct\nOptima Secure\nInsured person\nSachi Aurora, 34 years, M\nPolicy start date\n05/01/2023\nSum insured (Rs.)\n5,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nRs. 5,000 per day\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. A. Kulkarni\nHarmony Medical Centre\nPatient: Sachi Aurora, 34/M Date: 05/03/2025\nDiagnosis: acute appendicitis, appendectomy\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 142578,
+  "discharge_summary.pdf": 2638,
+  "hospital_bill.pdf": 4044,
+  "id_proof.pdf": 2011,
+  "lab_report.pdf": 2172,
+  "policy_schedule.pdf": 2468,
+  "prescription.pdf": 1947,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}
