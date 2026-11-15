@@ -36,6 +36,8 @@ class ClaimState(TypedDict, total=False):
     needs_human: bool
     escalation_reasons: list[str]
     human_action: Optional[dict[str, Any]]
+    cited_clauses_detail: list[dict[str, Any]]
+    waiting_period_trace: Optional[dict[str, Any]]
     # outcome
     final: Optional[dict[str, Any]]
     audit: Annotated[list[dict[str, Any]], operator.add]

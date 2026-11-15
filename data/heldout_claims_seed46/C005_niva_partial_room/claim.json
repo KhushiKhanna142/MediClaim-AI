@@ -1,0 +1,98 @@
+{
+ "claim_id": "C005_niva_partial_room",
+ "category": "partial_room",
+ "policy_id": "niva_aspire",
+ "patient": {
+  "name": "Chakrika Wable",
+  "age": 33,
+  "sex": "F"
+ },
+ "schedule": {
+  "sum_insured": 300000,
+  "policy_start": "2022-04-28",
+  "ped_months": 36,
+  "spec_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": true,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "cataract surgery (phacoemulsification)",
+  "kind": "illness",
+  "specified": true,
+  "is_ped": false
+ },
+ "admission_date": "2025-06-28",
+ "discharge_date": "2025-06-29",
+ "room_days": 1,
+ "room_claimed": "deluxe",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (deluxe)",
+   "qty": 1,
+   "rate": 11500,
+   "amount": 11500
+  },
+  {
+   "category": "surgeon",
+   "description": "Surgeon and anaesthetist fees",
+   "qty": 1,
+   "rate": 22850,
+   "amount": 22850
+  },
+  {
+   "category": "ot",
+   "description": "Operation theatre charges",
+   "qty": 1,
+   "rate": 10650,
+   "amount": 10650
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 3900,
+   "amount": 3900
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 1500,
+   "amount": 1500
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 3450,
+   "amount": 3450
+  },
+  {
+   "category": "implant",
+   "description": "Implant / prosthesis",
+   "qty": 1,
+   "rate": 12150,
+   "amount": 12150
+  },
+  {
+   "category": "consumable",
+   "description": "Disposable consumables and admission kit",
+   "qty": 1,
+   "rate": 750,
+   "amount": 750
+  }
+ ],
+ "stated_total": 66750,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

@@ -1,0 +1,90 @@
+{
+ "claim_id": "C014_niva_missing_docs",
+ "category": "missing_docs",
+ "policy_id": "niva_aspire",
+ "patient": {
+  "name": "Leena Mitra",
+  "age": 58,
+  "sex": "F"
+ },
+ "schedule": {
+  "sum_insured": 1000000,
+  "policy_start": "2022-09-01",
+  "ped_months": 24,
+  "spec_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "laparoscopic cholecystectomy (gallstones)",
+  "kind": "illness",
+  "specified": true,
+  "is_ped": false
+ },
+ "admission_date": "2025-06-01",
+ "discharge_date": "2025-06-04",
+ "room_days": 3,
+ "room_claimed": "standard_single",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (standard single)",
+   "qty": 3,
+   "rate": 4600,
+   "amount": 13800
+  },
+  {
+   "category": "surgeon",
+   "description": "Surgeon and anaesthetist fees",
+   "qty": 1,
+   "rate": 42000,
+   "amount": 42000
+  },
+  {
+   "category": "ot",
+   "description": "Operation theatre charges",
+   "qty": 1,
+   "rate": 16700,
+   "amount": 16700
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 8950,
+   "amount": 8950
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 4950,
+   "amount": 4950
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 11700,
+   "amount": 11700
+  },
+  {
+   "category": "consumable",
+   "description": "Disposable consumables and admission kit",
+   "qty": 1,
+   "rate": 3350,
+   "amount": 3350
+  }
+ ],
+ "stated_total": 101450,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

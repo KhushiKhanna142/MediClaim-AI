@@ -1,0 +1,91 @@
+{
+ "claim_id": "C012_niva_reject_ped",
+ "category": "reject_ped",
+ "policy_id": "niva_aspire",
+ "patient": {
+  "name": "Isha Biswas",
+  "age": 37,
+  "sex": "F"
+ },
+ "schedule": {
+  "sum_insured": 1000000,
+  "policy_start": "2024-10-02",
+  "ped_months": 24,
+  "spec_months": 12,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "diabetic foot infection with debridement",
+  "kind": "illness",
+  "specified": false,
+  "is_ped": true
+ },
+ "admission_date": "2026-03-02",
+ "discharge_date": "2026-03-09",
+ "room_days": 7,
+ "room_claimed": "standard_single",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (standard single)",
+   "qty": 7,
+   "rate": 4900,
+   "amount": 34300
+  },
+  {
+   "category": "surgeon",
+   "description": "Surgeon and anaesthetist fees",
+   "qty": 1,
+   "rate": 39650,
+   "amount": 39650
+  },
+  {
+   "category": "ot",
+   "description": "Operation theatre charges",
+   "qty": 1,
+   "rate": 13450,
+   "amount": 13450
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 11200,
+   "amount": 11200
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 8850,
+   "amount": 8850
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 13150,
+   "amount": 13150
+  },
+  {
+   "category": "consumable",
+   "description": "Disposable consumables and admission kit",
+   "qty": 1,
+   "rate": 1850,
+   "amount": 1850
+  }
+ ],
+ "stated_total": 122450,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

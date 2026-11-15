@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "Niva Bupa Health Insurance\nHealth Insurance Claim Form(Reimbursement),Part A\nPolicy number NB6978288405\nProduct ReAssure (Aspire)\nPolicy start date 18/06/2025\nSum insured(Rs.) 10,00,000\nName of patient Chatura Balasubramanian\nAge/Sex 32years/M\nContact number 9762725627\nHospital name Sanjivani Hospital and Research Centre,Nagpur\nDate ofadmission 18/11/2025\nDate of discharge 19/11/2025\nDiagnosis/ailment cataract surgery(phacoemulsification)\nNature of illness Illness\nRoom category occupied standard single\nTotal amount claimed (Rs.) 63.300\nDeclaration\nIdeclare that the information furnished in this claim form is true andcorrect to thebest of myknowledge.I agree to\nSignature of the insured: Date:19/11/2025\nSynthte ttdocungenetedfo sw alonNot eaecor Page1",
+  "method": "ocr"
+ },
+ "discharge_summary": {
+  "text": "Sanjivani Hospital and Research Centre\nDischarge Summary\nPatient Chatura Balasubramanian,32years,M\nUHID UH785331\nDate of admission 18/11/2025\nDate of discharge 19/11/2025\nLength of stay 1day(s)\nConsultant Dr.P.Deshmukh\nFinal diagnosis\ncataract surgery(phacoemulsification)\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaintsrelated to cataract surgery (phacoemulsification).Investigations were done\nstableconditionon19/11/2025.\nAdviceon discharge\nReview after 7dayswithreports.Continue medicines asprescribed.Avoid strenuous activity.\nDr.P.Deshmukh\uff08Treating consultant)\nSynthetic test documentenerated tor software evaluation.Not areal record Page1",
+  "method": "ocr"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nSanjivani Hospital and Research Centre\nNagpur | Final Inpatient Bill\nBill no\nBL/2025/15149\nUHID\nUH785331\nPatient\nChatura Balasubramanian\nAge / Sex\n32 / M\nAdmitted\n18/11/2025\nDischarged\n19/11/2025\nConsultant\nDr. P. Deshmukh\nRoom\nstandard single\nSl\nDescription\nQty\nRate\nAmount\n1\nRoom charges (standard single)\n1\n5,100\n5,100\n2\nSurgeon and anaesthetist fees\n1\n22,400\n22,400\n3\nOperation theatre charges\n1\n11,000\n11,000\n4\nLaboratory and radiology investigations\n1\n3,150\n3,150\n5\nNursing charges\n1\n1,600\n1,600\n6\nPharmacy and medicines\n1\n2,350\n2,350\n7\nImplant / prosthesis\n1\n17,700\n17,700\nTOTAL\n63,300\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Government of India(specimen ID card,synthetic)\nName Chatura Balasubramanian\nAge/Gender 32/M\nIDnumber XXXXXXXX1954\nMobile 9762725627\nSyntett dctgerd foevor Noearor",
+  "method": "ocr"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nSanjivani Hospital and Research Centre Pathology\nPatient: Chatura Balasubramanian | Date: 18/11/2025\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nPolicy Schedule\nPolicy number\nNB6978288405\nInsurer\nNiva Bupa Health Insurance\nProduct\nReAssure (Aspire)\nInsured person\nChatura Balasubramanian, 32 years, M\nPolicy start date\n18/06/2025\nSum insured (Rs.)\n10,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n12 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\n14 months\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Dr.P.Deshmukh\nSanjivani Hospital and Research Centre\nPatient:Chatura Balasubramanian,32/M Date:18/11/2025\nDiagnosis:cataract surgery (phacoemulsification)\nRx:Tab.Paracetamol500mg1-0-1x3days;Cap.Pantoprazole40 mg1-0-0x5 days\nSythtitedoom.gerd forwreenotecord",
+  "method": "ocr"
+ },
+ "_files": {
+  "claim_form.pdf": 124676,
+  "discharge_summary.pdf": 132962,
+  "hospital_bill.pdf": 2834,
+  "id_proof.pdf": 110437,
+  "lab_report.pdf": 2194,
+  "policy_schedule.pdf": 2490,
+  "prescription.pdf": 66324,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

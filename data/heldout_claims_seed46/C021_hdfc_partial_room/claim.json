@@ -1,0 +1,84 @@
+{
+ "claim_id": "C021_hdfc_partial_room",
+ "category": "partial_room",
+ "policy_id": "hdfc_optima_secure_current",
+ "patient": {
+  "name": "Aarav Goyal",
+  "age": 60,
+  "sex": "F"
+ },
+ "schedule": {
+  "sum_insured": 500000,
+  "policy_start": "2024-02-28",
+  "ped_months": 36,
+  "spec_months": 24,
+  "room_limit_per_day": 5000,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "dengue fever",
+  "kind": "illness",
+  "specified": false,
+  "is_ped": false
+ },
+ "admission_date": "2025-11-28",
+ "discharge_date": "2025-12-02",
+ "room_days": 4,
+ "room_claimed": "private",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (private)",
+   "qty": 4,
+   "rate": 8700,
+   "amount": 34800
+  },
+  {
+   "category": "other",
+   "description": "Consultant visits and monitoring",
+   "qty": 1,
+   "rate": 14550,
+   "amount": 14550
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 8450,
+   "amount": 8450
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 4700,
+   "amount": 4700
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 13550,
+   "amount": 13550
+  },
+  {
+   "category": "consumable",
+   "description": "Disposable consumables and admission kit",
+   "qty": 1,
+   "rate": 1950,
+   "amount": 1950
+  }
+ ],
+ "stated_total": 78000,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

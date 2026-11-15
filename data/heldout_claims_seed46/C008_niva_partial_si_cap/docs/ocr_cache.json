@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "Niva Bupa Health Insurance\nHealth Insurance Claim Form(Reimbursement),Part A\nPolicy number NB3851053482\nProduct ReAssure(Aspire)\nPolicy start date 24/03/2024\nSum insured(Rs.) 3,00,000\nName of patient Udyati Borde\nAge/Sex 61years/M\nContact number 9547403679\nHospital name Sunrise Multispeciality Hospital,Indore\nDate ofadmission 24/07/2026\nDate of discharge 28/07/2026\nDiagnosis/ailment total kneereplacement\nNature of illness Illness\nRoom category occupied standard single\nTotal amountclaimed(Rs.) 4,15,700\nDeclaration\nIdeclare that theinformation furnished in thisclaim form is true andcorrect to thebest ofmyknowledge.lagree to\nprovideany further documentsrequired by theinsurer.\nSignature of theinsured: Date:28/07/2026\nSynthetic test documentgenerated forsotware evaluainNota ealrecord Page1",
+  "method": "ocr"
+ },
+ "discharge_summary": {
+  "text": "Sunrise Multispeciality Hospital\nDischarge Summary\nPatient UdyatiBorde,61years,M\nUHID UH194171\nDate of admission 24/07/2026\nDate of discharge 28/07/2026\nLength of stay 4 day(s)\nConsultant Dr.P.Deshmukh\nFinal diagnosis\ntotal knee replacement\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThepatientwas admitted with complaintsrelated to total kneereplacement.Investigationswere done and treatment\nwas given as per protocol.The post-treatment period was uneventful and the patient was discharged in stable\nconditionon28/07/2026.\nAdvice on discharge\nReview after 7 days with reports. Continue medicinesas prescribed.Avoid strenuous activity.\nDr.P.Deshmukh(Treating consultant)\nSythetic test documntgenered forsotwe evaltionNot a alecord Page.1",
+  "method": "ocr"
+ },
+ "hospital_bill": {
+  "text": "Sunrise Multispeciality Hospital\nIndore|Final Inpatient Bill\nBillno BL/2026/60262 UHID UH194171\nPatient Udyati Borde Age/Sex 61/M\nAdmitted 24/07/2026 Discharged 28/07/2026\nConsultant Dr.P.Deshmukh Room standard single\nSI Description Qty Rate\n1 Room charges (standard single) Amount\n4 4.000 16,000\n2 Surgeon and anaesthetist fees 1 78.500\n3 Operation theatre charges 78,500\n38.700 38.700\n4 Laboratory and radiology investigations 14,950\n5 Nursing charges 14,950\n1 16,900 16.900\n6 Pharmacy and medicines 20.850\n7 Implant/prosthesis 20,850\n1 2,24.950 2,24,950\n8 Disposable consumables and admission kit 4,850\n4,850\nTOTAL 4,15,700\nvaluabon.Not arealrecord",
+  "method": "ocr"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nUdyati Borde\nAge / Gender\n61 / M\nID number\nXXXX XXXX 8951\nMobile\n9547403679\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nSunrise Multispeciality Hospital Pathology\nPatient: Udyati Borde | Date: 24/07/2026\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nPolicy Schedule\nPolicy number\nNB3851053482\nInsurer\nNiva Bupa Health Insurance\nProduct\nReAssure (Aspire)\nInsured person\nUdyati Borde, 61 years, M\nPolicy start date\n24/03/2024\nSum insured (Rs.)\n3,00,000\nWaiting period, pre-existing diseases\n24 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Dr.P.Deshmukh\nSunrise Multispeciality Hospital\nPatient:Udyati Borde,61/M Date:24/07/2026\nDiagnosis:total kneereplacement\nRx:Tab.Paracetamol500 mg1-0-1x3 days:Cap.Pantoprazole40 mg1-0-0x5 days\nSytheti st documntgenraed rstware evalualinNot  rel cord",
+  "method": "ocr"
+ },
+ "_files": {
+  "claim_form.pdf": 139281,
+  "discharge_summary.pdf": 72033,
+  "hospital_bill.pdf": 111585,
+  "id_proof.pdf": 2011,
+  "lab_report.pdf": 2181,
+  "policy_schedule.pdf": 2475,
+  "prescription.pdf": 142400,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

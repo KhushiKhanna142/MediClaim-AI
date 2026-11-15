@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nHD6856611391\nProduct\nOptima Secure\nPolicy start date\n03/12/2023\nSum insured (Rs.)\n10,00,000\nName of patient\nJasmit Wagle\nAge / Sex\n72 years / M\nContact number\n9195087908\nHospital name\nSanjivani Hospital and Research Centre, Indore\nDate of admission\n03/02/2026\nDate of discharge\n08/02/2026\nDiagnosis / ailment\ndengue fever\nNature of illness\nIllness\nRoom category occupied\nstandard single\nTotal amount claimed (Rs.)\n57,900\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 08/02/2026\n",
+  "method": "text_layer"
+ },
+ "discharge_summary": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nSanjivani Hospital and Research Centre\nDischarge Summary\nPatient\nJasmit Wagle, 72 years, M\nUHID\nUH907736\nDate of admission\n03/02/2026\nDate of discharge\n08/02/2026\nLength of stay\n5 day(s)\nConsultant\nDr. A. Kulkarni\nFinal diagnosis\ndengue fever\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to dengue fever. Investigations were done and treatment was given\nas per protocol. The post-treatment period was uneventful and the patient was discharged in stable condition on\n08/02/2026.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. A. Kulkarni (Treating consultant)\n",
+  "method": "text_layer"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nSanjivani Hospital and Research Centre\nIndore | Final Inpatient Bill\nBill no\nBL/2026/28636\nUHID\nUH907736\nPatient\nJasmit Wagle\nAge / Sex\n72 / M\nAdmitted\n03/02/2026\nDischarged\n08/02/2026\nConsultant\nDr. A. Kulkarni\nRoom\nstandard single\nParticulars\nQty\nRate\nAmount\nROOM AND BED CHARGES\n   Room charges (standard single)\n5\n4,100\n20,500\n   Sub-total\n20,500\nPHARMACY\n   Pharmacy and medicines\n1\n8,350\n8,350\n   Sub-total\n8,350\nDIAGNOSTICS\n   Laboratory and radiology investigations\n1\n8,000\n8,000\n   Sub-total\n8,000\nNURSING\n   Nursing charges\n1\n5,550\n5,550\n   Sub-total\n5,550\nOTHER CHARGES\n   Consultant visits and monitoring\n1\n15,500\n15,500\n   Sub-total\n15,500\nGRAND TOTAL\n57,900\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Government of India (specimen ID card,synthetic)\nName Jasmit Wagle\nAge/Gender 72/M\nIDnumber XXXXXXXX6901\nMobile 9195087908\nSynfbotietedocument.generated",
+  "method": "ocr"
+ },
+ "lab_report": {
+  "text": "Sanjivani Hospital and Research Centre Pathology\nPatient:Jasmit Wagle|Date:03/02/2026\nTest Result Reference\nHaemoglobin 13.1g/dL 12.0-16.0\nWBCcount 7,400/cmm 4.000-11,000\nBlood sugar(random) 104mg/dL 70-140\nSerumcreatinine 0.9mg/dL 0.6-1.2\nSyretc tesl docuent gonented for sofwareevaluatiorNotaren ecord",
+  "method": "ocr"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nPolicy Schedule\nPolicy number\nHD6856611391\nInsurer\nHDFC ERGO General Insurance\nProduct\nOptima Secure\nInsured person\nJasmit Wagle, 72 years, M\nPolicy start date\n03/12/2023\nSum insured (Rs.)\n10,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Dr.A.Kulkarni\nSanjivani Hospital and Research Centre\nPatient:Jasmit Wagle.72/M Date:03/02/2026\nDiagnosis:dengue fever\nRx:Tab.Paracetamol500mg 1-0-1x3 days:Cap.Pantoprazole40mg1-0-0x5days",
+  "method": "ocr"
+ },
+ "_files": {
+  "claim_form.pdf": 2903,
+  "discharge_summary.pdf": 2634,
+  "hospital_bill.pdf": 2914,
+  "id_proof.pdf": 99507,
+  "lab_report.pdf": 198529,
+  "policy_schedule.pdf": 2477,
+  "prescription.pdf": 142073,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

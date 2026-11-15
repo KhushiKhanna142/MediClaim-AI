@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nNB7913631681\nProduct\nReAssure (Aspire)\nPolicy start date\n17/04/2025\nSum insured (Rs.)\n10,00,000\nName of patient\nAnvi Dua\nAge / Sex\n59 years / M\nContact number\n9646376790\nHospital name\nMetro Heart and General Hospital, Ahmedabad\nDate of admission\n02/05/2025\nDate of discharge\n05/05/2025\nDiagnosis / ailment\nacute appendicitis, appendectomy\nNature of illness\nIllness\nRoom category occupied\nstandard single\nTotal amount claimed (Rs.)\n99,750\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 05/05/2025\n",
+  "method": "text_layer"
+ },
+ "discharge_summary": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nMetro Heart and General Hospital\nDischarge Summary\nPatient\nAnvi Dua, 59 years, M\nUHID\nUH875304\nDate of admission\n02/05/2025\nDate of discharge\n05/05/2025\nLength of stay\n3 day(s)\nConsultant\nDr. A. Kulkarni\nFinal diagnosis\nacute appendicitis, appendectomy\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to acute appendicitis, appendectomy. Investigations were done and\ntreatment was given as per protocol. The post-treatment period was uneventful and the patient was discharged in\nstable condition on 05/05/2025.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. A. Kulkarni (Treating consultant)\n",
+  "method": "text_layer"
+ },
+ "hospital_bill": {
+  "text": "Metro Heart and General Hospital\nAhmedabad|Final Inpatient Bill\nBillno BL/2025/85672 UHID UH875304\nPatient AnviDua Age/Sex 59/M\nAdmitted 02/05/2025 Discharged 05/05/2025\nConsultant Dr.A.Kulkarni Room standard single\nAmount(Rs.)\nitem 13,800\nRoom charges (standard single) (3x4,600) 35,900\nSurgeon and anaesthetist fees 19.950\nOperation theatre charges 7.350\nLaboratory and radiology investigations 7,450\nNursing charges 11.850\nPharmacy and medicines 3450\nDisposable consumables and admission kit 99,750\nNet payable",
+  "method": "ocr"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nAnvi Dua\nAge / Gender\n59 / M\nID number\nXXXX XXXX 5648\nMobile\n9646376790\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nMetro Heart and General Hospital Pathology\nPatient: Anvi Dua | Date: 02/05/2025\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nPolicy Schedule\nPolicy number\nNB7913631681\nInsurer\nNiva Bupa Health Insurance\nProduct\nReAssure (Aspire)\nInsured person\nAnvi Dua, 59 years, M\nPolicy start date\n17/04/2025\nSum insured (Rs.)\n10,00,000\nWaiting period, pre-existing diseases\n12 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. A. Kulkarni\nMetro Heart and General Hospital\nPatient: Anvi Dua, 59/M Date: 02/05/2025\nDiagnosis: acute appendicitis, appendectomy\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 2911,
+  "discharge_summary.pdf": 2645,
+  "hospital_bill.pdf": 187784,
+  "id_proof.pdf": 2006,
+  "lab_report.pdf": 2176,
+  "policy_schedule.pdf": 2475,
+  "prescription.pdf": 1951,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

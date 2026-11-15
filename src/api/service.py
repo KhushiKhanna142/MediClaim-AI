@@ -164,6 +164,70 @@ class MediClaimService:
                     )
                     for d in dec_dict.get("deductions", [])
                 ]
+                # Ensure cited_clauses_detail is populated
+                clause_details = dec_dict.get("cited_clauses_detail", [])
+                if not clause_details and dec_dict.get("cited_clause_ids"):
+                    retriever = get_cached_retriever()
+                    for cid in dec_dict.get("cited_clause_ids", []):
+                        found = retriever.get_clause(crow["policy_id"], cid) if hasattr(retriever, "get_clause") else None
+                        if found:
+                            clause_details.append({
+                                "clause_id": cid,
+                                "title": found.get("clause_title") or found.get("title") or cid,
+                                "text": found.get("text", "")
+                            })
+                        else:
+                            clause_details.append({
+                                "clause_id": cid,
+                                "title": cid,
+                                "text": "Clause text in policy schedule."
+                            })
+
+                # Ensure waiting_period_trace is populated
+                trace = dec_dict.get("waiting_period_trace")
+                if not trace and extracted:
+                    adm = extracted.get("admission_date")
+                    start = extracted.get("policy_start")
+                    days, months = None, None
+                    if adm and start:
+                        try:
+                            from datetime import date
+                            d_adm = date.fromisoformat(str(adm))
+                            d_start = date.fromisoformat(str(start))
+                            days = (d_adm - d_start).days
+                            months = (d_adm.year - d_start.year) * 12 + (d_adm.month - d_start.month) - (1 if d_adm.day < d_start.day else 0) + (extracted.get("continuity_credit_months") or 0)
+                        except Exception:
+                            pass
+                    f = dec_dict.get("findings", {})
+                    trace = {
+                        "policy_start": start,
+                        "admission_date": adm,
+                        "days_covered": days,
+                        "months_covered": months,
+                        "continuity_credit_months": extracted.get("continuity_credit_months", 0),
+                        "diagnosis": extracted.get("diagnosis", ""),
+                        "initial_wait": {
+                            "required_days": f.get("initial_waiting_days", 30),
+                            "days_elapsed": days,
+                            "satisfied": (days >= (f.get("initial_waiting_days", 30)) or (months or 0) > 12) if days is not None else None,
+                            "clause_id": f.get("initial_wait_clause"),
+                        },
+                        "specified_disease_wait": {
+                            "required_months": extracted.get("specified_waiting_months", 24),
+                            "months_elapsed": months,
+                            "applies": bool(f.get("is_specified")),
+                            "satisfied": ((months or 0) >= (extracted.get("specified_waiting_months", 24))) if months is not None else None,
+                            "clause_id": f.get("spec_clause"),
+                        },
+                        "ped_wait": {
+                            "required_months": extracted.get("ped_waiting_months", 36),
+                            "months_elapsed": months,
+                            "applies": bool(f.get("is_pre_existing")),
+                            "satisfied": ((months or 0) >= (extracted.get("ped_waiting_months", 36))) if months is not None else None,
+                            "clause_id": f.get("ped_clause"),
+                        },
+                    }
+
                 decision = DecisionDetail(
                     decision=dec_dict.get("decision", crow["status"]),
                     payable_amount=dec_dict.get("payable_amount"),
@@ -176,6 +240,8 @@ class MediClaimService:
                     retrieved_clause_ids=dec_dict.get("retrieved_clause_ids", []),
                     verifier=dec_dict.get("verifier"),
                     escalation_reasons=dec_dict.get("escalation_reasons", []),
+                    cited_clauses_detail=clause_details,
+                    waiting_period_trace=trace,
                 )
             except Exception:
                 pass

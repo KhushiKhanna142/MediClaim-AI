@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "HDFCERGOGeneral Insurance\nHealth Insurance ClaimForm(Reimbursement).Pant A\nPolicy number HD4907165767\nProduct Optima Secure\nPolicy start date 28/02/2024\nSum insured (Rs.) 5,00.000\nName of patient Aarav Goyal\nAge/Sex 60years/F\nContact number 9333827806\nHospital name HarmonyMedical Centre,Indore\nDate of admission 28/11/2025\nDate of discharge 02/12/2025\nDiagnosis/ailment dengue fever\nNature of iliness Illness\nRoom category occupied privale\nTotal amount ciaimed (Rs.) 78,000\nIdeclare that the information furnished in this claim form is true and correct to the best of my knowledge,lagree to Declaration\nprovide anyfurther documentsrequired by theinsurer.\nSignature of the insured: Date:02/12/2025",
+  "method": "ocr"
+ },
+ "discharge_summary": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHarmony Medical Centre\nDischarge Summary\nPatient\nAarav Goyal, 60 years, F\nUHID\nUH957880\nDate of admission\n28/11/2025\nDate of discharge\n02/12/2025\nLength of stay\n4 day(s)\nConsultant\nDr. A. Kulkarni\nFinal diagnosis\ndengue fever\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to dengue fever. Investigations were done and treatment was given\nas per protocol. The post-treatment period was uneventful and the patient was discharged in stable condition on\n02/12/2025.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. A. Kulkarni (Treating consultant)\n",
+  "method": "text_layer"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHarmony Medical Centre\nIndore | Final Inpatient Bill\nBill no\nBL/2025/84145\nUHID\nUH957880\nPatient\nAarav Goyal\nAge / Sex\n60 / F\nAdmitted\n28/11/2025\nDischarged\n02/12/2025\nConsultant\nDr. A. Kulkarni\nRoom\nprivate\nSummary of charges\nHead\nAmount\nRoom and Bed Charges\n34,800\nPharmacy\n13,550\nConsumables\n1,950\nDiagnostics\n8,450\nNursing\n4,700\nOther Charges\n14,550\nTotal bill\n78,000\n\nSynthetic test document, generated for software evaluation. Not a real record.\nPage 2\nItemised statement\nDate\nDescription\nQty\nRate\nAmount\n28/11/2025\nRoom charges (private)\n4\n8,700\n34,800\n28/11/2025\nConsultant visits and monitoring\n1\n14,550\n14,550\n28/11/2025\nLaboratory and radiology investigations\n1\n8,450\n8,450\n28/11/2025\nNursing charges\n1\n4,700\n4,700\n28/11/2025\nPharmacy and medicines\n1\n13,550\n13,550\n28/11/2025\nDisposable consumables and admission kit\n1\n1,950\n1,950\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nAarav Goyal\nAge / Gender\n60 / F\nID number\nXXXX XXXX 4340\nMobile\n9333827806\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHarmony Medical Centre Pathology\nPatient: Aarav Goyal | Date: 28/11/2025\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nPolicy Schedule\nPolicy number\nHD4907165767\nInsurer\nHDFC ERGO General Insurance\nProduct\nOptima Secure\nInsured person\nAarav Goyal, 60 years, F\nPolicy start date\n28/02/2024\nSum insured (Rs.)\n5,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nRs. 5,000 per day\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. A. Kulkarni\nHarmony Medical Centre\nPatient: Aarav Goyal, 60/F Date: 28/11/2025\nDiagnosis: dengue fever\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 142254,
+  "discharge_summary.pdf": 2625,
+  "hospital_bill.pdf": 3940,
+  "id_proof.pdf": 2008,
+  "lab_report.pdf": 2171,
+  "policy_schedule.pdf": 2468,
+  "prescription.pdf": 1933,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

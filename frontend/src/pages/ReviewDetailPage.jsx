@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { AlertTriangle, Zap, CheckCircle2, ShieldAlert, ArrowRight } from 'lucide-react';
+import { AlertTriangle, Zap, CheckCircle2, ShieldAlert, ArrowRight, Clock, FileText } from 'lucide-react';
 import { api } from '../api';
 import { formatINR, getPolicyMeta } from '../utils/format';
 import { DocumentViewer } from '../components/DocumentViewer';
@@ -329,6 +329,110 @@ export function ReviewDetailPage({ claimId, claims, reviewerName, onSelectClaim,
               </div>
             )}
           </div>
+
+          {/* Waiting Period & Exclusion Clause Audit Card (Crucial for Rejections / Specified Disease check) */}
+          {(claim.decision?.waiting_period_trace || (claim.decision?.cited_clauses_detail && claim.decision.cited_clauses_detail.length > 0)) && (
+            <div className="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
+              <div className="flex items-center justify-between border-b border-slate-100 pb-2.5">
+                <div className="flex items-center gap-2">
+                  <Clock className="w-4 h-4 text-blue-600" />
+                  <h2 className="text-sm font-bold text-slate-900">Waiting Period & Policy Exclusion Audit</h2>
+                </div>
+                {claim.decision?.decision === 'reject' && (
+                  <span className="text-[11px] font-bold text-red-700 bg-red-50 border border-red-200 px-2 py-0.5 rounded">
+                    Rejection Review Required
+                  </span>
+                )}
+              </div>
+
+              {/* Waiting Period Arithmetic Breakdown */}
+              {claim.decision?.waiting_period_trace && (
+                <div className="space-y-2">
+                  <div className="text-xs text-slate-700 bg-slate-50 border border-slate-200 rounded-lg p-3">
+                    <div className="flex flex-wrap items-center justify-between gap-2 mb-2 font-semibold text-slate-900 border-b border-slate-200 pb-1.5">
+                      <span>Tenure Calculation:</span>
+                      <span className="text-blue-700 font-mono font-bold">
+                        {claim.decision.waiting_period_trace.months_covered ?? '—'} months continuous cover ({claim.decision.waiting_period_trace.days_covered ?? '—'} days)
+                      </span>
+                    </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px]">
+                      <div className="p-2 rounded bg-white border border-slate-200">
+                        <div className="text-slate-500">Initial 30-Day Wait</div>
+                        <div className="font-semibold mt-0.5">
+                          {claim.decision.waiting_period_trace.initial_wait?.satisfied ? (
+                            <span className="text-emerald-700">✓ Satisfied ({claim.decision.waiting_period_trace.days_covered}d)</span>
+                          ) : (
+                            <span className="text-red-600">✗ Active ({claim.decision.waiting_period_trace.days_covered}d &lt; 30d)</span>
+                          )}
+                        </div>
+                      </div>
+
+                      <div className="p-2 rounded bg-white border border-slate-200">
+                        <div className="text-slate-500">Specified Diseases (24mo)</div>
+                        <div className="font-semibold mt-0.5">
+                          {claim.decision.waiting_period_trace.specified_disease_wait?.applies ? (
+                            claim.decision.waiting_period_trace.specified_disease_wait?.satisfied ? (
+                              <span className="text-emerald-700">✓ Satisfied ({claim.decision.waiting_period_trace.months_covered}mo)</span>
+                            ) : (
+                              <span className="text-red-700 font-bold">✗ Below Wait ({claim.decision.waiting_period_trace.months_covered}mo &lt; 24mo)</span>
+                            )
+                          ) : (
+                            <span className="text-slate-600">Not Flagged</span>
+                          )}
+                        </div>
+                      </div>
+
+                      <div className="p-2 rounded bg-white border border-slate-200">
+                        <div className="text-slate-500">Pre-Existing Condition (36mo)</div>
+                        <div className="font-semibold mt-0.5">
+                          {claim.decision.waiting_period_trace.ped_wait?.applies ? (
+                            claim.decision.waiting_period_trace.ped_wait?.satisfied ? (
+                              <span className="text-emerald-700">✓ Satisfied</span>
+                            ) : (
+                              <span className="text-red-700 font-bold">✗ Below Wait ({claim.decision.waiting_period_trace.months_covered}mo &lt; 36mo)</span>
+                            )
+                          ) : (
+                            <span className="text-slate-600">Not Flagged</span>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Exclusion Clauses Full Text Inspection with Diagnosis Cross-Check */}
+              {claim.decision?.cited_clauses_detail && claim.decision.cited_clauses_detail.length > 0 && (
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-bold text-slate-800">
+                      Cited Exclusion &amp; Policy Terms (Full Legal Text)
+                    </span>
+                    <span className="text-[11px] text-blue-700 font-medium">
+                      Diagnosis: <strong>{claim.extracted?.diagnosis || form.diagnosis}</strong>
+                    </span>
+                  </div>
+
+                  <div className="bg-amber-50/70 border border-amber-200 rounded-lg p-2.5 text-[11px] text-amber-900">
+                    <strong>⚠️ Adjudicator Check:</strong> Verify whether claimant's diagnosis (<em>{claim.extracted?.diagnosis || form.diagnosis}</em>) is strictly named in the policy's specified disease list below. Acute conditions (e.g., acute appendicitis) are standard covered illnesses and must NOT be rejected under elective specified surgery lists.
+                  </div>
+
+                  <div className="space-y-2 max-h-56 overflow-y-auto pr-1">
+                    {claim.decision.cited_clauses_detail.map((c, idx) => (
+                      <div key={idx} className="p-3 bg-slate-50 border border-slate-200 rounded-lg text-xs space-y-1">
+                        <div className="flex items-center justify-between font-bold text-slate-800">
+                          <span>Clause [{c.clause_id}] {c.title !== c.clause_id && `— ${c.title}`}</span>
+                        </div>
+                        <p className="text-[11px] text-slate-700 whitespace-pre-wrap font-mono leading-relaxed bg-white p-2 rounded border border-slate-200">
+                          {c.text}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
 
           {/* Reviewer Resolution Card */}
           <div className="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-3">

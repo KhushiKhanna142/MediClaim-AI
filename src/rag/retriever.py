@@ -94,3 +94,13 @@ class HybridRetriever:
             if len(results) == k:
                 break
         return results
+
+    def get_clause(self, policy_id: str, clause_id: str) -> dict | None:
+        """Look up the parent clause record for a given policy and clause ID."""
+        norm_cid = base_clause_id(clause_id).strip().lower()
+        for par in self.parents.values():
+            if par.get("policy_id") == policy_id:
+                p_cid = str(par.get("clause_id", "")).strip().lower()
+                if p_cid == norm_cid or base_clause_id(p_cid) == norm_cid:
+                    return par
+        return None

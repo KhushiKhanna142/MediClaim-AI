@@ -26,6 +26,7 @@ from langgraph.types import Command, interrupt
 
 from src.extraction.schemas import ExtractedClaim
 from src.graph.state import ClaimState
+from src.security.sanitizer import scan_extracted_claim
 from src.validation.checks import docs_in_dir, validate
 
 INJECTION_PATTERNS = [r"ignore (all |any )?(previous|prior|above)", r"approve (this|the) claim", r"system prompt",
@@ -59,13 +60,14 @@ def validate_human_action(action: Optional[dict], ai_status: Optional[str]) -> N
 
 def default_security_scan(extracted: dict) -> list[str]:
     """Flag instruction-like text in free-text fields. Flag and escalate; never follow it."""
-    fields = [str(extracted.get(k) or "") for k in ("diagnosis", "known_history", "patient_name", "hospital")]
-    fields += [str(i.get("description", "")) for i in extracted.get("items") or []]
-    flags = []
-    for text in fields:
-        for pat in INJECTION_PATTERNS:
-            if re.search(pat, text, re.I):
-                flags.append(f"injection_pattern:{pat}")
+    flags = scan_extracted_claim(extracted)
+    if not flags:
+        fields = [str(extracted.get(k) or "") for k in ("diagnosis", "known_history", "patient_name", "hospital")]
+        fields += [str(i.get("description", "")) for i in extracted.get("items") or []]
+        for text in fields:
+            for pat in INJECTION_PATTERNS:
+                if re.search(pat, text, re.I):
+                    flags.append(f"injection_pattern:{pat}")
     return sorted(set(flags))
 
 
@@ -96,12 +98,14 @@ def build_graph(*, reader=None, verifier=None, extractor=None, decide_fn: Option
             return {**out, "audit": [_event("extract", skipped="pre-extracted input")]}
         try:
             claim = extractor.extract_dir(Path(state["claim_dir"]))
-            return {**out, "extracted": claim.model_dump(mode="json"), "audit": [_event("extract", ok=True, vision_filled=claim.vision_filled)]}
+            return {**out, "extracted": claim.model_dump(mode="json"), "security_flags": list(claim.security_flags), "audit": [_event("extract", ok=True, vision_filled=claim.vision_filled)]}
         except Exception as exc:  # noqa: BLE001
             return {**out, "extraction_error": repr(exc)[:300], "audit": [_event("extract", ok=False, error=type(exc).__name__)]}
 
     def security(state: ClaimState) -> dict:
-        flags = security_scan(state["extracted"])
+        existing = list(state.get("security_flags") or [])
+        scanned = security_scan(state["extracted"])
+        flags = sorted(list(set(existing + scanned)))
         return {"security_flags": flags, "audit": [_event("security_scan", flags=flags)]}
 
     def validate_node(state: ClaimState) -> dict:
@@ -161,16 +165,87 @@ def build_graph(*, reader=None, verifier=None, extractor=None, decide_fn: Option
         why = list(dict.fromkeys(why))
         return {"needs_human": bool(why), "escalation_reasons": why, "audit": [_event("route", needs_human=bool(why), reasons=why)]}
 
+    def _lookup_clause(policy_id: str, clause_id: str) -> dict | None:
+        if hasattr(reader, "retriever") and hasattr(reader.retriever, "get_clause"):
+            return reader.retriever.get_clause(policy_id, clause_id)
+        return None
+
     def human_review(state: ClaimState) -> dict:
+        ext = claim_of(state) if state.get("extracted") else None
+        f = state.get("findings") or {}
+        dec = state.get("decision") or {}
+
+        # Tenure vs waiting period trace
+        days = (ext.admission_date - ext.policy_start).days if (ext and ext.policy_start and ext.admission_date) else None
+        months = None
+        if ext and ext.policy_start and ext.admission_date:
+            months = (ext.admission_date.year - ext.policy_start.year) * 12 + (ext.admission_date.month - ext.policy_start.month) - (1 if ext.admission_date.day < ext.policy_start.day else 0) + (ext.continuity_credit_months or 0)
+
+        waiting_period_trace = None
+        if ext:
+            waiting_period_trace = {
+                "policy_start": str(ext.policy_start) if ext.policy_start else None,
+                "admission_date": str(ext.admission_date) if ext.admission_date else None,
+                "days_covered": days,
+                "months_covered": months,
+                "continuity_credit_months": ext.continuity_credit_months or 0,
+                "diagnosis": ext.diagnosis,
+                "initial_wait": {
+                    "required_days": f.get("initial_waiting_days") or 30,
+                    "days_elapsed": days,
+                    "satisfied": (days >= (f.get("initial_waiting_days") or 30) or (months or 0) > 12) if days is not None else None,
+                    "clause_id": f.get("initial_wait_clause"),
+                },
+                "specified_disease_wait": {
+                    "required_months": ext.specified_waiting_months or 24,
+                    "months_elapsed": months,
+                    "applies": bool(f.get("is_specified")),
+                    "satisfied": ((months or 0) >= (ext.specified_waiting_months or 24)) if months is not None else None,
+                    "clause_id": f.get("spec_clause"),
+                },
+                "ped_wait": {
+                    "required_months": ext.ped_waiting_months or 36,
+                    "months_elapsed": months,
+                    "applies": bool(f.get("is_pre_existing")),
+                    "satisfied": ((months or 0) >= (ext.ped_waiting_months or 36)) if months is not None else None,
+                    "clause_id": f.get("ped_clause"),
+                },
+            }
+
+        # Gather all cited and excluding clauses with full text
+        cites = list(dec.get("cited_clause_ids", []))
+        for extra_c in [f.get("spec_clause"), f.get("ped_clause"), f.get("initial_wait_clause")]:
+            if extra_c and extra_c not in cites:
+                cites.append(extra_c)
+
+        cited_clauses_detail = []
+        for cid in cites:
+            found = _lookup_clause(state.get("policy_id", ""), cid)
+            if found:
+                cited_clauses_detail.append({
+                    "clause_id": cid,
+                    "title": found.get("clause_title") or found.get("title") or cid,
+                    "text": found.get("text", "")
+                })
+            else:
+                cited_clauses_detail.append({
+                    "clause_id": cid,
+                    "title": cid,
+                    "text": "Full clause text available in master policy terms."
+                })
+
         packet = {"claim_id": state.get("claim_id"), "escalation_reasons": state.get("escalation_reasons"),
-                  "recommendation": state.get("decision"), "verifier": state.get("verifier"),
+                  "recommendation": dec, "verifier": state.get("verifier"),
                   "validation_details": state.get("validation_details"), "extraction_error": state.get("extraction_error"),
                   "security_flags": state.get("security_flags"), "retrieved_clause_ids": state.get("retrieved_clause_ids"),
-                  "extracted": state.get("extracted"), "audit": state.get("audit")}
+                  "extracted": state.get("extracted"), "audit": state.get("audit"),
+                  "cited_clauses_detail": cited_clauses_detail,
+                  "waiting_period_trace": waiting_period_trace}
         action = interrupt(packet)
         validate_human_action(action, (state.get("decision") or {}).get("decision"))   # defence in depth; resume_claim checks first
         kind = action["action"]
         return {"human_action": {**action, "ts": datetime.now(timezone.utc).isoformat(timespec="seconds")},
+                "cited_clauses_detail": cited_clauses_detail, "waiting_period_trace": waiting_period_trace,
                 "audit": [_event("human_review", action=kind, reviewer=action.get("reviewer"))]}
 
     def finalise(state: ClaimState) -> dict:

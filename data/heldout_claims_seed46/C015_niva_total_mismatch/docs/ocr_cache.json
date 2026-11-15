@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nHealth Insurance Claim Form (Reimbursement), Part A\nPolicy number\nNB2723150337\nProduct\nReAssure (Aspire)\nPolicy start date\n24/12/2024\nSum insured (Rs.)\n3,00,000\nName of patient\nSamar Contractor\nAge / Sex\n51 years / F\nContact number\n9659029457\nHospital name\nSunrise Multispeciality Hospital, Nagpur\nDate of admission\n24/05/2025\nDate of discharge\n27/05/2025\nDiagnosis / ailment\nacute appendicitis, appendectomy\nNature of illness\nIllness\nRoom category occupied\nstandard single\nTotal amount claimed (Rs.)\n1,01,150\nDeclaration\nI declare that the information furnished in this claim form is true and correct to the best of my knowledge. I agree to\nprovide any further documents required by the insurer.\nSignature of the insured: ____________________ Date: 27/05/2025\n",
+  "method": "text_layer"
+ },
+ "discharge_summary": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nSunrise Multispeciality Hospital\nDischarge Summary\nPatient\nSamar Contractor, 51 years, F\nUHID\nUH602799\nDate of admission\n24/05/2025\nDate of discharge\n27/05/2025\nLength of stay\n3 day(s)\nConsultant\nDr. V. Iyer\nFinal diagnosis\nacute appendicitis, appendectomy\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nThe patient was admitted with complaints related to acute appendicitis, appendectomy. Investigations were done and\ntreatment was given as per protocol. The post-treatment period was uneventful and the patient was discharged in\nstable condition on 27/05/2025.\nAdvice on discharge\nReview after 7 days with reports. Continue medicines as prescribed. Avoid strenuous activity.\nDr. V. Iyer (Treating consultant)\n",
+  "method": "text_layer"
+ },
+ "hospital_bill": {
+  "text": "Sunrise Multispeciality Hospital\nNagpur|Final Inpatient Bill\nBill no BL/2025/76431 UHID UH602799\nPatient Samar Contractor Age/Sex 51/F\nAdmitted 24/05/2025 Discharged 27/05/2025\nConsultant Dr.V.lyer Room standard single\nParticulars Qty Rate\nROOM AND BED CHARGES Amount\nRoom charges (standard single) 3 4,300 12,900\nSub-total\nPROFESSIONALFEES 12.900\nSurgeon and anaesthetist fees 45,250\nSub-total 45,250\nOPERATION THEATRE 45,250\nOperation theatre charges 13.750 13.750\nSub-total\nPHARMACY 13.750\nPharmacy and medicines 13,250\nSub-total 13.250\nCONSUMABLES 13.250\nDisposableconsumables and admissionkit 3,450 3,450\nSub-total\nDIAGNOSTICS 3,450\nLaboratory andradiology investigations 5.700 5,700\nSub-total\nNURSING 5,700\nNursing charges 4.850\nSub-total 4,850\nGRAND TOTAL 4,850\n1,01,150\nSymthetin test document.generated forsotware evalation Nota real recor Page1",
+  "method": "ocr"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nSamar Contractor\nAge / Gender\n51 / F\nID number\nXXXX XXXX 5660\nMobile\n9659029457\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nSunrise Multispeciality Hospital Pathology\nPatient: Samar Contractor | Date: 24/05/2025\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nNiva Bupa Health Insurance\nPolicy Schedule\nPolicy number\nNB2723150337\nInsurer\nNiva Bupa Health Insurance\nProduct\nReAssure (Aspire)\nInsured person\nSamar Contractor, 51 years, F\nPolicy start date\n24/12/2024\nSum insured (Rs.)\n3,00,000\nWaiting period, pre-existing diseases\n24 months\nWaiting period, specified diseases/procedures\n12 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nNo limit (single private room or lower)\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. V. Iyer\nSunrise Multispeciality Hospital\nPatient: Samar Contractor, 51/F Date: 24/05/2025\nDiagnosis: acute appendicitis, appendectomy\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 2918,
+  "discharge_summary.pdf": 2641,
+  "hospital_bill.pdf": 136896,
+  "id_proof.pdf": 2014,
+  "lab_report.pdf": 2186,
+  "policy_schedule.pdf": 2482,
+  "prescription.pdf": 1954,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

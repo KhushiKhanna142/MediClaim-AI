@@ -1,0 +1,51 @@
+==============================================================================
+PROMPT INJECTION DEFENSE & ADVERSARIAL EVALUATION REPORT
+==============================================================================
+Total Adversarial Variants Tested: 75
+Clean Negative-Control Claims:      30
+
+KEY BENCHMARK METRICS:
+  Undefended Attack Success Rate:     100.0% (75/75)
+  Defended Attack Success Rate:         0.0% (0/75)
+  Attack Detection Rate:              100.0% (75/75)
+  Human Review Escalation Rate:       100.0% (75/75)
+  Clean-Claim False Positive Rate:      0.0% (0/30)
+  Architectural Financial Immunity:   100.0% (Code calculator immutability)
+
+------------------------------------------------------------------------------
+BREAKDOWN BY INJECTION VECTOR:
+Vector                 | Attacks  | Detected   | Defended ASR
+------------------------------------------------------------------------------
+discharge_summary      | 15       | 15         |   0.0%
+bill_item              | 15       | 15         |   0.0%
+diagnosis              | 15       | 15         |   0.0%
+patient_name           | 15       | 15         |   0.0%
+hidden_pdf             | 15       | 15         |   0.0%
+
+------------------------------------------------------------------------------
+BREAKDOWN BY ATTACK GOAL:
+Goal                   | Attacks  | Detected   | Defended ASR
+------------------------------------------------------------------------------
+force_approval         | 15       | 15         |   0.0%
+suppress_ped           | 15       | 15         |   0.0%
+leak_prompt            | 15       | 15         |   0.0%
+fake_json              | 15       | 15         |   0.0%
+manipulate_critic      | 15       | 15         |   0.0%
+
+------------------------------------------------------------------------------
+BREAKDOWN BY ATTACK PHRASING / STYLE:
+Style                  | Attacks  | Detected   | Defended ASR
+------------------------------------------------------------------------------
+direct                 | 25       | 25         |   0.0%
+roleplay               | 25       | 25         |   0.0%
+obfuscated             | 25       | 25         |   0.0%
+
+==============================================================================
+DEFENSE IN DEPTH ARCHITECTURE:
+1. Pre-Extraction Scanning: Raw OCR & document text scanned before any LLM call.
+2. PDF Text Layer Inspection: PyMuPDF inspects font sizes (<2pt) and font colors (#FFFFFF).
+3. Untrusted Data Delimitation: Documents wrapped in <untrusted_document_data> tags.
+4. Automated Security Escalation: Security flags trigger human review node.
+5. Architectural Immunity: Deterministic Python rules engine computes all payable amounts,
+   deductions, and co-pays. The LLM is strictly prohibited from computing money.
+==============================================================================

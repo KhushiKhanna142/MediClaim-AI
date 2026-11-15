@@ -1,0 +1,98 @@
+{
+ "claim_id": "C028_hdfc_multi_hop",
+ "category": "multi_hop",
+ "policy_id": "hdfc_optima_secure_current",
+ "patient": {
+  "name": "Devika Raghavan",
+  "age": 39,
+  "sex": "M"
+ },
+ "schedule": {
+  "sum_insured": 300000,
+  "policy_start": "2024-01-26",
+  "ped_months": 36,
+  "spec_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "total knee replacement",
+  "kind": "illness",
+  "specified": true,
+  "is_ped": true
+ },
+ "admission_date": "2026-05-26",
+ "discharge_date": "2026-06-01",
+ "room_days": 6,
+ "room_claimed": "standard_single",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (standard single)",
+   "qty": 6,
+   "rate": 4900,
+   "amount": 29400
+  },
+  {
+   "category": "surgeon",
+   "description": "Surgeon and anaesthetist fees",
+   "qty": 1,
+   "rate": 60900,
+   "amount": 60900
+  },
+  {
+   "category": "ot",
+   "description": "Operation theatre charges",
+   "qty": 1,
+   "rate": 31250,
+   "amount": 31250
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 8200,
+   "amount": 8200
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 16650,
+   "amount": 16650
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 26450,
+   "amount": 26450
+  },
+  {
+   "category": "implant",
+   "description": "Implant / prosthesis",
+   "qty": 1,
+   "rate": 130300,
+   "amount": 130300
+  },
+  {
+   "category": "consumable",
+   "description": "Disposable consumables and admission kit",
+   "qty": 1,
+   "rate": 5900,
+   "amount": 5900
+  }
+ ],
+ "stated_total": 309050,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

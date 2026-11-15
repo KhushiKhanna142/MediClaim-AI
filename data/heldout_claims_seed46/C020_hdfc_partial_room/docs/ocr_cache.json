@@ -1,0 +1,40 @@
+{
+ "claim_form": {
+  "text": "HDFCERGOGeneral Insurance\nHeaith Insurance ClaimFom (Reimbursement),PartA\nPolicy number HD7701528545\nProduct Optima Secure\nPolicy start date 28/04/2023\nSum insured (Rs.) 5,00.000\nName of patient Harrison Nazareth\nAge/ Sex 30years/M\nContact number 9354775250\nHospital name MetroHeart and General Hospital,Jaiput\nDate ofadmission 28/09/2025\nDate of discharge 29/09/2025\nDlagnosis/ailment cataract surgery (phacoemulsification)\nNature of illness iness\nRoom category occupied private\nTotal amount claimed (Rs.) 70,850\nDeclaration\nIdeclare that the Information furnished in this claim form is true and correct to the best of my knowledge.Iagree to\nprovide any further documentsrequiredby the Insurer.\nSignature of the insured: Date:29/09/2025",
+  "method": "ocr"
+ },
+ "discharge_summary": {
+  "text": "Metro Heart and General Hospital\nDischarge Summary\nPatient HarrisonNazareth,30years,M\nUHID UH558144\nDate of admission 28/09/2025\nDate of discharge 29/09/2025\nLength of stay 1day(s)\nConsultant Dr.P.Deshmukh\nFinal diagnosis\ncataract surgery (phacoemulsification)\nHistory\nNo significant past medical or surgical history.\nCourse in hospital\nstableconditionon29/09/2025.\nAdvice on discharge\nReview after 7dayswith reports.Continuemedicinesasprescribed.Avoid strenuousactivity.\nDr.P.Deshmukh(Treating consultant)\nSynthetic test document,generaled for sofwam evauntion Notarealoord eoe",
+  "method": "ocr"
+ },
+ "hospital_bill": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nMetro Heart and General Hospital\nJaipur | Final Inpatient Bill\nBill no\nBL/2025/32446\nUHID\nUH558144\nPatient\nHarrison Nazareth\nAge / Sex\n30 / M\nAdmitted\n28/09/2025\nDischarged\n29/09/2025\nConsultant\nDr. P. Deshmukh\nRoom\nprivate\nItem\nAmount (Rs.)\nRoom charges (private)\n9,400\nSurgeon and anaesthetist fees\n27,550\nOperation theatre charges\n11,450\nLaboratory and radiology investigations\n2,350\nNursing charges\n1,300\nPharmacy and medicines\n3,200\nImplant / prosthesis\n14,900\nDisposable consumables and admission kit\n700\nNet payable\n70,850\n",
+  "method": "text_layer"
+ },
+ "id_proof": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nGovernment of India (specimen ID card, synthetic)\nName\nHarrison Nazareth\nAge / Gender\n30 / M\nID number\nXXXX XXXX 5968\nMobile\n9354775250\n",
+  "method": "text_layer"
+ },
+ "lab_report": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nMetro Heart and General Hospital Pathology\nPatient: Harrison Nazareth | Date: 28/09/2025\nTest\nResult\nReference\nHaemoglobin\n13.1 g/dL\n12.0 - 16.0\nWBC count\n7,400 /cmm\n4,000 - 11,000\nBlood sugar (random)\n104 mg/dL\n70 - 140\nSerum creatinine\n0.9 mg/dL\n0.6 - 1.2\n",
+  "method": "text_layer"
+ },
+ "policy_schedule": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nHDFC ERGO General Insurance\nPolicy Schedule\nPolicy number\nHD7701528545\nInsurer\nHDFC ERGO General Insurance\nProduct\nOptima Secure\nInsured person\nHarrison Nazareth, 30 years, M\nPolicy start date\n28/04/2023\nSum insured (Rs.)\n5,00,000\nWaiting period, pre-existing diseases\n36 months\nWaiting period, specified diseases/procedures\n24 months\nInitial waiting period\n30 days (not applicable to accidents)\nRoom rent limit\nRs. 5,000 per day\nEligible room category\nstandard single\nCo-payment\nNil\nContinuity credit (portability)\nNone\n",
+  "method": "text_layer"
+ },
+ "prescription": {
+  "text": "Synthetic test document, generated for software evaluation. Not a real record.\nPage 1\nDr. P. Deshmukh\nMetro Heart and General Hospital\nPatient: Harrison Nazareth, 30/M Date: 28/09/2025\nDiagnosis: cataract surgery (phacoemulsification)\nRx: Tab. Paracetamol 500 mg 1-0-1 x 3 days; Cap. Pantoprazole 40 mg 1-0-0 x 5 days\n",
+  "method": "text_layer"
+ },
+ "_files": {
+  "claim_form.pdf": 167646,
+  "discharge_summary.pdf": 150793,
+  "hospital_bill.pdf": 2560,
+  "id_proof.pdf": 2016,
+  "lab_report.pdf": 2184,
+  "policy_schedule.pdf": 2473,
+  "prescription.pdf": 1971,
+  "_ocr": "rapidocr-300-200-r2"
+ }
+}

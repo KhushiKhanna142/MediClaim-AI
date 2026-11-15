@@ -47,6 +47,8 @@ class DecisionDetail(BaseModel):
     retrieved_clause_ids: list[str] = []
     verifier: Optional[dict[str, Any]] = None
     escalation_reasons: list[str] = []
+    cited_clauses_detail: list[dict[str, Any]] = []
+    waiting_period_trace: Optional[dict[str, Any]] = None
 
 
 class ReviewAuditEntry(BaseModel):

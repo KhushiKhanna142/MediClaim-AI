@@ -268,3 +268,19 @@ def test_critic_receives_system_reasons_but_no_identifiers():
     d = {**approve_decision(), "reasons": ["Admission 0 days after policy start falls in the 30-day initial waiting period."]}
     Verifier(Spy()).verify(vclaim(), F().model_dump(), d, ["4.1.2"])
     assert "30-day initial waiting period" in seen["user"] and "patient_name" not in seen["user"]
+
+
+def test_human_review_packet_carries_waiting_trace_and_clause_texts():
+    reject_dec = {"decision": "reject", "payable_amount": 0.0, "deductions": [],
+                  "cited_clause_ids": ["Section C"], "reasons": ["specified disease waiting period applies"]}
+    g, _ = make([reject_dec], review_all_rejects=True)
+    r = run_claim(g, inputs(), "T_REVIEW")
+    assert r["status"] == "awaiting_human"
+    packet = r["packet"]
+    assert "waiting_period_trace" in packet
+    trace = packet["waiting_period_trace"]
+    assert trace["months_covered"] is not None
+    assert "specified_disease_wait" in trace
+    assert "cited_clauses_detail" in packet
+    assert len(packet["cited_clauses_detail"]) >= 1
+    assert packet["cited_clauses_detail"][0]["clause_id"] == "Section C"

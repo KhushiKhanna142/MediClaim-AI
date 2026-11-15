@@ -75,6 +75,7 @@ class ExtractedClaim(BaseModel):
     room_type_modification: bool = False
     eligible_room: Optional[str] = None
     vision_filled: list[str] = Field(default_factory=list, description="fields that OCR could not read and a vision model supplied")
+    security_flags: list[str] = Field(default_factory=list, description="security audit flags such as prompt injection or hidden text")
 
     @field_validator("age", "claimed_total", "bill_total", "sum_insured", "ped_waiting_months", "specified_waiting_months",
                      "room_limit_per_day", "copay_pct", "continuity_credit_months", "length_of_stay_days", mode="before")
