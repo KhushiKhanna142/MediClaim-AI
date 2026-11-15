@@ -40,4 +40,5 @@ class ClaimState(TypedDict, total=False):
     waiting_period_trace: Optional[dict[str, Any]]
     # outcome
     final: Optional[dict[str, Any]]
+    telemetry: Optional[dict[str, Any]]
     audit: Annotated[list[dict[str, Any]], operator.add]

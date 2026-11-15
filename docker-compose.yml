@@ -1,29 +1,19 @@
 services:
-  api:
+  mediclaim-api:
     build:
       context: .
       dockerfile: Dockerfile
-    command: uvicorn src.api.main:app --host 0.0.0.0 --port 8000 --reload
+    container_name: mediclaim-api
     ports:
       - "8000:8000"
-    volumes:
-      - .:/app
     environment:
-      - ENVIRONMENT=development
-    restart: unless-stopped
-
-  ui:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    command: streamlit run src/ui/app.py --server.port 8501 --server.address 0.0.0.0
-    ports:
-      - "8501:8501"
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - CLAIM_LLM_MODEL=${CLAIM_LLM_MODEL:-gemini-3.1-flash-lite}
+      - LANGFUSE_PUBLIC_KEY=${LANGFUSE_PUBLIC_KEY:-}
+      - LANGFUSE_SECRET_KEY=${LANGFUSE_SECRET_KEY:-}
+      - LANGFUSE_HOST=${LANGFUSE_HOST:-https://cloud.langfuse.com}
+      - HF_HUB_OFFLINE=1
     volumes:
-      - .:/app
-    environment:
-      - API_URL=http://api:8000
-    depends_on:
-      - api
+      - ./data/checkpoints.sqlite:/app/data/checkpoints.sqlite
+      - ./data/mediclaim.db:/app/data/mediclaim.db
     restart: unless-stopped
-

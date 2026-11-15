@@ -1,0 +1,15 @@
+.git
+.venv
+__pycache__
+*.pyc
+.pytest_cache
+node_modules
+frontend/node_modules
+eval/results/*.txt
+eval/results/*.jsonl
+eval/results/judge_cache.json
+PROJECT_OVERVIEW.md
+PROJECT_STATUS.md
+.env
+*.env
+data/uploads/

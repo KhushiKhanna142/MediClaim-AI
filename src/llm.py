@@ -14,6 +14,20 @@ from pathlib import Path
 DEFAULT_MODELS = {"anthropic": "claude-haiku-4-5", "openai": "gpt-4o-mini", "gemini": "gemini-3.8-flash"}
 
 
+def _record_completion(model: str, system: str, user: str, output: str, start_time: float) -> None:
+    try:
+        from src.telemetry.tracing import record_llm_call
+        record_llm_call(
+            model=model,
+            system=system,
+            user=user,
+            output=output,
+            duration_s=time.time() - start_time,
+        )
+    except Exception:
+        pass
+
+
 class AnthropicLLM:
     def __init__(self, model: str | None = None):
         import anthropic
@@ -21,12 +35,15 @@ class AnthropicLLM:
         self.model = model or os.getenv("CLAIM_LLM_MODEL") or DEFAULT_MODELS["anthropic"]
 
     def complete(self, system: str, user: str, max_tokens: int = 300, images: list[bytes] | None = None) -> str:
+        t0 = time.time()
         content = user if not images else [
             *({"type": "image", "source": {"type": "base64", "media_type": "image/png", "data": base64.b64encode(i).decode()}} for i in images),
             {"type": "text", "text": user}]
         r = self.client.messages.create(model=self.model, max_tokens=max_tokens, temperature=0,
                                         system=system, messages=[{"role": "user", "content": content}])
-        return "".join(b.text for b in r.content if getattr(b, "type", "") == "text")
+        res = "".join(b.text for b in r.content if getattr(b, "type", "") == "text")
+        _record_completion(self.model, system, user, res, t0)
+        return res
 
 
 class OpenAILLM:
@@ -36,13 +53,16 @@ class OpenAILLM:
         self.model = model or os.getenv("CLAIM_LLM_MODEL") or DEFAULT_MODELS["openai"]
 
     def complete(self, system: str, user: str, max_tokens: int = 300, images: list[bytes] | None = None) -> str:
+        t0 = time.time()
         content = user if not images else [
             *({"type": "image_url", "image_url": {"url": "data:image/png;base64," + base64.b64encode(i).decode()}} for i in images),
             {"type": "text", "text": user}]
         r = self.client.chat.completions.create(model=self.model, max_tokens=max_tokens, temperature=0,
                                                 messages=[{"role": "system", "content": system},
                                                           {"role": "user", "content": content}])
-        return r.choices[0].message.content or ""
+        res = r.choices[0].message.content or ""
+        _record_completion(self.model, system, user, res, t0)
+        return res
 
 
 class GeminiLLM:
@@ -60,6 +80,7 @@ class GeminiLLM:
         self.retries, self.wait_s = retries, wait_s
 
     def complete(self, system: str, user: str, max_tokens: int = 300, images: list[bytes] | None = None) -> str:
+        t0 = time.time()
         contents = user
         if images:
             from google.genai import types
@@ -68,7 +89,9 @@ class GeminiLLM:
         for attempt in range(self.retries + 1):
             try:
                 r = self.client.models.generate_content(model=self.model, contents=contents, config=cfg)
-                return r.text or ""
+                res = r.text or ""
+                _record_completion(self.model, system, user, res, t0)
+                return res
             except Exception as e:  # noqa: BLE001 - SDK raises several error types for rate limits
                 msg = str(e)
                 if "NOT_FOUND" in msg and "model" in msg.lower():
@@ -88,7 +111,10 @@ class FakeLLM:
         self.reply = reply
 
     def complete(self, system: str, user: str, max_tokens: int = 300, images: list[bytes] | None = None) -> str:
-        return self.reply
+        t0 = time.time()
+        res = self.reply
+        _record_completion("fake", system, user, res, t0)
+        return res
 
 
 def _load_env():

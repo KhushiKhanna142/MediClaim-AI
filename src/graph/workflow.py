@@ -322,9 +322,14 @@ def _result(graph, config) -> dict:
 
 def run_claim(graph, inputs: dict, thread_id: str) -> dict:
     """Start a claim. Returns {'status': 'completed', 'final': ...} or {'status': 'awaiting_human', 'packet': ...}."""
+    from src.telemetry.tracing import trace_claim
     config = {"configurable": {"thread_id": thread_id}}
-    graph.invoke({"claim_id": thread_id, **inputs}, config)
-    return _result(graph, config)
+    with trace_claim(thread_id, metadata={"policy_id": inputs.get("policy_id")}) as trace:
+        graph.invoke({"claim_id": thread_id, **inputs}, config)
+        res = _result(graph, config)
+        if "state" in res and res["state"]:
+            res["state"]["telemetry"] = trace.to_dict()
+        return res
 
 
 def resume_claim(graph, thread_id: str, action: dict) -> dict:

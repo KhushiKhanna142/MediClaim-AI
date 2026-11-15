@@ -29,8 +29,11 @@ Clinical Homonym Negative Controls:    20
   Arm 3: Delimiters + Guards (No Scanner)  |  0/50                |   0.0% [ 0.0% –  7.1%]
   Arm 4: Full Defense-in-Depth             |  0/50                |   0.0% [ 0.0% –  7.1%]
 
-  Takeaway: Arm 3 demonstrates that deterministic guards and review_all_rejects do the heavy
-  lifting; the regex scanner in Arm 4 adds near-zero margin (+0.0%) and functions as a cheap tripwire.
+  Takeaway: Arm 3 demonstrates that the deterministic pre-existing-condition verifier guard alone stops
+  the attack (0 of 50). Because pre-existing condition suppressions make the system pay/approve rather than reject,
+  rejection review never sees them; the guard alone caught every evasion. Crucially, the guard stops the
+  attack only when the history text survives extraction (the documented evasion limit). The regex scanner
+  in Arm 4 adds zero margin (+0.0%) and functions merely as a cheap tripwire.
 
 3. REALISTIC FALSE POSITIVE RATE (Clinical Homonyms):
   Clean Sentences with Words 'override', 'bypass', 'approve', 'cancel': 20
