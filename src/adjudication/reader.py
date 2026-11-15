@@ -29,7 +29,7 @@ room_cap_clause: clause id for the room rent limit or proportionate deduction, o
 room_modification_copay_pct: if the claim form's eligible room and claimed room differ and a room type modification clause gives a co-payment for that pair, the percentage; otherwise null
 room_mod_clause: clause id of that room type modification clause, or null
 copay_clause: clause id for co-payment, or null
-non_payable_clause: clause id or annexure that LISTS the expenses that are not payable (non-medical items, consumables), or null. A clause saying the insurer WILL cover such items (an add-on or "safeguard" benefit) is a benefit, not the list: never cite it here. A list placed after the last clause is often indexed under that clause's id; cite the id it appears under
+non_payable_clause: clause id or annexure that LISTS the expenses that are not payable (non-medical items, consumables), or null. Any clause saying the insurer will cover or pay for such items (an add-on benefit, rider, or optional cover, whatever it is called) is a coverage benefit and not the exclusion list: never cite it here. A list placed after the last clause is often indexed under that clause's id; cite the id it appears under
 sum_insured_clause: clause id defining sum insured or limiting payment to it, or null
 coverage_clause: clause id of the main in-patient hospitalization benefit, i.e. what is paid for a covered hospital stay (room, nursing, surgeon, medicines), or null. Not post-hospitalization, pre-hospitalization, day-care or add-on benefits
 reasoning: two sentences

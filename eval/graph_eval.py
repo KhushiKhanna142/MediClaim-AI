@@ -32,6 +32,7 @@ def main():
     ap.add_argument("--path", default="data/qdrant")
     ap.add_argument("--out-name", default=None, help="custom name for prediction output file")
     ap.add_argument("--extracted-file", default=None, help="custom path to extraction predictions json")
+    ap.add_argument("--review-rejects", action=argparse.BooleanOptionalAction, default=True, help="escalate all rejects to human review")
     a = ap.parse_args()
     dirs = sorted(p for p in Path(a.claims).glob("C*/") if (p / "ground_truth.json").exists())[: a.limit]
     out_name = a.out_name or f"graph_{a.input}"
@@ -40,7 +41,7 @@ def main():
     if not a.score_only:
         from src.adjudication.reader import PolicyReader
         from src.agents.verifier import Verifier
-        from src.graph.workflow import build_graph, run_claim
+        from src.graph.workflow import GraphConfig, build_graph, run_claim
         from src.llm import get_llm
         from src.rag.index import build_index
         from src.rag.reranker import get_reranker
@@ -49,13 +50,14 @@ def main():
         llm = get_llm()
         client, emb, children, parents = build_index(qdrant_path=a.path)
         retriever = HybridRetriever(client, emb, children, parents, get_reranker("cross-encoder/ms-marco-MiniLM-L-6-v2"))
-        graph = build_graph(reader=PolicyReader(retriever, llm), verifier=Verifier(None if a.no_critic else llm))
+        graph = build_graph(reader=PolicyReader(retriever, llm), verifier=Verifier(None if a.no_critic else llm),
+                            config=GraphConfig(review_all_rejects=a.review_rejects))
         ext_path = Path(a.extracted_file) if a.extracted_file else Path("eval/results/extraction_predictions.json")
         extracted = json.loads(ext_path.read_text()) if a.input == "extracted" else {}
         quota = 0
         for d in dirs:
             cid = d.name
-            sig = hashlib.sha1(json.dumps([extracted.get(cid), a.no_critic], sort_keys=True).encode()).hexdigest()[:12]
+            sig = hashlib.sha1(json.dumps([extracted.get(cid), a.no_critic, a.review_rejects], sort_keys=True).encode()).hexdigest()[:12]
             if cid in preds and not preds[cid].get("error") and preds[cid].get("_sig") == sig:
                 continue
             claim = json.loads((d / "claim.json").read_text())

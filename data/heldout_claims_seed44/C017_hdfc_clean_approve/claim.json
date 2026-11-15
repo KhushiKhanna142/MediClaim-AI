@@ -1,0 +1,77 @@
+{
+ "claim_id": "C017_hdfc_clean_approve",
+ "category": "clean_approve",
+ "policy_id": "hdfc_optima_secure_current",
+ "patient": {
+  "name": "Matthew Kaul",
+  "age": 38,
+  "sex": "M"
+ },
+ "schedule": {
+  "sum_insured": 1000000,
+  "policy_start": "2024-05-10",
+  "ped_months": 36,
+  "spec_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "dengue fever",
+  "kind": "illness",
+  "specified": false,
+  "is_ped": false
+ },
+ "admission_date": "2025-01-10",
+ "discharge_date": "2025-01-14",
+ "room_days": 4,
+ "room_claimed": "standard_single",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (standard single)",
+   "qty": 4,
+   "rate": 5600,
+   "amount": 22400
+  },
+  {
+   "category": "other",
+   "description": "Consultant visits and monitoring",
+   "qty": 1,
+   "rate": 12750,
+   "amount": 12750
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 11650,
+   "amount": 11650
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 4300,
+   "amount": 4300
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 11850,
+   "amount": 11850
+  }
+ ],
+ "stated_total": 62950,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

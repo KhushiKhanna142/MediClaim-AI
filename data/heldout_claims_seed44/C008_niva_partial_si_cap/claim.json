@@ -1,0 +1,98 @@
+{
+ "claim_id": "C008_niva_partial_si_cap",
+ "category": "partial_si_cap",
+ "policy_id": "niva_aspire",
+ "patient": {
+  "name": "Nathan Choudhury",
+  "age": 32,
+  "sex": "M"
+ },
+ "schedule": {
+  "sum_insured": 300000,
+  "policy_start": "2023-10-31",
+  "ped_months": 24,
+  "spec_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "total knee replacement",
+  "kind": "illness",
+  "specified": true,
+  "is_ped": false
+ },
+ "admission_date": "2026-03-31",
+ "discharge_date": "2026-04-05",
+ "room_days": 5,
+ "room_claimed": "standard_single",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (standard single)",
+   "qty": 5,
+   "rate": 5800,
+   "amount": 29000
+  },
+  {
+   "category": "surgeon",
+   "description": "Surgeon and anaesthetist fees",
+   "qty": 1,
+   "rate": 83100,
+   "amount": 83100
+  },
+  {
+   "category": "ot",
+   "description": "Operation theatre charges",
+   "qty": 1,
+   "rate": 29200,
+   "amount": 29200
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 11750,
+   "amount": 11750
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 16600,
+   "amount": 16600
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 18650,
+   "amount": 18650
+  },
+  {
+   "category": "implant",
+   "description": "Implant / prosthesis",
+   "qty": 1,
+   "rate": 220150,
+   "amount": 220150
+  },
+  {
+   "category": "consumable",
+   "description": "Disposable consumables and admission kit",
+   "qty": 1,
+   "rate": 4700,
+   "amount": 4700
+  }
+ ],
+ "stated_total": 413150,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

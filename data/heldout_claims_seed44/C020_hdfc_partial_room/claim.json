@@ -1,0 +1,84 @@
+{
+ "claim_id": "C020_hdfc_partial_room",
+ "category": "partial_room",
+ "policy_id": "hdfc_optima_secure_current",
+ "patient": {
+  "name": "Udant Atwal",
+  "age": 52,
+  "sex": "F"
+ },
+ "schedule": {
+  "sum_insured": 500000,
+  "policy_start": "2024-12-15",
+  "ped_months": 36,
+  "spec_months": 24,
+  "room_limit_per_day": 5000,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "pneumonia",
+  "kind": "illness",
+  "specified": false,
+  "is_ped": false
+ },
+ "admission_date": "2026-08-15",
+ "discharge_date": "2026-08-21",
+ "room_days": 6,
+ "room_claimed": "private",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (private)",
+   "qty": 6,
+   "rate": 8200,
+   "amount": 49200
+  },
+  {
+   "category": "other",
+   "description": "Consultant visits and monitoring",
+   "qty": 1,
+   "rate": 18100,
+   "amount": 18100
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 9150,
+   "amount": 9150
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 8950,
+   "amount": 8950
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 12550,
+   "amount": 12550
+  },
+  {
+   "category": "consumable",
+   "description": "Disposable consumables and admission kit",
+   "qty": 1,
+   "rate": 1000,
+   "amount": 1000
+  }
+ ],
+ "stated_total": 98950,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

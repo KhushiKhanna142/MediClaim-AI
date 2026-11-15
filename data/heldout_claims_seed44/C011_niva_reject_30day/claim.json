@@ -1,0 +1,84 @@
+{
+ "claim_id": "C011_niva_reject_30day",
+ "category": "reject_30day",
+ "policy_id": "niva_aspire",
+ "patient": {
+  "name": "Hemangini Raju",
+  "age": 48,
+  "sex": "M"
+ },
+ "schedule": {
+  "sum_insured": 500000,
+  "policy_start": "2025-11-03",
+  "ped_months": 36,
+  "spec_months": 12,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "dengue fever",
+  "kind": "illness",
+  "specified": false,
+  "is_ped": false
+ },
+ "admission_date": "2025-11-12",
+ "discharge_date": "2025-11-17",
+ "room_days": 5,
+ "room_claimed": "standard_single",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (standard single)",
+   "qty": 5,
+   "rate": 5800,
+   "amount": 29000
+  },
+  {
+   "category": "other",
+   "description": "Consultant visits and monitoring",
+   "qty": 1,
+   "rate": 14300,
+   "amount": 14300
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 10050,
+   "amount": 10050
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 6750,
+   "amount": 6750
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 11200,
+   "amount": 11200
+  },
+  {
+   "category": "consumable",
+   "description": "Disposable consumables and admission kit",
+   "qty": 1,
+   "rate": 1500,
+   "amount": 1500
+  }
+ ],
+ "stated_total": 72800,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

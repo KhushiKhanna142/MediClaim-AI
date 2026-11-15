@@ -1,0 +1,84 @@
+{
+ "claim_id": "C015_niva_total_mismatch",
+ "category": "total_mismatch",
+ "policy_id": "niva_aspire",
+ "patient": {
+  "name": "Rajata Barad",
+  "age": 68,
+  "sex": "F"
+ },
+ "schedule": {
+  "sum_insured": 300000,
+  "policy_start": "2025-03-11",
+  "ped_months": 24,
+  "spec_months": 12,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "pneumonia",
+  "kind": "illness",
+  "specified": false,
+  "is_ped": false
+ },
+ "admission_date": "2026-03-11",
+ "discharge_date": "2026-03-17",
+ "room_days": 6,
+ "room_claimed": "standard_single",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (standard single)",
+   "qty": 6,
+   "rate": 5900,
+   "amount": 35400
+  },
+  {
+   "category": "other",
+   "description": "Consultant visits and monitoring",
+   "qty": 1,
+   "rate": 13800,
+   "amount": 13800
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 6050,
+   "amount": 6050
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 8200,
+   "amount": 8200
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 13600,
+   "amount": 13600
+  },
+  {
+   "category": "consumable",
+   "description": "Disposable consumables and admission kit",
+   "qty": 1,
+   "rate": 1100,
+   "amount": 1100
+  }
+ ],
+ "stated_total": 75950,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

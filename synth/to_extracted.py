@@ -5,7 +5,15 @@ extraction errors from reasoning errors (oracle extraction vs real extraction).
 """
 from __future__ import annotations
 
+from datetime import date, timedelta
+
 from src.extraction.schemas import ExtractedClaim
+
+
+def _pdate(v) -> date:
+    if isinstance(v, date):
+        return v
+    return date.fromisoformat(str(v))
 
 
 def oracle_extraction(claim: dict) -> ExtractedClaim:
@@ -13,7 +21,12 @@ def oracle_extraction(claim: dict) -> ExtractedClaim:
     history = None
     onset = None
     if c["is_ped"]:
-        history = f"Known case of {c['name']}"
+        onset = _pdate(s["policy_start"]) - timedelta(days=548)
+        history = f"Known case of {c['name']}, diagnosed on {onset.strftime('%d/%m/%Y')}, on regular treatment."
+    elif c.get("kind") == "accident":
+        history = "No significant past history. Presented following a road traffic accident."
+    else:
+        history = "No significant past medical or surgical history."
     return ExtractedClaim.model_validate({
         "patient_name": claim["patient"]["name"], "age": claim["patient"]["age"], "sex": claim["patient"]["sex"],
         "diagnosis": c["name"], "cause": "accident" if c["kind"] == "accident" else "illness",

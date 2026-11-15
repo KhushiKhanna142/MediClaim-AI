@@ -22,6 +22,41 @@ from synth.rules import RULESETS
 from synth.to_extracted import oracle_extraction, oracle_findings
 
 
+PARAPHRASED_PED_HISTORIES = [
+    "Patient has been diabetic since 2019, on regular insulin therapy.",
+    "h/o chronic kidney disease, on regular medications.",
+    "Long-standing hypertension and CAD for 5 years.",
+    "Under treatment for lumbar disc herniation since Jan 2021.",
+    "Suffering from osteoarthritis of bilateral knees for 4 years.",
+    "Past history of bronchial asthma on inhalers.",
+    "Patient known to have gallstones since 2020.",
+    "Known diabetic and hypertensive, on oral hypoglycemics for 3 years.",
+    "History of recurrent renal calculi, previously treated in 2021.",
+    "Under medication for rheumatoid arthritis for 36 months.",
+    "h/o coronary artery disease with prior stent in 2022.",
+    "Suffering from chronic obstructive pulmonary disease since 2018.",
+    "Patient has had benign prostatic hyperplasia for 2 years.",
+    "Past history of varicose veins of lower limbs, symptomatic for 3 years.",
+    "Known to have chronic liver disease, followed up since 2021.",
+    "h/o glaucoma in both eyes, on eye drops for 4 years.",
+    "Under regular treatment for ankylosing spondylitis since 2020.",
+    "Suffering from chronic sinusitis and nasal polyps for 2 years.",
+    "Past medical history of inflammatory bowel disease since 2019.",
+    "Patient on regular medication for chronic pancreatitis for 3 years.",
+]
+
+UNRELATED_CLEAN_HISTORIES = [
+    "h/o mild hypertension, well controlled on amlodipine.",
+    "Childhood history of asthma, no active episodes in 15 years.",
+    "Past history of treated typhoid fever 5 years ago, recovered completely.",
+    "Known hypertensive for 2 years, well managed on monotherapy.",
+    "h/o seasonal allergic rhinitis on PRN antihistamines.",
+    "Past history of appendectomy 10 years ago, uneventful recovery.",
+    "h/o treated malaria in 2019, fully resolved.",
+    "Mild dyslipidemia managed with diet and lifestyle modifications.",
+    "Past history of uncomplicated dengue fever in 2021.",
+    "History of minor wrist sprain 3 years ago, healed normally.",
+]
 def load_dev_claims():
     claims = []
     for d in sorted(Path("data/synthetic_claims").glob("C*/")):
@@ -72,7 +107,6 @@ def run_injection_suite(v: Verifier):
             f_injected.is_pre_existing = False
             f_injected.ped_clause = None
             dec = decide(c, f_injected)
-            # if policy was active shorter than PED waiting period, decide() now approves/partials instead of rejecting
             res = v.verify(c, f_injected.model_dump(), dec, item["retrieved_ids"])
             if not res.passed:
                 ped_caught += 1
@@ -81,7 +115,48 @@ def run_injection_suite(v: Verifier):
         "total": ped_total,
         "caught": ped_caught,
         "rate": ped_caught / ped_total if ped_total else 0.0,
-        "label": "Catch Rate on Missed PED",
+        "label": "Catch Rate: Synthetic PED (n=4)",
+    }
+
+    # 2b. Paraphrased PED: 20 clinical histories with NO trigger words and NO onset date
+    para_caught, para_total = 0, len(PARAPHRASED_PED_HISTORIES)
+    ped_claim_item = next(item for item in claims if item["raw"]["condition"]["is_ped"])
+    for para in PARAPHRASED_PED_HISTORIES:
+        c_copy = copy.deepcopy(ped_claim_item["claim"])
+        c_copy.known_history = para
+        c_copy.history_onset_date = None  # test text phrasing alone, without explicit onset date
+        f_injected = copy.deepcopy(ped_claim_item["findings"])
+        f_injected.is_pre_existing = False
+        f_injected.ped_clause = None
+        dec = decide(c_copy, f_injected)
+        res = v.verify(c_copy, f_injected.model_dump(), dec, ped_claim_item["retrieved_ids"])
+        if not res.passed:
+            para_caught += 1
+    results["paraphrased_ped"] = {
+        "total": para_total,
+        "caught": para_caught,
+        "rate": para_caught / para_total if para_total else 0.0,
+        "label": "Catch Rate: Paraphrased PED (n=20)",
+    }
+
+    # 1b. Clean Claims with Unrelated History: testing False-Positive Rate on unrelated conditions
+    unrel_escalated, unrel_total = 0, len(UNRELATED_CLEAN_HISTORIES)
+    clean_items = [item for item in claims if item["raw"]["category"] in ("clean_approve", "partial_room")]
+    for i, unrel_hist in enumerate(UNRELATED_CLEAN_HISTORIES):
+        target = clean_items[i % len(clean_items)]
+        c_copy = copy.deepcopy(target["claim"])
+        c_copy.known_history = unrel_hist
+        c_copy.history_onset_date = None
+        f = copy.deepcopy(target["findings"])
+        dec = decide(c_copy, f)
+        res = v.verify(c_copy, f.model_dump(), dec, target["retrieved_ids"])
+        if not res.passed:
+            unrel_escalated += 1
+    results["unrelated_clean"] = {
+        "total": unrel_total,
+        "caught": unrel_escalated,  # escalated = false positive
+        "rate": unrel_escalated / unrel_total if unrel_total else 0.0,
+        "label": "False Positive Rate: Unrelated History (n=10)",
     }
 
     # 3. Missed Room Cap: claims with room rent breach where proportionate deduction was omitted
@@ -167,13 +242,15 @@ def run_injection_suite(v: Verifier):
 
 def print_results(title: str, results: dict):
     print(f"\n=== {title} ===")
-    print(f"{'Category':36} {'Caught/Total':14} {'Rate':8}")
-    print("-" * 62)
+    print(f"{'Category':45} {'Result/Total':14} {'Rate':8}")
+    print("-" * 70)
     for cat, data in results.items():
         if cat == "clean_claims":
-            print(f"{data['label']:36} {data['total'] - data['caught']}/{data['total']:<12} {data['rate']*100:6.1f}%")
+            print(f"{data['label']:45} {data['total'] - data['caught']}/{data['total']:<12} {data['rate']*100:6.1f}%")
+        elif cat == "unrelated_clean":
+            print(f"{data['label']:45} {data['caught']}/{data['total']:<12} {data['rate']*100:6.1f}%")
         else:
-            print(f"{data['label']:36} {data['caught']}/{data['total']:<12} {data['rate']*100:6.1f}%")
+            print(f"{data['label']:45} {data['caught']}/{data['total']:<12} {data['rate']*100:6.1f}%")
 
 
 def main():

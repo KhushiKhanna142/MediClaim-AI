@@ -1,0 +1,91 @@
+{
+ "claim_id": "C026_hdfc_reject_30day",
+ "category": "reject_30day",
+ "policy_id": "hdfc_optima_secure_current",
+ "patient": {
+  "name": "Abdul Memon",
+  "age": 68,
+  "sex": "M"
+ },
+ "schedule": {
+  "sum_insured": 500000,
+  "policy_start": "2026-06-01",
+  "ped_months": 36,
+  "spec_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "acute appendicitis, appendectomy",
+  "kind": "illness",
+  "specified": false,
+  "is_ped": false
+ },
+ "admission_date": "2026-06-17",
+ "discharge_date": "2026-06-21",
+ "room_days": 4,
+ "room_claimed": "standard_single",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (standard single)",
+   "qty": 4,
+   "rate": 4200,
+   "amount": 16800
+  },
+  {
+   "category": "surgeon",
+   "description": "Surgeon and anaesthetist fees",
+   "qty": 1,
+   "rate": 30900,
+   "amount": 30900
+  },
+  {
+   "category": "ot",
+   "description": "Operation theatre charges",
+   "qty": 1,
+   "rate": 12700,
+   "amount": 12700
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 8600,
+   "amount": 8600
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 5400,
+   "amount": 5400
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 8150,
+   "amount": 8150
+  },
+  {
+   "category": "consumable",
+   "description": "Disposable consumables and admission kit",
+   "qty": 1,
+   "rate": 2600,
+   "amount": 2600
+  }
+ ],
+ "stated_total": 85150,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

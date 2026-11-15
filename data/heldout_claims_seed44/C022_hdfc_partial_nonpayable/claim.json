@@ -1,0 +1,84 @@
+{
+ "claim_id": "C022_hdfc_partial_nonpayable",
+ "category": "partial_nonpayable",
+ "policy_id": "hdfc_optima_secure_current",
+ "patient": {
+  "name": "Isaac Patel",
+  "age": 30,
+  "sex": "M"
+ },
+ "schedule": {
+  "sum_insured": 300000,
+  "policy_start": "2025-09-05",
+  "ped_months": 36,
+  "spec_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "pneumonia",
+  "kind": "illness",
+  "specified": false,
+  "is_ped": false
+ },
+ "admission_date": "2026-04-05",
+ "discharge_date": "2026-04-09",
+ "room_days": 4,
+ "room_claimed": "standard_single",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (standard single)",
+   "qty": 4,
+   "rate": 4800,
+   "amount": 19200
+  },
+  {
+   "category": "other",
+   "description": "Consultant visits and monitoring",
+   "qty": 1,
+   "rate": 11150,
+   "amount": 11150
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 10550,
+   "amount": 10550
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 6300,
+   "amount": 6300
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 14000,
+   "amount": 14000
+  },
+  {
+   "category": "consumable",
+   "description": "Disposable consumables and admission kit",
+   "qty": 1,
+   "rate": 2000,
+   "amount": 2000
+  }
+ ],
+ "stated_total": 63200,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

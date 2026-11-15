@@ -1,0 +1,98 @@
+{
+ "claim_id": "C023_hdfc_partial_si_cap",
+ "category": "partial_si_cap",
+ "policy_id": "hdfc_optima_secure_current",
+ "patient": {
+  "name": "Isaiah Kapur",
+  "age": 47,
+  "sex": "F"
+ },
+ "schedule": {
+  "sum_insured": 300000,
+  "policy_start": "2023-02-25",
+  "ped_months": 36,
+  "spec_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "total knee replacement",
+  "kind": "illness",
+  "specified": true,
+  "is_ped": false
+ },
+ "admission_date": "2026-04-25",
+ "discharge_date": "2026-05-01",
+ "room_days": 6,
+ "room_claimed": "standard_single",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (standard single)",
+   "qty": 6,
+   "rate": 5100,
+   "amount": 30600
+  },
+  {
+   "category": "surgeon",
+   "description": "Surgeon and anaesthetist fees",
+   "qty": 1,
+   "rate": 77650,
+   "amount": 77650
+  },
+  {
+   "category": "ot",
+   "description": "Operation theatre charges",
+   "qty": 1,
+   "rate": 27400,
+   "amount": 27400
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 8300,
+   "amount": 8300
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 16100,
+   "amount": 16100
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 25700,
+   "amount": 25700
+  },
+  {
+   "category": "implant",
+   "description": "Implant / prosthesis",
+   "qty": 1,
+   "rate": 215800,
+   "amount": 215800
+  },
+  {
+   "category": "consumable",
+   "description": "Disposable consumables and admission kit",
+   "qty": 1,
+   "rate": 5900,
+   "amount": 5900
+  }
+ ],
+ "stated_total": 407450,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

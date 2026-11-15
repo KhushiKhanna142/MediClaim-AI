@@ -1,0 +1,77 @@
+{
+ "claim_id": "C016_hdfc_clean_approve",
+ "category": "clean_approve",
+ "policy_id": "hdfc_optima_secure_current",
+ "patient": {
+  "name": "Kala Sinha",
+  "age": 64,
+  "sex": "M"
+ },
+ "schedule": {
+  "sum_insured": 1000000,
+  "policy_start": "2024-06-29",
+  "ped_months": 36,
+  "spec_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "dengue fever",
+  "kind": "illness",
+  "specified": false,
+  "is_ped": false
+ },
+ "admission_date": "2025-11-29",
+ "discharge_date": "2025-12-04",
+ "room_days": 5,
+ "room_claimed": "standard_single",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (standard single)",
+   "qty": 5,
+   "rate": 5900,
+   "amount": 29500
+  },
+  {
+   "category": "other",
+   "description": "Consultant visits and monitoring",
+   "qty": 1,
+   "rate": 13750,
+   "amount": 13750
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 6300,
+   "amount": 6300
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 4650,
+   "amount": 4650
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 10200,
+   "amount": 10200
+  }
+ ],
+ "stated_total": 64400,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}
