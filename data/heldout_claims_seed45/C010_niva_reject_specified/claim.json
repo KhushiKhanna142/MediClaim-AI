@@ -1,0 +1,91 @@
+{
+ "claim_id": "C010_niva_reject_specified",
+ "category": "reject_specified",
+ "policy_id": "niva_aspire",
+ "patient": {
+  "name": "Ekani Krishnamurthy",
+  "age": 52,
+  "sex": "M"
+ },
+ "schedule": {
+  "sum_insured": 1000000,
+  "policy_start": "2024-12-20",
+  "ped_months": 12,
+  "spec_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "laparoscopic cholecystectomy (gallstones)",
+  "kind": "illness",
+  "specified": true,
+  "is_ped": false
+ },
+ "admission_date": "2026-04-20",
+ "discharge_date": "2026-04-22",
+ "room_days": 2,
+ "room_claimed": "standard_single",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (standard single)",
+   "qty": 2,
+   "rate": 4800,
+   "amount": 9600
+  },
+  {
+   "category": "surgeon",
+   "description": "Surgeon and anaesthetist fees",
+   "qty": 1,
+   "rate": 51650,
+   "amount": 51650
+  },
+  {
+   "category": "ot",
+   "description": "Operation theatre charges",
+   "qty": 1,
+   "rate": 15600,
+   "amount": 15600
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 6450,
+   "amount": 6450
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 5100,
+   "amount": 5100
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 6500,
+   "amount": 6500
+  },
+  {
+   "category": "consumable",
+   "description": "Disposable consumables and admission kit",
+   "qty": 1,
+   "rate": 3100,
+   "amount": 3100
+  }
+ ],
+ "stated_total": 98000,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

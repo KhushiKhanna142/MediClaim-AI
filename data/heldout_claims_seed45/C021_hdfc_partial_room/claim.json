@@ -1,0 +1,84 @@
+{
+ "claim_id": "C021_hdfc_partial_room",
+ "category": "partial_room",
+ "policy_id": "hdfc_optima_secure_current",
+ "patient": {
+  "name": "Bhavya Nadkarni",
+  "age": 51,
+  "sex": "F"
+ },
+ "schedule": {
+  "sum_insured": 500000,
+  "policy_start": "2024-02-12",
+  "ped_months": 36,
+  "spec_months": 24,
+  "room_limit_per_day": 5000,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "pneumonia",
+  "kind": "illness",
+  "specified": false,
+  "is_ped": false
+ },
+ "admission_date": "2025-07-12",
+ "discharge_date": "2025-07-17",
+ "room_days": 5,
+ "room_claimed": "private",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (private)",
+   "qty": 5,
+   "rate": 7300,
+   "amount": 36500
+  },
+  {
+   "category": "other",
+   "description": "Consultant visits and monitoring",
+   "qty": 1,
+   "rate": 15600,
+   "amount": 15600
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 11350,
+   "amount": 11350
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 8150,
+   "amount": 8150
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 14100,
+   "amount": 14100
+  },
+  {
+   "category": "consumable",
+   "description": "Disposable consumables and admission kit",
+   "qty": 1,
+   "rate": 1800,
+   "amount": 1800
+  }
+ ],
+ "stated_total": 87500,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

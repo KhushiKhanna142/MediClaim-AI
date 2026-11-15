@@ -1,0 +1,84 @@
+{
+ "claim_id": "C015_niva_total_mismatch",
+ "category": "total_mismatch",
+ "policy_id": "niva_aspire",
+ "patient": {
+  "name": "Shaurya Panchal",
+  "age": 30,
+  "sex": "F"
+ },
+ "schedule": {
+  "sum_insured": 500000,
+  "policy_start": "2024-11-25",
+  "ped_months": 12,
+  "spec_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "pneumonia",
+  "kind": "illness",
+  "specified": false,
+  "is_ped": false
+ },
+ "admission_date": "2025-05-25",
+ "discharge_date": "2025-05-29",
+ "room_days": 4,
+ "room_claimed": "standard_single",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (standard single)",
+   "qty": 4,
+   "rate": 5400,
+   "amount": 21600
+  },
+  {
+   "category": "other",
+   "description": "Consultant visits and monitoring",
+   "qty": 1,
+   "rate": 13550,
+   "amount": 13550
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 8350,
+   "amount": 8350
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 8500,
+   "amount": 8500
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 17500,
+   "amount": 17500
+  },
+  {
+   "category": "consumable",
+   "description": "Disposable consumables and admission kit",
+   "qty": 1,
+   "rate": 950,
+   "amount": 950
+  }
+ ],
+ "stated_total": 74950,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

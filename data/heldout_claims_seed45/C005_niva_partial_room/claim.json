@@ -1,0 +1,98 @@
+{
+ "claim_id": "C005_niva_partial_room",
+ "category": "partial_room",
+ "policy_id": "niva_aspire",
+ "patient": {
+  "name": "Jacob Mukhopadhyay",
+  "age": 51,
+  "sex": "M"
+ },
+ "schedule": {
+  "sum_insured": 1000000,
+  "policy_start": "2022-02-05",
+  "ped_months": 12,
+  "spec_months": 24,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": true,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "cataract surgery (phacoemulsification)",
+  "kind": "illness",
+  "specified": true,
+  "is_ped": false
+ },
+ "admission_date": "2025-03-05",
+ "discharge_date": "2025-03-06",
+ "room_days": 1,
+ "room_claimed": "deluxe",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (deluxe)",
+   "qty": 1,
+   "rate": 9300,
+   "amount": 9300
+  },
+  {
+   "category": "surgeon",
+   "description": "Surgeon and anaesthetist fees",
+   "qty": 1,
+   "rate": 20000,
+   "amount": 20000
+  },
+  {
+   "category": "ot",
+   "description": "Operation theatre charges",
+   "qty": 1,
+   "rate": 8050,
+   "amount": 8050
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 2550,
+   "amount": 2550
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 1400,
+   "amount": 1400
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 3750,
+   "amount": 3750
+  },
+  {
+   "category": "implant",
+   "description": "Implant / prosthesis",
+   "qty": 1,
+   "rate": 9050,
+   "amount": 9050
+  },
+  {
+   "category": "consumable",
+   "description": "Disposable consumables and admission kit",
+   "qty": 1,
+   "rate": 1400,
+   "amount": 1400
+  }
+ ],
+ "stated_total": 55500,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

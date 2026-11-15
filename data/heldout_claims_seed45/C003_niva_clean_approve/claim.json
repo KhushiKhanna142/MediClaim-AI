@@ -1,0 +1,77 @@
+{
+ "claim_id": "C003_niva_clean_approve",
+ "category": "clean_approve",
+ "policy_id": "niva_aspire",
+ "patient": {
+  "name": "Anthony Bora",
+  "age": 67,
+  "sex": "M"
+ },
+ "schedule": {
+  "sum_insured": 1000000,
+  "policy_start": "2023-08-03",
+  "ped_months": 12,
+  "spec_months": 12,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "dengue fever",
+  "kind": "illness",
+  "specified": false,
+  "is_ped": false
+ },
+ "admission_date": "2025-12-03",
+ "discharge_date": "2025-12-08",
+ "room_days": 5,
+ "room_claimed": "standard_single",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (standard single)",
+   "qty": 5,
+   "rate": 5400,
+   "amount": 27000
+  },
+  {
+   "category": "other",
+   "description": "Consultant visits and monitoring",
+   "qty": 1,
+   "rate": 17350,
+   "amount": 17350
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 9200,
+   "amount": 9200
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 6150,
+   "amount": 6150
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 14300,
+   "amount": 14300
+  }
+ ],
+ "stated_total": 74000,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

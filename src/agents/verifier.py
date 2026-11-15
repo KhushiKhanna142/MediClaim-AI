@@ -155,6 +155,17 @@ class Verifier:
                     issues.append(f"history states '{hist[:80]}' but findings marked is_pre_existing=False")
                 else:
                     concerns.append("history may describe a pre-existing condition that was not flagged")
+
+        # 6. room-type modification guard: if opted, rooms differ, but no modification copay applied
+        if status in ("approve", "partial") and c.room_type_modification:
+            e_room = (c.eligible_room or "").strip().lower()
+            c_room = (c.room_category_claimed or "").strip().lower()
+            if e_room and c_room and e_room != c_room:
+                if not findings.get("room_modification_copay_pct"):
+                    issues.append(
+                        f"room-type modification opted and eligible room '{c.eligible_room}' differs from "
+                        f"claimed '{c.room_category_claimed}', but no modification co-payment was applied"
+                    )
         return issues, concerns
 
     # ---------------------------------------------------------------- LLM critic

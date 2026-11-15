@@ -250,6 +250,14 @@ def test_deduction_without_clause_is_a_code_failure():
     assert any("no supporting clause" in i for i in r.issues) and r.retryable
 
 
+def test_verifier_flags_omitted_room_modification_copay():
+    c = vclaim(room_type_modification=True, eligible_room="shared", room_category_claimed="single")
+    r = Verifier().verify(c, F().model_dump(), approve_decision(), ["4.1.2"])
+    assert not r.passed
+    assert any("room-type modification opted" in i for i in r.issues)
+    assert r.retryable
+
+
 def test_critic_receives_system_reasons_but_no_identifiers():
     seen = {}
 

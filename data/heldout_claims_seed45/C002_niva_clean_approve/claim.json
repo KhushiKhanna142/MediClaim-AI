@@ -1,0 +1,77 @@
+{
+ "claim_id": "C002_niva_clean_approve",
+ "category": "clean_approve",
+ "policy_id": "niva_aspire",
+ "patient": {
+  "name": "Finn Mitter",
+  "age": 48,
+  "sex": "F"
+ },
+ "schedule": {
+  "sum_insured": 1000000,
+  "policy_start": "2025-03-05",
+  "ped_months": 24,
+  "spec_months": 12,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": false,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "pneumonia",
+  "kind": "illness",
+  "specified": false,
+  "is_ped": false
+ },
+ "admission_date": "2025-08-05",
+ "discharge_date": "2025-08-11",
+ "room_days": 6,
+ "room_claimed": "standard_single",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (standard single)",
+   "qty": 6,
+   "rate": 4800,
+   "amount": 28800
+  },
+  {
+   "category": "other",
+   "description": "Consultant visits and monitoring",
+   "qty": 1,
+   "rate": 16700,
+   "amount": 16700
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 11550,
+   "amount": 11550
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 5700,
+   "amount": 5700
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 13000,
+   "amount": 13000
+  }
+ ],
+ "stated_total": 75750,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}

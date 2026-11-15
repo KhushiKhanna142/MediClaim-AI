@@ -1,0 +1,91 @@
+{
+ "claim_id": "C006_niva_partial_room",
+ "category": "partial_room",
+ "policy_id": "niva_aspire",
+ "patient": {
+  "name": "Ekalinga Deshmukh",
+  "age": 32,
+  "sex": "F"
+ },
+ "schedule": {
+  "sum_insured": 500000,
+  "policy_start": "2025-02-04",
+  "ped_months": 24,
+  "spec_months": 12,
+  "room_limit_per_day": null,
+  "copay_pct": 0,
+  "prior_coverage_months": 0,
+  "room_type_modification": true,
+  "eligible_room": "standard_single"
+ },
+ "condition": {
+  "name": "acute appendicitis, appendectomy",
+  "kind": "illness",
+  "specified": false,
+  "is_ped": false
+ },
+ "admission_date": "2025-12-04",
+ "discharge_date": "2025-12-07",
+ "room_days": 3,
+ "room_claimed": "deluxe",
+ "items": [
+  {
+   "category": "room",
+   "description": "Room charges (deluxe)",
+   "qty": 3,
+   "rate": 10000,
+   "amount": 30000
+  },
+  {
+   "category": "surgeon",
+   "description": "Surgeon and anaesthetist fees",
+   "qty": 1,
+   "rate": 32950,
+   "amount": 32950
+  },
+  {
+   "category": "ot",
+   "description": "Operation theatre charges",
+   "qty": 1,
+   "rate": 12200,
+   "amount": 12200
+  },
+  {
+   "category": "investigation",
+   "description": "Laboratory and radiology investigations",
+   "qty": 1,
+   "rate": 8900,
+   "amount": 8900
+  },
+  {
+   "category": "nursing",
+   "description": "Nursing charges",
+   "qty": 1,
+   "rate": 7400,
+   "amount": 7400
+  },
+  {
+   "category": "medicine",
+   "description": "Pharmacy and medicines",
+   "qty": 1,
+   "rate": 8550,
+   "amount": 8550
+  },
+  {
+   "category": "consumable",
+   "description": "Disposable consumables and admission kit",
+   "qty": 1,
+   "rate": 2900,
+   "amount": 2900
+  }
+ ],
+ "stated_total": 102900,
+ "docs_present": [
+  "claim_form",
+  "hospital_bill",
+  "discharge_summary",
+  "id_proof",
+  "lab_report",
+  "prescription"
+ ]
+}
