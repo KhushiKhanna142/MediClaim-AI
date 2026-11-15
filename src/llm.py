@@ -11,7 +11,7 @@ import os
 import time
 from pathlib import Path
 
-DEFAULT_MODELS = {"anthropic": "claude-haiku-4-5", "openai": "gpt-4o-mini", "gemini": "gemini-3.8-flash"}
+DEFAULT_MODELS = {"anthropic": "claude-haiku-4-5", "openai": "gpt-4o-mini", "gemini": "gemini-3.1-flash-lite"}
 
 
 def _record_completion(model: str, system: str, user: str, output: str, start_time: float) -> None:
@@ -30,6 +30,7 @@ def _record_completion(model: str, system: str, user: str, output: str, start_ti
 
 class AnthropicLLM:
     def __init__(self, model: str | None = None):
+        _load_env()
         import anthropic
         self.client = anthropic.Anthropic()
         self.model = model or os.getenv("CLAIM_LLM_MODEL") or DEFAULT_MODELS["anthropic"]
@@ -48,6 +49,7 @@ class AnthropicLLM:
 
 class OpenAILLM:
     def __init__(self, model: str | None = None):
+        _load_env()
         from openai import OpenAI
         self.client = OpenAI()
         self.model = model or os.getenv("CLAIM_LLM_MODEL") or DEFAULT_MODELS["openai"]
@@ -69,6 +71,7 @@ class GeminiLLM:
     """Google AI Studio (Gemini API). Retries with a wait on rate-limit errors, common on the free tier."""
 
     def __init__(self, model: str | None = None, client=None, retries: int = 4, wait_s: float = 15.0):
+        _load_env()
         if client is None:
             from google import genai
             key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
@@ -101,7 +104,9 @@ class GeminiLLM:
                 transient = any(t in msg for t in ("429", "RESOURCE_EXHAUSTED", "503", "UNAVAILABLE"))
                 if not transient or attempt == self.retries:
                     raise
-                time.sleep(self.wait_s * (attempt + 1))
+                wait_time = self.wait_s * (attempt + 1)
+                print(f"[GeminiLLM] Rate limit or transient error ({msg[:60]}...). Sleeping {wait_time:.1f}s (attempt {attempt+1}/{self.retries})...", flush=True)
+                time.sleep(wait_time)
         return ""
 
 

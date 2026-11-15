@@ -73,7 +73,8 @@ def main():
                 st = res["state"]
                 preds[cid] = {**st["decision"], "_sig": sig, "escalated": res["status"] == "awaiting_human",
                               "escalation_reasons": st.get("escalation_reasons", []), "verifier": st.get("verifier"),
-                              "read_attempts": (st.get("retries") or {}).get("read_policy", 0)}
+                              "read_attempts": (st.get("retries") or {}).get("read_policy", 0),
+                              "telemetry": st.get("telemetry")}
                 quota = 0
                 p = preds[cid]
                 print(f"  {cid:36} -> {p['decision']:13}" + ("  ESCALATED " + ",".join(p["escalation_reasons"]) if p["escalated"] else ""))

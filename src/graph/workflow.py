@@ -327,9 +327,9 @@ def run_claim(graph, inputs: dict, thread_id: str) -> dict:
     with trace_claim(thread_id, metadata={"policy_id": inputs.get("policy_id")}) as trace:
         graph.invoke({"claim_id": thread_id, **inputs}, config)
         res = _result(graph, config)
-        if "state" in res and res["state"]:
-            res["state"]["telemetry"] = trace.to_dict()
-        return res
+    if trace is not None and "state" in res and res["state"]:
+        res["state"]["telemetry"] = trace.to_dict()
+    return res
 
 
 def resume_claim(graph, thread_id: str, action: dict) -> dict:

@@ -45,6 +45,8 @@ RUN python -c "from sentence_transformers import SentenceTransformer, CrossEncod
 COPY src/ ./src/
 COPY data/processed/ ./data/processed/
 COPY data/qdrant/ ./data/qdrant/
+COPY data/synthetic_claims/ ./data/synthetic_claims/
+COPY eval/results/ ./eval/results/
 
 # Copy built frontend assets from Stage 1
 COPY --from=frontend-builder /build/dist ./frontend/dist
@@ -58,3 +60,4 @@ ENV PYTHONUNBUFFERED=1 \
 EXPOSE 8000
 
 CMD ["uvicorn", "src.api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+

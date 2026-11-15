@@ -49,8 +49,13 @@ htmlcov/
 *.lock
 debug_out.txt
 
-# Frontend & Runtime Data
-frontend/node_modules/
+# Database & Runtime Data
+*.db
+*.sqlite
+*.sqlite3
+data/checkpoints.sqlite
+data/mediclaim.db
 data/mediclaim_ui.db
 data/uploads/
+frontend/node_modules/
 

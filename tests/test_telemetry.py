@@ -107,3 +107,87 @@ def test_graph_run_claim_records_telemetry():
     assert telemetry["claim_id"] == "test-trace-thread"
     assert "duration_s" in telemetry
     assert "llm_calls" in telemetry
+
+
+def test_tracing_resilience_with_invalid_langfuse_keys(monkeypatch):
+    """Telemetry failure (e.g. invalid Langfuse API keys) must NEVER fail a claim."""
+    clear_trace_registry()
+    monkeypatch.setenv("LANGFUSE_PUBLIC_KEY", "pk-lf-totally-invalid-key")
+    monkeypatch.setenv("LANGFUSE_SECRET_KEY", "sk-lf-totally-invalid-key")
+    monkeypatch.setenv("LANGFUSE_HOST", "https://cloud.langfuse.com")
+
+    # Reset cached client
+    import src.telemetry.tracing as tr
+    tr._LANGFUSE_CLIENT = None
+    tr._LANGFUSE_INITIALIZED = False
+
+    from src.graph.workflow import build_graph, run_claim
+    from src.adjudication.findings import Findings
+    from tests.test_graph import claim
+
+    class MockReader:
+        def read(self, claim, policy_id, refine=None, previous=None):
+            return Findings(initial_waiting_days=30, is_specified=False, is_pre_existing=False), {
+                "retrieved": {"coverage": ["4.1"]},
+                "dropped_citations": [],
+            }
+
+    class MockVerifier:
+        def verify(self, claim, findings, decision, retrieved_clause_ids):
+            class Res:
+                passed = True
+                confidence = 1.0
+                issues = []
+                concerns = []
+                def to_dict(self):
+                    return {"passed": True, "confidence": 1.0, "issues": [], "concerns": []}
+            return Res()
+
+    graph = build_graph(reader=MockReader(), verifier=MockVerifier())
+    test_claim = claim()
+
+    # Claim must execute completely and return final decision despite invalid Langfuse keys
+    res = run_claim(graph, {"policy_id": "test_pol", "extracted": test_claim}, "test-invalid-keys")
+    assert res["status"] in ("completed", "awaiting_human")
+    assert "final" in res or "packet" in res
+
+
+def test_tracing_resilience_with_unreachable_network(monkeypatch):
+    """Network failure or unreachable Langfuse host must NEVER fail a claim."""
+    clear_trace_registry()
+    monkeypatch.setenv("LANGFUSE_PUBLIC_KEY", "pk-lf-test")
+    monkeypatch.setenv("LANGFUSE_SECRET_KEY", "sk-lf-test")
+    monkeypatch.setenv("LANGFUSE_HOST", "http://127.0.0.1:59999")  # Unreachable port
+
+    import src.telemetry.tracing as tr
+    tr._LANGFUSE_CLIENT = None
+    tr._LANGFUSE_INITIALIZED = False
+
+    from src.graph.workflow import build_graph, run_claim
+    from src.adjudication.findings import Findings
+    from tests.test_graph import claim
+
+    class MockReader:
+        def read(self, claim, policy_id, refine=None, previous=None):
+            return Findings(initial_waiting_days=30, is_specified=False, is_pre_existing=False), {
+                "retrieved": {"coverage": ["4.1"]},
+                "dropped_citations": [],
+            }
+
+    class MockVerifier:
+        def verify(self, claim, findings, decision, retrieved_clause_ids):
+            class Res:
+                passed = True
+                confidence = 1.0
+                issues = []
+                concerns = []
+                def to_dict(self):
+                    return {"passed": True, "confidence": 1.0, "issues": [], "concerns": []}
+            return Res()
+
+    graph = build_graph(reader=MockReader(), verifier=MockVerifier())
+    test_claim = claim()
+
+    res = run_claim(graph, {"policy_id": "test_pol", "extracted": test_claim}, "test-network-down")
+    assert res["status"] in ("completed", "awaiting_human")
+    assert "final" in res or "packet" in res

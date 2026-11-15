@@ -99,39 +99,51 @@ def trace_claim(
     """Context manager for tracing the end-to-end lifecycle of a claim.
 
     Sanitizes all metadata before storing or transmitting.
+    Guaranteed never to raise exceptions that interrupt claim adjudication.
     """
-    safe_metadata = mask_dict_pii(metadata or {})
-    trace = ClaimTrace(
-        claim_id=claim_id,
-        tags=list(tags or []),
-        metadata=safe_metadata,
-    )
-    token = _ACTIVE_TRACE.set(trace)
-
-    client = _get_langfuse_client()
+    token = None
+    trace = None
     obs_ctx = None
-    if client is not None:
-        try:
-            obs_ctx = client.start_as_current_observation(
-                name=f"claim_{claim_id}",
-                as_type="span",
-                metadata=safe_metadata,
-            )
-            obs_ctx.__enter__()
-        except Exception:
-            obs_ctx = None
+    try:
+        safe_metadata = mask_dict_pii(metadata or {})
+        trace = ClaimTrace(
+            claim_id=claim_id,
+            tags=list(tags or []),
+            metadata=safe_metadata,
+        )
+        token = _ACTIVE_TRACE.set(trace)
+
+        client = _get_langfuse_client()
+        if client is not None:
+            try:
+                obs_ctx = client.start_as_current_observation(
+                    name=f"claim_{claim_id}",
+                    as_type="span",
+                    metadata=safe_metadata,
+                )
+                obs_ctx.__enter__()
+            except Exception:
+                obs_ctx = None
+    except Exception:
+        trace = ClaimTrace(claim_id=claim_id)
 
     try:
         yield trace
     finally:
-        trace.finish()
-        if obs_ctx is not None:
-            try:
-                obs_ctx.__exit__(None, None, None)
-            except Exception:
-                pass
-        _ACTIVE_TRACE.reset(token)
-        _TRACE_REGISTRY.append(trace)
+        try:
+            if trace is not None:
+                trace.finish()
+            if obs_ctx is not None:
+                try:
+                    obs_ctx.__exit__(None, None, None)
+                except Exception:
+                    pass
+            if token is not None:
+                _ACTIVE_TRACE.reset(token)
+            if trace is not None:
+                _TRACE_REGISTRY.append(trace)
+        except Exception:
+            pass
 
 
 def record_llm_call(
@@ -145,40 +157,44 @@ def record_llm_call(
     """Record an LLM call under the currently active claim trace.
 
     Applies PII redaction to system prompt, user prompt, and output BEFORE recording.
+    Guaranteed never to raise exceptions.
     """
-    safe_system = redact_pii(system or "")
-    safe_user = redact_pii(user or "")
-    safe_output = redact_pii(output or "")
-    safe_meta = mask_dict_pii(metadata or {})
-    full_prompt = f"SYSTEM:\n{safe_system}\n\nUSER:\n{safe_user}" if safe_system else safe_user
+    try:
+        safe_system = redact_pii(system or "")
+        safe_user = redact_pii(user or "")
+        safe_output = redact_pii(output or "")
+        safe_meta = mask_dict_pii(metadata or {})
+        full_prompt = f"SYSTEM:\n{safe_system}\n\nUSER:\n{safe_user}" if safe_system else safe_user
 
-    gen = LLMGeneration(
-        model=model,
-        prompt=full_prompt,
-        output=safe_output,
-        duration_s=duration_s,
-        timestamp=time.time(),
-        metadata=safe_meta,
-    )
+        gen = LLMGeneration(
+            model=model,
+            prompt=full_prompt,
+            output=safe_output,
+            duration_s=duration_s,
+            timestamp=time.time(),
+            metadata=safe_meta,
+        )
 
-    active = _ACTIVE_TRACE.get()
-    if active is not None:
-        active.llm_calls += 1
-        active.generations.append(gen)
+        active = _ACTIVE_TRACE.get()
+        if active is not None:
+            active.llm_calls += 1
+            active.generations.append(gen)
 
-    client = _get_langfuse_client()
-    if client is not None:
-        try:
-            with client.start_as_current_observation(
-                name="llm_call",
-                as_type="generation",
-                model=model,
-                input=full_prompt,
-                metadata=safe_meta,
-            ) as obs:
-                obs.update(output=safe_output)
-        except Exception:
-            pass
+        client = _get_langfuse_client()
+        if client is not None:
+            try:
+                with client.start_as_current_observation(
+                    name="llm_call",
+                    as_type="generation",
+                    model=model,
+                    input=full_prompt,
+                    metadata=safe_meta,
+                ) as obs:
+                    obs.update(output=safe_output)
+            except Exception:
+                pass
+    except Exception:
+        pass
 
 
 def flush_tracing() -> None:
